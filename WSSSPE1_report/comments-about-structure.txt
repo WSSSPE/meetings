@@ -1,0 +1,24 @@
+From Bruce Berriman:
+
+
+I think the paper would be strengthened, and be easier to read if it followed the structure of the contributions on the web page that listed the contributions: http://wssspe.researchcomputing.org.uk/wssspe1/contributions/ , viz:
+
+ - Development Experiences
+ - Development, Support, and Maintenance of Existing Software
+ - Best Practices, Challenges, and Recommendations
+ - Policy, including:
+ - Modeling Sustainability
+ - Credit, Citation, Impact
+ - Reproducibility
+ - Implementing Policy
+ - Communities
+ - Industry & Economic Models
+ - Education & Training
+
+The current outline seems to miss some of these topics.
+
+In the Intro, state what the purpose of the workshop was - what did you anticipate as the  the outcome? And was it the outcome?
+
+One reason I would attend such a workshop or read a report from it (if I could not attend) would be to understand what are the best practices derived across  many disciplines - I would be inclined to make these the centerpiece of the conclusions. Also, I would be interested in learning the deficiencies and difficulties that are present in individual fields - are they common across fields? What is being done or what should be done? Or is this what you intended by the "Cross-Cutting" Section?
+
+I am a bit surprised that the topic of licensing was not discussed - was it included in some of the talk?  This is clearly an important topic, and as the AAS panel showed, the topic causes a lot of confusion and angst.
