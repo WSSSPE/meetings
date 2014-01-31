@@ -107,7 +107,7 @@ Additional volunteers:
 \item Nancy Wilkins-Diehr $\langle$\url{wilkinsn@sdsc.edu}$\rangle$
 \item James Spencer $\langle$\url{j.spencer@imperial.ac.uk}$\rangle$
 \item Frank Loeffler $\langle$\url{knarf@cct.lsu.edu}$\rangle$
-\item James Hetherington $\langle$\url{j.hetherington@ucl.ac.uk}$\rangle$
+\item * James Hetherington $\langle$\url{j.hetherington@ucl.ac.uk}$\rangle$
 \item * Sou-Cheng (Terrya) Choi $\langle$\url{sou.cheng.terrya.choi@gmail.com}$\rangle$
 \item James Howison $\langle$\url{james@howison.name}$\rangle$
 \item * Bruce Berriman $\langle$\url{gbb@ipac.caltech.edu}$\rangle$
@@ -236,11 +236,138 @@ each submission categories were appointed as panelists, to discuss the papers in
 
 \todo{section should include what was presented and what was discussed}
 
-Arfon Smith of github presented the first keynote. Following points summarize the keynote and the associated discussion:
-\begin{enumerate}
-    \item Socially driven software development.
-    \item Role of software in research.
-\end{enumerate}
+\subsection{A recipe for sustainable software, Philip E. Bourne.}
+
+The first keynote
+\footnote{\url{http://wssspe.researchcomputing.org.uk/keynotes/\#bourne}}
+was delievered by Philip E. Bourne of UCSD. The slides
+are online.\footnote{\url{www.slideshare.net/pebourne/a-recipe-for-sustainable-software}}
+
+Philip is a basic biomedical scientist but has formed 4 software
+companies. He also helped found PLOS and PDB
+\footnote{\url{http://www.rcsb.org/pdb/home/home.do}}.
+
+He emphasised that Sustainability for software ``does not just mean more
+money from Government.''
+
+He noted that creating effective illustrations is a key function of
+software in the biomedical sciences: ``Automating Conceptualisation''
+(Visualising molecular structures is a problem that has now been solved,
+he is working on 3-d visualisations of the contents of cells.)
+
+He has looked into reproducibility in computational biology, and has
+concluded that ``I have proved I cannot reproduce research from my own
+lab'':
+(Computational
+Biology Resources Lack Persistence And Usability, Veretnik, Fink and
+Bourne.)\footnote{\url{http://www.ploscompbiol.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pcbi.1000136}}(
+
+He noted that in places, development in science has improved thanks to
+open source and Github, but for the most part remains arcane. He argues
+that there's a lot we can learn from the app-store model. He
+mentioned BioJava\footnote{\url{http://biojava.org/wiki/Main_Page}} and OpenScienceDataCloud
+\footnote{\url{https://www.opensciencedatacloud.org/}} as
+distribution channels.
+
+He noted a common evolutionary pathway for computational biology
+projects, from data archive to analytics platform to educational use. He
+suggests that use for outreach might be the final step.
+
+He has problems with staff retention with respect to private organisations which reward 
+those combining research and software expertise (the ``Google Bus''), however,
+he's a strong fan of private sector sustainability sources and PPP. He
+notes that making a successful business from scientific software alone
+is very rare: founders overvalue while customers undervalue. He noted
+that to last, an open source project needs a minimal funding requirement
+even with a vibrant community -- good will only goes so far if you're
+being paid to do something else.
+
+He talked about grant
+schemes
+ of relevance in the U.S., particularly with regard to technology transfer.  \footnote{\url{http://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp\#IID2}} \footnote{\url{http://www.nsf.gov/eng/iip/sbir/}}
+
+He had problems with selling research software: his technology transfer
+office wanted wanted huge IP reachthrough, whereby they would get a
+share of profits from drugs developed by pharma companies who use the
+software. He was aware this was unrealistic but the TTO insisted for a
+while. He wants to push a much more one-click approach to purchasing
+university-written software. 
+
+He then presented the usual arguments on directly valuing software as a
+research output alongside papers. Readers will be familiar with this
+debate. An interesting reference here is ``What
+does peer review mean when applied to computer code?, Rosemary Dickin.''
+\footnote{\url{http://blogs.plos.org/biologue/2013/08/08/what-does-peer-review-mean-when-applied-to-computer-code/}}
+
+He then expanded on the idea of the \textbf{digital enterprise}, where
+IT underpins the whole of organisational activities. He contends that
+universities are way behind the curve on this. In particular, he
+highlights the separation of research, teaching and administration into
+silos without a common IT framework as a blocker to many useful
+organisational innovations: ``University 2.0 is yet to happen.'' He
+spoke of a circumstance where someone had used an algorithm developed
+for computational biology in marketing.
+
+The role of an institution is important in this space. He argued that
+funders can help train institutions not just individuals.
+
+He concluded with a reference to his paper
+\footnote{\url{http://www.ploscompbiol.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pcbi.1002001}}``Ten
+simple rules for getting ahead as a computational biologist in
+academia'' and argued that computational scientists ``have a
+responsibility to convince their institutions and communities that
+software is scholarship,'' a point with which we strongly agree.
+
+\subsection{Scientifc Software and the Open Collaborative Web}
+
+The second keynote\footnote{\url{http://is.gd/wssspe}} was by
+ Arfon Smith\footnote{\url{http://arfon.org/}} of Github.
+
+His talk used an example from data reduction in Astronomy, where one
+attempts to remove interfering effects from the device. In this field, a
+``bad pixel mask'' is recalculated by each researcher, despite being
+persistent over time. He estimated 13 wasted person-years of waste.
+
+He asked, of this practice, ``why didn't we know better?'' and argued
+this was because we're taught to focus on immediate research outcomes
+and not on continuously improving and building on tools for research. He
+then asked, later in our working lives, when we do know better, why
+don't we act any different, and argued this was due to incentivisation:
+only the immediate products of research, not the software, are valued.
+
+He referenced Victoria Stodden's talk at OKCon
+\footnote{\url{http://okcon.org/main-speakers/victoria-stodden/}},
+\footnote{\url{http://www.stanford.edu/~vcs/talks/OKcon2013-Sept172013-STODDEN.pdf}}
+which he said argued these points well.
+
+He cited the EMCEE \footnote{\url{https://github.com/dfm/emcee}} Markov Chain
+Monte Carlo code by Dan Forman Mackey \footnote{\url{http://dan.iel.fm/}} as a
+good example of a scientific project using GitHub. Amongst other
+examples of good scientific projects on GitHub he used an example from JoeZuntz
+\footnote{\url{http://www.jb.man.ac.uk/~zuntz/Joe_Zuntz/Welcome.html}}.
+
+C. Titus Brown \footnote{\url{http://ged.msu.edu/}} argues that with regard to
+reusable software, ``we should just start doing it''. Arfon notes that
+documentation should be ``treated as a first class entity.''
+
+He noted that some software fields have excellent cultures of module
+reuse, such as rubygems \footnote{\url{http://rubygems.org/}},
+PyPI \footnote{\url{https://pypi.python.org/pypi}}, and CPAN
+\footnote{\url{http://www.cpan.org/}}, where there is effectively
+ultra-low-friction collaboration through these repositories. This has
+not happened in highly numerical, compiled language scientific software.
+
+He argues that the GitHub Pull Request code review mechanism facilitates
+such collaboration, by allowing one to code first, and seek review and a
+merge back into the trunk later.
+
+Fernando Perez says that ``Open Source
+is reproducible by necessity'' - since reproducibility is a prerequisite
+for remote collaboration.
+
+Arfon therefore defines GitHub as part of the next stage in development
+of the web, following on from the ``social web'' of facebook et.al.:
+``The Collaborative Web.''
 
 \section{Developing and Supporting Software}
 
