@@ -41,6 +41,10 @@
 \newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
 \newcommand{\note}[1]{ {\textcolor{red}    { #1 }}}
 
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % Don't use tt font for urls
 \urlstyle{rm}
@@ -768,141 +772,77 @@ journals.
 
 The following is a partial list of attendees who were recorded on the Google doc that was being used for live note taking at the workshop:
 
-Daniel S. Katz (@danielskatz)
+\begin{tabular}{ L{4cm}  L{4cm}  L{4cm}  L{4cm} }
+   Daniel S. Katz
+&  Neil Chue Hong
+&  Gabrielle Allen
+&  David Proctor
+\\ Manish Parashar
+&  Jay Alameda
+&  David Andrs
+&  Lorena A Barba
+\\ David Bernholdt
+&  Phil Bourne
+&  Karl Broman
+&  Maxine Brown
+\\ David Bruhwiler
+&  Bruno Bzeznik
+&  Jeffrey Carver
+&  John W. Cobb
+\\ Karen Cranston
+&  Rion Dooley
+&  Anshu Dubey
+&  Ian Foster
+\\Juliana Freire
+& Derek Gaston
+& Derek Groen
+& Edmund Hart
+\\James Hetherington
+& Simon Hettrick
+& Kenneth Hoste
+& James Howison
+\\Daisie Huang
+& Kerk Kee
+& Arnaud Legrand
+& Paul Madden
+\\Louis Maddox
+& Ketan Maheshwari
+& Suresh Marru
+& Cezary Mazurek
+\\James McClure
+& Chris Mentzel
+& J. Yates Monteith
+& Pierre Neyron
+\\Lucas Nussbaum
+& Cody Permann
+& John Peterson
+& Quan Pham
+\\Marlon Pierce
+& Heather Piwowar
+& Jason Riedy
+& Andreas Schreiber
+\\William Scullin
+& Andrew Slaughter
+& Arfon Smith
+& James Spencer
+\\Shel Swenson
+& Fr\'{e}d\'{e}ric Suter
+& Andy Terrel
+& George  Thiruvathukal
+\\John Towns
+& Erik Trainer
+& Matthew Turk
+& Eric Van Wyk
+\\Colin C. Venters
+& Von Welch
+& Nancy Wilkins-Diehr
+& Theresa Windus
+\\Rich Wolski
+& Lynn Zentner
+& Frank Löffler
+& Patrick O'Leary
+\end{tabular} 
 
-Neil Chue Hong (@npch)
-
-Gabrielle Allen
-
-David Proctor (@djproctor)
-
-Manish Parashar
-
-Jay Alameda (alameda@illinois.edu)
-
-David Andrs
-
-Lorena A Barba (@LorenaABarba)
-
-David Bernholdt (bernholdtde@ornl.gov)
-
-Phil Bourne
-
-Karl Broman (@kwbroman)
-
-Maxine Brown, UIC (maxine@uic.edu)
-
-David Bruhwiler   (bruhwiler@radiasoft.net    @radiasoft)
-
-Bruno Bzeznik
-
-Jeffrey Carver, University of Alabama (carver@cs.ua.edu)
-
-John W. Cobb (cobbjw@ornl.gov, @johnwcobb)
-
-Karen Cranston (@kcranstn, National Evolutionary Synthesis Center)
-
-Rion Dooley
-
-Anshu Dubey (adubey@lbl.gov)
-
-Ian Foster, @ianfoster
-
-Juliana Freire
-
-Derek Gaston
-
-Derek Groen (@whydoitweet on Twitter)
-
-Edmund Hart (@distribecology)
-
-James Hetherington @jamespjh
-
-Simon Hettrick (s.hettrick@software.ac.uk)
-
-Kenneth Hoste (@kehoste, Ghent University, Belgium)
-
-James Howison, University of Texas at Austin (@jameshowison)
-
-Daisie Huang
-
-Kerk Kee (kerk.kee@gmail.com)
-
-Arnaud Legrand
-
-Paul Madden, NOAA / University of Colorado, maddenp@colorado.edu
-
-Louis Maddox (@lmmddx)
-
-Ketan Maheshwari (@km\_9 on Twitter)
-
-Suresh Marru (smarru@iu.edu, @sureshmarru) 
-
-Cezary Mazurek, mazurek@man.poznan.pl, @cezary\_mazurek
-
-James McClure
-
-Chris Mentzel @chrismentzel - firstname dot lastname at moore dot org
-
-J. Yates Monteith, Clemson University
-
-Pierre Neyron
-
-Lucas Nussbaum (lucas.nussbaum@loria.fr)
-
-Cody Permann
-
-John Peterson
-
-Quan Pham, University of Chicago
-
-Marlon Pierce, marpierc@iu.edu, @marpierc
-
-Heather Piwowar
-
-Jason Riedy, Georgia Tech, http://fmrl.me/jasonriedy and many other places
-
-Andreas Schreiber (@onyame)
-
-William Scullin
-
-Andrew Slaughter
-
-Arfon Smith
-
-James Spencer (@exp\_n)
-
-Shel Swenson, University of Southern California (shel.swenson@usc.edu)
-
-Fr\'{e}d\'{e}ric Suter
-
-Andy Terrel (@aterrel, andy.terrel@gmail.com, NumFOCUS and Continuum Analytics)
-
-George K. Thiruvathukal, Loyola University Chicago and Computing in Science and Engineering (IEEE CS/AIP) (gkt@cs.luc.edu)
-
-John Towns
-
-Erik Trainer
-
-Matthew Turk (@powersoffour on Twitter, matthewturk@gmail.com)
-
-Eric Van Wyk, University of Minnesota, evw@cs.umn.edu, @ericvanwyk
-
-Colin C. Venters, c.venters@hud.ac.uk
-
-Von Welch, @VonWelch
-
-Nancy Wilkins-Diehr, wilkinsn@sdsc.edu
-
-Theresa Windus (twindus@iastate.edu)
-
-Rich Wolski
-
-Lynn Zentner
-
-Frank Löffler
-
-Patrick O'Leary
 
 
 \bibliographystyle{plain}
