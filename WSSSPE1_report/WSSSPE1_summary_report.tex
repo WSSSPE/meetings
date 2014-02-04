@@ -76,10 +76,10 @@
 %\thanks{{}$^{(2)}$ Skolkovo Institute of Science and Technology, Moscow, Russian Federation}
 %
 %\thanks{{}$^{(3)}$ Software Sustainability Institute, University of Edinburgh, Edinburgh, UK}
-%  
+%
 %\thanks{{}$^{(4)}$ Rutgers Discovery Informatics Institute, Rutgers University, New Brunswick, NJ, USA}
 
-    
+
 \begin{abstract}
 This technical report discusses the First Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE). ...
 \end{abstract}
@@ -87,9 +87,11 @@ This technical report discusses the First Workshop on Sustainable Software for S
 
 \maketitle
 
-\note{papers and presentations and URLs should be references - see figshare-web in .bib file for URL style example}
+\note{papers and presentations and URLs should be references - see
+  figshare-web in .bib file for URL style example}
 
-People who have volunteered to work on this report: (with * for actual contributors - \note{if you contribute, add a * by your name})
+People who have volunteered to work on this report: (with * for actual
+contributors - \note{if you contribute, add a * by your name})
 
 The workshop organizers:
 \begin{itemize}
@@ -140,55 +142,85 @@ Note that the original document has comments in addition to text.
 
 \section{Introduction}
 
-The First Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE1, \url{http://wssspe.researchcomputing.org.uk/WSSSPE1}) was held on Sunday, 17 November 2013, in conjunction with the 2013 International Conference for High Performance Computing, Networking, Storage and Analysis (SC13, \url{http://sc13.supercomputing.org}).
+The First Workshop on Sustainable Software for Science: Practice and
+Experiences (WSSSPE1,
+\url{http://wssspe.researchcomputing.org.uk/WSSSPE1}) was held on
+Sunday, 17 November 2013, in conjunction with the 2013 International
+Conference for High Performance Computing, Networking, Storage and
+Analysis (SC13, \url{http://sc13.supercomputing.org}).
 
-Because progress in scientific research is dependent on the quality and accessibility
-of software at all levels, it is now critical to address many challenges related to the
-development, deployment, and maintenance of reusable software. In addition, it is
-essential that scientists, researchers, and students are able to learn and adopt
-software-related skills and methodologies. Established researchers are already
-acquiring some of these skills, and in particular a specialized class of software
-developers is emerging in academic environments who are an integral and embedded
-part of successful research teams. The WSSSPE workshop was intended to provide a
-forum for discussion of the challenges, including both positions and experiences.
-The short papers and discussion have been archived to provide a basis for continued
-discussion, and the workshop has fed into the collaborative writing of this journal publication.
-Additional papers based on extended versions of workshop submissions are expected.
-The level of interest in the workshop has led the organizers, working with some of the submitters
-and some of the attendees, to plan two additional workshops (at the 2014 SciPy and SC conferences) and to turn
-the workshop website into a community website that can be used as a focus for further
-discussion and progress.
+Because progress in scientific research is dependent on the quality
+and accessibility of software at all levels, it is now critical to
+address many challenges related to the development, deployment, and
+maintenance of reusable software. In addition, it is essential that
+scientists, researchers, and students are able to learn and adopt
+software-related skills and methodologies. Established researchers are
+already acquiring some of these skills, and in particular a
+specialized class of software developers is emerging in academic
+environments who are an integral and embedded part of successful
+research teams. The WSSSPE workshop was intended to provide a forum
+for discussion of the challenges, including both positions and
+experiences.  The short papers and discussion have been archived to
+provide a basis for continued discussion, and the workshop has fed
+into the collaborative writing of this journal publication.
+Additional papers based on extended versions of workshop submissions
+are expected.  The level of interest in the workshop has led the
+organizers, working with some of the submitters and some of the
+attendees, to plan two additional workshops (at the 2014 SciPy and SC
+conferences) and to turn the workshop website into a community website
+that can be used as a focus for further discussion and progress.
 
-Before the WSSSPE1 workshop took place, the organizers self-published a paper~\cite{WSSSPE1-pre-report} to document the process of organizing and advertising the workshop, collecting and reviewing the papers, and putting together the agenda.  Section~\ref{sec:process} is based on that paper.  The remainder of this paper is based on the workshop itself, as documented in a set of collaborative notes taken during the workshop~\cite{WSSSPE1-google-notes}, including discussion about the keynote presentations (\S\ref{sec:keynotes}), the three panels (\S\ref{sec:devel}-\ref{sec:community}), other discussion (\S\ref{sec:other}), cross-cutting issues (\S\ref{sec:cross-cutting}), use cases (\S\ref{sec:use-cases}), and conclusions (\S\ref{sec:conclusions}).
+Before the WSSSPE1 workshop took place, the organizers self-published
+a paper~\cite{WSSSPE1-pre-report} to document the process of
+organizing and advertising the workshop, collecting and reviewing the
+papers, and putting together the agenda.  Section~\ref{sec:process} is
+based on that paper.  The remainder of this paper is based on the
+workshop itself, as documented in a set of collaborative notes taken
+during the workshop~\cite{WSSSPE1-google-notes}, including discussion
+about the keynote presentations (\S\ref{sec:keynotes}), the three
+panels (\S\ref{sec:devel}-\ref{sec:community}), other discussion
+(\S\ref{sec:other}), cross-cutting issues (\S\ref{sec:cross-cutting}),
+use cases (\S\ref{sec:use-cases}), and conclusions
+(\S\ref{sec:conclusions}).
 
-\todo{Mention a two-session minisymposium on ``Reliable Computational Science'' in the SIAM Annual Meeting in July. It aims to further explore some of the key issues raised in WSSSPE. Speakers include Tim Davis, Barry Smith, Lorena Barba, Tanu Malik, Bill Rider.}
+\todo{Mention a two-session minisymposium on ``Reliable Computational
+  Science'' in the SIAM Annual Meeting in July. It aims to further
+  explore some of the key issues raised in WSSSPE. Speakers include
+  Tim Davis, Barry Smith, Lorena Barba, Tanu Malik, Bill Rider.}
 
 \section{Workshop Process and Agenda} \label{sec:process}
 
-WSSSPE1 was organized in collaboration of the relatively small group of five organizers and
-a larger peer-review committee with 36 members. This committee had early influence on the organization,
-e.g., on the specific call for papers.
+WSSSPE1 was organized in collaboration of the relatively small group
+of five organizers and a larger peer-review committee with 36
+members. This committee had early influence on the organization, e.g.,
+on the specific call for papers.
 
 The workshop call for papers included:
 
 \begin{quote}
-In practice, scientific software activities are part of an ecosystem where key roles are held by 
-developers, users, and funders. All three groups supply resources to the ecosystem, as well as 
-requirements that bound it. Roughly following the example of NSF's Vision and Strategy for Software 
-(\url{http://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf12113})~\cite{NSF_software_vision}, 
+In practice, scientific software activities are part of an ecosystem
+where key roles are held by developers, users, and funders. All three
+groups supply resources to the ecosystem, as well as requirements that
+bound it. Roughly following the example of NSF's Vision and Strategy
+for Software
+(\url{http://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf12113})~\cite{NSF_software_vision},
 the ecosystem may be viewed as having challenges related to:
 
 \begin{itemize}
 \item the development process that leads to new (versions of) software
 \begin{itemize}
-\item how fundamental research in computer science or science/engineering domains is turned  into reusable software
+\item how fundamental research in computer science or
+  science/engineering domains is turned into reusable software
 \item software created as a by-product of research
-\item impact of computer science research on the development of scientific software
+\item impact of computer science research on the development of
+  scientific software
 \end{itemize}
-\item the support and maintenance of existing software, including software engineering
+\item the support and maintenance of existing software, including
+  software engineering
 \begin{itemize}
 \item governance, business, and sustainability models
-\item the role of community software repositories, their operation and sustainability
+\item the role of community software repositories, their operation and
+  sustainability
 \end{itemize}
 \item the role of open source communities or industry
 \item use of the software
@@ -201,44 +233,66 @@ the ecosystem may be viewed as having challenges related to:
 \item measuring usage and impact
 \item software credit, attribution, incentive, and reward
 \item career paths for developers and institutional roles
-\item issues related to multiple organizations and multiple countries, such as intellectual property, licensing, etc.
-\item mechanisms and venues for publishing software, and the role of publishers
+\item issues related to multiple organizations and multiple countries,
+  such as intellectual property, licensing, etc.
+\item mechanisms and venues for publishing software, and the role of
+  publishers
 \end{itemize}
 \item education and training
 \end{itemize}
 
 \end{quote}
 
-Based on the goal of encouraging a wide range of submissions from those involved in software practice, ranging from initial thoughts and partial studies to mature deployments, the organizers wanted to make submission as easy as possible. The call for papers stated:
+Based on the goal of encouraging a wide range of submissions from
+those involved in software practice, ranging from initial thoughts and
+partial studies to mature deployments, the organizers wanted to make
+submission as easy as possible. The call for papers stated:
 
 \begin{quote}
-We invite short (4-page) position/experience reports that will be used to organize panel and 
-discussion sessions. These papers will be archived by a third-party service, and provided DOIs. We 
-encourage submitters to license their papers under a Creative Commons license that encourages 
-sharing and remixing, as we will combine ideas (with attribution) into the outcomes of the workshop. 
-An interactive site will be created to link these papers and the workshop discussion, with options for 
-later comments and contributions. Contributions will be peer-reviewed for relevance and originality 
-before the links are added to the workshop site; contributions will also be used to determine 
-discussion topics and panelists. We will also plan one or more papers to be collaboratively 
-developed by the contributors, based on the panels and discussions.
+We invite short (4-page) position/experience reports that will be used
+to organize panel and discussion sessions. These papers will be
+archived by a third-party service, and provided DOIs. We encourage
+submitters to license their papers under a Creative Commons license
+that encourages sharing and remixing, as we will combine ideas (with
+attribution) into the outcomes of the workshop.  An interactive site
+will be created to link these papers and the workshop discussion, with
+options for later comments and contributions. Contributions will be
+peer-reviewed for relevance and originality before the links are added
+to the workshop site; contributions will also be used to determine
+discussion topics and panelists. We will also plan one or more papers
+to be collaboratively developed by the contributors, based on the
+panels and discussions.
 \end{quote}
 
-58 submissions were received, and almost all submitters used either 
-arXiv~\cite{arXiv-web} or 
-figshare~\cite{figshare-web} to self-publish their papers. 
+58 submissions were received, and almost all submitters used either
+arXiv~\cite{arXiv-web} or figshare~\cite{figshare-web} to self-publish
+their papers.
 
-A peer review process followed the submissions, where the 58 papers received 181 reviews, an 
-average of 3.12 reviews per paper. Reviews were completed using a Google form, which allowed 
-reviewers to choose papers they wanted to review, then to provide scores on their relevance and general comments to the organizers and to the authors. The review reports enabled the organizers to decide which papers to associate with the workshop, and allowed the authors to improve their papers.
+A peer review process followed the submissions, where the 58 papers
+received 181 reviews, an average of 3.12 reviews per paper. Reviews
+were completed using a Google form, which allowed reviewers to choose
+papers they wanted to review, then to provide scores on their
+relevance and general comments to the organizers and to the
+authors. The review reports enabled the organizers to decide which
+papers to associate with the workshop, and allowed the authors to
+improve their papers.
 
-The organizers decided to list 54 of the papers as significantly contributing to the workshop, a very 
-high acceptance rate, but one that is reasonable, given the goal of broad participation and the fact 
-that the reports were already self-published. The papers were also grouped into three main categories, namely \emph{Developing and Supporting Software}, \emph{Policy}, and \emph{Communities}. Each subject area was associated with a panel and discussion at the workshop.
+The organizers decided to list 54 of the papers as significantly
+contributing to the workshop, a very high acceptance rate, but one
+that is reasonable, given the goal of broad participation and the fact
+that the reports were already self-published. The papers were also
+grouped into three main categories, namely \emph{Developing and
+  Supporting Software}, \emph{Policy}, and \emph{Communities}. Each
+subject area was associated with a panel and discussion at the
+workshop.
 
-The workshop itself consisted of two keynote presentations and the three panels/discussion sessions. The panels 
-were organized based on a classification of the workshop submissions into three categories, following 
-the themes of the call for papers as modified by the areas of the submissions. Three to four representatives from 
-each submission category were appointed as panelists, and assigned to read a subset of the paper in that category and then discuss them in the panel.
+The workshop itself consisted of two keynote presentations and the
+three panels/discussion sessions. The panels were organized based on a
+classification of the workshop submissions into three categories,
+following the themes of the call for papers as modified by the areas
+of the submissions. Three to four representatives from each submission
+category were appointed as panelists, and assigned to read a subset of
+the paper in that category and then discuss them in the panel.
 
 
 \section{Keynotes} \label{sec:keynotes}
@@ -251,54 +305,59 @@ The WSSSPE1 workshop began with two keynote presentations.
 
 \subsection{A recipe for sustainable software, Philip E. Bourne.}
 
-The first keynote\footnote{\url{http://wssspe.researchcomputing.org.uk/keynotes/\#bourne}}
-was delivered by Philip E. Bourne of UCSD. The slides
-are online.\footnote{\url{www.slideshare.net/pebourne/a-recipe-for-sustainable-software}}
+The first
+keynote\footnote{\url{http://wssspe.researchcomputing.org.uk/keynotes/\#bourne}}
+was delivered by Philip E. Bourne of UCSD. The slides are
+online.\footnote{\url{www.slideshare.net/pebourne/a-recipe-for-sustainable-software}}
 
 Philip is a basic biomedical scientist but has formed four software
-companies. He also helped found PLOS and PDB\footnote{\url{http://www.rcsb.org/pdb/home/home.do}}.
+companies. He also helped found PLOS and
+PDB\footnote{\url{http://www.rcsb.org/pdb/home/home.do}}.
 
-He emphasized that Sustainability for software ``does not just mean more
-money from Government.''
+He emphasized that Sustainability for software ``does not just mean
+more money from Government.''
 
 He noted that creating effective illustrations is a key function of
 software in the biomedical sciences: ``Automating Conceptualization''
-(Visualizing molecular structures is a problem that has now been solved,
-he is working on 3-d visualizations of the contents of cells.)
+(Visualizing molecular structures is a problem that has now been
+solved, he is working on 3-d visualizations of the contents of cells.)
 
 He has looked into reproducibility in computational biology, and has
 concluded that ``I have proved I cannot reproduce research from my own
 lab''~\cite{Veretnik}.
 
 He noted that in places, development in science has improved thanks to
-open source and Github, but for the most part remains arcane. He argues
-that there is a lot we can learn from the app-store model. He
-mentioned BioJava\footnote{\url{http://biojava.org/wiki/Main_Page}} and
-OpenScienceDataCloud\footnote{\url{https://www.opensciencedatacloud.org/}} as
-distribution channels.
+open source and Github, but for the most part remains arcane. He
+argues that there is a lot we can learn from the app-store model. He
+mentioned BioJava\footnote{\url{http://biojava.org/wiki/Main_Page}}
+and
+OpenScienceDataCloud\footnote{\url{https://www.opensciencedatacloud.org/}}
+as distribution channels.
 
 He noted a common evolutionary pathway for computational biology
-projects, from data archive to analytics platform to educational use. He
-suggests that use for outreach might be the final step.
+projects, from data archive to analytics platform to educational
+use. He suggests that use for outreach might be the final step.
 
-He experienced problems with staff retention with respect to private organizations which reward 
-those combining research and software expertise (the ``Google Bus''). However,
-he is a strong fan of private sector sustainability sources and public-private partnerships. He
+He experienced problems with staff retention with respect to private
+organizations which reward those combining research and software
+expertise (the ``Google Bus''). However, he is a strong fan of private
+sector sustainability sources and public-private partnerships. He
 noted that making a successful business from scientific software alone
 is very rare: founders overvalue while customers undervalue. He noted
-that to last, an open source project needs a minimal funding requirement
-even with a vibrant community -- good will only goes so far if you are
-being paid to do something else.
+that to last, an open source project needs a minimal funding
+requirement even with a vibrant community -- good will only goes so
+far if you are being paid to do something else.
 
-He talked about grant schemes of relevance in the U.S., particularly with regard to technology transfer.\footnote{\url{http://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp\#IID2}} \footnote{\url{http://www.nsf.gov/eng/iip/sbir/}}
+He talked about grant schemes of relevance in the U.S., particularly
+with regard to technology
+transfer.\footnote{\url{http://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp\#IID2}} \footnote{\url{http://www.nsf.gov/eng/iip/sbir/}}
 
-He had problems with selling research software: the technology transfer
-office in his university wanted huge IP reachthrough, whereby they would get a
-share of profits from drugs developed by pharma companies who use the
-software. He was aware this was unrealistic but the technology transfer
-office insisted for a
-while. He wants to push a one-click approach to purchasing
-university-written software. 
+He had problems with selling research software: the technology
+transfer office in his university wanted huge IP reachthrough, whereby
+they would get a share of profits from drugs developed by pharma
+companies who use the software. He was aware this was unrealistic but
+the technology transfer office insisted for a while. He wants to push
+a one-click approach to purchasing university-written software.
 
 He then presented the usual arguments on directly valuing software as a
 research output alongside papers. Readers will be familiar with this
@@ -318,9 +377,10 @@ for computational biology in marketing.
 The role of an institution is important in this space. He argued that
 funders can help train institutions not just individuals.
 
-He concluded with a reference to his paper~\cite{bourne_ten} and argued that computational scientists ``have a
-responsibility to convince their institutions and communities that
-software is scholarship,'' a point with which we strongly agree.
+He concluded with a reference to his paper~\cite{bourne_ten} and
+argued that computational scientists ``have a responsibility to
+convince their institutions and communities that software is
+scholarship,'' a point with which we strongly agree.
 
 \subsection{Scientific Software and the Open Collaborative Web, Arfon Smith}
 
@@ -329,44 +389,50 @@ The second keynote\footnote{\url{http://is.gd/wssspe}} was by
  Arfon Smith\footnote{\url{http://arfon.org/}} of Github.
 
 His talk used an example from data reduction in Astronomy, where he
-needed to remove interfering effects from the device. He built a
-``bad pixel mask'', and realized that while this is persistent, there
-was no way/practice of sharing this with the data, so many researchers
-repeated the same calculations. He estimated that 13 person-years were wasted in
-this redundant calculation.
+needed to remove interfering effects from the device. He built a ``bad
+pixel mask'', and realized that while this is persistent, there was no
+way/practice of sharing this with the data, so many researchers
+repeated the same calculations. He estimated that 13 person-years were
+wasted in this redundant calculation.
 
 He asked, of this practice, ``why didn't we know better?'' and argued
-this was because we were taught to focus on immediate research outcomes
-and not on continuously improving and building on tools for research. He
-then asked, later in our working lives, when we do know better, why
-don't we act any different, and argued this was due to incentives and their lack:
-only the immediate products of research, not the software, are valued.
-He referenced Victoria Stodden's talk at OKCon\footnote{\url{http://okcon.org/main-speakers/victoria-stodden/}},\footnote{\url{http://www.stanford.edu/~vcs/talks/OKcon2013-Sept172013-STODDEN.pdf}}
+this was because we were taught to focus on immediate research
+outcomes and not on continuously improving and building on tools for
+research. He then asked, later in our working lives, when we do know
+better, why don't we act any different, and argued this was due to
+incentives and their lack: only the immediate products of research,
+not the software, are valued.  He referenced Victoria Stodden's talk
+at
+OKCon\footnote{\url{http://okcon.org/main-speakers/victoria-stodden/}},\footnote{\url{http://www.stanford.edu/~vcs/talks/OKcon2013-Sept172013-STODDEN.pdf}}
 which he said argued these points well.
 
-He cited the EMCEE\footnote{\url{https://github.com/dfm/emcee}} Markov Chain
-Monte Carlo code by Dan Forman Mackey\footnote{\url{http://dan.iel.fm/}} and Joe Zuntz\footnote{\url{http://www.jb.man.ac.uk/~zuntz/Joe_Zuntz/Welcome.html}} as 
-good examples of  scientific projects using GitHub.  
+He cited the EMCEE\footnote{\url{https://github.com/dfm/emcee}} Markov
+Chain Monte Carlo code by Dan Forman
+Mackey\footnote{\url{http://dan.iel.fm/}} and Joe
+Zuntz\footnote{\url{http://www.jb.man.ac.uk/~zuntz/Joe_Zuntz/Welcome.html}}
+as good examples of scientific projects using GitHub.
 
-C. Titus Brown\footnote{\url{http://ged.msu.edu/}} argues that with regard to
-reusable software, ``we should just start doing it.'' Arfon noted that
-documentation should be ``treated as a first class entity.''
-He noted that some software fields have excellent cultures of module
-reuse, such as rubygems\footnote{\url{http://rubygems.org/}},
-PyPI\footnote{\url{https://pypi.python.org/pypi}}, and CPAN\footnote{\url{http://www.cpan.org/}}, where there is effectively
+C. Titus Brown\footnote{\url{http://ged.msu.edu/}} argues that with
+regard to reusable software, ``we should just start doing it.'' Arfon
+noted that documentation should be ``treated as a first class
+entity.''  He noted that some software fields have excellent cultures
+of module reuse, such as
+rubygems\footnote{\url{http://rubygems.org/}},
+PyPI\footnote{\url{https://pypi.python.org/pypi}}, and
+CPAN\footnote{\url{http://www.cpan.org/}}, where there is effectively
 ultra-low-friction collaboration through these repositories. This has
-not happened in highly numerical, compiled language scientific software.
+not happened in highly numerical, compiled language scientific
+software.
 
 He argued that the GitHub Pull Request code review mechanism facilitates
 such collaboration, by allowing one to code first, and seek review and a
 merge back into the trunk later.
 
-Fernando Perez says that ``Open Source
-is reproducible by necessity'' - since reproducibility is a prerequisite
-for remote collaboration.
-Arfon therefore defined GitHub as part of the next stage in development
-of the web, following on from the ``social web'' of Facebook et.al.:
-``The Collaborative Web.''
+Fernando Perez says that ``Open Source is reproducible by necessity''
+- since reproducibility is a prerequisite for remote collaboration.
+Arfon therefore defined GitHub as part of the next stage in
+development of the web, following on from the ``social web'' of
+Facebook et.al.: ``The Collaborative Web.''
 
 \section{Developing and Supporting Software} \label{sec:devel}
 
@@ -378,31 +444,55 @@ of the web, following on from the ``social web'' of Facebook et.al.:
 
 \begin{itemize}
 
-\item Mark C. Miller, Lori Diachin, Satish Balay, Lois Curfman McInnes, Barry Smith. Package Management Practices Essential for Interoperability: Lessons Learned and Strategies Developed for FASTMath \cite{Miller_WSSSPE}
+\item Mark C. Miller, Lori Diachin, Satish Balay, Lois Curfman
+  McInnes, Barry Smith. Package Management Practices Essential for
+  Interoperability: Lessons Learned and Strategies Developed for
+  FASTMath \cite{Miller_WSSSPE}
 
-\item Karl W. Broman, Thirteen years of R/qtl: Just barely sustainable \cite{Broman_WSSSPE}
+\item Karl W. Broman, Thirteen years of R/qtl: Just barely sustainable
+  \cite{Broman_WSSSPE}
 
-\item Charles R. Ferenbaugh, Experiments in Sustainable Software Practices for Future Architectures \cite{Ferenbaugh_WSSSPE}
+\item Charles R. Ferenbaugh, Experiments in Sustainable Software
+  Practices for Future Architectures \cite{Ferenbaugh_WSSSPE}
 
-\item Eric G Stephan, Todd O Elsethagen, Kerstin Kleese van Dam, Laura Riihimaki. What Comes First, the OWL or the Bean? \cite{Stephan_WSSSPE}
+\item Eric G Stephan, Todd O Elsethagen, Kerstin Kleese van Dam, Laura
+  Riihimaki. What Comes First, the OWL or the Bean?
+  \cite{Stephan_WSSSPE}
 
-\item Derek R. Gaston, John Peterson, Cody J. Permann, David Andrs, Andrew E. Slaughter, Jason M. Miller, Continuous Integration for Concurrent Computational Framework and Application Development \cite{Gaston_WSSSPE}
+\item Derek R. Gaston, John Peterson, Cody J. Permann, David Andrs,
+  Andrew E. Slaughter, Jason M. Miller, Continuous Integration for
+  Concurrent Computational Framework and Application Development
+  \cite{Gaston_WSSSPE}
 
-\item Anshu Dubey, B. Van Straalen. Experiences from Software Engineering of Large Scale AMR Multiphysics Code Frameworks \cite{Dubey_WSSSPE}
+\item Anshu Dubey, B. Van Straalen. Experiences from Software
+  Engineering of Large Scale AMR Multiphysics Code Frameworks
+  \cite{Dubey_WSSSPE}
 
-\item Markus Blatt. DUNE as an Example of Sustainable Open Source Scientific Software Development \cite{Blatt_WSSSPE}
+\item Markus Blatt. DUNE as an Example of Sustainable Open Source
+  Scientific Software Development \cite{Blatt_WSSSPE}
 
-\item David Koop, Juliana Freiere, Cl\'{a}udio T. Silva, Enabling Reproducible Science with VisTrails~\cite{Koop_WSSSPE}
+\item David Koop, Juliana Freiere, Cl\'{a}udio T. Silva, Enabling
+  Reproducible Science with VisTrails~\cite{Koop_WSSSPE}
 
-\item Sean Ahern, Eric Brugger, Brad Whitlock, Jeremy S. Meredith, Kathleen Biagas, Mark C. Miller, Hank Childs, VisIt: Experiences with Sustainable Software \cite{Ahern_WSSSPE}
+\item Sean Ahern, Eric Brugger, Brad Whitlock, Jeremy S. Meredith,
+  Kathleen Biagas, Mark C. Miller, Hank Childs, VisIt: Experiences
+  with Sustainable Software \cite{Ahern_WSSSPE}
 
-\item Sou-Cheng (Terrya) Choi. MINRES-QLP Pack and Reliable Reproducible Research via Staunch Scientific Software \cite{Choi_WSSSPE}
+\item Sou-Cheng (Terrya) Choi. MINRES-QLP Pack and Reliable
+  Reproducible Research via Staunch Scientific Software
+  \cite{Choi_WSSSPE}
 
-\item Michael Crusoe, C. Titus Brown. Walking the talk: adopting and adapting sustainable scientific software development processes in a small biology lab \cite{Crusoe_WSSSPE}
+\item Michael Crusoe, C. Titus Brown. Walking the talk: adopting and
+  adapting sustainable scientific software development processes in a
+  small biology lab \cite{Crusoe_WSSSPE}
 
-\item Dhabaleswar K. Panda, Karen Tomko, Karl Schulz, Amitava Majumdar. The MVAPICH Project: Evolution and Sustainability of an Open Source Production Quality MPI Library for HPC \cite{Panda_WSSSPE}
+\item Dhabaleswar K. Panda, Karen Tomko, Karl Schulz, Amitava Majumdar. 
+The MVAPICH Project: Evolution and Sustainability of an Open Source 
+Production Quality MPI Library for HPC \cite{Panda_WSSSPE}
 
-\item Eric M. Heien, Todd L. Miller, Becky Gietzel, Louise H. Kellogg. Experiences with Automated Build and Test for Geodynamics Simulation Codes \cite{Heien_WSSSPE}
+\item Eric M. Heien, Todd L. Miller, Becky Gietzel, Louise
+  H. Kellogg. Experiences with Automated Build and Test for
+  Geodynamics Simulation Codes \cite{Heien_WSSSPE}
 
 \end{itemize}
 
@@ -410,13 +500,23 @@ of the web, following on from the ``social web'' of Facebook et.al.:
 
 \begin{itemize}
 
-\item Henri Casanova, Arnaud Giersch, Arnaud Legrand, Martin Quinson, Fr\'{e}d\'{e}ric Suter. SimGrid: a Sustained Effort for the Versatile Simulation of Large Scale Distributed Systems~\cite{Casanova_WSSSPE}
+\item Henri Casanova, Arnaud Giersch, Arnaud Legrand, Martin Quinson,
+  Fr\'{e}d\'{e}ric Suter. SimGrid: a Sustained Effort for the
+  Versatile Simulation of Large Scale Distributed
+  Systems~\cite{Casanova_WSSSPE}
 
-\item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big Effects of Short-term Efforts: A Catalyst for Community Engagement in Scientific Software \cite{Trainer_WSSSPE}
+\item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big
+  Effects of Short-term Efforts: A Catalyst for Community Engagement
+  in Scientific Software \cite{Trainer_WSSSPE}
 
-\item Jeremy Cohen, Chris Cantwell, Neil Chue Hong, David Moxey, Malcolm Illingworth, Andrew Turner, John Darlington, Spencer Sherwin. Simplifying the Development, Use and Sustainability of HPC Software \cite{Cohen_WSSSPE}
+\item Jeremy Cohen, Chris Cantwell, Neil Chue Hong, David Moxey,
+  Malcolm Illingworth, Andrew Turner, John Darlington, Spencer
+  Sherwin. Simplifying the Development, Use and Sustainability of HPC
+  Software \cite{Cohen_WSSSPE}
 
-\item Jaroslaw Slawinski, Vaidy Sunderam. Towards Semi-Automatic Deployment of Scientific and Engineering Applications \cite{Slawinski_WSSSPE}
+\item Jaroslaw Slawinski, Vaidy Sunderam. Towards Semi-Automatic
+  Deployment of Scientific and Engineering Applications
+  \cite{Slawinski_WSSSPE}
 
 \end{itemize}
 
@@ -424,48 +524,79 @@ of the web, following on from the ``social web'' of Facebook et.al.:
 
 \begin{itemize}
 
-\item Andreas Prli\'{c}, James B. Procter. Ten Simple Rules for the Open Development of Scientific Software \cite{Prlic_WSSSPE}
+\item Andreas Prli\'{c}, James B. Procter. Ten Simple Rules for the
+  Open Development of Scientific Software \cite{Prlic_WSSSPE}
 
-\item Anshu Dubey, S. Brandt, R. Brower, M. Giles, P. Hovland, D. Q. Lamb, F. Löffler, B. Norris, B. O'Shea, C. Rebbi, M. Snir, R. Thakur, Software Abstractions and Methodologies for HPC Simulation Codes on Future Architectures \cite{Dubey2_WSSSPE}
+\item Anshu Dubey, S. Brandt, R. Brower, M. Giles, P. Hovland,
+  D. Q. Lamb, F. Löffler, B. Norris, B. O'Shea, C. Rebbi, M. Snir,
+  R. Thakur, Software Abstractions and Methodologies for HPC
+  Simulation Codes on Future Architectures \cite{Dubey2_WSSSPE}
 
-\item Jeffrey Carver, George K. Thiruvathukal. Software Engineering Need Not Be Difficult \cite{Carver_WSSSPE}
+\item Jeffrey Carver, George K. Thiruvathukal. Software Engineering
+  Need Not Be Difficult \cite{Carver_WSSSPE}
 
-\item Craig A. Stewart, Julie Wernert, Eric A. Wernert, William K. Barnett, Von Welch. Initial Findings from a Study of Best Practices and Models for Cyberinfrastructure Software Sustainability \cite{Stewart_WSSSPE}
+\item Craig A. Stewart, Julie Wernert, Eric A. Wernert, William
+  K. Barnett, Von Welch. Initial Findings from a Study of Best
+  Practices and Models for Cyberinfrastructure Software Sustainability
+  \cite{Stewart_WSSSPE}
 
-\item Jed Brown, Matthew Knepley, Barry Smith. Run-time extensibility: anything less is unsustainable \cite{Brown_WSSSPE}
+\item Jed Brown, Matthew Knepley, Barry Smith. Run-time extensibility:
+  anything less is unsustainable \cite{Brown_WSSSPE}
 
-\item Shel Swenson, Yogesh Simmhan, Viktor Prasanna, Manish Parashar, Jason Riedy, David Bader, Richard Vuduc. Sustainable Software Development for Next-Gen Sequencing (NGS) Bioinformatics on Emerging Platforms \cite{Swenson_WSSSPE}
- 
+\item Shel Swenson, Yogesh Simmhan, Viktor Prasanna, Manish Parashar,
+  Jason Riedy, David Bader, Richard Vuduc. Sustainable Software
+  Development for Next-Gen Sequencing (NGS) Bioinformatics on Emerging
+  Platforms \cite{Swenson_WSSSPE}
+
 \end{itemize}
 
 
 \subsection{Research or Reuse?}
 
-Discussion of software produced as a by-product versus software developed for reuse. How does this change the project, who develops the code, growth beyond 1--2 person projects to larger projects with diverse set of consumers and contributors. Modular and extensible code versus working for current research problem---tackled by same people, or a collaborative team?
+Discussion of software produced as a by-product versus software
+developed for reuse. How does this change the project, who develops
+the code, growth beyond 1--2 person projects to larger projects with
+diverse set of consumers and contributors. Modular and extensible code
+versus working for current research problem---tackled by same people,
+or a collaborative team?
 
 \subsection{Defining Sustainability for Scientific Software}
 
-What is sustainable? What are the best practices, can workshops fund meetings to help define and improve best practices in these areas? Software plans from the funding agencies? This topic is expanded upon in \S\ref{sec:cross-cutting}, since it was discussed up in multiple parts of the WSSSPE1 workshop.
+What is sustainable? What are the best practices, can workshops fund
+meetings to help define and improve best practices in these areas?
+Software plans from the funding agencies? This topic is expanded upon
+in \S\ref{sec:cross-cutting}, since it was discussed up in multiple
+parts of the WSSSPE1 workshop.
 
 \subsection{Training Scientists to Develop and Support Software}
 
-Discussion of the evolving role of scientists, and/or others that fill these roles.
+Discussion of the evolving role of scientists, and/or others that fill
+these roles.
 
 \subsection{Software Process, Code Review, Automation, Reproducibility}
 
-There are a lot of tools out there, but few are currently used. Look at what some projects have found successful, and how to automate as much as possible to reduce additional overhead.
+There are a lot of tools out there, but few are currently used. Look
+at what some projects have found successful, and how to automate as
+much as possible to reduce additional overhead.
 
 \subsection{Software and Data Licensing}
 
-Its impact on how and where research products are used, who can collaborate and what patterns have worked/not worked in existing communities.
+Its impact on how and where research products are used, who can
+collaborate and what patterns have worked/not worked in existing
+communities.
 
 \subsection{Funding, Sustainability Beyond the First Grant/Institution}
 
-How initial software development is funded, moving to follow up projects, maintenance, community growth, collaborating with other institutions, labs, industry, internationally. Contract relationship versus collaborative development between scientists and software developers.
+How initial software development is funded, moving to follow up
+projects, maintenance, community growth, collaborating with other
+institutions, labs, industry, internationally. Contract relationship
+versus collaborative development between scientists and software
+developers.
 
 \subsection{Training Others to use Software}
 
-Who creates training materials, how are they distributed, integration into courses when projects see very wide application in research.
+Who creates training materials, how are they distributed, integration
+into courses when projects see very wide application in research.
 
 \section{Policy} \label{sec:policy}
 
@@ -477,17 +608,29 @@ Who creates training materials, how are they distributed, integration into cours
 
 \begin{itemize}
 
-\item Coral Calero, M. Angeles Moraga, Manuel F. Bertoa. Towards a Software Product Sustainability Model \cite{Calero_WSSSPE}
+\item Coral Calero, M. Angeles Moraga, Manuel F. Bertoa. Towards a
+  Software Product Sustainability Model \cite{Calero_WSSSPE}
 
-\item Colin C. Venters, Lydia Lau, Michael K. Griffiths, Violeta Holmes, Rupert R. Ward, Jie Xu. The Blind Men and the Elephant: Towards a Software Sustainability Architectural Evaluation Framework \cite{Venters_WSSSPE}
+\item Colin C. Venters, Lydia Lau, Michael K. Griffiths, Violeta
+  Holmes, Rupert R. Ward, Jie Xu. The Blind Men and the Elephant:
+  Towards a Software Sustainability Architectural Evaluation Framework
+  \cite{Venters_WSSSPE}
 
-\item Marlon Pierce, Suresh Marru, Chris Mattmann. Sustainable Cyberinfrastructure Software Through Open Governance \cite{Pierce_WSSSPE}
+\item Marlon Pierce, Suresh Marru, Chris Mattmann. Sustainable
+  Cyberinfrastructure Software Through Open Governance
+  \cite{Pierce_WSSSPE}
 
-\item Daniel S. Katz, David Proctor. A Framework for Discussing e-Research Infrastructure Sustainability \cite{Katz_WSSSPE}
+\item Daniel S. Katz, David Proctor. A Framework for Discussing
+  e-Research Infrastructure Sustainability \cite{Katz_WSSSPE}
 
-\item Christopher Lenhardt, Stanley Ahalt, Brian Blanton, Laura Christopherson, Ray Idaszak. Data Management Lifecycle and Software Lifecycle Management in the Context of Conducting Science \cite{Lenhardt_WSSSPE}
+\item Christopher Lenhardt, Stanley Ahalt, Brian Blanton, Laura
+  Christopherson, Ray Idaszak. Data Management Lifecycle and Software
+  Lifecycle Management in the Context of Conducting Science
+  \cite{Lenhardt_WSSSPE}
 
-\item Nicholas Weber, Andrea Thomer, Michael Twidale. Niche Modeling: Ecological Metaphors for Sustainable Software in Science \cite{Weber_WSSSPE}
+\item Nicholas Weber, Andrea Thomer, Michael Twidale. Niche Modeling:
+  Ecological Metaphors for Sustainable Software in Science
+  \cite{Weber_WSSSPE}
 
 \end{itemize}
 
@@ -495,21 +638,30 @@ Who creates training materials, how are they distributed, integration into cours
 
 \begin{itemize}
 
-\item Matthew Knepley, Jed Brown, Lois Curfman McInnes, Barry Smith. Accurately Citing Software and Algorithms Used in Publications \cite{Knepley_WSSSPE}
+\item Matthew Knepley, Jed Brown, Lois Curfman McInnes, Barry
+  Smith. Accurately Citing Software and Algorithms Used in
+  Publications \cite{Knepley_WSSSPE}
 
-\item Jason Priem, Heather Piwowar. Toward a comprehensive impact report for every software project \cite{Priem_WSSSPE}
+\item Jason Priem, Heather Piwowar. Toward a comprehensive impact
+  report for every software project \cite{Priem_WSSSPE}
 
-\item Daniel S. Katz. Citation and Attribution of Digital Products: Social and Technological Concerns \cite{Katz2_WSSSPE}
+\item Daniel S. Katz. Citation and Attribution of Digital Products:
+  Social and Technological Concerns \cite{Katz2_WSSSPE}
 
-\item Neil Chue Hong, Brian Hole, Samuel Moore. Software Papers: improving the reusability and sustainability of scientific software \cite{Chue_Hong_WSSSPE}
+\item Neil Chue Hong, Brian Hole, Samuel Moore. Software Papers:
+  improving the reusability and sustainability of scientific software
+  \cite{Chue_Hong_WSSSPE}
 
 \end{itemize}
 
-In addition, the following paper from another area were also discussed in this area.
+In addition, the following paper from another area were also discussed
+in this area.
 
 \begin{itemize}
 
-\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik Schnetter. Cactus: Issues for Sustainable Simulation Software \cite{Loffler_WSSSPE}
+\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik
+  Schnetter. Cactus: Issues for Sustainable Simulation Software
+  \cite{Loffler_WSSSPE}
 
 \end{itemize}
 
@@ -517,7 +669,9 @@ In addition, the following paper from another area were also discussed in this a
 
 \begin{itemize}
 
-\item Victoria Stodden, Sheila Miguez. Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research \cite{Stodden_WSSSPE}
+\item Victoria Stodden, Sheila Miguez. Best Practices for
+  Computational Science: Software Infrastructure and Environments for
+  Reproducible and Extensible Research \cite{Stodden_WSSSPE}
 
 \end{itemize}
 
@@ -525,20 +679,27 @@ In addition, the following paper from another area were also discussed in this a
 
 \begin{itemize}
 
-\item Randy Heiland, Betsy Thomas, Von Welch, Craig Jackson. Toward a Research Software Security Maturity Model \cite{Heiland_WSSSPE}
+\item Randy Heiland, Betsy Thomas, Von Welch, Craig Jackson. Toward a
+  Research Software Security Maturity Model \cite{Heiland_WSSSPE}
 
-\item Brian Blanton, Chris Lenhardt, A User Perspective on Sustainable Scientific Software \cite{Blanton_WSSSPE}
+\item Brian Blanton, Chris Lenhardt, A User Perspective on Sustainable
+  Scientific Software \cite{Blanton_WSSSPE}
 
-\item Daisie Huang, Hilmar Lapp. Software Engineering as Instrumentation for the Long Tail of Scientific Software \cite{Huang_WSSSPE}
+\item Daisie Huang, Hilmar Lapp. Software Engineering as
+  Instrumentation for the Long Tail of Scientific Software
+  \cite{Huang_WSSSPE}
 
-\item Rich Wolski, Chandra Krintz, Hiranya Jayathilaka, Stratos Dimopoulos, Alexander Pucher. Developing Systems for API Governance \cite{Wolski_WSSSPE}
- 
+\item Rich Wolski, Chandra Krintz, Hiranya Jayathilaka, Stratos
+  Dimopoulos, Alexander Pucher. Developing Systems for API Governance
+  \cite{Wolski_WSSSPE}
+
 \end{itemize}
 
 
 \subsection{Career Tracks for Scientific Software Developers}
 
-How to ensure software is sustainable by ensuring there are career paths for developers.
+How to ensure software is sustainable by ensuring there are career
+paths for developers.
 
 \section{Communities} \label{sec:community}
 
@@ -550,35 +711,61 @@ How to ensure software is sustainable by ensuring there are career paths for dev
 
 \begin{itemize}
 
-\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific Software through the Open Community Engagement Process \cite{Christopherson_WSSSPE}
+\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific
+  Software through the Open Community Engagement Process
+  \cite{Christopherson_WSSSPE}
 
-\item Reagan Moore. Extensible Generic Data Management Software \cite{Moore_WSSSPE}
+\item Reagan Moore. Extensible Generic Data Management Software
+  \cite{Moore_WSSSPE}
 
-\item Karen Cranston, Todd Vision, Brian O'Meara, Hilmar Lapp. A grassroots approach to software sustainability \cite{Cranston_WSSSPE}
+\item Karen Cranston, Todd Vision, Brian O'Meara, Hilmar Lapp. A
+  grassroots approach to software sustainability
+  \cite{Cranston_WSSSPE}
 
-\item J.-L. Vay, C. G. R. Geddes, A. Koniges, A. Friedman, D. P. Grote, D. L. Bruhwiler. White Paper on DOE-HEP Accelerator Modeling Science Activities \cite{Vay_WSSSPE}
+\item J.-L. Vay, C. G. R. Geddes, A. Koniges, A. Friedman,
+  D. P. Grote, D. L. Bruhwiler. White Paper on DOE-HEP Accelerator
+  Modeling Science Activities \cite{Vay_WSSSPE}
 
-\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar, Borries Demeler. Science Gateway Operational Sustainability: Adopting a Platform-as-a-Service Approach \cite{Pierce2_WSSSPE}
+\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar,
+  Borries Demeler. Science Gateway Operational Sustainability:
+  Adopting a Platform-as-a-Service Approach \cite{Pierce2_WSSSPE}
 
-\item Lynn Zentner, Michael Zentner, Victoria Farnsworth, Michael McLennan, Krishna Madhavan, and Gerhard Klimeck, nanoHUB.org: Experiences and Challenges in Software Sustainability for a Large Scientific Community \cite{Zentner_WSSSPE}
+\item Lynn Zentner, Michael Zentner, Victoria Farnsworth, Michael
+  McLennan, Krishna Madhavan, and Gerhard Klimeck, nanoHUB.org:
+  Experiences and Challenges in Software Sustainability for a Large
+  Scientific Community \cite{Zentner_WSSSPE}
 
-\item Andy Terrel. Sustaining the Python Scientific Software Community \cite{Terrel_WSSSPE}
+\item Andy Terrel. Sustaining the Python Scientific Software Community
+  \cite{Terrel_WSSSPE}
 
-\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik Schnetter. Cactus: Issues for Sustainable Simulation Software \cite{Loffler_WSSSPE}
+\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik
+  Schnetter. Cactus: Issues for Sustainable Simulation Software
+  \cite{Loffler_WSSSPE}
 
-\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak Mookherjee. Reusability in Science: From Initial User Engagement to Dissemination of Results \cite{Maheshwari_WSSSPE}
+\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin
+  M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak
+  Mookherjee. Reusability in Science: From Initial User Engagement to
+  Dissemination of Results \cite{Maheshwari_WSSSPE}
 
-\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion Dooley, Dan Stanzione. Science Gateways and the Importance of Sustainability \cite{Wilkins-Diehr_WSSSPE}
+\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon
+  Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion
+  Dooley, Dan Stanzione. Science Gateways and the Importance of
+  Sustainability \cite{Wilkins-Diehr_WSSSPE}
 
-\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott Chamberlain. rOpenSci -- a collaborative effort to develop R-based tools for facilitating Open Science \cite{Hart_WSSSPE}
+\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott
+  Chamberlain. rOpenSci -- a collaborative effort to develop R-based
+  tools for facilitating Open Science \cite{Hart_WSSSPE}
 
 \end{itemize}
 
-In addition, the following paper from another area was also discussed in this area.
+In addition, the following paper from another area was also discussed
+in this area.
 
 \begin{itemize}
 
-\item Marcus Hanwell, Amitha Perera, Wes Turner, Patrick O'Leary, Katie Osterdahl, Bill Hoffman, Will Schroeder. Sustainable Software Ecosystems for Open Science \cite{Hanwell_WSSSPE}
+\item Marcus Hanwell, Amitha Perera, Wes Turner, Patrick O'Leary,
+  Katie Osterdahl, Bill Hoffman, Will Schroeder. Sustainable Software
+  Ecosystems for Open Science \cite{Hanwell_WSSSPE}
 
 \end{itemize}
 
@@ -586,25 +773,36 @@ In addition, the following paper from another area was also discussed in this ar
 
 \begin{itemize}
 
-\item Anne C. Elster. Software for Science: Some Personal Reflections \cite{Elster_WSSSPE}
+\item Anne C. Elster. Software for Science: Some Personal Reflections
+  \cite{Elster_WSSSPE}
 
-\item Ian Foster, Vas Vasiliadis, Steven Tuecke. Software as a Service as a path to software sustainability \cite{Foster_WSSSPE}
+\item Ian Foster, Vas Vasiliadis, Steven Tuecke. Software as a Service
+  as a path to software sustainability \cite{Foster_WSSSPE}
 
-\item Marcus Hanwell, Amitha Perera, Wes Turner, Patrick O'Leary, Katie Osterdahl, Bill Hoffman, Will Schroeder. Sustainable Software Ecosystems for Open Science \cite{Hanwell_WSSSPE}
+\item Marcus Hanwell, Amitha Perera, Wes Turner, Patrick O'Leary,
+  Katie Osterdahl, Bill Hoffman, Will Schroeder. Sustainable Software
+  Ecosystems for Open Science \cite{Hanwell_WSSSPE}
 
 \end{itemize}
 
-In addition, the following papers from other areas were also discussed in this area.
+In addition, the following papers from other areas were also discussed
+in this area.
 
 \begin{itemize}
 
-\item Brian Blanton, Chris Lenhardt, A User Perspective on Sustainable Scientific Software \cite{Blanton_WSSSPE}
+\item Brian Blanton, Chris Lenhardt, A User Perspective on Sustainable
+  Scientific Software \cite{Blanton_WSSSPE}
 
-\item Markus Blatt. DUNE as an Example of Sustainable Open Source Scientific Software Development \cite{Blatt_WSSSPE}
+\item Markus Blatt. DUNE as an Example of Sustainable Open Source
+  Scientific Software Development \cite{Blatt_WSSSPE}
 
-\item Dhabaleswar K. Panda, Karen Tomko, Karl Schulz, Amitava Majumdar. The MVAPICH Project: Evolution and Sustainability of an Open Source Production Quality MPI Library for HPC \cite{Panda_WSSSPE}
+\item Dhabaleswar K. Panda, Karen Tomko, Karl Schulz, Amitava
+  Majumdar. The MVAPICH Project: Evolution and Sustainability of an
+  Open Source Production Quality MPI Library for HPC
+  \cite{Panda_WSSSPE}
 
-\item Andy Terrel. Sustaining the Python Scientific Software Community \cite{Terrel_WSSSPE}
+\item Andy Terrel. Sustaining the Python Scientific Software Community
+  \cite{Terrel_WSSSPE}
 
 \end{itemize}
 
@@ -612,33 +810,50 @@ In addition, the following papers from other areas were also discussed in this a
 
 \begin{itemize}
 
-\item Ivan Girotto, Axel Kohlmeyer, David Grellscheid, Shawn T. Brown. Advanced Techniques for Scientific Programming and Collaborative Development of Open Source Software Packages at the International Centre for Theoretical Physics (ICTP) \cite{Girotto_WSSSPE}
+\item Ivan Girotto, Axel Kohlmeyer, David Grellscheid, Shawn
+  T. Brown. Advanced Techniques for Scientific Programming and
+  Collaborative Development of Open Source Software Packages at the
+  International Centre for Theoretical Physics (ICTP)
+  \cite{Girotto_WSSSPE}
 
-\item Thomas Crawford. On the Development of Sustainable Software for Computational Chemistry \cite{Crawford_WSSSPE}
+\item Thomas Crawford. On the Development of Sustainable Software for
+  Computational Chemistry \cite{Crawford_WSSSPE}
 
 \end{itemize}
 
-In addition, the following papers from other areas were also discussed in this area.
+In addition, the following papers from other areas were also discussed
+in this area.
 
 \begin{itemize}
 
-\item Charles R. Ferenbaugh, Experiments in Sustainable Software Practices for Future Architectures \cite{Ferenbaugh_WSSSPE}
+\item Charles R. Ferenbaugh, Experiments in Sustainable Software
+  Practices for Future Architectures \cite{Ferenbaugh_WSSSPE}
 
-\item David Koop, Juliana Freiere, Cl\'{a}udio T. Silva, Enabling Reproducible Science with VisTrails~\cite{Koop_WSSSPE}
+\item David Koop, Juliana Freiere, Cl\'{a}udio T. Silva, Enabling
+  Reproducible Science with VisTrails~\cite{Koop_WSSSPE}
 
-\item Sean Ahern, Eric Brugger, Brad Whitlock, Jeremy S. Meredith, Kathleen Biagas, Mark C. Miller, Hank Childs, VisIt: Experiences with Sustainable Software \cite{Ahern_WSSSPE}
+\item Sean Ahern, Eric Brugger, Brad Whitlock, Jeremy S. Meredith,
+  Kathleen Biagas, Mark C. Miller, Hank Childs, VisIt: Experiences
+  with Sustainable Software \cite{Ahern_WSSSPE}
 
-\item Sou-Cheng (Terrya) Choi. MINRES-QLP Pack and Reliable Reproducible Research via Staunch Scientific Software \cite{Choi_WSSSPE}
+\item Sou-Cheng (Terrya) Choi. MINRES-QLP Pack and Reliable
+  Reproducible Research via Staunch Scientific Software
+  \cite{Choi_WSSSPE}
 
-\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik Schnetter. Cactus: Issues for Sustainable Simulation Software \cite{Loffler_WSSSPE}
+\item Frank Löffler, Steven R. Brandt, Gabrielle Allen and Erik
+  Schnetter. Cactus: Issues for Sustainable Simulation Software
+  \cite{Loffler_WSSSPE}
 
-\item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big Effects of Short-term Efforts: A Catalyst for Community Engagement in Scientific Software \cite{Trainer_WSSSPE}
+\item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big
+  Effects of Short-term Efforts: A Catalyst for Community Engagement
+  in Scientific Software \cite{Trainer_WSSSPE}
 
 \end{itemize}
 
 \subsection{What are communities?}
 \subsection{Challenges of community}
-include metrics for community success (e.g., more external contributors than internal).
+include metrics for community success (e.g., more external
+contributors than internal).
 \subsection{Admirable scientific software communities}
 \begin{itemize}
 \item example communities
@@ -663,8 +878,11 @@ include metrics for community success (e.g., more external contributors than int
 
 \item From discussion in Phil Bourne's keynote:
 \begin{itemize}
-\item Can sustainability be defined as the effort that happens to make the essential things continue?
-\item What is sustainability? What is it that we want to sustain? Is what we want to sustain valuable? Who cares if it goes away and how do you measure how much they care?
+\item Can sustainability be defined as the effort that happens to make
+  the essential things continue?
+\item What is sustainability? What is it that we want to sustain? Is
+  what we want to sustain valuable? Who cares if it goes away and how
+  do you measure how much they care?
 \end{itemize}
 
 \item from discussion in developing panel
@@ -672,11 +890,23 @@ include metrics for community success (e.g., more external contributors than int
 \begin{itemize}
 \item what does sustainable mean?
 \begin{itemize}
-\item from http://oss-watch.ac.uk/resources/ssmm: When choosing software for procurement or development reuse - regardless of the license and development model you will use - you need to consider the future. While a software product may satisfy today's needs, will it satisfy tomorrow's needs? Will the supplier still be around in five years' time? Will the supplier still care for all its customers in five years' time? Will the supplier be responsive to bug reports and feature requests? In other words, is the software sustainable?
-\item I think this is a key question we as a community need to agree on (whats our problem statement?) and hope we come out today with some progress. - @VonWelch
-\item What is the goal of sustainability? Reproducible science, persistence, quality, or else?
-\item How do you measure success? How do you know when you have actually achieved sustainable software?
-\item Sustainability should be addressed throughout the life cycle (Daisie Huang)
+\item from http://oss-watch.ac.uk/resources/ssmm: When choosing
+  software for procurement or development reuse - regardless of the
+  license and development model you will use - you need to consider
+  the future. While a software product may satisfy today's needs, will
+  it satisfy tomorrow's needs? Will the supplier still be around in
+  five years' time? Will the supplier still care for all its customers
+  in five years' time? Will the supplier be responsive to bug reports
+  and feature requests? In other words, is the software sustainable?
+\item I think this is a key question we as a community need to agree
+  on (whats our problem statement?) and hope we come out today with
+  some progress. - @VonWelch
+\item What is the goal of sustainability? Reproducible science,
+  persistence, quality, or else?
+\item How do you measure success? How do you know when you have
+  actually achieved sustainable software?
+\item Sustainability should be addressed throughout the life cycle
+  (Daisie Huang)
 \end{itemize}
 
 \item What is the relationship between sustainability and provenance?
@@ -687,37 +917,40 @@ include metrics for community success (e.g., more external contributors than int
 \item from discussion in policy panel
 
 \begin{itemize}
-\item Chris Lenhardt's presentation of Venters paper~\cite{Venters_WSSSPE} included:
+\item Chris Lenhardt's presentation of Venters
+  paper~\cite{Venters_WSSSPE} included:
 
 \begin{itemize}
 \item What does software sustainability mean
 It ``is a rather ambiguous concept...''
-\item Lack of an accepted definition gets in the way of integrating the concept into software engineering
+\item Lack of an accepted definition gets in the way of integrating
+  the concept into software engineering
 \item Sustainability as a non-functional requirement
 \item Quality of software architectures determines sustainability
-\item Propose sustainability is a measure of central quality attributes:
-Extensibility,
-Interoperability,
-Maintainability,
-Portability,
-Reusability,
-Scalability
-\item Develop an architecture evaluation framework based on scenarios which help to illuminate how to measure quality/sustainability at the architectural level
+\item Propose sustainability is a measure of central quality
+  attributes: Extensibility, Interoperability, Maintainability,
+  Portability, Reusability, Scalability
+\item Develop an architecture evaluation framework based on scenarios
+  which help to illuminate how to measure quality/sustainability at
+  the architectural level
 \end{itemize}
 
-\item Chris Lenhardt's presentation of Katz paper~\cite{Katz_WSSSPE} included:
+\item Chris Lenhardt's presentation of Katz paper~\cite{Katz_WSSSPE}
+  included:
 \begin{itemize}
 \item Clarifying the notion of sustainability
 \begin{itemize}
 \item Provide same functionality going forward even if environment changes
 \item Is functionality and usability clear
-\item Will functionality be correct going into the future even if environment changes
+\item Will functionality be correct going into the future even if
+  environment changes
 \item Is the functionality desired by current and future users
 \item Can it incorporate new things as they develop
 \end{itemize}
 \end{itemize}
 
-\item see slide 9 of \url{http://dx.doi.org/10.6084/m9.figshare.853817} for summary table
+\item see slide 9 of
+  \url{http://dx.doi.org/10.6084/m9.figshare.853817} for summary table
 
 \item also see discussion at \url{https://docs.google.com/document/d/1eVfioGNlihXG_1Y8BgdCI6tXZKrybZgz5XuQHjT1oKU/edit?pli=1#bookmark=id.2pxw5yey8jl0}
 
@@ -729,16 +962,21 @@ Scalability
 \section{Illustrative Use Cases} \label{sec:use-cases}
 
 
-Perhaps discuss sustained software use-cases and issues surrounding them. Some examples could be mvapich, Galaxy, Swift, Cactus, etc.
+Perhaps discuss sustained software use-cases and issues surrounding
+them. Some examples could be mvapich, Galaxy, Swift, Cactus, etc.
 
-\note{Dan: do we need this section?  I think there's some overlap between this and the discussion in the Developing and Support Software section.  Or perhaps this should go in the cross-cutting issues section?}
+\note{Dan: do we need this section?  I think there's some overlap
+  between this and the discussion in the Developing and Support
+  Software section.  Or perhaps this should go in the cross-cutting
+  issues section?}
 
 \section{Conclusions} \label{sec:conclusions}
 
 
 \todo{pull the discussion together}
 
-\todo{add some analysis of the deficiencies and difficulties that are present in different fields, and those that are common?}
+\todo{add some analysis of the deficiencies and difficulties that are
+  present in different fields, and those that are common?}
 
 \todo{say something about licensing - lessons, advice, etc.?}
 
@@ -748,21 +986,25 @@ Perhaps discuss sustained software use-cases and issues surrounding them. Some e
 
 \subsection{Follow up actions}
 
-\note{or at least the discussion about them, and the current plans for future events.}
+\note{or at least the discussion about them, and the current plans for
+  future events.}
 
 \note{conclusions from pre-workshop paper follows}
 
-The WSSSPE workshop has begun an experiment in how we can collaboratively build a workshop 
-agenda. However, contributors also want to get credit for their participation in the process. And the 
-workshop organizers want to make sure that the workshop content and their efforts are recorded. 
-Ideally, there would be a service that would be able to index the contributions to the workshop, 
-serving the authors, the organizers, and the larger community. But since there isn't such a service 
-today, the workshop organizers are writing this initial report and making use of arXiv as a partial 
-solution to provide a record of the workshop.
+The WSSSPE workshop has begun an experiment in how we can
+collaboratively build a workshop agenda. However, contributors also
+want to get credit for their participation in the process. And the
+workshop organizers want to make sure that the workshop content and
+their efforts are recorded.  Ideally, there would be a service that
+would be able to index the contributions to the workshop, serving the
+authors, the organizers, and the larger community. But since there
+isn't such a service today, the workshop organizers are writing this
+initial report and making use of arXiv as a partial solution to
+provide a record of the workshop.
 
-After the workshop, one or more additional papers will be created that will include the discussions at 
-the workshop. These papers will likely have many authors, and may be submitted to peer-reviewed 
-journals.
+After the workshop, one or more additional papers will be created that
+will include the discussions at the workshop. These papers will likely
+have many authors, and may be submitted to peer-reviewed journals.
 
 
 \section*{Acknowledgments}
@@ -770,7 +1012,8 @@ journals.
 \appendix
 \section{List of attendees}
 
-The following is a partial list of attendees who were recorded on the Google doc that was being used for live note taking at the workshop:
+The following is a partial list of attendees who were recorded on the
+Google doc that was being used for live note taking at the workshop:
 
 \begin{tabular}{ L{4cm}  L{4cm}  L{4cm}  L{4cm} }
    Daniel S. Katz
@@ -841,7 +1084,7 @@ The following is a partial list of attendees who were recorded on the Google doc
 & Lynn Zentner
 & Frank Löffler
 & Patrick O'Leary
-\end{tabular} 
+\end{tabular}
 
 
 
@@ -849,4 +1092,3 @@ The following is a partial list of attendees who were recorded on the Google doc
 
 \bibliography{wssspe}
 \end{document}
-
