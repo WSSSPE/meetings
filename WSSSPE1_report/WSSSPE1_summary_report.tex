@@ -884,7 +884,7 @@ contributors than internal).
 
 The question of what was meant by ``sustainability'' in the context of software
 came up in many different parts of the workshop, specifically in one of the
-keynotes, the Developing and Maintaining Software panel, and the Policy panel. \todo{check closing discussion notes for this topic}
+keynotes, the Developing and Maintaining Software panel, and the Policy panel.
 
 In his keynote, Phil Bourne suggested that perhaps sustainability can be defined
 as the effort that happens to make the essential things continue. This leads to
@@ -918,52 +918,39 @@ full software life cycle.
 
 Another topic that came up during the Developing and Maintaining Software
 panel is the relationship of sustainability to other software attributes.  Attendees
-asked: what is the relationship between sustainability and provenance? And:
-is usability separate from sustainability or a fundamental part of it?
+asked ``what is the relationship between sustainability and provenance?'' And,
+``is usability separate from sustainability or a fundamental part of it?''
 
-\note{rest of section will be turned from bullets into text...}
+In addition, the Policy panel had a large amount of discussion about
+defining sustainability, as one of the subtopics in that panel was
+Modeling Sustainability, and modeling requires defining what will be modeled.
 
-In the Policy panel,
+In this subtopic, two papers included discussion of the definition of
+sustainability.  Venters et al.~\cite{Venters_WSSSPE} mentioned
+that this is a rather ambiguous concept, and that the lack of an accepted
+definition gets in the way of integrating the concept into software engineering.
+They suggest that sustainability is a non-functional requirement, and that the
+quality of software architectures determines sustainability.  They then
+propose that sustainability is a measure of a set of central quality attributes:
+extensibility, interoperability, maintainability, portability, reusability, and scalability.
+Finally, they develop an architecture evaluation framework based on scenarios
+that helps to illuminate how to measure quality/sustainability at
+the architectural level.
 
-\begin{itemize}
-\item Chris Lenhardt's presentation of Venters
-  paper~\cite{Venters_WSSSPE} included:
+Katz and Proctor~\cite{Katz_WSSSPE} included a set of questions that could
+be used to measure software sustainability, and though these questions might falsely lead
+to yes or no answers, the complete set would determine a range of values for
+sustainability. These question are:
+Will the software provide same functionality going forward even if environment changes?
+Are the functionality and usability clear?
+Will functionality be correct going into the future even if environment changes?
+Is the functionality that which is desired by current and future users?
+Can the software incorporate new things as they develop?
+\todo{check paper for wording - might be better there than in this version, which comes from bullets}
 
-\begin{itemize}
-\item What does software sustainability mean
-It ``is a rather ambiguous concept...''
-\item Lack of an accepted definition gets in the way of integrating
-  the concept into software engineering
-\item Sustainability as a non-functional requirement
-\item Quality of software architectures determines sustainability
-\item Propose sustainability is a measure of central quality
-  attributes: Extensibility, Interoperability, Maintainability,
-  Portability, Reusability, Scalability
-\item Develop an architecture evaluation framework based on scenarios
-  which help to illuminate how to measure quality/sustainability at
-  the architectural level
-\end{itemize}
+\todo{See slide 9 of \url{http://dx.doi.org/10.6084/m9.figshare.853817} for summary table - incorporate/include table?}
 
-\item Chris Lenhardt's presentation of Katz paper~\cite{Katz_WSSSPE}
-  included:
-\begin{itemize}
-\item Clarifying the notion of sustainability
-\begin{itemize}
-\item Provide same functionality going forward even if environment changes
-\item Is functionality and usability clear
-\item Will functionality be correct going into the future even if
-  environment changes
-\item Is the functionality desired by current and future users
-\item Can it incorporate new things as they develop
-\end{itemize}
-\end{itemize}
-
-\item see slide 9 of
-  \url{http://dx.doi.org/10.6084/m9.figshare.853817} for summary table
-
-\item also see discussion at \url{https://docs.google.com/document/d/1eVfioGNlihXG_1Y8BgdCI6tXZKrybZgz5XuQHjT1oKU/edit?pli=1#bookmark=id.2pxw5yey8jl0}
-
-\end{itemize}
+\todo{Also see discussion at:} \url{https://docs.google.com/document/d/1eVfioGNlihXG_1Y8BgdCI6tXZKrybZgz5XuQHjT1oKU/edit?pli=1#bookmark=id.2pxw5yey8jl0}
 
 
 \section{Illustrative Use Cases} \label{sec:use-cases}
