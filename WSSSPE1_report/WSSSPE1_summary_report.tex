@@ -708,15 +708,144 @@ paths for developers.
 
 \todo{section should include what was presented and what was discussed}
 
-\subsection{Papers}
+There were a number of papers categorized under the Communities banner and so two presenters each summarized half of the submissions in this area.
 
-\subsubsection*{Communities}
+\subsection{Communities Part 1}
+
+This collection of papers was summarized by Karen Cranston.
+
+\subsection{Communities Part 2}
+
+Nancy Wilkins-Diehr summarized 6 papers in "Communities Part 2". The Christopherson paper outlines the degree to which research
+relies on high quality software. There are often barriers and a lack of suitable incentives for researchers to embrace software engineering principals.
+The Water Science Software Institute is working to lower some of these barriers through an Open Community Engagement Process.
+This is a 4-step iterative development process that incorporates Agile development principals.
 
 \begin{itemize}
 
-\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific
-  Software through the Open Community Engagement Process
-  \cite{Christopherson_WSSSPE}
+\item Step 1 - Design - thorough discussion of research questions
+\item Step 2 - Develop working code
+\item Step 3 - Refine based on new requirements
+\item Step 4 - Publish open source
+
+\end{itemize}
+
+The Christopherson paper reports on the application of Steps 1-3 to a computational modeling framework developed in the 1990s.
+Step 1 was realized as a 2-day, in person specifications meeting and code walk-through. Step 2 was a 5-day hack-athon to develop working code.
+Step 3 was a 3-day hack-a-thon to refine the code based on new requirements. The team worked on small, low-risk unit of 
+code. It was challenging, revealed unanticipated obstacles, programmers had to work together, and experimentation was encouraged.
+
+The paper summarized recommendations to others wishing to engage in this or a similar process. Start small and gradually 
+build toward more complex objectives. This is consistent with Agile development. Refactor before adding new functionality.
+Approach development as a learning experience. Welcome experimentation, and treat mistakes as a natural part of the learning process.
+Repeat Step 1 activities before all hackathons to develop consensus before coding. This allows coding to be the focus of subsequent hackathons. 
+In higher risk situations, provide additional time for Step 1 activities. The Christopherson team recommends a minimum of two months.
+Ensure any newcomers receive some form of orientation prior to the hackathon, such as a code walkthrough or system documentation.
+Co-locate rather than collaborating remotely whenever feasible.
+
+The Pierce paper described how science gateways can provide a user-friendly entry to complex cyberinfrastructure. The paper opens with a description of the explosion of use of just a few gateways. 
+Over 3.5 years, more than 7,000 biologists have run phylogenetic codes on supercomputers using the CIPRES Science Gateway. In 1 year, over 120 scientists from 50 institutions used the UltraScan Science Gateway, 
+increasing the sophistication of analytical ultracentrifugation experiments worldwide. The new Neuroscience Gateway (NSG) registered 100+ 
+users who used 250,000 CPU hours in only a few months.
+
+Gateways, however, need to keep operational costs low and can often make use of common components. Science Gateway Platform as a Service (Sci-GaP)
+delivers middleware as a hosted, scalable third-party service while domain developers focus on user interfaces and domain-specific data in the gateway.
+The middleware handles things like authentication, application installation and reliable execution and help desk support.
+
+One key to SciGaP is its openness. While based on Apache Airavata project and the CIPRES Workbench Framework, community contributions are encouraged because of its open source, open governance and open operations policies.
+The goal is robust, sustainable infrastructure with a cycle of development that improves reliability and prioritizes
+stakeholder requirements. The project is leveraging Internet2's Net+ mechanisms for converting SciGaP and its gateways into commodity services.
+
+The Zentner paper describes experiences and challenges with the large nanoHUB.org community. They define community as 
+a ``body of persons of common and especially professional interests scattered through a larger society.'' This makes support
+challenging because of the diversity of viewpoints and needs. The group constantly examines its policies to determine
+whether they are indirectly alienating part of the community or encouraging particular types of use.
+
+nanoHUB's 10-year history with over 260,000 users annually provides a lot of data to analyze. 4000 resources contributed by
+1000 authors. nanoHUB serves both the research and education community and the contribution model allows researchers to get
+their codes out into the community and in use in education very rapidly. The primary software challenges are twofold - support
+for the HUBzero framework and challenges related to the software contributed by the community.
+
+The group has learned that community contributions are maximized with a tolerant licensing approach. HUBzero uses an 
+LGPLv3 license so contributors can create unique components and license as they choose. If they make changes to source 
+code, the original license must be maintained for redistribution. As far as contributed resources, these must be open access,
+but not necessarily open source. This allows contributors to meet the requirements of their institutions and funding agencies.
+Quality is maintained via user ratings. Documentation is encouraged and nanoHUB supplies regression test capabilities, but 
+the user community provides ratings, poses questions and contributes to wishlists and citation counts - all of which incentivize
+code authors.
+
+The Terrel paper describes support for the Python scientific community through two major efforts - the SciPy conference and the
+NumFOCUS foundation. Reliance on software in science has driven a huge demand for development, but this development is typically done as a side effort
+and often in a rush to publish without documentation and testing.
+While created by academics, software support often falls to industrial institutions. SciPy brings together industry, government, 
+and academics to share their code and experience in an open environment. 
+
+NumFOCUS promotes open, usable scientific software while sustaining the community. Specific activities include educational programs, 
+collaborative research tools and documentation and 
+promotion of high-level languages, reproducible scientific research, and open-code development.
+Governance of the non-profit is a loose grantor-grantee relationship with projects allowing for monies to be placed in the groups accounts.
+This has raised money to hire developers for open code development, maintain testing machines, organize the PyData conference series, and sponsor community members to attend conferences.
+
+Software sustainability relies on contributions from all sectors of user community. Together SciPy and NumFOCUS support these sectors. By maximizing contributions growing the user base they help develop and mature Python.
+
+The L\"{o}ffler paper describes the Cactus project which was started in 1996 by participants in USA Binary Black Hole Alliance 
+Challenge. Cactus has a flesh and thorns model - a community-oriented framework that allows researchers to easily work 
+together with reusable and extendable software elements. Modules are compiled into an executable and can remain dormant, becoming
+active only when parameters and simulation data dictate. Users can  use modules written by others or can write their own 
+modules without changing other code. The community has grown and diversified beyond the original science areas.
+
+The paper points out 4 keys to sustaining the community - modular design, growing a collaborative community, career paths and credit.
+In modular design, the Cactus project went far beyond standard practices of APIs. 
+Domain specific languages (DSLs) allow decoupling of components - for example I/O, mesh refinement, PAPI counters, and
+boundary conditions abstracted from science code. In academia, publications are the main currency of credit. Because the 
+project connects code developments to science, the work is 
+publishable and modules are citable. Because of the open source, modular approach, programmers can see the impact of their contributions and often continue
+work after graduation. Career paths remain a challenge, however. Tasks that are essential from a software engineering perspective
+are often not rewarded in academia. The best programmers in a science environment often have multidisciplinary expertise.
+That also is not rewarded in academia.
+
+The Wilkins-Diehr paper describes an NSF software institute effort to build a community of those creating science gateways or
+web portals for science. These gateways, as described in some of the other papers in this section, can be quite capable, having a 
+remarkable impact on science. 
+
+This paper mentioned challenges highlighted by other papers in this section - mainly the conflict between funding for research
+vs infrastructure and the challenges around getting academic credit for infrastructure. Because the authors have studied
+many projects, they've also observed how development is often done in an isolated hobbyist environment. Developers are unable
+to take advantage of similar work done by others. isolation even when projects have common needs.
+But often projects struggle for sustainable funding because they provide infrastructure to conduct
+research and many times only the research is funded. Gateways also may start as small group research project, taking off in popularity
+once they go live without any long term plans for sustainability or without resources in the project to plan for such.
+Subsequent disruptions in service can limit effectiveness and test the limits of the research community's trust. The impact
+of gateways can be increased substantially if we understand what makes them successful.
+
+Recommendations from an early study of successful gateways include the following. Leadership and management teams should 
+design governance to represent multiple strengths and perspectives, plan for change and turnover in the future, 
+recruit a development team that understands both the technical and domain-related issues, consider sustainability and measure success early and often.
+Successful projects recognize the benefits and costs of hiring a team of professionals, demonstrate credibility through stability and 
+clarity of purpose, leverage the work of others and plan for flexibility.
+Successful projects identify an existing community and understand that communities' needs before beginning. Projects adapt
+as the communities' needs evolve. For funders, the lifecycle of technology projects must be considered. Solicitations should
+be designed to reward effective planning, recognize the benefits and limitations of both technology innovation and reuse,
+expect adjustments during the production process, copy effective models from other industries and sectors, and encourage partnerships that support gateway sustainability.
+
+
+Through a business incubator type approach, the institute plans to provide a variety of services that could be shared amongst
+projects. Consultation and resources on topics such as business plan development, software engineering practices, 
+software licensing options, usability, security and project management as well as a software repository and hosting 
+service will be available. Experts will be available for multi-month assignments to help research teams build their own gateways,
+teaching them how to maintain and add to the work after the collaboration ends. Forums, symposia and an annual conference
+will connect members of the development community. A modular, layered framework that supports community contributions and 
+allows developers to choose components will be delivered and finally 
+workforce development activities will help train the next generation for careers in this cross- disciplinary area and 
+build pools of institutional expertise that many projects can leverage. Shared services and forums can dramatically reduce the cost
+of building and sustaining gateways. Workforce development can encourage technology professionals to remain in the sciences.
+
+
+\subsection{Papers}
+
+\subsubsection*{Communities Part 1 Papers}
+
+\begin{itemize}
 
 \item Reagan Moore. Extensible Generic Data Management Software
   \cite{Moore_WSSSPE}
@@ -729,9 +858,19 @@ paths for developers.
   D. P. Grote, D. L. Bruhwiler. White Paper on DOE-HEP Accelerator
   Modeling Science Activities \cite{Vay_WSSSPE}
 
-\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar,
-  Borries Demeler. Science Gateway Operational Sustainability:
-  Adopting a Platform-as-a-Service Approach \cite{Pierce2_WSSSPE}
+\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak Mookherjee. Reusability in Science: From Initial User Engagement to Dissemination of Results \cite{Maheshwari_WSSSPE}
+
+\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott Chamberlain. rOpenSci -- a collaborative effort to develop R-based tools for facilitating Open Science \cite{Hart_WSSSPE}
+
+\end{itemize}
+
+\subsubsection*{Communities Part 2 Papers}
+
+\begin{itemize}
+
+\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific Software through the Open Community Engagement Process \cite{Christopherson_WSSSPE}
+
+\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar, Borries Demeler. Science Gateway Operational Sustainability: Adopting a Platform-as-a-Service Approach \cite{Pierce2_WSSSPE}
 
 \item Lynn Zentner, Michael Zentner, Victoria Farnsworth, Michael
   McLennan, Krishna Madhavan, and Gerhard Klimeck, nanoHUB.org:
@@ -745,19 +884,7 @@ paths for developers.
   Schnetter. Cactus: Issues for Sustainable Simulation Software
   \cite{Loffler_WSSSPE}
 
-\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin
-  M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak
-  Mookherjee. Reusability in Science: From Initial User Engagement to
-  Dissemination of Results \cite{Maheshwari_WSSSPE}
-
-\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon
-  Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion
-  Dooley, Dan Stanzione. Science Gateways and the Importance of
-  Sustainability \cite{Wilkins-Diehr_WSSSPE}
-
-\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott
-  Chamberlain. rOpenSci -- a collaborative effort to develop R-based
-  tools for facilitating Open Science \cite{Hart_WSSSPE}
+\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion Dooley, Dan Stanzione. Science Gateways and the Importance of Sustainability \cite{Wilkins-Diehr_WSSSPE}
 
 \end{itemize}
 
@@ -943,7 +1070,11 @@ be used to measure software sustainability, and though these questions might fal
 to yes or no answers, the complete set would determine a range of values for
 sustainability. These question are:
 \begin{itemize}
-\item Will the software continue to provide the same functionality in the future, even if the environment (other parts of the infrastructure) changes?\item Is the functionality and usability clearly explained to new users? Do users have a mechanism to ask questions and to learn about the element?\item Will the functionality be correct in the future, even if the environment changes?\item Does it provide the functionality that existing and future users want?\item Does it incorporate new science/theory/tools as they develop?
+\item Will the software continue to provide the same functionality in the future, even if the environment (other parts of the infrastructure) changes?
+\item Is the functionality and usability clearly explained to new users? Do users have a mechanism to ask questions and to learn about the element?
+\item Will the functionality be correct in the future, even if the environment changes?
+\item Does it provide the functionality that existing and future users want?
+\item Does it incorporate new science/theory/tools as they develop?
 \end{itemize}
 
 Lenhardt~\cite{lenhardt-wssspe1-panel} summarized the contributions of the Modeling Sustainability papers as in Table~\ref{tab:defining-sustainability}. \todo{discussion of this?}
