@@ -1163,45 +1163,32 @@ having an agreed version of what we mean by sustainability.
 Following is a list of software projects discussed throughout the workshop:
 
 \begin{itemize}
-    \item github
-    \item mvapich
-    \item Cactus
-    \item visTrails
-    \item MINRES-QLP
-    \item SimGrid
-    \item Swift
-    \item Galaxy
-    \item FastMath and package managers
-    \item R/qtl
-    \item OWL/RDF
-    \item AMR/multiphysics
-    \item DUNE
-    \item PAAS
-    \item Gateways
-    \item Globus-Genomics
+    \item mvapich, Cactus, DUNE
+    \item gateways, github, VisIT, visTrails, PAAS
+    \item SimGrid, Swift, Galaxy
+    \item FastMath, R/qtl, MINRES-QLP
+    \item OWL/RDF, AMR/multiphysics, Globus-Genomics
 \end{itemize}
 
 In this section, we discuss the following:
 \begin{itemize}
     \item Categorize the real-world software projects into workshop themes. This is based on the aspect of a software project that dominates and best fits one of the workshop themes.
-    \item Discuss how the theme has impacted software projects over its lifetime.
-    \item Discuss similarities and differences between these projects.
+    \item How the worshop themes are applicable to and has impacted software projects over its lifetime.
+    \item Similarities and differences between these projects.
     \item What is a takeaway for a new project? What are the lessons learned? How can the course of current and future development projects be altered to implement lessons learned.
 \end{itemize}
 
 The software projects discussed in the workshop can be classified as follows:
+\begin{itemize}
+\item General Purpose Software applicable to a generic task and/or enabling other software to run by providing suitable environment. eg. Collaborative development, Workflow and scripting frameworks, visualization frameworks.
+\item Special Purpose Software that was developed specifically for a target use-case scenario or keeping some fixed/frozen requirements in mind.
+\begin{itemize}
+  \item Domain science oriented software developed to solve domain science problems, eg. MINRES-QLP.
+  \item Infrastructure oriented software developed to better utilize new infrastructure, eg. MVAPICH.
+\end{itemize}
+\end{itemize}
 
-- General Purpose
-    Software that enables other software to run by providing suitable environment. eg. Collaborative development, Workflow and scripting frameworks
-
-- Special Purpose
-Software that was developed specifically for a target use-case scenario or keeping some fixed requirements in mind.
-
---Science Oriented
-      Software developed to solve domain science problems eg. MINRES-QLP
-
---Infrastructure Oriented
-      Software developed to better utilize new infrastructure, eg. MVAPICH
+A recurrent theme of the workshop was following best practices while developing software. Many submissions discuss software development best practices.
 
 \note{Dan: do we need this section?  I think there's some overlap
   between this and the discussion in the Developing and Support
