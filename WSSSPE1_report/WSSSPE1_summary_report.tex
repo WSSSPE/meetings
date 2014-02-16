@@ -751,8 +751,8 @@ This is a 4-step iterative development process that incorporates Agile developme
 \end{itemize}
 
 The Christopherson paper reports on the application of Steps 1-3 to a computational modeling framework developed in the 1990s.
-Step 1 was realized as a 2-day, in person specifications meeting and code walk-through. Step 2 was a 5-day hack-athon \todo{we spell hackathon three different ways in two paragraphs - Pick one and be consistent.} to develop working code.
-Step 3 was a 3-day hack-a-thon to refine the code based on new requirements. The team worked on small, low-risk unit of
+Step 1 was realized as a 2-day, in person specifications meeting and code walk-through. Step 2 was a 5-day hackathon to develop working code.
+Step 3 was a 3-day hackathon to refine the code based on new requirements. The team worked on small, low-risk unit of
 code. It was challenging, revealed unanticipated obstacles, programmers had to work together, and experimentation was encouraged.
 
 The paper summarized recommendations to others wishing to engage in this or a similar process. Start small and gradually
@@ -1156,39 +1156,51 @@ One of the answers that was suggested was
 having an agreed version of what we mean by sustainability.
 
 
-\section{Illustrative Use Cases} \label{sec:use-cases}
-
+\section{Case Studies} \label{sec:use-cases}
 \note{lead: Ketan Maheshwari, contributors: Andy Terrel}
 
-Following is a list of software projects discussed throughout the workshop:
+For the purpose of studying software case-studies we classify the software
+projects discussed in the workshop into three broad categories. First, the
+`utility software', software tools that enable and/or facilitate the
+development of other tools and techniques to carry out scientific work. Second,
+the `scientific software', software that was developed with an aim to solve a
+class of scientific problems. Third, the `infrastructure software', software
+developed to efficiently utilize new research infrastructure.
 
-\begin{itemize}
-    \item mvapich, Cactus, DUNE
-    \item gateways, github, VisIT, visTrails, PAAS
-    \item SimGrid, Swift, Galaxy
-    \item FastMath, R/qtl, MINRES-QLP
-    \item OWL/RDF, AMR/multiphysics, Globus-Genomics
-\end{itemize}
+Although we anticipate overlap in categories and point it out in our
+discussion. The classification is based on two criterions: First, the character
+of a software project that dominates and best fits and the theme the paper
+discussing the project was placed in the workshop discussion. 
 
-In this section, we discuss the following:
-\begin{itemize}
-    \item Categorize the real-world software projects into workshop themes. This is based on the aspect of a software project that dominates and best fits one of the workshop themes.
-    \item How the worshop themes are applicable to and has impacted software projects over its lifetime.
-    \item Similarities and differences between these projects.
-    \item What is a takeaway for a new project? What are the lessons learned? How can the course of current and future development projects be altered to implement lessons learned.
-\end{itemize}
+We discuss the case studies with an aim of understanding the practicalities of
+the many points discussed in the workshop and hope to extract the best
+practices and associate them with the projects. We discuss how the cases are
+applicable to and has impacted user communities over their lifetime isolating
+similarities and differences between projects. What are the takeaways for a new
+project and the lessons learned?  How can the course of current and
+future development projects be altered to implement lessons learned. 
 
-The software projects discussed in the workshop can be classified as follows:
-\begin{itemize}
-\item General Purpose Software applicable to a generic task and/or enabling other software to run by providing suitable environment. eg. Collaborative development, Workflow and scripting frameworks, visualization frameworks.
-\item Special Purpose Software that was developed specifically for a target use-case scenario or keeping some fixed/frozen requirements in mind.
-\begin{itemize}
-  \item Domain science oriented software developed to solve domain science problems, eg. MINRES-QLP.
-  \item Infrastructure oriented software developed to better utilize new infrastructure, eg. MVAPICH.
-\end{itemize}
-\end{itemize}
-
-A recurrent theme of the workshop was following best practices while developing software. Many submissions discuss software development best practices.
+\subsection{Utility Software}
+The General Purpose Software applicable to a generic task and/or enabling other
+software to run by providing suitable environment. For example, collaborative
+development, Workflow and scripting frameworks, visualization frameworks.
+\subsection{Scientific Software}
+Special Purpose Software that was developed specifically for a target use-case
+scenario or keeping some fixed/frozen requirements in mind.  
+Domain science
+oriented software developed to solve domain science problems, eg MINRES-QLP.
+\subsection{Infrastructure Software}
+Infrastructure oriented software developed to better utilize new
+infrastructure, eg. MVAPICH.
+%
+%\begin{itemize}
+%  \item mvapich, Cactus, DUNE
+%  \item gateways, github, VisIT, visTrails, PAAS
+%  \item SimGrid, Swift, Galaxy
+%  \item FastMath, R/qtl, MINRES-QLP
+%  \item OWL/RDF, AMR/multiphysics, Globus-Genomics
+%\end{itemize}
+%
 
 \note{Dan: do we need this section?  I think there's some overlap
   between this and the discussion in the Developing and Support
@@ -1197,7 +1209,6 @@ A recurrent theme of the workshop was following best practices while developing 
 \note{Ketan: yes, may be this section will split and merge into other sections}
 
 \section{Conclusions} \label{sec:conclusions}
-
 
 \todo{pull the discussion together}
 
