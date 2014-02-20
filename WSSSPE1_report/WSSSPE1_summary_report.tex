@@ -164,15 +164,16 @@ successful research teams. The WSSSPE workshop was intended to provide a forum
 for discussion of the challenges, including both positions and experiences. The
 short papers and discussion have been archived to provide a basis for continued
 discussion, and the workshop has fed into the collaborative writing of this
-journal publication. An estimate of 90 to 150 paricipants were present 
+journal publication. An estimate of 90 to 150 participants were present 
 throughout the day. Additional papers based on extended versions of workshop
 submissions are expected.  The level of interest in the workshop has led the
 organizers, working with some of the submitters and attendees, to plan two
-additional workshops (at the 2014 SciPy and SC conferences) and to turn the
+additional workshops (at the 2014 SciPy and SC14 conferences) and to turn the
 workshop website into a community website that can be used as a focus for
-further discussion and progress.  A minisymposium on ``Reliable Computational
+further discussion and progress.  Additionally, a minisymposium at 2014 SIAM
+Annual Meeting on ``Reliable Computational
 Science'' that aims to further explore some of the key issues raised in WSSSPE
-is co-organized by a participant in the 2014 SIAM Annual Meeting.
+is co-organized by a WSSSPE1 participant.
 
 Before the WSSSPE1 workshop took place, the organizers self-published
 a paper~\cite{WSSSPE1-pre-report} to document the process of
@@ -1159,47 +1160,53 @@ having an agreed version of what we mean by sustainability.
 \section{Case Studies} \label{sec:use-cases}
 \note{lead: Ketan Maheshwari, contributors: Andy Terrel}
 
-For the purpose of studying software case-studies we classify the software
-projects discussed in the workshop into three broad categories. First, the
+For the purpose of studying software case studies, we classify the software
+projects discussed in the workshop in three broad categories. First, 
 `utility software', software tools that enable and/or facilitate the
 development of other tools and techniques to carry out scientific work. Second,
-the `scientific software', software that was developed with an aim to solve a
-class of scientific problems. Third, the `infrastructure software', software
+`scientific software', software that was developed with an aim to solve a
+class of scientific problems. Third, `infrastructure software', software
 developed to efficiently utilize new research infrastructure.
 
-Although we anticipate overlap in categories and point it out in our
-discussion. The classification is based on two criterions: First, the character
-of a software project that dominates and best fits and the theme the paper
-discussing the project was placed in the workshop discussion. 
+These categories have some overlap, and in some \note{most?} cases, the
+case studies don't cleanly fit into a single category.
+Our classification is based on two criteria: first, the character
+of a software project that dominates and best fits, and, second,
+the theme of the workshop discussion in which the paper discussing
+the project was placed. 
 
-We discuss the case studies with an aim of understanding the practicalities of
-the many points discussed in the workshop and hope to extract the best
+%and point it out in our
+%discussion. 
+
+Our discussion of the case studies is aimed at understanding the practicalities of
+the many points discussed in the workshop, and we hope to extract the best
 practices and associate them with the projects. We discuss how the cases are
-applicable to and has impacted user communities over their lifetime isolating
-similarities and differences between projects. What are the takeaways for a new
-project and the lessons learned?  How can the course of current and
-future development projects be altered to implement lessons learned. 
+applicable to and have impacted user communities over their lifetime, isolating
+similarities and differences between projects. We try to define the takeaways for a new
+project and the lessons learned. We try to understand how the course of current and
+future development projects might be altered to implement lessons learned. 
 
 \subsection{Utility Software}
-Utility software has a potential of broadest community impact. This is
-especially relavent in the modern era of social computing. In the context of
-this paper, a utility software could be defined as a general purpose software
+Utility software potentially has the broadest community impact of the three
+categories. This is
+especially relevant in the modern era of social computing. In the context of
+this paper, a utility software project could be defined as general purpose software
 applicable to one or many generic tasks and/or enabling other software to run
-by providing suitable environment. For example, collaborative development
-framework such as \emph{github} and \emph{bitbucket}, Workflow and scripting
+by providing a suitable environment. Examples are collaborative development
+framework such as \emph{GitHub} and \emph{Bitbucket}, Workflow and scripting
 frameworks such as \emph{Galaxy}, \emph{Swift} and \emph{VisTrails},
-visualization frameworks such as \emph{visIT}. Often projects start with
+and visualization frameworks such as \emph{visIT}. Often projects start with
 specific, small set of requirements and users in mind but expand to provide
-generic functionalities and appeal to a wider user community.
+more generic functionality and appeal to a wider user community.
 
 \subsection{Scientific Software}
-Special Purpose Software that was developed specifically for a target use-case
+Special purpose software that was developed specifically for a target use-case
 scenario or keeping some fixed/frozen requirements in mind.  Domain science
-oriented software developed to solve domain science problems, eg MINRES-QLP.
+oriented software developed to solve domain science problems, e.g., MINRES-QLP.
 
 \subsection{Infrastructure Software}
 Infrastructure oriented software developed to better utilize new
-infrastructure, eg. MVAPICH.
+infrastructure, e.g., MVAPICH.
 %
 %\begin{itemize}
 %  \item mvapich, Cactus, DUNE
@@ -1210,9 +1217,9 @@ infrastructure, eg. MVAPICH.
 %\end{itemize}
 %
 
-\note{Dan: do we need this section?  I think there's some overlap
+\note{Dan: I think there's some overlap
   between this and the discussion in the Developing and Support
-  Software section.  Or perhaps this should go in the cross-cutting
+  Software section.  Perhaps this should go in the cross-cutting
   issues section?  Let's write it down here - then we can decide if it goes elsewhere}
 \note{Ketan: yes, may be this section will split and merge into other sections}
 
