@@ -1186,25 +1186,65 @@ future development projects might be altered to implement lessons learned.
 
 \subsection{Utility Software}
 Utility software potentially has the broadest community impact of the three
-categories. This is especially relevant in the modern era of social computing. In the context of
-this paper, a utility software project could be defined as general purpose software
-applicable to one or many generic tasks and/or enabling other software to run
-by providing a suitable environment. Examples are collaborative development
-framework such as \emph{GitHub} and \emph{Bitbucket}, workflow and scripting
-frameworks such as \emph{Galaxy}, \emph{Swift}, \emph{Globus} and \emph{VisTrails},
-and visualization frameworks such as \emph{visIT}. Often projects start with
-specific, small set of requirements and users in mind but expand to provide
-more generic functionality and appeal to a wider user community. Owing to its generic nature, utility software finds a wider users communities which in turn leads to a higher participation in development. Consequently, the process becomes user-driven and self sustaining. Software developed in such scenario often benefits from community driven development, deployment and maintenance best practices. For instance the \emph{Galaxy} project has significantly benefitted from user community participation in its development. It follows agile software development practices and implements standard practices such as test-driven development and socialized bug managing practices via \emph{trello}. Galaxy \emph{histories} and \emph{toolshed} offers easy community sharing of data and tools further promoting a collaborative environment. The project very closely follows the guidelines described in~\cite{Carver_WSSSPE} and many from~\cite{Prlic_WSSSPE}. 
+categories. This is especially relevant in the modern era of social computing.
+In the context of this paper, a utility software project could be defined as
+general purpose software applicable to one or many generic tasks and/or
+enabling other software to run by providing a suitable environment. Examples
+are collaborative development framework such as \emph{GitHub} and
+\emph{Bitbucket}, workflow and scripting frameworks such as \emph{Galaxy},
+\emph{Swift}, \emph{Globus} and \emph{VisTrails}, and visualization frameworks
+such as \emph{visIT}. Often projects start with specific, small set of
+requirements and users in mind but expand to provide more generic functionality
+and appeal to a wider user community. Owing to its generic nature, utility
+software finds a wider users communities which in turn leads to a higher
+participation in development. Consequently, the process becomes user-driven and
+self sustaining. Software developed in such scenario often benefits from
+community driven development, deployment and maintenance best practices. For
+instance the \emph{Galaxy} project has significantly benefitted from user
+community participation in its development. It follows agile software
+development practices and implements standard practices such as test-driven
+development and socialized bug managing practices via \emph{trello}. Galaxy
+\emph{histories} and \emph{toolshed} offers easy community sharing of data and
+tools further promoting a collaborative environment. The project very closely
+follows the guidelines described in~\cite{Carver_WSSSPE} and many
+from~\cite{Prlic_WSSSPE}. 
 
-Another paradigm in utility software is the software delivered as service over the web. 
+Another paradigm in utility software is the software delivered as service over
+the web. With increasing popularity of cloud-based computational environments,
+many users are leaning towards tools used as service. \emph{GitHub} can be
+arguably considered one such tool, catering to collaborative development. For
+scientific users \emph{Globus} based tools are case of service based utility
+software discussed during the workshop. The data movement, authentication and
+sharing services offered by Globus can be easily used over the web by
+collaborating researcher.
 
 \subsection{Scientific Software}
 Special purpose software that was developed specifically for a target use-case
-scenario or keeping some fixed/frozen requirements in mind. Software projects pertaining to specific scientific domain often tend to be in a niche and the user community tends to be small to medium. Numerical accuracy and algorithmic optimization are some of the paramount requirements of most scientific software. Advantages of a smaller codebase and requirements include stability, ease of installation, configurability and integration into larger systems. While the software can stay stable and require relatively low maintenance, the responsibility is often on the shoulders of a very few developers. Community participation in the development tends to be low. Development is linear and simplistic with a limited scope to follow software best practices. Domain science oriented software developed to solve  specific problems, e.g., \emph{DUNE}, \emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. One exception is \emph{Kitware}.
+scenario or keeping some fixed/frozen requirements in mind. Software projects
+pertaining to specific scientific domain often tend to be in a niche and the
+user community tends to be small to medium. Numerical accuracy and algorithmic
+optimization are some of the paramount requirements of most scientific
+software. Advantages of a smaller codebase and requirements include stability,
+ease of installation, configurability and integration into larger systems.
+While the software can stay stable and require relatively low maintenance, the
+responsibility is often on the shoulders of a very few developers. Community
+participation in the development tends to be low. Development is linear and
+simplistic with a limited scope to follow software best practices. Domain
+science oriented software developed to solve  specific problems, e.g.,
+\emph{DUNE}, \emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. One exception is
+\emph{Kitware}. Sustainability of such software is often a significant
+challenge. Many submissions report the software considered as a `byproduct` of
+actual research. Others contend that the software was not the main funded part
+of their research.
 
 \subsection{Infrastructure Software}
 Infrastructure oriented software developed to better utilize new
-infrastructure, e.g., \emph{MVAPICH}, \emph{visIT}. Explores uncharted territories. Highest risk. Overlap with the utility software as it must serve as a facilitator to run existing software. Long requirement-development-test cycles. Wide community support but tends to be handled by specialists rather then end users. Promotes collaborations, one of the key ingredient of a sustainable process.
+infrastructure, e.g., \emph{MVAPICH}, \emph{visIT}. Explores uncharted
+territories. Highest risk. Overlap with the utility software as it must serve
+as a facilitator to run existing software. Long requirement-development-test
+cycles. Wide community support but tends to be handled by specialists rather
+then end users. Promotes collaborations, one of the key ingredient of a
+sustainable process.
 
 \note{Dan: I think there's some overlap
   between this and the discussion in the Developing and Support
