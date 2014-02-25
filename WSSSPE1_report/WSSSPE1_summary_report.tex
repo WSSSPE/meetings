@@ -437,7 +437,7 @@ materials, code, as well as data by attaching proper licenses.
 \todo{section should include what was presented and what was discussed}
 
 The panel on developing and supporting software examined the challenges
-around scientific software development/support mainly focused on research
+around scientific software development/support, mainly focused on research
 groups that also produce code in various forms. There was widespread agreement
 that developing and maintaining software is hard, but best practices can help.
 Several stated that documentation is not just for users, and paying attention
@@ -446,50 +446,50 @@ documented development practices can be very helpful in bringing  new developers
 into a project efficiently.
 
 There was discussion that backward compatibility is not always desirable, and it
-can be very costly. This must be balanced with the aims of a given project, how
+can be very costly. This must be balanced with the aims of a given project, and how
 many other projects depend on and use the code when backwards incompatible
 changes are to be made. There are many examples in the wider open source
 software world of strategies for dealing with this, and again best practices
 can go a long way to mitigating issues around backwards compatibility. Many
-projects live with sub-optimal code for a while, and make allow backwards
+projects live with sub-optimal code for a while, and may allow backwards
 compatibility to be broken at agreed upon development points, such as a major
 release for a software library.
 
 Communities are extremely important in software projects, and both their
 building and continued engagement need attention during the project life cycle.
-Several of the papers submitted discussed how communities have been built around
+Several of the submitted papers discussed how communities have been built around
 projects, and what is needed to enable a project to grow. Among these are public
 source code hosting, mailing lists, documentation, wikis, bug trackers, software
-downloads, continuous integration, software quality dashboards, and of course
+downloads, continuous integration, software quality dashboards, and of course,
 a general web presence to tie all of these things together. Questions were posed
 around users not answering the questions of other users. Several participants
 offered counterexamples, such as lists where developers do not participate in
 mailing lists as much due to users being more active, or whether the ``core
-team'' can end up setting unrealistic expectations by doing too much. Team Geek
-and Turk's paper on scaling code in the human dimension discuss how development
+team'' can end up setting unrealistic expectations by doing too much. Team Geek\todo{add cite}
+and Turk's paper on scaling code in the human dimension\todo{add cite}  discuss how development
 lists that are welcoming to people actually have many more people contributing.
 
-Discussion around recruiting and/or retaining personnel in this area is hard,
+Recruiting and/or retaining personnel in this area is hard,
 with one of the major reasons being no long-term career paths (especially when
 compared with industry). How should software development be balanced with
 research? It is apparent that things are beginning to improve, such as
 incentives for software development in the form of altmetrics, tenure committee
-consideration, NSF Products vs Publications is was noted it can be very
+consideration, and NSF ``products'' vs ``publications''. It was noted it can be very
 difficult to measure where people are using small bits of your code.
 
 There were 13 articles about different experiences in this area, but little
 about GUI testing, performance, scalability, or agile development practices.
 There were several unique perspectives about issues such as managing API
 changes, using the same best practices for software as data, and going beyond
-simply ``slapping an OSI-approved license on code''.
+simply ``slapping an OSI-approved license on code.''
 
 The question of what ``sustainable'' means in the context of software was
-raised. The resources at http://oss-watch.ac.uk/resources/ssmm discuss what
+raised (see \S\ref{sec:cross-cutting}.) The resources at \url{http://oss-watch.ac.uk/resources/ssmm} discuss what
 to look for when choosing software for procurement, or reuse in further software
-development. Regardless of the license and development model that will be used
+development. Regardless of the license and development model that will be used,
 the future of the project must be considered. Even if a particular piece of
 software satisfies today's requirements, will it continue to do so in the
-future? Questions such as whether the supplier will still be around in five
+future? Important questions include whether the supplier will still be around in five
 years time, will it still care for its customers needs, will it be responsive to
 bug reports and feature requests? Should you tie your investment to a single
 supplier using a proprietary product, or ensure the project uses an OSI-approved
@@ -506,9 +506,9 @@ throughout the project life cycle.
 
 What about actual software engineering principles, such as modularity and
 extensibility? This is how industry maintains software, and ensures it continues
-to be useful. Everyone thinks that you can't rewrite your software, but if it is
+to be useful. Everyone \note{everyone in the audience?  paper authors?  software developers in general?} thinks that you can't rewrite your software, but if it is
 modular then you can keep systems up to date. Extensibility will keep you
-relevant if it is built into the project. One counterpoint raised by Jason Riedy
+relevant if it is built into the project. One counterpoint raised by Jason Riedy\todo{add cite}
 was that trying to take advantage of the latest and greatest hardware often
 makes this painful, hence the lack of papers mentioning ``GPUs and exotic
 hardware''.
