@@ -529,7 +529,7 @@ suggested that a ``Software Sustainability Institute'' should be vested with
 the authority to develop standardized quality processes, a central common
 repository, central resources for services and consulting, a think tank of
 sorts, and a software orphanage center. The idea of one common repository received
-some resistance, with so many compelling alternatives available, e.g. BitBucket or
+some resistance, with so many compelling alternatives available, e.g. Bitbucket or
 GitHub. The point for centralization of communication/point of contact was seen as
 reasonable, with the statement that ``vested with authority'' is perhaps too strong,
 but ``providing tools if needed'' might be more appropriate.
@@ -1381,7 +1381,7 @@ having an agreed version of what we mean by sustainability.
 
 \section{Case Studies \note{lead: Ketan Maheshwari, contributors: Andy Terrel}} \label{sec:use-cases}
 
-
+\note{We should use either single or double quotations consistently throughout the paper.}
 For the purpose of studying software case studies, we classify the software
 projects discussed in the workshop in three broad categories. The first is 
 `utility software', software tools that enable and/or facilitate the
@@ -1390,7 +1390,7 @@ development of other tools and techniques to carry out scientific work. The seco
 class of scientific problems. The third is `infrastructure software', software
 developed to efficiently utilize new research infrastructure.
 
-These categories have some overlap, and in some cases, the
+These categories have some overlap, showing in some cases where
 case studies do not cleanly fit into a single category.
 Our classification is based on two criteria: first, the character
 of a software project that dominates and where it `seems' to be the best fit, and, second,
@@ -1414,18 +1414,19 @@ categories. This is especially relevant in the modern era of social computing.
 In the context of this paper, a utility software project could be defined as
 general purpose software applicable to one or many generic tasks and/or
 enabling other software to run by providing a suitable environment. Examples
-are collaborative development framework such as \emph{GitHub} and
+are collaborative development frameworks such as \emph{GitHub} and
 \emph{Bitbucket}, workflow and scripting frameworks such as \emph{Galaxy},
 \emph{Swift}, \emph{Globus} and \emph{VisTrails}, and visualization frameworks
-such as \emph{visIT}. Often projects start with specific, small set of
+such as \emph{VisIT}. Often projects start with a specific, small set of
 requirements and users in mind but expand to provide more generic functionality
 and appeal to a wider user community. Owing to its generic nature, utility
-software finds a wider users communities which in turn leads to a higher
+software finds a wider user community which in turn leads to a higher
 participation in development. Consequently, the process becomes user-driven and
-self sustaining. Software developed in such scenario often benefits from
-community driven development, deployment and maintenance best practices. For
-instance the \emph{Galaxy} project has significantly benefited from user
-community participation in its development. It follows agile software
+self-sustaining.
+
+Software developed in such a scenario often benefits from
+community driven development, deployment and maintenance best practices. One
+such example is the \emph{Galaxy} project. It follows agile software
 development practices and implements standard practices such as test-driven
 development and socialized bug managing practices via \emph{trello}. Galaxy
 \emph{histories} and \emph{toolshed} offers easy community sharing of data and
@@ -1435,35 +1436,36 @@ from~\cite{Prlic_WSSSPE}.
 
 Another paradigm in utility software is the software delivered as service over
 the web. With increasing popularity of cloud-based computational environments,
-many users are leaning towards tools used as service. \emph{GitHub} can be
-arguably considered one such tool, catering to collaborative development. For
-scientific users \emph{Globus} based tools are case of service based utility
-software discussed during the workshop. The data movement, authentication and
-sharing services offered by Globus can be easily used over the web by
-collaborating researcher.
+many users are leaning towards tools used as service. \emph{GitHub} and
+\emph{Bitbucket} can be arguably considered to be such tools, catering to
+collaborative development. For scientific users \emph{Globus}-based tools are
+a case of service-based utility software discussed during the workshop. The
+data movement, authentication and sharing services offered by Globus can be
+easily used over the web by collaborating researchers.
 
 \subsection{Scientific software}
-Scientific software consists primarily of special purpose software that was developed for a target use-case
-scenario or keeping some fixed/frozen requirements in mind. Software projects
-pertaining to specific scientific domain often tend to be in a niche and the
-user community tends to be small to medium. Numerical accuracy and algorithmic
-optimization are some of the paramount requirements of most scientific
-software. Advantages of a smaller codebase and requirements include stability,
-ease of installation, configurability and integration into larger systems.
-While the software can stay stable and require relatively low maintenance, the
-responsibility is often on the shoulders of a very few developers. Community
-participation in the development tends to be low. Development is linear and
-simplistic with a limited scope to follow software best practices. Domain
-science oriented software developed to solve  specific problems, e.g.,
-\emph{DUNE}, \emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. Sustainability
-of such software is often a significant challenge. Many submissions reported the
-software considered a `byproduct' of the actual research.  Others contended that
-the software was not the main funded part of their research. One exception was
-\emph{Kitware}, which while being a software product specializing in scientific
-process, has a core focus of developing communities around software processes.
-One example of this process is the development of the \emph{CMake} build
-utility, which started out as a building tool for \emph{ITK} but grew to become
-a generic build utility for C++ projects. 
+Scientific software consists primarily of special-purpose software that was
+developed for a target use-case scenario or keeping some fixed/frozen
+requirements in mind. Software projects pertaining to specific scientific
+domain often tend to be in a niche and the user community tends to be small to
+medium. Numerical accuracy and algorithmic optimization are some of the
+paramount requirements of most scientific software. Advantages of a smaller
+codebase and requirements include stability, ease of installation,
+configurability and integration into larger systems. While the software can
+stay stable and require relatively low maintenance, the responsibility is often
+on the shoulders of a very few developers. Community participation in the
+development tends to be low. Development is linear and simplistic with a
+limited scope to follow software best practices. Domain science oriented
+software is developed to solve  specific problems, e.g., \emph{DUNE},
+\emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. Sustainability of such
+software is often a significant challenge. Many submissions reported the
+software is considered a `byproduct' of the actual research.  Others contended
+that the software was not the main funded part of their research. One exception
+was \emph{Kitware}, which while being a software product specializing in the
+scientific process, has a core focus of developing communities around software
+processes. One example of this process is the development of the \emph{CMake}
+build utility, which started out as a building tool for \emph{ITK} but grew to
+become a generic build utility for C++ projects. 
 
 \subsection{Infrastructure software}
 %TODO: expand
