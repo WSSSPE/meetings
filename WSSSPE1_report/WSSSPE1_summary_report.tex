@@ -508,7 +508,7 @@ What about actual software engineering principles, such as modularity and
 extensibility? This is how industry maintains software, and ensures it continues
 to be useful. Everyone \note{everyone in the audience?  paper authors?  software developers in general?} thinks that you can't rewrite your software, but if it is
 modular then you can keep systems up to date. Extensibility will keep you
-relevant if it is built into the project. One counterpoint raised by Jason Riedy\todo{add cite}
+relevant if it is built into the project. One counterpoint raised by Jason Riedy
 was that trying to take advantage of the latest and greatest hardware often
 makes this painful, hence the lack of papers mentioning ``GPUs and exotic
 hardware''.
@@ -516,11 +516,11 @@ hardware''.
 The question of whether funders, such as the NSF, can mandate software plans in
 much the same way as they do data management plans. Daniel Katz responded that
 software is supposed to be described as part of the NSF data management plan,
-and that in their definition data includes software. A comment from Twitter
+and that in their definition, data includes software. A comment from Twitter
 (@biomickwatson) raised the issue that this requires reviewers and funders who
 understand the answers that are given in these plans. Daniel Katz responded
 that in programs focused on software or data this can be done effectively, but
-conceded that in more general programs this is indeed a problem.
+agreed that in more general programs this is indeed a problem.
 
 The papers submitted to this panel, and several others, include lots of general
 recommendations for processes, practices, tools, etc. One of the papers
@@ -536,7 +536,7 @@ needed'' might be more appropriate. The wider open source community is moving
 to a model of distributed version control (Git, Mercurial, Bazaar, etc), rather
 than more centralized, as discussed in the second keynote.
 
-Some of the questions raised after the panel discussion.
+Some of the questions raised after the panel discussion are:
 
 Rather than teaching developers about domain science, or domain scientists about
 software development practices, why don't we teach both communities to
@@ -601,7 +601,7 @@ their focus being on science, not software engineering, or do the people with
 the passion for software engineering in science simply have no viable career
 path and either adapt or seek out alternate career paths.
 
-\subsection{Papers}
+\subsection*{Papers}
 
 \subsubsection*{Development Experiences}
 
@@ -764,7 +764,7 @@ into courses when projects see very wide application in research.
 
 \todo{section should include what was presented and what was discussed}
 
-\subsection{Papers}
+\subsection*{Papers}
 
 \subsubsection*{Modeling Sustainability}
 
@@ -1020,7 +1020,7 @@ build pools of institutional expertise that many projects can leverage. Shared s
 of building and sustaining gateways. Workforce development can encourage technology professionals to remain in the sciences.
 
 
-\subsection{Papers}
+\subsection*{Papers}
 
 \subsubsection*{Communities Part 1 Papers}
 
@@ -1185,11 +1185,11 @@ contributors than internal).
 \todo{perhaps remove this section}
 
 
-\section{Cross-cutting Issue: Defining Sustainability \scriptsize{\note{lead: Daniel S. Katz}}}  \label{sec:cross-cutting}
+\section{Cross-cutting Issue: Defining Sustainability \note{lead: Daniel S. Katz}}  \label{sec:cross-cutting}
 
 The question of what was meant by ``sustainability'' in the context of software
 came up in many different parts of the workshop, specifically in the first
-keynote (Section~\ref{sec:keynote1}), the Developing and Maintaining Software panel, and the Policy panel.
+keynote (\S\ref{sec:keynote1}), the Developing and Maintaining Software panel, and the Policy panel.
 
 In the opening keynote, Philip Bourne suggested that perhaps sustainability can be defined
 as the effort that happens to make the essential things continue. This leads to
@@ -1320,19 +1320,19 @@ having an agreed version of what we mean by sustainability.
 
 
 For the purpose of studying software case studies, we classify the software
-projects discussed in the workshop in three broad categories. First, 
+projects discussed in the workshop in three broad categories. The first is 
 `utility software', software tools that enable and/or facilitate the
-development of other tools and techniques to carry out scientific work. Second,
+development of other tools and techniques to carry out scientific work. The second is
 `scientific software', software that was developed with an aim to solve a
-class of scientific problems. Third, `infrastructure software', software
+class of scientific problems. The third is `infrastructure software', software
 developed to efficiently utilize new research infrastructure.
 
-These categories have some overlap, and in some \note{most?} cases, the
+These categories have some overlap, and in some cases, the
 case studies do not cleanly fit into a single category.
 Our classification is based on two criteria: first, the character
-of a software project that dominates and best fits, and, second,
-the theme of the workshop discussion in which the paper discussing
-the project was placed. 
+of a software project that dominates and where it `seems' to be the best fit, and, second,
+the the workshop discussion session where the paper about
+the project was discussed. 
 
 %and point it out in our
 %discussion. 
@@ -1379,8 +1379,8 @@ software discussed during the workshop. The data movement, authentication and
 sharing services offered by Globus can be easily used over the web by
 collaborating researcher.
 
-\subsection{Scientific Software}
-Special purpose software that was developed specifically for a target use-case
+\subsection{Scientific software}
+Scientific software consists primarily of special purpose software that was developed for a target use-case
 scenario or keeping some fixed/frozen requirements in mind. Software projects
 pertaining to specific scientific domain often tend to be in a niche and the
 user community tends to be small to medium. Numerical accuracy and algorithmic
@@ -1393,25 +1393,26 @@ participation in the development tends to be low. Development is linear and
 simplistic with a limited scope to follow software best practices. Domain
 science oriented software developed to solve  specific problems, e.g.,
 \emph{DUNE}, \emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. Sustainability
-of such software is often a significant challenge. Many submissions report the
-software considered as a `byproduct' of actual research.  Others contend that
-the software was not the main funded part of their research. One exception is
-\emph{Kitware}. While being a software product specializing in scientific
-process, developing communities around software process is a core development
-focus. One example of this process is the development of the \emph{CMake} build
-utility which started out as a building tool for \emph{ITK} but grown to become
+of such software is often a significant challenge. Many submissions reported the
+software considered a `byproduct' of the actual research.  Others contended that
+the software was not the main funded part of their research. One exception was
+\emph{Kitware}, which while being a software product specializing in scientific
+process, has a core focus of developing communities around software processes.
+One example of this process is the development of the \emph{CMake} build
+utility, which started out as a building tool for \emph{ITK} but grew to become
 a generic build utility for C++ projects. 
 
-\subsection{Infrastructure Software}
+\subsection{Infrastructure software}
 %TODO: expand
-Software developed to better utilize new infrastructure and architectures,
+Infrastructure software is developed to better utilize particular, often new, infrastructures and architectures,
 e.g., \emph{MVAPICH}, \emph{visIT}. Explores uncharted territories. Highest
-risk since the projects are experimental. Successful projects reap high rewards
+risk since the projects are experimental. \note{Dan: so is the only difference here that
+this category is aimed at new systems, where utility software is not?  If so, perhaps this should be incorporated into that subsection, so there would just be two subsections. Something in the framing of this subsection doesn't feel right to me.} Successful projects reap high rewards
 and have longer usage span. By nature, they overlap with the utility software
 as they must serve as a facilitator to run ordinary codes. Long
 requirement-development-test cycles.  Wide community support but tends to be
 handled by specialists rather then end users. Promotes collaborations across
-the breadth (eg. different departments) and depth (eg. stakeholders within a
+the breadth (e.g., different departments) and depth (e.g., stakeholders within a
 department) of community, one of the key ingredient of a sustainable process.
 Ferenbaugh~\cite{Ferenbaugh_WSSSPE} discusses the risks and challenges
 associated with software projects dealing with new architectures. To leverage
