@@ -758,9 +758,10 @@ developers.
 Who creates training materials, how are they distributed, integration
 into courses when projects see very wide application in research.
 
-\section{Policy \note{lead: Colin Venters}} \label{sec:policy}
+\section{Policy \note{lead: Colin Venters, contributors: James Howison}} \label{sec:policy}
 
 \todo{section should include what was presented and what was discussed}
+\todo{Question of extent to which this section (indeed the whole document) should call out to existing work on these questions, or stick to summarizing the papers and the discussion. I think we should call out as much as possible --JamesHowison}
 
 \subsection*{Papers}
 
@@ -796,6 +797,27 @@ into courses when projects see very wide application in research.
 
 \subsubsection*{Credit, Citation, Impact}
 
+The policy panel and discussion addressed the question of recognition of work on scientific software and linked that recognition to questions of reward and thus motivation for particular kinds of work on scientific software. In short, software work in science was seen to be inadequately visible in ways that ``count'' within the reputation system underlying science. In his paper for this workshop, Katz placed software work along with other ``activities that facilitate science but are not currently rewarded or recognized'' \cite{Katz_WSSSPE}. Priem and Piwowar argued for the need to ``support all researchers in presenting meaningful impact evidence in tenure, promotion, and funding applications.'' \cite{Priem_WSSSPE}.  Kneply et al. argued that the visibility of software that supported a piece of science ``can have detrimental effects on funding, future library development, and even scientific careers.'' \cite{Knepley_WSSSPE}.
+
+These papers, and the discussion at the workshop, join a nascent literature seeking to understand what drives software work in science and how the reward systems of science thereby shape the type of software work undertaken, including the extent to which developers are motivated to build software for the long-term, for the use of others and whether to work collaboratively or separately \cite{howison_incentives_2013, howison_scientific_2011, bietz_synergizing_2010}. Software work is not only motivated by direct citations, but the visibility of software work in the literature is important to those who write software used in science.
+
+Papers and discussion concentrated in three areas: How then ought software work to be visible, what are the barriers to its visibility, and what can be done to make it more visible? 
+
+Most of the papers in this area focused on visibility of software in scientific papers, since scientific papers are the most widely accepted documentation of achievement in science. It was noted that there appear to be no widely accepted standards on how the use of software towards a paper ought to be mentioned, that journals, citation style guides and other guides to scientific conduct are vague about how to describe software. To address this, papers spoke of a need for a fixed identifier for software, either directly through a mechanism such as a Digital Object Identifier \cite{Katz_WSSSPE,Knepley_WSSSPE} or via a published paper written to document the software (and perhaps its creation), a ``software paper'' \cite{Chue_Hong_WSSSPE}.
+
+Another approach is to try to reduce the difficulty of citing software for authors, acknowledging that authors are often working with software that itself wraps other software and therefore hides that software. Knepley et al approach this by proposing a mechanism by which the software itself, after it has run, provides the user with a set of citations that are relevant to the code actually run. They describe a prototype implementation whereby the citations are embedded in libraries and reported along with the results, via a commandline interface \cite{Knepley_WSSSPE}. Discussion highlighted the difficulty that attempting to acknowledge the contributions of all pieces of dependent code within a paper faces the difficulty of creating very long citation lists, straining the analogy of code used to papers cited. Katz approaches this issue by proposing a system of ``transitive credit,'' recording dependencies and relative contributions outside particular papers, relieving authors from the responsibility of acknowledging each and every dependency. In stead authors would acknowledge the percentage contribution of the software they used directly and an external system would then be able to recursively allocate that credit to those who had provided dependencies. Finally Priem and Piwowar argued that machine learning techniques could examine the body of published literature and extract mentions of software, coping with the multitude of informal ways in which authors mention software they have used \cite{Priem_WSSSPE}.  Discussion included turning the emphasis from asking users to improve their citation of software contributions, to ask how projects producing software might monitor the literature to improve their ability to show impact. Michael McLennan described the approach taken by the NanoHub project to scan the literature using keywords and names of known users to discover papers that are likely to have used their software and platform, then to have graduate students read each paper, highlighting any mention and perhaps following up with the authors to locate stories of impact.  Work since the workshop has described this process at publications.wikia.com.
+
+Acknowledgement in science does not come only in publications, of course. A key location for visibility might be in the grant funding process, both in bio-sketches and in grant project reporting. Some progress has been made here. Representatives of the NSF at the meeting emphasized these opportunities and encouraged participants to take advantage of them. Nonetheless there was skepticism that peer review panels would value these contributions in the same was as publications). 
+
+Priem and Piwowar argued for additionally looking beyond publications and drawing on evidence of contribution, and impact, recorded in other online systems, such as source code repositories like github, both code contributions, downloads of code and dependencies as well as conversations about software (mailing lists, twitter and beyond) \cite{Priem_WSSSPE}. They argue for providing scholars with flexible resources so that they can tell their own stories in the manner most appropriate for them and their audiences, a principle of the ``alt.metrics'' approach.
+
+\todo{convert this sketch to discussion of policy options}	
+	Opportunities for Policy interventions:
+		Funding agencies
+		Journals.  Success of data policies, growth of software policies.
+		Promotion and Tenure. Follow lead of Science of Team Science in surveying policies at universities and other institutes.
+
+\todo{review PiratePad notes for other aspects of credit-giving discussed.}
 \begin{itemize}
 
 \item Matthew Knepley, Jed Brown, Lois Curfman McInnes, Barry
