@@ -1408,22 +1408,18 @@ having an agreed version of what we mean by sustainability.
 \section{Case Studies \note{lead: Ketan Maheshwari, contributors: Andy Terrel}} \label{sec:use-cases}
 
 For the purpose of studying software case studies, we classify the software
-projects discussed in the workshop in three broad categories. The first is 
-utility software, software tools that enable and/or facilitate the
-development of other tools and techniques to carry out scientific work. The second is
-scientific software, software that was developed with an aim to solve a
-class of scientific problems. The third is infrastructure software, software
-developed to efficiently utilize new research infrastructure.
+projects discussed in the workshop in two broad categories. The first is
+utility software, software tools that enable and/or facilitate the development
+of other tools and techniques to carry out scientific work. This includes the
+software developed to efficiently utilize new research infrastructures. The
+second is scientific software, software that was developed with an aim to solve
+a class of scientific problems. 
 
-These categories have some overlap, showing in some cases where
-case studies do not cleanly fit into a single category.
-Our classification is based on two criteria: first, the character
-of a software project that dominates and where it `seems' to be the best fit, and, second,
-the the workshop discussion session where the paper about
-the project was discussed. 
-
-%and point it out in our
-%discussion. 
+These categories have some overlap, showing in some cases where case studies do
+not cleanly fit into a single category.  Our classification is based on two
+criteria: first, the character of a software project that dominates and where
+it `seems' to be the best fit, and, second, the the workshop discussion session
+where the paper about the project was discussed. 
 
 Our discussion of the case studies is aimed at understanding the practicalities of
 the many points discussed in the workshop, and we hope to extract the best
@@ -1459,6 +1455,29 @@ tools further promoting a collaborative environment. The project very closely
 follows the guidelines described in~\cite{Carver_WSSSPE} and many
 from~\cite{Prlic_WSSSPE}. 
 
+%\subsection{Infrastructure software}
+\todo{expand}
+Utility software is often developed aimed at better utilizing particular, new
+infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}.
+Development in many cases is often a high risk/reward undertaking and explores
+uncharted territories. 
+
+%
+%\note{Dan: so is the only difference here that this category is aimed at new systems, where utility software is not?  If so, perhaps this should be incorporated into that subsection, so there would just be two subsections.  Something in the framing of this subsection doesn't feel right to me.  FL: I respectfully disagree the the only reason to develop frameworks is to better utilize (new or old) infrastructure. Another really important reason is to modularize development, making it much easier for an individual developer/user to integrate their own code. Ketan: I think in this section I wanted to bring up a class of software projects which are undertaken with the main aim of tackling new systems and architectures in mind. New infrastructures such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see many submissions around them in the workshop.}
+%
+Successful projects reap high rewards and have longer usage span. Long
+requirement-development-test cycles.  Wide community support but tends to be
+handled by specialists rather then end users. Promotes collaborations across
+the breadth (e.g., different departments) and depth (e.g., stakeholders within
+a department) of community, one of the key ingredient of a sustainable process.
+Ferenbaugh~\cite{Ferenbaugh_WSSSPE} discusses the risks and challenges
+associated with software projects dealing with new architectures. To leverage
+the power of accelerators such as GPUs and MICs new code and libraries are
+required. The experience of efforts as described in~\cite{Ferenbaugh_WSSSPE}
+met with a limited success but nonetheless with many invaluable lessons were
+learned about influential cultural and technical aspects in sustainable
+software development practices.
+
 Another paradigm in utility software is the software delivered as service over
 the web. With increasing popularity of cloud-based computational environments,
 many users are leaning towards tools used as service. \emph{GitHub} and
@@ -1491,38 +1510,6 @@ scientific process, has a core focus of developing communities around software
 processes. One example of this process is the development of the \emph{CMake}
 build utility, which started out as a building tool for \emph{ITK} but grew to
 become a generic build utility for C++ projects. 
-
-\subsection{Infrastructure software}
-\todo{expand}
-Infrastructure software is developed to better utilize particular, often new,
-infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}. Explores
-uncharted territories. Highest risk since the projects are experimental.
-\note{Dan: so is the only difference here that this category is aimed at new
-systems, where utility software is not?  If so, perhaps this should be
-incorporated into that subsection, so there would just be two subsections.
-Something in the framing of this subsection doesn't feel right to me.  FL:
-I respectfully disagree the the only reason to develop frameworks is to
-better utilize (new or old) infrastructure. Another really important reason
-is to modularize development, making it much easier for an individual
-developer/user to integrate their own code. Ketan: I think in this section
-I wanted to bring up a class of software projects which are undertaken with the
-main aim of tackling new systems and architectures in mind. New infrastructures
-such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I
-see many submissions around them in the workshop.}
-Successful projects reap
-high rewards and have longer usage span. By nature, they overlap with the
-utility software as they must serve as a facilitator to run ordinary codes.
-Long requirement-development-test cycles.  Wide community support but tends to
-be handled by specialists rather then end users. Promotes collaborations across
-the breadth (e.g., different departments) and depth (e.g., stakeholders within
-a department) of community, one of the key ingredient of a sustainable process.
-Ferenbaugh~\cite{Ferenbaugh_WSSSPE} discusses the risks and challenges
-associated with software projects dealing with new architectures. To leverage
-the power of accelerators such as GPUs and MICs new code and libraries are
-required. The experience of efforts as described in~\cite{Ferenbaugh_WSSSPE}
-met with a limited success but nonetheless with many invaluable lessons were
-learned about influential cultural and technical aspects in sustainable
-software development practices.
 
 Summary of above discussed cases: lessons, trends, commonalities, is there an
 ideal sustainability scenario?
