@@ -1493,31 +1493,36 @@ build utility, which started out as a building tool for \emph{ITK} but grew to
 become a generic build utility for C++ projects. 
 
 \subsection{Infrastructure software}
-%TODO: expand
+\todo{expand}
 Infrastructure software is developed to better utilize particular, often new,
 infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}. Explores
 uncharted territories. Highest risk since the projects are experimental.
 \note{Dan: so is the only difference here that this category is aimed at new
 systems, where utility software is not?  If so, perhaps this should be
 incorporated into that subsection, so there would just be two subsections.
-Something in the framing of this subsection doesn't feel right to me.
-FL: I respectfully disagree the the only reason to develop frameworks is
-to better utilize (new or old) infrastructure. Another really important reason
-is to modularize development, making it much easier for an individual developer/user
-to integrate their own code.}
-Successful projects reap high rewards and have longer usage span. By nature,
-they overlap with the utility software as they must serve as a facilitator to
-run ordinary codes. Long requirement-development-test cycles.  Wide community
-support but tends to be handled by specialists rather then end users. Promotes
-collaborations across the breadth (e.g., different departments) and depth
-(e.g., stakeholders within a department) of community, one of the key
-ingredient of a sustainable process. Ferenbaugh~\cite{Ferenbaugh_WSSSPE}
-discusses the risks and challenges associated with software projects dealing
-with new architectures. To leverage the power of accelerators such as GPUs and
-MICs new code and libraries are required. The experience of efforts as
-described in~\cite{Ferenbaugh_WSSSPE} met with a limited success but
-nonetheless with many invaluable lessons were learned about influential
-cultural and technical aspects in sustainable software development practices.
+Something in the framing of this subsection doesn't feel right to me.  FL:
+I respectfully disagree the the only reason to develop frameworks is to
+better utilize (new or old) infrastructure. Another really important reason
+is to modularize development, making it much easier for an individual
+developer/user to integrate their own code. Ketan: I think in this section
+I wanted to bring up a class of software projects which are undertaken with the
+main aim of tackling new systems and architectures in mind. New infrastructures
+such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I
+see many submissions around them in the workshop.}
+Successful projects reap
+high rewards and have longer usage span. By nature, they overlap with the
+utility software as they must serve as a facilitator to run ordinary codes.
+Long requirement-development-test cycles.  Wide community support but tends to
+be handled by specialists rather then end users. Promotes collaborations across
+the breadth (e.g., different departments) and depth (e.g., stakeholders within
+a department) of community, one of the key ingredient of a sustainable process.
+Ferenbaugh~\cite{Ferenbaugh_WSSSPE} discusses the risks and challenges
+associated with software projects dealing with new architectures. To leverage
+the power of accelerators such as GPUs and MICs new code and libraries are
+required. The experience of efforts as described in~\cite{Ferenbaugh_WSSSPE}
+met with a limited success but nonetheless with many invaluable lessons were
+learned about influential cultural and technical aspects in sustainable
+software development practices.
 
 Summary of above discussed cases: lessons, trends, commonalities, is there an
 ideal sustainability scenario?
