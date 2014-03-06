@@ -1408,31 +1408,31 @@ having an agreed version of what we mean by sustainability.
 \section{Case Studies \note{lead: Ketan Maheshwari, contributors: Andy Terrel}} \label{sec:use-cases}
 
 For the purpose of studying software case studies, we classify the software
-projects discussed in the workshop in two broad categories. The first is
-utility software, software tools that enable and/or facilitate the development
-of other tools and techniques to carry out scientific work. This includes the
-software developed to efficiently utilize new research infrastructures. The
-second is scientific software, software that was developed with an aim to solve
-a class of scientific problems. 
+projects discussed in the workshop in two broad categories. First, the utility
+software, comprising software tools that enable and/or facilitate the
+development of other tools and techniques to carry out scientific work. This
+includes the software developed to efficiently utilize new research
+infrastructures.  Second, the scientific software, comprising software that was
+developed with an aim to solve a class of scientific problems. 
 
-These categories have some overlap, showing in some cases where case studies do
-not cleanly fit into a single category.  Our classification is based on two
-criteria: first, the character of a software project that dominates and where
-it `seems' to be the best fit, and, second, the the workshop discussion session
-where the paper about the project was discussed. 
+These categories have overlap in some cases where case studies do not cleanly
+fit into a single category.  Our classification is based on two criteria:
+first, the character of a software project that dominates and where it `seems'
+to be the best fit, and, second, the workshop discussion session where the
+paper about the project was discussed. 
 
-Our discussion of the case studies is aimed at understanding the practicalities of
-the many points discussed in the workshop, and we hope to extract the best
-practices and associate them with the projects. We discuss how the cases are
-applicable to and have impacted user communities over their lifetime, isolating
-similarities and differences between projects. We try to define the takeaways for a new
-project and the lessons learned. We try to understand how the course of current and
-future development projects might be altered to implement lessons learned. 
+Our discussion is aimed at understanding the practicalities of the points
+discussed in the workshop, and we hope to extract the best practices and
+associate them with the projects. We discuss how the cases are applicable to
+and have impacted user communities over their lifetime, isolating similarities
+and differences between projects. We discuss the takeaways for a new
+project and the lessons learned. We try to understand how the course of current
+and future development projects might be altered to implement lessons learned. 
 
 \subsection{Utility Software}
-Utility software potentially has the broadest community impact of the three
+Utility software has the potential of the broadest community impact of the two
 categories. This is especially relevant in the modern era of social computing.
-In the context of this paper, a utility software project could be defined as
+In the context of research, a utility software project could be defined as
 general purpose software applicable to one or many generic tasks and/or
 enabling other software to run by providing a suitable environment. Examples
 are collaborative development frameworks such as \emph{GitHub} and
@@ -1455,13 +1455,10 @@ tools further promoting a collaborative environment. The project very closely
 follows the guidelines described in~\cite{Carver_WSSSPE} and many
 from~\cite{Prlic_WSSSPE}. 
 
-%\subsection{Infrastructure software}
-\todo{expand}
 Utility software is often developed aimed at better utilizing particular, new
 infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}.
 Development in many cases is often a high risk/reward undertaking and explores
 uncharted territories. 
-
 %
 %\note{Dan: so is the only difference here that this category is aimed at new systems, where utility software is not?  If so, perhaps this should be incorporated into that subsection, so there would just be two subsections.  Something in the framing of this subsection doesn't feel right to me.  FL: I respectfully disagree the the only reason to develop frameworks is to better utilize (new or old) infrastructure. Another really important reason is to modularize development, making it much easier for an individual developer/user to integrate their own code. Ketan: I think in this section I wanted to bring up a class of software projects which are undertaken with the main aim of tackling new systems and architectures in mind. New infrastructures such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see many submissions around them in the workshop.}
 %
@@ -1489,27 +1486,29 @@ easily used over the web by collaborating researchers.
 
 \subsection{Scientific software}
 Scientific software consists primarily of special-purpose software that was
-developed for a target use-case scenario or keeping some fixed/frozen
-requirements in mind. Software projects pertaining to specific scientific
-domain often tend to be in a niche and the user community tends to be small to
-medium. Numerical accuracy and algorithmic optimization are some of the
-paramount requirements of most scientific software. Advantages of a smaller
-codebase and requirements include stability, ease of installation,
-configurability and integration into larger systems. While the software can
-stay stable and require relatively low maintenance, the responsibility is often
-on the shoulders of a very few developers. Community participation in the
-development tends to be low. Development is linear and simplistic with a
-limited scope to follow software best practices. Domain science oriented
-software is developed to solve  specific problems, e.g., \emph{DUNE},
-\emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}. Sustainability of such
-software is often a significant challenge. Many submissions reported the
-software is considered a `byproduct' of the actual research.  Others contended
-that the software was not the main funded part of their research. One exception
-was \emph{Kitware}, which while being a software product specializing in the
-scientific process, has a core focus of developing communities around software
-processes. One example of this process is the development of the \emph{CMake}
-build utility, which started out as a building tool for \emph{ITK} but grew to
-become a generic build utility for C++ projects. 
+developed for a target use-case scenario or fixed/frozen requirements in mind.
+Software projects pertaining to specific scientific domain often tend to be in
+a niche and the user community tends to be small to medium. Specific
+requirements such as numerical accuracy and algorithmic optimization are some
+of the paramount requirements of most scientific software. The resulting
+codebase is relatiely small. A smaller codebase and fixed requirements result
+in stability, ease of installation, and configurability. Many such projects are
+treated as libraries used into larger systems such as some of the utility
+software discussed in the previous section. While the software can stay stable
+and require relatively low maintenance, the responsibility is often on the
+shoulders of a very few developers. Community participation in the development
+tends to be low. Development is linear and simplistic with a limited scope to
+follow software best practices. Domain science oriented software is developed
+to solve  specific problems, e.g., \emph{DUNE}, \emph{PETSc},
+\emph{MINRES-QLP}, \emph{FASTMath}. Sustainability of such software is often a
+significant challenge. Many submissions reported the software is considered a
+`byproduct' of the actual research.  Others contended that the software was not
+the main funded part of their research. One exception was \emph{Kitware}, which
+while being a software product specializing in the scientific process, has a
+core focus of developing communities around software processes. One example of
+this process is the development of the \emph{CMake} build utility, which
+started out as a building tool for \emph{ITK} but grew to become a generic
+build utility for C++ projects. 
 
 Summary of above discussed cases: lessons, trends, commonalities, is there an
 ideal sustainability scenario?
