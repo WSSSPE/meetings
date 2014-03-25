@@ -42,7 +42,7 @@
 \newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
 \newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
 \newcommand{\note}[1]{ {\textcolor{red}    { #1 }}}
- 
+
 % Don't use tt font for urls
 \urlstyle{rm}
 
@@ -78,7 +78,31 @@
 
 
 \begin{abstract}
-This technical report discusses the First Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE1). ...
+This technical report discusses the First Workshop on Sustainable
+Software for Science: Practice and Experiences (WSSSPE1).  The content
+is based on the workshop itself, as documented in a set of
+collaborative notes taken during the workshop, including discussion
+about the keynote presentations, three themed panels that focus on
+papers accepted by the workshop, other discussion, cross-cutting
+issues, use cases, and conclusions.  It joins a nascent literature
+seeking to understand what drives software work in science and how the
+reward systems of science thereby shape the type of software work
+undertaken, including the extent to which developers are motivated to
+build software for the long-term, for the use of others, and whether
+to work collaboratively or separately. Unique perspectives were
+captured about issues such as documentation of APIs, software
+deployment, and development practices; licenses on software; career
+paths for scientific software writers; identifiers for software
+through a mechanism such as a Digital Object Identifier or
+publications of ``software papers''; drawing on evidence of software
+contribution, and impact, recorded in online systems such as source
+code repositories like GitHub.  For truly sustainable software there
+should be no endpoint, as the software products continue to be used
+and useful beyond the single institution, grant, and developer or
+development team.
+
+
+
 \end{abstract}
 
 
@@ -164,7 +188,7 @@ successful research teams. The WSSSPE workshop was intended to provide a forum
 for discussion of the challenges, including both positions and experiences. The
 short papers and debates have been archived to provide a basis for continued
 discussion, and the workshop has fed into the collaborative writing of this
-journal publication. An estimate of 90 to 150 participants were present 
+journal publication. An estimate of 90 to 150 participants were present
 throughout the day. Additional papers based on extended versions of workshop
 submissions are expected. The level of interest in the workshop has led the
 organizers, working with some of the submitters and attendees, to plan two
@@ -187,7 +211,7 @@ panels (\S\ref{sec:devel}-\ref{sec:community}), other discussion
 (\S\ref{sec:other}), cross-cutting issues (\S\ref{sec:cross-cutting}),
 use cases (\S\ref{sec:use-cases}), and conclusions
 (\S\ref{sec:conclusions}).
- 
+
 \section{Workshop Process and Agenda} \label{sec:process}
 
 WSSSPE1 was organized in collaboration of the relatively small group
@@ -304,9 +328,9 @@ The WSSSPE1 workshop began with two keynote presentations.
 
 The first keynote~\cite{WSSSPE1-keynote1} was delivered by Philip
 E. Bourne of University of California, San Diego.  Bourne is a basic
-biomedical scientist but has also formed four software companies. He co-founded 
+biomedical scientist but has also formed four software companies. He co-founded
 PLOS Computational Biology~\cite{plos-web} and helped develop the RCSB
-Protein Data Bank~\cite{pdb-web}.  
+Protein Data Bank~\cite{pdb-web}.
 He is working on automating three-dimensional visualizations of cell
 contents and molecular structures, a problem that has not been solved
 and when done, would serve as a key function of software in biomedical
@@ -792,21 +816,21 @@ The policy panel and discussion addressed the question of recognition of work on
 
 These papers, and the discussion at the workshop, join a nascent literature seeking to understand what drives software work in science and how the reward systems of science thereby shape the type of software work undertaken, including the extent to which developers are motivated to build software for the long-term, for the use of others and whether to work collaboratively or separately~\cite{howison_incentives_2013, howison_scientific_2011, bietz_synergizing_2010}. Software work is not only motivated by direct citations, but the visibility of software work in the literature is important to those who write software used in science.
 
-Papers and discussion concentrated in three areas: How then ought software work to be visible, what are the barriers to its visibility, and what can be done to make it more visible? 
+Papers and discussion concentrated in three areas: How then ought software work to be visible, what are the barriers to its visibility, and what can be done to make it more visible?
 
 Most of the papers in this area focused on visibility of software in scientific papers, since scientific papers are the most widely accepted documentation of achievement in science. It was noted that there appear to be no widely accepted standards on how the use of software towards a paper ought to be mentioned, that journals, citation style guides and other guides to scientific conduct are vague about how to describe software. To address this, papers spoke of a need for a fixed identifier for software, either directly through a mechanism such as a Digital Object Identifier~\cite{Katz_WSSSPE,Knepley_WSSSPE} or via a published paper written to document the software (and perhaps its creation), a ``software paper''~\cite{Chue_Hong_WSSSPE}.
 
 Another approach is to try to reduce the difficulty of citing software for authors, acknowledging that authors are often working with software that itself wraps other software and therefore hides that software. Knepley et al approach this by proposing a mechanism by which the software itself, after it has run, provides the user with a set of citations that are relevant to the code actually run. They describe a prototype implementation whereby the citations are embedded in libraries and reported along with the results, via a commandline interface~\cite{Knepley_WSSSPE}. Discussion highlighted the difficulty that attempting to acknowledge the contributions of all pieces of dependent code within a paper faces the difficulty of creating very long citation lists, straining the analogy of code used to papers cited. Katz approaches this issue by proposing a system of ``transitive credit,'' recording dependencies and relative contributions outside particular papers, relieving authors from the responsibility of acknowledging each and every dependency. In stead authors would acknowledge the percentage contribution of the software they used directly and an external system would then be able to recursively allocate that credit to those who had provided dependencies. Finally Priem and Piwowar argued that machine learning techniques could examine the body of published literature and extract mentions of software, coping with the multitude of informal ways in which authors mention software they have used~\cite{Priem_WSSSPE}.  Discussion included turning the emphasis from asking users to improve their citation of software contributions, to ask how projects producing software might monitor the literature to improve their ability to show impact. Michael McLennan described the approach taken by the NanoHub project to scan the literature using keywords and names of known users to discover papers that are likely to have used their software and platform, then to have graduate students read each paper, highlighting any mention and perhaps following up with the authors to locate stories of impact.  Work since the workshop has described this process at publications.wikia.com.
 
-Acknowledgement in science does not come only in publications, of course. A key location for visibility might be in the grant funding process, both in bio-sketches and in grant project reporting. Some progress has been made here. Representatives of the NSF at the meeting emphasized these opportunities and encouraged participants to take advantage of them. Nonetheless there was skepticism that peer review panels would value these contributions in the same was as publications). 
+Acknowledgement in science does not come only in publications, of course. A key location for visibility might be in the grant funding process, both in bio-sketches and in grant project reporting. Some progress has been made here. Representatives of the NSF at the meeting emphasized these opportunities and encouraged participants to take advantage of them. Nonetheless there was skepticism that peer review panels would value these contributions in the same was as publications).
 
 Priem and Piwowar argued for additionally looking beyond publications and drawing on evidence of contribution, and impact, recorded in other online systems, such as source code repositories like github, both code contributions, downloads of code and dependencies as well as conversations about software (mailing lists, twitter and beyond)~\cite{Priem_WSSSPE}. They argue for providing scholars with flexible resources so that they can tell their own stories in the manner most appropriate for them and their audiences, a principle of the ``alt.metrics'' approach.
 
-\todo{convert this sketch to discussion of policy options}	
-	Opportunities for Policy interventions:
-		Funding agencies
-		Journals.  Success of data policies, growth of software policies.
-		Promotion and Tenure. Follow lead of Science of Team Science in surveying policies at universities and other institutes.
+\todo{convert this sketch to discussion of policy options}
+        Opportunities for Policy interventions:
+                Funding agencies
+                Journals.  Success of data policies, growth of software policies.
+                Promotion and Tenure. Follow lead of Science of Team Science in surveying policies at universities and other institutes.
 
 \todo{review PiratePad notes for other aspects of credit-giving discussed.}
 \begin{itemize}
@@ -1360,9 +1384,9 @@ used to measure software sustainability, and though these questions might
 falsely lead to yes or no answers, the complete set would determine a range of
 values for sustainability. These questions are:
 \begin{itemize}
-\item Will the software continue to provide the same functionality in the future, 
+\item Will the software continue to provide the same functionality in the future,
       even if the environment (other parts of the infrastructure) changes?
-\item Is the functionality and usability clearly explained to new users? 
+\item Is the functionality and usability clearly explained to new users?
 \item Do users have a mechanism to ask questions and to learn about the element?
 \item Will the functionality be correct in the future, even if the environment changes?
 \item Does it provide the functionality that existing and future users want?
@@ -1437,13 +1461,13 @@ software, comprising software tools that enable and/or facilitate the
 development of other tools and techniques to carry out scientific work. This
 includes the software developed to efficiently utilize new research
 infrastructures.  Second, the scientific software, comprising software that was
-developed with an aim to solve a class of scientific problems. 
+developed with an aim to solve a class of scientific problems.
 
 These categories have overlap in some cases where case studies do not cleanly
 fit into a single category.  Our classification is based on two criteria:
 first, the character of a software project that dominates and where it `seems'
 to be the best fit, and, second, the workshop discussion session where the
-paper about the project was discussed. 
+paper about the project was discussed.
 
 Our discussion is aimed at understanding the practicalities of the points
 discussed in the workshop, and we hope to extract the best practices and
@@ -1451,7 +1475,7 @@ associate them with the projects. We discuss how the cases are applicable to
 and have impacted user communities over their lifetime, isolating similarities
 and differences between projects. We discuss the takeaways for a new
 project and the lessons learned. We try to understand how the course of current
-and future development projects might be altered to implement lessons learned. 
+and future development projects might be altered to implement lessons learned.
 
 \subsection{Utility Software}
 Utility software has the potential of the broadest community impact of the two
@@ -1477,12 +1501,12 @@ development and socialized bug managing practices via \emph{trello}. Galaxy
 \emph{histories} and \emph{toolshed} offers easy community sharing of data and
 tools further promoting a collaborative environment. The project very closely
 follows the guidelines described in~\cite{Carver_WSSSPE} and many
-from~\cite{Prlic_WSSSPE}. 
+from~\cite{Prlic_WSSSPE}.
 
 Utility software is often developed aimed at better utilizing particular, new
 infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}.
 Development in many cases is often a high risk/reward undertaking and explores
-uncharted territories. 
+uncharted territories.
 %
 %\note{Dan: so is the only difference here that this category is aimed at new systems, where utility software is not?  If so, perhaps this should be incorporated into that subsection, so there would just be two subsections.  Something in the framing of this subsection doesn't feel right to me.  FL: I respectfully disagree the the only reason to develop frameworks is to better utilize (new or old) infrastructure. Another really important reason is to modularize development, making it much easier for an individual developer/user to integrate their own code. Ketan: I think in this section I wanted to bring up a class of software projects which are undertaken with the main aim of tackling new systems and architectures in mind. New infrastructures such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see many submissions around them in the workshop.}
 %
@@ -1541,7 +1565,7 @@ product specializing in the scientific process, has a core focus of developing
 communities around software processes. An instance of this process is the
 development of the \emph{CMake} build utility, which started out as a building
 tool for \emph{ITK} but grew to become a generic build utility for C++
-projects. 
+projects.
 
 %Summary of above discussed cases: lessons, trends, commonalities, is there an ideal sustainability scenario?
 
