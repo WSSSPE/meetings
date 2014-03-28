@@ -1519,109 +1519,136 @@ be treated separately. For instance, the challenges faced by a gateway software
 development project such as \textit{CIPRES} are distinct to a niche software
 for ab initio modeling and simulation such as \textit{VASP}.
 
-% Below: What are the goals of this discussion? TODO: Better motivate. May be make a bried list of items discussed in the workshop.
-The discussion is aimed at understanding the practicalities of the key points
-discussed in the workshop, and we hope to extract the best practices and
-associated with the case studies. We discuss how the cases are applicable to
-and have impacted user communities over their lifetime, isolating similarities
-and differences between projects. We discuss the takeaways for new
-projects and the lessons learned. We try to understand how the course of current
-and future development projects might be altered to implement lessons learned.
+% Below: What are the goals of this discussion? TODO: Better motivate. May be make a brief list of items discussed in the workshop.
+We aim to understand the practicalities of the key points discussed in the
+workshop, and hope to extract the best practices associated with the case
+studies. We discuss how the issues are applicable to the cases and try to
+understand how the course of current and future development projects might be
+altered to implement lessons learned. In particular, we discuss the following issues:
+\begin{itemize}
+    \item How closely are the best practices discussed in the workshop were followed?
+    \item Career path: Are the original developers still around?
+    \item What conscious sustainability efforts were undertaken by stakeholders?
+    \item What is the dominant sustainability factor: science, publication, (re)usability?
+\end{itemize}
 
 \subsection{Utility Software}
-Utility software has the potential of a broader user base. This is especially
-relevant in the modern era of social computing. In the context of research, a
-utility software project could be defined as general purpose system applicable
-to one or many generic tasks and/or enabling other software to run by providing
-a suitable environment. Examples are collaborative development frameworks such
-as \emph{GitHub} and \emph{Bitbucket}, distributed and workflow computing
-frameworks such as \emph{Galaxy}, \emph{Swift}, \emph{Globus} and
-\emph{VisTrails}, and visualization frameworks such as \emph{VisIT}. Often
-projects start with a specific, small set of requirements and users in mind but
-expand to provide functionality and appeal to a wider user community. Owing to
-its generic nature, utility software finds a wider user community which in turn
-leads to a higher participation in development.  Consequently, the process
-becomes user-driven and self-sustaining.
 
-Software developed in such a scenario often benefits from
-community driven development, deployment and maintenance best practices. One
-such example is the \emph{Galaxy} project. It follows agile software
+We classify software developed with a potentially wider audience and general
+purpose usage in mind as Utility software. In the context of research, a
+utility software could be defined as general purpose system applicable to one
+or many generic tasks and/or enabling other software to run by providing a
+suitable environment. Utility software typically do not address a fundamental
+research challenge in a given scientific domain. Examples are collaborative
+development frameworks such as \emph{GitHub} and \emph{Bitbucket}, distributed
+and workflow computing frameworks such as \emph{Galaxy}, \emph{Swift},
+\emph{Globus} and \emph{VisTrails}, and visualization frameworks such as
+\emph{VisIT}. 
+
+% What are the sustainability challenges? What are the oppurtunities?
+Development is often a high risk/reward undertaking and explores uncharted
+territories and is largely dominated by (re)usability factors. Owing to
+relatively large number of features, the development and prototype process is
+also lengthy which poses a significant survival risk.
+Ferenbaugh~\cite{Ferenbaugh_WSSSPE} further discusses the risks and challenges
+associated with software projects dealing with new architectures.
+
+On the other hand, owing to its generic nature, utility software presents
+oppurtunities to be usable by a larger community. This makes it more visible
+which in turn leads to a broader and deeper participation. For
+instance, promoting collaborations across the breadth (e.g. different
+departments) and depth (e.g. stakeholders within a department) of community,
+one of the key ingredient of a sustainable process. Successful projects reap
+high rewards and have longer usage span. Development process becomes
+user-driven and self-sustaining.
+
+One such example is the \emph{Galaxy} project. It follows agile software
 development practices and implements standard practices such as test-driven
 development and socialized bug managing practices via \emph{trello}. Galaxy
 \emph{histories} and \emph{toolshed} offers easy community sharing of data and
 tools further promoting a collaborative environment. The project very closely
 follows the guidelines described in~\cite{Carver_WSSSPE} and many
-from~\cite{Prlic_WSSSPE}.
+from~\cite{Prlic_WSSSPE}. Many utility software projects are often developed
+aiming better utilizing a particular, new infrastructure and architecture,
+e.g., \emph{MVAPICH}, \emph{VisIT}. Similarly, to leverage the power of
+emerging architectures such as CPU accelerators new code and libraries are
+required. The experience of one such effort as described
+in~\cite{Ferenbaugh_WSSSPE} met with a limited success but nonetheless with
+many invaluable lessons were learned about influential cultural and technical
+aspects in sustainable software development practices.
 
-Utility software is often developed aimed at better utilizing particular, new
-infrastructures and architectures, e.g., \emph{MVAPICH}, \emph{VisIT}.
-Development in many cases is often a high risk/reward undertaking and explores
-uncharted territories.
+A relatively new paradigm in utility software is the software delivered as
+service over the web. With increasing popularity of cloud-based storage and
+computational environments, many users are leaning towards tools used as
+services. \emph{GitHub} and \emph{Bitbucket} can be arguably considered to be
+such tools, catering to collaborative development. For scientific users
+\emph{Globus}-based tools are a case of service-based utility software
+discussed during the workshop. The data movement and sharing services offered
+by Globus can be easily used over the web by collaborating researchers.
 %
 %
-%\note{Dan: so is the only difference here that this category is aimed at new systems, where utility software is not?  If so, perhaps this should be incorporated into that subsection, so there would just be two subsections.  Something in the framing of this subsection doesn't feel right to me.  FL: I respectfully disagree the the only reason to develop frameworks is to better utilize (new or old) infrastructure. Another really important reason is to modularize development, making it much easier for an individual developer/user to integrate their own code. Ketan: I think in this section I wanted to bring up a class of software projects which are undertaken with the main aim of tackling new systems and architectures in mind. New infrastructures such as GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see many submissions around them in the workshop.}
+%\note{Dan: so is the only difference here that this category is aimed at new
+%systems, where utility software is not?  If so, perhaps this should be
+%incorporated into that subsection, so there would just be two subsections.
+%Something in the framing of this subsection doesn't feel right to me.  FL: I
+%respectfully disagree the the only reason to develop frameworks is to better
+%utilize (new or old) infrastructure. Another really important reason is to
+%modularize development, making it much easier for an individual developer/user
+%to integrate their own code. Ketan: I think in this section I wanted to bring
+%up a class of software projects which are undertaken with the main aim of
+%tackling new systems and architectures in mind. New infrastructures such as
+%GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see
+%many submissions around them in the workshop.}
 %
 %
-Successful projects reap high rewards and have longer usage span. Long
-requirement-development-test cycles.  Wide community support but tends to be
-handled by specialists rather then end users. Promotes collaborations across
-the breadth (e.g., different departments) and depth (e.g., stakeholders within
-a department) of community, one of the key ingredient of a sustainable process.
-Ferenbaugh~\cite{Ferenbaugh_WSSSPE} discusses the risks and challenges
-associated with software projects dealing with new architectures. To leverage
-the power of accelerators such as GPUs and MICs new code and libraries are
-required. The experience of efforts as described in~\cite{Ferenbaugh_WSSSPE}
-met with a limited success but nonetheless with many invaluable lessons were
-learned about influential cultural and technical aspects in sustainable
-software development practices.
-
-Another paradigm in utility software is the software delivered as service over
-the web. With increasing popularity of cloud-based computational environments,
-many users are leaning towards tools used as service. \emph{GitHub} and
-\emph{Bitbucket} can be arguably considered to be such tools, catering to
-collaborative development. For scientific users \emph{Globus}-based tools are
-a case of service-based utility software discussed during the workshop. The
-data movement, authentication and sharing services offered by Globus can be
-easily used over the web by collaborating researchers.
 
 \subsection{Scientific software}
+
 Scientific software consists primarily of special-purpose software that was
-developed for a target use-case scenario or fixed/frozen requirements in mind.
-Software projects pertaining to specific scientific domain often tend to be in
-a niche and the user community tends to be small to medium.
-%
-Specific needs such as numerical accuracy and algorithmic optimization are some
-of the paramount requirements of most scientific software.
-%
-The resulting codebase is relatively small. A smaller codebase and fixed
-requirements result in stability, ease of installation, and configurability.
-Many such projects are treated as libraries to be used into larger systems such as
-some of the utility software discussed in the previous section.
-%
-While the
-software can stay stable and require relatively low maintenance, the
-responsibility is often on the shoulders of a very few developers.
-%
-Community
-participation in the development tends to be low. Development is linear and
-simplistic with a limited scope to follow software best practices.
-%
+purpose-built for a target use-case scenario or fixed/frozen requirements in
+mind.  Software projects pertaining to specific scientific domain often tend to
+be in a niche and the user community tends to be small to medium. They are
+mostly driven by the science and specific needs of a research group.
+
+% What are the challenges?
+Long-term sustainability of scientific research software is often a significant
+challenge. Many submissions reported that software is practically considered a
+`byproduct' of the actual research. Others contended that the software was not
+the main funded part of their research.  Specific needs such as numerical
+accuracy and algorithmic optimization are some of the paramount requirements of
+most scientific software.  The resulting codebase is relatively small. A
+smaller codebase and fixed requirements result in stability, ease of
+installation, and configurability.  Many such projects mature and are treated
+as libraries to be used into larger systems such as some of the utility
+software discussed in the previous section.  While the software can stay stable
+and require relatively low maintenance, the responsibility is often on the
+shoulders of a very few developers who might not be specialists in software
+development. Development tends to be linear and simplistic with a limited
+scope to follow software best practices.
+
+% TODO: What are the oppurtunities?
+
 Some examples of such software discussed as part of the workshop are,
 \emph{DUNE}, \emph{Kitware}, \emph{PETSc}, \emph{MINRES-QLP}, \emph{FASTMath}.
 Most of the above efforts are focused on one scientific and/or applied
-mathematics domain. One exception was \emph{Kitware}, which while being a
+mathematics domain. However, sometimes such projects grow beyond the initial
+vision of developers. One such example is \emph{Kitware}, which while being a
 software product specializing in the scientific process, has a core focus of
 developing communities around software processes. An instance of this process
 is the development of the \emph{CMake} build utility, which started out as a
 building tool for \emph{ITK} but grew to become a generic build utility for C++
 projects.
 %
-Sustainability of scientific research software is often a significant
-challenge. Many submissions reported that software is practically considered a
-`byproduct' of the actual research. Others contended that the software was not
-the main funded part of their research.
 
 %Summary of above discussed cases: lessons, trends, commonalities, is there an ideal sustainability scenario?
+It appears that the career paths for utility software developers are broader
+compared to the developers of niche software. However, as projects as a whole,
+the small-scale, specific software have a lower risk and cost in terms of
+sustaining as compared to utility software. The development of scientific
+software requires more scientific skills compared with those of utility
+software. This diminishes the need of specialist programmers and practices in
+many cases where the bulk of development is carried out by a domain scientist.
+
 
 \note{Dan: I think there's some overlap
   between this and the discussion in the Developing and Support
