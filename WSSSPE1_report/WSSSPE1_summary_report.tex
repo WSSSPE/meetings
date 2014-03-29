@@ -773,66 +773,26 @@ into courses when projects see very wide application in research.
 
 \subsection*{Papers}
 
+% note that paper summaries are available in an earlier commit 
+% in James Howison's fork:
+% https://github.com/jameshowison/WSSSPE/blob/587705cb6f12f46951e822fdbf5eb72b104fa397/WSSSPE1_report/WSSSPE1_summary_report.tex
+
 \subsubsection*{Modeling Sustainability}
 
-\begin{itemize}
+Frameworks provide a scaffold for thinking; they help us understand which elements are important and how they relate. They also help us break down a problem into chunks that can be pursued by different groups or perhaps disciplines.
 
-\item Coral Calero, M. Angeles Moraga, Manuel F. Bertoa. Towards a
-  Software Product Sustainability Model~\cite{Calero_WSSSPE}
+A group of papers submitted to the workshop provide frameworks with these intentions. The frameworks have substantial overlap but with different emphases and extents.  Accordingly we present them starting with the area of most overlap and proceed to show the different emphases and the range of factors included in the frameworks.
 
-They examine existing ISO standards about software quality.  These standards include attributes of the software but currently do not discuss sustainability, in terms of both meanings of sustainability (energy efficiency and what they call perduability, the software "lasting over time". In terms of lasting over time, they highlight characteristics of reliabiity, maintainability (e.g., modularity, the degree to which the code is understandable, testable and modifiable) and the degree to which the code can be adapted. 
+\todo{seems like definitions will be mentioned elsewhere in the paper?}
+Each of the framework papers included a definition of sustainability, with many overlaps.  In essence the papers related the question to change over time, an idea well captured in the definition used by the UK's Scientific Software Sustainability Institute: ``software you use today will be available---and continue to be improved and supported---in the future,'' as quoted in~\cite{Venters_WSSSPE}. This idea was also expressed as software that continues to serve its users~\cite{Pierce_WSSSPE}.
 
-\item Colin C. Venters, Lydia Lau, Michael K. Griffiths, Violeta
-  Holmes, Rupert R. Ward, Jie Xu. The Blind Men and the Elephant:
-  Towards a Software Sustainability Architectural Evaluation Framework~\cite{Venters_WSSSPE}
+One area in which there was not complete overlap was whether the word (and thus the effort called for by the WSSSPE workshop) involved environmental sustainability. Of course the word sustainability has strong connotations from consideration of environmental issues, evoking some mention of the areas in which software interacts with overall environmental resource usage, particularly energy efficiency.  The two papers in this area which mentioned this did so without integrating that analysis into the question of software being around long-term, suggesting that questions of environmental impact of scientific software is a conceptually distinct area of inquiry.
 
-``paper considers how software sustainability can be addressed in the design and engineering process of software systems...it must be considered a composite, non- functional requirement, which can be reasoned over at an architectural level by building and evaluating appropriate architectural models.''
+One group of papers presented frameworks that were primarily about characteristics of software artifacts, connecting with the long discourse on software quality. This approach is realized in adjectives that can be applied to pieces of software but might also extend to describe software projects.  Thus Calero and colleagues propose adding elements to the ISO standards for measuring software quality: proposing an additional dimension of quality they call perduability or ability to ``last over time'' made up of three characteristics: reliability, maintainability and adaptability. This shows some overlap with the framework employed by Venters et al.~\cite{Venters_WSSSPE} who employ the adjectives of ``extensibility, interoperability, maintainability, portability, reusability and scalability,'' anticipating the sorts of work that people would need to do with a software artifact in the future, ``as stakeholders requirements, technology and environments evolve and change.'' Venters et al. argue that these choices are really made very early because they relate to the architecture of the software and involve trade offs that ought to be analyzed alongside other attributes of the software artifact. Lenhardt et al compare the software lifecycle to the data lifecycle to argue for the inclusion of metadata throughout a piece of software's life (discussing, for example, how it has been built and tested and what ``data in'' and ``data out'' has been considered.) In addition their analogy suggests that the software lifecycle might add a phase of ``preservation'' and draw on understandings of what that involves from studies of data.  In sum, then, these frameworks focused on what needs to be accomplished to have more sustainable software.
 
-``Software Sustainability Institute define sustainability as ‘software you use today will be available - and continue to be improved and supported - in the future’ which implicitly suggests that sustainability is concerned with concepts of availability, extensibility, and the maintainability of the software [9]''
+A second theme in these papers was the continued availability of resources to accomplish the goals of sustainability. The elements of these frameworks focused far more on the organization of a software project than they did on characteristics of the artifact itself (although it is certainly true that the adjectives discussed above could be applied to a software project). For example Pierce et al focus on the way that the project is run, particularly in terms of how those involved communicate and jointly set priorities, a process they call governance. In particular they argue that because sustainability relates to having ongoing resources, governance must be open to receive diverse input (by occurring online, asynchronously, and publicly) and thus have the potential to ``transform passive users into active contributors''. They argue that the Apache Software Foundation's incubation process teaches this and could be learned from by projects throughout scientific software.  Katz and Proctor also discuss governance, describing two modes: ``top-down'' and ``bottom-up'' governance~\cite{Katz_WSSSPE}.  They place governance alongside questions of the artifact (``technical''), and questions of the origins of resources, in terms of who is funding the work surrounding a piece of software (``the political'') and the manner in which resources come to the project initially (commercial, open source, closed partnerships, grant funded) and long-term (all four plus paid support).
 
-``software sustainability can be defined as ‘a measure of a systems extensibility, interoperability, maintainability, portability, reusability and scalability''
-
-``For software to be sustainable it needs to be both useful and adaptable as stakeholders requirements, technology and environments evolve and change.''
-
-``Architectural representations of systems are therefore effective in understanding broader system concerns by abstracting away from system details, hence the trend for reasoning about quality attributes at the architectural level''
-
-They look to architectural level analysis to support sustainability, especially using scenario planning 
-
-They talk about sustainability going beyond the artifact itself, but then pivot to environmental sustainability.  Hard to see a framework coming from software engineering dealing with the range of contextual conditions relevant to whether and how a piece of software will continue to be improved and supported in the future.
-They don't mention resource availability at all.
-\item Marlon Pierce, Suresh Marru, Chris Mattmann. Sustainable
-  Cyberinfrastructure Software Through Open Governance~\cite{Pierce_WSSSPE}
-
-They argue that the way that a project is run relates to whether it can continue to serve its users. In particular they argue that because sustainability relates to having ongoing resources, governance must be open to receive diverse input and thus have the potential to "transform passive users into active contributors".
-
-They also argue that open source principles have been mis-applied by the research software community.
-
-Their framework puts together three parts supported by open software: operations and support, escience research and scientific collaboration.
-
-They define open governance as "project deliberations on open, archivable forums ... with votes carried out asynchronously over a period of time ..."  This, presumably, contrasts with how governance is done in research software projects at present, through offline meetings amongst grant funded groups, for the very large part.
-
-
-\item Daniel S. Katz, David Proctor. A Framework for Discussing
-  e-Research Infrastructure Sustainability~\cite{Katz_WSSSPE}
-
-Their framework looks at (for each software element): technical (how does it work with other components), social (who is building it, who is using it) and political context (who is funding it). 
-
-The propose three axes on which to locate particular pieces of software: temporal extent over which software should persist, spatial extent (particular lab to global context), Purpose (particular use to general use.).  They also discuss resourcing models: 1) commercial for profit, 2) open source, 3) closed partnerships and 4) funded projects.  An additional model can function during a sustaining phase: open source with paid support. Finally they introduce two models of governance, top-down and bottom-up.
-
-They hypothesize that each of these models will be appropriate for a different location on their axes and look to additional research to make the connections (for example, government funding might be most appropriate for longer time scales).
-
-\item Christopher Lenhardt, Stanley Ahalt, Brian Blanton, Laura
-  Christopherson, Ray Idaszak. Data Management Lifecycle and Software
-  Lifecycle Management in the Context of Conducting Science~\cite{Lenhardt_WSSSPE}
-
-Compares the data lifecycle with a software lifecycle, ``suggesting that the well­accepted and well­documented digital science data lifecycle management best practices may inform the development of sustainable scientific software.'' In particular they focus on adding metadata about software through its development, adding the idea of preservation (most likely via validation tests) to the software lifecycle, and assessing ``data in/data out'' connections.
-
-\item Nicholas Weber, Andrea Thomer, Michael Twidale. Niche Modeling:
-  Ecological Metaphors for Sustainable Software in Science~\cite{Weber_WSSSPE}
-
-``providing some history and provocations for the use of an ecological metaphor to describe software development environments ... we want to ask if it can indeed be a productive and thought provoking one.''  They examine historical uses of the ecosystem metaphor (centered around feedback and self-regulation) across domains. They note the limits of the metaphor as it encounters human agency within the broad landscape of software work.  In essence they propose that study and best practices should (in addition to a focus on individual projects) focus on the relationships/dependencies/dynamics across and between projects/components.  In particular they argue for examining ``niches'' which sustain particular pieces of software, they define ``a software niche as the set of technical requirements, organizational conditions and cultural mores that support its maintenance and use over time.'' They call for better understanding and modeling of niches.
-
-\end{itemize}
+Frameworks also addressed themselves to the context in which software projects exist (thus moving upwards in abstraction, from the artifact itself, to the organization of its production and, in these frameworks, the shape of the space which an artifact or project exists in). These frameworks take the form of contingency theories in that they outline a different set of challenges and argue that different project organizations (and presumably artifact attributes) are necessary to persist longterm in spaces with particular characteristics.  Katz and Proctor~\cite{Katz_WSSSPE} propose thinking of this idea of space in terms of three axes: temporal (long or short term needs), spatial (local or global use) and purpose (specific to general).  They propose that different project organizations will be needed in different locations and argue that we should concentrate research to understand those connections. Weber et al~\cite{Weber_WSSSPE} describe their spaces by analogy with natural ecosystems as ``niches'' which sustain particular pieces of software. They define ``a software niche as the set of technical requirements, organizational conditions and cultural mores that support its maintenance and use over time.'' They call for better understanding and modeling of niches (as well as further exploration of the usefulness of ecosystem metaphors).
 
 \subsubsection*{Credit, Citation, Impact}
 
