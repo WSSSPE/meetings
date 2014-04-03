@@ -841,8 +841,8 @@ governance, and Heiland et al~\cite{Heiland_WSSSPE} discuss maturity
 models for software security. The other two papers discuss
 implementation strategies for science from the perspective of
 facilitating many or all facets of sustainanability-oriented software
-design for science: Blanton and Lenhardt\cite{Blanton_WSSSPE} contrast
-large projects that have software infrastructue development built-in
+design: Blanton and Lenhardt\cite{Blanton_WSSSPE} contrast
+large projects that have software infrastructue development built-in,
 with cross-training domain scientist PIs in software engineering best
 practices. Huang and Lapp~\cite{Huang_WSSSPE} discuss how various
 specialized software engineering skills could be turned into shared
@@ -891,32 +891,73 @@ software matures, emphasizes understandability over complexity, and
 classifies cybersecurity-pertinent practices for easy recognition of
 what level of cybersecurity a software addresses.
 
-% Finally, we’ll look at some papers that discuss implementing sustainability in scientific software.
+API governance and cybersecurity measures appropriate for a project's
+maturity are all but two facets of sustainability-oriented software
+development. Others include user-centered interface design, test
+engineering, dependency management, and deployment operations. Each of
+these facets require specialized skills and training in software
+engineering. How can the implementation of best practices and
+guidelines along many or all of these different facets be facilitated
+in scientific software development? Blanton and
+Lenhardt~\cite{Blanton_WSSSPE} contrast two models. In one, the time
+and personnel devoted to software engineering is ``co-funded'' with
+the driving science project. This typically implies large multi-year
+collaborative projects that to succeed require significant software
+infrastructure to be built, and which thus have the funding to support
+one or several software engineers. The sustainability of such projects
+then depends on sustaining the funding. In the other model, domain
+scientists also take the role of software developers, whether by
+necessity such as funding limitations, or due to cross-disciplinary
+professional interests. For this to result in sustainable software
+products, the domain scientists need to be (or become) cross-trained
+in software engineering standards and best practices.
 
-% Blanton and Lenhardt from the Renaissance Computing Institute discuss these issues from a user perspective.
+In practice, there are example for both extremes of the spectrum. For
+example, in the life sciences the iPlant Collaborative~\cite{iPlant},
+the Galaxy Project~\cite{Galaxy}, and Qiime~\cite{Qiime} are large
+multi-year projects with significant software infrastructure funding
+and deliverables. Typically though these are the exception rather than
+the rule, and particularly in the long tail of science the
+scientist-developer predominates. For providing these with better
+training in software engineering best practices, initiatives such as
+Software Carpentry~\cite{SoftwareCarpentry} have been especially
+valuable, and Software Carpentry also shown how such training could
+scale.
 
-% The authors focus on a point that has been brought up many times in this context:
-% There is a tension between writing code that is good enough just to “get it done,” i.e. to publish a paper about scientific results obtained using software, 
-% and “getting it right,” that is, developing software that is comprehensible to future users and reviewers.
-% Just because the elevator panel works like this doesn’t mean it’s sustainable for the long run.
-% We don’t have a way to validate that the software used in a paper is actually done right.
-% The best way to get software designed correctly is to make sure best practices are considered from the start.
+However, there may also be a middle ground between the two
+extremes. Huang and Lapp~\cite{Huang_WSSSPE} propose a Center of
+Excellence model that leverages economies of scale to make software
+engineering experts and their skills accessible to the long tail of
+science. As Huang and Lapp discuss, this model could effectively turn
+the utilization of software engineering expertise from a complex human
+resource recruitment and management challenge, to buying time, when
+and to the extent needed, on shared instrumentation. There is
+precedence to using such a model to lower access barriers for long
+tail science, in particular for new experimental technologies.  For
+example, although the acquisition and operation of next-generation
+high-throughput DNA sequencers requires substantial investments of
+money, time, and expertise, the establishment of ``core facilities''
+on many university campuses has made these technologies accessible to
+a wide swath of scientists, with transformative results for science.
 
-% The authors highlight two models for sustainable software, at different extremes:
-% One is what they call “co-funding”:
-% In these projects, usually large, multi-year collaborations, 
-% there is equal emphasis on both the science and the software development. 
-% Both are planned into the project from inception. 
-% In the life sciences, the iPlant Collaborative, Galaxy Project, and Qiime are good examples of these sorts of large, well-designed projects.
+One of the important conclusions from this group of papers is that creating sustainable software requires paying attention not to one or two, but to several different facets of software engineering, each with corresponding best practices and standards of excellence. Even if a science project requires and has funding for a full software engineering FTE, what the project really needs could be fractions of different engineers with different specialty training. The vast majority of long tail science projects lacks the funding for even one full software engineer, let alone one who combines expertise in all the applicable facets of engineering. Some scientists in the long tail will have the professional interests to cross-train enough in software engineering to be successful with creating sustainable software, but it is likely unrealistic to expect that of all or even the majority. This is where a software engineering center of excellence can provide a critical service.
 
-% At the other extreme, they discuss “software carpentry”: 
-% in this model, it’s assumed that the scientists themselves will write and maintain their code.
-% Groups like Software Carpentry and ROpenSci assume that 
-% scientists won’t have access to dedicated software engineering, 
-% so they try to give them tools to use best practices in their own software development.
+% So, to summarize a bit:
+% Making sustainable software means we have to pay attention to many facets of software design, like APIs, security, user experience, testing, etc.
+% A single project that requires one full­-time software engineer may actually require fractions of different kinds of engineers. 
+% But long-tail projects can’t even fund one FTE, let alone one that can address all these facets.
 
-% There might be a middle ground here: a way to get the engineering expertise that large co-funded projects have to individual scientist-developers.
-% Hilmar Lapp of NESCent and I discuss one such possibility in our paper, Software Engineering as Instrumentation for the Long Tail of Scientific Software.
+% So, to conclude…
+% Implementing policies to encourage sustainability in scientific software 
+% requires that many facets of good software design are addressed throughout the lifecycle of these projects. 
+% But most of them aren’t addressed in the status quo.
+% We’ve highlighted some of these facets today and suggested some possible solutions.
+% Large projects can afford to hire software engineers with the expertise to implement these facets correctly.
+% Grassroots developer groups can provide guidance to scientists about best practices in software development.
+% We think there is a place for a software engineering center that can provide 
+% both engineering expertise and guidance 
+% with a contract-driven instrumentation model 
+% to the scientific software in the long tail.
 
 % What do we mean when we refer to the “long tail” of scientific software?
 % Think of the distribution of resources in scientific software. Most are focused on big projects with lots of community buy-in and funding. But a lot of scientific software exists away from this model.
