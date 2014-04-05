@@ -1413,79 +1413,79 @@ having an agreed version of what we mean by sustainability.
 % scientific project to emphasize on one or more of these or other aspects?
 % ====
 
-In this section, we discuss some of the software projects as case-studies to
+In this section, we discuss some of the software projects as case studies to
 better understand the points discussed during the workshop and described in the
 previous sections. We dive deeper to find how are they affected by the
-sustainability issues in practice. Additionally, We discuss various issues
-including career paths of original developers and investigate if the original
-developers are still around?
+sustainability related issues in practice. Additionally, we discuss issues
+surrounding people, especially the career paths of original developers and
+investigate to answer the question: are the original developers are still
+around?
 
 We classify the software projects discussed in the workshop in two broad
-categories. First, the utility software, comprising of software that enable
-and/or facilitate the development of other tools and techniques to carry out
-scientific work. This includes the software developed to efficiently utilize
-new research infrastructures. Second, scientific software, comprising software
-that was developed with an aim to solve a specific scientific problem.
+categories. First, the \emph{utility} software, comprising of general purpose
+software. Utility software is often used as enabler and/or facilitator for the
+development of other tools and techniques to carry out scientific work. This
+includes the software developed to efficiently utilize new research
+infrastructures. Second, the \emph{scientific} software, comprising the
+software that was originally developed with an aim to solve a specific
+scientific problem.
 
 % Why are we classifying software like above?
-This classification is motivated by our argument that the software projects
-wildly vary in factors such as scope, purpose and usage. The development and
-management of software is significantly influenced by these factors.
-Consequently, the sustainability challenges faced by software differ and must
-be treated separately. For instance, the challenges faced by a gateway software
-development project such as \textit{CIPRES} or \textit{VisIT} are distinct to a
-niche software for ab initio modeling and simulation such as \textit{VASP} or
-\textit{Quantum Espresso}.
+This classification is motivated by our argument that the two kinds of software
+projects wildly vary in factors such as scope, purpose and usage. The
+development and management of each kind is significantly different.
+Consequently, the sustainability challenges faced by them differ and must be
+treated separately. For instance, the challenges faced by a gateway software
+development project such as \textit{CIPRES} or a visualization software product
+such as \textit{VisIT} are distinct to a niche software for \textit{ab initio}
+modeling and simulation such as \textit{VASP} or \textit{Quantum Espresso}.
 
 \subsection{Utility Software}
-
-We classify software developed with a potentially wider audience and general
-purpose usage in mind as Utility software. In the context of research, a
-utility software could be defined as general purpose system applicable to one
-or many generic tasks and/or enabling other software to run by providing a
-suitable environment. Utility software typically do not address a fundamental
-research challenge in a given scientific domain. Examples are collaborative
-development frameworks such as \emph{GitHub} and \emph{Bitbucket}, distributed
-and workflow and generic computing frameworks such as \emph{Galaxy},
-\emph{nanoHUB}, \emph{SimGrid}, \emph{Swift}, \emph{Globus} and \emph{VisTrails}, and
-visualization frameworks such as \emph{VisIT}. 
+Software developed with a potentially wider audience and general purpose usage
+in mind is utility software. Utility software typically does not address
+fundamental research problems for a given scientific domain. Examples are
+collaborative development frameworks such as \emph{GitHub} and
+\emph{Bitbucket}, distributed workflow and generic computing frameworks
+such as \emph{Galaxy}, \emph{nanoHUB}, \emph{SimGrid}, \emph{Swift},
+\emph{Globus} and \emph{VisTrails}, and visualization frameworks such as
+\emph{VisIT}. 
 
 % What are the sustainability challenges? What are the oppurtunities?
-Development is often a high risk/reward undertaking and explores uncharted
-territories and is largely dominated by (re)usability factors. Owing to
+Development is often a high risk/reward undertaking exploring uncharted
+territories and is largely influenced by (re)usability factors. Owing to
 relatively large number of features, the development and prototype process is
-also lengthy which poses a significant survival risk.
-Ferenbaugh~\cite{Ferenbaugh_WSSSPE} further discusses the risks and challenges
-associated with software projects dealing with new architectures.
+also lengthy which poses a significant survival risk. Challenges on a class of
+utility software for new architectures is well discussed
+in~\cite{Ferenbaugh_WSSSPE}.
 
-On the other hand, owing to its generic nature, utility software presents
-oppurtunities to be usable by a larger community. This makes it more visible
-which in turn leads to a broader and deeper participation. For
-instance, promoting collaborations across the breadth (e.g. different
-departments) and depth (e.g. stakeholders within a department) of community,
-one of the key ingredient of a sustainable process. Successful projects reap
-high rewards and have longer usage span. Development process becomes
-user-driven and self-sustaining.
+On the other hand, utility software presents oppurtunities to be usable by a
+larger community making its undertaking and development an attractive pursuit.
+It is generally more visible in community which in turn leads to a broader and
+deeper participation. For instance, promoting collaborations across the breadth
+(e.g.  different departments) and depth (e.g. stakeholders within a department)
+of community, one of the key ingredient of a sustainable process. Successful
+utility projects reap high rewards and have a longer usage span. Development
+process becomes user-driven and self-sustaining.
 
 One such example is the \emph{Galaxy} project. It follows agile software
-development practices and implements standard practices such as test-driven
-development and socialized bug managing practices via \emph{trello}. Galaxy
+development practices and implements standards such as test-driven development
+and socialized bug managing practices via \emph{trello}. Galaxy
 \emph{histories} and \emph{toolshed} offers easy community sharing of data and
 tools further promoting a collaborative environment. The project very closely
 follows the guidelines described in~\cite{Carver_WSSSPE} and many
 from~\cite{Prlic_WSSSPE}. Many utility software projects are often developed
 aiming better utilizing a particular, new infrastructure and architecture,
 e.g., \emph{MVAPICH}, \emph{VisIT}. Similarly, to leverage the power of
-emerging architectures such as CPU accelerators new code and libraries are
+emerging architectures such as accelerators, new code and libraries are
 required. The experience of one such effort as described
-in~\cite{Ferenbaugh_WSSSPE} met with a limited success but nonetheless with
-many invaluable lessons were learned about influential cultural and technical
-aspects in sustainable software development practices.
+in~\cite{Ferenbaugh_WSSSPE} which met with a limited success but nonetheless
+with many invaluable lessons were learned about influential cultural and
+technical aspects in sustainable software development practices.
 
 A relatively new paradigm in utility software is the software delivered as
 service over the web. With increasing popularity of cloud-based storage and
 computational environments, many users are leaning towards tools used as
-services. \emph{GitHub} and \emph{Bitbucket} can be arguably considered to be
+services. \emph{GitHub} and \emph{Bitbucket} can be argued to be
 such tools, catering to collaborative development. For scientific users
 \emph{Globus}-based tools are a case of service-based utility software
 discussed during the workshop. The data movement and sharing services offered
@@ -1508,30 +1508,28 @@ by Globus can be easily used over the web by collaborating researchers.
 %
 
 \subsection{Scientific software}
-
 Scientific software consists primarily of special-purpose software that was
-purpose-built for a target use-case scenario or fixed/frozen requirements in
-mind.  Software projects pertaining to specific scientific domain often tend to
-be in a niche and the user community tends to be small to medium. They are
-mostly driven by the science and specific needs of a research group.
+purpose-built for a target use-case scenario,  fixed/frozen requirements in
+mind or solving a specific problem. Software projects pertaining to specific
+scientific domain tend to be in a niche and the user community tends to be
+small to medium. They are mostly driven by the science and specific needs of a
+research group. Specific needs such as numerical accuracy and
+algorithmic optimization are some of the paramount requirements of most
+scientific software.  
 
 % What are the challenges?
-Long-term sustainability of scientific research software is often a significant
-challenge. Many submissions reported that software is practically considered a
-`byproduct' of the actual research. Others contended that the software was not
-the main funded part of their research.  Specific needs such as numerical
-accuracy and algorithmic optimization are some of the paramount requirements of
-most scientific software.  The resulting codebase is relatively small. A
-smaller codebase and fixed requirements result in stability, ease of
-installation, and configurability.  Many such projects mature and are treated
-as libraries to be used into larger systems such as some of the utility
-software discussed in the previous section.  While the software can stay stable
-and require relatively low maintenance, the responsibility is often on the
-shoulders of a very few developers who might not be specialists in software
-development. Development tends to be linear and simplistic with a limited
-scope to follow software best practices.
-
-% TODO: What are the oppurtunities?
+Long-term sustainability of scientific software is often a significant
+challenge and face radically different issues compared to utility software.
+Many submissions reported that software is practically considered a `byproduct'
+of the actual research. Others contended that the software was not the main
+funded part of their research. A smaller codebase and fixed requirements result
+in stability, ease of installation, and configurability.  Many such projects
+mature and are treated as libraries to be used into larger systems such as some
+of the utility software discussed in the previous section. While the software
+can stay stable and require relatively low maintenance, the responsibility is
+often on the shoulders of a very few developers who might not be specialists in
+software development. Development tends to be linear and simplistic with a
+limited scope to follow software best practices.
 
 Some examples of such software discussed as part of the workshop are,
 \emph{DUNE}, \emph{R/qtl}, \emph{Kitware}, \emph{PETSc}, \emph{MINRES-QLP},
@@ -1546,38 +1544,43 @@ build utility for C++ projects. Similarly, \emph{PETSc} is growing towards
 becoming a general purpose utility system usable for solving variety of
 scientific problems.
 % 
-In order to investigate the much discussed issue of career paths for developers
-of scientific software, we conducted a small survey of the use-cases discussed
-above with respect to the current status of its core developers. We looked at
-the workshop submissions and the original cited papers for the respective
-software. Where available, we looked at the webpages and source code of the
-earliest versions to find the original authors. We excluded relatively new
-projects such as \emph{SciPy} and \emph{numFOCUS} from this survey. we find
-that in a majority of scientific software more than one original developers are
-still around, in some cases for more than 10 years, (eg. \emph{R/qtl}).
-Whereas, in the case of utility software projects, it appears that at least one
-original developer is still around often in a part-time role. In other cases,
-it appears that the original developers have went on to assume a larger role,
-again with the same project.
+
+Finally, it appears that the career options of developers from different kinds
+of software projects differ significantly. In order to further investigate the
+much discussed issue of career paths for developers of these software, we
+conducted a small survey of the use-cases discussed above with respect to the
+current status of its core developers. We looked at the workshop submissions
+and the original cited papers for the respective software. Where available, we
+looked at the webpages and source code of the earliest versions to find the
+original developers. We included projects older than 5 years and excluded
+relatively new projects such as \emph{SciPy} and \emph{numFOCUS} from this
+survey. we find that in a majority of scientific software more than one
+original developers are still around, in some cases for more than 10 years,
+(eg. \emph{R/qtl}).  Whereas, in the case of utility software projects, it
+appears that at least one original developer is still around, often in a
+part-time or ``benefactor" role. In other cases, it appears that the original
+developers have went on to assume a larger role, with the same project.
 
 In conclusion, we find that there are distinctions in the characteristics and
-the kinds of challenges faced between generic utility and specific scientific
-domain software projects. In terms of career paths of original developers, it
-appears that the career paths for utility software developers are broader
-compared to the developers of scientific software.  However, it appears that in
-the case of scientific software, core competencies of original developers tend
-to be domain science who happen to be the coders of their software. As projects
-as a whole, the small-scale, specific software have a lower risk and cost in
-terms of sustaining as compared to utility software.  Often the sustainability
-of such projects is achieved by the fact that the core developer or team
-heavily utilizes the software for their science, e.g.,  \emph{R/qtl, PETSc}.
-Furthermore, the development of scientific software requires more scientific
-skills compared with those of utility software. This diminishes the need of
-specialist programmers and practices in many cases where the bulk of
-development is carried out by a domain scientist. With these inferences, we
-believe that separate guidelines and/or principles for sustainability be
-defined and practiced for each category of scientific software and they be
-given separate treatment.
+the kinds of challenges faced between utility and scientific software projects.
+In terms of career paths of original developers, it appears that the career
+choices for utility software developers are broader compared to the developers
+of scientific software. However, it appears that in the case of scientific
+software, core competencies of original developers tend to be domain science
+who happen to be the coders of their software. As projects as a whole, the
+small-scale, specific software have a lower risk and cost in terms of
+sustaining as compared to utility software. We also find that the utility
+software tend to adhere more loyally to the many best practices discussed
+during the workshop. Often the sustainability of scientific software projects
+is achieved by the fact that the core developer or team heavily utilizes the
+software for their science, e.g.,  \emph{R/qtl, PETSc}.  Furthermore, the
+development of scientific software requires more scientific skills compared
+with those of utility software. This diminishes the need of specialist
+programmers and practices in many cases where the bulk of development is
+carried out by a domain scientist. With these inferences, we believe that
+separate guidelines and/or principles for sustainability be defined and
+practiced for each category of scientific software and they be given separate
+treatment.
 
 \note{Dan: I think there's some overlap
   between this and the discussion in the Developing and Support
