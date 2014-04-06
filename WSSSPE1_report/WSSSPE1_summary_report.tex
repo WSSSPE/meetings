@@ -464,10 +464,12 @@ The panel on developing and supporting software examined the challenges
 around scientific software development and support, mainly focused on research
 groups that also produce code in various forms. There was widespread agreement
 that developing and maintaining software is hard, but best practices can help.
-Several participants stated that documentation is not just for users, and paying attention
-to API documentation, tutorials for building and deploying software, along with
+Several participants added that documentation is not just for users, and writing
+API documentation, tutorials for building and deploying software, along with
 documented development practices can be very helpful in bringing  new developers
 into a project efficiently.
+
+\subsection{Research or Reuse?}
 
 There was discussion that backward compatibility is not always desirable, and it
 can be very costly. This must be balanced with the aims of a given project, and how
@@ -479,14 +481,24 @@ projects live with sub-optimal code for a while, and may allow backwards
 compatibility to be broken at agreed-upon development points, such as a major
 release for a software library.
 
+There were 13 articles about different experiences in this area, but little
+about GUI testing, performance, scalability, or agile development practices.
+There were several unique perspectives about issues such as managing API
+changes, using the same best practices for software as data, and going beyond
+simply ``slapping an OSI-approved license on code.''
+
+\subsection{Communities and Career Paths}
+
 Communities are extremely important in software projects, and both their
 building and continued engagement need attention during the project life cycle.
 Several of the submitted papers discussed how communities have been built around
 projects, and what is needed to enable a project to grow. Among these are public
 source code hosting, mailing lists, documentation, wikis, bug trackers, software
 downloads, continuous integration, software quality dashboards, and of course,
-a general web presence to tie all of these things together. Questions were posed
-around users not answering the questions of other users. Several participants
+a general web presence to tie all of these things together.
+
+There was extended discussion about users not answering the questions of other
+users. Several participants
 offered counterexamples, such as mailing lists where developers do not participate
 as much due to users being more active, or whether the ``core
 team'' can end up setting unrealistic expectations by doing too much. Team Geek~\cite{opac-b1134063}
@@ -501,11 +513,7 @@ incentives for software development in the form of altmetrics, tenure committee
 consideration, and NSF ``products'' vs ``publications.'' It was noted it can be very
 difficult to measure where people are using small bits of your code.
 
-There were 13 articles about different experiences in this area, but little
-about GUI testing, performance, scalability, or agile development practices.
-There were several unique perspectives about issues such as managing API
-changes, using the same best practices for software as data, and going beyond
-simply ``slapping an OSI-approved license on code.''
+\subsection{Defining Sustainability for Scientific Software}
 
 The question of what ``sustainable'' means in the context of software was
 raised (see \S\ref{sec:cross-cutting}.) The resources at \url{http://oss-watch.ac.uk/resources/ssmm} discuss what
@@ -528,6 +536,19 @@ software products continue to be used and useful beyond the single institution,
 grant, and developer/development team. Sustainability must be addressed
 throughout the project life cycle.
 
+\subsection{Software Process, Code Review, Automation, Reproducibility}
+
+The papers submitted to this panel, and several others, include lots of general
+recommendations for processes, practices, tools, etc. One of the papers
+suggested that a ``Software Sustainability Institute'' should be vested with
+the authority to develop standardized quality processes, a central common
+repository, central resources for services and consulting, a think tank of
+sorts, and a software orphanage center. The idea of one common repository received
+some resistance, with so many compelling alternatives available, e.g. Bitbucket or
+GitHub. The point for centralization of communication/point of contact was seen as
+reasonable, with the statement that ``vested with authority'' is perhaps too strong,
+but ``providing tools if needed'' might be more appropriate.
+
 What about actual software engineering principles, such as modularity and
 extensibility? This is how industry maintains software, and ensures it continues
 to be useful. Often, rewriting software is considered to be too costly, but
@@ -546,16 +567,8 @@ understand the answers that are given in these plans. Daniel Katz responded
 that in programs focused on software or data this can be done effectively, but
 agreed that in more general programs this is indeed a problem.
 
-The papers submitted to this panel, and several others, include lots of general
-recommendations for processes, practices, tools, etc. One of the papers
-suggested that a ``Software Sustainability Institute'' should be vested with
-the authority to develop standardized quality processes, a central common
-repository, central resources for services and consulting, a think tank of
-sorts, and a software orphanage center. The idea of one common repository received
-some resistance, with so many compelling alternatives available, e.g. Bitbucket or
-GitHub. The point for centralization of communication/point of contact was seen as
-reasonable, with the statement that ``vested with authority'' is perhaps too strong,
-but ``providing tools if needed'' might be more appropriate.
+
+\subsection{Training Scientists to Develop and Support Software}
 
 Some of the questions raised after the panel discussion are:
 
@@ -574,6 +587,8 @@ is overlap between the communities, with support for virtual organizations,
 tool development, etc. How can we make time in an already crowded schedule to
 introduce these topics to students? Should they be introduced through lab
 classes as in ``real sciences''?
+
+\subsection{Funding, Sustainability Beyond the First Grant/Institution}
 
 Are there significant differences in projects that have been running for 1, 3,
 5, or 10+ years? Are there shared experiences for projects of a similar stage
