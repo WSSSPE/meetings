@@ -471,6 +471,19 @@ into a project efficiently.
 
 \subsection{Research or Reuse?}
 
+Software is developed for many different purposes, and the requirements can
+vary significantly depending on the intended audience. Most end-users make use
+of either a graphical user interface of some kind, or a command line that may
+offer input and output formats for running the code and analyzing its output(s).
+When discussing backward compatibility it is these various interfaces that are
+discussed. For software that builds on other software frameworks it is the
+API (application programming interface) that is most important, and this can
+encompass issues such as the source and binary interfaces to the software
+libraries developed---with each potentially having a high maintenance cost if
+they are to remain compatible over many years. When using command line programs
+it is generally the command line switches as well as the input/output formats
+that could incur significant costs if they are changed.
+
 There was discussion that backward compatibility is not always desirable, and it
 can be very costly. This must be balanced with the aims of a given project, and how
 many other projects depend on and use the code when backwards incompatible
