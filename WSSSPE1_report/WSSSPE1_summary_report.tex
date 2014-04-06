@@ -656,28 +656,19 @@ path and either adapt or seek out alternate career paths?
 
 \subsection{Modeling Sustainability}
 
-Frameworks provide a scaffold for thinking; they help us understand
-which elements are important and how they relate. They also help us
-break down a problem into chunks that can be pursued by different
-groups or perhaps disciplines.
-
-A group of papers submitted to the workshop provide frameworks with
-these intentions. The frameworks have substantial overlap but with
-different emphases and extents.  Accordingly we present them starting
-with the area of most overlap and proceed to show the different
-emphases and the range of factors included in the frameworks.
-
-% \todo{seems like definitions will be mentioned elsewhere in the
-% paper?}
-Each of the framework papers included a definition of sustainability,
+The workshop submissions grouped under this section provide frameworks
+for thinking about, researching and understanding which elements of sustainability
+are important and how they relate. Although there is substantial
+overlap between the frameworks, they have different emphases and
+extents.  Each paper in this group included a definition of sustainability,
 with many overlaps.  In essence the papers related the question to
 change over time, an idea well captured in the definition used by the
 UK's Scientific Software Sustainability Institute: ``software you use
 today will be available---and continue to be improved and
 supported---in the future,'' as quoted in~\cite{Venters_WSSSPE}. This
 idea was also expressed as software that continues to serve its
-users~\cite{Pierce_WSSSPE}.  See \S\ref{sec:cross-cutting} for more on
-the discussion of definitions of sustainability in the workshop.
+users~\cite{Pierce_WSSSPE}.  A more thorough discussion of definitions
+of software sustainability is presented in \S\ref{sec:cross-cutting}.
 
 One area in which there was not complete overlap was whether the word
 (and thus the effort called for by the WSSSPE workshop) involved
@@ -685,7 +676,8 @@ environmental sustainability. Of course the word sustainability has
 strong connotations from consideration of environmental issues,
 evoking some mention of the areas in which software interacts with
 overall environmental resource usage, particularly energy efficiency.
-The two papers in this area which mentioned this did so without
+The two papers in this area which mentioned this\todo{which are these
+  papers? Should cite here.} did so without
 integrating that analysis into the question of software being around
 long-term, suggesting that questions of environmental impact of
 scientific software is a conceptually distinct area of inquiry.
@@ -694,9 +686,8 @@ One group of papers presented frameworks that were primarily about
 characteristics of software artifacts, connecting with the long
 discourse on software quality. This approach is realized in adjectives
 that can be applied to pieces of software but might also extend to
-describe software projects.  Thus Calero and
-colleagues~\cite{Calero_WSSSPE} propose adding elements to the ISO
-standards for measuring software quality: proposing an additional
+describe software projects.  Thus Calero et al.~\cite{Calero_WSSSPE} propose adding elements to the ISO
+standards for measuring software quality. Specifically, they propose an additional
 dimension of quality they call perdurability or ability to ``last over
 time'' made up of three characteristics: reliability, maintainability
 and adaptability. This shows some overlap with the framework employed
@@ -724,7 +715,7 @@ these frameworks focused far more on the organization of a software
 project than they did on characteristics of the artifact itself
 (although it is certainly true that the adjectives discussed above
 could be applied to a software project). For example Pierce et
-al~\cite{Pierce_WSSSPE} focus on the way that the project is run,
+al.~\cite{Pierce_WSSSPE} focus on the way that the project is run,
 particularly in terms of how those involved communicate and jointly
 set priorities, a process they call governance. In particular they
 argue that because sustainability relates to having ongoing resources,
@@ -742,11 +733,11 @@ manner in which resources come to the project initially (commercial,
 open source, closed partnerships, grant funded) and long-term (all
 four plus paid support).
 
-Frameworks also addressed themselves to the context in which software
-projects exist (thus moving upwards in abstraction, from the artifact
-itself, to the organization of its production and, in these
-frameworks, the shape of the space which an artifact or project exists
-in). These frameworks take the form of contingency theories in that
+Frameworks also concerned themselves with the context in which software
+projects exist, moving in abstraction from the software artifact
+itself to the organization of its production and
+the shape of the space in which an artifact or project exists.
+These frameworks take the form of contingency theories in that
 they outline a different set of challenges and argue that different
 project organizations (and presumably artifact attributes) are
 necessary to persist longterm in spaces with particular
@@ -756,7 +747,7 @@ term needs), spatial (local or global use) and purpose (specific to
 general).  They propose that different project organizations will be
 needed in different locations and argue that we should concentrate
 research to understand those connections. Weber et
-al~\cite{Weber_WSSSPE} describe their spaces by analogy with natural
+al.~\cite{Weber_WSSSPE} describe their spaces by analogy with natural
 ecosystems as ``niches'' which sustain particular pieces of
 software. They define ``a software niche as the set of technical
 requirements, organizational conditions and cultural mores that
@@ -766,12 +757,11 @@ of the usefulness of ecosystem metaphors).
 
 \subsection{Credit, Citation, Impact}
 
-The policy panel and discussion addressed the question of recognition
-of work on scientific software and linked that recognition to
-questions of reward and thus motivation for particular kinds of work
-on scientific software. In short, software work in science was seen to
-be inadequately visible in ways that ``count'' within the reputation
-system underlying science. In his paper for this workshop, Katz placed
+How work on scientific software is recognized and rewarded strongly influences the motivation for particular kinds of work
+on scientific software. A recurring theme of the panel discussion was
+that software work in science is
+inadequately visible within the reputation
+system underlying science; in other words it often doesn't ``count''. In his paper for this workshop, Katz placed
 software work along with other ``activities that facilitate science
 but are not currently rewarded or
 recognized''~\cite{Katz_WSSSPE}. Priem and Piwowar argued for the need
@@ -793,7 +783,7 @@ separately~\cite{howison_incentives_2013, howison_scientific_2011,
 direct citations, but the visibility of software work in the
 literature is important to those who write software used in science.
 
-Papers and discussion concentrated in three areas: How ought software
+Papers and discussion concentrated on three overarching questions: How ought software
 work to be visible, what are the barriers to its visibility, and what
 can be done to make it more visible?
 
@@ -801,22 +791,29 @@ Most of the papers in this area focused on visibility of software in
 scientific papers, since scientific papers are the most widely
 accepted documentation of achievement in science. It was noted that
 there appear to be no widely accepted standards on how the use of
-software towards a paper ought to be mentioned, that journals,
+software towards a paper ought to be mentioned, and that journals,
 citation style guides and other guides to scientific conduct are vague
-about how to describe software. To address this, papers spoke of a
+about how to describe software. To address this, papers advocated the
 need for a fixed identifier for software, either directly through a
 mechanism such as a Digital Object
 Identifier~\cite{Katz_WSSSPE,Knepley_WSSSPE} or via a published paper
 written to document the software (and perhaps its creation), a
-``software paper''~\cite{Chue_Hong_WSSSPE}.
+``software paper''~\cite{Chue_Hong_WSSSPE}. However, as was pointed
+out during the panel discussion, one of the problems with papers as
+the cited product is that their author list is fixed in time, which
+discourages potential contributors who are not on the original author
+list from designing incremental improvements as integration work
+rather than separate (and hence possibly rewritten) software
+products~\cite{howison_incentives_2013}.
 
-Another approach is to try to reduce the difficulty of citing software
-for authors, acknowledging that authors are often working with
-software that itself wraps other software and therefore hides that
-software. Knepley et al~\cite{Knepley_WSSSPE} approach this by
+Another approach is to reduce the difficulty of citing all software
+underlying a research paper. For example, scientists often work with
+software that itself wraps other software, leading to attribution
+stacking that can make it non-obvious or even difficult to determine
+what attribitions would be appropriate. Knepley et al.~\cite{Knepley_WSSSPE} approach this by
 proposing a mechanism by which the software itself, after it has run,
-provides the user with a set of citations that are relevant to the
-code actually run. They describe a prototype implementation whereby
+provides the user with a set of citations, according to the pieces of
+code actually executed. They describe a prototype implementation whereby
 the citations are embedded in libraries and reported along with the
 results, via a commandline interface~\cite{Knepley_WSSSPE}. Discussion
 highlighted the difficulty that attempting to acknowledge the
@@ -832,45 +829,35 @@ recursively allocate that credit to those who had provided
 dependencies. Finally Priem and Piwowar argued that machine learning
 techniques could examine the body of published literature and extract
 mentions of software, coping with the multitude of informal ways in
-which authors mention software they have used~\cite{Priem_WSSSPE}.
-Discussion included turning the emphasis from asking users to improve
-their citation of software contributions, to ask how projects
-producing software might monitor the literature to improve their
-ability to show impact. Michael McLennan described the approach taken
-by the NanoHub project to scan the literature using keywords and names
+which authors mention software they used~\cite{Priem_WSSSPE}.
+A point raised in the panel discussion was that instead of asking users to improve
+their software citation practices, one can also ask how software
+projects can better monitor the literature to improve their
+ability to show impact. For example, the NanoHub project scans the literature using keywords and names
 of known users to discover papers that are likely to have used their
-software and platform, then to have graduate students read each paper,
-highlighting any mention and perhaps following up with the authors to
-locate stories of impact.  Work since the workshop has described this
-process at \textit{publications.wikia.com}.
+software and platform, and assigns graduate students to read each paper,
+highlighting mentions of software use and sometimes following up with the authors to
+identify stories for demonstrating impact.  A process for tracking
+software-using publications with the goal of increasing impact visibility is now described at \url{http://publications.wikia.com}.
 
-Acknowledgement in science does not come only in publications, of
-course. A key location for visibility might be in the grant funding
-process, both in bio-sketches and in grant project reporting. Some
-progress has been made here. Representatives of the NSF at the meeting
-emphasized these opportunities and encouraged participants to take
-advantage of them. Nonetheless, there was skepticism that peer review
-panels would value these contributions in the same ways as
-publications.
+Potential visibility, and thus acknowledgement of scientific software
+products is not restricted to publications. Another key location for
+visibility is in the grant funding
+process, and as emphasized by NSF representatives at the meeting,
+recent changes to grant proposal and reporting formats now allow both
+applicants and awardees to report and highlight software products as
+much as publications. Nonetheless, whether peer review
+panels would value these contributions in the same way as
+publications remains to be seen.
 
-Priem and Piwowar argued for additionally looking beyond publications
-and drawing on evidence of contribution, and impact, recorded in other
-online systems, such as source code repositories like Github, both
-code contributions, downloads of code and dependencies as well as
-conversations about software (mailing lists, twitter and
-beyond)~\cite{Priem_WSSSPE}. They argue for providing scholars with
-flexible resources so that they can tell their own stories in the
-manner most appropriate for them and their audiences, a principle of
-the ``altmetrics'' approach.
-
-\todo{convert this sketch to discussion of policy options}
-\begin{verbatim}
-        Opportunities for Policy interventions:
-                Funding agencies
-                Journals.  Success of data policies, growth of software policies.
-                Promotion and Tenure. Follow lead of Science of Team Science in surveying policies at universities and other institutes.
-\end{verbatim}
-\todo{review PiratePad notes for other aspects of credit-giving discussed.}
+Priem and Piwowar argued that assessing the impact of software work
+requires looking beyond publications, including evidence of contribution and impact recorded in social
+coding-oriented resources such as Github, and conversations about software
+in issue trackers, mailing lists, twitter and
+beyond~\cite{Priem_WSSSPE}. In keeping with a principle of
+the ``altmetrics'' approach, they advocate that scholars should have
+resources that empower them to tell their own stories in the
+manner most appropriate for them and their audiences.
 
 \subsection{Implementing Policy}
 
@@ -895,8 +882,8 @@ lifecycle, in particular as it gains maturity.
 Two of the papers in this group focus on specific facets of software
 design that are important factors in a project's sustainability but
 are often addressed only late in the scientific software development
-cycle, if at all: Krintz et al~\cite{Krintz_WSSSPE} look at API
-governance, and Heiland et al~\cite{Heiland_WSSSPE} discuss maturity
+cycle, if at all: Krintz et al.~\cite{Krintz_WSSSPE} look at API
+governance, and Heiland et al.~\cite{Heiland_WSSSPE} discuss maturity
 models for software security. The other two papers discuss
 implementation strategies for science from the perspective of
 facilitating many or all facets of sustainanability-oriented software
@@ -907,19 +894,19 @@ practices. Huang and Lapp~\cite{Huang_WSSSPE} discuss how various
 specialized software engineering skills could be turned into shared
 instrumentation with low barriers to access.
 
-Krintz et al~\cite{Krintz_WSSSPE} describe how in an era in which
+Krintz et al.~\cite{Krintz_WSSSPE} describe how in an era in which
 computing frequently takes place in a distributed cloud, the control
 over digital resources is increasingly shifting from physical
 infrastructure to APIs, in particular web-service APIs. Yet, as Krintz
-et al observe, unlike for physical IT infrastructure in data centers,
+et al. observe, unlike for physical IT infrastructure in data centers,
 science communities have developed very little in the way of practices and
-technology for API governance, refered to by Krintz et al as the
+technology for API governance, refered to by Krintz et al. as the
 ``combined policy, implementation, and deployment control''. Web APIs
 can and do change, sometimes quite frequently. raising the need to
 port dependent applications. The effort required for porting is
 notoriously difficult to estimate, making it nearly impossible for IT
 organizations to assess and thus properly manage the impact of API
-changes. To address this, Krintz et al propose a mechanism that
+changes. To address this, Krintz et al. propose a mechanism that
 evaluates the porting effort between two versions of a web-service API
 in a formal and automated way. To analyze the porting effort, they
 divide API changes into \emph{syntactic similarity}, the changes in
@@ -935,7 +922,7 @@ on the maturity level of the software. However, the maturity level of
 a software project meant to be sustained changes tremendously over its
 development life cycle, and the eventual maturity level is often
 difficult to predict during initial development. Using software
-security as their case sudy, Heiland et al~\cite{Heiland_WSSSPE}
+security as their case sudy, Heiland et al.~\cite{Heiland_WSSSPE}
 discuss how Maturity Models can be used to formalize best practices
 appropriate for the different levels of maturity that a software
 project may go through over its lifecycle. Cybersecurity is also an
@@ -1034,12 +1021,6 @@ smaller projects in the long tail of science. Sufficiently
 cross-training domain scientists could be one way to achieve this;
 another, complementary approach is to instrument the necessary
 capabilities so they can be shared.
-
-
-% note that paper summaries are available in tag jameshowison-paper-summaries: 
-% https://github.com/danielskatz/WSSSPE/blob/jameshowison-paper-summaries/WSSSPE1_report/WSSSPE1_summary_report.tex
-
-
 
 \subsection{Career Tracks for Scientific Software Developers}
 
