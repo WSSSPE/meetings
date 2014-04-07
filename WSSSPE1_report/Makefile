@@ -15,7 +15,7 @@ clean:
 	rm -f ${TARGET}.blg ${TARGET}.out ${TARGET}.aux
 	rm -f ${TARGET}.pdf
 
-%.pdf : %.tex $(FIGURES) 
+%.pdf : %.tex $(FIGURES) *.bib
 	$(pdflatex) $*
 	$(bibtex) $(TARGET)
 	$(pdflatex) $*
