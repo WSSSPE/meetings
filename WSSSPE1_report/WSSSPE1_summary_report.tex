@@ -27,6 +27,7 @@
 
 \usepackage[bookmarks, bookmarksopen, bookmarksnumbered]{hyperref}
 \usepackage[all]{hypcap}
+% Don't use tt font for urls
 \urlstyle{rm}
 
 \definecolor{orange}{rgb}{1.0,0.3,0.0}
@@ -43,8 +44,9 @@
 \newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
 \newcommand{\note}[1]{ {\textcolor{red}    { #1 }}}
 
-% Don't use tt font for urls
-\urlstyle{rm}
+% formatting commands
+%   - consistent formatting of names of software tools and/or projects:
+\newcommand{\toolname}[1] {\textsf{#1}}
 
 % 15 characters / 2.5 cm => 100 characters / line
 % Using 11 pt => 94 characters / line
@@ -292,7 +294,7 @@ panels and discussions.''
 \end{quote}
 
 58 submissions were received, and almost all submitters used either
-arXiv~\cite{arXiv-web} or figshare~\cite{figshare-web} to self-publish
+arXiv~\cite{arXiv-web} or Figshare~\cite{figshare-web} to self-publish
 their papers.
 
 A peer review process followed the submissions, where
@@ -820,12 +822,12 @@ Another approach is to reduce the difficulty of citing all software
 underlying a research paper. For example, scientists often work with
 software that itself wraps other software, leading to attribution
 stacking that can make it non-obvious or even difficult to determine
-what attribitions would be appropriate. Knepley et al.~\cite{Knepley_WSSSPE} approach this by
+what attributions would be appropriate. Knepley et al.~\cite{Knepley_WSSSPE} approach this by
 proposing a mechanism by which the software itself, after it has run,
 provides the user with a set of citations, according to the pieces of
 code actually executed. They describe a prototype implementation whereby
 the citations are embedded in libraries and reported along with the
-results, via a commandline interface~\cite{Knepley_WSSSPE}. Discussion
+results, via a command-line interface~\cite{Knepley_WSSSPE}. Discussion
 highlighted the difficulty that attempting to acknowledge the
 contributions of all pieces of dependent code within a paper faces the
 difficulty of creating very long citation lists, straining the analogy
@@ -898,7 +900,7 @@ models for software security. The other two papers discuss
 implementation strategies for science from the perspective of
 facilitating many or all facets of sustainanability-oriented software
 design: Blanton and Lenhardt\cite{Blanton_WSSSPE} contrast
-large projects that have software infrastructue development built-in,
+large projects that have software infrastructure development built-in,
 with cross-training domain scientist PIs in software engineering best
 practices. Huang and Lapp~\cite{Huang_WSSSPE} discuss how various
 specialized software engineering skills could be turned into shared
@@ -910,7 +912,7 @@ over digital resources is increasingly shifting from physical
 infrastructure to APIs, in particular web-service APIs. Yet, as Krintz
 et al. observe, unlike for physical IT infrastructure in data centers,
 science communities have developed very little in the way of practices and
-technology for API governance, refered to by Krintz et al. as the
+technology for API governance, referred to by Krintz et al. as the
 ``combined policy, implementation, and deployment control''. Web APIs
 can and do change, sometimes quite frequently. raising the need to
 port dependent applications. The effort required for porting is
@@ -932,7 +934,7 @@ on the maturity level of the software. However, the maturity level of
 a software project meant to be sustained changes tremendously over its
 development life cycle, and the eventual maturity level is often
 difficult to predict during initial development. Using software
-security as their case sudy, Heiland et al.~\cite{Heiland_WSSSPE}
+security as their case study, Heiland et al.~\cite{Heiland_WSSSPE}
 discuss how Maturity Models can be used to formalize best practices
 appropriate for the different levels of maturity that a software
 project may go through over its lifecycle. Cybersecurity is also an
@@ -969,13 +971,13 @@ in software engineering standards and best practices.
 
 In practice, there are example for both extremes of the spectrum. For
 example, in the life sciences the iPlant Collaborative~\cite{iPlant},
-the Galaxy Project~\cite{Galaxy}, and Qiime~\cite{Qiime} are large
+the Galaxy Project~\cite{Galaxy}, and \toolname{Qiime}~\cite{Qiime} are large
 multi-year projects with significant software infrastructure funding
 and deliverables. Typically though these are the exception rather than
 the rule, and particularly in the long tail of science the
 scientist-developer predominates, even for software that is widely
 used or crosses domain boundaries such as
-rOpenSci~\cite{rOpenSci}. For better training domain scientists at
+\toolname{rOpenSci}~\cite{rOpenSci}. For better training domain scientists at
 least in basic software engineering best practices, initiatives such
 as Software Carpentry~\cite{SoftwareCarpentry} have demonstrated how
 this could be achieved at scale.
@@ -1071,7 +1073,7 @@ the efficiency across institutions.  The approach proposed is of de-fragmenting
 the existing ecosystem in a non-disruptive way.
 
 The paper by Maheshwari et al.~\cite{Maheshwari_WSSSPE} focuses on ``technology
-catalysts" and their role in the modern scientific research process. A technology
+catalysts'' and their role in the modern scientific research process. A technology
 catalyst can be defined as a role played by an individual with a know-how of
 technological advancements, tasked with user-engagement with a goal of enacting
 scientific or engineering applications, and using suitable tools and techniques
@@ -1166,25 +1168,25 @@ remotely whenever feasible.
 Pierce et al.~\cite{Pierce2_WSSSPE} described how science gateways can provide a user-friendly
 entry to complex cyberinfrastructure. The paper opens with a description of the
 explosion of use of just a few gateways. Over 3.5 years, more than 7,000
-biologists have run phylogenetic codes on supercomputers using the CIPRES
+biologists have run phylogenetic codes on supercomputers using the\toolname{CIPRES}
 Science Gateway. In 1 year, over 120 scientists from 50 institutions used the
 UltraScan Science Gateway, increasing the sophistication of analytical
-ultracentrifugation experiments worldwide. The new Neuroscience Gateway (NSG)
+ultracentrifugation experiments worldwide. The new Neuroscience Gateway (\toolname{NSG})
 registered 100+ users who used 250,000 CPU hours in only a few months.
 
 Gateways, however, need to keep operational costs low and can often make use of
-common components. Science Gateway Platform as a Service (Sci-GaP) delivers
+common components. Science Gateway Platform as a Service (\toolname{SciGaP}) delivers
 middleware as a hosted, scalable third-party service while domain developers
 focus on user interfaces and domain-specific data in the gateway. The
 middleware handles things like authentication, application installation and
 reliable execution and help desk support.
 
-One key to Sci-GaP is its openness. While based on the Apache Airavata project
-and the CIPRES Workbench Framework, community contributions are encouraged
+One key to \toolname{SciGaP} is its openness. While based on the \toolname{Apache Airavata} project
+and the \toolname{CIPRES} Workbench Framework, community contributions are encouraged
 because of its open source, open governance and open operations policies. The
 goal is robust, sustainable infrastructure with a cycle of development that
 improves reliability and prioritizes stakeholder requirements. The project is
-leveraging Internet2's Net+ mechanisms for converting SciGaP and its gateways
+leveraging Internet2's \toolname{Net+} mechanisms for converting \toolname{SciGaP} and its gateways
 into commodity services.
 
 Zentner et al.~\cite{Zentner_WSSSPE} describes experiences and challenges with the large
@@ -1330,13 +1332,13 @@ the second was a particular domain or discipline, and the final primary
 type of interaction was around the development of applications built on a
 particular piece of software that was perhaps developed by another group.  As
 an example, in \cite{Hanwell_WSSSPE}, the community described is comprised of
-both the for-profit company Kitware and the users and contributors to their
-software packages such as VTK.  This structure, of the centralized development
+both the for-profit company \toolname{Kitware} and the users and contributors to their
+software packages such as \toolname{VTK}.  This structure, of the centralized development
 of core infrastructure around which communities of individuals applying that
 infrastructure and developing applications utilizing it, was similarly
 reflected in \cite{Terrel_WSSSPE}, where the core scientific python ecosystem
 is supported by a non-profit entity that fosters community investment in that
-ecosystem.  In many ways, these two organizations (Kitware and NumFOCUS)
+ecosystem.  In many ways, these two organizations (\toolname{Kitware} and \toolname{NumFOCUS})
 attempt to cross domain boundaries and provide support for both the
 infrastructure and application sides of community building.
 
@@ -1558,11 +1560,11 @@ What are the possible career paths for a specialist software developer working a
 % common factors and the reasons behind them.
 
 % 3. Can we characterize the process itself for the selected cases:
-% collaborative, seperate. 
+% collaborative, separate. 
 
 % 4. ToDo: summarize and report on an inclusive list (might not be exhaustive)
 % of all the software products discussed in the workshop. (If possible color
-% code the representaion according to a scheme based on the different
+% code the representation according to a scheme based on the different
 % dimensions pertaining to them.)
 
 % 5. Has one or more of the following best practices played a role in the development: 
@@ -1611,21 +1613,21 @@ projects wildly vary in factors such as scope, purpose and usage. The
 development and management of each kind is significantly different.
 Consequently, the sustainability challenges faced by them differ and must be
 treated separately. For instance, the challenges faced by a gateway software
-development project such as \textit{CIPRES} or a visualization software product
-such as \textit{VisIT} are distinct to a niche software for \textit{ab initio}
-modeling and simulation such as \textit{VASP} or \textit{Quantum Espresso}.
+development project such as \toolname{CIPRES} or a visualization software product
+such as \toolname{VisIT} are distinct to a niche software for \textit{ab initio}
+modeling and simulation such as \toolname{VASP} or \toolname{Quantum Espresso}.
 
 \subsection{Utility Software}
 Software developed with a potentially wider audience and general purpose usage
 in mind is utility software. Utility software typically does not address
 fundamental research problems for a given scientific domain. Examples are
-collaborative development frameworks such as \emph{GitHub} and
-\emph{Bitbucket}, distributed workflow and generic computing frameworks
-such as \emph{Galaxy}, \emph{nanoHUB}, \emph{SimGrid}, \emph{Swift},
-\emph{Globus} and \emph{VisTrails}, and visualization frameworks such as
-\emph{VisIT}. 
+collaborative development frameworks such as \toolname{GitHub} and
+\toolname{Bitbucket}, distributed workflow and generic computing frameworks
+such as \toolname{Galaxy}, \toolname{nanoHUB}, \toolname{SimGrid}, \toolname{Swift},
+\toolname{Globus} and \toolname{VisTrails}, and visualization frameworks such as
+\toolname{VisIT}. 
 
-% What are the sustainability challenges? What are the oppurtunities?
+% What are the sustainability challenges? What are the opportunities?
 Development is often a high risk/reward undertaking exploring uncharted
 territories and is largely influenced by (re)usability factors. Owing to
 relatively large number of features, the development and prototype process is
@@ -1633,7 +1635,7 @@ also lengthy which poses a significant survival risk. Challenges on a class of
 utility software for new architectures is well discussed
 in~\cite{Ferenbaugh_WSSSPE}.
 
-On the other hand, utility software presents oppurtunities to be usable by a
+On the other hand, utility software presents opportunities to be usable by a
 larger community making its undertaking and development an attractive pursuit.
 It is generally more visible in community which in turn leads to a broader and
 deeper participation. For instance, promoting collaborations across the breadth
@@ -1642,27 +1644,27 @@ of community, one of the key ingredient of a sustainable process. Successful
 utility projects reap high rewards and have a longer usage span. Development
 process becomes user-driven and self-sustaining.
 
-One such example is the \emph{Galaxy} project. It follows agile software
+One such example is the \toolname{Galaxy} project~\cite{Galaxy}. It follows agile software
 development practices and implements standards such as test-driven development
-and socialized bug managing practices via \emph{trello}. Galaxy
+and socialized bug managing practices via \toolname{trello}. Galaxy
 \emph{histories} and \emph{toolshed} offers easy community sharing of data and
 tools further promoting a collaborative environment. The project very closely
-follows the guidelines described in~\cite{Carver_WSSSPE} and many
-from~\cite{Prlic_WSSSPE}. Many utility software projects are often developed
+follows the guidelines described in Carver and Thiruvathukal~\cite{Carver_WSSSPE} and many
+from Prli\'{c} and Procter~\cite{Prlic_WSSSPE}. Many utility software projects are often developed
 aiming better utilizing a particular, new infrastructure and architecture,
-e.g., \emph{MVAPICH}, \emph{VisIT}. Similarly, to leverage the power of
+e.g., \toolname{MVAPICH}, \toolname{VisIT}. Similarly, to leverage the power of
 emerging architectures such as accelerators, new code and libraries are
 required. The experience of one such effort as described
-in~\cite{Ferenbaugh_WSSSPE} which met with a limited success but nonetheless
+in Ferenbaugh~\cite{Ferenbaugh_WSSSPE} which met with a limited success but nonetheless
 with many invaluable lessons were learned about influential cultural and
 technical aspects in sustainable software development practices.
 
 A relatively new paradigm in utility software is the software delivered as
 service over the web. With increasing popularity of cloud-based storage and
 computational environments, many users are leaning towards tools used as
-services. \emph{GitHub} and \emph{Bitbucket} can be argued to be
+services. \toolname{GitHub} and \toolname{Bitbucket} can be argued to be
 such tools, catering to collaborative development. For scientific users
-\emph{Globus}-based tools are a case of service-based utility software
+\toolname{Globus}-based tools are a case of service-based utility software
 discussed during the workshop. The data movement and sharing services offered
 by Globus can be easily used over the web by collaborating researchers.
 %
@@ -1695,7 +1697,7 @@ scientific software.
 % What are the challenges?
 Long-term sustainability of scientific software is often a significant
 challenge and face radically different issues compared to utility software.
-Many submissions reported that software is practically considered a ``byproduct"
+Many submissions reported that software is practically considered a ``byproduct''
 of the actual research. Others contended that the software was not the main
 funded part of their research. A smaller codebase and fixed requirements result
 in stability, ease of installation, and configurability.  Many such projects
@@ -1707,18 +1709,17 @@ software development. Development tends to be linear and simplistic with a
 limited scope to follow software best practices.
 
 Some examples of such software discussed as part of the workshop are,
-\emph{DUNE}, \emph{R/qtl}, \emph{Kitware}, \emph{PETSc}, \emph{MINRES-QLP},
-\emph{FASTMath}.  Most of the above efforts are focused on one scientific
+\toolname{DUNE}, \toolname{R/qtl}, \toolname{Kitware}, \toolname{PETSc}, \toolname{MINRES-QLP},
+\toolname{FASTMath}.  Most of the above efforts are focused on one scientific
 and/or applied mathematics domain. However, sometimes such projects grow beyond
-the initial vision of developers. One such example is \emph{Kitware}, which
+the initial vision of developers. One such example is \toolname{Kitware}, which
 while being a software product specializing in the scientific process, has a
 core focus of developing communities around software processes. An instance of
-this process is the development of the \emph{CMake} build utility, which
-started out as a building tool for \emph{ITK} but grew to become a generic
-build utility for C++ projects. Similarly, \emph{PETSc} is growing towards
+this process is the development of the \toolname{CMake} build utility, which
+started out as a building tool for \toolname{ITK} but grew to become a generic
+build utility for C++ projects. Similarly, \toolname{PETSc} is growing towards
 becoming a general purpose utility system usable for solving variety of
 scientific problems.
-% 
 
 Finally, it appears that the career options of developers from different kinds
 of software projects differ significantly. In order to further investigate the
@@ -1728,12 +1729,12 @@ current status of its core developers. We looked at the workshop submissions
 and the original cited papers for the respective software. Where available, we
 looked at the webpages and source code of the earliest versions to find the
 original developers. We included projects older than 5 years and excluded
-relatively new projects such as \emph{SciPy} and \emph{numFOCUS} from this
+relatively new projects such as \toolname{SciPy} and \toolname{numFOCUS} from this
 survey. we find that in a majority of scientific software more than one
 original developers are still around, in some cases for more than 10 years,
-(eg. \emph{R/qtl}).  Whereas, in the case of utility software projects, it
+(eg. \toolname{R/qtl}).  Whereas, in the case of utility software projects, it
 appears that at least one original developer is still around, often in a
-part-time or ``benefactor" role. In other cases, it appears that the original
+part-time or ``benefactor'' role. In other cases, it appears that the original
 developers have went on to assume a larger role, with the same project.
 
 In conclusion, we find that there are distinctions in the characteristics and
@@ -1748,7 +1749,7 @@ sustaining as compared to utility software. We also find that the utility
 software tend to adhere more loyally to the many best practices discussed
 during the workshop. Often the sustainability of scientific software projects
 is achieved by the fact that the core developer or team heavily utilizes the
-software for their science, e.g.,  \emph{R/qtl, PETSc}.  Furthermore, the
+software for their science, e.g.,  \toolname{R/qtl, PETSc}.  Furthermore, the
 development of scientific software requires more scientific skills compared
 with those of utility software. This diminishes the need of specialist
 programmers and practices in many cases where the bulk of development is
