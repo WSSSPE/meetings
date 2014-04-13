@@ -82,6 +82,8 @@ James~Howison$^{(9)}$, Sou-Cheng~T.~Choi$^{(10)}$, Shel~Swenson$^{(11)}$,  Bruce
 \thanks{{}$^{(5)}$ Columbia Astrophysics Laboratory, Columbia University, New
 York, NY, USA; \url{matthewturk@gmail.com}}
 %
+\thanks{{}$^{(6)}$ Scientific Computing Group, Kitware, Inc., 28 Corporate Drive, Clifton Park, NY, USA; \url{marcus.hanwell@kitware.com}}
+%
 \thanks{{}$^{(7)}$ San Diego Supercomputer Center, University of California San Diego, La Jolla, CA, USA, \url{wilkinsn@sdsc.edu}}
 %
 \thanks{{}$^{(8)}$ Leader, Research Software Development Team, University College London, London, UK; \url {j.hetherington@ucl.ac.uk}}
@@ -101,17 +103,17 @@ York, NY, USA; \url{matthewturk@gmail.com}}
 
 \begin{abstract} %\note{Lead: Sou-Cheng T. Choi}
 This document summarizes the First Workshop on Sustainable Software for Science:
-Practice and Experiences (WSSSPE1). The content is based on the workshop
-itself, as recorded in a set of collaborative notes taken during the workshop,
+Practice and Experiences (WSSSPE1). The content is based on 
+a set of collaborative notes taken during the workshop,
 including discussion about the keynote presentations, three themed panels that
 discussed papers accepted at the workshop`, other discussion, cross-cutting
 issues, use cases, and conclusions. It joins a nascent literature seeking to
 understand what drives software work in science and how the reward systems of
-science work, thereby shaping the type of software work undertaken, including the
+science function, thereby shaping the types of software projects undertaken, including the
 extent to which developers are motivated to build software for the long-term,
 for the use of others, and whether to work collaboratively or separately.
-Unique perspectives were captured about issues such as comprehensive documentation,
-software deployment, and development practices; software licenses; career paths
+Unique perspectives were captured about issues such as comprehensive documentation, 
+development and deployment practices; software licenses; career paths
 for developers; identifiers for software through a
 mechanism such as a Digital Object Identifier or publication of a ``software
 paper''; and evidence of software contribution and impact, recorded in online
@@ -201,7 +203,7 @@ In addition, it is essential that scientists,
 researchers, and students are able to learn and adopt software-related skills
 and methodologies. Established researchers are already acquiring some of these
 skills, and in particular a specialized class of software developers is
-emerging in academic environments who are an integral and embedded part of
+emerging in academic environments as an integral part of
 successful research teams. The WSSSPE workshop  provided a forum
 for discussion of the challenges around scientific software, including both positions and experiences. The
 workshop short papers and debates have been archived to provide a basis for continued
@@ -218,7 +220,7 @@ further discussion and progress. Additionally, a minisymposium  to
 further explore some of the key issues raised in WSSSPE is co-organized by a
 WSSSPE1 participant at the 2014 Society for Industrial and Applied Mathematics
 (SIAM) Annual Meeting on ``Reliable
-Computational Science.''
+Computational Science'' (SIAM AN14, \url{http://meetings.siam.org}).
 
 This paper summarizes the  workshop papers
 and discussion, and identifies issues that future WSSSPE events will address.
@@ -229,11 +231,11 @@ papers, and putting together the agenda. Section~\ref{sec:process} is
 based on that publication. The remainder of this paper is based on the
 workshop itself, as documented in a set of collaborative notes taken
 during the workshop~\cite{WSSSPE1-google-notes}, including discussion
-about the keynote presentations (\S\ref{sec:keynotes}), the three
-panels (\S\ref{sec:devel}-\ref{sec:community}), 
-cross-cutting issues (\S\ref{sec:cross-cutting}),
-use cases (\S\ref{sec:use-cases}), and conclusions
-(\S\ref{sec:conclusions}).  Additionally, the accepted workshop papers are listed in
+about the keynote presentations~(\S\ref{sec:keynotes}), the three
+panels~(\S\ref{sec:devel}-\ref{sec:community}), 
+cross-cutting issues~(\S\ref{sec:cross-cutting}),
+use cases~(\S\ref{sec:use-cases}), and conclusions~(\S\ref{sec:conclusions}).  
+Additionally, the accepted workshop papers are listed in
 Appendix~\ref{sec:papers}, and a partial list of workshop attendees is
 in Appendix~\ref{sec:attendees}.
 
@@ -378,7 +380,7 @@ reproducibility in computational biology, but has concluded that ``I
 have proved I cannot reproduce research from my own
 lab''~\cite{Veretnik}.
 
-Another problem he experienced was staff retention with respect to
+Another problem Bourne experienced was staff retention with respect to
 private organizations which reward those combining research and
 software expertise (the ``Google Bus''). However, he is a strong fan
 of software sustainability through public-private partnerships. He
@@ -390,7 +392,7 @@ far if one is being paid to do something else.  He talked about grant
 schemes of relevance in the U.S., particularly with regard to
 technology transfer~\cite{sbir-web, fased-web}.
 
-He also had problems with selling research software: the university technology
+Bourne also had problems with selling research software: the university technology
 transfer office wanted huge and unrealistic intellectual property
 reach through, whereby they would get a share of profits from drugs
 developed by pharmaceutical companies who use the software. 
@@ -412,7 +414,7 @@ to many useful organizational innovations: ``University 2.0 is yet to
 happen.''  He argued that
 funders such as NSF and NIH can help train institutions, not just individuals, in this regard. 
 
-He concluded by discussing his 2011 paper ``Ten Simple Rules for Getting Ahead as a Computational Biologist in Academia''~\cite{bourne_ten} and
+Bourne concluded by discussing his 2011 paper ``Ten Simple Rules for Getting Ahead as a Computational Biologist in Academia''~\cite{bourne_ten} and
 argued that computational scientists ``have a responsibility to
 convince their institutions, reviewers, and communities that software is
 scholarship, frequently
@@ -463,7 +465,7 @@ pointed out that GitHub could propel the next stage of web
 development, i.e., ``the collaborative web,'' following on from the
 social web of Facebook.
 
-In conclusion Smith reiterated the importance of establishing
+In conclusion Smith reiterated the importance of establishing effective
 incentive models for open contributions and tool builders, for
 example, meaningful metrics and research grants such as~\cite{NSF_software_vision}. He urged computational scientists to
 collaborate and share often their research reports, teaching
@@ -476,7 +478,7 @@ around scientific software development and support, mainly focused on research
 groups that also produce code in various forms. There was widespread agreement
 that developing and maintaining software is hard, but best practices can help.
 Several participants added that documentation is not just for users, and writing
-API documentation, tutorials for building and deploying software, along with
+API documentation, tutorials for building and deploying software, together with
 documented development practices can be very helpful in bringing  new developers
 into a project efficiently.
 
@@ -529,9 +531,9 @@ team'' can end up setting unrealistic expectations by doing too much. Team Geek~
 and Turk's paper on scaling code in the human dimension~\cite{Turk:2013:SCH:2484762.2484782}  discuss how development
 lists that are welcoming to people actually have many more people contributing.
 
-Recruiting and/or retaining personnel in this area is hard,
+Recruiting and retaining personnel in this area is hard,
 with one of the major reasons being no long-term career paths (especially when
-compared with industry). This is further discussed in \S\ref{sec:career-tracks}.
+compared with industry). This is further discussed in~\S\ref{sec:career-tracks}.
 
 %moved to cross-cutting issues
 %
@@ -550,7 +552,7 @@ development. Regardless of the license and development model that will be used,
 the future of the project must be considered. Even if a particular piece of
 software satisfies today's requirements, will it continue to do so in the
 future? Important questions include whether the supplier will still be around in five
-years time, will it still care for its customers needs, will it be responsive to
+years' time, will it still care for its customers' needs, will it be responsive to
 bug reports and feature requests? Should you tie your investment to a single
 supplier using a proprietary product, or ensure the project uses an OSI-approved
 license, and can outlive any single entity if the software is still important.
@@ -573,7 +575,7 @@ the authority to develop standardized quality processes, a central common
 repository, central resources for services and consulting, a think tank of
 sorts, and a software orphanage center. The idea of one common repository received
 some resistance, with so many compelling alternatives available, e.g. Bitbucket or
-GitHub. The point for centralization of communication/point of contact was seen as
+GitHub. The centralized communication or point of contact was seen as
 reasonable, with the statement that ``vested with authority'' is perhaps too strong,
 but ``providing tools if needed'' might be more appropriate.
 
@@ -624,7 +626,7 @@ less, but communication and the widespread availability of tools has. It was
 noted that email lists, websites, chat rooms, version control, virtual and
 physical meetings are all over 20 years old.
 
-There was debate that while some of the basics of computing may be fairly
+There was debate that while some of the basics of computing may be 
 similar tools commonly used for computing have changed quite
 significantly. Reference was made to Perl, which was commonly used, giving way
 to whole new languages, such as Python, for gluing things together and how this
@@ -1364,18 +1366,36 @@ true.
 
 The literature below, suggested by attendees, addresses both non-scientific
 software projects, as well as scientific projects.  The selections address both
-descriptive and prescriptive approaches to communities. 
-\begin{itemize}
-\item \cite{howison_scientific_2011, howison_incentives_2013}
-\item \cite{citeulike:11831265}
-\item \cite{citeulike:7888211}
-\item \cite{citeulike:478633}
-\item \cite{opac-b1134063}
-\item \cite{Trapani:2011}
-\item \cite{Allsopp:2012}
-\item \cite{1749-4699-6-1-015010}
-\item \cite{Turk:2013:SCH:2484762.2484782}
-\end{itemize}
+descriptive and prescriptive approaches to communities.
+
+Both \cite{howison_scientific_2011} and \cite{howison_incentives_2013} 
+study how scientific software collectives self-organize and address issues of
+incentive, long-term support, and development of infrastructure as well as new
+features.  As noted elsewhere in this summary,
+\cite{Turk:2013:SCH:2484762.2484782} shared prescriptions from two software
+communities in astrophysics.
+
+From the perspective of developing prescriptions for successful scientific
+software development, both \cite{citeulike:11831265} and
+\cite{1749-4699-6-1-015010} share experiences and suggestions for developing
+sustainable practices.  \cite{citeulike:11831265} proposes "ten simple rules"
+for developing open source scientific software, focusing on both the choices
+made during development and the sustainability of practices in the long term.  
+\cite{1749-4699-6-1-015010} describes the development and long-term growth of
+the \texttt{deal.II} library, and how its place in its ecosystem of libraries,
+applications and domains has shaped its development and community trajectory.
+
+From more traditional open source development, resources were shared that
+developed communities explicitly, such as 
+\cite{citeulike:7888211} and \cite{Trapani:2011}, focusing on
+large-scale projects such as the Ubuntu linux distribution and smaller-scale
+volunteer-developed projects like such as ThinkUp, respectively.
+The process of open source development, while less explicitly focused on
+community building, outlined in \cite{citeulike:478633} was seen as a valuable
+resource, particularly when combined with the management and personal
+interaction techniques outlined in \cite{opac-b1134063}.  Growing diversity in
+communities was directly addressed in \cite{Allsopp:2012}, where experiences
+growing the diversity of technical conferences in open source were described.
 
 \subsection{Industry \& Economic Models}
 
@@ -1423,8 +1443,29 @@ reduces their ability to reuse code.
 
 \subsection{Education \& Training}
 
-\todo{text about papers and discussion in this part of the workshop}
+The papers describing education and training were focused primarily on how
+these aspects of community development impact on the long-term sustainability
+of software projects.  \cite{Girotto_WSSSPE} described the impact of the
+mandate within the International Centre for Theoretical Physics (ICTP) to
+foster resources and competences in software development and HPC, resulting in
+the development of educational curricula directed in this area.  The paper
+itself described the changes made in these curricula as a result of the current
+changes in the HPC and scientific software landscape due to the advent of
+scripting languages, new programming paradigms and new types of hardware such
+as accelerator technologies.  The development of a workshop, with carefully
+selected participants and an immersive approach to learning, was identified as
+a major success for educating and developing new scientific software developers
+from targeted domains.
 
+\cite{Crawford_WSSSPE} addressed education and training within computational
+chemistry frameworks, particularly as these frameworks attempt to address
+next-generation computer hardware and software and as chemistry courses
+emphasize lab work over computational education.  The authors identify this
+lack of computational awareness and training as the primary challenge to future
+advances in computational chemistry.  The authors propose a new institute for
+computational chemistry, emphasizing collaboration (and a licensing structure,
+such as LGPL or more permissive) and education of future generations of
+chemistry researchers.
 
 %\section{Other Discussion} \label{sec:other}
 %
