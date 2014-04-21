@@ -587,7 +587,9 @@ recommendations for processes, practices, tools, etc. One of the papers
 suggested that a ``Software Sustainability Institute'' should be vested with
 the authority to develop standardized quality processes, a central common
 repository, central resources for services and consulting, a think tank of
-sorts, and a software orphanage center. \note{What is software orphanage center?} The idea of one common repository received
+sorts, and a software orphanage center (i.e., a place to `take care' of software
+when the original developers have stopped doing so).
+The idea of one common repository received
 some resistance, with so many compelling alternatives available, e.g. Bitbucket or
 GitHub. The centralized communication or point of contact was seen as
 reasonable, with the statement that ``vested with authority'' is perhaps too strong,
@@ -1911,61 +1913,97 @@ treatment.
 
 \section{Conclusions} \label{sec:conclusions}
 
-To conclude, we discuss the major concerns and issues that were raised in
-the workshop, what we have learned, and what we plan to do going forward.
+To conclude, we discuss what we have learned from the workshop and what we plan to do going forward.
 
-\note{add some analysis of the deficiencies and difficulties that are
-  present in different fields, and those that are common?}
+%\note{add some analysis of the deficiencies and difficulties that are
+%  present in different fields, and those that are common?}
 
-\subsection{Concerns and issues}
-
-\todo{what are the main issues discussed in each discussion section? - and, if you want, and recommendations on what should be done about them}
-
-The issues that came up repeatedly in different parts of the workshop are, as described in
-\S\ref{sec:cross-cutting}, the need for a definition of sustainability, and the need for
-career paths for scientific software developers.
-
-\subsubsection*{Developing and Supporting Software}
-
-\subsubsection*{Policy}
-
-\subsubsection*{Communities, Models, and Education}
-
-Recognition of scholarship in scientific software over research 
-articles is overdue.
+%\subsection{Concerns and issues}
+%
+%\todo{what are the main issues discussed in each discussion section? - and, if you want, and recommendations on what should be done about them}
 
 
-\subsection{Recommendations or lessons}
 
-\note{lessons from the 3 discussion sessions go here, and lessons from the cross-cutting section as well?}
+\subsection{Issues and lessons}
 
-\subsubsection*{Developing and Supporting Software}
+%\note{lessons from the 3 discussion sessions go here, and lessons from the cross-cutting section as well?}
 
-Successful collaborative projects conducted via the use of shared
-repositories ensures reproducibility in computational science.
+Three issues came up repeatedly in different parts of the workshop:
 
-\subsubsection*{Policy}
-
-One of the subjects that contributed papers, attendees, and speakers
-wrestled with repeatedly is defining sustainability such that the
+\begin{enumerate}
+\item The need for a definition of sustainability such that the
 community can get behind it. Although some had hoped that at least an
 initial consensus could be reached in the course of the workshop, this
 proved elusive. However, in the absence of such a definition it will
 remain difficult to define exactly what the goals should be towards
 achieving, or even only improving software sustainability, and hence
-what practices should be followed and implemented when. Thus, to be
-seen successful, activities emerging from or following this first
-WSSSPE workshop should include working out a community consensus on
-what we mean by sustainability.
+what practices should be followed and implemented when. As described
+in the next subsection (\S\ref{sec:future}), the workshop organizers have begun an effort
+to address this.
 
-\subsubsection*{Communities, Models, and Education}
-A sustainability model for scientific software is to build a pipeline
-from construction to consumption as found in the most efficient
+\item The need for academic
+career paths for scientific software developers.  
+Unfortunately, it is not clear how to ensure that these career paths become available,
+other than repeatedly talking about this issue. The recent Moore and Sloan initiative
+in data science~\cite{moore_sloan} are trying to address this, to some extent, by providing funds and
+incentives to universities in the US that work towards this goal.
+
+%
+%\subsubsection*{Developing and Supporting Software}
+%
+%\subsubsection*{Policy}
+%
+%\subsubsection*{Communities, Models, and Education}
+
+\item The need for recognition of scholarship in scientific software over research 
+articles. This need probably is the most addressed of the three, today, with
+efforts underway such as the Mozilla Science Lab, GitHub, and figshare
+``Code as a research object'' project~\cite{code_as_a_research_object} among others.
+
+\end{enumerate}
+
+%\subsubsection*{Developing and Supporting Software}
+
+\subsubsection*{Discussion sessions}
+
+Two strong lessons came out of the three discussion sessions:
+
+\begin{enumerate}
+\item
+Successful collaborative projects conducted via the use of shared
+repositories are a means towards reproducibility in computational science.
+\katznote{this seems rather limited - what else comes out of `successful collaborative projects conducted via the use of shared
+repositories'?}
+
+%\subsubsection*{Policy}
+
+%One of the subjects that contributed papers, attendees, and speakers
+%wrestled with repeatedly is defining sustainability such that the
+%community can get behind it. Although some had hoped that at least an
+%initial consensus could be reached in the course of the workshop, this
+%proved elusive. However, in the absence of such a definition it will
+%remain difficult to define exactly what the goals should be towards
+%achieving, or even only improving software sustainability, and hence
+%what practices should be followed and implemented when. As described
+%in the next subsection, a subset of the organizers have begun an effort
+%to address this.
+
+%Thus, to be
+%seen successful, activities emerging from or following this first
+%WSSSPE workshop should include working out a community consensus on
+%what we mean by sustainability.
+
+%\subsubsection*{Communities, Models, and Education}
+\item A sustainability model for scientific software is to build a pipeline
+from construction to consumption, as found in the most efficient
 information technology enterprises.
 
-% Conclusion of S8 : Use Cases, not sure where to put
-\note{conclusions from S8, not sure of location --Ketan}
+\end{enumerate}
 
+% Conclusion of S8 : Use Cases, not sure where to put
+%\note{conclusions from S8, not sure of location --Ketan}
+
+\subsubsection*{Use cases}
 Two distinct class of scientific software projects and products were discussed
 in the workshop: 1) generic, large-scale utility software and 2) niche, medium-
 and small-scale scientific software. Each class faces different and significant
@@ -1998,7 +2036,7 @@ Ideally, there would be a service that
 would be able to index the contributions to the workshop, serving the
 authors, the organizers, and the larger community.
 
-\subsection{Future activities}
+\subsection{Future activities} \label{sec:future}
 
 The organizers of the workshop have begun a survey to understand how
 the community define software sustainability.  It is expected that this survey
