@@ -1486,71 +1486,83 @@ chemistry researchers.
 
 \section{Cross-cutting Issues} \label{sec:cross-cutting}
 
-Two issues were raised in a number of the workshops sessions, defining sustainability and career paths.  This section brings those discussions together.
+Two issues, how to define software sustainability, and how career
+paths (or their lack) interact with achieving it, were raised across
+the workshop's panels.  This section aims to synthesize these
+discussions from different perspectives.
 
 \subsection{Defining Sustainability \note{lead: Daniel S. Katz}}  \label{sec:defining-sustainability}
 
-%\note{So far this reads a lot like a collection of thoughts only, without ``red line''.}
-%\note{Dan: assuming the previous note is from FL, what do you propose?}
-The question of what was meant by ``sustainability'' in the context of software
-came up in many different parts of the workshop, specifically in the first
-keynote (\S\ref{sec:keynote1}), the Developing and Maintaining Software panel,
-and the Policy panel.
+What is, or should be meant by ``sustainability'' in the context of
+software came up in many different parts of the workshop, specifically
+in the first keynote (\S\ref{sec:keynote1}), the Developing and
+Maintaining Software panel (\S\ref{sec:devel}), and the Policy panel
+(\S\ref{sec:policy}). It quickly became clear that at present there is
+no consensus among the community, whether within or accross
+disciplines, on what this definition should be, and that a variety of
+different defintiions were being assumed, used, or sometime expressly
+articulated by contributors and attendees. However, some concepts,
+particularly relating sustainability to change over time, were also
+evidently held in common. This common notion is, for example, captured
+in the definition used by the UK's Scientific Software Sustainability
+Institute, quoted in~\cite{Venters_WSSSPE}: ``software you use today
+will be available---and continue to be improved and supported---in the
+future''. Pierce et al~\cite{Pierce_WSSSPE} express this idea as
+software that continues to serve its users.
 
-In the opening keynote, Philip Bourne suggested that perhaps sustainability can
-be defined as the effort that happens to make the essential things continue.
-This leads to having to decide what it is that we want to sustain, whether what
-we want to sustain is valuable, and finally, who would care if it went away,
-and how one measures how much they care.
-
-In the Developing and Maintaining Software panel, there was some discussion on
-this topic: what does sustainability mean? It was pointed out that OSS Watch
-proposes a Software Sustainability Maturity Model to address the issue of how
-sustainability a particular element of software is, and says that this
-sustainability is important. ``When choosing software for procurement or
-development reuse - regardless of the license and development model you will
-use - you need to consider the future. While a software product may satisfy
+Philip Bourne, too, used the relation to change over time when he
+suggested in his opening keynote that sustainability can perhaps be
+defined as the effort needed to make the essential things continue.
+This leads to having to decide what it is that we want to sustain,
+whether what we want to sustain is valuable, and finally, who would
+care and how much if it went away. As was pointed out during a
+discussion session, OSS Watch, an advisory service for issues relating
+to free and open source software in the UK, proposes a Software
+Sustainability Maturity Model to address the issue of what level of
+sustainability a particular element of software needs to have, and
+where this is important. It, too, expresses sustainability in relation
+to change over time:
+\begin{quote}``When choosing software for procurement or
+development reuse --- regardless of the license and development model you will
+use --- you need to consider the future. While a software product may satisfy
 today's needs, will it satisfy tomorrow's needs? Will the supplier still be
 around in five years' time? Will the supplier still care for all its customers
 in five years' time? Will the supplier be responsive to bug reports and feature
 requests? In other words, is the software sustainable?''~\cite{OSS-ssmm-web}
+\end{quote}
 
-Attendees suggested that a key question that the definition of sustainability
-is one issue on which the community needs to agree, and that ideally, an
-initial definition would be determined during the workshop, or at least some
-progress would be made towards this goal.  Another topic that came up is what
-the goal of sustainability is.  Perhaps it is reproducible science, or
-persistence, or quality, or something else.  Similarly, some attendees want to
-understand how success in sustainability is measured.  How does a group of
-developers know when they have actually achieved sustainable software? This led
-to a comment that sustainability should be addressed throughout the full
-software life cycle.
+Attendees suggested that having a definition of sustainability on
+which the community can agree is key.  A related question that was
+raised is what the goal of sustainability should be, with a wide range
+of possible answers, including more reproducible science, software
+persistence, and quality.  And given a goal of sustainability, how
+would success in achieving it be measured?  How would one know that a
+piece of software has reached sustainability? As a commenter
+suggested, this may mean that sustainability should be addressed
+throughout the full software life cycle.  It was also pointed out that
+software sustainability is not isolated from other attributes of
+scientific software and its use, such as usability, and provenance.
 
-Another topic that came up during the Developing and Maintaining Software panel
-is the relationship of sustainability to other software attributes.  Attendees
-asked ``what is the relationship between sustainability and provenance?'' And,
-``is usability separate from sustainability or a fundamental part of it?''
+Because part of the Policy panel (\S\ref{sec:policy}) was about
+modeling sustainability, and modeling requires defining what will be
+modeled, this panel saw particular attention to the questions
+surrounding the definition of sustainability. Two papers, Venters et
+al.~\cite{Venters_WSSSPE} and Katz and Proctor~\cite{Katz_WSSSPE},
+specifically discuss the issue. 
 
-In addition, the Policy panel had a large amount of discussion about defining
-sustainability, as one of the subtopics in that panel was Modeling
-Sustainability, and modeling requires defining what will be modeled.
+According to Venters et al.~\cite{Venters_WSSSPE}, sustainability is a
+rather ambiguous concept, and the lack of an accepted definition
+hampers integrating the concept into software engineering. They
+suggest that sustainability falls under the category of non-functional
+requirements, and that a software's sustainability is a consequence of
+a set of central software architecture quality attributes, including
+extensibility, interoperability, maintainability, portability,
+reusability, and scalability. They also propose an evaluation
+framework with which quality and sustainability could be measured at
+the architectural level.
 
-In this subtopic, two papers included discussion of the definition of
-sustainability.  Venters et al.~\cite{Venters_WSSSPE} mentioned that this is a
-rather ambiguous concept, and that the lack of an accepted definition gets in
-the way of integrating the concept into software engineering. They suggest that
-sustainability is a non-functional requirement, and that the quality of
-software architectures determines sustainability. They then propose that
-sustainability is a consequence of a set of central quality attributes:
-extensibility, interoperability, maintainability, portability, reusability, and
-scalability. Finally, they develop an architecture evaluation framework based
-on scenarios that help to illuminate how to measure quality or sustainability
-at the architectural level.
-
-Katz and Proctor~\cite{Katz_WSSSPE} included a set of questions that could be
-used to measure software sustainability, and though these questions might
-falsely lead to yes or no answers, the complete set would determine a range of
-values for sustainability. These questions are:
+Katz and Proctor~\cite{Katz_WSSSPE} propose a set of questions that could be
+used to measure software sustainability:
 \begin{itemize}
 \item Will the software continue to provide the same functionality in the future,
       even if the environment (other parts of the infrastructure) changes?
@@ -1558,15 +1570,18 @@ values for sustainability. These questions are:
 \item Do users have a mechanism to ask questions and to learn about the software?
 \item Will the functionality be correct in the future, even if the environment changes?
 \item Does it provide the functionality that existing and future users want?
-\item Does it incorporate new science/theory/tools as they develop?
+\item Will it incorporate new science, theory, or tools as they develop?
 \end{itemize}
+Despite their phrasing, these questions are not intended to be given
+simplistic yes or no answers, and it is the complete set rather than
+any individual one that would determine where in the range of
+sustainability a software falls.
 
-Lenhardt~\cite{lenhardt-wssspe1-panel} summarized the contributions of the
-Modeling Sustainability papers in the panel. As shown in
-Table~\ref{tab:defining-sustainability}, for each paper he discussed what
-software meant, whether there was a definition of sustainability, and what the
-approach was to either understand or evaluate sustainability.
-
+Table~\ref{tab:defining-sustainability} reproduces a summary created
+by C.~Lenhardt ~\cite{lenhardt-wssspe1-panel}, which shows for each contribution to the
+Modeling Sustainability panel what it meant when referring to
+software, how it defined software sustainability, and which
+approach it suggested to understand or evaluate sustainability.
 \begin{table}[t]
   \begin{scriptsize}
     \begin{center}
