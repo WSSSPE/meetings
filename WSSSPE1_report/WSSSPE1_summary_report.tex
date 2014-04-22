@@ -487,14 +487,23 @@ materials, code, as well as data by attaching proper licenses.
 
 \section{Developing and Supporting Software \note{\scriptsize lead: Marcus Hanwell, contributor: Suresh Marru}} \label{sec:devel}
 
-The panel on developing and supporting software examined the challenges
+The panel on Developing and Supporting Software examined the challenges
 around scientific software development and support, mainly focused on research
-groups that also produce code in various forms. There was widespread agreement
+groups that in addition to pursuing research also produce code in various forms. There was widespread agreement
 that developing and maintaining software is hard, but best practices can help.
 Several participants added that documentation is not just for users, and writing
 application programming interface (API) documentation, tutorials for building and deploying software, together with
 documented development practices can be very helpful in bringing  new developers
-into a project efficiently.
+into a project.
+
+Two subjects that prominently surfaced in this panel also came up
+throughout other parts of the workshop, and are therefore deferred to
+the section on Cross-cutting Issues (\S\ref{sec:cross-cutting}). These
+are the lack of long-term career paths for specialists in the various
+software development and support areas (see
+\S\ref{sec:career-tracks}), and the question of what ``sustainable''
+should mean in the context of software (see
+\S\ref{sec:defining-sustainability}).
 
 \subsection{Research or Reuse?}
 
@@ -527,58 +536,27 @@ There were several unique perspectives about issues such as managing API
 changes, using the same best practices for software as data, and going beyond
 simply ``slapping an OSI-approved license on code.''
 
-\subsection{Communities and Career Paths}
+\subsection{The Importance of Communities}
 
 Communities are extremely important in software projects, and both their
 building and continued engagement need attention during the project life cycle.
-Several of the submitted papers discussed how communities have been built around
-projects, and what is needed to enable a project to grow. Among these are
+Several of the submitted papers \todo{which ones? should cite here.} discussed how communities have been built around
+projects, and what is needed to enable a project to grow. The latter
+includes 
 public source-code hosting, mailing lists, documentation, wikis, bug trackers, software
 downloads, continuous integration, software quality dashboards, and of course,
-a general web presence to tie all of these things together.
+a general web presence to tie a project's channels and artifacts together.
 
-There was extended discussion about users not answering the questions of other
-users. Several participants
-offered counterexamples, such as mailing lists where developers do not participate
-as much due to users being more active, or whether the ``core
-team'' can end up setting unrealistic expectations by doing too much. Team Geek~\cite{opac-b1134063}
+There was extended discussion about the challenge of fostering
+communities in which users help each other, rather than always
+deferring to the developers of project to answer user queries. Participants
+offered examples that this is indeed possible, such as mailing lists
+in which developers do not participate
+much because users actively respond to questions from other users, but
+also asked whether by doing too much the ``core
+team'' could end up setting unrealistic expectations. Team Geek~\cite{opac-b1134063}
 and Turk's paper on scaling code in the human dimension~\cite{Turk:2013:SCH:2484762.2484782}  discuss how development
-lists that are welcoming to people actually have many more people contributing.
-
-Recruiting and retaining personnel in this area is hard,
-with one of the major reasons being no long-term career paths (especially when
-compared with industry). This is further discussed in~\S\ref{sec:career-tracks}.
-
-%moved to cross-cutting issues
-%
-%How should software development be balanced with
-%research? It is apparent that things are beginning to improve, such as
-%incentives for software development in the form of altmetrics, tenure committee
-%consideration, and NSF ``products'' vs ``publications.'' It was noted it can be very
-%difficult to measure where people are using small bits of your code.
-
-\subsection{Defining Sustainability for Scientific Software}
-
-The question of what ``sustainable'' means in the context of software was
-raised (see \S\ref{sec:defining-sustainability}.) The resources at OSS Watch~\cite{osswatch-web}   discuss what
-to look for when choosing software for procurement, or reuse in further software
-development. Regardless of the license and development model that will be used,
-the future of the project must be considered. Even if a particular piece of
-software satisfies today's requirements, will it continue to do so in the
-future? Important questions include whether the supplier will still be around in five
-years' time, will it still care for its customers' needs, will it be responsive to
-bug reports and feature requests? Should you tie your investment to a single
-supplier using a proprietary product, or ensure the project uses an OSI-approved
-license, and can outlive any single entity if the software is still important.
-
-What is the overarching goal of sustainability? Is it reproducible science,
-persistence, quality, something else? How should success be measured in this
-context? Is there some metric that can be used to determine when you have
-achieved sustainable software, or is this an ongoing process with no clear
-endpoint. For truly sustainable software there should be no endpoint, as the
-software products continue to be used and useful beyond the single institution,
-grant, and developer/development team. Sustainability must be addressed
-throughout the project life cycle.
+lists tend to  have many more people contributing when they are welcoming to people.
 
 \subsection{Software Process, Code Review, Automation, Reproducibility}
 
