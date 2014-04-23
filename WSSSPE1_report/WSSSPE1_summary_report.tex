@@ -114,25 +114,26 @@ York, NY, USA; \url{matthewturk@gmail.com}}
 
 
 \begin{abstract} %\note{Lead: Sou-Cheng T. Choi}
-This document summarizes the First Workshop on Sustainable Software for Science:
-Practice and Experiences (WSSSPE1). The content is based on
-a set of collaborative notes taken during the workshop,
-including discussion about the keynote presentations, three themed panels that
-discussed papers accepted at the workshop`, other discussion, cross-cutting
-issues, use cases, and conclusions. It joins a nascent literature seeking to
-understand what drives software work in science and how the reward systems of
-science function, thereby shaping the types of software projects undertaken, including the
-extent to which developers are motivated to build software for the long-term,
-for the use of others, and whether to work collaboratively or separately.
-Unique perspectives were captured about issues such as comprehensive documentation,
-development and deployment practices; software licenses; career paths
-for developers; identifiers for software through a
-mechanism such as a Digital Object Identifier or publication of a ``software
-paper''; and evidence of software contribution and impact, recorded in online
-systems such as source code repositories like GitHub. For truly sustainable
-software, there should be no endpoint, as the software products continue to be
-used beyond a single institution, grant, and developer or
-development team.
+This document summarizes the First Workshop on Sustainable Software
+for Science: Practice and Experiences (WSSSPE1). The content is based
+on a set of collaborative notes taken during the workshop, including
+discussion about the keynote presentations, three themed panels that
+discussed papers accepted at the workshop`, other discussion,
+cross-cutting issues, use cases, and conclusions. It joins a nascent
+literature seeking to understand what drives software work in science
+and how the reward systems of science function, thereby shaping the
+types of software projects undertaken, including the extent to which
+developers are motivated to build software for the long-term, for the
+use of others, and whether to work collaboratively or separately.
+Unique perspectives were captured about issues such as comprehensive
+documentation, development and deployment practices; software
+licenses; career paths for developers; identifiers for software
+through a mechanism such as a Digital Object Identifier or publication
+of a ``software paper''; and evidence of software contribution and
+impact, recorded in online systems such as source code repositories
+like GitHub. For truly sustainable software, there should be no
+endpoint, as the software products continue to be used beyond a single
+institution, grant, and developer or development team.
 
 \end{abstract}
 
@@ -204,84 +205,85 @@ Sunday, 17 November~2013, in conjunction with the~2013 International
 Conference for High Performance Computing, Networking, Storage and
 Analysis (SC13, \url{http://sc13.supercomputing.org}).
 
-Because progress in scientific research is dependent on the quality of and
-accessibility to software at all levels, it is now critical to address many
-challenges related to the development, deployment, and maintenance of reusable
-software.
+Because progress in scientific research is dependent on the quality of
+and accessibility to software at all levels, it is now critical to
+address many challenges related to the development, deployment, and
+maintenance of reusable software.
 %\note{Ketan: What are the levels in scientific process where software
 %is required. It might be interesting to outline these stages and types of
 %software required in each stage.}
-In addition, it is essential that scientists,
-researchers, and students are able to learn and adopt software-related skills
-and methodologies. Established researchers are already acquiring some of these
-skills, and in particular a specialized class of software developers is
-emerging in academic environments as an integral part of
-successful research teams. This first WSSSPE workshop  provided a forum
-for discussion of the challenges around sustaining scientific software, including
-contributed short papers in the form of both positions and experience
-reports. These short papers, as well as notes from the debates around
-them, have been archived to provide a basis for continued
-discussion, and have fed into the collaborative writing of this
-report.  Some of the workshop submissions have been extended to full
-papers, which form part of the same special journal edition in which this report
-appears. The workshop generated a high level of interest; an
-estimated~90 to~150 participants were in attendance at different times
-of the day. The interest and discussions have already led to follow-up activities:
-A smaller Python-specific workshop is planned to be held at the~2014
-SciPy conference, and a follow-on WSSSPE2 workshop has been proposed
-to, and meanwhile been
-accepted for the SC14 conference. In addition, 
-funds to support the workshops have been obtained from
-the US National Science Foundation (NSF) and the Gordon and Betty Moore
-Foundation, and the
-original workshop website has been turned into a community website to engender
-further discussion and progress. Additionally, a minisymposium  at the~2014 Society for Industrial and Applied Mathematics
-(SIAM) Annual Meeting on ``Reliable
-Computational Science'' (SIAM AN14, \url{http://meetings.siam.org})  is being co-organized by a
-WSSSPE1 participant to
-further explore some of the key issues raised at the workshop.
+In addition, it is essential that scientists, researchers, and
+students are able to learn and adopt software-related skills and
+methodologies. Established researchers are already acquiring some of
+these skills, and in particular a specialized class of software
+developers is emerging in academic environments as an integral part of
+successful research teams. This first WSSSPE workshop provided a forum
+for discussion of the challenges around sustaining scientific
+software, including contributed short papers in the form of both
+positions and experience reports. These short papers, as well as notes
+from the debates around them, have been archived to provide a basis
+for continued discussion, and have fed into the collaborative writing
+of this report.  Some of the workshop submissions have been extended
+to full papers, which form part of the same special journal edition in
+which this report appears. The workshop generated a high level of
+interest; an estimated~90 to~150 participants were in attendance at
+different times of the day. The interest and discussions have already
+led to follow-up activities: A smaller Python-specific workshop is
+planned to be held at the~2014 SciPy conference, and a follow-on
+WSSSPE2 workshop has been proposed to, and meanwhile been accepted for
+the SC14 conference. In addition, funds to support the workshops have
+been obtained from the US National Science Foundation (NSF) and the
+Gordon and Betty Moore Foundation, and the original workshop website
+has been turned into a community website to engender further
+discussion and progress. Additionally, a minisymposium at the~2014
+Society for Industrial and Applied Mathematics (SIAM) Annual Meeting
+on ``Reliable Computational Science'' (SIAM AN14,
+\url{http://meetings.siam.org}) is being co-organized by a WSSSPE1
+participant to further explore some of the key issues raised at the
+workshop.
 
-This report attempts to summarize the various aspects of the
-workshop.  The remainder of this paper first gives an overview of the
-process with which the workshop was put together
-(\S\ref{sec:process}),  then proceeds with summaries of the two
-keynote presentations~(\S\ref{sec:keynotes}), followed by summaries of
-the workshop papers grouped by the three thematic workshop panels to which they
-were assigned~(\S\ref{sec:devel}-\ref{sec:community}). Two broader
-cross-cutting issues surfaced repeatedly, and are
-discussed separately~(\S\ref{sec:cross-cutting}), as are
-use cases for sustainable software~(\S\ref{sec:use-cases}). The
-summaries are based not only on the papers and panel presentations, but
-also on the many comments raised in both the onsite and online discussions
-that accompanied the workshop elements, as documented by collaborative
-note taking during the workshop~\cite{WSSSPE1-google-notes}. We
-conclude with issues and lessons learned, as well as plans for future activities~(\S\ref{sec:conclusions}).
-The short papers accepted to the workshop are listed in
-Appendix~\ref{sec:papers}, and a partial list of workshop attendees
-can be found in Appendix~\ref{sec:attendees}.
+This report attempts to summarize the various aspects of the workshop.
+The remainder of this paper first gives an overview of the process
+with which the workshop was put together (\S\ref{sec:process}), then
+proceeds with summaries of the two keynote
+presentations~(\S\ref{sec:keynotes}), followed by summaries of the
+workshop papers grouped by the three thematic workshop panels to which
+they were assigned~(\S\ref{sec:devel}-\ref{sec:community}). Two
+broader cross-cutting issues surfaced repeatedly, and are discussed
+separately~(\S\ref{sec:cross-cutting}), as are use cases for
+sustainable software~(\S\ref{sec:use-cases}). The summaries are based
+not only on the papers and panel presentations, but also on the many
+comments raised in both the onsite and online discussions that
+accompanied the workshop elements, as documented by collaborative note
+taking during the workshop~\cite{WSSSPE1-google-notes}. We conclude
+with issues and lessons learned, as well as plans for future
+activities~(\S\ref{sec:conclusions}).  The short papers accepted to
+the workshop are listed in Appendix~\ref{sec:papers}, and a partial
+list of workshop attendees can be found in
+Appendix~\ref{sec:attendees}.
 
 \section{Workshop Process and Agenda} \label{sec:process}
 
-WSSSPE1 was organized by a relatively small group
-of five organizers and a larger program committee of~36
-members. The program committee peer-reviewed submissions, but also had
-early influence in the workshop's organization, such as articulating
-the Call for Papers (see Appendix~\ref{sec:cfp}).
+WSSSPE1 was organized by a relatively small group of five organizers
+and a larger program committee of~36 members. The program committee
+peer-reviewed submissions, but also had early influence in the
+workshop's organization, such as articulating the Call for Papers (see
+Appendix~\ref{sec:cfp}).
 
 Aside from setting the stage for the relevance of software
 sustainability and corresponding training and workforce issues to
-science,  the call for papers enumerated the topics it was interested
+science, the call for papers enumerated the topics it was interested
 in as challenges to the ecosystem of which scientific software is a
 part, and in which software developers, users, and funders hold
-roles. These challenges roughly followed NSF's Vision and Strategy
-for Software~\cite{NSF_software_vision}, and specifically included the
-development and research process that leads to new (or new versions of existing)
-software; the support, community infrastructure, and engineering for
-maintenance of existing software; the role of open source communities
-and industry; aspects of the use of software, such as
-reproducibility, that may be unique to science;  policy issues
-related to software sustainability such as measuring impact,
-giving credit, and incentivizing best practices; and education and training.
+roles. These challenges roughly followed NSF's Vision and Strategy for
+Software~\cite{NSF_software_vision}, and specifically included the
+development and research process that leads to new (or new versions of
+existing) software; the support, community infrastructure, and
+engineering for maintenance of existing software; the role of open
+source communities and industry; aspects of the use of software, such
+as reproducibility, that may be unique to science; policy issues
+related to software sustainability such as measuring impact, giving
+credit, and incentivizing best practices; and education and training.
 
 The workshop's goal was to encourage a wide range of submissions from
 those involved in software practice, ranging from initial thoughts and
@@ -296,34 +298,34 @@ their papers with a third-party service that issues persistent
 identifiers, such as Digital Object Identifiers (DOIs), and to then
 submit the URL to the archived paper by email. This had the side
 effect that every submitter would also have a publicly available and
-citable version of their workshop contribution. 
+citable version of their workshop contribution.
 
-This process resulted in a total of 58 submissions. Almost all submitters used either
-arXiv~\cite{arXiv-web} or Figshare~\cite{figshare-web} to archive
-their papers. The submissions were then subjected to peer review by
-the program committee, resulting in~181 reviews, an average of~3.12 reviews per
-paper. Reviews were completed using a Google form, which allowed
-reviewers to choose papers they wanted to review, and to provide
-general comments as well as relevance scores to the organizers and
-to the authors. Based on the review reports, the organizers decided to
-list~54 of the papers (see Appendix~\ref{sec:papers} for a full list) as significant
+This process resulted in a total of 58 submissions. Almost all
+submitters used either arXiv~\cite{arXiv-web} or
+Figshare~\cite{figshare-web} to archive their papers. The submissions
+were then subjected to peer review by the program committee, resulting
+in~181 reviews, an average of~3.12 reviews per paper. Reviews were
+completed using a Google form, which allowed reviewers to choose
+papers they wanted to review, and to provide general comments as well
+as relevance scores to the organizers and to the authors. Based on the
+review reports, the organizers decided to list~54 of the papers (see
+Appendix~\ref{sec:papers} for a full list) as significant
 contributions to the workshop. The high acceptance rate may come as a
-surprise, but it is nonetheless consistent with the goal of
-fostering broad participation, and as a corollary of the chosen submission
-process paper acceptance was no longer a means to filter
-the papers' public availability. 
+surprise, but it is nonetheless consistent with the goal of fostering
+broad participation, and as a corollary of the chosen submission
+process paper acceptance was no longer a means to filter the papers'
+public availability.
 
 In roughly following the aforementioned scientific software ecosystem
-challenges, the accepted submissions were
-grouped into three main categories, namely \emph{Developing and
-Supporting Software}, \emph{Policy}, and \emph{Communities}. Each
-category was assigned a panel, with three to four panelists 
-drawn from authors of the associated submissions, who were each
-assigned to read and summarily present a subset of
-the papers associated with the panel. The process from organizing and
-advertising the workshop, to collecting and reviewing the
-papers, and putting together the agenda was documented by the
-organizers in a report~\cite{WSSSPE1-pre-report}, which they
+challenges, the accepted submissions were grouped into three main
+categories, namely \emph{Developing and Supporting Software},
+\emph{Policy}, and \emph{Communities}. Each category was assigned a
+panel, with three to four panelists drawn from authors of the
+associated submissions, who were each assigned to read and summarily
+present a subset of the papers associated with the panel. The process
+from organizing and advertising the workshop, to collecting and
+reviewing the papers, and putting together the agenda was documented
+by the organizers in a report~\cite{WSSSPE1-pre-report}, which they
 self-archived in the same way as contributed papers.
 
 For each panel, the paper summaries were followed by active discussion
@@ -333,9 +335,10 @@ Doc~\cite{WSSSPE1-google-notes} for collaborative note taking. Some of
 the online discussion also took place on Twitter (hashtag
 \texttt{\#wssspe}).
 
-The workshop itself consisted of two keynote presentations followed by the
-three panel sessions.  Remote participation was
-facilitated by a live-cast of all keynotes and panels on Ustream.tv (\url{http://ustream.tv}). 
+The workshop itself consisted of two keynote presentations followed by
+the three panel sessions.  Remote participation was facilitated by a
+live-cast of all keynotes and panels on Ustream.tv
+(\url{http://ustream.tv}).
 
 \section{Keynotes } \label{sec:keynotes} %\note{lead: Sou-Cheng (Terrya) Choi}
 
@@ -345,30 +348,31 @@ The WSSSPE1 workshop began with two keynote presentations.
 
 The first keynote~\cite{WSSSPE1-keynote1} was delivered by Philip
 E. Bourne of University of California, San Diego.  Bourne is a
-biomedical scientist who has also formed four software companies. He co-founded
-PLOS Computational Biology~\cite{plos-web} and helped develop the RCSB
-Protein Data Bank~\cite{pdb-web}.
-He is working on automating three-dimensional visualizations of cell
-contents and molecular structures, a problem that has not been solved
-and when done, would serve as a key function of software in biomedical
+biomedical scientist who has also formed four software companies. He
+co-founded PLOS Computational Biology~\cite{plos-web} and helped
+develop the RCSB Protein Data Bank~\cite{pdb-web}.  He is working on
+automating three-dimensional visualizations of cell contents and
+molecular structures, a problem that has not been solved and when
+done, would serve as a key function of software in biomedical
 sciences.
 
-Bourne's  presentation was based on his own software experiences.  He emphasized that
-sustainability for software ``does not just mean more money from
-Government'' (see also Section~\ref{sec:defining-sustainability}).  Other
-factors to consider, he mentioned, encompass costs of production, ease
-of maintenance, community involvement, and distribution channels.
+Bourne's presentation was based on his own software experiences.  He
+emphasized that sustainability for software ``does not just mean more
+money from Government'' (see also
+Section~\ref{sec:defining-sustainability}).  Other factors to
+consider, he mentioned, encompass costs of production, ease of
+maintenance, community involvement, and distribution channels.
 
 In places, Bourne said, development in science has improved thanks to
 open source and hosting services like GitHub~\cite{github-web}, but
-for the most part it
-remains arcane. He argued that we can learn much from the App Store
-model about interfaces, ratings, and so on. He also mentioned
-BioJava~\cite{biojava-web} and Open Science Data Cloud~\cite{osdc-web}
-as distribution channels.  On a related note, Bourne observed a common
-evolutionary pathway for computational biology projects, from data
-archive to analytics platform to educational use, and suggested that
-use of scientific software for outreach might be the final step.
+for the most part it remains arcane. He argued that we can learn much
+from the App Store model about interfaces, ratings, and so on. He also
+mentioned BioJava~\cite{biojava-web} and Open Science Data
+Cloud~\cite{osdc-web} as distribution channels.  On a related note,
+Bourne observed a common evolutionary pathway for computational
+biology projects, from data archive to analytics platform to
+educational use, and suggested that use of scientific software for
+outreach might be the final step.
 
 Bourne shared with the audience a few real challenges he
 encountered. His first anecdote was that he has looked into
@@ -376,79 +380,78 @@ reproducibility in computational biology, but has concluded that ``I
 have proved I cannot reproduce research from my own
 lab''~\cite{Veretnik}.
 
-Another problem Bourne experienced was staff retention from
-private organizations which reward those combining research and
-software expertise (the ``Google Bus''). However, he is a strong fan
-of software sustainability through public-private partnerships. He
-noted that making a successful business from scientific software alone
-is  rare: founders overvalue while customers undervalue. He noted
-that to last, an open source project needs a minimal funding
-requirement even with a vibrant community---goodwill only goes so
-far if one is being paid to do something else.  He talked about grant
-schemes of relevance in the U.S., particularly with regard to
-technology transfer~\cite{sbir-web, fased-web}.
+Another problem Bourne experienced was staff retention from private
+organizations which reward those combining research and software
+expertise (the ``Google Bus''). However, he is a strong fan of
+software sustainability through public-private partnerships. He noted
+that making a successful business from scientific software alone is
+rare: founders overvalue while customers undervalue. He noted that to
+last, an open source project needs a minimal funding requirement even
+with a vibrant community---goodwill only goes so far if one is being
+paid to do something else.  He talked about grant schemes of relevance
+in the U.S., particularly with regard to technology
+transfer~\cite{sbir-web, fased-web}.
 
-Bourne also had problems with selling research software: the university technology
-transfer office wanted huge and unrealistic intellectual property
-reach through, whereby they would get a share of profits from drugs
-developed by pharmaceutical companies who use the software.
-He advocated for  a one-click approach for customers to
+Bourne also had problems with selling research software: the
+university technology transfer office wanted huge and unrealistic
+intellectual property reach through, whereby they would get a share of
+profits from drugs developed by pharmaceutical companies who use the
+software.  He advocated for a one-click approach for customers to
 purchase university-written software.
 
-He then presented arguments on directly valuing software as
-a research output alongside papers, a common discussion within this field.
-He mentioned an  exploration of involving software
-engineers in the review process of scientific code~\cite{peer-review-code}, and discussed
-how publishing software reviews could change attitudes.
+He then presented arguments on directly valuing software as a research
+output alongside papers, a common discussion within this field.  He
+mentioned an exploration of involving software engineers in the review
+process of scientific code~\cite{peer-review-code}, and discussed how
+publishing software reviews could change attitudes.
 
 On the notion of \emph{digital enterprise}, where information
 technology (IT) underpins the whole of organizational activities, he
-contended that universities are way behind the curve. In
-particular, he highlighted the separation of research, teaching, and
+contended that universities are way behind the curve. In particular,
+he highlighted the separation of research, teaching, and
 administration into silos without a common IT framework as a blocker
 to many useful organizational innovations: ``University 2.0 is yet to
-happen.''  He argued that
-funders such as NSF and NIH can help train institutions, not just individuals, in this regard.
+happen.''  He argued that funders such as NSF and NIH can help train
+institutions, not just individuals, in this regard.
 
-Bourne concluded by discussing his 2011 paper ``Ten Simple Rules for Getting Ahead as a Computational Biologist in Academia''~\cite{bourne_ten} and
-argued that computational scientists ``have a responsibility to
-convince their institutions, reviewers, and communities that software is
-scholarship, frequently
-more valuable than a research article''.
+Bourne concluded by discussing his 2011 paper ``Ten Simple Rules for
+Getting Ahead as a Computational Biologist in
+Academia''~\cite{bourne_ten} and argued that computational scientists
+``have a responsibility to convince their institutions, reviewers, and
+communities that software is scholarship, frequently more valuable
+than a research article''.
 
 \subsection{Scientific Software and the Open Collaborative Web, Arfon Smith} \label{sec:keynote2}
 
-The second keynote~\cite{WSSSPE1-keynote2} was delivered by Arfon Smith of
-GitHub. Smith started with an example from his past in data
-reduction in Astronomy, where he needed to remove interfering effects from the
-experimental apparatuses. He built a ``bad pixel mask,'' and realized that
-while it was persistent, there was no way or practice of sharing these data
-among scientists. Consequently many researchers repeated the same
-calculations. Smith estimated that 13 person-years were wasted by this
-repetition.
+The second keynote~\cite{WSSSPE1-keynote2} was delivered by Arfon
+Smith of GitHub. Smith started with an example from his past in data
+reduction in Astronomy, where he needed to remove interfering effects
+from the experimental apparatuses. He built a ``bad pixel mask,'' and
+realized that while it was persistent, there was no way or practice of
+sharing these data among scientists. Consequently many researchers
+repeated the same calculations. Smith estimated that 13 person-years
+were wasted by this repetition.
 
 ``Why didn't we do better?''  Smith asked of this practice. He argued
 this was because we were taught to focus on immediate research
 outcomes and not on continuously improving and building on tools for
 research. He then asked, when we do know better, why we do not act any
-different. He argued that it was due to the lack of incentives:
-only the immediate products of research, not the software, are valued.
-He referenced Victoria Stodden's talk at
-OKCon~\cite{okcon-stodden-talk} which he said argued these points
-well.
+different. He argued that it was due to the lack of incentives: only
+the immediate products of research, not the software, are valued.  He
+referenced Victoria Stodden's talk at OKCon~\cite{okcon-stodden-talk}
+which he said argued these points well.
 
-C. Titus Brown~\cite{ged-web}, a WSSSPE1 contributor,
-argued that with regard to reusable software, ``we should just start
-doing it.''  Smith replied that documentation should be
-``treated as a first class entity.''  He noted that the open source
-community has excellent cultures of code reuse, for example,
-RubyGems~\cite{rubygems-web}, PyPI~\cite{pypi-web}, and
-CPAN~\cite{cpan-web}, where there is effectively low-friction
-collaboration through the use of repositories. This has not happened
-in highly numerical, compiled language scientific software.  An
-exception he cited as a good example of scientific projects using
-GitHub is the EMCEE Markov Chain Monte Carlo project~\cite{emcee-web}
-by Dan Foreman-Mackey and contributors.
+C. Titus Brown~\cite{ged-web}, a WSSSPE1 contributor, argued that with
+regard to reusable software, ``we should just start doing it.''  Smith
+replied that documentation should be ``treated as a first class
+entity.''  He noted that the open source community has excellent
+cultures of code reuse, for example, RubyGems~\cite{rubygems-web},
+PyPI~\cite{pypi-web}, and CPAN~\cite{cpan-web}, where there is
+effectively low-friction collaboration through the use of
+repositories. This has not happened in highly numerical, compiled
+language scientific software.  An exception he cited as a good example
+of scientific projects using GitHub is the EMCEE Markov Chain Monte
+Carlo project~\cite{emcee-web} by Dan Foreman-Mackey and contributors.
 
 He argued that GitHub's \emph{Pull Request} code review mechanism
 facilitates such collaboration, by allowing one to code first, and
@@ -461,22 +464,25 @@ pointed out that GitHub could propel the next stage of web
 development, i.e., ``the collaborative web,'' following on from the
 social web of Facebook.
 
-In conclusion Smith reiterated the importance of establishing effective
-incentive models for open contributions and tool builders, for
-example, meaningful metrics and research grants such as~\cite{NSF_software_vision}. He urged computational scientists to
+In conclusion Smith reiterated the importance of establishing
+effective incentive models for open contributions and tool builders,
+for example, meaningful metrics and research grants such
+as~\cite{NSF_software_vision}. He urged computational scientists to
 collaborate and share often their research reports, teaching
 materials, code, as well as data by attaching proper licenses.
 
 \section{Developing and Supporting Software} \label{sec:devel}%\note{\scriptsize lead: Marcus Hanwell, contributor: Suresh Marru}
 
-The panel on Developing and Supporting Software examined the challenges
-around scientific software development and support, mainly focused on research
-groups that in addition to pursuing research also produce code in various forms. There was widespread agreement
-that developing and maintaining software is hard, but best practices can help.
-Several participants added that documentation is not just for users, and writing
-application programming interface (API) documentation, tutorials for building and deploying software, together with
-documented development practices can be very helpful in bringing  new developers
-into a project.
+The panel on Developing and Supporting Software examined the
+challenges around scientific software development and support, mainly
+focused on research groups that in addition to pursuing research also
+produce code in various forms. There was widespread agreement that
+developing and maintaining software is hard, but best practices can
+help.  Several participants added that documentation is not just for
+users, and writing application programming interface (API)
+documentation, tutorials for building and deploying software, together
+with documented development practices can be very helpful in bringing
+new developers into a project.
 
 Two subjects that prominently surfaced in this panel also came up
 throughout other parts of the workshop, and are therefore deferred to
@@ -489,181 +495,204 @@ should mean in the context of software (see
 
 \subsection{Research or Reuse?}
 
-Software is developed for many different purposes, and the requirements can
-vary significantly depending on the intended audience. Most end-users make use
-of either a graphical user interface of some kind, or a command line that may
-offer input and output formats for running the code and analyzing its output(s).
-When discussing backward compatibility it is these various interfaces that are
-discussed. For software that builds on other software frameworks it is the
-APIs that are most important, and this can
-encompass issues such as the source and binary interfaces to the software
-libraries developed---with each potentially having a high maintenance cost if
-they are to remain compatible over many years. When using command-line programs
-it is generally the command-line switches as well as the input/output formats
-that could incur significant costs if they are changed.
+Software is developed for many different purposes, and the
+requirements can vary significantly depending on the intended
+audience. Most end-users make use of either a graphical user interface
+of some kind, or a command line that may offer input and output
+formats for running the code and analyzing its output(s).  When
+discussing backward compatibility it is these various interfaces that
+are discussed. For software that builds on other software frameworks
+it is the APIs that are most important, and this can encompass issues
+such as the source and binary interfaces to the software libraries
+developed---with each potentially having a high maintenance cost if
+they are to remain compatible over many years. When using command-line
+programs it is generally the command-line switches as well as the
+input/output formats that could incur significant costs if they are
+changed.
 
-There was discussion that backward compatibility is not always desirable, and it
-can be very costly. This must be balanced with the aims of a given project, and how
-many other projects depend on and use the code when backwards incompatible
-changes are to be made. There are many examples in the wider open source
-software world of strategies for dealing with this, and again best practices
-can go a long way to mitigating issues around backwards compatibility. Many
-projects live with sub-optimal code for a while, and may allow backwards
-compatibility to be broken at agreed-upon development points, such as a major
-release for a software library.
+There was discussion that backward compatibility is not always
+desirable, and it can be very costly. This must be balanced with the
+aims of a given project, and how many other projects depend on and use
+the code when backwards incompatible changes are to be made. There are
+many examples in the wider open source software world of strategies
+for dealing with this, and again best practices can go a long way to
+mitigating issues around backwards compatibility. Many projects live
+with sub-optimal code for a while, and may allow backwards
+compatibility to be broken at agreed-upon development points, such as
+a major release for a software library.
 
-There were 13 articles about different experiences in this area, but little
-about GUI testing, performance, scalability, or agile development practices.
-There were several unique perspectives about issues such as managing API
-changes, using the same best practices for software as data, and going beyond
-simply ``slapping an OSI-approved license on code.''
+There were 13 articles about different experiences in this area, but
+little about GUI testing, performance, scalability, or agile
+development practices.  There were several unique perspectives about
+issues such as managing API changes, using the same best practices for
+software as data, and going beyond simply ``slapping an OSI-approved
+license on code.''
 
 \subsection{The Importance of Communities}
 
-Communities are extremely important in software projects, and both their
-building and continued engagement need attention during the project life cycle.
-Several of the submitted papers \todo{cite} discussed how communities have been built around
-projects, and what is needed to enable a project to grow. The latter
-includes 
-public source-code hosting, mailing lists, documentation, wikis, bug trackers, software
-downloads, continuous integration, software quality dashboards, and of course,
-a general web presence to tie a project's channels and artifacts together.
+Communities are extremely important in software projects, and both
+their building and continued engagement need attention during the
+project life cycle.  Several of the submitted papers \todo{cite}
+discussed how communities have been built around projects, and what is
+needed to enable a project to grow. The latter includes public
+source-code hosting, mailing lists, documentation, wikis, bug
+trackers, software downloads, continuous integration, software quality
+dashboards, and of course, a general web presence to tie a project's
+channels and artifacts together.
 
 There was extended discussion about the challenge of fostering
 communities in which users help each other, rather than always
-deferring to the developers of project to answer user queries. Participants
-offered examples that this is indeed possible, such as mailing lists
-in which developers do not participate
-much because users actively respond to questions from other users, but
-also asked whether by doing too much the ``core
-team'' could end up setting unrealistic expectations. Team Geek~\cite{opac-b1134063}
-and Turk's paper on scaling code in the human dimension~\cite{Turk:2013:SCH:2484762.2484782}  discuss how development
-lists tend to  have many more people contributing when they are welcoming to people.
+deferring to the developers of project to answer user
+queries. Participants offered examples that this is indeed possible,
+such as mailing lists in which developers do not participate much
+because users actively respond to questions from other users, but also
+asked whether by doing too much the ``core team'' could end up setting
+unrealistic expectations. Team Geek~\cite{opac-b1134063} and Turk's
+paper on scaling code in the human
+dimension~\cite{Turk:2013:SCH:2484762.2484782} discuss how development
+lists tend to have many more people contributing when they are
+welcoming to people.
 
 \subsection{Software Process, Code Review, Automation, Reproducibility}
 
 The papers submitted to this panel included many general
-recommendations for processes, practices, tools, etc. One of the papers \note{cite?}
-suggested that a ``Software Sustainability Institute'' should be vested with
-the authority to develop standardized quality processes, a common
-repository, central resources for services and consulting, a think tank of
-sorts, and a software orphanage center (i.e., a place to `take care' of software
-when the original developers have stopped doing so).
-The idea of one common repository received
-some resistance, with so many compelling alternatives available, e.g., Bitbucket or
-GitHub. The centralized communication or point of contact was seen as
-reasonable, with the statement that ``vested with authority'' is perhaps too strong,
-but ``providing tools if needed'' might be more appropriate.
+recommendations for processes, practices, tools, etc. One of the
+papers \note{cite?}  suggested that a ``Software Sustainability
+Institute'' should be vested with the authority to develop
+standardized quality processes, a common repository, central resources
+for services and consulting, a think tank of sorts, and a software
+orphanage center (i.e., a place to `take care' of software when the
+original developers have stopped doing so).  The idea of one common
+repository received some resistance, with so many compelling
+alternatives available, e.g., Bitbucket or GitHub. The centralized
+communication or point of contact was seen as reasonable, with the
+statement that ``vested with authority'' is perhaps too strong, but
+``providing tools if needed'' might be more appropriate.
 
-What about actual software engineering principles, such as modularity and
-extensibility? This is how industry maintains software, and ensures it continues
-to be useful. Often, rewriting software is considered to be too costly, but
-with a modular design it can be kept up to date. Extensibility is expected to keep
-it relevant, if built into the project. One counterpoint raised by Jason Riedy
-was that trying to take advantage of the latest and greatest hardware often
-makes this painful, hence the lack of papers mentioning ``GPUs and exotic
-hardware.''
+What about actual software engineering principles, such as modularity
+and extensibility? This is how industry maintains software, and
+ensures it continues to be useful. Often, rewriting software is
+considered to be too costly, but with a modular design it can be kept
+up to date. Extensibility is expected to keep it relevant, if built
+into the project. One counterpoint raised by Jason Riedy was that
+trying to take advantage of the latest and greatest hardware often
+makes this painful, hence the lack of papers mentioning ``GPUs and
+exotic hardware.''
 
-The question of whether funders, such as the NSF, can mandate software plans in
-much the same way as they do data management plans, was raised. Daniel Katz responded that
-software is supposed to be described as part of the NSF data management plan,
-and that in NSF's definition, data includes software. A comment from Twitter
-(@biomickwatson) raised the issue that this requires reviewers and funders who
-understand the answers that are given in these plans. Daniel Katz responded
-that in programs focused on software or data this can be done effectively, but
-agreed that in more general programs this is indeed a problem.
+The question of whether funders, such as the NSF, can mandate software
+plans in much the same way as they do data management plans, was
+raised. Daniel Katz responded that software is supposed to be
+described as part of the NSF data management plan, and that in NSF's
+definition, data includes software. A comment from Twitter
+(@biomickwatson) raised the issue that this requires reviewers and
+funders who understand the answers that are given in these
+plans. Daniel Katz responded that in programs focused on software or
+data this can be done effectively, but agreed that in more general
+programs this is indeed a problem.
 
 
 \subsection{Training Scientists to Develop and Support Software}
-Part of the panel discussion focused around community structures and how academic communities are not taught how to evaluate cross-disciplinary work.
-One question raised was whether software developers can be effective if they are not part
-of the appropriate domain community, with responses that this depends on the
-specific problem and situation, and that ``T-shaped'' people who have both disciplinary depth as well as interdisciplinary and collaboration skills are important.
-The discussion focused on  whether we could teach software developers and domain scientists to
-collaborate together more effectively rather than trying to teach software developers
-about domain science and domain scientists about software development practices.
-The end goal of this would be to have a single community with a spectrum of expertise across
-domain science and software development rather than two separate communities.
+Part of the panel discussion focused around community structures and
+how academic communities are not taught how to evaluate
+cross-disciplinary work.  One question raised was whether software
+developers can be effective if they are not part of the appropriate
+domain community, with responses that this depends on the specific
+problem and situation, and that ``T-shaped'' people who have both
+disciplinary depth as well as interdisciplinary and collaboration
+skills are important.  The discussion focused on whether we could
+teach software developers and domain scientists to collaborate
+together more effectively rather than trying to teach software
+developers about domain science and domain scientists about software
+development practices.  The end goal of this would be to have a single
+community with a spectrum of expertise across domain science and
+software development rather than two separate communities.
 
-The role of the growing field of team science with software development  was discussed. Team science
-deals with understanding and improving collaborative and team-based scientific research, and  issues such as virtual organizations,
-and tool development across software development communities. Further, how should these skills and best practices then be
-introduced to students?
+The role of the growing field of team science with software
+development was discussed. Team science deals with understanding and
+improving collaborative and team-based scientific research, and issues
+such as virtual organizations, and tool development across software
+development communities. Further, how should these skills and best
+practices then be introduced to students?
 
 \subsection{Funding, Sustainability Beyond the First Grant/Institution}
 
-Are there significant differences in projects that have been running for 1, 3,
-5, or 10+ years? Are there shared experiences for projects of a similar stage
-of maturity? It was noted that computing and communication have changed
-significantly over the past decade, and many of the experiences are tied to
-the history of computing and communication. See the history of GCC, Emacs, or
-the Visualization Toolkit for examples. Others felt that computing has changed
-less, but communication and the widespread availability of tools has. It was
-noted that email lists, websites, chat rooms, version control, virtual and
-physical meetings are all over 20 years old.
+Are there significant differences in projects that have been running
+for 1, 3, 5, or 10+ years? Are there shared experiences for projects
+of a similar stage of maturity? It was noted that computing and
+communication have changed significantly over the past decade, and
+many of the experiences are tied to the history of computing and
+communication. See the history of GCC, Emacs, or the Visualization
+Toolkit for examples. Others felt that computing has changed less, but
+communication and the widespread availability of tools has. It was
+noted that email lists, websites, chat rooms, version control, virtual
+and physical meetings are all over 20 years old.
 
 There was debate that while some of the basics of computing may be
 similar, tools commonly used for computing have changed quite
-significantly. Reference was made to Perl, which was commonly used, giving way
-to whole new languages, such as Python, for gluing things together and how this
-induces many students into entirely rewriting the scaffolding, leaving the old
-to rot and the experiments to become non-reproducible as the tools change.
- There was
-discussion of this tendency along with the enormous differences in the speed and
-ease of sharing---having to ship tapes around (GCC, Emacs, etc) as opposed to
-the immediate sharing of the latest development online, using revision control
-systems like CVS, Subversion, Git, Mercurial, Bazaar, etc.
+significantly. Reference was made to Perl, which was commonly used,
+giving way to whole new languages, such as Python, for gluing things
+together and how this induces many students into entirely rewriting
+the scaffolding, leaving the old to rot and the experiments to become
+non-reproducible as the tools change.  There was discussion of this
+tendency along with the enormous differences in the speed and ease of
+sharing---having to ship tapes around (GCC, Emacs, etc) as opposed to
+the immediate sharing of the latest development online, using revision
+control systems like CVS, Subversion, Git, Mercurial, Bazaar, etc.
 
-The question was also posed as to whether the distinction between researcher
-and developer is sensible, with James Hetherington commenting that in the UK
-a more nuanced view of research software engineers
-and researcher developers is examined. Should this be less of a contract relationship, and
-more of a collaborative relationship? This is also at the core of the business
-model that Kitware presented in its submission to the workshop. Are other
-ingredients missing such as applied mathematicians? Should this be defined more
-in terms of skill sets rather than roles and/or identities? This builds on the
-comments from Vaidy Sunderam that scientists are generally good writers, and
-have mathematical skills, so why can't they learn software engineering
-principles?
+The question was also posed as to whether the distinction between
+researcher and developer is sensible, with James Hetherington
+commenting that in the UK a more nuanced view of research software
+engineers and researcher developers is examined. Should this be less
+of a contract relationship, and more of a collaborative relationship?
+This is also at the core of the business model that Kitware presented
+in its submission to the workshop. Are other ingredients missing such
+as applied mathematicians? Should this be defined more in terms of
+skill sets rather than roles and/or identities? This builds on the
+comments from Vaidy Sunderam that scientists are generally good
+writers, and have mathematical skills, so why can't they learn
+software engineering principles?
 
 Miller commented that all of the infrastructure that sits around a new
-algorithm that we need to make it useful and sustainable requires different
-skill sets than the algorithm developer. Friere commented that there are no
-good career paths for people with broad skills, no incentives for them to
-continue in these roles. There was debate around people doing what interests
-them, and learning computing leaves people cold, but is it that it leaves the
-people who find career paths in academia cold versus the full spectrum of
-people involved in research? Is this also caused by poor teaching, or because the
-benefits for doing this are perceived as too small? It could also be attributed to
-their focus being on science, not software engineering, or do people with
-the passion for software engineering in science simply have no viable career
-path and either adapt or seek out alternate career paths?
+algorithm that we need to make it useful and sustainable requires
+different skill sets than the algorithm developer. Friere commented
+that there are no good career paths for people with broad skills, no
+incentives for them to continue in these roles. There was debate
+around people doing what interests them, and learning computing leaves
+people cold, but is it that it leaves the people who find career paths
+in academia cold versus the full spectrum of people involved in
+research? Is this also caused by poor teaching, or because the
+benefits for doing this are perceived as too small? It could also be
+attributed to their focus being on science, not software engineering,
+or do people with the passion for software engineering in science
+simply have no viable career path and either adapt or seek out
+alternate career paths?
 
 \section{Policy} \label{sec:policy}%\note{lead: Colin Venters, contributors: James Howison, Hilmar Lapp}
 
-The  panel on policy  discussed workshop
-contributions dealing with the wide range of software sustainability
-aspects that relate to establishing, promoting, and implementing
-policies. Six papers presented frameworks for defining, modeling, and
-evaluating software sustainability, the basis of establishing
-policies. Four papers advocated mechanisms for more properly assessing
-the impact of scientific software, and for crediting and recognizing
-work that promotes software sustainability, all of which are
-instrumental in effectively promoting policies that aim to change
-current practices. Four papers discuss facets of implementing software
+The panel on policy discussed workshop contributions dealing with the
+wide range of software sustainability aspects that relate to
+establishing, promoting, and implementing policies. Six papers
+presented frameworks for defining, modeling, and evaluating software
+sustainability, the basis of establishing policies. Four papers
+advocated mechanisms for more properly assessing the impact of
+scientific software, and for crediting and recognizing work that
+promotes software sustainability, all of which are instrumental in
+effectively promoting policies that aim to change current
+practices. Four papers discuss facets of implementing software
 sustainability, and models of implementation across different facets.
 
 \subsection{Modeling Sustainability}
 
 The workshop submissions grouped under this section provide frameworks
-for thinking about, researching and understanding which elements of sustainability
-are important and how they relate. Although there is substantial
-overlap between the frameworks, they have different emphases and
-extents.  Each paper in this group included a definition of sustainability,
-with many overlaps between them  (see Table~\ref{tab:defining-sustainability}).
-Perhaps unsurprisingly, the issue of how to define sustainability came
-to the fore multiple times during the workshop, and it is thus
-summarized in depth separately in ~\S\ref{sec:defining-sustainability}.
+for thinking about, researching and understanding which elements of
+sustainability are important and how they relate. Although there is
+substantial overlap between the frameworks, they have different
+emphases and extents.  Each paper in this group included a definition
+of sustainability, with many overlaps between them (see
+Table~\ref{tab:defining-sustainability}).  Perhaps unsurprisingly, the
+issue of how to define sustainability came to the fore multiple times
+during the workshop, and it is thus summarized in depth separately in
+~\S\ref{sec:defining-sustainability}.
 
 One area in which there was not complete overlap was whether the word
 (and thus the effort called for by the WSSSPE workshop) involved
@@ -671,21 +700,23 @@ environmental sustainability. Of course the word sustainability has
 strong connotations from consideration of environmental issues,
 evoking some mention of the areas in which software interacts with
 overall environmental resource usage, particularly energy efficiency.
-The two papers in this area which mentioned this~\cite{Venters_WSSSPE,Calero_WSSSPE} did so without
-integrating that analysis into the question of software being around
-long-term, suggesting that questions of environmental impact of
-scientific software is a conceptually distinct area of inquiry.
+The two papers in this area which mentioned
+this~\cite{Venters_WSSSPE,Calero_WSSSPE} did so without integrating
+that analysis into the question of software being around long-term,
+suggesting that questions of environmental impact of scientific
+software is a conceptually distinct area of inquiry.
 
 One group of papers presented frameworks that were primarily about
 characteristics of software artifacts, connecting with the long
 discourse on software quality. This approach is realized in adjectives
 that can be applied to pieces of software but might also extend to
-describe software projects.  Thus Calero et al.~\cite{Calero_WSSSPE} propose adding elements to the ISO
-standards for measuring software quality. Specifically, they propose an additional
-dimension of quality they call ``perdurability'' or ability to ``last over
-time'' made up of three characteristics: reliability, maintainability
-and adaptability. This shows some overlap with the framework employed
-by Venters et al.~\cite{Venters_WSSSPE} who employ the adjectives of
+describe software projects.  Thus Calero et al.~\cite{Calero_WSSSPE}
+propose adding elements to the ISO standards for measuring software
+quality. Specifically, they propose an additional dimension of quality
+they call ``perdurability'' or ability to ``last over time'' made up
+of three characteristics: reliability, maintainability and
+adaptability. This shows some overlap with the framework employed by
+Venters et al.~\cite{Venters_WSSSPE} who employ the adjectives of
 ``extensibility, interoperability, maintainability, portability,
 reusability and scalability,'' anticipating the sorts of work that
 people would need to do with a software artifact in the future, ``as
@@ -727,43 +758,42 @@ manner in which resources come to the project initially (commercial,
 open source, closed partnerships, grant funded) and long-term (all
 four plus paid support).
 
-Frameworks also concerned themselves with the context in which software
-projects exist, moving in abstraction from the software artifact
-itself to the organization of its production and
-the shape of the space in which an artifact or project exists.
-These frameworks take the form of contingency theories in that
-they outline a different set of challenges and argue that different
-project organizations (and presumably artifact attributes) are
-necessary to persist long term in spaces with particular
-characteristics.  Katz and Proctor~\cite{Katz_WSSSPE} propose thinking
-of this idea of space in terms of three axes: temporal (long or short
-term needs), spatial (local or global use) and purpose (specific to
-general).  They propose that different project organizations will be
-needed in different locations and argue that we should concentrate
-research to understand those connections. Weber et
-al.~\cite{Weber_WSSSPE} describe their spaces by analogy with natural
-ecosystems as ``niches'' which sustain particular pieces of
-software. They define ``a software niche as the set of technical
-requirements, organizational conditions and cultural mores that
-support its maintenance and use over time.'' They call for better
-understanding and modeling of niches (as well as further exploration
-of the usefulness of ecosystem metaphors).
+Frameworks also concerned themselves with the context in which
+software projects exist, moving in abstraction from the software
+artifact itself to the organization of its production and the shape of
+the space in which an artifact or project exists.  These frameworks
+take the form of contingency theories in that they outline a different
+set of challenges and argue that different project organizations (and
+presumably artifact attributes) are necessary to persist long term in
+spaces with particular characteristics.  Katz and
+Proctor~\cite{Katz_WSSSPE} propose thinking of this idea of space in
+terms of three axes: temporal (long or short term needs), spatial
+(local or global use) and purpose (specific to general).  They propose
+that different project organizations will be needed in different
+locations and argue that we should concentrate research to understand
+those connections. Weber et al.~\cite{Weber_WSSSPE} describe their
+spaces by analogy with natural ecosystems as ``niches'' which sustain
+particular pieces of software. They define ``a software niche as the
+set of technical requirements, organizational conditions and cultural
+mores that support its maintenance and use over time.'' They call for
+better understanding and modeling of niches (as well as further
+exploration of the usefulness of ecosystem metaphors).
 
 \subsection{Credit, Citation, and Impact}
 
-How work on scientific software is recognized and rewarded strongly influences the motivation for particular kinds of work
-on scientific software. A recurring theme of the panel discussion was
-that software work in science is
-inadequately visible within the reputation
-system underlying science; in other words it often doesn't ``count''. In his paper for this workshop, Katz placed
-software work along with other ``activities that facilitate science
-but are not currently rewarded or
+How work on scientific software is recognized and rewarded strongly
+influences the motivation for particular kinds of work on scientific
+software. A recurring theme of the panel discussion was that software
+work in science is inadequately visible within the reputation system
+underlying science; in other words it often doesn't ``count''. In his
+paper for this workshop, Katz placed software work along with other
+``activities that facilitate science but are not currently rewarded or
 recognized''~\cite{Katz_WSSSPE}. Priem and Piwowar argued for the need
 to ``support all researchers in presenting meaningful impact evidence
 in tenure, promotion, and funding applications.''~\cite{Priem_WSSSPE}.
-Knepley et al.~argued that the lack of visibility of software that supported a
-piece of science ``can have detrimental effects on funding, future
-library development, and even scientific
+Knepley et al.~argued that the lack of visibility of software that
+supported a piece of science ``can have detrimental effects on
+funding, future library development, and even scientific
 careers.''~\cite{Knepley_WSSSPE}.
 
 These papers, and the discussion at the workshop, join a nascent
@@ -777,9 +807,9 @@ separately~\cite{howison_incentives_2013, howison_scientific_2011,
 direct citations, but the visibility of software work in the
 literature is important to those who write software used in science.
 
-Papers and discussion concentrated on three overarching questions: How ought software
-work to be visible, what are the barriers to its visibility, and what
-can be done to make it more visible?
+Papers and discussion concentrated on three overarching questions: How
+ought software work to be visible, what are the barriers to its
+visibility, and what can be done to make it more visible?
 
 Most of the papers in this area focused on visibility of software in
 scientific papers, since scientific papers are the most widely
@@ -804,17 +834,19 @@ Another approach is to reduce the difficulty of citing all software
 underlying a research paper. For example, scientists often work with
 software that itself wraps other software, leading to attribution
 stacking that can make it non-obvious or even difficult to determine
-what attributions would be appropriate. Knepley et al.~\cite{Knepley_WSSSPE} approach this by
-proposing a mechanism by which the software itself, after it has run,
-provides the user with a set of citations, according to the pieces of
-code actually executed. They describe a prototype implementation whereby
-the citations are embedded in libraries and reported along with the
-results, via a command-line interface~\cite{Knepley_WSSSPE}. Discussion
-highlighted the difficulty that attempting to acknowledge the
-contributions of all pieces of dependent code within a paper faces the
-difficulty of creating very long citation lists, straining the analogy
-of code used to papers cited. Katz approaches this issue by proposing
-a system of ``transitive credit,'' recording dependencies and relative
+what attributions would be appropriate. Knepley et
+al.~\cite{Knepley_WSSSPE} approach this by proposing a mechanism by
+which the software itself, after it has run, provides the user with a
+set of citations, according to the pieces of code actually
+executed. They describe a prototype implementation whereby the
+citations are embedded in libraries and reported along with the
+results, via a command-line
+interface~\cite{Knepley_WSSSPE}. Discussion highlighted the difficulty
+that attempting to acknowledge the contributions of all pieces of
+dependent code within a paper faces the difficulty of creating very
+long citation lists, straining the analogy of code used to papers
+cited. Katz approaches this issue by proposing a system of
+``transitive credit,'' recording dependencies and relative
 contributions outside particular papers, relieving authors from the
 responsibility of acknowledging each and every dependency. Instead
 authors would acknowledge the percentage contribution of the software
@@ -823,35 +855,36 @@ recursively allocate that credit to those who had provided
 dependencies. Finally Priem and Piwowar argued that machine learning
 techniques could examine the body of published literature and extract
 mentions of software, coping with the multitude of informal ways in
-which authors mention software they used~\cite{Priem_WSSSPE}.
-A point raised in the panel discussion was that instead of asking users to improve
-their software citation practices, one can also ask how software
-projects can better monitor the literature to improve their
-ability to show impact. For example, the NanoHub project scans the literature using keywords and names
-of known users to discover papers that are likely to have used their
-software and platform, and assigns graduate students to read each paper,
-highlighting mentions of software use and sometimes following up with the authors to
-identify stories for demonstrating impact.  A process for tracking
-software-using publications with the goal of increasing impact visibility is now described at \url{http://publications.wikia.com}.
+which authors mention software they used~\cite{Priem_WSSSPE}.  A point
+raised in the panel discussion was that instead of asking users to
+improve their software citation practices, one can also ask how
+software projects can better monitor the literature to improve their
+ability to show impact. For example, the NanoHub project scans the
+literature using keywords and names of known users to discover papers
+that are likely to have used their software and platform, and assigns
+graduate students to read each paper, highlighting mentions of
+software use and sometimes following up with the authors to identify
+stories for demonstrating impact.  A process for tracking
+software-using publications with the goal of increasing impact
+visibility is now described at \url{http://publications.wikia.com}.
 
 Potential visibility, and thus acknowledgement of scientific software
 products is not restricted to publications. Another key location for
-visibility is in the grant funding
-process, and as emphasized by NSF representatives at the meeting,
-recent changes to grant proposal and reporting formats now allow both
-applicants and awardees to report and highlight software products as
-much as publications. Nonetheless, whether peer review
-panels would value these contributions in the same way as
-publications remains to be seen.
+visibility is in the grant funding process, and as emphasized by NSF
+representatives at the meeting, recent changes to grant proposal and
+reporting formats now allow both applicants and awardees to report and
+highlight software products as much as publications. Nonetheless,
+whether peer review panels would value these contributions in the same
+way as publications remains to be seen.
 
-Priem and Piwowar argued that assessing the impact of software work requires
-looking beyond publications, including evidence of contribution and impact
-recorded in social coding-oriented resources such as GitHub, and conversations
-about software in issue trackers, mailing lists, twitter and
-beyond~\cite{Priem_WSSSPE}. In keeping with a principle of the ``altmetrics''
-approach, they advocate that scholars should have resources that empower them
-to tell their own stories in the manner most appropriate for them and their
-audiences.
+Priem and Piwowar argued that assessing the impact of software work
+requires looking beyond publications, including evidence of
+contribution and impact recorded in social coding-oriented resources
+such as GitHub, and conversations about software in issue trackers,
+mailing lists, twitter and beyond~\cite{Priem_WSSSPE}. In keeping with
+a principle of the ``altmetrics'' approach, they advocate that
+scholars should have resources that empower them to tell their own
+stories in the manner most appropriate for them and their audiences.
 
 \subsection{Implementing Policy}
 
@@ -881,9 +914,9 @@ governance, and Heiland et al.~\cite{Heiland_WSSSPE} discuss maturity
 models for software security. The other two papers discuss
 implementation strategies for science from the perspective of
 facilitating many or all facets of sustainability-oriented software
-design: Blanton and Lenhardt~\cite{Blanton_WSSSPE} contrast
-large projects that have software infrastructure development built-in,
-with cross-training domain scientist PIs in software engineering best
+design: Blanton and Lenhardt~\cite{Blanton_WSSSPE} contrast large
+projects that have software infrastructure development built-in, with
+cross-training domain scientist PIs in software engineering best
 practices. Huang and Lapp~\cite{Huang_WSSSPE} discuss how various
 specialized software engineering skills could be turned into shared
 instrumentation with low barriers to access.
@@ -893,8 +926,8 @@ computing frequently takes place in a distributed cloud, the control
 over digital resources is increasingly shifting from physical
 infrastructure to APIs, in particular web-service APIs. Yet, as Krintz
 et al.~observe, unlike for physical IT infrastructure in data centers,
-science communities have developed very little in the way of practices and
-technology for API governance, referred to by Krintz et al.~as the
+science communities have developed very little in the way of practices
+and technology for API governance, referred to by Krintz et al.~as the
 ``combined policy, implementation, and deployment control''. Web APIs
 can and do change, sometimes quite frequently, raising the need to
 port dependent applications. The effort required for porting is
@@ -953,16 +986,16 @@ in software engineering standards and best practices.
 
 In practice, there are example for both extremes of the spectrum. For
 example, in the life sciences the iPlant Collaborative~\cite{iPlant},
-the Galaxy Project~\cite{Galaxy}, and \toolname{Qiime}~\cite{Qiime} are large
-multi-year projects with significant software infrastructure funding
-and deliverables. Typically though these are the exception rather than
-the rule, and particularly in the long tail of science the
+the Galaxy Project~\cite{Galaxy}, and \toolname{Qiime}~\cite{Qiime}
+are large multi-year projects with significant software infrastructure
+funding and deliverables. Typically though these are the exception
+rather than the rule, and particularly in the long tail of science the
 scientist-developer predominates, even for software that is widely
 used or crosses domain boundaries such as
-\toolname{rOpenSci}~\cite{rOpenSci}. For better training domain scientists at
-least in basic software engineering best practices, initiatives such
-as Software Carpentry~\cite{SoftwareCarpentry} have demonstrated how
-this could be achieved at scale.
+\toolname{rOpenSci}~\cite{rOpenSci}. For better training domain
+scientists at least in basic software engineering best practices,
+initiatives such as Software Carpentry~\cite{SoftwareCarpentry} have
+demonstrated how this could be achieved at scale.
 
 However, there may also be a middle ground between the two
 extremes. Huang and Lapp~\cite{Huang_WSSSPE} propose a Center of
@@ -1021,92 +1054,103 @@ capabilities so they can be shared.
 
 %There were a number of papers categorized under the Communities banner and so
 %two presenters each summarized half of the submissions in this area.
-Across all talks and papers submitted, authors implicitly and explicitly
-recognized the concept of ``communities'' as a driving and unifying force
-within software projects.  Despite that, the actual nature of the communities,
-the incentive structures and bind them together, the infrastructure they
-utilize for communication and even the types of individuals that make up those
-communities were different.  Some of these communities were primarily composed
-of members of industry, some were funded and driven by individuals focused on
-developing software as opposed to utilizing it, and others were primarily
-composed of scientist practitioners, and were true communities of practice.
+Across all talks and papers submitted, authors implicitly and
+explicitly recognized the concept of ``communities'' as a driving and
+unifying force within software projects.  Despite that, the actual
+nature of the communities, the incentive structures and bind them
+together, the infrastructure they utilize for communication and even
+the types of individuals that make up those communities were
+different.  Some of these communities were primarily composed of
+members of industry, some were funded and driven by individuals
+focused on developing software as opposed to utilizing it, and others
+were primarily composed of scientist practitioners, and were true
+communities of practice.
 
 These varying structures and compositions result in differing modes of
-interaction within communities, styles of development, and the structure of
-planning for future development of software.  In this section, we summarize
-the different types of communities in scientific software as well as the
-resultant impact on sustainability and development of functionality.
+interaction within communities, styles of development, and the
+structure of planning for future development of software.  In this
+section, we summarize the different types of communities in scientific
+software as well as the resultant impact on sustainability and
+development of functionality.
 
 \subsection{Communities}
 
 %This collection of papers was summarized by Karen Cranston.
 
-Drawing on experiences from high-energy physics, Vay et al.~\cite{Vay_WSSSPE} proposed
-developing teams of technical specialists able to overcome a lack of
-coordination between projects.  Maximizing scientific output requires
-maximizing the usability of the scientific codes while minimizing the cost of
-developing and supporting those codes.  This included targeting different
-architectures for their software to be deployed, as well as coordination
-between technically-focused individuals and usage of a common scripting
-language between projects.  Instead of fragmenting the development of
-simulation codes across institutions, the paper suggests that a cohesive
-strategy reducing duplication and increasing coordination will broadly increase
-the efficiency across institutions.  The approach proposed is of de-fragmenting
-the existing ecosystem in a non-disruptive way.
+Drawing on experiences from high-energy physics, Vay et
+al.~\cite{Vay_WSSSPE} proposed developing teams of technical
+specialists able to overcome a lack of coordination between projects.
+Maximizing scientific output requires maximizing the usability of the
+scientific codes while minimizing the cost of developing and
+supporting those codes.  This included targeting different
+architectures for their software to be deployed, as well as
+coordination between technically-focused individuals and usage of a
+common scripting language between projects.  Instead of fragmenting
+the development of simulation codes across institutions, the paper
+suggests that a cohesive strategy reducing duplication and increasing
+coordination will broadly increase the efficiency across institutions.
+The approach proposed is of de-fragmenting the existing ecosystem in a
+non-disruptive way.
 
 Maheshwari et al.~\cite{Maheshwari_WSSSPE} focuses on ``technology
-catalysts'' and their role in the modern scientific research process. A technology
-catalyst is an individual with knowledge of
+catalysts'' and their role in the modern scientific research
+process. A technology catalyst is an individual with knowledge of
 technological advancements, tasked with user engagement to create
-scientific or engineering applications, using suitable tools and techniques
-to take advantage of current technological capabilities.
+scientific or engineering applications, using suitable tools and
+techniques to take advantage of current technological capabilities.
 %
-One of the tasks of technology catalysts is to seek community collaborations for new
-applications and engage users, thus benefiting both science, by effective
-running of scientific codes on computational infrastructure, and technology,
-by conducting research and seeking findings for technology improvement.
-The particular engagements described in the paper came up from the lead author's work as
-a postdoctoral researcher at Cornell and Argonne, where interaction with the scientific
-communities in both institutions resulted in these collaborations.
+One of the tasks of technology catalysts is to seek community
+collaborations for new applications and engage users, thus benefiting
+both science, by effective running of scientific codes on
+computational infrastructure, and technology, by conducting research
+and seeking findings for technology improvement.  The particular
+engagements described in the paper came up from the lead author's work
+as a postdoctoral researcher at Cornell and Argonne, where interaction
+with the scientific communities in both institutions resulted in these
+collaborations.
 
-At NESCent, a combination of in-house informatics individuals and domain
-scientists collaborate to develop software to study evolutionary science.  The
-report~\cite{Cranston_WSSSPE} studied the success of a ``hackathon'' model
-for development, where short-form, hands-on events combining users,
-researcher-developers and software engineers targeted specific code
-improvements. From this experiment, the authors identified several key
-outcomes as well as lessons-learned: specifically, the co-localization of
-developers was seen as having a strong impact, enabling casual conversation
-that led to discrete outcomes.  The formation of the discussion mailing list,
-specifically in response to the social capital built at the hackathon, was seen
-as spurring on longer-term benefits to the community and fostering
-sustainability.
+At NESCent, a combination of in-house informatics individuals and
+domain scientists collaborate to develop software to study
+evolutionary science.  The report~\cite{Cranston_WSSSPE} studied the
+success of a ``hackathon'' model for development, where short-form,
+hands-on events combining users, researcher-developers and software
+engineers targeted specific code improvements. From this experiment,
+the authors identified several key outcomes as well as
+lessons-learned: specifically, the co-localization of developers was
+seen as having a strong impact, enabling casual conversation that led
+to discrete outcomes.  The formation of the discussion mailing list,
+specifically in response to the social capital built at the hackathon,
+was seen as spurring on longer-term benefits to the community and
+fostering sustainability.
 
-Hart et al.~\cite{Hart_WSSSPE} addresses the success of the rOpenSci project in developing
-collaborations supporting tool development for Open Science.  This software
-collective, organized around the statistical programming environment R,
-develops access mechanisms for data repositories and attempts to reduce the
-barrier to entry for individuals wanting to access data repositories and study
-the data contained therein.  The collective fosters direct collaboration
-between individuals and data providers, designed to ``train academics in
-reproducible science workflows focused around R.''  Two central challenges
-are engagement of existing users within ecology and
-evolutionary biology (EEB), and how the community can make inroads and traction
-in other disciplines. Currently, the collective is exploring addressing these
-challenges through use of social media, holding workshops, and hackathons.
-This helps to both raise the profile of the collective within EEB and in other
-domains.  However, the overarching challenge identified in the paper was that
-of incentivizing maintenance of software, which is difficult in academia.
+Hart et al.~\cite{Hart_WSSSPE} addresses the success of the rOpenSci
+project in developing collaborations supporting tool development for
+Open Science.  This software collective, organized around the
+statistical programming environment R, develops access mechanisms for
+data repositories and attempts to reduce the barrier to entry for
+individuals wanting to access data repositories and study the data
+contained therein.  The collective fosters direct collaboration
+between individuals and data providers, designed to ``train academics
+in reproducible science workflows focused around R.''  Two central
+challenges are engagement of existing users within ecology and
+evolutionary biology (EEB), and how the community can make inroads and
+traction in other disciplines. Currently, the collective is exploring
+addressing these challenges through use of social media, holding
+workshops, and hackathons.  This helps to both raise the profile of
+the collective within EEB and in other domains.  However, the
+overarching challenge identified in the paper was that of
+incentivizing maintenance of software, which is difficult in academia.
 
 %\subsection{Communities Part 2}
 
 %Nancy Wilkins-Diehr summarized 6 papers in this part.
 
-Christopherson et al.~\cite{Christopherson_WSSSPE} outlines the degree to which research relies on high
-quality software. There are often barriers and a lack of suitable incentives
-for researchers to embrace software engineering principles. The Water Science
-Software Institute is working to lower some of these barriers through an Open
-Community Engagement Process. This is a 4-step iterative development process
+Christopherson et al.~\cite{Christopherson_WSSSPE} outlines the degree
+to which research relies on high quality software. There are often
+barriers and a lack of suitable incentives for researchers to embrace
+software engineering principles. The Water Science Software Institute
+is working to lower some of these barriers through an Open Community
+Engagement Process. This is a 4-step iterative development process
 that incorporates Agile development principles.
 
 \begin{itemize}
@@ -1117,19 +1161,21 @@ that incorporates Agile development principles.
 \item[Step 4:] Publish open source
 \end{itemize}
 
-Christopherson reports on the application of Steps 1-3 to a computational
-modeling framework developed in the 1990s. Step 1 was a 2-day, in-person
-specifications meeting and code walk-through. Step 2 was a 5-day hackathon to
-develop working code, and Step 3 was a 3-day hackathon to refine the code based
-on new requirements. The team worked on small, low-risk units of code. It was
-challenging, revealed unanticipated obstacles, programmers had to work
-together, and experimentation was encouraged.
+Christopherson reports on the application of Steps 1-3 to a
+computational modeling framework developed in the 1990s. Step 1 was a
+2-day, in-person specifications meeting and code walk-through. Step 2
+was a 5-day hackathon to develop working code, and Step 3 was a 3-day
+hackathon to refine the code based on new requirements. The team
+worked on small, low-risk units of code. It was challenging, revealed
+unanticipated obstacles, programmers had to work together, and
+experimentation was encouraged.
 %
-The paper recommended: start small and gradually building toward more complex
-objectives, consistent with Agile development; develop consensus before coding,
-by repeating step 1 before all hackathons; ensure newcomers receive orientation
-prior to the hackathon, such as a code walk-through or system documentation;
-and co-locate collaborators whenever feasible.
+The paper recommended: start small and gradually building toward more
+complex objectives, consistent with Agile development; develop
+consensus before coding, by repeating step 1 before all hackathons;
+ensure newcomers receive orientation prior to the hackathon, such as a
+code walk-through or system documentation; and co-locate collaborators
+whenever feasible.
 
 %Refactor before adding
 %new functionality. Approach development as a learning experience. Welcome
@@ -1143,300 +1189,350 @@ and co-locate collaborators whenever feasible.
 %walkthrough or system documentation. Co-locate rather than collaborating
 %remotely whenever feasible.
 
-Pierce et al.~\cite{Pierce2_WSSSPE} described how science gateways can provide a user-friendly
-entry to complex cyberinfrastructure. For example, more than 7,000
-biologists have run phylogenetic codes on supercomputers using the \toolname{CIPRES}
-Science Gateway in 3 1/2 years. Over 120 scientists from 50 institutions used the
-\toolname{UltraScan Science Gateway} in one year, increasing the sophistication of analytical
-ultracentrifugation experiments worldwide. The new Neuroscience Gateway (\toolname{NSG})
-registered 100+ users who used 250,000 CPU hours in only a few months.
+Pierce et al.~\cite{Pierce2_WSSSPE} described how science gateways can
+provide a user-friendly entry to complex cyberinfrastructure. For
+example, more than 7,000 biologists have run phylogenetic codes on
+supercomputers using the \toolname{CIPRES} Science Gateway in 3 1/2
+years. Over 120 scientists from 50 institutions used the
+\toolname{UltraScan Science Gateway} in one year, increasing the
+sophistication of analytical ultracentrifugation experiments
+worldwide. The new Neuroscience Gateway (\toolname{NSG}) registered
+100+ users who used 250,000 CPU hours in only a few months.
 
-Gateways, however, need to keep operational costs low and can often make use of
-common components, such as authentication, application installation and
-reliable execution and help desk support. Science Gateway Platform as a Service (\toolname{SciGaP}) delivers
-middleware as a hosted, scalable third-party service while domain developers
+Gateways, however, need to keep operational costs low and can often
+make use of common components, such as authentication, application
+installation and reliable execution and help desk support. Science
+Gateway Platform as a Service (\toolname{SciGaP}) delivers middleware
+as a hosted, scalable third-party service while domain developers
 focus on user interfaces and domain-specific data in the gateway.
-While \toolname{SciGaP} is based on the \toolname{Apache Airavata} project
-and the \toolname{CIPRES} Workbench Framework, community contributions are encouraged
-by its open source, open governance and open operations policies. The
-goal is robust, sustainable infrastructure with a cycle of development that
-improves reliability and prioritizes stakeholder requirements. The project is
-leveraging Internet2's \toolname{Net+} mechanisms for converting \toolname{SciGaP} and its gateways
-into commodity services.
+While \toolname{SciGaP} is based on the \toolname{Apache Airavata}
+project and the \toolname{CIPRES} Workbench Framework, community
+contributions are encouraged by its open source, open governance and
+open operations policies. The goal is robust, sustainable
+infrastructure with a cycle of development that improves reliability
+and prioritizes stakeholder requirements. The project is leveraging
+Internet2's \toolname{Net+} mechanisms for converting
+\toolname{SciGaP} and its gateways into commodity services.
 
-Zentner et al.~\cite{Zentner_WSSSPE} describes experiences and challenges with the large
-\toolname{nanoHUB.org} community, where community is defined as a ``body of persons of
-common and especially professional interests scattered through a larger
-society.'' Support is challenging because of the diversity of
-viewpoints and needs. The group constantly examines its policies to determine
-whether they are indirectly alienating part of the community or encouraging
-particular types of use.
+Zentner et al.~\cite{Zentner_WSSSPE} describes experiences and
+challenges with the large \toolname{nanoHUB.org} community, where
+community is defined as a ``body of persons of common and especially
+professional interests scattered through a larger society.'' Support
+is challenging because of the diversity of viewpoints and needs. The
+group constantly examines its policies to determine whether they are
+indirectly alienating part of the community or encouraging particular
+types of use.
 %
-\toolname{nanoHUB}'s 10-year history with over 260,000 users annually provides a lot of
-data to analyze. 4000 resources contributed by 1000 authors. \toolname{nanoHUB} serves
-both the research and education community and the contribution model allows
-researchers to get their codes out into the community and in use in education
-very rapidly. The primary software challenges are twofold --- support for the
-\toolname{HUBzero} framework and challenges related to the software contributed by the
-community.
+\toolname{nanoHUB}'s 10-year history with over 260,000 users annually
+provides a lot of data to analyze. 4000 resources contributed by 1000
+authors. \toolname{nanoHUB} serves both the research and education
+community and the contribution model allows researchers to get their
+codes out into the community and in use in education very rapidly. The
+primary software challenges are twofold --- support for the
+\toolname{HUBzero} framework and challenges related to the software
+contributed by the community.
 
-The group has learned that community contributions are maximized with a
-tolerant licensing approach. \toolname{HUBzero} uses an LGPLv3 license so contributors can
-create unique components and license as they choose. If they make changes to
-source code, the original license must be maintained for redistribution. As far
-as contributed resources, these must be open access, but not necessarily open
-source. This allows contributors to meet the requirements of their institutions
-and funding agencies. Quality is maintained via user ratings. Documentation is
-encouraged and nanoHUB supplies regression test capabilities, but the user
-community provides ratings, poses questions and contributes to wishlists and
-citation counts, all of which incentivize code authors.
+The group has learned that community contributions are maximized with
+a tolerant licensing approach. \toolname{HUBzero} uses an LGPLv3
+license so contributors can create unique components and license as
+they choose. If they make changes to source code, the original license
+must be maintained for redistribution. As far as contributed
+resources, these must be open access, but not necessarily open
+source. This allows contributors to meet the requirements of their
+institutions and funding agencies. Quality is maintained via user
+ratings. Documentation is encouraged and nanoHUB supplies regression
+test capabilities, but the user community provides ratings, poses
+questions and contributes to wishlists and citation counts, all of
+which incentivize code authors.
 
-Terrel~\cite{Terrel_WSSSPE} describes support for the Python scientific community through
-two major efforts: the SciPy conference and the NumFOCUS foundation.
-Since software sustainability relies on contributions from all sectors of the user
-community, these efforts support these sectors, and help develop and mature Python.
+Terrel~\cite{Terrel_WSSSPE} describes support for the Python
+scientific community through two major efforts: the SciPy conference
+and the NumFOCUS foundation.  Since software sustainability relies on
+contributions from all sectors of the user community, these efforts
+support these sectors, and help develop and mature Python.
 %
-The reliance
-on software in science has driven a huge demand for development, but this
-development is typically done as a side effort and often in a rush to publish
-without documentation and testing. While the software is often created by academics, software support
-can fall to industrial institutions. SciPy brings together industry,
-government, and academics to share their code and experience in an open
-environment.
+The reliance on software in science has driven a huge demand for
+development, but this development is typically done as a side effort
+and often in a rush to publish without documentation and
+testing. While the software is often created by academics, software
+support can fall to industrial institutions. SciPy brings together
+industry, government, and academics to share their code and experience
+in an open environment.
 %
-NumFOCUS in a non-profit that promotes open, usable scientific software while sustaining the
-community through educational programs; collaborative
-research tools and documentation; and promotion of high-level languages,
-reproducible scientific research, and open-code development. Governance
-is a loose grantor-grantee relationship with projects, allowing funds
-to be placed in the groups' accounts. This has raised money to hire
-developers for open code development, maintain testing machines, organize the
-PyData conference series, and sponsor community members to attend conferences.
+NumFOCUS in a non-profit that promotes open, usable scientific
+software while sustaining the community through educational programs;
+collaborative research tools and documentation; and promotion of
+high-level languages, reproducible scientific research, and open-code
+development. Governance is a loose grantor-grantee relationship with
+projects, allowing funds to be placed in the groups' accounts. This
+has raised money to hire developers for open code development,
+maintain testing machines, organize the PyData conference series, and
+sponsor community members to attend conferences.
 
 L\"{o}ffler et al.~\cite{Loffler_WSSSPE} describes the Cactus project,
- which was started in 1996 by
-participants in USA Binary Black Hole Alliance Challenge. Cactus has a flesh (core)
-and thorns (modules) model, a community-oriented framework that allows
-researchers to easily work together with reusable and extendable software
-elements. Modules are compiled into an executable and can remain dormant,
-becoming active only when parameters and simulation data dictate. Users can
-use modules written by others or can write their own modules without changing
-other code. The community has grown and diversified beyond the original science
-areas.
+which was started in 1996 by participants in USA Binary Black Hole
+Alliance Challenge. Cactus has a flesh (core) and thorns (modules)
+model, a community-oriented framework that allows researchers to
+easily work together with reusable and extendable software
+elements. Modules are compiled into an executable and can remain
+dormant, becoming active only when parameters and simulation data
+dictate. Users can use modules written by others or can write their
+own modules without changing other code. The community has grown and
+diversified beyond the original science areas.
 
-The paper points out 4 keys to sustaining the community: modular design,
-growing a collaborative community, career paths and credit. In modular design,
-the Cactus project went far beyond standard practices of APIs. Domain specific
-languages (DSLs) allow decoupling of components --- for example I/O, mesh
-refinement, PAPI counters, and boundary conditions abstracted from science
-code. In academia, publications are the main currency of credit. Because the
-project connects code developments to science, the work is publishable and
-modules are citable. Because of the open source, modular approach, programmers
-can see the impact of their contributions and often continue work after
-graduation. Career paths remain a challenge, however. Tasks that are essential
-from a software engineering perspective are often not rewarded in academia. The
-best programmers in a science environment often have multidisciplinary
-expertise. This also is not rewarded in academia.
+The paper points out 4 keys to sustaining the community: modular
+design, growing a collaborative community, career paths and credit. In
+modular design, the Cactus project went far beyond standard practices
+of APIs. Domain specific languages (DSLs) allow decoupling of
+components --- for example I/O, mesh refinement, PAPI counters, and
+boundary conditions abstracted from science code. In academia,
+publications are the main currency of credit. Because the project
+connects code developments to science, the work is publishable and
+modules are citable. Because of the open source, modular approach,
+programmers can see the impact of their contributions and often
+continue work after graduation. Career paths remain a challenge,
+however. Tasks that are essential from a software engineering
+perspective are often not rewarded in academia. The best programmers
+in a science environment often have multidisciplinary expertise. This
+also is not rewarded in academia.
 
-Wilkins-Diehr et al.~\cite{Wilkins-Diehr_WSSSPE} describes an NSF software institute effort to build a
-community of those creating science gateways for science. These
-gateways, as described in some of the other papers in this section, can be
-quite capable and can have strong scientific impact.
-Challenges are similar to those highlighted by other papers in this section:
-the conflict between funding for research vs infrastructure and the
-challenges around getting academic credit for infrastructure.
+Wilkins-Diehr et al.~\cite{Wilkins-Diehr_WSSSPE} describes an NSF
+software institute effort to build a community of those creating
+science gateways for science. These gateways, as described in some of
+the other papers in this section, can be quite capable and can have
+strong scientific impact.  Challenges are similar to those highlighted
+by other papers in this section: the conflict between funding for
+research vs infrastructure and the challenges around getting academic
+credit for infrastructure.
 %
-The authors observe that  development is
-often done in an isolated hobbyist environment. Developers are unable to take
-advantage of similar work done by others, isolation even when projects have
-common needs. But often projects struggle for sustainable funding because they
-provide infrastructure to conduct research and many times only the research is
-funded. Gateways also may start as a small group research project, taking off in
-popularity once they go live, without any long term plans for sustainability.
-Subsequent disruptions in
-service can limit effectiveness and test the limits of the research community's
-trust. %The impact of gateways can be increased substantially if we understand
+The authors observe that development is often done in an isolated
+hobbyist environment. Developers are unable to take advantage of
+similar work done by others, isolation even when projects have common
+needs. But often projects struggle for sustainable funding because
+they provide infrastructure to conduct research and many times only
+the research is funded. Gateways also may start as a small group
+research project, taking off in popularity once they go live, without
+any long term plans for sustainability.  Subsequent disruptions in
+service can limit effectiveness and test the limits of the research
+community's trust. %The impact of gateways can be increased
+substantially if we understand
 %what makes them successful.
 
-Recommendations from an early study of successful gateways include:
-1) Leadership and management teams should design governance to
-represent multiple strengths and perspectives, plan for change and turnover in
-the future, recruit a development team that understands both the technical and
-domain-related issues, consider sustainability and measure success early and
-often. 2) Projects should hire a team of
-professionals, demonstrate credibility through stability and clarity of
-purpose, leverage the work of others, and plan for flexibility. 3) Projects should
-identify an existing community and understand the communities' needs
-before beginning, then adapt as the communities' needs evolve. 4) Funders,
-should consider the technology project lifecycle, and design solicitations
-to reward effective planning, recognize the benefits and
-limitations of both technology innovation and reuse, expect adjustments during
-the production process, copy effective models from other industries and
-sectors, and encourage partnerships that support gateway sustainability.
+Recommendations from an early study of successful gateways include: 1)
+Leadership and management teams should design governance to represent
+multiple strengths and perspectives, plan for change and turnover in
+the future, recruit a development team that understands both the
+technical and domain-related issues, consider sustainability and
+measure success early and often. 2) Projects should hire a team of
+professionals, demonstrate credibility through stability and clarity
+of purpose, leverage the work of others, and plan for flexibility. 3)
+Projects should identify an existing community and understand the
+communities' needs before beginning, then adapt as the communities'
+needs evolve. 4) Funders, should consider the technology project
+lifecycle, and design solicitations to reward effective planning,
+recognize the benefits and limitations of both technology innovation
+and reuse, expect adjustments during the production process, copy
+effective models from other industries and sectors, and encourage
+partnerships that support gateway sustainability.
 
-%Through a business incubator type approach, the institute plans to provide a
-%variety of services that could be shared amongst projects. Consultation and
-%resources on topics such as business plan development, software engineering
-%practices, software licensing options, usability, security and project
-%management as well as a software repository and hosting service will be
-%available. Experts will be available for multi-month assignments to help
-%research teams build their own gateways, teaching them how to maintain and add
-%to the work after the collaboration ends. Forums, symposia and an annual
-%conference will connect members of the development community. A modular,
-%layered framework that supports community contributions and allows developers
-%to choose components will be delivered and finally workforce development
-%activities will help train the next generation for careers in this cross-
-%disciplinary area and build pools of institutional expertise that many projects
-%can leverage. Shared services and forums can dramatically reduce the cost of
-%building and sustaining gateways. Workforce development can encourage
-%technology professionals to remain in the sciences.
+%Through a business incubator type approach, the institute plans to
+%provide a variety of services that could be shared amongst
+%projects. Consultation and resources on topics such as business plan
+%development, software engineering practices, software licensing
+%options, usability, security and project management as well as a
+%software repository and hosting service will be available. Experts
+%will be available for multi-month assignments to help research teams
+%build their own gateways, teaching them how to maintain and add to
+%the work after the collaboration ends. Forums, symposia and an annual
+%conference will connect members of the development community. A
+%modular, layered framework that supports community contributions and
+%allows developers to choose components will be delivered and finally
+%workforce development activities will help train the next generation
+%for careers in this cross- disciplinary area and build pools of
+%institutional expertise that many projects can leverage. Shared
+%services and forums can dramatically reduce the cost of building and
+%sustaining gateways. Workforce development can encourage technology
+%professionals to remain in the sciences.
 
 \subsubsection{What are communities?}
 
-The workshop did not directly answer the question ``What are communities?'' but
-instead a number of different answers were indirectly presented, through the
-depiction of individuals and stakeholders in different aspects of the
-scientific software lifecycle.  In broad strokes, however, scientific software
-communities were generally accepted as consisting of individuals, often but not
-always composed of scientist practitioners, that were working with some degree
-of coordination toward a common goal enabled by software.
+The workshop did not directly answer the question ``What are
+communities?'' but instead a number of different answers were
+indirectly presented, through the depiction of individuals and
+stakeholders in different aspects of the scientific software
+lifecycle.  In broad strokes, however, scientific software communities
+were generally accepted as consisting of individuals, often but not
+always composed of scientist practitioners, that were working with
+some degree of coordination toward a common goal enabled by software.
 
-The discussion of development-focused communities centered around describing
-methods of interaction between individuals and the scientific software.  The
-first type of interaction was the development of a specific piece of software,
-the second was a particular domain or discipline, and the final primary
-type of interaction was around the development of applications built on a
-particular piece of software that was perhaps developed by another group.  As
-an example, in~\cite{Hanwell_WSSSPE}, the community described is comprised of
-both the for-profit company \toolname{Kitware} and the users and contributors to their
-software packages such as \toolname{VTK}.  This structure, of the centralized development
-of core infrastructure around which communities of individuals applying that
-infrastructure and developing applications utilizing it, was similarly
-reflected in~\cite{Terrel_WSSSPE}, where the core scientific python ecosystem
-is supported by a non-profit entity that fosters community investment in that
-ecosystem.  In many ways, these two organizations (\toolname{Kitware} and \toolname{NumFOCUS})
-attempt to cross domain boundaries and provide support for both the
-infrastructure and application sides of community building.
+The discussion of development-focused communities centered around
+describing methods of interaction between individuals and the
+scientific software.  The first type of interaction was the
+development of a specific piece of software, the second was a
+particular domain or discipline, and the final primary type of
+interaction was around the development of applications built on a
+particular piece of software that was perhaps developed by another
+group.  As an example, in~\cite{Hanwell_WSSSPE}, the community
+described is comprised of both the for-profit company
+\toolname{Kitware} and the users and contributors to their software
+packages such as \toolname{VTK}.  This structure, of the centralized
+development of core infrastructure around which communities of
+individuals applying that infrastructure and developing applications
+utilizing it, was similarly reflected in~\cite{Terrel_WSSSPE}, where
+the core scientific python ecosystem is supported by a non-profit
+entity that fosters community investment in that ecosystem.  In many
+ways, these two organizations (\toolname{Kitware} and
+\toolname{NumFOCUS}) attempt to cross domain boundaries and provide
+support for both the infrastructure and application sides of community
+building.
 
 \subsubsection{Measuring community}
-How might a project know when it has built a sustainable community?  How might an outsider be able to assess the activity and sustainability of that community?  These questions have been partially addressed in the literature.  For example, a key metric in online communities in general is the cross-over point where there are more external contributors than internal ones. Richard Millington's book ``Buzzing Communities'' does an excellent job of outlining these measures, drawing on online communities research in an accessible manner~\cite{millington_buzzing_2012}. Some participants in the workshop have since prepared online materials outlining current and future practices in measurement of scientific software and its ecosystem~\cite{metrics-web}.
-%\footnote{\url{https://sites.google.com/site/scientificsoftwaremetrics/}}. \katznote{please change to cite}
+How might a project know when it has built a sustainable community?
+How might an outsider be able to assess the activity and
+sustainability of that community?  These questions have been partially
+addressed in the literature.  For example, a key metric in online
+communities in general is the cross-over point where there are more
+external contributors than internal ones. Richard Millington's book
+``Buzzing Communities'' does an excellent job of outlining these
+measures, drawing on online communities research in an accessible
+manner~\cite{millington_buzzing_2012}. Some participants in the
+workshop have since prepared online materials outlining current and
+future practices in measurement of scientific software and its
+ecosystem~\cite{metrics-web}.
+%\footnote{\url{https://sites.google.com/site/scientificsoftwaremetrics/}}. \katznote{please
+%change to cite}
 
 \subsubsection{Additional Resources for learning about software communities}
 
-Scientific software communities were viewed as a subset of software communities
-as whole.  As such, resources applicable to generic software communities --
-such as open source and proprietary technology companies -- can be used as
-input and as guiding understanding of how to steward and develop scientific
-software communities.  Because incentive structures are different in industry
-and volunteer-based open source communities, these can provide rough guidelines
-but not necessarily identically applicable.  The analogy between corporations
-and scientific investigators (particularly in terms of competition, cooperation
-and competitive advantage) has been explored in the literature below, but
-because of the different incentive structure the analogy is not universally
-true.
+Scientific software communities were viewed as a subset of software
+communities as whole.  As such, resources applicable to generic
+software communities -- such as open source and proprietary technology
+companies -- can be used as input and as guiding understanding of how
+to steward and develop scientific software communities.  Because
+incentive structures are different in industry and volunteer-based
+open source communities, these can provide rough guidelines but not
+necessarily identically applicable.  The analogy between corporations
+and scientific investigators (particularly in terms of competition,
+cooperation and competitive advantage) has been explored in the
+literature below, but because of the different incentive structure the
+analogy is not universally true.
 
-The literature below, suggested by attendees, addresses both non-scientific
-software projects, as well as scientific projects.  The selections address both
-descriptive and prescriptive approaches to communities.
+The literature below, suggested by attendees, addresses both
+non-scientific software projects, as well as scientific projects.  The
+selections address both descriptive and prescriptive approaches to
+communities.
 
 Both~\cite{howison_scientific_2011} and~\cite{howison_incentives_2013}
-study how scientific software collectives self-organize and address issues of
-incentive, long-term support, and development of infrastructure as well as new
-features.  As noted elsewhere in this summary,
-\cite{Turk:2013:SCH:2484762.2484782} shared prescriptions from two software
-communities in astrophysics.
+study how scientific software collectives self-organize and address
+issues of incentive, long-term support, and development of
+infrastructure as well as new features.  As noted elsewhere in this
+summary, \cite{Turk:2013:SCH:2484762.2484782} shared prescriptions
+from two software communities in astrophysics.
 
-From the perspective of developing prescriptions for successful scientific
-software development, both~\cite{citeulike:11831265} and
-\cite{1749-4699-6-1-015010} share experiences and suggestions for developing
-sustainable practices.  \cite{citeulike:11831265} proposes "ten simple rules"
-for developing open source scientific software, focusing on both the choices
-made during development and the sustainability of practices in the long term.
-\cite{1749-4699-6-1-015010} describes the development and long-term growth of
-the \texttt{deal.II} library, and how its place in its ecosystem of libraries,
-applications and domains has shaped its development and community trajectory.
+From the perspective of developing prescriptions for successful
+scientific software development, both~\cite{citeulike:11831265} and
+\cite{1749-4699-6-1-015010} share experiences and suggestions for
+developing sustainable practices.  \cite{citeulike:11831265} proposes
+"ten simple rules" for developing open source scientific software,
+focusing on both the choices made during development and the
+sustainability of practices in the long term.
+\cite{1749-4699-6-1-015010} describes the development and long-term
+growth of the \texttt{deal.II} library, and how its place in its
+ecosystem of libraries, applications and domains has shaped its
+development and community trajectory.
 
-From more traditional open source development, resources were shared that
-developed communities explicitly, such as~\cite{citeulike:7888211}
-and~\cite{Trapani:2011}, focusing on large-scale projects such as the Ubuntu
-Linux distribution and smaller-scale volunteer-developed projects like such as
-ThinkUp, respectively. The process of open source development, while less
-explicitly focused on community building, outlined in~\cite{citeulike:478633}
-was seen as a valuable resource, particularly when combined with the management
-and personal interaction techniques outlined in~\cite{opac-b1134063}.  Growing
-diversity in communities was directly addressed in~\cite{Allsopp:2012}, where
-experiences growing the diversity of technical conferences in open source were
-described.
+From more traditional open source development, resources were shared
+that developed communities explicitly, such
+as~\cite{citeulike:7888211} and~\cite{Trapani:2011}, focusing on
+large-scale projects such as the Ubuntu Linux distribution and
+smaller-scale volunteer-developed projects like such as ThinkUp,
+respectively. The process of open source development, while less
+explicitly focused on community building, outlined
+in~\cite{citeulike:478633} was seen as a valuable resource,
+particularly when combined with the management and personal
+interaction techniques outlined in~\cite{opac-b1134063}.  Growing
+diversity in communities was directly addressed
+in~\cite{Allsopp:2012}, where experiences growing the diversity of
+technical conferences in open source were described.
 
 \subsection{Industry \& Economic Models}
 
 Several papers presented discussed the connection between industry and
-scientific software, from the perspective of both integrating efforts between
-the two and sustaining long-term development.
+scientific software, from the perspective of both integrating efforts
+between the two and sustaining long-term development.
 
-Hanwell et al.~\cite{Hanwell_WSSSPE} reflect on the 15-year history of open
-source software development at \toolname{Kitware}.  In particular, they focus on their
-success at growing their community of users through enabling multiple channels
-of communication, directly reaching out to individuals, and lowering the
-barrier to entry for contributions. This involves providing clear,
-test-oriented and review-based mechanisms for evaluating contributions,
-permissive licenses, and a service-based model for sustaining development.
-This model enables \toolname{Kitware} to review both public funding, as well as private
-funding to support improvements and targeted developments of the software.
+Hanwell et al.~\cite{Hanwell_WSSSPE} reflect on the 15-year history of
+open source software development at \toolname{Kitware}.  In
+particular, they focus on their success at growing their community of
+users through enabling multiple channels of communication, directly
+reaching out to individuals, and lowering the barrier to entry for
+contributions. This involves providing clear, test-oriented and
+review-based mechanisms for evaluating contributions, permissive
+licenses, and a service-based model for sustaining development.  This
+model enables \toolname{Kitware} to review both public funding, as
+well as private funding to support improvements and targeted
+developments of the software.
 
-Foster et al.~\cite{Foster_WSSSPE} discussed the approach of developing sustainability models
-around Software-as-a-Service (SaaS) platforms, with the target example being
-that of \toolname{GlobusOnline}.  The authors build a case that both grant-based and
-volunteer-based development fall short in sustaining software, resulting in
-software that is disproportionately difficult to use compared to its
-functionality, which they note directly impacts the overall scientific
-productivity of its users.  In contrast, by charging a subscription fee for
-hosted, centrally-managed software (similar to offerings by \toolname{Dropbox}, \toolname{EverNote},
-\toolname{GMail}), the authors propose to manage the funding cycle and enable a greater
-focus on the aspects of software that directly impact individuals, rather than
-funders.  \toolname{Globus} has deployed such a service, for which they have attempted to
-develop a sustainable economic model that reduces institutional obstacles to
-funding and subscription.  However, they do identify that cultural obstacles
-do still remain, and they note a particular difference in culture between NSF-
-and NIH-funded researchers.
+Foster et al.~\cite{Foster_WSSSPE} discussed the approach of
+developing sustainability models around Software-as-a-Service (SaaS)
+platforms, with the target example being that of
+\toolname{GlobusOnline}.  The authors build a case that both
+grant-based and volunteer-based development fall short in sustaining
+software, resulting in software that is disproportionately difficult
+to use compared to its functionality, which they note directly impacts
+the overall scientific productivity of its users.  In contrast, by
+charging a subscription fee for hosted, centrally-managed software
+(similar to offerings by \toolname{Dropbox}, \toolname{EverNote},
+\toolname{GMail}), the authors propose to manage the funding cycle and
+enable a greater focus on the aspects of software that directly impact
+individuals, rather than funders.  \toolname{Globus} has deployed such
+a service, for which they have attempted to develop a sustainable
+economic model that reduces institutional obstacles to funding and
+subscription.  However, they do identify that cultural obstacles do
+still remain, and they note a particular difference in culture between
+NSF- and NIH-funded researchers.
 
-While many papers briefly discussed licensing issues, Elster~\cite{Elster_WSSSPE}
-directly discussed the impact of different licenses on obtaining industrial
-funding for scientific software projects.  In particular, she describes
-experiences with researchers unwilling to utilize GPL (copyleft) code, as it
-adds restrictions to reuse that some industries find unacceptable for future
-commercialization.  (This was discussed by Hanwell et al.~\cite{Hanwell_WSSSPE} as well.)
-Further obstacles to sustainability identified by the author include patenting
-of software, a lack of open access, and even more broadly, a lack of open
-source codes even in open access journals.  Finally, a lack of awareness on the
-part of scientific software developers of commodity libraries for common tasks
-reduces their ability to reuse code.
+While many papers briefly discussed licensing issues,
+Elster~\cite{Elster_WSSSPE} directly discussed the impact of different
+licenses on obtaining industrial funding for scientific software
+projects.  In particular, she describes experiences with researchers
+unwilling to utilize GPL (copyleft) code, as it adds restrictions to
+reuse that some industries find unacceptable for future
+commercialization.  (This was discussed by Hanwell et
+al.~\cite{Hanwell_WSSSPE} as well.)  Further obstacles to
+sustainability identified by the author include patenting of software,
+a lack of open access, and even more broadly, a lack of open source
+codes even in open access journals.  Finally, a lack of awareness on
+the part of scientific software developers of commodity libraries for
+common tasks reduces their ability to reuse code.
 
 \subsection{Education \& Training}
 
-The papers describing education and training were focused primarily on how
-these aspects of community development impact on the long-term sustainability
-of software projects.  \cite{Girotto_WSSSPE} described the impact of the
-mandate within the International Centre for Theoretical Physics (ICTP) to
-foster resources and competences in software development and HPC, resulting in
-the development of educational curricula directed in this area.  The paper
-itself described the changes made in these curricula as a result of the current
-changes in the HPC and scientific software landscape due to the advent of
-scripting languages, new programming paradigms and new types of hardware such
-as accelerator technologies.  The development of a workshop, with carefully
-selected participants and an immersive approach to learning, was identified as
-a major success for educating and developing new scientific software developers
-from targeted domains.
+The papers describing education and training were focused primarily on
+how these aspects of community development impact on the long-term
+sustainability of software projects.  \cite{Girotto_WSSSPE} described
+the impact of the mandate within the International Centre for
+Theoretical Physics (ICTP) to foster resources and competences in
+software development and HPC, resulting in the development of
+educational curricula directed in this area.  The paper itself
+described the changes made in these curricula as a result of the
+current changes in the HPC and scientific software landscape due to
+the advent of scripting languages, new programming paradigms and new
+types of hardware such as accelerator technologies.  The development
+of a workshop, with carefully selected participants and an immersive
+approach to learning, was identified as a major success for educating
+and developing new scientific software developers from targeted
+domains.
 
-\cite{Crawford_WSSSPE} addressed education and training within computational
-chemistry frameworks, particularly as these frameworks attempt to address
-next-generation computer hardware and software and as chemistry courses
-emphasize lab work over computational education.  The authors identify this
-lack of computational awareness and training as the primary challenge to future
-advances in computational chemistry.  The authors propose a new institute for
-computational chemistry, emphasizing collaboration (and a licensing structure,
-such as LGPL or more permissive) and education of future generations of
+\cite{Crawford_WSSSPE} addressed education and training within
+computational chemistry frameworks, particularly as these frameworks
+attempt to address next-generation computer hardware and software and
+as chemistry courses emphasize lab work over computational education.
+The authors identify this lack of computational awareness and training
+as the primary challenge to future advances in computational
+chemistry.  The authors propose a new institute for computational
+chemistry, emphasizing collaboration (and a licensing structure, such
+as LGPL or more permissive) and education of future generations of
 chemistry researchers.
 
 %\section{Other Discussion} \label{sec:other}
@@ -1486,12 +1582,13 @@ sustainability a particular element of software needs to have, and
 where this is important. It, too, expresses sustainability in relation
 to change over time:
 \begin{quote}``When choosing software for procurement or
-development reuse --- regardless of the license and development model you will
-use --- you need to consider the future. While a software product may satisfy
-today's needs, will it satisfy tomorrow's needs? Will the supplier still be
-around in five years' time? Will the supplier still care for all its customers
-in five years' time? Will the supplier be responsive to bug reports and feature
-requests? In other words, is the software sustainable?''~\cite{OSS-ssmm-web}
+development reuse --- regardless of the license and development model
+you will use --- you need to consider the future. While a software
+product may satisfy today's needs, will it satisfy tomorrow's needs?
+Will the supplier still be around in five years' time? Will the
+supplier still care for all its customers in five years' time? Will
+the supplier be responsive to bug reports and feature requests? In
+other words, is the software sustainable?''~\cite{OSS-ssmm-web}
 \end{quote}
 
 Attendees suggested that having a definition of sustainability on
@@ -1520,7 +1617,7 @@ modeling sustainability, and modeling requires defining what will be
 modeled, this panel saw particular attention to the questions
 surrounding the definition of sustainability. Two papers, Venters et
 al.~\cite{Venters_WSSSPE} and Katz and Proctor~\cite{Katz_WSSSPE},
-specifically discuss the issue. 
+specifically discuss the issue.
 
 According to Venters et al.~\cite{Venters_WSSSPE}, sustainability is a
 rather ambiguous concept, and the lack of an accepted definition
@@ -1533,16 +1630,22 @@ reusability, and scalability. They also propose an evaluation
 framework with which quality and sustainability could be measured at
 the architectural level.
 
-Katz and Proctor~\cite{Katz_WSSSPE} propose a set of questions that could be
-used to measure software sustainability:
+Katz and Proctor~\cite{Katz_WSSSPE} propose a set of questions that
+could be used to measure software sustainability:
 \begin{itemize}
-\item Will the software continue to provide the same functionality in the future,
-      even if the environment (other parts of the infrastructure) changes?
-\item Is the functionality and usability clearly explained to new users?
-\item Do users have a mechanism to ask questions and to learn about the software?
-\item Will the functionality be correct in the future, even if the environment changes?
-\item Does it provide the functionality that existing and future users want?
-\item Will it incorporate new science, theory, or tools as they develop?
+\item Will the software continue to provide the same functionality in
+  the future, even if the environment (other parts of the
+  infrastructure) changes?
+\item Is the functionality and usability clearly explained to new
+  users?
+\item Do users have a mechanism to ask questions and to learn about
+  the software?
+\item Will the functionality be correct in the future, even if the
+  environment changes?
+\item Does it provide the functionality that existing and future users
+  want?
+\item Will it incorporate new science, theory, or tools as they
+  develop?
 \end{itemize}
 Despite their phrasing, these questions are not intended to be given
 simplistic yes or no answers, and it is the complete set rather than
@@ -1550,10 +1653,10 @@ any individual one that would determine where in the range of
 sustainability a software falls.
 
 Table~\ref{tab:defining-sustainability} reproduces a summary created
-by C.~Lenhardt ~\cite{lenhardt-wssspe1-panel}, which shows for each contribution to the
-Modeling Sustainability panel what it meant when referring to
-software, how it defined software sustainability, and which
-approach it suggested to understand or evaluate sustainability.
+by C.~Lenhardt ~\cite{lenhardt-wssspe1-panel}, which shows for each
+contribution to the Modeling Sustainability panel what it meant when
+referring to software, how it defined software sustainability, and
+which approach it suggested to understand or evaluate sustainability.
 \begin{table}[t]
   \begin{scriptsize}
     \begin{center}
@@ -1601,15 +1704,16 @@ Weber, et al.~\cite{Weber_WSSSPE}
   \end{scriptsize}
 \end{table}
 
-\subsection{Career Paths for Scientific Software Developers}\label{sec:career-tracks} %\note{lead: Daniel S. Katz} 
+\subsection{Career Paths for Scientific Software Developers}\label{sec:career-tracks} %\note{lead: Daniel S. Katz}
 
 Career path issues also came up repeatedly, starting in the first
 keynote (\S\ref{sec:keynote1}), where Phil Bourne used the term ``the
-Google Bus'' to describe the issue of well-trained software development staff in
-academic labs choosing to leave science and to work instead for technology
-firms, especially Google, which happens in large enough numbers that
-Google operates a bus every day to its nearest offices (and hence
-staff who leaves academia in this way does not even have  to physically move).
+Google Bus'' to describe the issue of well-trained software
+development staff in academic labs choosing to leave science and to
+work instead for technology firms, especially Google, which happens in
+large enough numbers that Google operates a bus every day to its
+nearest offices (and hence staff who leaves academia in this way does
+not even have to physically move).
 
 The career path issue emerged repeatedly across panels because for
 scientific software to be(come) sustainable, projects trying to create
@@ -1697,181 +1801,200 @@ services.
 
 % 8. Is there a software paper for this software product? Cite?
 
-% 9. Has the project proved to be sustainable so far? Does the developers,
-% managers make conscious efforts to make sure the project is sustainable? What
-% determines the sustainability of the project in question: science,
-% publications, usability, funding, reusability? Perhaps all factors to some
-% extent? What factors are dominating? Can we send out a message to current
-% scientific project to emphasize on one or more of these or other aspects?
-% ====
+% 9. Has the project proved to be sustainable so far? Does the
+% developers, managers make conscious efforts to make sure the project
+% is sustainable? What determines the sustainability of the project in
+% question: science, publications, usability, funding, reusability?
+% Perhaps all factors to some extent? What factors are dominating? Can
+% we send out a message to current scientific project to emphasize on
+% one or more of these or other aspects?
+%====
 
-In this section, we discuss some of the software projects as case studies to
-better understand the points discussed during the workshop and described in the
-previous sections. We dive deeper to find how are they affected by the
-sustainability related issues in practice. Additionally, we discuss issues
-surrounding people, especially the career paths of original developers and
-investigate to answer the question: \emph{are the original developers still
-around?}
+In this section, we discuss some of the software projects as case
+studies to better understand the points discussed during the workshop
+and described in the previous sections. We dive deeper to find how are
+they affected by the sustainability related issues in
+practice. Additionally, we discuss issues surrounding people,
+especially the career paths of original developers and investigate to
+answer the question: \emph{are the original developers still around?}
 
-We classify the software projects discussed in the workshop in two broad
-categories. First, the \emph{utility} software, comprising of general purpose
-software. Utility software is often used as enabler and/or facilitator for the
-development of other tools and techniques to carry out scientific work. This
-includes the software developed to efficiently utilize new research
-infrastructures. Second, the \emph{scientific} software, comprising the
-software that was originally developed with an aim to solve a specific
-scientific problem.
+We classify the software projects discussed in the workshop in two
+broad categories. First, the \emph{utility} software, comprising of
+general purpose software. Utility software is often used as enabler
+and/or facilitator for the development of other tools and techniques
+to carry out scientific work. This includes the software developed to
+efficiently utilize new research infrastructures. Second, the
+\emph{scientific} software, comprising the software that was
+originally developed with an aim to solve a specific scientific
+problem.
 
 % Why are we classifying software like above?
-This classification is motivated by our argument that the two kinds of software
-projects wildly vary in factors such as scope, purpose and usage. The
-development and management of each kind is significantly different.
-Consequently, the sustainability challenges faced by them differ and must be
-treated separately. For instance, the challenges faced by a gateway software
-development project such as \toolname{CIPRES} or a visualization software product
-such as \toolname{VisIT} are distinct to a niche software for \textit{ab initio}
-modeling and simulation such as \toolname{VASP} or \toolname{Quantum Espresso}.
+This classification is motivated by our argument that the two kinds of
+software projects wildly vary in factors such as scope, purpose and
+usage. The development and management of each kind is significantly
+different.  Consequently, the sustainability challenges faced by them
+differ and must be treated separately. For instance, the challenges
+faced by a gateway software development project such as
+\toolname{CIPRES} or a visualization software product such as
+\toolname{VisIT} are distinct to a niche software for \textit{ab
+  initio} modeling and simulation such as \toolname{VASP} or
+\toolname{Quantum Espresso}.
 
 \subsection{Utility Software}
-Software developed with a potentially wider audience and general purpose usage
-in mind is utility software. Utility software typically does not address
-fundamental research problems for a given scientific domain. Examples are
-collaborative development frameworks such as \toolname{GitHub} and
-\toolname{Bitbucket}, distributed workflow and generic computing frameworks
-such as \toolname{Galaxy}, \toolname{nanoHUB}, \toolname{SimGrid}, \toolname{Swift},
-\toolname{Globus} and \toolname{VisTrails}, and visualization frameworks such as
-\toolname{VisIT}.
+Software developed with a potentially wider audience and general
+purpose usage in mind is utility software. Utility software typically
+does not address fundamental research problems for a given scientific
+domain. Examples are collaborative development frameworks such as
+\toolname{GitHub} and \toolname{Bitbucket}, distributed workflow and
+generic computing frameworks such as \toolname{Galaxy},
+\toolname{nanoHUB}, \toolname{SimGrid}, \toolname{Swift},
+\toolname{Globus} and \toolname{VisTrails}, and visualization
+frameworks such as \toolname{VisIT}.
 
 % What are the sustainability challenges? What are the opportunities?
-Development is often a high risk/reward undertaking exploring uncharted
-territories and is largely influenced by (re)usability factors. Owing to
-relatively large number of features, the development and prototype process is
-also lengthy which poses a significant survival risk. Challenges on a class of
-utility software for new architectures is well discussed
-in~\cite{Ferenbaugh_WSSSPE}.
+Development is often a high risk/reward undertaking exploring
+uncharted territories and is largely influenced by (re)usability
+factors. Owing to relatively large number of features, the development
+and prototype process is also lengthy which poses a significant
+survival risk. Challenges on a class of utility software for new
+architectures is well discussed in~\cite{Ferenbaugh_WSSSPE}.
 
-On the other hand, utility software presents opportunities to be usable by a
-larger community making its undertaking and development an attractive pursuit.
-It is generally more visible in community which in turn leads to a broader and
-deeper participation. For instance, promoting collaborations across the breadth
-(e.g., different departments) and depth (e.g., stakeholders within a department)
-of community, one of the key ingredient of a sustainable process. Successful
-utility projects reap high rewards and have a longer usage span. Development
-process becomes user-driven and self-sustaining.
+On the other hand, utility software presents opportunities to be
+usable by a larger community making its undertaking and development an
+attractive pursuit.  It is generally more visible in community which
+in turn leads to a broader and deeper participation. For instance,
+promoting collaborations across the breadth (e.g., different
+departments) and depth (e.g., stakeholders within a department) of
+community, one of the key ingredient of a sustainable
+process. Successful utility projects reap high rewards and have a
+longer usage span. Development process becomes user-driven and
+self-sustaining.
 
-One such example is the \toolname{Galaxy} project~\cite{Galaxy}. It follows agile software
-development practices and implements standards such as test-driven development
-and socialized bug managing practices via \toolname{trello}. Galaxy
-\emph{histories} and \emph{toolshed} offers easy community sharing of data and
-tools further promoting a collaborative environment. The project very closely
-follows the guidelines described in Carver and Thiruvathukal~\cite{Carver_WSSSPE} and many
-from Prli\'{c} and Procter~\cite{Prlic_WSSSPE}. Many utility software projects are often developed
-aiming better utilizing a particular, new infrastructure and architecture,
-e.g., \toolname{MVAPICH}, \toolname{VisIT}. Similarly, to leverage the power of
-emerging architectures such as accelerators, new code and libraries are
-required. The experience of one such effort as described
-in Ferenbaugh~\cite{Ferenbaugh_WSSSPE} which met with a limited success but nonetheless
-with many invaluable lessons were learned about influential cultural and
-technical aspects in sustainable software development practices.
+One such example is the \toolname{Galaxy} project~\cite{Galaxy}. It
+follows agile software development practices and implements standards
+such as test-driven development and socialized bug managing practices
+via \toolname{trello}. Galaxy \emph{histories} and \emph{toolshed}
+offers easy community sharing of data and tools further promoting a
+collaborative environment. The project very closely follows the
+guidelines described in Carver and Thiruvathukal~\cite{Carver_WSSSPE}
+and many from Prli\'{c} and Procter~\cite{Prlic_WSSSPE}. Many utility
+software projects are often developed aiming better utilizing a
+particular, new infrastructure and architecture, e.g.,
+\toolname{MVAPICH}, \toolname{VisIT}. Similarly, to leverage the power
+of emerging architectures such as accelerators, new code and libraries
+are required. The experience of one such effort as described in
+Ferenbaugh~\cite{Ferenbaugh_WSSSPE} which met with a limited success
+but nonetheless with many invaluable lessons were learned about
+influential cultural and technical aspects in sustainable software
+development practices.
 
-A relatively new paradigm in utility software is the software delivered as
-service over the web. With increasing popularity of cloud-based storage and
-computational environments, many users are leaning towards tools used as
-services. \toolname{GitHub} and \toolname{Bitbucket} can be argued to be
-such tools, catering to collaborative development. For scientific users
-\toolname{Globus}-based tools are a case of service-based utility software
-discussed during the workshop. The data movement and sharing services offered
-by Globus can be easily used over the web by collaborating researchers.
-%
-%
-%\note{Dan: so is the only difference here that this category is aimed at new
-%systems, where utility software is not?  If so, perhaps this should be
-%incorporated into that subsection, so there would just be two subsections.
-%Something in the framing of this subsection doesn't feel right to me.  FL: I
-%respectfully disagree the the only reason to develop frameworks is to better
-%utilize (new or old) infrastructure. Another really important reason is to
-%modularize development, making it much easier for an individual developer/user
-%to integrate their own code. Ketan: I think in this section I wanted to bring
-%up a class of software projects which are undertaken with the main aim of
-%tackling new systems and architectures in mind. New infrastructures such as
-%GPU, Cloud, fast IB, federal science networks, etc. were on my mind as I see
-%many submissions around them in the workshop.}
-%
-%
+A relatively new paradigm in utility software is the software
+delivered as service over the web. With increasing popularity of
+cloud-based storage and computational environments, many users are
+leaning towards tools used as services. \toolname{GitHub} and
+\toolname{Bitbucket} can be argued to be such tools, catering to
+collaborative development. For scientific users
+\toolname{Globus}-based tools are a case of service-based utility
+software discussed during the workshop. The data movement and sharing
+services offered by Globus can be easily used over the web by
+collaborating researchers.
+% \note{Dan: so is the only difference here that this category is
+%aimed at new systems, where utility software is not?  If so, perhaps
+%this should be incorporated into that subsection, so there would just
+%be two subsections.  Something in the framing of this subsection
+%doesn't feel right to me.  FL: I respectfully disagree the the only
+%reason to develop frameworks is to better utilize (new or old)
+%infrastructure. Another really important reason is to modularize
+%development, making it much easier for an individual developer/user
+%to integrate their own code. Ketan: I think in this section I wanted
+%to bring up a class of software projects which are undertaken with
+%the main aim of tackling new systems and architectures in mind. New
+%infrastructures such as GPU, Cloud, fast IB, federal science
+%networks, etc. were on my mind as I see many submissions around them
+%in the workshop.}
 
 \subsection{Scientific software}
-Scientific software consists primarily of special-purpose software that was
-purpose-built for a target use-case scenario,  fixed/frozen requirements in
-mind or solving a specific problem. Software projects pertaining to specific
-scientific domain tend to be in a niche and the user community tends to be
-small to medium. They are mostly driven by the science and specific needs of a
-research group. Specific needs such as numerical accuracy and
-algorithmic optimization are some of the paramount requirements of most
-scientific software.
+Scientific software consists primarily of special-purpose software
+that was purpose-built for a target use-case scenario, fixed/frozen
+requirements in mind or solving a specific problem. Software projects
+pertaining to specific scientific domain tend to be in a niche and the
+user community tends to be small to medium. They are mostly driven by
+the science and specific needs of a research group. Specific needs
+such as numerical accuracy and algorithmic optimization are some of
+the paramount requirements of most scientific software.
 
 % What are the challenges?
 Long-term sustainability of scientific software is often a significant
-challenge and face radically different issues compared to utility software.
-Many submissions reported that software is practically considered a ``byproduct''
-of the actual research. Others contended that the software was not the main
-funded part of their research. A smaller codebase and fixed requirements result
-in stability, ease of installation, and configurability.  Many such projects
-mature and are treated as libraries to be used into larger systems such as some
-of the utility software discussed in the previous section. While the software
-can stay stable and require relatively low maintenance, the responsibility is
-often on the shoulders of a very few developers who might not be specialists in
-software development. Development tends to be linear and simplistic with a
-limited scope to follow software best practices.
+challenge and face radically different issues compared to utility
+software.  Many submissions reported that software is practically
+considered a ``byproduct'' of the actual research. Others contended
+that the software was not the main funded part of their research. A
+smaller codebase and fixed requirements result in stability, ease of
+installation, and configurability.  Many such projects mature and are
+treated as libraries to be used into larger systems such as some of
+the utility software discussed in the previous section. While the
+software can stay stable and require relatively low maintenance, the
+responsibility is often on the shoulders of a very few developers who
+might not be specialists in software development. Development tends to
+be linear and simplistic with a limited scope to follow software best
+practices.
 
 Some examples of such software discussed as part of the workshop are,
-\toolname{DUNE}, \toolname{R/qtl}, \toolname{Kitware}, \toolname{PETSc}, \toolname{MINRES-QLP},
-\toolname{FASTMath}.  Most of the above efforts are focused on one scientific
-and/or applied mathematics domain. However, sometimes such projects grow beyond
-the initial vision of developers. One such example is \toolname{Kitware}, which
-while being a software product specializing in the scientific process, has a
-core focus of developing communities around software processes. An instance of
-this process is the development of the \toolname{CMake} build utility, which
-started out as a building tool for \toolname{ITK} but grew to become a generic
-build utility for C++ projects. Similarly, \toolname{PETSc} is growing towards
-becoming a general purpose utility system usable for solving variety of
+\toolname{DUNE}, \toolname{R/qtl}, \toolname{Kitware},
+\toolname{PETSc}, \toolname{MINRES-QLP}, \toolname{FASTMath}.  Most of
+the above efforts are focused on one scientific and/or applied
+mathematics domain. However, sometimes such projects grow beyond the
+initial vision of developers. One such example is \toolname{Kitware},
+which while being a software product specializing in the scientific
+process, has a core focus of developing communities around software
+processes. An instance of this process is the development of the
+\toolname{CMake} build utility, which started out as a building tool
+for \toolname{ITK} but grew to become a generic build utility for C++
+projects. Similarly, \toolname{PETSc} is growing towards becoming a
+general purpose utility system usable for solving variety of
 scientific problems.
 
-Finally, it appears that the career options of developers from different kinds
-of software projects differ significantly. In order to further investigate the
-much discussed issue of career paths for developers of these software, we
-conducted a small survey of the cases discussed above with respect to the
-current status of its core developers. We looked at the workshop submissions
-and the original cited papers for the respective software. Where available, we
-looked at the web pages and source code of the earliest versions to find the
-original developers. We included projects older than 5 years and excluded
-relatively new projects such as \toolname{SciPy} and \toolname{numFOCUS} from
-this survey. We find that in a majority of scientific software, more than one
-original developer are still around, in some cases after more than 10 years
-(e.g., \toolname{R/qtl}).  Whereas, in the case of utility software projects, it
-appears that at least one original developer is still around, often in a
-part-time or ``benefactor'' role. In other cases, it appears that the original
-developers have went on to assume a larger role, with the same project.
+Finally, it appears that the career options of developers from
+different kinds of software projects differ significantly. In order to
+further investigate the much discussed issue of career paths for
+developers of these software, we conducted a small survey of the cases
+discussed above with respect to the current status of its core
+developers. We looked at the workshop submissions and the original
+cited papers for the respective software. Where available, we looked
+at the web pages and source code of the earliest versions to find the
+original developers. We included projects older than 5 years and
+excluded relatively new projects such as \toolname{SciPy} and
+\toolname{numFOCUS} from this survey. We find that in a majority of
+scientific software, more than one original developer are still
+around, in some cases after more than 10 years (e.g.,
+\toolname{R/qtl}).  Whereas, in the case of utility software projects,
+it appears that at least one original developer is still around, often
+in a part-time or ``benefactor'' role. In other cases, it appears that
+the original developers have went on to assume a larger role, with the
+same project.
 
-In conclusion, we find that there are distinctions in the characteristics and
-the kinds of challenges faced between utility and scientific software projects.
-In terms of career paths of original developers, it appears that the career
-choices for utility software developers are broader compared to the developers
-of scientific software. However, it appears that in the case of scientific
-software, core competencies of original developers tend to be domain science
-who happen to be the coders of their software. As projects as a whole, the
+In conclusion, we find that there are distinctions in the
+characteristics and the kinds of challenges faced between utility and
+scientific software projects.  In terms of career paths of original
+developers, it appears that the career choices for utility software
+developers are broader compared to the developers of scientific
+software. However, it appears that in the case of scientific software,
+core competencies of original developers tend to be domain science who
+happen to be the coders of their software. As projects as a whole, the
 small-scale, specific software have a lower risk and cost in terms of
-sustaining as compared to utility software. We also find that the utility
-software tend to adhere more loyally to the many best practices discussed
-during the workshop. Often the sustainability of scientific software projects
-is achieved by the fact that the core developer or team heavily utilizes the
-software for their science, e.g.,  \toolname{R/qtl, PETSc}.  Furthermore, the
-development of scientific software requires more scientific skills compared
-with those of utility software. This diminishes the need of specialist
-programmers and practices in many cases where the bulk of development is
-carried out by a domain scientist. With these inferences, we believe that
-separate guidelines and/or principles for sustainability be defined and
-practiced for each category of scientific software and they be given separate
-treatment.
+sustaining as compared to utility software. We also find that the
+utility software tend to adhere more loyally to the many best
+practices discussed during the workshop. Often the sustainability of
+scientific software projects is achieved by the fact that the core
+developer or team heavily utilizes the software for their science,
+e.g., \toolname{R/qtl, PETSc}.  Furthermore, the development of
+scientific software requires more scientific skills compared with
+those of utility software. This diminishes the need of specialist
+programmers and practices in many cases where the bulk of development
+is carried out by a domain scientist. With these inferences, we
+believe that separate guidelines and/or principles for sustainability
+be defined and practiced for each category of scientific software and
+they be given separate treatment.
 
 %\note{Dan: I think there's some overlap
 %  between this and the discussion in the Developing and Support
@@ -1887,9 +2010,9 @@ To conclude, we discuss what we have learned from the workshop and what we plan 
 %\note{add some analysis of the deficiencies and difficulties that are
 %  present in different fields, and those that are common?}
 
-%\subsection{Concerns and issues}
-%
-%\todo{what are the main issues discussed in each discussion section? - and, if you want, and recommendations on what should be done about them}
+%\subsection{Concerns and issues} \todo{what are the main issues
+%discussed in each discussion section? - and, if you want, and
+%recommendations on what should be done about them}
 
 
 
@@ -1901,21 +2024,22 @@ Three issues came up repeatedly in different parts of the workshop:
 
 \begin{enumerate}
 \item The need for a definition of sustainability such that the
-community can get behind it. Although some had hoped that at least an
-initial consensus could be reached in the course of the workshop, this
-proved elusive. However, in the absence of such a definition it will
-remain difficult to define exactly what the goals should be towards
-achieving, or even only improving software sustainability, and hence
-what practices should be followed and implemented when. As described
-in the next subsection (\S\ref{sec:future}), the workshop organizers have begun an effort
-to address this.
+  community can get behind it. Although some had hoped that at least
+  an initial consensus could be reached in the course of the workshop,
+  this proved elusive. However, in the absence of such a definition it
+  will remain difficult to define exactly what the goals should be
+  towards achieving, or even only improving software sustainability,
+  and hence what practices should be followed and implemented when. As
+  described in the next subsection (\S\ref{sec:future}), the workshop
+  organizers have begun an effort to address this.
 
-\item The need for academic
-career paths for scientific software developers.  
-Unfortunately, it is not clear how to ensure that these career paths become available,
-other than repeatedly talking about this issue. The recent Moore and Sloan initiative
-in data science~\cite{moore_sloan} are trying to address this, to some extent, by providing funds and
-incentives to universities in the US that work towards this goal.
+\item The need for academic career paths for scientific software
+  developers.  Unfortunately, it is not clear how to ensure that these
+  career paths become available, other than repeatedly talking about
+  this issue. The recent Moore and Sloan initiative in data
+  science~\cite{moore_sloan} are trying to address this, to some
+  extent, by providing funds and incentives to universities in the US
+  that work towards this goal.
 
 %
 %\subsubsection*{Developing and Supporting Software}
@@ -1924,10 +2048,11 @@ incentives to universities in the US that work towards this goal.
 %
 %\subsubsection*{Communities, Models, and Education}
 
-\item The need for recognition of scholarship in scientific software over research 
-articles. This need probably is the most addressed of the three, today, with
-efforts underway such as the Mozilla Science Lab, GitHub, and figshare
-``Code as a research object'' project~\cite{code_as_a_research_object} among others.
+\item The need for recognition of scholarship in scientific software
+  over research articles. This need probably is the most addressed of
+  the three, today, with efforts underway such as the Mozilla Science
+  Lab, GitHub, and figshare ``Code as a research object''
+  project~\cite{code_as_a_research_object} among others.
 
 \end{enumerate}
 
@@ -1938,33 +2063,33 @@ efforts underway such as the Mozilla Science Lab, GitHub, and figshare
 Two strong lessons came out of the three discussion sessions:
 
 \begin{enumerate}
-\item Use of shared repositories in the development of collaborative 
-projects facilitates collaboration, reproducibility, and sustainability 
-in computational science. However it represents a barrier in some scientific fields and 
-has yet to be more widely adopted.
+\item Use of shared repositories in the development of collaborative
+  projects facilitates collaboration, reproducibility, and
+  sustainability in computational science. However it represents a
+  barrier in some scientific fields and has yet to be more widely
+  adopted.
 
 %\subsubsection*{Policy}
 
 %One of the subjects that contributed papers, attendees, and speakers
 %wrestled with repeatedly is defining sustainability such that the
 %community can get behind it. Although some had hoped that at least an
-%initial consensus could be reached in the course of the workshop, this
-%proved elusive. However, in the absence of such a definition it will
-%remain difficult to define exactly what the goals should be towards
-%achieving, or even only improving software sustainability, and hence
-%what practices should be followed and implemented when. As described
-%in the next subsection, a subset of the organizers have begun an effort
-%to address this.
+%initial consensus could be reached in the course of the workshop,
+%this proved elusive. However, in the absence of such a definition it
+%will remain difficult to define exactly what the goals should be
+%towards achieving, or even only improving software sustainability,
+%and hence what practices should be followed and implemented when. As
+%described in the next subsection, a subset of the organizers have
+%begun an effort to address this.
 
-%Thus, to be
-%seen successful, activities emerging from or following this first
-%WSSSPE workshop should include working out a community consensus on
-%what we mean by sustainability.
+%Thus, to be seen successful, activities emerging from or following
+%this first WSSSPE workshop should include working out a community
+%consensus on what we mean by sustainability.
 
 %\subsubsection*{Communities, Models, and Education}
-\item A sustainability model for scientific software is to build a pipeline
-from construction to consumption, as found in the most efficient
-information technology enterprises.
+\item A sustainability model for scientific software is to build a
+  pipeline from construction to consumption, as found in the most
+  efficient information technology enterprises.
 
 \end{enumerate}
 
@@ -1972,56 +2097,59 @@ information technology enterprises.
 %\note{conclusions from S8, not sure of location --Ketan}
 
 \subsubsection*{Use cases}
-Two distinct class of scientific software projects and products were discussed
-in the workshop: 1) generic, large-scale utility software and 2) niche, medium-
-and small-scale scientific software. Each class faces different and significant
-challenges. New undertakings should recognize the differences in advance and
-identify such challenges within the development and sustaining efforts. In
-particular, the dynamics associated with developers, scope, life cycle,
-users-community, (re)usability, funding support and career paths vary widely
-among the two classes of software.
+Two distinct class of scientific software projects and products were
+discussed in the workshop: 1) generic, large-scale utility software
+and 2) niche, medium- and small-scale scientific software. Each class
+faces different and significant challenges. New undertakings should
+recognize the differences in advance and identify such challenges
+within the development and sustaining efforts. In particular, the
+dynamics associated with developers, scope, life cycle,
+users-community, (re)usability, funding support and career paths vary
+widely among the two classes of software.
 
 % end conclusion S8
 
 \subsubsection*{Workshop process}
 The WSSSPE workshop can be viewed as an experiment in how we can
-collaboratively and inclusively build a workshop agenda, without asking
-large numbers of people to submit papers that will be rejected so that the
-workshop can have a low acceptance rate.
+collaboratively and inclusively build a workshop agenda, without
+asking large numbers of people to submit papers that will be rejected
+so that the workshop can have a low acceptance rate.
 
-Contributors also want to get credit for their participation in the process.
-And the workshop organizers want to make sure that the workshop content and
-their efforts are recorded.  The methods used in the WSSSPE1 workshop
-were successful; we had good participation, many contributors have a
-report they can cite, and the record of the workshop is open and available,
-through the self-published reports, the workshop web site and notes site,
-and this paper.  In addition, many additional papers are being created that
-will include the discussions at the workshop, including extended versions
-of many of the self published reports. such as those that are in this
-special issue.
+Contributors also want to get credit for their participation in the
+process.  And the workshop organizers want to make sure that the
+workshop content and their efforts are recorded.  The methods used in
+the WSSSPE1 workshop were successful; we had good participation, many
+contributors have a report they can cite, and the record of the
+workshop is open and available, through the self-published reports,
+the workshop web site and notes site, and this paper.  In addition,
+many additional papers are being created that will include the
+discussions at the workshop, including extended versions of many of
+the self published reports. such as those that are in this special
+issue.
 
-Ideally, there would be a service that
-would be able to index the contributions to the workshop, serving the
-authors, the organizers, and the larger community.
+Ideally, there would be a service that would be able to index the
+contributions to the workshop, serving the authors, the organizers,
+and the larger community.
 
 \subsection{Future activities} \label{sec:future}
 
 The organizers of the workshop have begun a survey to understand how
-the community define software sustainability.  It is expected that this survey
-will gather one or more consensus definitions, and lead to a short paper
-discussing them, as well as the level of consensus.
+the community define software sustainability.  It is expected that
+this survey will gather one or more consensus definitions, and lead to
+a short paper discussing them, as well as the level of consensus.
 
-Additional activities that are being planned include
-two additional WSSSPE workshops at the 2014 SciPy and SC14 conferences.
-The SciPy workshop (WSSSPE1.1) will focus on how some software projects
-from the SciPy community have dealt with software sustainability issues, both
-successfully and unsuccessfully, while the SC14 workshop (WSSSPE2) will
-be more general, and will likely focus on determining and publicizing specific
-activities that the overall scientific software community can take to move forward.
-In addition, there will be a minisymposium on ``Reliable Computational Science''
-at the 2014 Society for Industrial and Applied Mathematics  
-Annual Meeting (SIAM AN14, \url{http://meetings.siam.org})
-to further explore some of the key issues raised here.
+Additional activities that are being planned include two additional
+WSSSPE workshops at the 2014 SciPy and SC14 conferences.  The SciPy
+workshop (WSSSPE1.1) will focus on how some software projects from the
+SciPy community have dealt with software sustainability issues, both
+successfully and unsuccessfully, while the SC14 workshop (WSSSPE2)
+will be more general, and will likely focus on determining and
+publicizing specific activities that the overall scientific software
+community can take to move forward.  In addition, there will be a
+minisymposium on ``Reliable Computational Science'' at the 2014
+Society for Industrial and Applied Mathematics Annual Meeting (SIAM
+AN14, \url{http://meetings.siam.org}) to further explore some of the
+key issues raised here.
 
 
 
@@ -2030,23 +2158,23 @@ to further explore some of the key issues raised here.
 
 %\todo{anyone who needs to put something in here should}
 
-Some of the work by Katz was
-supported by the National Science Foundation while working at the
-Foundation; any opinion, finding, and conclusions or recommendations
-expressed in this material are those of the author and do not
-necessarily reflect the views of the National Science Foundation.
+Some of the work by Katz was supported by the National Science
+Foundation while working at the Foundation; any opinion, finding, and
+conclusions or recommendations expressed in this material are those of
+the author and do not necessarily reflect the views of the National
+Science Foundation.
 
+Choi thanks Ian Foster, Director of the Computation Institute,
+University of Chicago, for encouraging her work in reliable
+reproducible research and supporting her trip to participate in the
+WSSSPE1 conference as a contributor.
 
-Choi thanks Ian Foster, Director of the Computation Institute, University of Chicago,
-for encouraging her work in reliable reproducible research and
-supporting her trip to participate in the WSSSPE1 conference as a contributor.
+Lapp was supported by the National Evolutionary Synthesis Center
+(NESCent), NSF EF-0905606.
 
-Lapp was supported by the National Evolutionary Synthesis Center (NESCent),
-NSF EF-0905606.
-
-Hetherington was supported by the UK Engineering and
-Physical Sciences Research Council (EPSRC) Grant EP/H043160/1 for the
-UK Software Sustainability Institute.
+Hetherington was supported by the UK Engineering and Physical Sciences
+Research Council (EPSRC) Grant EP/H043160/1 for the UK Software
+Sustainability Institute.
 
 
 
@@ -2262,25 +2390,39 @@ in this area.
   D. P. Grote, D. L. Bruhwiler. White Paper on DOE-HEP Accelerator
   Modeling Science Activities~\cite{Vay_WSSSPE}
 
-\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak Mookherjee. Reusability in Science: From Initial User Engagement to Dissemination of Results~\cite{Maheshwari_WSSSPE}
+\item Ketan Maheshwari, David Kelly, Scott J. Krieder, Justin
+  M. Wozniak, Daniel S. Katz, Mei Zhi-Gang, Mainak
+  Mookherjee. Reusability in Science: From Initial User Engagement to
+  Dissemination of Results~\cite{Maheshwari_WSSSPE}
 
-\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott Chamberlain. rOpenSci -- a collaborative effort to develop R-based tools for facilitating Open Science~\cite{Hart_WSSSPE}
+\item Edmund Hart, Carl Boettiger, Karthik Ram, Scott
+  Chamberlain. rOpenSci -- a collaborative effort to develop R-based
+  tools for facilitating Open Science~\cite{Hart_WSSSPE}
 
-\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific Software through the Open Community Engagement Process~\cite{Christopherson_WSSSPE}
+\item L. Christopherson, R. Idaszak, S. Ahalt. Developing Scientific
+  Software through the Open Community Engagement
+  Process~\cite{Christopherson_WSSSPE}
 
-\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar, Borries Demeler. Science Gateway Operational Sustainability: Adopting a Platform-as-a-Service Approach~\cite{Pierce2_WSSSPE}
+\item Marlon Pierce, Suresh Marru, Mark A. Miller, Amit Majumdar,
+  Borries Demeler. Science Gateway Operational Sustainability:
+  Adopting a Platform-as-a-Service Approach~\cite{Pierce2_WSSSPE}
 
 \item Lynn Zentner, Michael Zentner, Victoria Farnsworth, Michael
   McLennan, Krishna Madhavan, and Gerhard Klimeck, nanoHUB.org:
   Experiences and Challenges in Software Sustainability for a Large
   Scientific Community~\cite{Zentner_WSSSPE}
 
-\item Andy Terrel. Sustaining the Python Scientific Software Community~\cite{Terrel_WSSSPE}
+\item Andy Terrel. Sustaining the Python Scientific Software
+  Community~\cite{Terrel_WSSSPE}
 
 \item Frank L\"{o}ffler, Steven R. Brandt, Gabrielle Allen and Erik
-  Schnetter. Cactus: Issues for Sustainable Simulation Software~\cite{Loffler_WSSSPE}
+  Schnetter. Cactus: Issues for Sustainable Simulation
+  Software~\cite{Loffler_WSSSPE}
 
-\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion Dooley, Dan Stanzione. Science Gateways and the Importance of Sustainability~\cite{Wilkins-Diehr_WSSSPE}
+\item Nancy Wilkins-Diehr, Katherine Lawrence, Linda Hayden, Marlon
+  Pierce, Suresh Marru, Michael McLennan, Michael Zentner, Rion
+  Dooley, Dan Stanzione. Science Gateways and the Importance of
+  Sustainability~\cite{Wilkins-Diehr_WSSSPE}
 
 
 \item Sou-Cheng (Terrya) Choi. MINRES-QLP Pack and Reliable
@@ -2304,7 +2446,8 @@ in this area.
 
 \begin{itemize}
 
-\item Anne C. Elster. Software for Science: Some Personal Reflections~\cite{Elster_WSSSPE}
+\item Anne C. Elster. Software for Science: Some Personal
+  Reflections~\cite{Elster_WSSSPE}
 
 \item Ian Foster, Vas Vasiliadis, Steven Tuecke. Software as a Service
   as a path to software sustainability~\cite{Foster_WSSSPE}
@@ -2328,9 +2471,11 @@ in this area.
 
 \item Dhabaleswar K. Panda, Karen Tomko, Karl Schulz, Amitava
   Majumdar. The MVAPICH Project: Evolution and Sustainability of an
-  Open Source Production Quality MPI Library for HPC~\cite{Panda_WSSSPE}
+  Open Source Production Quality MPI Library for
+  HPC~\cite{Panda_WSSSPE}
 
-\item Andy Terrel. Sustaining the Python Scientific Software Community~\cite{Terrel_WSSSPE}
+\item Andy Terrel. Sustaining the Python Scientific Software
+  Community~\cite{Terrel_WSSSPE}
 
 \end{itemize}
 
@@ -2367,7 +2512,8 @@ in this area.
   Reproducible Research via Staunch Scientific Software~\cite{Choi_WSSSPE}
 
 \item Frank L\"{o}ffler, Steven R. Brandt, Gabrielle Allen and Erik
-  Schnetter. Cactus: Issues for Sustainable Simulation Software~\cite{Loffler_WSSSPE}
+  Schnetter. Cactus: Issues for Sustainable Simulation
+  Software~\cite{Loffler_WSSSPE}
 
 \item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big
   Effects of Short-term Efforts: A Catalyst for Community Engagement
@@ -2442,27 +2588,29 @@ the ecosystem may be viewed as having challenges related to:
 \item education and training
 \end{itemize}
 
-This workshop is interested in all of the above topics.  We invite short (4-page) position/experience reports that will be used
-to organize panel and discussion sessions. These papers will be
-archived by a third-party service, and provided DOIs [Digital Object Identifiers].
-We encourage
-submitters to license their papers under a Creative Commons license
-that encourages sharing and remixing, as we will combine ideas (with
-attribution) into the outcomes of the workshop.  An interactive site
-will be created to link these papers and the workshop discussion, with
-options for later comments and contributions. Contributions will be
-peer-reviewed for relevance and originality before the links are added
-to the workshop site; contributions will also be used to determine
-discussion topics and panelists. We will also plan one or more papers
-to be collaboratively developed by the contributors, based on the
-panels and discussions.''
+This workshop is interested in all of the above topics.  We invite
+short (4-page) position/experience reports that will be used to
+organize panel and discussion sessions. These papers will be archived
+by a third-party service, and provided DOIs [Digital Object
+  Identifiers].  We encourage submitters to license their papers under
+a Creative Commons license that encourages sharing and remixing, as we
+will combine ideas (with attribution) into the outcomes of the
+workshop.  An interactive site will be created to link these papers
+and the workshop discussion, with options for later comments and
+contributions. Contributions will be peer-reviewed for relevance and
+originality before the links are added to the workshop site;
+contributions will also be used to determine discussion topics and
+panelists. We will also plan one or more papers to be collaboratively
+developed by the contributors, based on the panels and discussions.''
 \end{quote}
 
 \section{Attendees} \label{sec:attendees}  %\note{lead: Shel Swenson}
 
 
 The following is a partial list of attendees who were recorded on the
-document~\cite{WSSSPE1-google-notes} that was being used for live note taking at the workshop, or by the SC13 student volunteers, with some additions also made by the authors of this report.
+document~\cite{WSSSPE1-google-notes} that was being used for live note
+taking at the workshop, or by the SC13 student volunteers, with some
+additions also made by the authors of this report.
 
 
 \begin{multicols}{3}
