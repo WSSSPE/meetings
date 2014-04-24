@@ -1812,8 +1812,8 @@ services.
 
 In this section, we discuss some of the software projects as case
 studies to better understand the points discussed during the workshop
-and described in the previous sections. We dive deeper to find how are
-they affected by the sustainability related issues in
+and described in the previous sections. We dive deeper to find how 
+they are affected by the sustainability related issues in
 practice. Additionally, we discuss issues surrounding people,
 especially the career paths of original developers and investigate to
 answer the question: \emph{are the original developers still around?}
@@ -1821,7 +1821,7 @@ answer the question: \emph{are the original developers still around?}
 We classify the software projects discussed in the workshop in two
 broad categories. First, the \emph{utility} software, comprising of
 general purpose software. Utility software is often used as enabler
-and/or facilitator for the development of other tools and techniques
+or facilitator for the development of other tools and techniques
 to carry out scientific work. This includes the software developed to
 efficiently utilize new research infrastructures. Second, the
 \emph{scientific} software, comprising the software that was
@@ -1832,13 +1832,13 @@ problem.
 This classification is motivated by our argument that the two kinds of
 software projects wildly vary in factors such as scope, purpose and
 usage. The development and management of each kind is significantly
-different.  Consequently, the sustainability challenges faced by them
+different. Consequently, the sustainability challenges faced by them
 differ and must be treated separately. For instance, the challenges
 faced by a gateway software development project such as
-\toolname{CIPRES} or visualization software products such as
+\toolname{CIPRES} or visualization software pinroducts such as
 \toolname{VisIT} or \toolname{ParaView} are distinct to a niche software for
 \textit{ab initio} modeling and simulation such as \toolname{VASP} or
-\toolname{Quantum Espresso}.
+\toolname{Quantum Espresso}. \todo{cite}
 
 \subsection{Utility Software}
 Software developed with a potentially wider audience and general
@@ -1854,7 +1854,7 @@ frameworks such as \toolname{VTK}, \toolname{VisIT}, and \toolname{ParaView}.
 % What are the sustainability challenges? What are the opportunities?
 Development is often a high risk/reward undertaking exploring
 uncharted territories and is largely influenced by (re)usability
-factors. Owing to relatively large number of features, the development
+factors. Owing to a relatively large number of features, the development
 and prototype process is also lengthy which poses a significant
 survival risk. Challenges on a class of utility software for new
 architectures is well discussed in~\cite{Ferenbaugh_WSSSPE}.
@@ -1865,7 +1865,7 @@ attractive pursuit.  It is generally more visible in community which
 in turn leads to a broader and deeper participation. For instance,
 promoting collaborations across the breadth (e.g., different
 departments) and depth (e.g., stakeholders within a department) of
-community, one of the key ingredient of a sustainable
+community, one of the key ingredients of a sustainable
 process. Successful utility projects reap high rewards and have a
 longer usage span. Development process becomes user-driven and
 self-sustaining.
@@ -1875,12 +1875,12 @@ follows agile software development practices and implements standards
 such as test-driven development and socialized bug managing practices
 via \toolname{trello}. Galaxy \emph{histories} and \emph{toolshed}
 offers easy community sharing of data and tools further promoting a
-collaborative environment. The project very closely follows the
+collaborative environment. The project closely follows the
 guidelines described in Carver and Thiruvathukal~\cite{Carver_WSSSPE}
 and many from Prli\'{c} and Procter~\cite{Prlic_WSSSPE}. Many utility
 software projects are often developed aiming better utilizing a
 particular, new infrastructure and architecture, e.g.,
-\toolname{MVAPICH}, \toolname{VisIT}, toolname{ParaView}. Similarly, to leverage the power
+\toolname{MVAPICH}, \toolname{VisIT}, \toolname{ParaView}. Similarly, to leverage the power
 of emerging architectures such as accelerators, new code and libraries
 are required. The experience of one such effort as described in
 Ferenbaugh~\cite{Ferenbaugh_WSSSPE} which met with a limited success
@@ -1915,8 +1915,8 @@ collaborating researchers.
 
 \subsection{Scientific software}
 Scientific software consists primarily of special-purpose software
-that was purpose-built for a target use-case scenario, fixed/frozen
-requirements in mind or solving a specific problem. Software projects
+that was purpose-built for a target use-case scenario, fixed 
+requirements in mind, or solving a specific problem. Software projects
 pertaining to specific scientific domain tend to be in a niche and the
 user community tends to be small to medium. They are mostly driven by
 the science and specific needs of a research group. Specific needs
@@ -1931,31 +1931,31 @@ considered a ``byproduct'' of the actual research. Others contended
 that the software was not the main funded part of their research. A
 smaller codebase and fixed requirements result in stability, ease of
 installation, and configurability.  Many such projects mature and are
-treated as libraries to be used into larger systems such as some of
+treated as libraries to be integrated into larger systems such as some of
 the utility software discussed in the previous section. While the
 software can stay stable and require relatively low maintenance, the
-responsibility is often on the shoulders of a very few developers who
-might not be specialists in software development. Development tends to
+responsibility is often on the shoulders of a few developers who
+are often not specialists in software development. Development tends to
 be linear and simplistic with a limited scope to follow software best
 practices.
 
 Some examples of such software discussed as part of the workshop are,
 \toolname{DUNE}, \toolname{R/qtl}, \toolname{Kitware},
 \toolname{PETSc}, \toolname{MINRES-QLP}, \toolname{FASTMath}.  Most of
-the above efforts are focused on one scientific and/or applied
+the above efforts are focused on one scientific or applied
 mathematics domain. However, sometimes such projects grow beyond the
 initial vision of developers. One such example is \toolname{Kitware},
 which while being a software product specializing in the scientific
 process, has a core focus of developing communities around software
-processes. An instance of this process is the development of the
+processes. Another instance of this process is the development of the
 \toolname{CMake} build utility, which started out as a building tool
 for \toolname{ITK} but grew to become a generic build utility for C++
 projects. Similarly, \toolname{PETSc} is growing towards becoming a
-general purpose utility system usable for solving variety of
+general purpose utility system usable for solving a variety of
 scientific problems.
 
 Finally, it appears that the career options of developers from
-different kinds of software projects differ significantly. In order to
+two kinds of software projects differ significantly. In order to
 further investigate the much discussed issue of career paths for
 developers of these software, we conducted a small survey of the cases
 discussed above with respect to the current status of its core
@@ -1970,7 +1970,7 @@ around, in some cases after more than 10 years (e.g.,
 \toolname{R/qtl}).  Whereas, in the case of utility software projects,
 it appears that at least one original developer is still around, often
 in a part-time or ``benefactor'' role. In other cases, it appears that
-the original developers have went on to assume a larger role, with the
+the original developers have went on to assume a larger role with the
 same project.
 
 In conclusion, we find that there are distinctions in the
@@ -1992,7 +1992,7 @@ scientific software requires more scientific skills compared with
 those of utility software. This diminishes the need of specialist
 programmers and practices in many cases where the bulk of development
 is carried out by a domain scientist. With these inferences, we
-believe that separate guidelines and/or principles for sustainability
+believe that separate guidelines and principles for sustainability are to
 be defined and practiced for each category of scientific software and
 they be given separate treatment.
 
