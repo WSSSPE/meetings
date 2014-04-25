@@ -119,36 +119,40 @@ York, NY, USA; \url{matthewturk@gmail.com}}
 \begin{abstract} %\note{Lead: Sou-Cheng T. Choi}
 % Anne: Added a lead-in motivator to address the submission as a Experience paper
 % and tried to improve writing... ( I am assumeing no abstract word count limit...)
-Challenges related to the development, deployment, and maintenance of reusable
-software for science is becoming an increasing concern.  There are now many
-scientists whose research increasingly depends on the quality and availability
-of software they can use and build on.  At the same time, software specialists
-have more than enough to do without having to "reinvent the wheel". To
-highlight some of these issues and share experiences, The First Workshop on
-Sustainable Software for Science: Practice and Experiences (WSSSPE1) was held
-in November 2013 at SC13.  The workshop featured keynote presentations and
-based its discussion on them, as well as on a large number (54) of solicited
-extended abstracts that were grouped into three themes presented via panels
-that encouraged audience participation. A set of collaborative notes was taken
-during the workshop.
+Challenges related to the development, deployment, and maintenance of 
+reusable software for science is becoming an increasing concern. 
+There are now many scientists whose research increasingly depends on 
+the quality and availability of software they can use and build on. 
+At the same time, software specialists have more than enough to do 
+without having to "reinvent the wheel". To highlight some of these 
+issues and share experiences, The First Workshop on Sustainable 
+Software for Science: Practice and Experiences (WSSSPE1) was held 
+in November 2013 at SC13.
+The workshop featured keynote presentations and based its discussion 
+them, as well as on a large number (54) of solicited extended abstracts 
+that were grouped into three themes presented via panels that encouraged 
+audience participation. A set of collaborative notes was taken during the workshop.
 
-This document % article? 
-summarizes the issues and shared experiences discussed at the workshop,
-including cross-cutting issues and use cases. It joins a nascent literature
-seeking to understand what drives software work in science, and how it is
-impacted by the reward systems of science.  These incentives can determine the
-extent to which developers are motivated to build software for the long-term,
-for the use of others, and whether to work collaboratively or separately.
+This document 
+% article? 
+summarizes 
+the issues and shared experiences discussed atthe workshop, including
+cross-cutting issues and use cases. It joins a nascent
+literature seeking to understand what drives software work in science,
+and how it is impacted by the reward systems of science. 
+These incentives can determine the extent to which
+developers are motivated to build software for the long-term, for the
+use of others, and whether to work collaboratively or separately.
 
 Unique perspectives were captured about issues such as comprehensive
-documentation, development and deployment practices, software licenses and
-career paths for developers. Attribution systems that capture evidence of
-software contribution and impact were also discussed. These include mechanisms
-such as Digital Object Identifiers, publication of ``software papers'' and the
-use of online systems, for example source code repositories like GitHub. For
-truly sustainable software, there should be no endpoint, as the software
-products continue to be used beyond a single institution, grant, and developer
-or development team.
+documentation, development and deployment practices, software
+licenses and career paths for developers. Attribution systems that capture
+evidence of software contribution and impact were also discussed. These include
+mechanisms such as Digital Object Identifiers, publication
+of ``software papers'' and the use of online systems, for example source code repositories
+like GitHub. For truly sustainable software, there should be no
+endpoint, as the software products continue to be used beyond a single
+institution, grant, and developer or development team.
 
 % Original:
 % This document summarizes the First Workshop on Sustainable Software
@@ -572,11 +576,11 @@ license on code.''
 
 Communities are extremely important in software projects, and both
 their building and continued engagement need attention during the
-project life cycle.  Several of the submitted papers
+project life cycle.  Several of the submitted papers 
+% need help here...
+\todo{cite}
 discussed how communities have been built around projects, and what is
-needed to enable a project to
-grow~\cite{Crusoe_WSSSPE, Hanwell_WSSSPE, Christopherson_WSSSPE, Cranston_WSSSPE, Terrel_WSSSPE}.
-The latter includes public
+needed to enable a project to grow. The latter includes public
 source-code hosting, mailing lists, documentation, wikis, bug
 trackers, software downloads, continuous integration, software quality
 dashboards, and of course, a general web presence to tie a project's
@@ -599,17 +603,19 @@ welcoming to people.
 
 The papers submitted to this panel included many general
 recommendations for processes, practices, tools, etc. One of the
-papers suggested that a ``Software Sustainability
+papers 
+%N a todo!
+\note{cite?}  
+suggested that a ``Software Sustainability
 Institute'' should be vested with the authority to develop
 standardized quality processes, a common repository, central resources
 for services and consulting, a think tank of sorts, and a software
 orphanage center (i.e., a place to `take care' of software when the
-original developers have stopped doing so)~\cite{Crawford_WSSSPE}.
-The idea of one common
+original developers have stopped doing so).  The idea of one common
 repository received some resistance, with so many compelling
 alternatives available, e.g., Bitbucket or GitHub. The centralized
 communication or point of contact was seen as reasonable, with the
-statement that ``vested with authority'' is perhaps too strong, but
+statement that ``vested with authority'' is perhaps too strong. However,
 ``providing tools if needed'' might be more appropriate.
 
 What about actual software engineering principles, such as modularity
@@ -839,6 +845,8 @@ supported a piece of science ``can have detrimental effects on
 funding, future library development, and even scientific
 careers.''~\cite{Knepley_WSSSPE}.
 
+%Anne: The folowing sentence is verbatim from the original Abstract..
+% Se preivious commit for suggestion on hwo to shorten this sentence
 These papers, and the discussion at the workshop, join a nascent
 literature seeking to understand what drives software work in science
 and how the reward systems of science thereby shape the type of
@@ -1535,16 +1543,45 @@ subscription.  However, they do identify that cultural obstacles do
 still remain, and they note a particular difference in culture between
 NSF- and NIH-funded researchers.
 
+\subsubsection{Licensing and Software Patents}
+Software is no longer either open or closed (only binaries available),
+but also licensed and patented, which clearly also impact 
+software sustainability.
 While many papers briefly discussed licensing issues,
-Elster~\cite{Elster_WSSSPE} directly discussed the impact of different
-licenses on obtaining industrial funding for scientific software
-projects.  In particular, she describes experiences with researchers
+Elster~\cite{Elster_WSSSPE} directly discussed the impact of software licenses 
+on obtaining industrial funding for scientific software
+projects.  In particular, she describes her experiences with researchers
 unwilling to utilize GPL (copyleft) code, as it adds restrictions to
-reuse that some industries find unacceptable for future
+reuse that they themselve as we well as some industries find unacceptable for future
 commercialization.  (This was discussed by Hanwell et
-al.~\cite{Hanwell_WSSSPE} as well.)  Further obstacles to
-sustainability identified by the author include patenting of software,
-a lack of open access, and even more broadly, a lack of open source
+al.~\cite{Hanwell_WSSSPE} as well.)  US ICT companies funding 
+academics will thus often insist on BSD licensing on software 
+since they then can legally include the code into their commercial
+codes.
+
+On the other hand, there are companies
+that fund larger GPL-licensed software projects \cite{Blatt_WSSSPE}
+that insists that the university projects they fund 
+also produce code with GPL licensing.
+They do not accept BSD-like licenses since they argue that
+other companies then may choose to build closed commercial
+codes on they software they funded, rather than encouraging 
+the community to contribute freely and thus ensuring software 
+sustainability for the community.
+
+In either case, the university researchers are not given much choice
+if they want these much sought after funds in a increasingly competitive
+grant world.
+
+Another obstacles to
+sustainability identified by the author include patenting of software.
+Most countries place some limits on software patents. The European 
+Union outright forbids them, while US patent law excludes “abstract ideas” 
+that has been used to refuse some software patents.
+
+
+Further obstacles to
+sustainability is a lack of open access, and even more broadly, a lack of open source
 codes even in open access journals.  Finally, a lack of awareness on
 the part of scientific software developers of commodity libraries for
 common tasks reduces their ability to reuse code.
@@ -1565,7 +1602,13 @@ types of hardware such as accelerator technologies.  The development
 of a workshop, with carefully selected participants and an immersive
 approach to learning, was identified as a major success for educating
 and developing new scientific software developers from targeted
-domains.
+domains. 
+
+Elster \cite{Elster_WSSSPE} also points out how the 
+prevalence and rapid growth of multi and many-core systems forces 
+awareness of data locality and synchronization issues
+if one want to teach people how to develop high-performing scientific codes.
+
 
 \cite{Crawford_WSSSPE} addressed education and training within
 computational chemistry frameworks, particularly as these frameworks
@@ -2044,7 +2087,7 @@ they be given separate treatment.
 
 \section{Conclusions} \label{sec:conclusions}
 
-To conclude, we discuss what we have learned from the workshop and what we plan to do going forward.
+To conclude, we highlight what we have learned from the workshop, and what we plan to do going forward.
 
 %\note{add some analysis of the deficiencies and difficulties that are
 %  present in different fields, and those that are common?}
@@ -2104,7 +2147,7 @@ Two strong lessons came out of the three discussion sessions:
 \begin{enumerate}
 \item Use of shared repositories in the development of collaborative
   projects facilitates collaboration, reproducibility, and
-  sustainability in computational science. However it represents a
+  sustainability in computational science. However, it represents a
   barrier in some scientific fields and has yet to be more widely
   adopted.
 
@@ -2131,7 +2174,8 @@ Two strong lessons came out of the three discussion sessions:
   efficient information technology enterprises.
 
 \end{enumerate}
-
+In addition, licensing and patents and how they impact research funding
+for software developement, was also discussed.
 % Conclusion of S8 : Use Cases, not sure where to put
 %\note{conclusions from S8, not sure of location --Ketan}
 
@@ -2219,6 +2263,9 @@ Howison was supported by NSF SBE-1064209 and NSF ACI-0943168.
 
 Wilkins-Diehr was supported by the Extreme Science and Engineering Discovery Environment (XSEDE), 
 NSF ACI-1053575.
+
+Elster would like to thank Statoil ASA for supporting her travel
+and her research group through a grant related to the OPM/DUNE open source projects.
 
 
 
@@ -2491,7 +2538,7 @@ in this area.
 \begin{itemize}
 
 \item Anne C. Elster. Software for Science: Some Personal
-  Reflections~\cite{Elster_WSSSPE}
+  Reflections on Funding, Licensing, Publishing and Teaching~\cite{Elster_WSSSPE}
 
 \item Ian Foster, Vas Vasiliadis, Steven Tuecke. Software as a Service
   as a path to software sustainability~\cite{Foster_WSSSPE}
@@ -2562,6 +2609,8 @@ in this area.
 \item Erik Trainer, Chalalai Chaihirunkarn, James Herbsleb. The Big
   Effects of Short-term Efforts: A Catalyst for Community Engagement
   in Scientific Software~\cite{Trainer_WSSSPE}
+  
+
 
 \end{itemize}
 
