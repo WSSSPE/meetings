@@ -299,10 +299,9 @@ comments raised in both the onsite and online discussions that
 accompanied the workshop elements, as documented by collaborative note
 taking during the workshop~\cite{WSSSPE1-google-notes}. We conclude
 with issues and lessons learned, as well as plans for future
-activities~(\S\ref{sec:conclusions}).  The short papers accepted to
-the workshop are listed in Appendix~\ref{sec:papers}, part of he original
-call for papers is included in 
-Appendix~\ref{sec:cfp}, and a partial
+activities~(\S\ref{sec:conclusions}).  The original call for papers is included in 
+Appendix~\ref{sec:cfp}.  The short papers accepted to
+the workshop are listed in Appendix~\ref{sec:papers}, and a partial
 list of workshop attendees can be found in
 Appendix~\ref{sec:attendees}. 
 
@@ -732,8 +731,8 @@ sustainability, and models of implementation across different facets.
 \subsection{Modeling Sustainability}
 
 The workshop submissions grouped under this section provide frameworks
-for thinking about, researching and understanding which elements of
-sustainability are important and how they relate. Although there is
+for thinking about, researching, and understanding which elements of
+sustainability are important and how they are related to each other. Although there is
 substantial overlap between the frameworks, they have different
 emphases and extents.  Each paper in this group included a definition
 of sustainability, with many overlaps between them (see
@@ -741,6 +740,58 @@ Table~\ref{tab:defining-sustainability}).  Perhaps unsurprisingly, the
 issue of how to define sustainability came to the fore multiple times
 during the workshop, and it is thus summarized in depth separately in
 ~\S\ref{sec:defining-sustainability}.
+
+Table~\ref{tab:defining-sustainability} reproduces a summary created
+by C.~Lenhardt ~\cite{lenhardt-wssspe1-panel}, which shows for each
+contribution to the Modeling Sustainability panel what it meant when
+referring to software, how it defined software sustainability, and
+which approach it suggested to understand or evaluate sustainability.
+\begin{table}[t]
+  \begin{scriptsize}
+    \begin{center}
+      \caption{Summary of Modeling Sustainability papers from Policy Panel.  Adapted from~\cite{lenhardt-wssspe1-panel}.}
+      \label{tab:defining-sustainability}
+      \begin{tabular}{|p{2.3cm}|p{3.6cm}|p{4.4cm}|p{4.8cm}|}
+                \hline
+{\bf Paper/Authors}
+& {\bf Software}
+& {\bf Sustainability}
+& {\bf Approach to Understand or Evaluate Sustainability} \\
+                \hline
+Calero, et al.~\cite{Calero_WSSSPE}
+& General notion of software. Not explicitly defined.
+& Sustainability is linked to quality.
+& Add to ISO \\
+                \hline
+Venters, et al.~\cite{Venters_WSSSPE}
+& Software as science software; increasingly complex; service-oriented computing
+& Extensibility, interoperability, maintainability, portability, reusability, scalability, efficiency
+& Use various architecture evaluation approaches to assess sustainability \\
+                \hline
+Pierce, et al.~\cite{Pierce_WSSSPE}
+& Cyberinfrastructure software
+& Sustainable to the extent to which there is a community to support it
+& Open community governance \\
+                \hline
+Katz, et al.~\cite{Katz_WSSSPE}
+& E-research infrastructures (i.e. cyberinfrastructure)
+& Persisting over time, meeting original needs and projected needs
+& Equates models for the creation of software with sustaining software \\
+                \hline
+Lenhardt,~et~al.~\cite{Lenhardt_WSSSPE}
+& Broadly defined as software supporting science
+& Re-use; reproducible science
+& Comparing data management life cycle to software development life cycle \\
+                \hline
+Weber, et al.~\cite{Weber_WSSSPE}
+& Software broadly defined; a software ecosystem
+& Software niches
+& Ecological analysis and ecosystem \\
+                \hline
+     \end{tabular}
+    \end{center}
+  \end{scriptsize}
+\end{table}
 
 One area in which there was not complete overlap was whether the word
 (and thus the effort called for by the WSSSPE workshop) involved
@@ -761,24 +812,23 @@ that can be applied to pieces of software but might also extend to
 describe software projects.  Thus Calero et al.~\cite{Calero_WSSSPE}
 propose adding elements to the ISO standards for measuring software
 quality. Specifically, they propose an additional dimension of quality
-they call ``perdurability'' or ability to ``last over time'' made up
-of three characteristics: reliability, maintainability and
-adaptability. This shows some overlap with the framework employed by
-Venters et al.~\cite{Venters_WSSSPE} who employ the adjectives of
+they call ``perdurability'' with
+three defining characteristics: reliability, maintainability, and
+adaptability. This overlaps with the framework   by
+Venters et al.~\cite{Venters_WSSSPE} who employ the features
 ``extensibility, interoperability, maintainability, portability,
 reusability and scalability,'' anticipating the sorts of work that
 people would need to do with a software artifact in the future, ``as
 stakeholders requirements, technology and environments evolve and
-change.'' Venters et al.~argue that these choices are really made very
-early because they relate to the architecture of the software and
-involve trade offs that ought to be analyzed alongside other
-attributes of the software artifact. Lenhardt et
+change.'' Venters et al.~argue that these choices need to be made 
+early because they are related to the architecture of the software and
+involve trade offs that ought to be analyzed alongside each other. Lenhardt et
 al.~\cite{Lenhardt_WSSSPE} compare the software lifecycle to the data
 lifecycle to argue for the inclusion of metadata throughout a piece of
 software's life (discussing, for example, how it has been built and
 tested and what ``data in'' and ``data out'' has been considered). In
 addition, their analogy suggests that the software lifecycle might add
-a phase of ``preservation'' and draw on understandings of what that
+a phase of ``preservation'' and draw on the understanding of what that
 involves from studies of data.  In sum, then, these frameworks focused
 on what needs to be accomplished to have more sustainable software.
 
@@ -791,10 +841,10 @@ could be applied to a software project). For example Pierce et
 al.~\cite{Pierce_WSSSPE} focus on the way that the project is run,
 particularly in terms of how those involved communicate and jointly
 set priorities, a process they call governance. In particular they
-argue that because sustainability relates to having ongoing resources,
+argue that because sustainability is related to having ongoing resources,
 governance must be open to receive diverse input (by occurring online,
-asynchronously, and publicly) and thus have the potential to
-``transform passive users into active contributors''. They argue that
+asynchronously, or publicly) and thus have the potential to
+``transform passive users into active contributors.'' They argue that
 the Apache Software Foundation's incubation process teaches this and
 could be learned from by projects throughout scientific software.
 Katz and Proctor~\cite{Katz_WSSSPE} also discuss governance,
@@ -1696,57 +1746,6 @@ simplistic yes or no answers, and it is the complete set rather than
 any individual one that would determine where in the range of
 sustainability a software falls.
 
-Table~\ref{tab:defining-sustainability} reproduces a summary created
-by C.~Lenhardt ~\cite{lenhardt-wssspe1-panel}, which shows for each
-contribution to the Modeling Sustainability panel what it meant when
-referring to software, how it defined software sustainability, and
-which approach it suggested to understand or evaluate sustainability.
-\begin{table}[t]
-  \begin{scriptsize}
-    \begin{center}
-      \caption{Summary of Modeling Sustainability papers from Policy Panel.  Adapted from~\cite{lenhardt-wssspe1-panel}.}
-      \label{tab:defining-sustainability}
-      \begin{tabular}{|p{2.3cm}|p{3.6cm}|p{4.4cm}|p{4.8cm}|}
-                \hline
-{\bf Paper/Authors}
-& {\bf Software}
-& {\bf Sustainability}
-& {\bf Approach to Understand or Evaluate Sustainability} \\
-                \hline
-Calero, et al.~\cite{Calero_WSSSPE}
-& General notion of software. Not explicitly defined.
-& Sustainability is linked to quality.
-& Add to ISO \\
-                \hline
-Venters, et al.~\cite{Venters_WSSSPE}
-& Software as science software; increasingly complex; service-oriented computing
-& Extensibility, interoperability, maintainability, portability, reusability, scalability, efficiency
-& Use various architecture evaluation approaches to assess sustainability \\
-                \hline
-Pierce, et al.~\cite{Pierce_WSSSPE}
-& Cyberinfrastructure software
-& Sustainable to the extent to which there is a community to support it
-& Open community governance \\
-                \hline
-Katz, et al.~\cite{Katz_WSSSPE}
-& E-research infrastructures (i.e. cyberinfrastructure)
-& Persisting over time, meeting original needs and projected needs
-& Equates models for the creation of software with sustaining software \\
-                \hline
-Lenhardt,~et~al.~\cite{Lenhardt_WSSSPE}
-& Broadly defined as software supporting science
-& Re-use; reproducible science
-& Comparing data management life cycle to software development life cycle \\
-                \hline
-Weber, et al.~\cite{Weber_WSSSPE}
-& Software broadly defined; a software ecosystem
-& Software niches
-& Ecological analysis and ecosystem \\
-                \hline
-     \end{tabular}
-    \end{center}
-  \end{scriptsize}
-\end{table}
 
 \subsection{Career Paths for Scientific Software Developers}\label{sec:career-tracks} %\note{lead: Daniel S. Katz}
 
@@ -2276,6 +2275,89 @@ and her research group through a grant related to the OPM/DUNE open source proje
 
 
 \appendix
+
+\section{Call For Papers} \label{sec:cfp}
+
+The full Call for Papers for WSSSPE1 can be found online at
+\url{http://wssspe.researchcomputing.org.uk/wssspe1/cfp/}. We include
+below the part that explains scope and topics for which submissions
+were solicited (see \S\ref{sec:process} for number of submissions
+received, accepted, and the corresponding process).
+
+\begin{quote}
+``Progress in scientific research is dependent on the quality and
+accessibility of software at all levels and it is now critical to
+address many new challenges related to the development, deployment,
+and maintenance of reusable software. In addition, it is essential
+that scientists, researchers, and students are able to learn and adopt
+a new set of software-related skills and methodologies. Established
+researchers are already acquiring some of these skills, and in
+particular a specialized class of software developers is emerging in
+academic environments who are an integral and embedded part of
+successful research teams. This workshop will provide a forum for
+discussion of the challenges, including both positions and
+experiences. The short papers and discussion will be archived as a
+basis for continued discussion, and we intend the workshop to feed
+into the collaborative writing of one or more journal publications.
+
+In practice, scientific software activities are part of an ecosystem
+where key roles are held by developers, users, and funders. All three
+groups supply resources to the ecosystem, as well as requirements that
+bound it. Roughly following the example of NSF's Vision and Strategy
+for Software~\cite{NSF_software_vision},
+the ecosystem may be viewed as having challenges related to:
+
+\begin{itemize}[leftmargin=0.2in]
+\item the development process that leads to new (versions of) software
+\begin{itemize}[leftmargin=0.2in]
+\item how fundamental research in computer science or
+  science/engineering domains is turned into reusable software
+\item software created as a by-product of research
+\item impact of computer science research on the development of
+    scientific software and vice versa
+\end{itemize}
+\item the support and maintenance of existing software, including
+  software engineering
+\begin{itemize}[leftmargin=0.2in]
+\item governance, business, and sustainability models
+\item the role of community software repositories, their operation and
+  sustainability
+\end{itemize}
+\item the role of open source communities or industry
+\item use of the software
+\begin{itemize}[leftmargin=0.2in]
+\item growing communities
+\item reproducibility, transparency needs that may be unique to science
+\end{itemize}
+\item policy issues, such as
+\begin{itemize}[leftmargin=0.2in]
+\item measuring usage and impact
+\item software credit, attribution, incentive, and reward
+\item career paths for developers and institutional roles
+\item issues related to multiple organizations and multiple countries,
+  such as intellectual property, licensing, etc.
+\item mechanisms and venues for publishing software, and the role of
+  publishers
+\end{itemize}
+\item education and training
+\end{itemize}
+
+This workshop is interested in all of the above topics.  We invite
+short (4-page) position/experience reports that will be used to
+organize panel and discussion sessions. These papers will be archived
+by a third-party service, and provided DOIs [Digital Object
+  Identifiers].  We encourage submitters to license their papers under
+a Creative Commons license that encourages sharing and remixing, as we
+will combine ideas (with attribution) into the outcomes of the
+workshop.  An interactive site will be created to link these papers
+and the workshop discussion, with options for later comments and
+contributions. Contributions will be peer-reviewed for relevance and
+originality before the links are added to the workshop site;
+contributions will also be used to determine discussion topics and
+panelists. We will also plan one or more papers to be collaboratively
+developed by the contributors, based on the panels and discussions.''
+\end{quote}
+
 \section{Papers Accepted and Discussed at WSSSPE1} \label{sec:papers}
 
 \section*{Developing and Supporting Software}
@@ -2621,87 +2703,6 @@ in this area.
 \end{itemize}
 
 
-\section{Call For Papers} \label{sec:cfp}
-
-The full Call for Papers for WSSSPE1 can be found online at
-\url{http://wssspe.researchcomputing.org.uk/wssspe1/cfp/}. We include
-below the part that explains scope and topics for which submissions
-were solicited (see \S\ref{sec:process} for number of submissions
-received, accepted, and the corresponding process).
-
-\begin{quote}
-``Progress in scientific research is dependent on the quality and
-accessibility of software at all levels and it is now critical to
-address many new challenges related to the development, deployment,
-and maintenance of reusable software. In addition, it is essential
-that scientists, researchers, and students are able to learn and adopt
-a new set of software-related skills and methodologies. Established
-researchers are already acquiring some of these skills, and in
-particular a specialized class of software developers is emerging in
-academic environments who are an integral and embedded part of
-successful research teams. This workshop will provide a forum for
-discussion of the challenges, including both positions and
-experiences. The short papers and discussion will be archived as a
-basis for continued discussion, and we intend the workshop to feed
-into the collaborative writing of one or more journal publications.
-
-In practice, scientific software activities are part of an ecosystem
-where key roles are held by developers, users, and funders. All three
-groups supply resources to the ecosystem, as well as requirements that
-bound it. Roughly following the example of NSF's Vision and Strategy
-for Software~\cite{NSF_software_vision},
-the ecosystem may be viewed as having challenges related to:
-
-\begin{itemize}[leftmargin=0.2in]
-\item the development process that leads to new (versions of) software
-\begin{itemize}[leftmargin=0.2in]
-\item how fundamental research in computer science or
-  science/engineering domains is turned into reusable software
-\item software created as a by-product of research
-\item impact of computer science research on the development of
-    scientific software and vice versa
-\end{itemize}
-\item the support and maintenance of existing software, including
-  software engineering
-\begin{itemize}[leftmargin=0.2in]
-\item governance, business, and sustainability models
-\item the role of community software repositories, their operation and
-  sustainability
-\end{itemize}
-\item the role of open source communities or industry
-\item use of the software
-\begin{itemize}[leftmargin=0.2in]
-\item growing communities
-\item reproducibility, transparency needs that may be unique to science
-\end{itemize}
-\item policy issues, such as
-\begin{itemize}[leftmargin=0.2in]
-\item measuring usage and impact
-\item software credit, attribution, incentive, and reward
-\item career paths for developers and institutional roles
-\item issues related to multiple organizations and multiple countries,
-  such as intellectual property, licensing, etc.
-\item mechanisms and venues for publishing software, and the role of
-  publishers
-\end{itemize}
-\item education and training
-\end{itemize}
-
-This workshop is interested in all of the above topics.  We invite
-short (4-page) position/experience reports that will be used to
-organize panel and discussion sessions. These papers will be archived
-by a third-party service, and provided DOIs [Digital Object
-  Identifiers].  We encourage submitters to license their papers under
-a Creative Commons license that encourages sharing and remixing, as we
-will combine ideas (with attribution) into the outcomes of the
-workshop.  An interactive site will be created to link these papers
-and the workshop discussion, with options for later comments and
-contributions. Contributions will be peer-reviewed for relevance and
-originality before the links are added to the workshop site;
-contributions will also be used to determine discussion topics and
-panelists. We will also plan one or more papers to be collaboratively
-developed by the contributors, based on the panels and discussions.''
-\end{quote}
 
 \section{Attendees} \label{sec:attendees}  %\note{lead: Shel Swenson}
 
