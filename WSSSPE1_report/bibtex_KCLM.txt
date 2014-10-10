@@ -1,7 +1,8 @@
-@techreport{KCLM14,
+@article{KCLM14,
 AUTHOR      = {Katz, Daniel S. and Choi, Sou-Cheng T. and Lapp, Hilmar and Maheshwari, Ketan and L\"{o}ffler, Frank and Turk, Matthew and Hanwell, Marcus and Wilkins-Diehr, Nancy and Hetherington, James and Howison, James and Swenson, Shel and Allen, Gabrielle D., and Elster, Anne C. and Berriman, Bruce and Venters, Colin},
-TITLE       = {Summary of the First Workshop on Sustainable Software for Science: Practice and Experiences ({WSSSPE}1)},
-TYPE        = {Technical Report},
-note        = {submitted to the Journal of Open Research Software},
-YEAR        = 2014
+TITLE       = {Summary of the First Workshop on Sustainable Software for Science: Practice and Experiences ({WSSSPE}1)}, 
+journal     = {Journal of Open Research Software},
+YEAR        = 2014,
+note        = {to appear},
+howpublished = {\url{http://http://arxiv.org/abs/1404.7414}},
 }
