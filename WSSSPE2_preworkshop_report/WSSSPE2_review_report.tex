@@ -1,0 +1,272 @@
+\documentclass[11pt, oneside]{amsart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[latin9]{inputenc}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{subfigure} 
+\usepackage{psfrag}
+\usepackage{tabularx}
+\usepackage[hyphens]{url}
+\usepackage{wrapfig}
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+
+\usepackage[bookmarks, bookmarksopen, bookmarksnumbered]{hyperref}
+\usepackage[all]{hypcap}
+\urlstyle{rm}
+
+\definecolor{orange}{rgb}{1.0,0.3,0.0}
+\definecolor{violet}{rgb}{0.75,0,1}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{cyan}{rgb}{0.2,0.7,0.7}
+\definecolor{blueish}{rgb}{0.2,0.2,0.8}
+
+\newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
+\newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
+\newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
+\newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
+\newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
+\newcommand{\note}[1]{ {\textcolor{red}    { #1 }}}
+
+
+% Don't use tt font for urls
+\urlstyle{rm}
+
+% 15 characters / 2.5 cm => 100 characters / line
+% Using 11 pt => 94 characters / line
+\setlength{\paperwidth}{216 mm}
+% 6 lines / 2.5 cm => 55 lines / page
+% Using 11pt => 48 lines / pages
+\setlength{\paperheight}{279 mm}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% You can use a baselinestretch of down to 0.9
+\renewcommand{\baselinestretch}{0.96}
+
+\sloppypar
+
+\begin{document}
+
+\title[]{Second Workshop on on Sustainable Software for Science: Practice and Experiences (WSSSPE2): Submission, Peer-Review, and Sorting Process, and Results}
+
+\author{Daniel S. Katz$^{(1)}$, Gabrielle Allen$^{(2)}$, Neil Chue Hong$^{(3)}$, \\
+Karen Cranston$^{(affil?)}$, Manish Parashar$^{(4)}$, David Proctor$^{(affil?)}$, \\
+Matthew Turk$^{(2)}$, Colin Venters$^{(affil?)}$, Nancy Wilkins-Diehr$^{(5)}$}
+
+
+\thanks{{}$^{(1)}$ National Science Foundation, Arlington, VA, USA; Computation Institute, University of Chicago \& Argonne National Laboratory, Chicago, IL, USA}
+
+\thanks{{}$^{(2)}$ University of Illinois, Champaign, IL, USA}
+
+\thanks{{}$^{(3)}$ Software Sustainability Institute, University of Edinburgh, Edinburgh, UK}
+  
+\thanks{{}$^{(4)}$ Rutgers Discovery Informatics Institute, Rutgers University, New Brunswick, NJ, USA}
+
+\thanks{{}$^{(5)}$ University of California-San Diego, San Diego, CA, USA}
+
+    
+\begin{abstract}
+This technical report discusses the submission and peer-review process used by the Second Workshop on on Sustainable Software for Science: Practice and Experiences (WSSSPE2) and the results of that process.  It is intended to record both this alternative model as well as the papers associated with the workshop that resulted from that process.
+\end{abstract}
+
+
+
+\maketitle
+
+
+\section{Introduction}
+
+%\katznote{example comment by Dan}
+%
+%\gabnote{example comment by Gabrielle}
+%
+%\nchnote{example comment by Neil}
+%
+%\manishnote{example comment by Manish}
+%
+%\davidnote{example comment by David}
+
+The Second Workshop on on Sustainable Software for Science: Practice and Experiences (WSSSPE2)\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe2/}} will be held on Sunday, 16 November 2014, in conjunction with the 2014 International Conference for High Performance Computing, Networking, Storage and Analysis (SC14)\footnote{\url{http://sc14.supercomputing.org}}.
+WSSSPE2 follows an initial general workshop, WSSSPE1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1/}}~\cite{WSSSPE1-pre-report,WSSSPE1}, that was held in 2013 in conjunction with the SC13 conference, and a focused workshop, WSSSPE1.1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1-1/}}, that was held in 2014 in conjunction with the SciPy conference.
+
+Progress in scientific research is dependent on the quality and accessibility of software at all levels and it is critical to address challenges related to the development, deployment, and maintenance of reusable software as well as education around software practices. These challenges can be technological, policy based, organizational, and educational, and are of interest to developers (the software community), users (science disciplines), and researchers studying the conduct of science (science of team science, science of organizations, science of science and innovation policy, and social science communities). The WSSSPE1 workshop engaged the broad scientific community to identify challenges and best practices in areas of interest for sustainable scientific software. WSSSPE2 invites the community to propose and discuss specific mechanisms to move towards an imagined future practice of software development and usage in science and engineering. The workshop will include multiple mechanisms for participation, encourage team building around solutions, and identify risky solutions with potentially transformative outcomes. Participation by early career students and postdoctoral researchers is strongly encouraged.
+
+
+
+\section{Submissions}
+
+The workshop call for paper included the following areas of interest:
+\begin{quote}
+\begin{itemize}
+
+\item defining software sustainability in the context of science and engineering software
+\begin{itemize}
+\item how to evaluate software sustainability
+\end{itemize}
+
+\item improving the development process that leads to new software
+\begin{itemize}
+\item methods to develop sustainable software from the outset
+\item effective approaches to reusable software created as a by-product of research
+\item impact of computer science research on the development of scientific software
+\end{itemize}
+
+\item recommendations for the support and maintenance of existing software
+\begin{itemize}
+\item software engineering best practices
+\item governance, business, and sustainability models
+\item the role of community software repositories, their operation and sustainability
+\item reproducibility, transparency needs that may be unique to science
+\end{itemize}
+
+\item successful open source software implementations
+\begin{itemize}
+\item incentives for using and contributing to open source software
+\item transitioning users into contributing developers
+\end{itemize}
+
+\item building large and engaged user communities
+\begin{itemize}
+\item developing strong advocates
+\item measurement of usage and impact
+\end{itemize}
+
+\item encouraging industry's role in sustainability
+\begin{itemize}
+\item engagement of industry with volunteer communities
+\item incentives for industry
+\item incentives for community to contribute to industry-driven projects
+\end{itemize}
+
+\item recommending policy changes
+\begin{itemize}
+\item software credit, attribution, incentive, and reward
+\item issues related to multiple organizations and multiple countries, such as intellectual property, licensing, etc.
+\item mechanisms and venues for publishing software, and the role of publishers
+\end{itemize}
+
+\item improving education and training
+\begin{itemize}
+\item best practices for providing graduate students and postdoctoral researchers in domain communities with sufficient training in software development
+\item novel uses of sustainable software in education (K-20)
+\item case studies from students on issues around software development in the undergraduate or graduate curricula
+\end{itemize}
+
+\item careers and profession
+\begin{itemize}
+\item successful examples of career paths for developers
+\item institutional changes to support sustainable software such as promotion and tenure metrics, job categories, etc.
+\end{itemize}
+
+\end{itemize}
+
+\end{quote}
+
+Based on the goal of encouraging a wide range of submissions from those involved in software practice, ranging from initial thoughts and partial studies to mature deployments, but focusing on papers that are intended to lead to changes, the organizers wanted to make submission as easy as possible.  The call for papers stated:
+
+\begin{quote}
+We invite short (4-page) \textbf{actionable} papers that will lead to improvements for sustainable software science. These papers could be a call to action, or could provide position or experience reports on sustainable software activities. The papers will be used by the organizing committee to design sessions that will be highly interactive and targeted towards facilitating action. Submitted papers should be archived by a third-party service that provides DOIs. We encourage submitters to license their papers under a Creative Commons license that encourages sharing and remixing, as we will combine ideas (with attribution) into the outcomes of the workshop.\end{quote}
+
+31 submissions were received, and almost all submitters used either arXiv\footnote{\url{http://arxiv.org}} or figshare\footnote{\url{http://figshare.com}} to self-publish their papers.  
+
+\section{Peer-Review}
+
+The review process was fairly standard, where reviewers bid for papers, then an automated system
+matched bids to determine assignments, and reviewers then completed their assigned
+reviews (with an average of 4.9 reviews per paper, and 4.1 reviews per reviewer)
+This process was done through EasyChair\footnote{http://easychair.org/}, which allowed reviewers to provide scores on relevance and comments to the organizers, which were used to decide which papers to associate with the workshop, and comments to the authors, which were provided back to the authors to allow them to improve their papers.
+
+The organizers decided to list 28 of the papers as significantly contributing to the workshop, a very high acceptance rate, but one that is reasonable, given the goal of broad participation and the fact that the reports were already self-published.
+
+\todo{discuss grouping - well-sorted... and breakouts at WSSSPE2}
+
+
+
+\section{Results}
+
+The contributed papers that will be discussed at the workshop follow, listed by \todo{update when possible - current list is just alphabetic order, not grouped}
+
+\begin{itemize}
+
+\item Jordan Adams, Sai Nudurupati, Nicole Gasparini, Daniel Hobley, Eric Hutton, Gregory Tucker and Erkan Istanbulluoglu. Landlab: Sustainable Software Development in Practice ~\cite{wssspe2_adams}
+
+\item Alice Allen and Judy Schmidt. Looking before leaping: Creating a software registry~\cite{wssspe2_allen}
+
+\item Jakob Blomer, Dario Berzano, Predrag Buncic, Ioannis Charalampidis, Gerardo Ganis, George Lestaris and Ren\'{e} Meusel. The Need for a Versioned Data Analysis Software Environment~\cite{wssspe2_blomer}
+
+\item Carl Boettiger, Ted Hart, Scott Chamberlain and Karthik Ram. Building software, building community: lessons from the {ROpenSci} project~\cite{wssspe2_boettiger}
+
+\item Ryan Chamberlain and Jennifer Schommer. Using {Docker} to Support Reproducible Research~\cite{wssspe2_chamberlain}
+
+\item Neil Chue Hong. Minimal information for reusable scientific software~\cite{wssspe2_chue_hong}
+
+\item Thomas Clune, Michael Rilee and Damian Rouson. Testing as an Essential Process for Developing and Maintaining Scientific Software~\cite{wssspe2_clune}
+
+\item Tom Crick, Benjamin A. Hall and Samin Ishtiaq. ``Can I Implement Your Algorithm?'': A Model for Reproducible Research Software~\cite{wssspe2_crick}
+
+\item Michael R. Crusoe and C.Titus Brown. Channeling community contributions to scientific software: a hackathon experience~\cite{wssspe2_crusoe}
+
+\item Robert Downs, W. Christopher Lenhardt, Erin Robinson, Ethan Davis, Nicholas Weber. Community Recommendations for Sustainable Scientific Software~\cite{wssspe2_downs}
+
+\item Yolanda Gil,  Eunyoung Moon and James Howison. No Science Software is an Island: Collaborative Software Development Needs in Geosciences~\cite{wssspe2_gil}
+
+\item ed Habermann, Andrew Collette, Steve Vincena, Werner Benger, Jay Jay Billings, Matt Gerring, Konrad Hinsen, Pierre de Buyl, Mark K\"{o}nnecke, Filipe Rnc Maia and Suren Byna. The Hierarchical Data Format ({HDF}): A Foundation for Sustainable Data and Software~\cite{wssspe2_habermann}
+
+\item Marcus Hanwell, Patrick O'Leary and Bob O'Bara. Sustainable Software Ecosystems: Software Engineers, Domain Scientists, and Engineers Collaborating for Science~\cite{wssspe2_hanwell}
+
+\item James Howison. Retract bit-rotten publications: Aligning incentives for sustaining scientific software~\cite{wssspe2_howison}
+
+\item Eric Hutton, Mark Piper, Irina Overeem, Albert Kettner and James Syvitski. Building Sustainable Software - The {CSDMS} Approach~\cite{wssspe2_hutton}
+
+\item Daniel Katz and Arfon Smith. Implementing Transitive Credit with {JSON-LD}~\cite{wssspe2_katz}
+
+\item Ian Kelley. Publish or perish: the credit deficit to making software and generating data~\cite{wssspe2_kelley}
+
+\item W. Christopher Lenhardt, Stanley Ahalt, Matt Jones, J. Aukema, S. Hampton, S. R. Hespanh, R. Idaszak and M. Schildhauer. {ISEES-??WSSI} Lessons for Sustainable Science Software from an Early Career Training Institute on Open Science Synthesis~\cite{wssspe2_lenhardt}
+
+\item Bryan Marker, Don Batory, Field G. Van Zee and Robert van de Geijn. Making Scientific Computing Libraries Forward Compatible~\cite{wssspe2_marker}
+
+\item Abani Patra, Matthew Jones, Steven Gallo, Kyle Marcus and Tevfik Kosar. Role of Online Platforms, Communications and Workflows in Developing Sustainable Software for Science Communities~\cite{wssspe2_patra}
+
+\item Marian Petre and Greg Wilson. Code Review For and By Scientists~\cite{wssspe2_petre}
+
+\item Stephen Piccolo. Building Portable Analytical Environments to improve sustainability of computational-analysis pipelines in the sciences~\cite{wssspe2_piccolo}
+
+\item Marlon Pierce, Suresh Marru and Chris Mattmann.{WSSSPE2}: Patching It Up, Pulling It Forward~\cite{wssspe2_pierce}
+
+\item Mario {Rosado de Souza} and Robert Haines and Caroline Jay. Defining Sustainability through Developers' Eyes: Recommendations from an Interview Study~\cite{wssspe2_rosada_de_souza}
+
+\item Jory Schossau and Greg Wilson. Which Sustainable Software Practices Do Scientists Find Most Useful?~\cite{wssspe2_schossau}
+
+\item Justin Shi. Seeking the Principles of Sustainable Software Engineering~\cite{wssspe2_shi}
+
+\item Andrew E. Slaughter, Derek R. Gaston, John Peterson, Cody J. Permann, David Andrs and Jason M. Miller. Continuous Integration for Concurrent {MOOSE} Framework and Application Development on {GitHub}~\cite{wssspe2_slaughter}
+
+\item James S. Spencer, Nicholas S. Blunt, William A. Vigor, Fionn D. Malone, W. M. C. Foulkes, James J. Shepherd and Alex J. W. Thom. The {H}ighly {A}ccurate {N-DE}terminant ({HANDE}) quantum {Monte Carlo} project: Open-source stochastic diagonalisation for quantum chemistry~\cite{wssspe2_spencer}
+
+\item Colin C. Venters, Michael K. Griffiths, Violeta Holmes, Rupert R. Ward and David J. Cooke. The Nebuchadnezzar Effect: Dreaming of Sustainable Software through Sustainable Software Architectures~\cite{wssspe2_venters}
+
+\end{itemize}
+
+\section{Conclusions}
+
+The WSSSPE2 workshop continues our experiment from WSSSPE1 in how we can collaboratively build a workshop agenda.  The differences from WSSSPE1 to WSSSPE2 are in using an existing service (EasyChair) to handle submissions and reviews, rather than an ad hoc process, and using an existing service (well-sorted) to allow collaborative grouping of papers into themes by all authors, reviewers, and the community, rather than this being done in an ad hoc manner just by the organizers.
+
+The fact remains that contributors also want to get credit for their participation in the process.  And the workshop organizers still want to make sure that the workshop content and their efforts are recorded.  Ideally, there would be a service that would be able to index the contributions to the workshop, serving the authors, the organizers, and the larger community.  But since there still isn't such a service today, the workshop organizers are writing this initial report and making use of arXiv as a partial solution to provide a record of the workshop.
+
+After the workshop, one or more additional papers will be created that will include the discussions at the workshop.  These papers will likely have many authors, and may be submitted to peer-reviewed journals.
+
+\bibliographystyle{plain}
+
+\bibliography{wssspe}
+\end{document}
+
