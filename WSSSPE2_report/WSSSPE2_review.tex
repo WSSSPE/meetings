@@ -226,7 +226,86 @@ Finally, since some of the papers were not represented by cards in the process, 
 
 \section{Defining Sustainability}
 
-\todo{Dan to discuss initial breakout and results}
+\todo{writing led by Dan - other contributions welcome}
+
+In the first interactive session, the attendees divided themselves into groups to discuss software sustainability.  They were asked to
+\begin{enumerate}
+\item discuss what the term ``software sustainability'' meant to them
+\item determine three things they considered to be significant enablers of software sustainability
+\item determine three things they considered to be significant barriers to software sustainability
+\end{enumerate}
+Once each group had come up with answers, all the answers were compiled, and the attendees voted on which they thought were important by a show of hands.
+
+The general responses to what software sustainability meant were:
+
+\begin{itemize}
+\item keeping software scientifically useful
+\item separating techniques in code from knowledge in code
+\item that an adequately large community finds value in software and is willing to sustain it
+\end{itemize}
+
+\katznote{any discussion of this?}
+
+The enablers of and barriers to software sustainability, roughly ranked by attendee votes are shown in Tables~\ref{tb:software_sustainability_enablers} and \ref{tb:software_sustainability_barriers}, respectively.\footnote{A few other items were suggested as barriers, but were not voted on due to lack of time in the session:
+layering up dependencies;
+using software past its sustainable life;
+using software past its usable life;
+inertia for accepted answers vs wrong/right answers;
+monolithic or poor code; and
+need to restructure code when hardware/software/libraries change.
+}
+
+\katznote{any discussion of these tables?}
+
+
+\begin{table*}[ht]
+\begin{center}
+    \caption{Enablers of software sustainability, with 0 to 10 `*'s roughly indicating the fraction of attendees who voted for an item as important}
+    \begin{scriptsize}
+    \begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
+    \hline
+  Importance & item \\ \hline \hline
+********** & healthy and vibrant communities; vibrant community to champion software \\ \hline
+********** & designing for growth and extension - open development \\ \hline
+******* & culture in community for reuse \\ \hline
+**** & portability \\ \hline
+**** & culture in dev community to support transition between developers \\ \hline
+*** & interdisciplinary people : science + IT experience \\ \hline
+** & planning for end of life \\ \hline
+** & make smart choices about dependencies \\ \hline
+* & thinking of software as product lines - long term vs short term view \\ \hline
+ & not all communities need new software \\ \hline
+ & converting use into resources \\ \hline
+    \end{tabular}
+    \end{scriptsize}
+    \label{tb:software_sustainability_enablers}
+\end{center}   
+\end{table*} 
+
+\begin{table*}[ht]
+\begin{center}
+    \caption{Barriers to software sustainability, with 0 to 10 `*'s roughly indicating the fraction of attendees who voted for an item as important}
+    \begin{scriptsize}
+    \begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
+    \hline
+  Importance & item \\ \hline \hline
+******* & lack of incentives, including promotion and tenure process; promotion and tenure process in academic is incompatible \\ \hline
+*****  & absent / poor documentation \\ \hline
+***** & funding difficult \\ \hline
+**** & developers are not computer scientists; don't have software engineering practices (in particular, those needed to scale-up projects to support and be developed by a large sustainable community) \\ \hline
+*** & overreliance on one or two people - bus test \\ \hline
+** & rate of change of underlying technologies \\ \hline
+** & lack of business models for sustainability \\ \hline
+* & lack of training for how to build sustainability into the system \\ \hline
+ & maintenance needed for software is not visible, appears to ``just happen'' \\ \hline
+ & licensing issues \\ \hline
+ & staff turnover - lack of continuity \\ \hline
+    \end{tabular}
+    \end{scriptsize}
+    \label{tb:software_sustainability_barriers}
+\end{center}   
+\end{table*} 
+
 
 \section{Exploring Sustainability}
 
