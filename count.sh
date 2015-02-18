@@ -11,7 +11,7 @@
 #   git shortlog -s -n
 # only returns number of files
   
-for i in "Katz" "ketancmaheshwari" "Terrya" "Lapp" "Loeffler" "Turk" "jameshowison" "Hanwell" "Frank" "wilkins" "Wilkins" "Hetherington" "Allen" "shelswenson"
+for i in "Katz" "ketancmaheshwari" "Terrya" "Lapp" "Loeffler" "Turk" "jameshowison" "Hanwell" "Frank" "wilkins" "Wilkins" "Hetherington" "Allen" "shelswenson" "Anne"
 do
 	git log --author="$i" --shortstat $BRANCH | \
 	awk '/^ [0-9]/ { f += $1; i += $4; d += $6 } \
