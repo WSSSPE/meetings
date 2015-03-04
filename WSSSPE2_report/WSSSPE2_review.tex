@@ -35,6 +35,7 @@
 \definecolor{blueish}{rgb}{0.2,0.2,0.8}
 
 \newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
+\newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
 \newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
 \newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
 \newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
@@ -95,6 +96,7 @@
 
        
 \begin{abstract} \todo{TBD due date above}       
+\todo{update abstract}
 This technical report discusses the submission and peer-review process used by
 the Second Workshop on Sustainable Software for Science: Practice and
 Experiences (WSSSPE2) and the results of that process. It is intended to record
@@ -121,8 +123,8 @@ process.
 %
 %\davidnote{example comment by David}
 
-\todo{update this section with intro to full report - currently just intro for pre-workshop stuff. Link to live notes -
-\url{http://tinyurl.com/q6ew45v}}
+
+\note{google doc of notes for reference: \url{http://tinyurl.com/q6ew45v}}
 %https://docs.google.com/document/d/1-BxkYWDQ6nNNBXBStUL0xcKF9qCTlEALwf928J_MemI/edit?usp=sharing
 
 The Second Workshop on Sustainable Software for Science: Practice and
@@ -156,14 +158,36 @@ building around solutions, and identifies risky solutions with potentially
 transformative outcomes. It strongly encourages participation of early-career
 students and postdoctoral researchers.
 
+This report extends a previous report that discussed the submission, peer-review, and peer-grouping processes in detail.~\cite{WSSSPE2-pre-report}.  It is also based on a collaborative set
+of notes taken through a google doc during the workshop.~\cite{WSSSPE2-google-notes} 
+Overall, it discusses the organization work done before the workshop (\S\ref{sec:preworkshop}), the keynotes (\S\ref{sec:keynotes}), \todo{discuss rest of report here...} ... exploring sustainability (\S\ref{sec:exploring}) ... code testing and code review (\S\ref{sec:code_testing})
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Submissions, Peer-Review, and Peer-Grouping}
+\section{Submissions, Peer-Review, and Peer-Grouping} \label{sec:preworkshop}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\todo{shorten this section? - cite~\cite{WSSSPE2-pre-report} somewhere here}
+\note{this section is taken from \cite{WSSSPE2-google-notes}. It could be shortened.}
 
-The workshop call for papers included the following areas of interest:
+WSSSPE2 began with a call for papers.
+Based on the goal of encouraging a wide range of submissions from those involved
+in software practice, ranging from initial thoughts and partial studies to
+mature deployments, but focusing on papers that are intended to lead to changes,
+the organizers wanted to make submission as easy as possible. The call for
+papers stated:
+
+\begin{quote}
+We invite short (4-page) \textbf{actionable} papers that will lead to
+improvements for sustainable software science. These papers could be a call to
+action, or could provide position or experience reports on sustainable software
+activities. The papers will be used by the organizing committee to design
+sessions that will be highly interactive and targeted towards facilitating
+action. Submitted papers should be archived by a third-party service that
+provides DOIs. We encourage submitters to license their papers under a Creative
+Commons license that encourages sharing and remixing, as we will combine ideas
+(with attribution) into the outcomes of the workshop.
+\end{quote}
+
+The call included the following areas of interest:
 \begin{quote}
 \begin{itemize} 
 \renewcommand{\labelenumi}{\textbf{\theenumi}.}
@@ -240,23 +264,6 @@ and tenure metrics, job categories, etc.
 
 \end{quote}
 
-Based on the goal of encouraging a wide range of submissions from those involved
-in software practice, ranging from initial thoughts and partial studies to
-mature deployments, but focusing on papers that are intended to lead to changes,
-the organizers wanted to make submission as easy as possible. The call for
-papers stated:
-
-\begin{quote}
-We invite short (4-page) \textbf{actionable} papers that will lead to
-improvements for sustainable software science. These papers could be a call to
-action, or could provide position or experience reports on sustainable software
-activities. The papers will be used by the organizing committee to design
-sessions that will be highly interactive and targeted towards facilitating
-action. Submitted papers should be archived by a third-party service that
-provides DOIs. We encourage submitters to license their papers under a Creative
-Commons license that encourages sharing and remixing, as we will combine ideas
-(with attribution) into the outcomes of the workshop.
-\end{quote}
 
 31 submissions were received, and all but one used either
 arXiv\footnote{\url{http://arxiv.org}} or
@@ -315,13 +322,13 @@ felt most meaningful, then decided on names for the five groups, namely:
 Finally, since some of the papers were not represented by cards in the process,
 they were not placed in groups by the peer-grouping system, so the authors of
 these papers were asked which group seemed the best for their papers, and those
-papers were then placed in those groups. The later sections of this paper that
-discuss the breakout groups include a list of the papers associated with each
+papers were then placed in those groups. Sections~\ref{sec:exploring}-\ref{sec:code_testing}
+discuss the breakout groups, including a list of the papers associated with each
 group.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Keynotes} \label{keynotes}
+\section{Keynotes} \label{sec:keynotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Lead: Choi. Volunteers welcome---contact lead}
 
@@ -336,7 +343,7 @@ research. Our second keynote speaker was Neil Chue Hong of Software
 Sustainability Institute. He shined the light on how scientific software is
 prevalently driving advances in many sciences and engineering fields. Following
 the keynotes, participants broke into groups to define and discuss the crucial
-notion ``sustanability'' spawned by the speeches of our keynote speakers as well
+notion ``sustainability'' spawned by the speeches of our keynote speakers as well
 as the theme of our workshop.
   	 
 
@@ -510,14 +517,18 @@ developed by a large sustainable community) \\ \hline
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Exploring Sustainability}
+\section{Exploring Sustainability} \label{sec:exploring}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Colin to lead writing of this section.}
 
-\href{http://tinyurl.com/mpbhvyb}{Google doc notes}
+\note{\href{http://tinyurl.com/mpbhvyb}{Google doc notes}}
 %https://docs.google.com/a/uchicago.edu/document/d/10XkshP3YjXnA5JQgP-UFHbOxshWczzehWGSo6V7bNH4/edit
 
 \todo{short intro to group here}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\subsection{Discussion and Actions}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -546,19 +557,19 @@ David J. Cooke. The Nebuchadnezzar Effect: Dreaming of Sustainable Software
 through Sustainable Software Architectures~\cite{wssspe2_venters}
 \end{itemize}
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\subsection{Discussion and Actions}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Software Development Experiences}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Nancy to lead writing of this section}
 
-\href{http://tinyurl.com/pn4eq8z}{Google doc notes}
+\note{\href{http://tinyurl.com/pn4eq8z}{Google doc notes}}
 %https://docs.google.com/a/uchicago.edu/document/d/1_q0jmiEPNFRGAEtGLk_QxQ1vVokgTDYruTGURowNGkY/edit
 
 \todo{short intro to group here}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\subsection{Discussion and Actions}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -608,19 +619,44 @@ M. C. Foulkes, James J. Shepherd and Alex J. W. Thom. The {H}ighly {A}ccurate
 diagonalisation for quantum chemistry~\cite{wssspe2_spencer}
 \end{itemize}
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\subsection{Discussion and Actions}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Credit \& Incentives}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Dan (OR VOLUNTEER) to lead writing of this section}
 
-\href{http://tinyurl.com/k8ruyn9}{Google doc notes}
+\note{\href{http://tinyurl.com/k8ruyn9}{Google doc notes}}
 %https://docs.google.com/document/d/1Jsi_trBT5cjEXVnGjGHJpcIhMEcVpAn6XmYNxfIHXv0/edit#heading=h.gk1dzxu9wi6q
 
-\todo{short intro to group here}
+This group, with just three papers but good interest and participation from attendees,
+focused on the institutional, social, and cultural mechanisms encourage the creation
+and maintenance of shared software, in the context of what now exists but focusing
+on what mechanisms are desired and how we might achieve them.
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\subsection{Discussion and Actions}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The group had some initial discussion ...
+
+The group then broke into three subgroups
+\begin{itemize}
+\item Citation ecosystems
+\item Taxonomy of contributorship/Guidelines for software for tenure review
+\item Prizes
+\end{itemize}
+
+citation ecosystems sub-breakout: \url{http://tinyurl.com/l4tc6a4}
+%https://docs.google.com/document/d/1SOja7k0mXwvOB2tQD3ZW3O38Qv4NwfA21zdMQ9JlUQc/edit
+
+Taxonomy of Contributorship/Guidelines for Software for Tenure Review
+sub-breakout: \url{http://tinyurl.com/mx58tmx}
+%https://docs.google.com/document/d/1sDZLaBR2elZ9Tj6eLIwEtf5VqQ_x_AN_SetKtJlFUpI/edit
+
+Prizes sub-breakout: \url{http://tinyurl.com/mjok4o5}
+%https://docs.google.com/document/d/1foSppeHQeQ-qOjd-Rp_CUCNy8JMLxd_vrCDMmqvG2-w/edit 
+(but as of 2/6, nothing is here and need to look at main breakout doc - Suresh
+is moving text, I think)
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -636,30 +672,19 @@ sustaining scientific software~\cite{wssspe2_howison}
 generating data~\cite{wssspe2_kelley}
 \end{itemize}
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\subsection{Discussion and Actions}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-citation ecosystems sub-breakout: \url{http://tinyurl.com/l4tc6a4}
-%https://docs.google.com/document/d/1SOja7k0mXwvOB2tQD3ZW3O38Qv4NwfA21zdMQ9JlUQc/edit
-
-Taxonomy of Contributorship/Guidelines for Software for Tenure Review
-sub-breakout: \url{http://tinyurl.com/mx58tmx}
-%https://docs.google.com/document/d/1sDZLaBR2elZ9Tj6eLIwEtf5VqQ_x_AN_SetKtJlFUpI/edit
-
-Prizes sub-breakout: \url{http://tinyurl.com/mjok4o5}
-%https://docs.google.com/document/d/1foSppeHQeQ-qOjd-Rp_CUCNy8JMLxd_vrCDMmqvG2-w/edit 
-(but as of 2/6, nothing is here and need to look at main breakout doc - Suresh
-is moving text, I think)
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Reproducibility \& Reuse \& Sharing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Neil OR VOLUNTEER to lead writing of this section}
 
-\href{http://tinyurl.com/kqpe87z}{Google doc notes}
+\note{\href{http://tinyurl.com/kqpe87z}{Google doc notes}}
 %https://docs.google.com/document/d/1Mivadj16_9tPrw8Nxmhp72AtNC0BEVO-f7M84FXTbSU/edit#heading=h.elaktnt2tep9
 
 \todo{short intro to group here}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\subsection{Discussion and Actions}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -686,19 +711,19 @@ sustainability of computational-analysis pipelines in the
 sciences~\cite{wssspe2_piccolo}
 \end{itemize}
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\subsection{Discussion and Actions}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Code Testing \& Code Review}
+\section{Code Testing \& Code Review} \label{sec:code_testing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Karen to lead writing of this section}
 
-\href{http://tinyurl.com/l5t5h45}{Google doc notes}
+\note{\href{http://tinyurl.com/l5t5h45}{Google doc notes}}
 %https://docs.google.com/document/d/1G1_U5-hkAvDKtTgT4DvUhIYvyYUY4cBBvQHJIdgADa0/edit#heading=h.v7g0nqpn1fur
 
 \todo{short intro to group here}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\subsection{Discussion and Actions}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -715,10 +740,6 @@ Scientists~\cite{wssspe2_petre}
 David Andrs and Jason M. Miller. Continuous Integration for Concurrent {MOOSE}
 Framework and Application Development on {GitHub}~\cite{wssspe2_slaughter}
 \end{itemize}
-
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\subsection{Discussion and Actions}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
@@ -761,7 +782,7 @@ and were noted in that group's notes.
 \\ Alice Allen           &  Astrophysics Source Code Library (ASCL)
 \\ Gabrielle Allen       &  U Illinois
 \\ Pierre-Yves Aquilanti &  TOTAL E\&P R\&T USA
-\\ Wolfgang Bangerth
+\\ Wolfgang Bangerth & Texas A\&M
 \\ David Bernholdt       &  Oak Ridge National Laboratory
 \\ Jakob Blomer
 \\ Carl Boettiger        &  UCSC/ropensci
