@@ -526,6 +526,7 @@ developed by a large sustainable community) \\ \hline
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The papers that were discussed in the Exploring Sustainability group are:
 \begin{itemize}
 \item Mario {Rosado de Souza} and Robert Haines and Caroline Jay. Defining
 Sustainability through Developers' Eyes: Recommendations from an Interview
@@ -567,6 +568,7 @@ through Sustainable Software Architectures~\cite{wssspe2_venters}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The papers that were discussed in the Software Development Experiences group are:
 \begin{itemize}
 \item Jordan Adams, Sai Nudurupati, Nicole Gasparini, Daniel Hobley, Eric
 Hutton, Gregory Tucker and Erkan Istanbulluoglu. Landlab: Sustainable Software
@@ -615,12 +617,12 @@ diagonalisation for quantum chemistry~\cite{wssspe2_spencer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Credit \& Incentives} \label{sec:credit}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Dan (OR VOLUNTEER) to lead writing of this section}
+\todo{Dan leading writing of this section}
 
 \note{\href{http://tinyurl.com/k8ruyn9}{Google doc notes}}
 %https://docs.google.com/document/d/1Jsi_trBT5cjEXVnGjGHJpcIhMEcVpAn6XmYNxfIHXv0/edit#heading=h.gk1dzxu9wi6q
 
-This group, with just three papers but good interest and participation from attendees,
+This group, with just three papers but a large amount of interest and participation from attendees,
 focused on the institutional, social, and cultural mechanisms encourage the creation
 and maintenance of shared software, in the context of what now exists but focusing
 on what mechanisms are desired and how we might achieve them.
@@ -630,30 +632,135 @@ on what mechanisms are desired and how we might achieve them.
 \subsection{Discussion and Actions}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The group had some initial discussion ...
+In the first discussion session, this group decided to break into two smaller groups,
+each independently working through the same general topic: credit and incentives.
 
-The group then broke into three subgroups
+\subsubsection{First breakout discussion: Group A}
+The first sub-group discussed around the current system for credit and current incentives,
+which it called ``hacking the incentive structure''.  The group considered four potential
+points of leverage:
+
+First, that we currently have systems that collect information, and these could be modified
+to collect different information, then map that information to actions. We could
+initially build a proof-of-concept for a new use of a given system, then determine
+what actions would be needed to make this use more common.
+
+Second that we could create entirely new systems, perhaps because the existing
+systems are too tied to what they measure, and modifying them is not practical.
+
+Third that we could change academic culture, rather than worrying about the systems.
+This was mostly focused on citations, because they matter for hiring, promotion,
+and tenure decisions.  The group discussed how we could weight the citations
+within papers better than we now do? How could we identify the five citations
+that really matter for a paper, distinguishing them from the related works and
+general background that are also cited.  Perhaps we could break these out in
+the reference list, working with publishers to implement this.  Or maybe we
+could also break out categories of citations, such as the most important software used,
+the previous publication that we are building from, the data that we actually used, etc.
+The Moore Foundation's award in data science was given as an example, asking
+proposers: What are the five canonical citations that are most important to your work?
+This would be a way of giving credit and assigning importance to these works,
+differently from how we just count citations today.  A possible action that the group
+discussed was conducting a longitudinal study of most useful \{software, data, etc.\}
+in a discipline
+
+Fourth, that we could change the ways funders make decisions, and use these funding
+policies as incentives.
+
+After this discussion, group A brainstormed about incentives,
+with the following items suggested:
 \begin{itemize}
-\item Citation ecosystems
-\item Taxonomy of contributorship/Guidelines for software for tenure review
-\item Prizes
+\item running programming contests, creating bounties for contributing to open source software, etc.
+\item augment author lists to give credit to people who don’t now get credit (and making them machine readable)
+\item developing a microcitation standard and mechanism (for both software and data)
+\item developing a well-defined standard for author contribution -- what level of contribution rises to the level of authorship?
+\item leveraging social media for citation and reviewing of content -- then using social media to bring more people into the review process than is traditional
+\item determining where else software can be cited and recorded (e.g., acknowledgments sections of papers)
+\item developing a taxonomy of contributors, tied to places that these metrics are already stored (e.g., ORCID)
+\item making metadata more easy to add for software, creating incentive for providing software metadata -- note that this cannot be centralized
+\item creating something like the h-index that tenure committees can make use of - simplify a way of measuring and documenting the overall credit given to an individual over different projects
+\item thinking about publishing software vs journal - software does not have to be novel
+\item determining guidelines for recommending software characteristics for tenure - perhaps draft guidelines then get ACM or IEEE agreement
 \end{itemize}
 
-citation ecosystems sub-breakout: \url{http://tinyurl.com/l4tc6a4}
+
+\subsubsection{First breakout discussion: Group B}
+\note{writing in progress}
+Discussion Extracts
+
+Who to incentivize: 
+Those in science (to do better, more shareable, more sustainable work).
+Those in industry (but are interested in science).
+
+Giving credit in the traditional way:  software papers (JORS?).
+Difficulty of adding new authors to publications
+ - original authors disproportionately benefit
+ - how can you add authors?
+Can we control the end-users?
+ - Yes, but we prefer something not so "confrontational"
+Versioning.  How can we add that to publications? To add on people.  JSON-LD percentages.
+John Towns: What do you want to encourage?
+ - "good computational work" to advance their careers.
+ - People to realize that I'm doing good software.
+ - Empirical Q: Most of the developers are not going into traditional scientific careers.
+    - Why are people going to Industry?  Money? Or working without worrying about careers paths
+Portable reputation.
+Trying to support career paths of "those in the grey area (between science and software - in development of software)"
+ - How do you ensure that those "engineers" do not block the path "back into science".  Force the PIs to make programmers co-authors.
+
+Prizes: reframe software as "instrument building"
+	will prizes be good or bad, how can we
+Converting reputation by joining apache software foundation.
+	Google etc.  Inviting ASF and open source people to contribute to scientific code (at least on questions of overlapping
+
+Template for assessing scientific contributions made through software.
+
+
+making decisions about who to fund from funder perspective - who did what in the project?
+
+someone writes paper in some area, adds references at end to make sure it’s clear that the paper fits in a field, but maybe don't think about how we use citations to give credit - how to rank/say what citations really matter, different from those that just explain the field (required background)
+
+
+\subsubsection{Group merger and redivision}
+
+After the first breakout session, the groups A and B came together and discussed 
+a rollup of the ideas from the subgroups at a high level:
+\begin{itemize}
+\item citation ecosystem - traces of usage (metrics)
+\item taxonomy of contributorship, understanding roles
+\item prizes
+\item new metrics (for people's activities in software)
+\item guidelines for evaluating scientific contribution through software (perhaps using new metrics)
+\end{itemize}
+
+In the remaining discussion sessions, the group chose to split into three subgroups to discuss
+a version of these topics: citation ecosystems,
+taxonomy of contributorship/guidelines for software for tenure review, and prizes.
+
+
+\subsubsection{Remaining breakout discussions: Citation ecosystems}
+\note{writing to be done}
+
+\url{http://tinyurl.com/l4tc6a4}
 %https://docs.google.com/document/d/1SOja7k0mXwvOB2tQD3ZW3O38Qv4NwfA21zdMQ9JlUQc/edit
 
-Taxonomy of Contributorship/Guidelines for Software for Tenure Review
+\subsubsection{Remaining breakout discussions: Taxonomy of contributorship/guidelines for software for tenure review}
+\note{writing to be done}
+
 sub-breakout: \url{http://tinyurl.com/mx58tmx}
 %https://docs.google.com/document/d/1sDZLaBR2elZ9Tj6eLIwEtf5VqQ_x_AN_SetKtJlFUpI/edit
 
-Prizes sub-breakout: \url{http://tinyurl.com/mjok4o5}
+
+\subsubsection{Remaining breakout discussions: Prizes}
+\note{writing to be done}
+
+\url{http://tinyurl.com/mjok4o5}
 %https://docs.google.com/document/d/1foSppeHQeQ-qOjd-Rp_CUCNy8JMLxd_vrCDMmqvG2-w/edit 
-(but as of 2/6, nothing is here and need to look at main breakout doc - Suresh
-is moving text, I think)
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The papers that were discussed in the Citation \& Incentives group are:
 \begin{itemize}
 \item James Howison. Retract bit-rotten publications: Aligning incentives for
 sustaining scientific software~\cite{wssspe2_howison}
@@ -682,6 +789,7 @@ generating data~\cite{wssspe2_kelley}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The papers that were discussed in the Reproducibility \& Reuse \& Sharing group are:
 \begin{itemize}
 \item Jakob Blomer, Dario Berzano, Predrag Buncic, Ioannis Charalampidis,
 Gerardo Ganis, George Lestaris and Ren\'{e} Meusel. The Need for a Versioned
@@ -722,6 +830,7 @@ sciences~\cite{wssspe2_piccolo}
 \subsection{Papers}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The papers that were discussed in the Code Testing \& Code Review group are:
 \begin{itemize}
 \item Thomas Clune, Michael Rilee and Damian Rouson. Testing as an Essential
 Process for Developing and Maintaining Scientific Software~\cite{wssspe2_clune}
