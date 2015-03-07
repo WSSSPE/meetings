@@ -743,10 +743,37 @@ taxonomy of contributorship/guidelines for software for tenure review, and prize
 
 
 \subsubsection{Remaining breakout discussions: Citation ecosystems}
-\note{writing to be done}
 
-\url{http://tinyurl.com/l4tc6a4}
+\note{for reference notes are in \url{http://tinyurl.com/l4tc6a4}}
 %https://docs.google.com/document/d/1SOja7k0mXwvOB2tQD3ZW3O38Qv4NwfA21zdMQ9JlUQc/edit
+
+This group defined its goal as creating a low-barrier-of-entry method for recording names and roles (and in a second phase, optionally including weights) of contributors (coders and other intellectual contributions) to a software package in a machine readable way (to be called a credit file), then encouraging the scientific community to adopt this practice. 
+
+The following general points were initially discussed: 
+\begin{itemize}
+\item The FLASH project was suggested as an example of how something like this has been done.
+\item This data could be a file that can be associated with a citation to the software, either through use of a DOI for the credit file, or by uploading the credit files as associated with the paper.
+\item This idea could also be applied to data
+\item This data (the credit file) should be part of the metadata that is outside of paywalls, like citations are now.
+\item It was suggested that there should also be a separate file to track software dependencies, but this is not the same file.
+\end{itemize} 
+
+The group came up with the following actions to be performed:
+\begin{enumerate}
+\item Build a tool that can automatically determine who the contributors are (from a git or other repo), then allows the user to manually edit the output to add/remove people, define roles. 
+\item Work with repositories to encourage them to provide the information we need based on what they already store.
+\item Define what a citation file should look like and what it should be called.
+\item Test adoption, for example, with LBNL.
+\item Create credit file for a set of software.
+\item Build a validator (and perhaps a visualizer) for credit files.
+\item Write a tool to collect files and visualize/output interconnections (which software is used with which), based on an existing project.
+\item When we (the group members) write papers, we should track the software we use, and encourage the software developers to make their software citable and create credit files.
+\item Build a tool to export the credit file to BibTex and other citation styles.
+\item Make sure the BibTex entries (exported from internal data) are somewhat standardized so that they can be imported into papers.  Also make sure that standard LaTex style files understand and accept these entries.
+\end{enumerate}
+
+
+
 
 \subsubsection{Remaining breakout discussions: Taxonomy of contributorship/guidelines for software for tenure review}
 \note{writing to be done}
