@@ -16,6 +16,7 @@
 \usepackage[hyphens]{url}
 \usepackage{wrapfig}
 \usepackage{longtable}
+\usepackage{verbatim}
 
 \usepackage{enumitem}
 \setlist{leftmargin=7mm}
@@ -42,7 +43,7 @@
 \newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
 \newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
 \newcommand{\colinnote}[1]{ {\textcolor{red}    {***Colin #1 }}}
-
+\newcommand{\choinote}[1]{ {\textcolor{orange}    {***Choi #1 }}}
 
 % Don't use tt font for urls
 \urlstyle{rm}
@@ -347,70 +348,69 @@ Abstracts: \href{http://tinyurl.com/mnenzms}{WSSSPE2}. Slides: \href{http://tiny
 The workshop featured two keynote addresses. In the opening keynote
 presentation, Kaitlin Thaney of the Mozilla Science Lab talked about her
 organization's work and policy to enable and support sustainable and
-reproducible scientific research through the open web. Our second keynote speaker was Neil Chue Hong
-of Software Sustainability Institute. He shined the light on how scientific
-software is prevalently driving advances in many science and engineering fields.
-Both keynote speeches spawned further discussion among workshop participants on
-the crucial notion ``sustainability'' in the theme of our workshop.
+reproducible scientific research through the open web. Our second keynote
+speaker was Neil Chue Hong of Software Sustainability Institute. He shined the
+light on how scientific software is prevalently driving advances in many science
+and engineering fields. Both keynote speeches spawned further discussion among
+workshop participants on the crucial notion ``sustainability'' in the theme of
+our workshop.
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Kaitlin Thaney, Designing for Truth, Scale, and Sustainability}
 \label{keynote1}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 Kaitlin Thaney is the Director of the Mozilla Science Lab (hereafter Mozilla).
 Mozilla is a non-profit organization interested in openness, in news, in website
 creation, and in Science, all taking advantage of the open web. 
 
-Thaney started noting the unfortunate fact that many current systems have been designed to create friction hindering us, despite the original intentions. \katznote{prev sentence is confusing}%---social issues hindering us
-An example is the National Cancer Institute's caBIG. 
-A total of \$350m was spent, including more than \$60m for management.  $70+$ tools were created, but caBIG is still seen
-as a failure (Kaitlin didn't really say why? Were the tools used? Did they
-immediately bit-rot? Was their development unsustained?)-should ask question
-about this.
- Those that had the least investment were the most used, the largest
-investments were the least used.
- Is there a caBIG report available? Quotes from Andrea Califano/Joe Gray,
-looks like there is:
-\url{http://tinyurl.com/maf6dz2}. %http://www.informationweek.com/architecture/report-blasts-problem-plagued-cancer-research-grid/d/d-id/1097068?
+Thaney started noting the unfortunate fact that many current systems suffer the
+unintended consequence of creating friction that hinders users, despite
+designers' original purposes to do good. An example is the National Cancer
+Institute's caBIG. A total of \$350 million was spent, including more than \$60
+million for management. More than $70$ tools were created, but caBIG is still
+seen as a failure\footnote{\url{http://tinyurl.com/maf6dz2}}. Those that had the
+least investment were the most used; the most invested software were the least
+utilized.
+\begin{comment}
+(Kaitlin didn't really say why? Were the tools used? Did they immediately
+bit-rot? Was their development unsustained?)-should ask question about this. Is
+there a caBIG report available? Quotes from Andrea Califano/Joe Gray, looks like
+there is: \url{tinyurl.com/qdodbo7}.
+%http://www.informationweek.com/architecture/report-blasts-problem-plagued-cancer-research-grid/d/d-id/1097068
 
-What do we mean by open research? In regard to
-community/technology/practices
+What do we mean by open research? In regard to community/technology/practices
 
-Inefficiency: \url{http://www.xkcd.com/1445/}. Need research tools (e.g., software repositories), social capital (e.g.,
-incentives) and capacity (e.g., training and mentorship) for efficient reproducible
-research.
+Inefficiency cartoon:  \url{http://www.xkcd.com/1445/}. 
+\end{comment}
 
- 
-Our systems need to talk to each other but Q for speaker is that as
-systems become less monolithic, paradoxically it may be harder to sustain the
-links between them see:
-\url{http://tinyurl.com/l76tba2} %http://www.slideshare.net/jameshowison/scientific-software-sustainability-and-ecosystem-complexity
-(but does Anon Grizzly have other cites/info for that?).
-Note, for example, that creative commons licensed works typically do not 
+Thaney emphasized that for efficient reproducible open research, we would need
+research tools (e.g., software repositories), social capital (e.g., incentives),
+and capacity (e.g., training and mentorship). Our systems would need to
+communicate with each other. A point was made by a member of the auidence that
+as systems become less monolithic, it often becomes harder to sustain the links between
+them\footnote{See, for example, \url{http://tinyurl.com/l76tba2}.}.
+%http://www.slideshare.net/jameshowison/scientific-software-sustainability-and-ecosystem-complexity
+%(but does Anon Grizzly have other cites/info for that?).
+In contrast, works licensed by Creative Commons typically do not 
 have dependencies (a book, a photo, an artwork).
-Software Discovery Index: \url{http://softwarediscoveryindex.org/report/}.
 
- Final points:
-\begin{itemize}
-\item Design with the audience not the individual in mind
-\item Design to unlock latent potential of our systems
-\item Rethink how we reward researchers and support roles
-\item By mindful of jargon/semantics traps
-\end{itemize}
-
-Questions:
-\begin{itemize}
-\item Ted Habermann: if the metadata is minimal less onerous for data provider,
-but more onerous for user. How to work with data providers to show that users
-need more.
-\item Find balance between things that have to be captured and what would be
-ideal. Don't want to get to point where like old Harvard Dataverse, three pages
-of metadata capture, only first four things ever filled out. Don't want to lose
-engagement.
-\end{itemize}
+Thaney introduced Mozilla's Software Discovery
+Index\footnote{\url{http://softwarediscoveryindex.org/report/}}, which
+identifies scientific software by archiving and standardizing metadata for
+software and hence help connect both developers and users. Ted Habermann in the
+audience commented that if the metadata is minimal, it would be less onerous for
+data providers, but more burdensome for users---it could be challenging to keep
+a balance between what have to be captured and what would be ideal if we do not
+want to lose user engagement as in the case of the old Harvard Dataverse, finding often
+only the first four fields of three pages of metadata were filled out.
  
+The speaker concluded her talk urging the audience to design scientific software
+with the general community, not an individual, in mind; and to design to unlock
+latent potential of our systems. In addition, she encouraged everyone to rethink
+how we reward researchers and support roles. Lastly, she cautioned the community
+to be mindful of jargon or semantics traps.
+
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Neil Chue Hong, We are the 92$\%$} 
