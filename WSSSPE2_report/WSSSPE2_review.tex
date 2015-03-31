@@ -18,6 +18,12 @@
 \usepackage{longtable}
 \usepackage{verbatim}
 
+% The following three lines are used for displaying footnote in tables.
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+
 \usepackage{enumitem}
 \setlist{leftmargin=7mm}
  
@@ -530,9 +536,8 @@ The general responses to what software sustainability meant were:
 \item keeping software scientifically useful
 \item separating techniques in code from knowledge in code
 \item that an adequately large community finds value in software and is willing
-to sustain it
+to sustain it.
 \end{itemize}
-
 \katznote{any discussion of this?}
 
 The enablers of and barriers to software sustainability, roughly ranked by
@@ -548,42 +553,44 @@ inertia for accepted answers vs wrong/right answers;
 monolithic or poor code; and
 need to restructure code when hardware/software/libraries change.
 }
-
 \katznote{any discussion of these tables?}
 
 \begin{table*}[th]
-\begin{center}
+ \centering%\begin{center}
 \caption{Enablers of software sustainability, with 0 to 10 `*'s roughly
 indicating the fraction of attendees who voted for an item as important.}
-    \begin{scriptsize}
-    \begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
+\label{tb:software_sustainability_enablers}
+    %\begin{scriptsize}
+    %\begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
+     \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
     \hline
-  Importance & item \\ \hline \hline
+  Importance & Item \\ \hline \hline
 ********** & healthy and vibrant communities; vibrant community to champion software \\ \hline
 ********** & designing for growth and extension -- open development \\ \hline
 ******* & culture in community for reuse \\ \hline
 **** & portability \\ \hline
 **** & culture in dev community to support transition between developers \\ \hline
-*** & interdisciplinary people : science + IT experience \\ \hline
+*** & interdisciplinary people: science + IT experience \\ \hline
 ** & planning for end of life \\ \hline
 ** & make smart choices about dependencies \\ \hline
 * & thinking of software as product lines -- long term vs.~short term view \\ \hline
  & not all communities need new software \\ \hline
  & converting use into resources \\ \hline
     \end{tabular}
-    \end{scriptsize}
-    \label{tb:software_sustainability_enablers}
-\end{center}   
+    %\end{scriptsize}
+%\end{center}   
 \end{table*} 
 
-\begin{table*}[ht]
-\begin{center}
+\begin{table}[th]
 \caption{Barriers to software sustainability, with 0 to 10 `*'s roughly
-indicating the fraction of attendees who voted for an item as important.\katznote{note that there's a footnote within this table -- Where has LaTeX put it?  How do we get it to show up near here?}}
-    \begin{scriptsize}
-    \begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
-    \hline
-  Importance & item \\ \hline \hline
+indicating the fraction of attendees who voted for an item as important.}  
+\label{tb:software_sustainability_barriers} 
+ \centering
+  %\begin{scriptsize}
+  %\begin{tabular}{ | p{1.65cm} | p{10.0cm} |}
+ \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
+   \hline
+  Importance & Item \\ \hline \hline
 ******* & lack of incentives, including promotion and tenure process; promotion
 and tenure process in academic is incompatible with sustainability \\ \hline
 *****  & absent or poor documentation \\ \hline
@@ -591,18 +598,16 @@ and tenure process in academic is incompatible with sustainability \\ \hline
 **** & developers are not computer scientists; don't have software engineering
 practices (in particular, those needed to scale-up projects to support and be
 developed by a large sustainable community) \\ \hline
-*** & overreliance on one or two people - the `bus test'\footnote{how few key people would the project need to lose to become non-viable?  (larger is better)} \\ \hline
+*** & overreliance on one or two people -- the `bus test'\footnote{how few key people would the project need to lose to become non-viable?  (larger is better)} \\ \hline
 ** & rate of change of underlying technologies \\ \hline
 ** & lack of business models for sustainability \\ \hline
 * & lack of training for how to build sustainability into the system \\ \hline
- & maintenance needed for software is not visible, appears to ``just happen'' \\ \hline
+ & maintenance for software is not visible, appears to ``just happen'' \\ \hline
  & licensing issues \\ \hline
- & staff turnover - lack of continuity \\ \hline
-    \end{tabular}
-    \end{scriptsize}
-    \label{tb:software_sustainability_barriers}
-\end{center}   
-\end{table*} 
+ & staff turnover -- lack of continuity \\ \hline
+\end{tabular}
+% \end{scriptsize}
+\end{table}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
