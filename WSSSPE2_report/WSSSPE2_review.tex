@@ -1558,12 +1558,109 @@ Finally, it was clear from discussion that there were many ways in which softwar
 
 The key enabler for reuse and sharing was to get domain scientists more effectively connected with programmers/analysts. Both have skills and experience which is necessary to make the right decisions for improving the reusability and discoverability of software, and to apply community pressure to change practice.
 
-\subsubsection{Categorisation of software journals}
+\subsubsection{Second breakout discussion: Categorisation of software journals}
 
-\subsubsection{What should journals provide reviewers of software papers}
+This group aimed to come up with a categorisation of journals which published software papers. Starting from the list of journals\footnote{http://www.software.ac.uk/resources/guides/which-journals-should-i-publish-my-software} maintained by the Software Sustainability Institute, the group chose seven journals and looked at their advice to authors and reviewers. These were the Journal of Open Research Software\footnote{http://openresearchsoftware.metajnl.com/about/editorialPolicies\#peerReviewProcess}, PLoS ONE\footnote{http://www.plosone.org/static/guidelines\#software}, Journal of Statistical Software\footnote{http://www.jstatsoft.org/instructions}. Methods in Ecology and Evolution\footnote{http://www.methodsinecologyandevolution.org/view/0/authorGuidelines.html}, Transactions of Mathematical Software\footnote{http://toms.acm.org/Authors.html}, GigaScience\footnote{http://www.gigasciencejournal.com/about}, and PLoS Computational Biology\footnote{http://www.ploscompbiol.org/static/guidelines\#software}. 
 
-\subsubsection{Reproducibility Meta-track toolkit}
+From these a set of common categories were synthesized, against which all journals could be compared:
 
+\begin{itemize}
+\item Journal Policies
+\begin{itemize}
+	\item Accessibility of papers
+	\begin{itemize}
+		\item Open Access
+		\item ``Freely'' available
+	\end{itemize}
+	\item Repositories
+	\begin{itemize}
+		\item Provides suggestions for recommended repositories
+		\item Provides its own repository
+	\end{itemize}
+	\item Review
+	\begin{itemize}
+		\item Reviewing software is mandatory
+		\begin{itemize}
+			\item Must check that software runs
+			\item Must check quality of code
+			\item Must check performance of code if paper makes claims on relative performance
+		\end{itemize}
+	\end{itemize}	
+	\item Supporting Data
+	\begin{itemize}
+		\item Must be publicly available
+		\item Must be in an Open Access repository
+		\item must have a DOI
+	\end{itemize}
+	\item Article Processing Charge 
+	\begin{itemize}
+		\item APC charge is transparent
+		\item APC waiver programme
+	\end{itemize}
+\end{itemize}
+
+\item Paper Policies
+\begin{itemize}
+	\item Required Sections
+	\item Keywords
+	\begin{itemize}
+		\item Paper provides keywords to help describe software
+	\end{itemize}
+	\item Papers can be updated when new releases of software are releases
+	\begin{itemize}
+		\item At no extra cost / at significantly reduced cost
+	\end{itemize}
+\end{itemize}
+
+\item Software Policies
+\begin{itemize}
+	\item Software must have a license
+	\begin{itemize}
+		\item Software must have an open source license
+	\end{itemize}
+	\item Availability
+	\begin{itemize}
+		\item Software must be openly available and accessible
+	\end{itemize}
+	\item Deposit policies
+	\begin{itemize}
+		\item Software should be in a public repository
+		\begin{itemize}
+			\item Of particular stature / with preservation plan
+		\end{itemize}
+		\item Software should have a permanent identifier
+		\item Software deposit doesn?t count as a prior publication
+	\end{itemize}
+	\item Runnability and dependencies
+	\begin{itemize}
+		\item Provide documentation to understand how to run
+		\item Provide sample data
+		\item Provide dependency information
+	\end{itemize}
+\end{itemize}
+\end{itemize}
+
+The follow-up actions to this work are to use this set of categories on all the journals in the list, refining the categories if necessary, then identify if any of the categories are seen to be more useful to promote reproducibility, reuse and sharing.
+
+\subsubsection{Second breakout discussion: What should journals provide reviewers of software papers}
+
+This group discussed whether they could come up with a list of things that a journal should provide its reviewers to make it easier to review software submitted for publication as a``Software Paper''.
+
+Journals should provide guidelines about what to consider when reviewing a software submission. A good example for a relatively comprehensive guidelines for reviewers (and thus in turn authors) are those of JORS\footnote{http://openresearchsoftware.metajnl.com/about/editorialPolicies}. Journals might also learn from organisations such as the Apache Foundation as to what is good practice for software submissions. Guidance is needed on what constitutes an incremental improvement that is significant enough to qualify for publication, otherwise this assessment can be very subjective.
+
+Journals should provide mechanisms to enable and track communication between reviewers and authors. For anonymous peer review journals, maintain anonymity of reviewers. If communication is necessary, that may mean that software is not that well documented. Journals should also provide a set of simple metrics for software evaluation that reviewers can use for ratings, similar to Consumer Reports.
+
+Journals should provide guidelines about requirements for documentation of code: both in-lined in code, and manuals/web pages, etc. Journal editors could provide documentation checks before it goes out for review.  This should include a requirement for good Use Cases specified for the software, with references to executable test cases that demonstrate each use-case is met (at least in the form of the test case).
+
+Journals should support mechanisms to run software. Sometimes this may be very hard to accomplish, despite best efforts. Journals could provide an Execution environment for any Software submitted for review, perhaps via a Docker container or a virtual machine. If not, instructions must be adequate to compile and execute the software; and interpret the results (output files, formats, etc.), and the full source code must be accessible to the reviewer. Mechanisms to quantify what has changed compared to a previously published version would assist version comparison. However, this cannot simply take lines of code into account. For example, a speedup of an algorithm may not result in a huge code difference, but may nonetheless provide a break-through. Journals should require software submissions to also provide ?Test materials?-- sample data, parameters to validate that code is working as intended. In certain cases, well-selected benchmark datasets may be required to assess performance and accuracy.
+
+Journals should ensure minimal metadata are provided, similarly as is already the case for certain kinds of data (though the latter is often enforced by data repositories)-- Dublin core-ish (creator, owner), and more specific (platform and compiler dependencies, sample benchmarks of performance, etc.). Journals should provide guidance or constraints as to software licensing conditions.
+
+The follow-up actions to this work are to work with journals and reviewers to identify whether any of these suggestions can be easily provided, perhaps for a range of journals.
+
+\subsubsection{Second breakout discussion: Reproducibility Meta-track toolkit}
+
+This group worked on defining a ``toolkit'' for running a reproducibility meta-track at a conference. They decided to take the work done during the workshop and publish it as a paper.
 
 
 
