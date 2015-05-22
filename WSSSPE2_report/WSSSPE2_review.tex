@@ -71,11 +71,10 @@
 \title[]{Report on the Second Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE2)} 
 
 \author{Daniel S. Katz$^{(1)}$, Sou-Cheng T. Choi$^{(2)}$, Nancy Wilkins-Diehr$^{(3)}$, Neil Chue Hong$^{(4)}$, 
-\\James Howison$^{(5)}$, Miguel de Val-Borro$^{(6)}$, Richard Littauer$^{(7)}$, more TBD %by contributions 
-\\{\scriptsize\today \quad  (Due:  $\backsim$ April 30)}} 
+\\Colin C. Venters$^{(5)}$, James Howison$^{(6)}$, Frank Seinstra$^{(7)}$, Miguel de Val-Borro$^{(8)}$, Richard Littauer$^{(9)}$, more TBD by contributions}
 %\author{Gabrielle Allen$^{(11)}$,  \\
 %Karen Cranston$^{(4)}$, Manish Parashar$^{(5)}$, David Proctor$^{(6)}$, \\
-%Matthew Turk$^{(2)}$, Colin C. Venters$^{(7)}$,  Miguel de Val-Borro$^{(10)}$}
+%Matthew Turk$^{(2)}$,  Miguel de Val-Borro$^{(10)}$}
 %
 \thanks{{}$^{(1)}$ Computation Institute, University of Chicago \& Argonne National Laboratory, Chicago, IL, USA; \url{dsk@uchicago.edu}}
 %
@@ -85,19 +84,21 @@
 %
 \thanks{{}$^{(4)}$ Software Sustainability Institute, University of Edinburgh, Edinburgh, UK; \url{N.ChueHong@software.ac.uk}}
 %
-\thanks{{}$^{(5)}$ University of Texas at Austin, Austin, TX, USA; \url{jhowison@ischool.utexas.edu}}
+\thanks{{}$^{(5)}$ University of Huddersfield, School of Computing and Engineering, Huddersfield, UK}
 %
-\thanks{{}$^{(6)}$ Princeton University, Princeton, NJ, USA; \url{todo}}  
+\thanks{{}$^{(6)}$ University of Texas at Austin, Austin, TX, USA; \url{jhowison@ischool.utexas.edu}}
 %
-\thanks{{}$^{(7)}$ TODO; \url{todo}}   
+\thanks{{}$^{(7)}$ Netherlands eScience Centre, Amsterdam, Netherlands \url{F.Seinstra@esciencecenter.nl}}   
+%
+\thanks{{}$^{(8)}$ Princeton University, Princeton, NJ, USA; \url{mdevalbo@astro.princeton.edu}}  
+%
+\thanks{{}$^{(9)}$ MIT, Boston, MA, USA \& University of Saarland, Germany \url{richard.littauer@gmail.com}}   
 %  
 %\thanks{{}$^{(4)}$ National Evolutionary Synthesis Center, Durham, NC, USA}
 %
 %\thanks{{}$^{(5)}$ Rutgers Discovery Informatics Institute, Rutgers University, New Brunswick, NJ, USA}
 %
 %\thanks{{}$^{(6)}$ International Consortium of Research Staff Associations, Dublin, Ireland}
-%
-%\thanks{{}$^{(7)}$ University of Huddersfield, School of Computing and Engineering, Huddersfield, UK}
 %
 %\thanks{{}$^{(9)}$ Saarland University, Saarbr\"{u}cken, Germany}
 %
@@ -175,7 +176,7 @@ funds provided to the conference organizers by the Moore Foundation and the
 National Science Foundation (NSF), to support the travel of potential
 participants who would not otherwise be able to attend, and young participants
 and those from underrepresented groups, respectively. These funds allowed
-\todo{number} additional participants to attend, and each was offered the chance
+17 additional participants to attend, and each was offered the chance
 to present a lightning talk.
 
 This report extends a previous report that discussed the submission,
@@ -618,7 +619,7 @@ to be given to the integrated use of simulation tools inside complex workflows.
 
 %\item Christopher Lenhardt: Open Science for Synthesis (OSS): Filling the Gapin %Early Career Training
 
-\item \textbf{Daniel Katz: Implementing Transitive Credit with
+\item \textbf{Daniel S. Katz: Implementing Transitive Credit with
 JSON-LD~\cite{Katz_transitive_credit_poster}.} Science and engineering research
 increasingly relies on activities that facilitate research but are not rewarded
 or recognized, such as: data sharing; developing common data resources, software
@@ -820,12 +821,11 @@ number, the healthier the project).} \\ \hline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring Sustainability} \label{sec:exploring}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Colin to lead writing of this section.}
+\todo{Colin led writing of this section.}
 
 \note{\href{http://tinyurl.com/mpbhvyb}{Google doc notes}}
 %https://docs.google.com/a/uchicago.edu/document/d/10XkshP3YjXnA5JQgP-UFHbOxshWczzehWGSo6V7bNH4/edit
 
-\todo{short intro to group here}
 Six papers were categorized under the theme of Exploring Sustainability. The group included four of the authors 
 from the six papers submitted and an additional number of participants who expressed an interest in the theme at the 
 workshop. Each paper had a different perspective on the concept of sustainability, which ranged from the sustainment of 
@@ -838,15 +838,15 @@ communities to defining sustainability as a first-class, composite non-functiona
 Each author was invited to outline the key action from their paper as a potential discussion point for the group; in 
 their absence, the group facilitators outlined the actionable points from papers where the authors were not present. 
 The key actions from the six papers included recommendations for improving practice in sustainable software 
-engineering ~\cite{wssspe2_rosada_de_souza, wssspe2_downs}, the development of Software and Infrastructure as a Service 
-as a mechanism for fostering sustainable science communities ~\cite{wssspe2_patra}, developer incentives for code contributions 
+engineering~\cite{wssspe2_rosada_de_souza, wssspe2_downs}, the development of Software and Infrastructure as a Service 
+as a mechanism for fostering sustainable science communities~\cite{wssspe2_patra}, developer incentives for code contributions 
 to open source projects~\cite{wssspe2_pierce}, the establishment of a set software engineering principles based in 
-scalability, reproducibility, and energy efficiency ~\cite{wssspe2_shi}, and applying software architectures as a mechanism 
-for architectural-level reasoning about sustainability ~\cite{wssspe2_venters}. The group took a position to view 
+scalability, reproducibility, and energy efficiency~\cite{wssspe2_shi}, and applying software architectures as a mechanism 
+for architectural-level reasoning about sustainability~\cite{wssspe2_venters}. The group took a position to view 
 sustainability from the perspective of addressing the challenges related to the development, deployment, and maintenance of 
-reusable software~cite{}. The principal focus of the initial discussion considered how to foster cultural change towards 
+reusable software~\cite{XXX}. \katznote{fix cite} The principal focus of the initial discussion considered how to foster cultural change towards 
 developing sustainable software in academic environments. It was suggested that a new requirement driven by the agencies 
-funding research projects where software was an intrinsic part of enabling the research programme would be an additional 
+funding research projects where software was an intrinsic part of enabling the research program would be an additional 
 element within the grant proposal to provide a sustainability plan for sustaining the software. This type of initiative would 
 provide the necessary incentive and motivation for researchers to consider how to sustain their software beyond the lifetime 
 of the project.
@@ -854,7 +854,7 @@ of the project.
 \subsubsection{Actions}
 
 The main action to come from the group was a proposal to identify the ten best software engineering practices 
-similar to Philip Bourne's approach of Ten Simple Rules~cite{}.
+similar to Philip Bourne's approach of Ten Simple Rules~\cite{bourne-ten-simple-rules}.
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
@@ -887,7 +887,7 @@ through Sustainable Software Architectures~\cite{wssspe2_venters}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Software Development Experiences} \label{sec:devel}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Nancy to lead writing of this section}
+\todo{Nancy led writing of this section}
 
 \note{\href{http://tinyurl.com/pn4eq8z}{Google doc notes}}
 %https://docs.google.com/a/uchicago.edu/document/d/1_q0jmiEPNFRGAEtGLk_QxQ1vVokgTDYruTGURowNGkY/edit
@@ -992,9 +992,10 @@ those developing libraries and building blocks that other pieces of software
 use. The group considered potential journals and medium to push the application
 of this idea. One participant noted that Dryad\footnote{The Dryad Digital
 Repository, \url{http://datadryad.org}.} works with journals. If a paper is
-accepted, the supporting data must be submitted. We discussed reproducibility as
+accepted to one of those journals, the supporting data must be submitted to Dryad.
+The group also discussed reproducibility as
 a component of the journal review process and ``active papers,'' with immediate
-links to the data and software. \choinote{Connect the last two sentences to the preceeding materials.}
+links to the data and software.
 
 We then discussed variations amongst scientific domain areas and wondered ``Are
 some communities more or less open than others?'' To some members of the group
@@ -1120,7 +1121,7 @@ diagonalisation for quantum chemistry~\cite{wssspe2_spencer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Credit \& Incentives} \label{sec:credit}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Dan leading writing of this section}
+\todo{Dan led writing of this section}
 
 \note{\href{http://tinyurl.com/k8ruyn9}{Google doc notes}}
 %https://docs.google.com/document/d/1Jsi_trBT5cjEXVnGjGHJpcIhMEcVpAn6XmYNxfIHXv0/edit#heading=h.gk1dzxu9wi6q
@@ -1291,8 +1292,8 @@ like this has been done.
 software, either through use of a DOI for the credit file, or by uploading the 
 credit files as associated with the paper.
 \item This idea could also be applied to data
-\item This data (the credit file) should be part of the metadata that is outside
-of paywalls, like citations are now. \choinote{what are ``paywalls''?}
+\item This data (the credit file) should be part of the metadata that are freely
+available to those who have not paid for access to the journal, like citations are now in most cases.
 \item It was suggested that there should also be a separate file to track
 software dependencies, but this is not the same file. 
 \end{itemize}
@@ -1496,7 +1497,7 @@ generating data~\cite{wssspe2_kelley}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Reproducibility \& Reuse \& Sharing} \label{sec:reproduce}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Neil OR VOLUNTEER to lead writing of this section}
+\todo{Neil led writing of this section}
 
 \note{\href{http://tinyurl.com/kqpe87z}{Google doc notes}}
 %https://docs.google.com/document/d/1Mivadj16_9tPrw8Nxmhp72AtNC0BEVO-f7M84FXTbSU/edit#heading=h.elaktnt2tep9
