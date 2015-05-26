@@ -905,14 +905,70 @@ successful, sustainable software (including a valuable industry perspective).
 \subsection{Discussion and Actions}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\katznote{need something about subgroup A here}
-
+Subgroup A consisted of ten participants who discussed papers surrounding training
+and successful community software initiatives.
 Subgroup B discussed four papers and had six participants. Because of the nature
 of the papers, training emerged as a common theme. However the conversation was
 wide-ranging, including incentives, reproducibility, and funding to promote
 sustainability.
 
 \subsubsection{Subgroup A Discussion}
+
+\note{\href{https://docs.google.com/document/d/1n413NcFPDyDGb27tEp-ujryiRhz-ZaAhmUapWRYmh1g/edit}{Google doc notes}}
+
+Group discussion started with a position statement by each person surrounding what they had
+learned form their software development experiences and how those lessons might be translated
+into actionable outcomes.  Participants came from a range of backgrounds, and represented
+multiple software and training initiatives, including Software Carpentry, Data 
+Carpentry, Open Science for Synthesis, the Community Surface Dynamics Modeling Systems group, 
+ROpenSci, DataONE, the HDF Group, and others. Some of these software experiences were focused on development
+of new products for use in the sciences (e.g., ROpenSci, CSDMS), and these recounted the 
+difficulties of engaging with disciplinary scientists in writing software.  Software was clearly
+utilized broadly across the various science disciplines represented, and it was developed within those
+disciplines as well.  Some researchers created software for statistical analysis and modeling, while
+others used it to control instrumentation, collate data across networks, collect information from
+respondents, and many other uses.  There was broad consensus that, within the disciplines represented,
+formal training in any type of software development or engineering was rare among the practitioners;
+most are self-taught, and develop software to get another job done. Any ancillary utility of the software
+outside of the specific science target was generally unplanned and few researchers would want to invest more
+time to make their own software more re-usable.
+
+Despite agreement that this body of disciplinary software needed improvement, there was general agreement that
+such improvement needed to be understood in terms of the scientific productivity that could be acheived. A
+software maturity model is needed for science software, but it needs to be introduced in a way that fits
+in with the culture of science, which largely thinks of software as a tool, rather than a product itself. 
+The group was in general consensus that more widespread training in software practice is needed within the
+domain sciences, and several of the participants were involved in efforts along these lines.  Participants felt
+that projects that build a sense of community via training in software and technical practices would have the
+most success in changing practices in that community, but that there was a need for a managed introduction of
+these practices. Participants also recognized that these could not be one-time, one-off training opportunities,
+as software and technologies change rapidly over time.  For example, while today Software Carpentry is focused
+on teaching version control via Git, there has been a rapid evolution from RCS to CVS to SVN to Git over a short
+time frame, and thus communities should expect to need to train for adaptibility and a changing technology tool
+chain, rather than assume these technologoes stay fixed.  Thus, although short term training that introduces
+specific tools was considered highly valuable, these trainins were also not considered sufficient to engender the changes
+in software practice that were deemed neccessary.  Combining the need for changes in practice to be introduced
+incrementally with the need to to minimize the divergence of training from direct science goals and the 
+difficulties of training for a rapidly evolving technology space, participants concluded that multiple training
+efforts that targeted different parts of the spectrum were needed.  Short-term courses introducing immediately
+useful skills needs to be offered alongside more in-depth courses on software engineering and practice that allow
+students to adapt to a changing landscape.
+
+Finally, after agreeing that these complementary training models were needed, the group discussed sustainability of
+training, and how the leading groups in this space are teaching only a small fraction of the community that
+needs and wants training.  Most graduate programs in the sciences do not currently incorporate these appraoches
+in their graduate curricula, although there are an increasing number of quantitatively oriented courses around
+analysis and modeling.  These still, however, generally omit ngineering practices such as version control, unit
+and regression testing, and software modularity and abstraction, often because the instructors themselves in the 
+domain sciences are not familiar with these techniques.  Thus, students who are being trained in these appraches
+are doing so through short 2-3 day training workshops such as Software and Data Carpentry, rather than through 
+semester-long graduate education courses at their University, which tend to focus on statistical and modeling 
+techniques.  Hybrid programs like the three week Open Science for Synthesis (OSS) training that combine the three 
+(science, quantitiative techniques, and software engineering) into an holistic course serve part of the need but 
+reach only a few researchers at this time.  Thus, the group concluded that significant strides needed to be made
+in coordinating these trainings so that they are complementary, on increasing their size and scope, and on
+better integrating them directly into graduate education programs.
+
 
 \subsubsection{Subgroup B Discussion}
 The statement ``applied computer science is being attempted in academia without
@@ -1038,6 +1094,42 @@ other programs in which this is encouraged).
 
 
 \subsubsection{Subgroup A Actions}
+
+Three main actions were identified by Subgroup A that would be of interest to participants and that
+would benefit the research community.  These focused on the desire to amplify the 
+current community efforts in training and software engineering by conecting the current training initiatives.
+( e.g., software/data carpentry, rOpenSci, OSS) of different durations at appropriate stages. Generally it 
+was felt that a modicum of interaction between short term workshops (SwC, DC), medium term trainings (e.g., OSS),
+and longer-term courses (e.g., BIDS Data Science) would benefit from coordinating curriculum,
+discussing and aligning prerequisites, and coordinating timing of courses.  A training
+coordination effort would go a long ways towards amplifying the value of the individual
+efforts and make them all more effective.
+
+\begin{itemize}
+    \item Action 1: Create a roadmap of research software training initiatives. Such a roadmap would
+        provide a taxonomy of training opportunities: what they deliver, and what is needed to know 
+        going in (prerequisites). It would also show which recommended roadmap actions would have a clear 
+        and immediate payoff, and which will have long-term payoffs.  The training roadmap would emphasize 
+        time savings and efficiency gains to be had from each training.
+
+    \item Action 2: Build a report card characterizing use of best practices in sceintific software. Generally,
+        people felt that researchers would be very willing to migrate practices if they could identify
+        where they needed to improve. Such a report card would ask simple questions to charactize use of best
+        practices in science software, and could be structured similarly to Joel Spolsky's 'Software Maturity'
+        questionairre (http://www.joelonsoftware.com/articles/fog0000000043.html).  The survey would create a 
+        report card that shows areas where a project could improve, and then link those areas to specific 
+        training offerings from the training taxonomy from Action 1.
+
+    \item Action 3: Create science software review forum.  It was generally acknowledged that a little code review
+        can have a tremendous impact on the quality of software in a project, but that sites for science code
+        review are lacking.  While people can ask questions on the Stack Exchange sites, they are generally not open
+        to questions of style, approach, or appropriateness, as they try to avoid subjective commentary.   Instead, 
+        we need a site where code gets discussed/summarized/described (in small bites) by the science software community.
+        The target audience would be graduate and undergraduate students in the sciences, and there would need to be
+        mechanisms to keep the review positive and constructive, and not get pedantic or judgemental.  
+        This could be tied to a software registry (such as the nascent GeoSoft project), or to language repositories like 
+        R's CRAN repository, and could lead to the report card discussed in Action 2.
+\end{itemize}
 
 \subsubsection{Subgroup B Actions}
 
