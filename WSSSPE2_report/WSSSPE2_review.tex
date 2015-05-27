@@ -1769,7 +1769,7 @@ sciences~\cite{wssspe2_piccolo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Code Testing \& Code Review} \label{sec:code_testing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Karen to lead writing of this section}
+\todo{Dan leading writing of this section}
 
 \note{\href{http://tinyurl.com/l5t5h45}{Google doc notes}}
 %https://docs.google.com/document/d/1G1_U5-hkAvDKtTgT4DvUhIYvyYUY4cBBvQHJIdgADa0/edit#heading=h.v7g0nqpn1fur
@@ -1779,6 +1779,166 @@ sciences~\cite{wssspe2_piccolo}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Discussion and Actions}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+This group began by recognizing that they know what the code testing and code review problems are, so the purpose of the group is to think about concrete things that people in the group are willing to commit to, to improve sustainability of software.
+
+Greg Wilson suggested that these concrete things should be small things so that the group members were likely to do them.
+
+An example was the Architecture of Open Source Applications book~\cite{aosa}, containing contributed chapters on open source software; the group wondering if it could do the same thing for testing?
+
+The group asked if it could produce a 100-line example of how to test neutron transport (or other specific scientific examples) targeted at a sophomore? This would be a demonstration of ``how do I do this right''
+
+Another question was ``How do I test so that I know that the code is not the source of my problems?''
+A challenge is stripping things down to that level / that condensed
+Test for infrastructure easier than models
+cf. Lorena Barba’s “12 Steps to Navier Stokes” http://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/
+And explanation of why we don’t teach testing in Software Carpentry any more http://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html 
+need to teach people how to test short bits of code, can’t wait until we have 1000s of lines of code
+Distinction between 100 lines of input files vs. 100 lines of source code
+Paper on multiphysics software verificationt01
+"If we can't teach people how to test code until they're developing 1000s of lines of code, we can't be surprised when the don't write tests" - Greg Wilson
+Don’t accept patches that don’t have tests
+Setting up infrastructure to test well is difficult
+Want a standard way that runs out of the box
+Q: what about Jenkins?
+A: sure, but you have to set it up, and that’s not easy for most scientists
+People who’ve worked with a testing framework once (even if they have to be forced to do so) won’t work without it afterward
+Q: but how to get them to do it the first time?
+Two important pieces of the barrier:
+Picking/implementing testing frameworks (technical barrier)
+What are the actual tests that I write?
+Ask students “how is what you’re doing different from typing random keys on the keyboard?” Turn their answer into the concept of tests.
+How many scientists are aware of the fact that “testing the code” and “testing the science” are separate?
+“Every scientist should go through a programming class”
+That’s probably too big a goal for this group for the next year
+Software Carpentry exists because university curricula are full; can’t add extra classes
+Validation questions: how do you know that your method produces a result that is ‘close enough’
+Tom Clune wants a piece of code that badly engineered/lacks unit tests so that he can add the unit tests and show people what it should look like
+The collaboration must be with someone that either wrote the code or is intimately familiar with the topic.  The exercise will be to extract unit-tests through reverse-engineering {\b and} questioning the developer/expert
+Code does not have to be “badly engineered”, but is either representative or is believed to be impenetrable from a unit-testing perspective.
+
+The group discussed how they learned testing.  One attendee learned from a TDD tutorial at a Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving it could be done with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.
+He realized he was always building on top of other people’s software, and eventually realized that he should adopt those good software habits.  He also commented that
+most of those tests are ephemeral.  They live long enough to give the author of the test confidence in code, then the author moves on; the tests are not handed on and made available to next user.
+
+Attendees joked that they started testing when their skepticism got bigger than their arrogance, or when their guilt got bigger than my arrogance.
+
+Useful reading:
+Daniel Hook, Diane Kelly, "Mutation Sensitivity Testing", Computing in Science \& Engineering, vol.11, no. 6, pp. 40-47, November/December 2009, doi:10.1109/MCSE.2009.200
+Daniel Hook, Diane Kelly, "Testing for trustworthiness in scientific software", ICSE Workshop on Software Engineering for Computational Science and Engineering (SECSE 2009), 2009 pp. 59-64, doi:10.1109/SECSE.2009.5069163
+
+See the “13 dwarves” from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html
+
+For each problem do:
+Write your name and email address so we can get back in touch with you
+Write a paragraph or two explaining the scientific problem the code addresses
+Tell us how big the simplest piece of relevant, interesting code would be (very rough estimate of lines of code)
+Give us a point-form list of the test cases you would use
+
+Tom Clune Problem 1<Thomas.L.Clune@nasa.gov>
+Runge-Kutta 4th order
+O(100 lines of code)
+point-form list of interesting tests
+%Test substep:      k’ = F(x + k h, t + h)
+%F (x) = C; h = 1; k = 1;   x = 0; expect k’ = C
+%F (x) = x^2; h = 2; k = ?;  x = 3; expect k’ = 16
+%Test that correct sequence of substeps are used:  use unrealistic F
+%F(x) =  {1,4,2,5} on nth call;  h = 1 (unused); x0 = 2;  expect x1 = ?(1*1 + 2*4 + 2*2 + 1*5) = 3
+<test with 2D/3D>
+
+
+Tom Clune Problem 2<Thomas.L.Clune@nasa.gov>
+Interpolation with unevenly spaced abscissae
+O(200 lines of code)
+point-form list of interesting tests
+Find bracket
+%Trivial case:  nodes @ {1,3}; x = 2;  interval = 1
+%nodes@{1,3,5};  x = 4; interval = 2
+%How to handle edges? nodes@{1,3,5}; x = 3
+%If/how to handle nodes that are not increasing?
+%If/how to handle duplicate node?
+%Find weights
+%End pt. - Interval = {1,2} ; x= 1;  w1 = 1
+%Other end pt. - Interval = {1,2}; x = 2; w1 = 0
+%middle - Interval = {1,2} x = 1.5; w1 = 0.5
+%other sizeInterval = {1, 5}; x = 4; w1 = 0.25
+%Combine weights:   
+%End pt - w1 = 1;   y1 = 1; y2 = 2;  y = 1
+%End pt - w1 = 0;  y1 = 1; y2 = 2; y =2
+%Middle - w1 = 0.5;   y1 = 1, y2 = 3;  y = 2
+Put it together
+At this point really checking that steps are called in order
+%interval = bracket(x)
+%find weights = (x, interval)
+%combine  y = sum(w_i, y_i)
+A few simple cases expressed as a table with expected values.
+
+Ethan White Problem 1<ethan@weecology.org>
+Logistic growth models are used to model the dynamics of populations of individuals both in isolation and when interacting with other species. At each time step the population of the focal species increases or decreases depending on its reproductive rate, competition from other species, and competition with other individuals of its own species. This growth can be either deterministic or stochastic. Stochastic growth involves some noise in the reproductive rate.
+25-100 lines
+point-form list of interesting tests
+%stochasticity == 0
+%r = 0, S=1, x_t = x_0
+%r >> 0, S=1, x_1000 = K
+%S=2, r1 > r2, K1=K2, x1_1000 = K1, x2_1000 = 0
+%S=2 r1=r2, k1=k2, x1_100 = x2_100 = analytical equilibrium 
+%stochasticity > 0
+%K = 0, x_t = 0
+%r1 >> r2, x1_1000 = K1, x2_1000 = K2
+pass a “stochasticity” function that changes things in a known way, either always returning the same value or with a set of values that has variation, but whose values are deterministic and then test against known outcomes
+e
+
+Ethan White Problem 1<ethan@weecology.org>
+Neutral model (based on https://github.com/rueuntal/species-associations/)
+100 lines
+point-form list of interesting tests
+%disp_function == no dispersal
+%m == 0, self.immigrants == 0 at any t
+pass a “stochasticity” function that changes things in a known way, either always returning the same value or with a set of values that has variation, but whose values are deterministic and then test against known outcomes
+
+Karen Cranston <karen.cranston@nescent.org>
+existing SWC example: http://software-carpentry.org/v4/setdict/phylogen.html 
+Given DNA sequences for a set of species, we can infer a tree that describes the evolutionary history of the species. We assume that the best tree is the one that involves the fewest number of changes in the DNA (the “maximum parsimony” tree). This code will calculate the parsimony score for a given tree and given DNA alignment. http://telliott99.blogspot.com/2010/03/fitch-and-sankoff-algorithms-for.html 
+hmmm…
+list of tests
+DNA sequences are identical; score = 0
+TLC:  Use Fitch’s algorithm for parsimony score.  Assuming your languages does not have built in type for Set.   (E.g. python does, but Fortran does not.) 
+%Test Set pseudo-Intersection  “^” (empty intersection is union)
+%Single nucleotide tests
+%{a} ^ {a} = {a}
+%{b} ^ {b} = {b}
+%{a} ^ {b} = {a,b
+%{a,b} ^ {b,c} = {b}
+%Multiple nucleotide tests
+%({a},{b})^({b},{b}) = ({a,b},{b})
+%Node tests:   Node v has tuple of sets (X_i(v)) and integer score S(v)
+%N1 = <({a});s=2>  N2 = <({a});s=3>    ->   Nparent = <({a}; s=2+3>
+%N1 = <({a},{a,b});s=2>  N2 = <({b},{b}});s=3>    ->   
+%Nparent = <({a,b},{b}); s=2+3+1>
+Probably should create a table of N1, N2, Nparent and write a generic test that checks each row of the table.
+Tree tests:  Assuming already have post-order binary tree traversal
+Tree with 2 leaves and one parent node.   Use table from 3.4.3 to check parent status after traversal with scoring rule
+Create more complex tree with 3-4 leaves.  Manually determine status of each top node.
+Define parsimony score as s-value of top node
+
+Greg Wilson <gvwilson@software-carpentry.org
+Invasion percolation is used to study the spread of pollutants in fractured rock. Model the rock as a 2D grid filled with random integers between 0 and K; mark the central cell as “filled”; and then repeatedly select the cell on the boundary with the lowest value (i.e., the most permeable) and fill it. The density of the resulting fractal tells you how quickly the pollutant spreads.
+Simple implementation is ~100 lines of Python.
+Interesting tests are:
+3x3 grid with a single ‘0’ on the boundary (all other cells are ‘1’) - should fill to boundary in a single step, and the cell with ‘0’ should be the one that fills.
+5x5 grid with a straight line of 0’s between the center and the boundary (same case as above, but expanded by one layer)
+5x5 grid: cells immediately surrounding the center are all ‘0’, all of boundary is ‘1’ except for one cell, which is 0 - all of the interior should fill, then the single cell on the boundary that’s a ‘1’
+
+
+
+For example, look at the testing of the invasion percolation code in this sequence of slides:
+The problem: http://software-carpentry.org/v4/invperc/intro.html 
+The testing: http://software-carpentry.org/v4/invperc/test.html 
+
+
+
+
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Papers}
