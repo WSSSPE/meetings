@@ -426,7 +426,7 @@ around what a \emph{Software Discovery
 Index}\footnote{Software Discovery Index, \url{http://softwarediscoveryindex.org/report/}} might look
 like. The meeting included a number of publishers, researchers, and those behind
 major scientific software efforts such as 
-Bioconductor{\footnote{Bioconductor, \url{http://www.bioconductor.org}}, 
+Bioconductor\footnote{Bioconductor, \url{http://www.bioconductor.org}}, 
 Galaxy\footnote{Galaxy, \url{http://galaxyproject.org}}, and
 nanoHUB\footnote{nanoHUB, \url{https://nanohub.org}}. 
 %facilitates more efficient scientific research. SDI identifies scientific
@@ -1774,14 +1774,13 @@ sciences~\cite{wssspe2_piccolo}
 \note{\href{http://tinyurl.com/l5t5h45}{Google doc notes}}
 %https://docs.google.com/document/d/1G1_U5-hkAvDKtTgT4DvUhIYvyYUY4cBBvQHJIdgADa0/edit#heading=h.v7g0nqpn1fur
 
-\todo{short intro to group here}
+This group began by recognizing that they know what the code testing and code review problems are, so the purpose of the group was really to think about concrete things that people in the group would be willing to commit to, in order to improve the sustainability of software. 
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsection{Discussion and Actions}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-This group began by recognizing that they know what the code testing and code review problems are, so the purpose of the group was really to think about concrete things that people in the group would be willing to commit to, in order to improve the sustainability of software.  It was suggested that these concrete things should be small things so that the group members were likely to do them.
+It was suggested that these concrete things should be small things so that the group members were likely to do them.
 
 An example was the Architecture of Open Source Applications book~\cite{aosa}, containing contributed chapters on open source software; the group wondering if it could do the same thing for testing?
 
@@ -1800,38 +1799,21 @@ The group recognized that we need to teach people how to test short bits of code
 
 Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
 
-in progress....
+Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
-%Paper on multiphysics software verificationt01 - \url{http://onlinelibrary.wiley.com/doi/10.1002/spe.2220/abstract}
-%
-%Don't accept patches that don't have tests
-%
-%Setting up infrastructure to test well is difficult
-%
-%Want a standard way that runs out of the box
-%Q: what about Jenkins?
-%A: sure, but you have to set it up, and that's not easy for most scientists
-%
-%People who've worked with a testing framework once (even if they have to be forced to do so) won't work without it afterward
-%Q: but how to get them to do it the first time?
-%
-%Two important pieces of the barrier:
-%a. Picking/implementing testing frameworks (technical barrier)
-%b. What are the actual tests that I write?
-%Ask students ``how is what you're doing different from typing random keys on the keyboard?'' Turn their answer into the concept of tests.
-%
-%How many scientists are aware of the fact that ``testing the code'' and ``testing the science'' are separate?
-%
-%``Every scientist should go through a programming class''
-%a. That's probably too big a goal for this group for the next year
-%b. Software Carpentry exists because university curricula are full; can't add extra classes
-%
-%
-%Validation questions: how do you know that your method produces a result that is ‘close enough’
-%
-%Tom Clune wants a piece of code that badly engineered/lacks unit tests so that he can add the unit tests and show people what it should look like
-%a. The collaboration must be with someone that either wrote the code or is intimately familiar with the topic.  The exercise will be to extract unit-tests through reverse-engineering {\b and} questioning the developer/expert
-%b. Code does not have to be ``badly engineered'', but is either representative or is believed to be impenetrable from a unit-testing perspective.
+One general rule that was suggested is that projects shouldn't accept patches that don't have associated tests.  This led to discussion about the fact that setting up infrastructure to test well is difficult.  The group would like a standard way that runs out of the box.  Jenkins was suggested as
+a solution, but setting it up is considered difficult for most scientists.
+
+Group members also comments that people who've worked with a testing framework once (even if they have to be forced to do so) won't work without it afterward.  But how to get them to do this the first time is not clear.
+
+Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you're doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.
+
+Another point of discussion is that many scientists are not aware that ``testing the code'' and ``testing the science'' are separate.  A related question that came up is ``How do you know that your method produces a result that is `close enough'?''
+
+Some group members thought that every scientist should go through a programming class, but that was considered too big a goal for the group for the next year.  Also, it's not clear where these classes could be offered.  Software Carpentry exists because university curricula are full; they can't add extra classes.
+
+Tom Clune suggested it would be useful to have a piece of code that is badly engineered and lacks unit tests so that he can add the unit tests and show people what it should look like.  However, such a collaboration must be with someone that either wrote the code or is intimately familiar with the topic.  The exercise will be to extract unit-tests through reverse-engineering {\b and} questioning the developer/expert.
+Others suggested that the code does not have to be ``badly engineered'', but is either representative or is believed to be impenetrable from a unit-testing perspective.
 
 The group discussed how they learned testing.  One attendee learned from a TDD tutorial at a Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving it could be done with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.
 He realized he was always building on top of other people’s software, and eventually realized that he should adopt those good software habits.  He also commented that
@@ -1839,11 +1821,15 @@ most of those tests are ephemeral.  They live long enough to give the author of 
 
 Attendees joked that they started testing when their skepticism got bigger than their arrogance, or when their guilt got bigger than my arrogance.
 
-Useful reading:
-Daniel Hook, Diane Kelly, "Mutation Sensitivity Testing", Computing in Science \& Engineering, vol.11, no. 6, pp. 40-47, November/December 2009, doi:10.1109/MCSE.2009.200
-Daniel Hook, Diane Kelly, "Testing for trustworthiness in scientific software", ICSE Workshop on Software Engineering for Computational Science and Engineering (SECSE 2009), 2009 pp. 59-64, doi:10.1109/SECSE.2009.5069163
+The group suggested two papers by Hook and Kelly that would be useful for those interested in software testing to read~\cite{hook1,hook2}
 
-See the “13 dwarves” from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html
+See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
+
+\subsection{Testing examples}
+
+The group took some time to define 
+
+\katznote{... working from here still...}
 
 For each problem do:
 Write your name and email address so we can get back in touch with you
@@ -1944,8 +1930,6 @@ Interesting tests are:
 3x3 grid with a single ‘0’ on the boundary (all other cells are ‘1’) - should fill to boundary in a single step, and the cell with ‘0’ should be the one that fills.
 5x5 grid with a straight line of 0’s between the center and the boundary (same case as above, but expanded by one layer)
 5x5 grid: cells immediately surrounding the center are all ‘0’, all of boundary is ‘1’ except for one cell, which is 0 - all of the interior should fill, then the single cell on the boundary that’s a ‘1’
-
-
 
 For example, look at the testing of the invasion percolation code in this sequence of slides:
 The problem: http://software-carpentry.org/v4/invperc/intro.html 
