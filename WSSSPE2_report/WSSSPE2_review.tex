@@ -44,6 +44,7 @@
 \newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
 \newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
 \newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\clunenote}[1]{ {\textcolor{orange}    { ***Tom:      #1 }}}
 \newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
 \newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
 \newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
@@ -1790,6 +1791,7 @@ Another question was ``How do I test so that I know that the code is not the sou
 A challenge is stripping things down to an appropriate level.
 
 Testing for infrastructure is easier than testing for models. \katznote{to delete? - don't see how it fits}
+\clunenote{Do not know if I can answer whether it fits, but can expand upon the intent of the sentence.  The idea was to ground people's expectations.   All software can be tested.  But some types of software are much easier to test.  In particular numerical argorithms introduce new issues that increase the difficulty and can represent a high barrier for starting to unit test.   The issues that arise are (1) dealing with numerical error (and in particular roundoff error that accumulates through multiple operations and/or loop iterations, and (2)  the \emph{apparent} lack of oracles for nontrivial cases.)
 
 The group referred to Lorena Barba's ``12 Steps to Navier Stokes~\cite{12steps},'' an online CFD lesson repository created as a set of iPython notebooks. 
 
@@ -1798,6 +1800,7 @@ Grid Wilson pointed to an explanation of why Software Carpentry doesn't teach te
 The group recognized that we need to teach people how to test short bits of code, we can't wait until we have thousands of lines of code. Greg commented, ``if we can't teach people how to test code until they're developing thousands of lines of code, we can't be surprised when they don't write tests.''
 
 Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
+\clunenote{I no longer recall the context for this statement.}
 
 Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
@@ -1824,6 +1827,8 @@ Attendees joked that they started testing when their skepticism got bigger than 
 The group suggested two papers by Hook and Kelly that would be useful for those interested in software testing to read~\cite{hook1,hook2}
 
 See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
+\clunenote{No opinion - someone thought it was a useful reference for the topic.}
+
 
 \subsection{Testing examples}
 
