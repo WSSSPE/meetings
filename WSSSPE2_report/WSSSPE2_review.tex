@@ -44,6 +44,7 @@
 \newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
 \newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
 \newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\clunenote}[1]{ {\textcolor{orange}    { ***Tom:      #1 }}}
 \newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
 \newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
 \newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
@@ -1780,50 +1781,88 @@ This group began by recognizing that they know what the code testing and code re
 \subsection{Discussion and Actions}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It was suggested that these concrete things should be small things so that the group members were likely to do them.
+The consensus of the group was that small, concrete actions would have
+a greater chance of proper follow-through by mpmebers of the group.
+An example of this approach was the Architecture of Open Source
+Applications book~\cite{aosa}, containing contributed chapters on open
+source software.  
+The group contemplated creating an analogous book/web-resource for
+testing of scientific software.
 
-An example was the Architecture of Open Source Applications book~\cite{aosa}, containing contributed chapters on open source software; the group wondering if it could do the same thing for testing?
+Several members of the discussion indicated that while they valued the
+concpet software testing in theory, they were unaware how to test
+certain kinds of software.  
+Or, more importantly, they lacked relevant examples of software
+testing that would be suitable for new members to their team.
+The group asked if it could produce a 100-line example of how to test
+neutron transport (or other specific scientific examples) targeted at
+a sophomore? This would be a demonstration of ``How do I do this
+right?''
 
-The group asked if it could produce a 100-line example of how to test neutron transport (or other specific scientific examples) targeted at a sophomore? This would be a demonstration of ``How do I do this right?''
+Another question was ``How do I test so that I know that the code is
+not the source of my problems?''  A common challenge is that of
+stripping things down to an appropriate level for tests.  The group
+recognized that the difficulty is different for so-called software
+infrastructure than for numerical/scientific layers of software
+applications.  
 
-Another question was ``How do I test so that I know that the code is not the source of my problems?''
-A challenge is stripping things down to an appropriate level.
 
-Testing for infrastructure is easier than testing for models. \katznote{to delete? - don't see how it fits}
-
-The group referred to Lorena Barba's ``12 Steps to Navier Stokes~\cite{12steps},'' an online CFD lesson repository created as a set of iPython notebooks. 
+The group referred to Lorena Barba's ``12 Steps to Navier
+Stokes~\cite{12steps},'' an online CFD lesson repository created as a
+set of iPython notebooks.  \clunenote{I'm not sure of the context
+  here, except possibly as an analog for something under discussion.}
 
 Grid Wilson pointed to an explanation of why Software Carpentry doesn't teach testing any more~\cite{SCtesting}, which boils down to two issues.  First, that scientific computing doesn't (yet) have the cultural norms for error bars that experimental sciences have, and second, that there is a breathtaking diversity of scientific code; scientific research is highly specialized, which means that the tests scientists write are much less transferable or reusable than those found in other fields.
 
 The group recognized that we need to teach people how to test short bits of code, we can't wait until we have thousands of lines of code. Greg commented, ``if we can't teach people how to test code until they're developing thousands of lines of code, we can't be surprised when they don't write tests.''
 
 Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
+\clunenote{I no longer recall the context for this statement; does not seem important to me.}
 
 Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
-One general rule that was suggested is that projects shouldn't accept patches that don't have associated tests.  This led to discussion about the fact that setting up infrastructure to test well is difficult.  The group would like a standard way that runs out of the box.  Jenkins was suggested as
-a solution, but setting it up is considered difficult for most scientists.
+One general rule that was suggested is that projects should not accept
+software patches that don't have associated tests.  
+This led to discussion about the fact that setting up appropriate 
+infrastructure for testing can be difficult.
+The group would like a standard way that runs out of the box.
+Jenkins was suggested as a common open-source solution, but initial
+configuration is considered to be challenging for typical scientists.
 
-Group members also comments that people who've worked with a testing framework once (even if they have to be forced to do so) won't work without it afterward.  But how to get them to do this the first time is not clear.
+Several members of the group commented that once a developer has been
+exposed to a testing framework in a nontrivial fashion, he/she will
+subsequently insist upon using a framework for further work.
+The acknowledged challenge was how to create that crucial first exposure
+to such frameworks.
 
-Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you're doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.
+Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you are doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.  I.e. expand the process of creating code from one that is solely about ``how?'' into one that also include ``why?''.
 
-Another point of discussion is that many scientists are not aware that ``testing the code'' and ``testing the science'' are separate.  A related question that came up is ``How do you know that your method produces a result that is `close enough'?''
+Another point of discussion is that many scientists are not aware that ``testing the code'' and ``testing the science'' are distinct issues.  A related question that came up is ``How do you know that your method produces a result that is `close enough'?''
 
 Some group members thought that every scientist should go through a programming class, but that was considered too big a goal for the group for the next year.  Also, it's not clear where these classes could be offered.  Software Carpentry exists because university curricula are full; they can't add extra classes.
 
-Tom Clune suggested it would be useful to have a piece of code that is badly engineered and lacks unit tests so that he can add the unit tests and show people what it should look like.  However, such a collaboration must be with someone that either wrote the code or is intimately familiar with the topic.  The exercise will be to extract unit-tests through reverse-engineering {\b and} questioning the developer/expert.
-Others suggested that the code does not have to be ``badly engineered'', but is either representative or is believed to be impenetrable from a unit-testing perspective.
+Tom Clune suggested that a useful demonstration could be generate by
+beginning with a (smallish) piece of badly engineered code that lacks
+appropriate unit tests.   
+The code would then be refactored into a more presentable form once
+unit test were created/derived.
+However, such a collaboration must be with someone that either wrote
+the code or is intimately familiar with the subject matter.  The exercise would
+be to extract unit-tests through reverse-engineering {\b and}
+questioning the developer/expert.  Others suggested that the code does
+not have to be ``badly engineered'', but is either representative or
+is believed to be impenetrable from a unit-testing perspective.
 
-The group discussed how they learned testing.  One attendee learned from a TDD tutorial at a Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving it could be done with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.
-He realized he was always building on top of other people’s software, and eventually realized that he should adopt those good software habits.  He also commented that
-most of those tests are ephemeral.  They live long enough to give the author of the test confidence in code, then the author moves on; the tests are not handed on and made available to next user.
+The group discussed how they learned testing.  One attendee learned from a tutorial on test driven development (TDD) at a Software Developers Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving the process could be applied with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.  He realized he was always building on top of other people’s software, and eventually realized that he should adopt those good software habits.  He also commented that
+most of those initial checks were ephemeral.  They live long enough to give the author of the test confidence in code, then the author moves on; the checks  are not handed on and made available to next user as permanent tests.
 
-Attendees joked that they started testing when their skepticism got bigger than their arrogance, or when their guilt got bigger than my arrogance.
+Attendees joked that they started testing when their skepticism/guilt became larger than their arrogance.
 
 The group suggested two papers by Hook and Kelly that would be useful for those interested in software testing to read~\cite{hook1,hook2}
 
 See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
+\clunenote{No opinion - someone thought it was a useful reference for the topic.}
+
 
 \subsection{Testing examples}
 
