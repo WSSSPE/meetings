@@ -73,7 +73,8 @@
 
 \author{Daniel S. Katz$^{(1)}$, Sou-Cheng T. Choi$^{(2)}$, Nancy Wilkins-Diehr$^{(3)}$, Neil Chue Hong$^{(4)}$, 
 \\Colin C. Venters$^{(5)}$, James Howison$^{(6)}$, Frank Seinstra$^{(7)}$, Matthew Jones$^{(8)}$
-\\Miguel de Val-Borro$^{(9)}$, Richard Littauer$^{(10)}$, more TBD by contributions}
+\\Thomas L. Clune$^{(9)}$, Miguel de Val-Borro$^{(10)}$, Richard Littauer$^{(11)}$,
+\\more TBD by contributions}
 %\author{Gabrielle Allen$^{(11)}$,  \\
 %Karen Cranston$^{(4)}$, Manish Parashar$^{(5)}$, David Proctor$^{(6)}$, \\
 %Matthew Turk$^{(2)}$,  Miguel de Val-Borro$^{(10)}$}
@@ -94,9 +95,11 @@
 %
 \thanks{{}$^{(8)}$ National Center for Ecological Analysis and Synthesis, Santa Barbara, CA, USA; \url{jones@nceas.ucsb.edu}}
 %
-\thanks{{}$^{(9)}$ Princeton University, Princeton, NJ, USA; \url{mdevalbo@astro.princeton.edu}}  
+\thanks{{}$^{(9)}$ NASA Goddard Space Flight Center, Greenbelt, MD, USA; \url{Thomas.L.Clune@nasa.gov}}  
 %
-\thanks{{}$^{(10)}$ MIT, Boston, MA, USA \& University of Saarland, Germany \url{richard.littauer@gmail.com}}   
+\thanks{{}$^{(10)}$ Princeton University, Princeton, NJ, USA; \url{mdevalbo@astro.princeton.edu}}  
+%
+\thanks{{}$^{(11)}$ MIT, Boston, MA, USA \& University of Saarland, Germany \url{richard.littauer@gmail.com}}   
 %  
 %\thanks{{}$^{(4)}$ National Evolutionary Synthesis Center, Durham, NC, USA}
 %
@@ -1770,7 +1773,7 @@ sciences~\cite{wssspe2_piccolo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Code Testing \& Code Review} \label{sec:code_testing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Dan leading writing of this section}
+\todo{Dan leading writing of this section, with help from Tom Clune}
 
 \note{\href{http://tinyurl.com/l5t5h45}{Google doc notes}}
 %https://docs.google.com/document/d/1G1_U5-hkAvDKtTgT4DvUhIYvyYUY4cBBvQHJIdgADa0/edit#heading=h.v7g0nqpn1fur
@@ -1782,15 +1785,15 @@ This group began by recognizing that they know what the code testing and code re
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The consensus of the group was that small, concrete actions would have
-a greater chance of proper follow-through by mpmebers of the group.
+the greatest chance of proper followthrough by members of the group.
 An example of this approach was the Architecture of Open Source
 Applications book~\cite{aosa}, containing contributed chapters on open
 source software.  
-The group contemplated creating an analogous book/web-resource for
+The group contemplated creating an analogous book or web resource for
 testing of scientific software.
 
 Several members of the discussion indicated that while they valued the
-concpet software testing in theory, they were unaware how to test
+concept of software testing in theory, they were unaware how to test
 certain kinds of software.  
 Or, more importantly, they lacked relevant examples of software
 testing that would be suitable for new members to their team.
@@ -1806,19 +1809,18 @@ recognized that the difficulty is different for so-called software
 infrastructure than for numerical/scientific layers of software
 applications.  
 
-
-The group referred to Lorena Barba's ``12 Steps to Navier
-Stokes~\cite{12steps},'' an online CFD lesson repository created as a
-set of iPython notebooks.  \clunenote{I'm not sure of the context
-  here, except possibly as an analog for something under discussion.}
+%The group referred to Lorena Barba's ``12 Steps to Navier
+%Stokes~\cite{12steps},'' an online CFD lesson repository created as a
+%set of iPython notebooks.  \clunenote{I'm not sure of the context
+%  here, except possibly as an analog for something under discussion.}
 
 Grid Wilson pointed to an explanation of why Software Carpentry doesn't teach testing any more~\cite{SCtesting}, which boils down to two issues.  First, that scientific computing doesn't (yet) have the cultural norms for error bars that experimental sciences have, and second, that there is a breathtaking diversity of scientific code; scientific research is highly specialized, which means that the tests scientists write are much less transferable or reusable than those found in other fields.
 
 The group recognized that we need to teach people how to test short bits of code, we can't wait until we have thousands of lines of code. Greg commented, ``if we can't teach people how to test code until they're developing thousands of lines of code, we can't be surprised when they don't write tests.''
-
-Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
-\clunenote{I no longer recall the context for this statement; does not seem important to me.}
-
+%
+%Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
+%\clunenote{I no longer recall the context for this statement; does not seem important to me.}
+%
 Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
 One general rule that was suggested is that projects should not accept
@@ -1835,7 +1837,7 @@ subsequently insist upon using a framework for further work.
 The acknowledged challenge was how to create that crucial first exposure
 to such frameworks.
 
-Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you are doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.  I.e. expand the process of creating code from one that is solely about ``how?'' into one that also include ``why?''.
+Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you are doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.  That is to say, expand the process of creating code from one that is solely about ``how?'' into one that also include ``why?''
 
 Another point of discussion is that many scientists are not aware that ``testing the code'' and ``testing the science'' are distinct issues.  A related question that came up is ``How do you know that your method produces a result that is `close enough'?''
 
@@ -1854,128 +1856,24 @@ not have to be ``badly engineered'', but is either representative or
 is believed to be impenetrable from a unit-testing perspective.
 
 The group discussed how they learned testing.  One attendee learned from a tutorial on test driven development (TDD) at a Software Developers Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving the process could be applied with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.  He realized he was always building on top of other people’s software, and eventually realized that he should adopt those good software habits.  He also commented that
-most of those initial checks were ephemeral.  They live long enough to give the author of the test confidence in code, then the author moves on; the checks  are not handed on and made available to next user as permanent tests.
+most of those initial checks were ephemeral.  They live long enough to give the author of the test confidence in the code, then the author moves on; the checks  are not handed on and made available to next user as permanent tests.
 
 Attendees joked that they started testing when their skepticism/guilt became larger than their arrogance.
 
 The group suggested two papers by Hook and Kelly that would be useful for those interested in software testing to read~\cite{hook1,hook2}
 
-See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
-\clunenote{No opinion - someone thought it was a useful reference for the topic.}
+The group then decided that a useful action would be to create a set of scientific codes
+with associated tests. For each, they suggested:
+\begin{enumerate}
+\item Write your name and email address so we can get back in touch with you
+\item Write a paragraph or two explaining the scientific problem the code addresses
+\item Tell us how big the simplest piece of relevant, interesting code would be (very rough estimate of lines of code)
+\item Give us a point-form list of the test cases you would use
+\end{enumerate}
 
 
-\subsection{Testing examples}
-
-The group took some time to define 
-
-\katznote{... working from here still...}
-
-For each problem do:
-Write your name and email address so we can get back in touch with you
-Write a paragraph or two explaining the scientific problem the code addresses
-Tell us how big the simplest piece of relevant, interesting code would be (very rough estimate of lines of code)
-Give us a point-form list of the test cases you would use
-
-Tom Clune Problem 1<Thomas.L.Clune@nasa.gov>
-Runge-Kutta 4th order
-O(100 lines of code)
-point-form list of interesting tests
-%Test substep:      k’ = F(x + k h, t + h)
-%F (x) = C; h = 1; k = 1;   x = 0; expect k’ = C
-%F (x) = x^2; h = 2; k = ?;  x = 3; expect k’ = 16
-%Test that correct sequence of substeps are used:  use unrealistic F
-%F(x) =  {1,4,2,5} on nth call;  h = 1 (unused); x0 = 2;  expect x1 = ?(1*1 + 2*4 + 2*2 + 1*5) = 3
-<test with 2D/3D>
-
-
-Tom Clune Problem 2<Thomas.L.Clune@nasa.gov>
-Interpolation with unevenly spaced abscissae
-O(200 lines of code)
-point-form list of interesting tests
-Find bracket
-%Trivial case:  nodes @ {1,3}; x = 2;  interval = 1
-%nodes@{1,3,5};  x = 4; interval = 2
-%How to handle edges? nodes@{1,3,5}; x = 3
-%If/how to handle nodes that are not increasing?
-%If/how to handle duplicate node?
-%Find weights
-%End pt. - Interval = {1,2} ; x= 1;  w1 = 1
-%Other end pt. - Interval = {1,2}; x = 2; w1 = 0
-%middle - Interval = {1,2} x = 1.5; w1 = 0.5
-%other sizeInterval = {1, 5}; x = 4; w1 = 0.25
-%Combine weights:   
-%End pt - w1 = 1;   y1 = 1; y2 = 2;  y = 1
-%End pt - w1 = 0;  y1 = 1; y2 = 2; y =2
-%Middle - w1 = 0.5;   y1 = 1, y2 = 3;  y = 2
-Put it together
-At this point really checking that steps are called in order
-%interval = bracket(x)
-%find weights = (x, interval)
-%combine  y = sum(w_i, y_i)
-A few simple cases expressed as a table with expected values.
-
-Ethan White Problem 1<ethan@weecology.org>
-Logistic growth models are used to model the dynamics of populations of individuals both in isolation and when interacting with other species. At each time step the population of the focal species increases or decreases depending on its reproductive rate, competition from other species, and competition with other individuals of its own species. This growth can be either deterministic or stochastic. Stochastic growth involves some noise in the reproductive rate.
-25-100 lines
-point-form list of interesting tests
-%stochasticity == 0
-%r = 0, S=1, x_t = x_0
-%r >> 0, S=1, x_1000 = K
-%S=2, r1 > r2, K1=K2, x1_1000 = K1, x2_1000 = 0
-%S=2 r1=r2, k1=k2, x1_100 = x2_100 = analytical equilibrium 
-%stochasticity > 0
-%K = 0, x_t = 0
-%r1 >> r2, x1_1000 = K1, x2_1000 = K2
-pass a “stochasticity” function that changes things in a known way, either always returning the same value or with a set of values that has variation, but whose values are deterministic and then test against known outcomes
-e
-
-Ethan White Problem 1<ethan@weecology.org>
-Neutral model (based on https://github.com/rueuntal/species-associations/)
-100 lines
-point-form list of interesting tests
-%disp_function == no dispersal
-%m == 0, self.immigrants == 0 at any t
-pass a “stochasticity” function that changes things in a known way, either always returning the same value or with a set of values that has variation, but whose values are deterministic and then test against known outcomes
-
-Karen Cranston <karen.cranston@nescent.org>
-existing SWC example: http://software-carpentry.org/v4/setdict/phylogen.html 
-Given DNA sequences for a set of species, we can infer a tree that describes the evolutionary history of the species. We assume that the best tree is the one that involves the fewest number of changes in the DNA (the “maximum parsimony” tree). This code will calculate the parsimony score for a given tree and given DNA alignment. http://telliott99.blogspot.com/2010/03/fitch-and-sankoff-algorithms-for.html 
-hmmm…
-list of tests
-DNA sequences are identical; score = 0
-TLC:  Use Fitch’s algorithm for parsimony score.  Assuming your languages does not have built in type for Set.   (E.g. python does, but Fortran does not.) 
-%Test Set pseudo-Intersection  “^” (empty intersection is union)
-%Single nucleotide tests
-%{a} ^ {a} = {a}
-%{b} ^ {b} = {b}
-%{a} ^ {b} = {a,b
-%{a,b} ^ {b,c} = {b}
-%Multiple nucleotide tests
-%({a},{b})^({b},{b}) = ({a,b},{b})
-%Node tests:   Node v has tuple of sets (X_i(v)) and integer score S(v)
-%N1 = <({a});s=2>  N2 = <({a});s=3>    ->   Nparent = <({a}; s=2+3>
-%N1 = <({a},{a,b});s=2>  N2 = <({b},{b}});s=3>    ->   
-%Nparent = <({a,b},{b}); s=2+3+1>
-Probably should create a table of N1, N2, Nparent and write a generic test that checks each row of the table.
-Tree tests:  Assuming already have post-order binary tree traversal
-Tree with 2 leaves and one parent node.   Use table from 3.4.3 to check parent status after traversal with scoring rule
-Create more complex tree with 3-4 leaves.  Manually determine status of each top node.
-Define parsimony score as s-value of top node
-
-Greg Wilson <gvwilson@software-carpentry.org
-Invasion percolation is used to study the spread of pollutants in fractured rock. Model the rock as a 2D grid filled with random integers between 0 and K; mark the central cell as “filled”; and then repeatedly select the cell on the boundary with the lowest value (i.e., the most permeable) and fill it. The density of the resulting fractal tells you how quickly the pollutant spreads.
-Simple implementation is ~100 lines of Python.
-Interesting tests are:
-3x3 grid with a single ‘0’ on the boundary (all other cells are ‘1’) - should fill to boundary in a single step, and the cell with ‘0’ should be the one that fills.
-5x5 grid with a straight line of 0’s between the center and the boundary (same case as above, but expanded by one layer)
-5x5 grid: cells immediately surrounding the center are all ‘0’, all of boundary is ‘1’ except for one cell, which is 0 - all of the interior should fill, then the single cell on the boundary that’s a ‘1’
-
-For example, look at the testing of the invasion percolation code in this sequence of slides:
-The problem: http://software-carpentry.org/v4/invperc/intro.html 
-The testing: http://software-carpentry.org/v4/invperc/test.html 
-
-
-
+%See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
+%\clunenote{No opinion - someone thought it was a useful reference for the topic.}
 
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
