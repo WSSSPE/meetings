@@ -1772,7 +1772,7 @@ sciences~\cite{wssspe2_piccolo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Code Testing \& Code Review} \label{sec:code_testing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Dan leading writing of this section, with help from Tom Clune}
+\todo{Dan leading writing of this section, with help from Tom Clune and Karen Cranston}
 
 \note{\href{http://tinyurl.com/l5t5h45}{Google doc notes}}
 %https://docs.google.com/document/d/1G1_U5-hkAvDKtTgT4DvUhIYvyYUY4cBBvQHJIdgADa0/edit#heading=h.v7g0nqpn1fur
@@ -1791,12 +1791,56 @@ source software.
 The group contemplated creating an analogous book or web resource for
 testing of scientific software.
 
-Several members of the discussion indicated that while they valued the
+A key point of discussion was that there are two major challenges to software
+testing in science. The first is convincing developers to incorporate testing. This 
+challenge is both social and technical. We need to communicate the value of testing
+and also teach developers how to choose and use testing frameworks. The second 
+challenge - and the one that the group felt was more difficult - is choosing  
+appropriate tests for scientific software. This is the difference between learning how to use Python 
+\texttt{unittest} and knowing how to test that your code correctly implements, for example, a 
+Lattice-Boltzmann model in computational fluid dynamics. 
+
+\subsubsection{Choosing and implementing testing frameworks}
+There was general consensus that once a developer has been
+exposed to a testing framework in a nontrivial fashion, he/she will
+subsequently insist upon using a framework for further work.
+The acknowledged challenge was how to create that crucial first exposure
+to such frameworks.
+
+Within the group, there were several different paths by which participants had their 
+first exposure to code testing:
+\begin{itemize}
+\item Formal tutorials at conferences (for example, a test driven development (TDD) at a Software Developers Best Practices conference): These often require self-learning following the tutorial, and it can be hard to find a tutorial that matches the programming language and / or the domain of the participant. 
+\item As a way to be confident in other software: When breaking out pieces of software from a larger application, a developer wants to ensure the software works as expected. These types of tests may be ephemeral, though, living long enough to give the author of the test confidence in the code, but not handed on and made available to next user. These experiences can lead to more systematic testing. 
+\item Through experience with coding: As you write more software, your confidence in code is reduced and the importance of testing becomes clearer. Attendees joked that they started testing ``when their skepticism/guilt became larger than their arrogance''. 
+\item From other projects: When building on top of projects with good testing frameworks, you realize that you should also adopt those good software engineering habits.  
+\end{itemize}
+
+The two non-self-taught paths were direct learning and indirect through other software (learning by example). The group recognized that teaching about testing needs to start early in projects and careers. We need to teach people how to test short bits of code, rather than waiting until they have thousands of lines of code and being surprised when they don't write tests. The group generated a set of practical suggestions for improving adoption of code testing.
+
+Established software projects can encourage the latter through a simple rule of accepting only software patches with associated tests and through good documentation of testing practices and requirements. 
+
+Simpler, standard ways of setting up appropriate testing infrastructure will be important for adoption by scientists. Jenkins \footnote{\url{https://jenkins-ci.org/}} was suggested as a common open-source solution, but the initial configuration was considered to be challenging for typical scientists.
+
+Teach testing be beginning with a (smallish) 
+piece of code that lacks appropriate tests and develop an exercise that involves 
+refactoring the code into a more presentable form through creating / deriving unit 
+tests. Students would extract unit-tests through reverse-engineering and / or 
+questioning a partner who is a developer/expert.  
+
+This lead into a more general discussion about whether programming courses should be part of the standard curriculum for science students and the challenges of fitting additional material into university curricula. This is the reasons that short workshops such as Software Carpentry and others exist. 
+
+Ironically, Software Carpentry no longer teaches testing~\cite{SCtesting}. This boils down to two issues.  First, that scientific computing doesn't (yet) have the cultural norms for error bars that experimental sciences have, and second, that there is a breathtaking diversity of scientific code; scientific research is highly specialized, which means that the tests scientists write are much less transferable or reusable than those found in other fields. 
+
+\subsubsection{Writing tests for scientific software}
+The second major discussion thread in the group addressed the issues identified by Software Carpentry - the difficulties in writing tests appropriate for scientific software. Even among this group, while many What tests are appropriate to ensure that an complex method is working correctly? When is the result of a numerical computation 'close enough' to pass a test?
+ 
+Several members of the group indicated that while they valued the
 concept of software testing in theory, they were unaware how to test
 certain kinds of software.
 Or, more importantly, they lacked relevant examples of software
 testing that would be suitable for new members to their team.
-The group asked if it could produce a 100-line example of how to test
+As an example, the group asked if it could produce a 100-line example of how to test
 neutron transport (or other specific scientific examples) targeted at
 a sophomore? This would be a demonstration of ``How do I do this
 right?''
@@ -1813,64 +1857,27 @@ applications.
 %set of iPython notebooks.  \clunenote{I'm not sure of the context
 %  here, except possibly as an analog for something under discussion.}
 
-Grid Wilson pointed to an explanation of why Software Carpentry doesn't teach testing any more~\cite{SCtesting}, which boils down to two issues.  First, that scientific computing doesn't (yet) have the cultural norms for error bars that experimental sciences have, and second, that there is a breathtaking diversity of scientific code; scientific research is highly specialized, which means that the tests scientists write are much less transferable or reusable than those found in other fields.
-
-The group recognized that we need to teach people how to test short bits of code, we can't wait until we have thousands of lines of code. Greg commented, ``if we can't teach people how to test code until they're developing thousands of lines of code, we can't be surprised when they don't write tests.''
 %
 %Distinction between 100 lines of input files vs. 100 lines of source code \katznote{to delete? - don't see how it fits}
 %\clunenote{I no longer recall the context for this statement; does not seem important to me.}
-%
-Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
-One general rule that was suggested is that projects should not accept
-software patches that don't have associated tests.
-This led to discussion about the fact that setting up appropriate
-infrastructure for testing can be difficult.
-The group would like a standard way that runs out of the box.
-Jenkins was suggested as a common open-source solution, but initial
-configuration is considered to be challenging for typical scientists.
-
-Several members of the group commented that once a developer has been
-exposed to a testing framework in a nontrivial fashion, he/she will
-subsequently insist upon using a framework for further work.
-The acknowledged challenge was how to create that crucial first exposure
-to such frameworks.
+There is some discussion of the issue in the computer science literature~\cite{hook1,hook2} but less in domain-specific journals. Some lessons on multiphysics software verification can be found in a recent paper~\cite{dubey-FLASH}.
 
 Two important pieces of the barrier are a) picking/implementing testing frameworks (a technical barrier) and b) deciding what are the actual tests that I need to write?  A possible method to solve the latter is to ask students ``how is what you are doing different from typing random keys on the keyboard?'' and then, turn their answer into the concept of tests.  That is to say, expand the process of creating code from one that is solely about ``how?'' into one that also include ``why?''
 
 Another point of discussion is that many scientists are not aware that ``testing the code'' and ``testing the science'' are distinct issues.  A related question that came up is ``How do you know that your method produces a result that is `close enough'?''
 
-Some group members thought that every scientist should go through a programming class, but that was considered too big a goal for the group for the next year.  Also, it's not clear where these classes could be offered.  Software Carpentry exists because university curricula are full; they can't add extra classes.
-
-Tom Clune suggested that a useful demonstration could be generate by
-beginning with a (smallish) piece of badly engineered code that lacks
-appropriate unit tests.
-The code would then be refactored into a more presentable form once
-unit test were created/derived.
-However, such a collaboration must be with someone that either wrote
-the code or is intimately familiar with the subject matter.  The exercise would
-be to extract unit-tests through reverse-engineering {\b and}
-questioning the developer/expert.  Others suggested that the code does
-not have to be ``badly engineered'', but is either representative or
-is believed to be impenetrable from a unit-testing perspective.
-
-The group discussed how they learned testing.  One attendee learned from a tutorial on test driven development (TDD) at a Software Developers Best Practices conference. The examples were {\b not} relevant, partly since he was working with Fortran code in his job, so the remainder of his learning was in the form of proving the process could be applied with Fortran.  Another attendee said that most scientists have broken out pieces of software from a larger application and done some checking in an informal way.  The difference in his work is that he now knows about frameworks that let him do that systematically.  He realized he was always building on top of other people's software, and eventually realized that he should adopt those good software habits.  He also commented that
-most of those initial checks were ephemeral.  They live long enough to give the author of the test confidence in the code, then the author moves on; the checks  are not handed on and made available to next user as permanent tests.
-
-Attendees joked that they started testing when their skepticism/guilt became larger than their arrogance.
-
-The group suggested two papers by Hook and Kelly that would be useful for those interested in software testing to read~\cite{hook1,hook2}
-
 The group then decided that a useful action would be to create a set of scientific codes
-with associated tests. For each, they suggested:
+with associated tests. They developed the following basic structure for these examples 
+and sketched out six specific examples:
 \begin{enumerate}
-\item Write your name and email address so we can get back in touch with you
-\item Write a paragraph or two explaining the scientific problem the code addresses
-\item Tell us how big the simplest piece of relevant, interesting code would be (very rough estimate of lines of code)
-\item Give us a point-form list of the test cases you would use
+\item A paragraph or two explaining the scientific problem the code addresses
+\item The size of the simplest piece of relevant, interesting code (i.e. an estimate of lines of code)
+\item A point-form list of the test cases you would use
 \end{enumerate}
 
-
+The follow-up actions from this work include creating a compilation of testing examples in scientific software. Some of the examples from the workshop have become the starting seed of a collaborative book (https://github.com/swcarpentry/close-enough-for-scientific-work) in which scientists provide concrete examples of testing scientific software. The goal is a set of testing examples, aimed at sophomores in science and engineering, that cover a broad range of domains and problems and could be easily incorporated into other workshops or courses.
+ 
 %See the ``13 dwarves'' from Berkeley http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-183.html \katznote{to delete? - don't see how it fits}
 %\clunenote{No opinion - someone thought it was a useful reference for the topic.}
 
