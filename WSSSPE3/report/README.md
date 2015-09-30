@@ -7,11 +7,11 @@ high level summary in the main text, and a full report with a standard template 
 
 # Outline of Main Part of Report
 
-1. Abstract
+1. Abstract - Dan (later)
 
-2. Introduction
+2. Introduction - Dan (later)
 
-3. Methodology of Workshop
+3. Methodology of Workshop - Dan
 
 4. Keynote
 
@@ -41,9 +41,9 @@ high level summary in the main text, and a full report with a standard template 
 
   6.11 User Communities - Dan Gunter and Ethan Davis
 
-7. Conclusions
+7. Conclusions - Dan (later)
 
-8. Acknowledgements
+8. Acknowledgements - All
 
 9. Appendices 
 
