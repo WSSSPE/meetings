@@ -19,7 +19,7 @@ high level summary in the main text, and a full report with a standard template 
 
 6. Working groups 
 
-  6.1 Best Practices
+  6.1 Best Practices - Sandra Gessing and Abani Patra
 
   6.2 Funding Specialist Expertise - James Hetherington
 
@@ -51,7 +51,7 @@ high level summary in the main text, and a full report with a standard template 
 
   9.2 Workshop Reports
     
-    9.2.1 Best Practices
+    9.2.1 Best Practices - Sandra Gessing and Abani Patra
     
     9.2.2 Funding Specialist Expertise - James Hetherington
     
