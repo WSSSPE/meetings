@@ -214,7 +214,7 @@ Nic Weber
 institution: University of Washington
 email: nmweber@uw.edu
 
-Frank Loeffler
+Frank Löffler
 institution: Louisiana State University
 email: knarf@cct.lsu.edu
 
