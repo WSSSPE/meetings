@@ -17,28 +17,17 @@ high level summary in the main text, and a full report with a standard template 
  5. Lightening talks (one paragraph for each talk)
 
  6. Breakout groups 
-
- 6.1 
-
- 6.2 
-
- 6.3 
-
- 6.4 
-
- 6.5 
-
- 6.6 
-
- 6.7 
-
- 6.8 
-
- 6.9 
-
- 6.10 
-
- 6.11
+    6.1 Best Practices
+    6.2 Funding Specialist Expertise
+    6.3 Catalogs
+    6.4 Industry Interaction
+    6.5 Legacy Software
+    6.6 Engineering Design Principles
+    6.7 Metrics
+    6.8 Training
+    6.9 Software Credit
+    6.10 Publishing Software
+    6.11 User Communities
 
  7. Conclusions
 
