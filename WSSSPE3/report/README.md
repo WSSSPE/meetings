@@ -4,6 +4,7 @@ Everyone involved in WSSSPE3 is welcome and encouraged to contribute to writing 
 Please edit this file to mark the sections you are working on. The eleven breakout groups will be included with a 
 high level summary in the main text, and a full report with a standard template in the appendix.
 
+
 # Outline of Main Part of Report
 
 1. Abstract
@@ -73,3 +74,20 @@ high level summary in the main text, and a full report with a standard template 
     9.2.11 User Communities
 
 10. References
+
+# Working Group POC and Participants
+
+Working Group | POC / Participants
+------------- | ------------
+Best Practices |  
+Funding Specialist Expertise | 
+Catalogs | 
+Industry Interaction |
+Legacy Software |
+Engineering Design Principles |
+Metrics | 
+Training | 
+Software Credit |
+Publishing Software |
+User Communities |
+
