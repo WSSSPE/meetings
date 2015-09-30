@@ -21,7 +21,7 @@ high level summary in the main text, and a full report with a standard template 
 
   6.1 Best Practices
 
-  6.2 Funding Specialist Expertise
+  6.2 Funding Specialist Expertise - James Hetherington
 
   6.3 Catalogs
 
@@ -29,17 +29,17 @@ high level summary in the main text, and a full report with a standard template 
 
   6.5 Legacy Software
 
-  6.6 Engineering Design Principles
+  6.6 Engineering Design Principles - Ilian Todorov
 
-  6.7 Metrics
+  6.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
 
   6.8 Training
 
-  6.9 Software Credit
+  6.9 Software Credit - Kyle Niemeyer
 
-  6.10 Publishing Software
+  6.10 Publishing Software - Steve Brandt
 
-  6.11 User Communities
+  6.11 User Communities - Dan Gunter and Ethan Davis
 
 7. Conclusions
 
@@ -47,13 +47,13 @@ high level summary in the main text, and a full report with a standard template 
 
 9. Appendices 
 
-  9.1 Attendees
+  9.1 Attendees - Frank Löffler
 
   9.2 Workshop Reports
     
     9.2.1 Best Practices
     
-    9.2.2 Funding Specialist Expertise
+    9.2.2 Funding Specialist Expertise - James Hetherington
     
     9.2.3 Catalogs
     
@@ -61,17 +61,17 @@ high level summary in the main text, and a full report with a standard template 
     
     9.2.5 Legacy Software
     
-    9.2.6 Engineering Design Principles
+    9.2.6 Engineering Design Principles - Ilian Todorov
     
-    9.2.7 Metrics
+    9.2.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
     9.2.8 Training
     
-    9.2.9 Software Credit
+    9.2.9 Software Credit - Kyle Niemeyer
     
-    9.2.10 Publishing Software
+    9.2.10 Publishing Software - Steve Brandt
     
-    9.2.11 User Communities
+    9.2.11 User Communities - Dan Gunter and Ethan Davis
 
 10. References
 
