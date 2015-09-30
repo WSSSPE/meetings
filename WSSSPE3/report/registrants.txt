@@ -1,239 +1,235 @@
-Sandra Gesing
-institution: University of Notre Dame
-email: sandra.gesing@nd.edu
-
-Kyle Niemeyer
-institution: Oregon State University
-email: Kyle.Niemeyer@oregonstate.edu
-
-Neil Chue Hong
-institution: Software Sustainability Institute
-email: N.ChueHong@software.ac.uk
-
-Jeffrey Carver
-institution: University of Alabama
-email: carver@cs.ua.edu
-
-Jaroslaw Nabrzyski
-institution: University of Notre Dame
-email: naber@nd.edu
-
-Don Middleton
-institution: NCAR
-email: don@ucar.edu
-
-Dan Gunter
-institution: LBNL
-email: dkgunter@lbl.gov
-
-Iain Larmour
-institution: EPSRC (UK)
-email: Iain.Larmour@epsrc.ac.uk
-
-Gregory Tucker
-institution: University of Colorado at Boulder
-email: gtucker@colorado.edu
-
-Davide DelVento
-institution: NCAR/CISL
-email: ddvento@ucar.edu
-
-nancy collins
-institution: NCAR
-email: nancy@ucar.edu
-
-Nick Jones
-institution: New Zealand eScience Infrastructure (NeSI)
-email: nick.jones@nesi.org.nz
-
-Lorraine Hwang
-institution: UC Davis - CIG
-email: ljhwang@ucdavis.edu
-
-Colin Venters
-institution: University of Huddersfield
-email: colin.venters@googlemail.com
-
-Mark Miller
-institution: SDSC
-email: mark.alan.miller2@gmail.com
-
-Ethan Davis
-institution: UCAR Unidata
-email: edavis@ucar.edu
-
-Patrick Nichols
-institution: National Center for Atmospheric Research
-email: pnichols@ucar.edu
-
-James Hetherington
-institution: University College London
-email: jamespjh@gmail.com
-
-Daniel Katz
-institution: U Chicago & Argonne
-email: dsk@uchicago.edu
-
-Jeff McWhirter
-institution: Geode Systems
-email: jeff.mcwhirter@gmail.com
-
-Daniel Ziskin
-institution: NCAR - ACOM
-email: ziskin@ucar.edu
-
-Ward Fisher
-institution: UCAR/Unidata
-email: wfisher@ucar.edu
-
-Ilian Todorov
-institution: Science & Technology Facilities Council, UK
-email: ilian.todorov@stfc.ac.uk
-
-Janine Aquino
-institution: UCAR/NCAR Earth Observing Laboratory
-email: janine@ucar.edu
-
-Daniel Sellars
-institution: CANARIE Inc
-email: dan.sellars@canarie.ca
-
-Lindsay Powers
-institution: The HDF Group
-email: lpowers@hdfgroup.org
-
-Laura Owen
-institution: NCSA
-email: lowen@illinois.edu
+Alice Allen
+institution: Astrophysics Source Code Library
+email: aallen@ascl.net
 
 Gabrielle Allen
 institution: NCSA
 email: gdallen@illinois.edu
 
-Matthew Turk
-institution: NCSA
-email: mjturk@illinois.edu
-
-Constantinos Michailidis
-institution: Knowinnovation
-email: costa.michailidis@knowinnovation.com
-
-Pate Motter
-institution: University of Colorado
-email: pate.motter@colorado.edu
-
-Birgit Penzenstadler
-institution: California State University Long Beach
-email: Birgit.Penzenstadler@csulb.edu
-
-Abigail Cabunoc Mayes
-institution: Mozilla Foundation
-email: abigail@mozillafoundation.org
-
-Sou Cheng Choi
-institution: NORC at UChicago / IIT
-email: sctchoi@uchicago.edu
-
-Tim Dunne
-institution: KnowInnovation 
-email: tim.dunne@knowinnovation.com
-
-Yuhan Ding
-institution: Illinois Institute of Technology
-email: yding2@hawk.iit.edu
-
 Janine Aquino
-institution: NCAR
-email: rochell@ucar.edu
-
-Raymond Idaszak
-institution: RENCI; University of North Carolina at Chapel Hill
-email: rayi@renci.org
-
-Ryan May
-institution: UCAR/Unidata
-email: rmay@ucar.edu
-
-Elisabeth Huffer
-institution: Lingua Logica/NASA 
-email: beth@lingualogica.net
-
-Fraser Watson
-institution: National Solar Observatory
-email: fwatson@nso.edu
-
-Suresh Marru
-institution: Indiana University
-email: smarru@iu.edu
-
-Bernie Randles
-institution: UCLA
-email: randles@ucla.edu
-
-Grace Peng
-institution: National Center for Atmospheric Research
-email: grace@ucar.edu
-
-Alexander Vyushkov
-institution: University of Notre Dame
-email: avyushko@nd.edu
-
-Nikolay Simakov
-institution: SUNY University at Buffalo
-email: nikolays@buffalo.edu
-
-Ted Habermann
-institution: The HDF Group
-email: thabermann@hdfgroup.org
-
-Matthias Bussonnier
-institution: UC Berkeley
-email: bussonniermatthias@gmail.com
-
-Alice Allen
-institution: Astrophysics Source Code Library
-email: aallen@ascl.net
-
-Ian Taylor
-institution: Cardiff University
-email: ian.j.taylor@gmail.com
-
-Emily Chen
-institution: NCSA
-email: echen35@illinois.edu
-
-Benjamin Tovar
-institution: University of Notre Dame
-email: btovar@nd.edu
-
-Erin Robinson
-institution: Foundation for Earth Science
-email: erinrobinson@esipfed.org
-
-Nic Weber
-institution: University of Washington
-email: nmweber@uw.edu
-
-Frank Löffler
-institution: Louisiana State University
-email: knarf@cct.lsu.edu
-
-Elizabeth Jessup
-institution: University of Colorado Boulder
-email: jessup@cs.colorado.edu
-
-Josh Greenberg
-institution: Sloan Foundation
-email: greenberg@sloan.org
+institution: UCAR/NCAR Earth Observing Laboratory
+email: janine@ucar.edu
 
 Steven Brandt
 institution: Louisiana State University
 email: sbrandt@cct.lsu.edu
 
+Jed Brown
+institution: CU Boulder
+email: jed@jedbrown.org
+
+Matthias Bussonnier
+institution: UC Berkeley
+email: bussonniermatthias@gmail.com
+
+Abigail Cabunoc Mayes
+institution: Mozilla Foundation
+email: abigail@mozillafoundation.org
+
+Jeffrey Carver
+institution: University of Alabama
+email: carver@cs.ua.edu
+
+Emily Chen
+institution: NCSA
+email: echen35@illinois.edu
+
+Sou Cheng Choi
+institution: NORC at UChicago / IIT
+email: sctchoi@uchicago.edu
+
+Neil Chue Hong
+institution: Software Sustainability Institute
+email: N.ChueHong@software.ac.uk
+
+Nancy Collins
+institution: NCAR
+email: nancy@ucar.edu
+
+Ethan Davis
+institution: UCAR Unidata
+email: edavis@ucar.edu
+
+Davide DelVento
+institution: NCAR/CISL
+email: ddvento@ucar.edu
+
+Yuhan Ding
+institution: Illinois Institute of Technology
+email: yding2@hawk.iit.edu
+
+Tim Dunne
+institution: KnowInnovation 
+email: tim.dunne@knowinnovation.com
+
+Ward Fisher
+institution: UCAR/Unidata
+email: wfisher@ucar.edu
+
+Sandra Gesing
+institution: University of Notre Dame
+email: sandra.gesing@nd.edu
+
+Josh Greenberg
+institution: Sloan Foundation
+email: greenberg@sloan.org
+
+Dan Gunter
+institution: LBNL
+email: dkgunter@lbl.gov
+
+Ted Habermann
+institution: The HDF Group
+email: thabermann@hdfgroup.org
+
+James Hetherington
+institution: University College London
+email: jamespjh@gmail.com
+
+Elisabeth Huffer
+institution: Lingua Logica/NASA 
+email: beth@lingualogica.net
+
+Lorraine Hwang
+institution: UC Davis - CIG
+email: ljhwang@ucdavis.edu
+
+Raymond Idaszak
+institution: RENCI; University of North Carolina at Chapel Hill
+email: rayi@renci.org
+
+Elizabeth Jessup
+institution: University of Colorado Boulder
+email: jessup@cs.colorado.edu
+
+Nick Jones
+institution: New Zealand eScience Infrastructure (NeSI)
+email: nick.jones@nesi.org.nz
+
+Daniel Katz
+institution: U Chicago & Argonne
+email: dsk@uchicago.edu
+
+Iain Larmour
+institution: EPSRC (UK)
+email: Iain.Larmour@epsrc.ac.uk
+
+Frank Löffler
+institution: Louisiana State University
+email: knarf@cct.lsu.edu
+
+Suresh Marru
+institution: Indiana University
+email: smarru@iu.edu
+
+Ryan May
+institution: UCAR/Unidata
+email: rmay@ucar.edu
+
+Jeff McWhirter
+institution: Geode Systems
+email: jeff.mcwhirter@gmail.com
+
+Constantinos Michailidis
+institution: Knowinnovation
+email: costa.michailidis@knowinnovation.com
+
+Don Middleton
+institution: NCAR
+email: don@ucar.edu
+
+Mark Miller
+institution: SDSC
+email: mark.alan.miller2@gmail.com
+
+Pate Motter
+institution: University of Colorado
+email: pate.motter@colorado.edu
+
+Jaroslaw Nabrzyski
+institution: University of Notre Dame
+email: naber@nd.edu
+
+Patrick Nichols
+institution: National Center for Atmospheric Research
+email: pnichols@ucar.edu
+
+Kyle Niemeyer
+institution: Oregon State University
+email: Kyle.Niemeyer@oregonstate.edu
+
+Laura Owen
+institution: NCSA
+email: lowen@illinois.edu
+
 Abani Patra
 institution: Univ at Buffalo
 email: abani@buffalo.edu
 
-Jed Brown
-institution: CU Boulder
-email: jed@jedbrown.org
+Grace Peng
+institution: National Center for Atmospheric Research
+email: grace@ucar.edu
+
+Birgit Penzenstadler
+institution: California State University Long Beach
+email: Birgit.Penzenstadler@csulb.edu
+
+Lindsay Powers
+institution: The HDF Group
+email: lpowers@hdfgroup.org
+
+Bernie Randles
+institution: UCLA
+email: randles@ucla.edu
+
+Erin Robinson
+institution: Foundation for Earth Science
+email: erinrobinson@esipfed.org
+
+Daniel Sellars
+institution: CANARIE Inc
+email: dan.sellars@canarie.ca
+
+Nikolay Simakov
+institution: SUNY University at Buffalo
+email: nikolays@buffalo.edu
+
+Ian Taylor
+institution: Cardiff University
+email: ian.j.taylor@gmail.com
+
+Ilian Todorov
+institution: Science & Technology Facilities Council, UK
+email: ilian.todorov@stfc.ac.uk
+
+Benjamin Tovar
+institution: University of Notre Dame
+email: btovar@nd.edu
+
+Gregory Tucker
+institution: University of Colorado at Boulder
+email: gtucker@colorado.edu
+
+Matthew Turk
+institution: NCSA
+email: mjturk@illinois.edu
+
+Colin Venters
+institution: University of Huddersfield
+email: colin.venters@googlemail.com
+
+Alexander Vyushkov
+institution: University of Notre Dame
+email: avyushko@nd.edu
+
+Fraser Watson
+institution: National Solar Observatory
+email: fwatson@nso.edu
+
+Nic Weber
+institution: University of Washington
+email: nmweber@uw.edu
+
+Daniel Ziskin
+institution: NCAR - ACOM
+email: ziskin@ucar.edu
