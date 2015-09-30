@@ -14,7 +14,7 @@ high level summary in the main text, and a full report with a standard template 
 
 4. Keynote
 
-5. Lightening talks (one paragraph for each talk)
+5. Lightning talks (one paragraph for each talk)
 
 6. Working groups 
 
