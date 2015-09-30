@@ -15,7 +15,7 @@ high level summary in the main text, and a full report with a standard template 
 
 4. Keynote
 
-5. Lightning talks (one paragraph for each talk)
+5. Lightning talks (one paragraph for each talk) - Frank Löffler to request paragraphs from each speaker and merge them together
 
 6. Working groups 
 
