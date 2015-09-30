@@ -6,70 +6,70 @@ high level summary in the main text, and a full report with a standard template 
 
 # Outline of Main Part of Report
 
- 1. Abstract
+1. Abstract
 
- 2. Introduction
+2. Introduction
 
- 3. Methodology of Workshop
+3. Methodology of Workshop
 
- 4. Keynote
+4. Keynote
 
- 5. Lightening talks (one paragraph for each talk)
+5. Lightning talks (one paragraph for each talk)
 
- 6. Breakout groups 
+6. Working groups 
 
- 6.1 
+  6.1 Best Practices
 
- 6.2 
+  6.2 Funding Specialist Expertise
 
- 6.3 
+  6.3 Catalogs
 
- 6.4 
+  6.4 Industry Interaction
 
- 6.5 
+  6.5 Legacy Software
 
- 6.6 
+  6.6 Engineering Design Principles
 
- 6.7 
+  6.7 Metrics
 
- 6.8 
+  6.8 Training
 
- 6.9 
+  6.9 Software Credit
 
- 6.10 
+  6.10 Publishing Software
 
- 6.11
+  6.11 User Communities
 
- 7. Conclusions
+7. Conclusions
 
- 8. Acknowledgements
+8. Acknowledgements
 
- 9. Appendices 
+9. Appendices 
 
- 9.1 Attendees
+  9.1 Attendees
 
- 9.2 Workshop Reports
+  9.2 Workshop Reports
+    
+    9.2.1 Best Practices
+    
+    9.2.2 Funding Specialist Expertise
+    
+    9.2.3 Catalogs
+    
+    9.2.4 Industry Interaction
+    
+    9.2.5 Legacy Software
+    
+    9.2.6 Engineering Design Principles
+    
+    9.2.7 Metrics
+    
+    9.2.8 Training
+    
+    9.2.9 Software Credit
+    
+    9.2.10 Publishing Software
+    
+    9.2.11 User Communities
 
- 9.2.1 
-
- 9.2.2
-
- 9.2.3
-
- 9.2.4
-
- 9.2.5
-
- 9.2.6
-
- 9.2.7
-
- 9.2.8
-
- 9.2.9
-
- 9.2.10
-
- 9.2.11
-
- 10. References
+10. References
