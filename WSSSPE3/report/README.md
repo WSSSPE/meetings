@@ -29,7 +29,7 @@ high level summary in the main text, and a full report with a standard template 
 
   6.5 Legacy Software
 
-  6.6 Engineering Design Principles - Ilian Todorov
+  6.6 Engineering Design Principles - Colin Venters, Ilian Todorov
 
   6.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
 
@@ -61,7 +61,7 @@ high level summary in the main text, and a full report with a standard template 
     
     9.2.5 Legacy Software
     
-    9.2.6 Engineering Design Principles - Ilian Todorov
+    9.2.6 Engineering Design Principles - Colin Venters, Ilian Todorov
     
     9.2.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
