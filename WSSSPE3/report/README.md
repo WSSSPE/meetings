@@ -13,7 +13,7 @@ high level summary in the main text, and a full report with a standard template 
 
 3. Methodology of Workshop - Dan
 
-4. Keynote
+4. Keynote - Sou-Cheng 
 
 5. Lightning talks (one paragraph for each talk) - Frank Löffler to request paragraphs from each speaker and merge them together
 
