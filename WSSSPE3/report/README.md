@@ -23,23 +23,23 @@ high level summary in the main text, and a full report with a standard template 
 
   6.2 Funding Specialist Expertise - James Hetherington
 
-  6.3 Catalogs
+  6.3 Catalogs - Bernie Randles?
 
-  6.4 Industry Interaction
+  6.4 Industry Interaction - Nic Weber, Suresh Marru
 
-  6.5 Legacy Software
+  6.5 Legacy Software - Pate Motter?
 
   6.6 Engineering Design Principles - Colin Venters, Ilian Todorov
 
   6.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
 
-  6.8 Training
+  6.8 Training - Erin Robinson, Nick Jones
 
   6.9 Software Credit - Kyle Niemeyer
 
   6.10 Publishing Software - Steve Brandt
 
-  6.11 User Communities - Dan Gunter and Ethan Davis
+  6.11 User Communities - Dan Gunter, Ethan Davis
 
 7. Conclusions - Dan (later)
 
@@ -55,23 +55,23 @@ high level summary in the main text, and a full report with a standard template 
     
     9.2.2 Funding Specialist Expertise - James Hetherington
     
-    9.2.3 Catalogs
+    9.2.3 Catalogs - Bernie Randles?
     
-    9.2.4 Industry Interaction
+    9.2.4 Industry Interaction - Nic Weber, Suresh Marru
     
-    9.2.5 Legacy Software
+    9.2.5 Legacy Software - Pate Motter?
     
     9.2.6 Engineering Design Principles - Colin Venters, Ilian Todorov
     
     9.2.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
-    9.2.8 Training
+    9.2.8 Training - Erin Robinson, Nick Jones
     
     9.2.9 Software Credit - Kyle Niemeyer
     
     9.2.10 Publishing Software - Steve Brandt
     
-    9.2.11 User Communities - Dan Gunter and Ethan Davis
+    9.2.11 User Communities - Dan Gunter, Ethan Davis
 
 10. References
 
