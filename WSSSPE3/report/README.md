@@ -7,73 +7,71 @@ high level summary in the main text, and a full report with a standard template 
 
 # Outline of Main Part of Report
 
-1. Abstract - Dan (later)
+Abstract - Dan (later)
 
-2. Introduction - Dan
+1. Introduction - Dan
 
-3. Methodology of Workshop - Dan
+2. Methodology of Workshop - Dan
 
-4. Keynote - Sou-Cheng 
+3. Keynote - Sou-Cheng 
 
-5. Lightning talks (one paragraph for each talk) - Frank Löffler to request paragraphs from each speaker and merge them together
+4. Lightning talks (one paragraph for each talk) - Frank Löffler to request paragraphs from each speaker and merge them together
 
-6. Working groups 
+5. Working groups 
 
-  6.1 Best Practices - Sandra Gessing and Abani Patra
+  5.1 Best Practices - Sandra Gessing and Abani Patra
 
-  6.2 Funding Specialist Expertise - James Hetherington
+  5.2 Funding Specialist Expertise - James Hetherington
 
-  6.3 Catalogs - Bernie Randles?
+  5.3 Catalogs - Bernie Randles?
 
-  6.4 Industry Interaction - Nic Weber, Suresh Marru
+  5.4 Industry Interaction - Nic Weber, Suresh Marru
 
-  6.5 Legacy Software - Pate Motter?
+  5.5 Legacy Software - Pate Motter?
 
-  6.6 Engineering Design Principles - Colin Venters, Ilian Todorov
+  5.6 Engineering Design Principles - Colin Venters, Ilian Todorov
 
-  6.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
+  5.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
 
-  6.8 Training - Erin Robinson, Nick Jones
+  5.8 Training - Erin Robinson, Nick Jones
 
-  6.9 Software Credit - Kyle Niemeyer
+  5.9 Software Credit - Kyle Niemeyer
 
-  6.10 Publishing Software - Steve Brandt
+  5.10 Publishing Software - Steve Brandt
 
-  6.11 User Communities - Dan Gunter, Ethan Davis
+  5.11 User Communities - Dan Gunter, Ethan Davis
 
-7. Conclusions - Dan (later)
+6. Conclusions - Dan (later)
 
-8. Acknowledgements - All
+Acknowledgements - All
 
-9. Appendices 
+Appendices 
 
-  9.1 Attendees - Frank Löffler
+  A. Attendees - Frank Löffler
 
-  9.2 Workshop Reports
+  B. Best Practices - Sandra Gessing and Abani Patra
     
-    9.2.1 Best Practices - Sandra Gessing and Abani Patra
+  C. Funding Specialist Expertise - James Hetherington
     
-    9.2.2 Funding Specialist Expertise - James Hetherington
+  D. Catalogs - Bernie Randles?
     
-    9.2.3 Catalogs - Bernie Randles?
+  E. Industry Interaction - Nic Weber, Suresh Marru
     
-    9.2.4 Industry Interaction - Nic Weber, Suresh Marru
+  F. Legacy Software - Pate Motter?
     
-    9.2.5 Legacy Software - Pate Motter?
+  G. Engineering Design Principles - Colin Venters, Ilian Todorov
     
-    9.2.6 Engineering Design Principles - Colin Venters, Ilian Todorov
+  H. Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
-    9.2.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
+  I. Training - Erin Robinson, Nick Jones
     
-    9.2.8 Training - Erin Robinson, Nick Jones
+  J. Software Credit - Kyle Niemeyer
     
-    9.2.9 Software Credit - Kyle Niemeyer
+  K. Publishing Software - Steve Brandt
     
-    9.2.10 Publishing Software - Steve Brandt
-    
-    9.2.11 User Communities - Dan Gunter, Ethan Davis
+  L. User Communities - Dan Gunter, Ethan Davis
 
-10. References
+References
 
 # Working Group POC and Participants
 
