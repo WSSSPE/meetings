@@ -9,7 +9,7 @@ high level summary in the main text, and a full report with a standard template 
 
 1. Abstract - Dan (later)
 
-2. Introduction - Dan (later)
+2. Introduction - Dan
 
 3. Methodology of Workshop - Dan
 
