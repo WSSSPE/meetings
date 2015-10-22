@@ -20,6 +20,7 @@
 \usepackage{wrapfig}
 \usepackage{longtable}
 \usepackage{verbatim}
+\usepackage{booktabs,multicol}
 
 % The following three lines are used for displaying footnote in tables.
 \usepackage{footnote}
@@ -486,7 +487,7 @@ Community}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \todo{need to update for WSSSPE3}
-The WSSSPE2 workshop continued our experiment from WSSSPE1 in how we can
+The WSSSPE3 workshop continued our experiment from WSSSPE1 and WSSSPE2 in how we can
 collaboratively build a workshop agenda, and we began a new experiment in
 how to build a series of workshops into an ongoing community activity.
 
@@ -508,79 +509,82 @@ provide a record of the workshop.
 
 \begin{table*}[t]
 \centering
-\caption{Top tweets tagged \#WSSSPE on Nov 16, 2014. \todo{update this for WSSSPE3?}}\label{tab:tweets}
+\caption{Top tweets tagged \#WSSSPE or \#WSSSPE3 on Sep.\ 28--29, 2015. \todo{update this for WSSSPE3?}}\label{tab:tweets}
   \begin{scriptsize}
-  \begin{tabular}{l|l|r|r}
- \hline
+  \begin{tabular}{@{}l l l l@{}}
+ \toprule
     Author  &   Tweet  & Retweets &  Favorites
-\\ \hline
-% Software Carpentry & Nov 17 & You call it ``project planning'' if it hasn't started yet,          & 8 & 1
-%\\                          & &  and``software sustainability'' if it has and wasn't planned.     &    &
+\\ \midrule
+Neil P Chue Hong  &  Getting ready for the start of the \#WSSSPE workshop & 2 & 1
+\\ & \url{http://wssspe.researchcomputing.org.uk/wssspe3/agenda/}  & &
+\\ & Video stream: \url{http://ucarconnect.ucar.edu/live?room=cg1aud} & &
 %
-Neil P Chue Hong   &  Here's @SoftwareSaved guidance on Writing and using a software & 7 & 4
-\\     &  management plan used by EPSRC software grants    &    &
-\\     &  \url{http://www.software.ac.uk/resources/guides/software-management-plans}  &    &
+\\ August Muench & Astronomy \& Software for a totally distracting Monday (2/2) => & 1 & 3
+\\ & Workshop on Sustainable SW for Science \#WSSSPE3 & & 
+\\ & \url{http://wssspe.researchcomputing.org.uk/wssspe3/agenda/} & &
 %
-\\  Neil P Chue Hong  &  @jameshowison as well as software plans   & 4 & 7
-\\   &   \url{http://www.software.ac.uk/resources/guides/software-management-plans} &    &
-\\   &   we provide a software evaluation tool:   &    &
-\\   &   \url{http://www.software.ac.uk/online-sustainability-evaluation}  &    &
+\\ Neil P Chue Hong & My \#WSSSPE lightning talk on Building a Scientific Software & 6 & 3
+\\ &  Accreditation Framework: \url{http://dx.doi.org/10.6084/m9.figshare.1555925} & & 
 %
-\\ Tom Crick  & $56\%$ of UK researchers develop their own software $\rightarrow  140,000$   &  14 & 8
-\\ & UK researchers write research software w$/$out any formal training &    &
+\\ Mozilla Science Lab & At \#wssspe3 and want to learn more about our Working Open guide & 2 & 1 
+\\ &  or Contributorship badges pilot? Keep an eye out for @abbycabs! & & 
 %
-\\ Karthik Ram  &  OH: ``Institutionalize metadata before metadata institutionalizes you'' & 8 & 6
+\\ Daniel S.\ Katz & \#wssspe starting! & 1 & 3
 %
-\\ Josh Greenberg  &  @jameshowison: ``1. retract any paper with bitrotten dependencies'' *mic drop* & 13 & 8
-\\   &   ``2. add anyone who fixes bitrot as an author'' *mic drop*  &    &
+\\ Daniel S.\ Katz & @powersoffour starting \#wssspe keynote & 1 & 2
 %
-\\ Ethan White &  ``@rOpenSci is all about community... our measures of success  & 9 & 3
-\\ &   [include] how many faces are up on our community page''   &    &
+\\ Neil P Chue Hong   &  The difference between software presented at SC \& SciPy & 1 & 4
+\\  &  according to @powersoffour straw person \#wssspe & &
 %
-\\ Ethan White & Daniel Katz talking about implementing transitive credit for  & 9 & 7
-\\ &  software \url{http://arxiv.org/abs/1407.5117}  Work with @arfon  &    &
+\\ Daniel S.\ Katz & sustainability may mean: keeps up with bug reports, adds new features, & 3 & 1
+\\ &  works on new architectures (1/2)  -- @powersoffour at \#wssspe (1/2) & & 
 %
-\\ Kaitlin Thaney  & Great point by @tracykteal about planning for ``end of life'' with scientific & 4 & 8
-\\ &  software projects and sustainability.  & &
+\\ Daniel S.\ Katz & sustainability may mean: people use it, keeps getting funded, produces & 2 & 
+\\ &  same results, transits over people (2/2)  -- @powersoffour at \#wssspe & &
 %
-%\\ Aleksandra Pawlik  &  ``Tell us how you test your scientific software'' @gvwilson @swcarpentry  & 7 & 2
+\\ Nic Weber & Rec, by Matt Turk: Ash Dryden - Ethics of Unpaid Labor & 3 & 2 
+\\ & \url{http://t.co/KfMwS4VG4N} & &
 %
-\\ Aleksandra Pawlik  & Lack of training as one of the main barriers for sustainable software & 10 & 4
-\\ &    at @Supercomputing. @swcarpentry @datacarpentry can fix that!  & &
+\\ Nic Weber & My .02 - many more models (than 3) for sustaining sci. software. & 3 & 2
+\\ & See this pub on open-source:  & & 
+\\ & \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2568185} & &
 %
-\\ Kaitlin Thaney  & My slides from this morning's keynote at & 11 & 12
-\\ &  WSSSPE on Designing for Truth, Scale $+$ Sustainability:  & &
-\\ &  \href{http://www.slideshare.net/kaythaney/designing-for-truth-scale-and-sustainability-wssspe2-keynote}{http://www.slideshare.net/kaythaney/}     & &
-\\ &  \href{http://www.slideshare.net/kaythaney/designing-for-truth-scale-and-sustainability-wssspe2-keynote}{designing-for-truth-scale-and-sustainability-wssspe2-keynote} & &
+\\ Erin Robinson & \#WSSSPE - Software is like a vampire. It's only dead if you really kill it. & 2 & 2
 %
-\\ Neil P Chue Hong & @kaythaney shout out for @swcarpentry @datacarpentry & 9 & 4
-\\ &  @rOpenSci @stilettofiend around open training activities for sustainability  & &
+\\ Neil P Chue Hong & Absolutely great \#wssspe keynote from @powersoffour to inspire & 2 & 1 
+\\ & the workshop. Should be archived via & & 
+\\ & \url{http://ucarconnect.ucar.edu/live?room=cg1aud#.VgmpvCdIrCQ} soon & & 
 %
-%\\ Richard Littauer &  Sweet! @swcarpentry has had 4000+ learners in the past year. & 6 &
+\\ Daniel S.\ Katz & \#wssspe lightning talks starting - streaming at  & 5  &  1
+\\ &  \url{http://ucarconnect.ucar.edu/live?room=cg1aud} & & 
 %
-\\ Neil P Chue Hong & For those interested in Github - Figshare/Zenodo integration, & 5 & 12
-\\ & but want SWORD/DSpace/Fedora/ePrints see:  & &
-\\ & \url{http://blog.stuartlewis.com/2014/09/09/github-to-repository-deposit/}  & &
+\\ Kyle Niemeyer & Participatory open source means better documentation  & 2 & 1 
+\\ & (readme, roadmap, contributing) ? @abbycabs at \#wssspe & &
 %
-\\ Hilmar Lapp & Re: adopting the unix philosophy, consider signing the Small Tools in & 7 & 6
-\\ & Bioinformatics Manifesto: \url{https://github.com/pjotrp/bioinformatics}   &
+\\ Erin Robinson & Interesting resource: \url{http://mozillascience.github.io/leadership-training/} & 2 & 
+\\ &  \#WSSSPE cc: @abbycabs & & 
 %
-\\Andre Luckow &  ``Traditions last not because they are excellent, & 12 & 3
-\\ & but because influential people are averse to change...''  C. Sunstein     & &
+\\ Nic Weber & @MozillaScience + @abbycabs giving look at cool resources & 2 & 3
+\\ & for leading an open source community & & 
+\\ & \url{http://mozillascience.github.io/leadership-training/} & & 
 %
-\\ Tom Crick &  ``Can I Implement Your Algorithm?'':  A Model for  Reproducible & 9 & 8
-\\   &  Research Software \url{http://arxiv.org/abs/1407.5981}  & &
+\\ Nic Weber & Some interesting sepeartion of best practices for Geosoftware dev & 2 & 
+\\ & into categories \url{https://geodynamics.org/cig/dev/best-practices} & &
 %
-\\Mozilla Science Lab & At a loose end this Sunday? Care about reproducibility, software  $+$ & 10 & 5
-\\ &  \#openscience? Follow the    \#WSSSPE hashtag for more, live from New Orleans.  &  &
+\\ Neil P Chue Hong & Some statistics of software citation in geodynamics & 2 & 
 %
-\\Kaitlin Thaney & I'm in New Orleans at \#WSSSPE , speaking at 9:50 ET on  scientific software & 9 & 9
-\\ &   $+$ sustainability. Tune in! Live stream: \url{http://ustre.am/17ddh} & &
+\\ Daniel S.\ Katz & @jamespjh goal: make research software less rubbish; solution is RSEs & 3 & 
 %
-\\   Daniel S. Katz & \#WSSSPE Agenda (Sunday):  & 10 & 1
-\\ & \url{http://wssspe.researchcomputing.org.uk/wssspe2/agenda/}   &  &
-\\ & URL for live stream of keynotes \& lightning talks: \url{http://ustre.am/17ddh}   &  &
-\\ \hline
+\\ Nic Weber & Highly relevant to \#wssspe crowd - @Impactstory team is launching & 7 & 3
+\\ & a impact of research software project \url{http://depsy.org/}  \#verycool & & 
+%
+\\ Neil P Chue Hong & @jamespjh talking about Research Software Engineer groups in the UK & 2 & 1
+\\ &  \#wssspe @ResearchSoftEng @SoftwareSaved & & 
+%
+\\ Abby Cabunoc Mayes & Wonderful time @ \#WSSSPE 3! Encouraging 2 see a diverse community & 1 & 2 
+\\ & working 2gether (\& making real plans!) \url{http://gif.co/s6v4.gif} & & 
+%
+\\ \bottomrule
     \end{tabular}
     \end{scriptsize}
 \end{table*}
