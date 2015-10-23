@@ -23,23 +23,23 @@ Abstract - Dan (later)
 
   5.2 Funding Specialist Expertise - James Hetherington
 
-  5.3 Catalogs - Bernie Randles?
+  5.- Catalogs - no real activity at WSSSPE3 - dropped
 
-  5.4 Industry Interaction - Nic Weber, Suresh Marru
+  5.3 Industry Interaction - Nic Weber, Suresh Marru
 
-  5.5 Legacy Software - Pate Motter?
+  5.4 Legacy Software - Pate Motter?
 
-  5.6 Engineering Design Principles - Colin Venters, Ilian Todorov
+  5.5 Engineering Design Principles - Colin Venters, Ilian Todorov
 
-  5.7 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
+  5.6 Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
 
-  5.8 Training - Erin Robinson, Nick Jones
+  5.7 Training - Erin Robinson, Nick Jones
 
-  5.9 Software Credit - Kyle Niemeyer
+  5.8 Software Credit - Kyle Niemeyer
 
-  5.10 Publishing Software - Steve Brandt
+  5.9 Publishing Software - Steve Brandt
 
-  5.11 User Communities - Dan Gunter, Ethan Davis
+  5.10 User Communities - Dan Gunter, Ethan Davis
 
 6. Conclusions - Dan (later)
 
@@ -53,23 +53,23 @@ Appendices
     
   C. Funding Specialist Expertise - James Hetherington
     
-  D. Catalogs - Bernie Randles?
+  -. Catalogs - dropped
     
-  E. Industry Interaction - Nic Weber, Suresh Marru
+  D. Industry Interaction - Nic Weber, Suresh Marru
     
-  F. Legacy Software - Pate Motter?
+  E. Legacy Software - Pate Motter?
     
-  G. Engineering Design Principles - Colin Venters, Ilian Todorov
+  F. Engineering Design Principles - Colin Venters, Ilian Todorov
     
-  H. Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
+  G. Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
-  I. Training - Erin Robinson, Nick Jones
+  H. Training - Erin Robinson, Nick Jones
     
-  J. Software Credit - Kyle Niemeyer
+  I. Software Credit - Kyle Niemeyer
     
-  K. Publishing Software - Steve Brandt
+  J. Publishing Software - Steve Brandt
     
-  L. User Communities - Dan Gunter, Ethan Davis
+  K. User Communities - Dan Gunter, Ethan Davis
 
 References
 
