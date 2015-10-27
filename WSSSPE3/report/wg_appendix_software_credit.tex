@@ -61,28 +61,108 @@ Finally, the concept a software tool's uniqueness or indispensability to a commu
 
 On the second day of WSSSPE3, the working group decided to put aside the taxonomy of contributions and focus on software citations to ensure developers receive credit (regardless of contribution).
 Eventually, once standardizing software citations, the goal would be to return to establishing different roles\slash contributions for this credit.
+Following this decision, the group identified two necessary actions to move forward:
+\begin{enumerate}
+    \item standardizing a citation file or some other form of metadata associated with software, and
+    \item standardizing the way to cite software (used directly) in papers.
+\end{enumerate}
+For both of these actions, a number of ongoing efforts were identified and discussed.
 
+\subsubsection{Software Citation Metadata}
 
+At a minimum, the metadata needed for software citation (aside from the DOI for the software itself) includes:
+\begin{itemize}
+    \item Contributors, in the form of name and ORCID,
+    \item Software dependencies, in the form of DOI, and
+    \item Other people and artifacts that would be cited or acknowledged in a paper.
+\end{itemize}
+This information would then be contained in a citation file as part of 
+the, e.g., GitHub repository.
+The group also discussed similar efforts such as Codemeta\footnote{Codemeta: \url{https://github.com/codemeta/codemeta}}, an attempt to codify minimal 
+metadata schemes in JSON and XML for scientific software and code, and 
+implementing transitive credit via JSON-LD~\cite{wssspe2_katz}.
+Some questions arose about how this information would be stored for 
+closed-source software.
 
+As one mechanism for constructing accurate contributor lists from existing 
+project contributors, the group discussed associating GitHub accounts---as 
+well as accounts on Bitbucket, CodePlex, and other repositories for 
+open-source scientific software---accounts with ORCID.
+However, a (quick) response from GitHub (via Arfon Smith) indicated that 
+this might not be possible in the near future: ``GitHub doesn't have any 
+plans to allow ORCID accounts to be associated with GitHub user accounts.''
+
+\subsubsection{Citing Software in Publications}
+
+Although far from a standard practice, examples of citing software in 
+publications can be found in various scientific communities---notably, 
+representative samples can be found in astronomy\footnote{Astronomy software citation examples: \url{https://docs.google.com/document/d/1q9ULl7alA3veL7Qwg7jGteRWeJwlrkvRHSXjvt-rTs0}} and biology~\cite{Howison2015}.
+The group recommended collecting similar examples from other communities, then 
+developing a software citation principles document in concert with the 
+FORCE11 Software Citation Working Group (see \S\ref{SC:plan} for more details) 
+following the model of the FORCE11 Data Citation Principles 
+document~\cite{DataCitation2014}.
+
+The group also discussioned briefly whether software used directly in 
+a publication---whether to perform simulation, analysis, or as a dependency 
+for new software developed---should be distinguished from other references 
+due to the dependence of the study on these research artifacts.
+Suggestions included a separate list of citations (with DOIs) for software 
+and other research objects that serve this sort of ``vital'' role.
+Similar recommendations were made by the credit breakout group at 
+WSSSPE2~\cite{WSSSPE2}.
+
+Finally, although a discrete task from the software citation, significant 
+discussion focused on ensuring software citations are indexed in the same 
+manner as publications---allowing the construction of a corresponding 
+software citation network.
+Currently, software releases can receive citable DOIs via 
+Zenodo\footnote{Zenodo, \url{https://zenodo.org}} and 
+FigShare\footnote{FigShare: \url{https://figshare.com}}; however, these 
+citations are not processed by indexers such as Web of Science, Scopus, 
+or Google Scholar.
+Thus, either in parallel or following the primary task, the group will 
+need to reach out to these organizations 
+Initial conversations with Elsevier\slash Scopus (via Michael Taylor) 
+during WSSSPE3 clarified that Scopus is not yet DataCite DOI aware, and 
+also does not yet have an internal identifier for software or data (but 
+needs\slash plans to add this support).
+According to Taylor, they prefer a ``software article'' with the usual 
+article metadata (e.g., authors, citations), and mentioned Zenodo as an 
+example---this proposal seemed to align with group discussions.
+Taylor also mentioned another benefit of the software and associated DOI 
+on GitHub: in addition to a citation, could obtain statistics on 
+usage/downloads/forks.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of Opportunity, Challenges, and Obstacles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-There currently is no standard/accepted mechanism for citing software or receiving credit for software (akin to publications/citations).
+Modern scientific research relies considerably on software, and ensuring 
+that developers of such scientific software receive credit for their efforts 
+will encourage additional creation and maintenance.
+There currently is no standard mechanism for citing software or receiving credit for software (akin to publications/citations).
 Software is eligible for DOI assignment, but DOI metadata fields are not well tuned or standardized for software (vs. publications).
 Some software providers apply for DOIs but it is still not widely adopted.
 Also, there is no mechanism to cite software dependencies within software.
 
-Obstacle: indexers (e.g., Scopus, Web of Science, Google Scholar) don't currently support software/data document types or DataCite DOIs.
+Major obstacles include the fact that indexers (e.g., Scopus, Web of Science, 
+Google Scholar) do not currently support software/data document types or 
+DataCite DOIs.
+Therefore, even with univeral association of scientific software with DOIs 
+and standardizing practices for citing software in publications
 
-Obstacle: no standard mechanism for software to cite other software.
-
-Obstacle: for tenure, there is no standard for software products to be included in policy,
-sometimes not even within one university: hard to change globally.
+Although the working group discussions at WSSSPE3 did not focus much on the 
+topic of tenure, the group recognized that there is no standard policy---even 
+within a single university---for software products to be included in 
+promotion and tenure dossiers.
+Thus, it may be difficult to encourage valuing software contributions across 
+the United States or United Kingdom, and globally; furthermore, stakeholders 
+are typically not tenured and thus may not be influential enough.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Key Next Steps}
+\label{SC:next-steps}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{enumerate}
@@ -97,11 +177,12 @@ sometimes not even within one university: hard to change globally.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Plan for Future Organization}
+\label{SC:plan}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The WSSSPE breakout group plans to join efforts related to citing software with the FORCE11 Software Citation Working Group (FORCE11-SCWG)\footnote{FORCE11 Software Citation Working Group, \url{https://www.force11.org/group/software-citation-working-group}}; Kyle Niemeyer formally requested the merging of these groups following the meeting.
 However, some future plans of the WSSSPE group fall outside the scope of FORCE11-SCWG, which covers software citation practices.
-These activities include working with indexers such as Web of Science and Scopus to index software citations archived on, e.g., Zenodo\footnote{Zenodo, \url{https://zenodo.org}}, and pursuing the development of an open indexing service; such plans will be pursued either separately or through the formation of follow-on FORCE11 working groups.
+These activities include working with indexers such as Web of Science and Scopus to index software citations archived on, e.g., Zenodo or FigShare, and pursuing the development of an open indexing service; such plans will be pursued either separately or through the formation of follow-on FORCE11 working groups.
 
 The group will primarily communicate electronically, with Kyle Niemeyer responsible for ensuring regular progress.
 
