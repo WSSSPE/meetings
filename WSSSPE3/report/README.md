@@ -27,7 +27,7 @@ Abstract - Dan (later)
 
   5.3 Industry Interaction - Nic Weber, Suresh Marru
 
-  5.4 Legacy Software - Pate Motter?
+  5.4 Legacy Software - Pate Motter - group only met briefly
 
   5.5 Engineering Design Principles - Colin Venters, Ilian Todorov
 
@@ -57,7 +57,7 @@ Appendices
     
   D. Industry Interaction - Nic Weber, Suresh Marru
     
-  E. Legacy Software - Pate Motter?
+  -. Legacy Software - Pate Motter - group only met briefly, no appendix section
     
   F. Engineering Design Principles - Colin Venters, Ilian Todorov
     
