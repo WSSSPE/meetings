@@ -76,8 +76,9 @@ At a minimum, the metadata needed for software citation (aside from the DOI for 
     \item Software dependencies, in the form of DOI, and
     \item Other people and artifacts that would be cited or acknowledged in a paper.
 \end{itemize}
-This information would then be contained in a citation file as part of 
-the, e.g., GitHub repository.
+\katznote{is a name/title also needed?}
+This information would then be contained in a citation file, e.g.,  as part of 
+the GitHub repository.
 The group also discussed similar efforts such as Codemeta\footnote{Codemeta: \url{https://github.com/codemeta/codemeta}}, an attempt to codify minimal 
 metadata schemes in JSON and XML for scientific software and code, and 
 implementing transitive credit via JSON-LD~\cite{wssspe2_katz}.
@@ -99,11 +100,11 @@ publications can be found in various scientific communities---notably,
 representative samples can be found in astronomy\footnote{Astronomy software citation examples: \url{https://docs.google.com/document/d/1q9ULl7alA3veL7Qwg7jGteRWeJwlrkvRHSXjvt-rTs0}} and biology~\cite{Howison2015}.
 The group recommended collecting similar examples from other communities, then 
 developing a software citation principles document in concert with the 
-FORCE11 Software Citation Working Group (see \S\ref{SC:plan} for more details) 
+FORCE11 Software Citation Working Group (see \S\ref{SC:plan} for more details), 
 following the model of the FORCE11 Data Citation Principles 
 document~\cite{DataCitation2014}.
 
-The group also discussioned briefly whether software used directly in 
+The group also discussed briefly whether software used directly in 
 a publication---whether to perform simulation, analysis, or as a dependency 
 for new software developed---should be distinguished from other references 
 due to the dependence of the study on these research artifacts.
@@ -112,13 +113,13 @@ and other research objects that serve this sort of ``vital'' role.
 Similar recommendations were made by the credit breakout group at 
 WSSSPE2~\cite{WSSSPE2}.
 
-Finally, although a discrete task from the software citation, significant 
+Finally, although a discrete task from software citations themselves, significant 
 discussion focused on ensuring software citations are indexed in the same 
-manner as publications---allowing the construction of a corresponding 
+manner as publications, allowing the construction of a corresponding 
 software citation network.
 Currently, software releases can receive citable DOIs via 
 Zenodo\footnote{Zenodo, \url{https://zenodo.org}} and 
-FigShare\footnote{FigShare: \url{https://figshare.com}}; however, these 
+figshare\footnote{figshare: \url{https://figshare.com}}; however, these 
 citations are not processed by indexers such as Web of Science, Scopus, 
 or Google Scholar.
 Thus, either in parallel or following the primary task, the group will 
@@ -127,12 +128,12 @@ Initial conversations with Elsevier\slash Scopus (via Michael Taylor)
 during WSSSPE3 clarified that Scopus is not yet DataCite DOI aware, and 
 also does not yet have an internal identifier for software or data (but 
 needs\slash plans to add this support).
-According to Taylor, they prefer a ``software article'' with the usual 
+Taylor said they prefer a ``software article'' with the usual 
 article metadata (e.g., authors, citations), and mentioned Zenodo as an 
-example---this proposal seemed to align with group discussions.
+example -- this proposal seemed to align with group discussions.
 Taylor also mentioned another benefit of the software and associated DOI 
 on GitHub: in addition to a citation, could obtain statistics on 
-usage/downloads/forks.
+usage/downloads/forks, which happens to be what Depsy\footnote{Depsy: \url{https://depsy.org}} is beginning to try to do.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of Opportunity, Challenges, and Obstacles}
@@ -140,7 +141,7 @@ usage/downloads/forks.
 
 Modern scientific research relies considerably on software, and ensuring 
 that developers of such scientific software receive credit for their efforts 
-will encourage additional creation and maintenance.
+will encourage additional creation and maintenance. \katznote{the prev sentence is good, but feels a bit odd in the middle of the appendix, rather than at the beginning}
 There currently is no standard mechanism for citing software or receiving credit for software (akin to publications/citations).
 Software is eligible for DOI assignment, but DOI metadata fields are not well tuned or standardized for software (vs. publications).
 Some software providers apply for DOIs but it is still not widely adopted.
@@ -149,16 +150,16 @@ Also, there is no mechanism to cite software dependencies within software.
 Major obstacles include the fact that indexers (e.g., Scopus, Web of Science, 
 Google Scholar) do not currently support software/data document types or 
 DataCite DOIs.
-Therefore, even with univeral association of scientific software with DOIs 
-and standardizing practices for citing software in publications
+Therefore, even with universal association of scientific software with DOIs 
+and standardizing practices for citing software in publications \katznote{this sentence is missing its ed}
 
-Although the working group discussions at WSSSPE3 did not focus much on the 
+Although this working group's discussions at WSSSPE3 did not focus much on the 
 topic of tenure, the group recognized that there is no standard policy---even 
 within a single university---for software products to be included in 
 promotion and tenure dossiers.
 Thus, it may be difficult to encourage valuing software contributions across 
-the United States or United Kingdom, and globally; furthermore, stakeholders 
-are typically not tenured and thus may not be influential enough.
+the United States or United Kingdom and globally; furthermore, stakeholders 
+are typically not tenured and thus may not be influential enough. \katznote{to do what?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Key Next Steps}
