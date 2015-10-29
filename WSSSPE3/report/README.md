@@ -47,29 +47,33 @@ Acknowledgements - All
 
 Appendices 
 
-  A. Attendees - Frank Löffler
+  A. Organizers - Sou-Cheng
+  
+  B. Attendees - Frank Löffler
 
-  B. Best Practices - Sandra Gessing and Abani Patra
+  C. Travel Grant - Sou-Cheng
+  
+  D. Best Practices - Sandra Gessing and Abani Patra
     
-  C. Funding Specialist Expertise - James Hetherington
+  E. Funding Specialist Expertise - James Hetherington
     
   -. Catalogs - dropped
     
-  D. Industry Interaction - Nic Weber, Suresh Marru
+  F. Industry Interaction - Nic Weber, Suresh Marru
     
   -. Legacy Software - Pate Motter - group only met briefly, no appendix section
     
-  F. Engineering Design Principles - Colin Venters, Ilian Todorov
+  G. Engineering Design Principles - Colin Venters, Ilian Todorov
     
-  G. Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
+  H. Metrics - Gabrielle Allen, Neil Chue Hong, Ray Idaszak
     
-  H. Training - Erin Robinson, Nick Jones
+  I. Training - Erin Robinson, Nick Jones
     
-  I. Software Credit - Kyle Niemeyer
+  J. Software Credit - Kyle Niemeyer
     
-  J. Publishing Software - Steve Brandt
+  K. Publishing Software - Steve Brandt
     
-  K. User Communities - Dan Gunter, Ethan Davis
+  L. User Communities - Dan Gunter, Ethan Davis
 
 References
 
