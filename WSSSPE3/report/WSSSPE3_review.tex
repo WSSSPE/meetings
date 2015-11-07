@@ -629,16 +629,16 @@ unified system that integrates data and analytical tools for comparative
 functional genomics of microbes, plants, and their communities. However,
 it is also a collaborative environment for sharing methods and results, and
 placing those results in the context of knowledge in the field. Being a large,
-multi-institutional project, one the big challenges is to agree on standard to
+multi-institutional project, one of the big challenges is to agree on standard to
 enable a single, maintainable system. Working in isolation does not work (anymore)
-within this field, and no standards for software engineering existed either.
-This is contrasted to computer science research, where these approaches can lead to
-shorter design cycles, leading to more time for highly rewarded activities like
+within this field, and they also didn't have standards for software engineering.
+This is contrasted to computer science research, where these approaches 
+shorten design cycles, leading to more time for highly rewarded activities like
 publishing, performance studies, graduating students, or protecting ideas
 before publication. Sustainability is not of big concern there, compared to
-these. Instead of this more traditional approach, the following is used within
-KBase for large, distributed teams. After picking projects and team members, a
-number of 4-5 teams uses about two weeks to work on their project before a
+these. \katznote{prev sentence is unclear} Instead of this more traditional approach,
+KBase uses the following for large, distributed teams. After picking projects and team members,
+4-5 teams work on projects about two weeks before a
 1-week evaluation by the executive committee, and after which new teams and
 projects might be chosen to restart the ``agile'' development cycle. This
 process is intentionally open and documented.
@@ -646,13 +646,13 @@ process is intentionally open and documented.
 \item \textbf{Yolanda Gil, Chris Duffy, Chris Mattmann, Erin Robinson and Karan
 Venayagamoorthy: \textit{The Geoscience Paper of the Future Initiative: Training
 Scientists in Best Practices of Software Sharing}}
-Yolanda Gil presented an approach to overcome some hurdles in scientific
+Erin Robinson presented an approach to overcome some hurdles in scientific
 publishing: the disconnect between experimental data, research software, and
 publications. A current effort in the Geosciences is the ``Geoscience Paper of
-the Future'', which includes four elements. Firstly, it forms a modern paper
-including both text, data and pointers to supplementary material. Secondly, is
-reproducible, including data processing, workflow and visualization tools. As
-third element, it is part of open science, which includes being publicly
+the Future,'' which includes four elements. First, it forms a modern paper
+including text, data, and pointers to supplementary material. Second, it is
+reproducible, including data processing, workflow, and visualization tools. 
+Third, it is part of open science, which includes being publicly
 available under open licenses, and providing meta-data. Last, but not least, it
 uses digital scholarship elements like persistent identifiers for software,
 data, and authors, and it cites both data and software. OntoSoft is an effort
@@ -667,11 +667,11 @@ documentation, and scholarly publication.
 Framework}}
 Neil Chue Hong presented a proposal to build a scientific software
 accreditation framework. One of the aims of such a framework would be to
-measure how ``good' a given software is, and to evaluate how this can be
+measure how ``good'' a given piece of software is, and to evaluate how this can be
 effectively measured in the first place. This can be compared to the effort of
-the standardized, easy to read and understand nutritional labeling of goods,
+the standardized, easy to read, and understandable nutritional labeling of goods,
 which only contain a small set of categories. However, such a framework for
-software would have to be able to evaluate differently due to different
+software would be more difficult due to different
 existing community norms. The challenges such a framework faces include that
 many measurements are subjective, many metrics are too costly, and that
 self-assessment needs to be encouraged. Possible categories would include
@@ -702,20 +702,20 @@ and the new Software Engineering track in
 
 \item \textbf{Matthias Bussonnier: \textit{User Data Collection in Open Source}}
 This talk highlighted an attempt to solve the common problem for open source
-development that it is difficult to collect information about how many people
-use the software, how often, which version, which parts of the software, or on
+development: it is difficult to collect information about how many people
+use particular software, how often, which version, which parts of the software, or on
 which operating system. Current solutions include surveys, but these have high
 uncertainties. A different approach is based on automatic ``call-backs'' that
-collect these information at run-time and send it to a central place for
+collect these information at runtime and send it to a central place for
 analysis. Problems with this approach include obtaining agreement from the
 user, legal issues, increased maintenance (servers), ethical questions, but
-also the lack of a common infrastructure. Some of these problems are of social
-nature and have to be solved as such, but especially the last problem of a
-missing common infrastructure is attacked by the sempervirens project, which
-provides common APIs and a library implementation for common, repeating tasks
-like obtaining user consent. Results are uploaded not directly to project
+also the lack of a common infrastructure. Some of these problems are of a social
+nature and have to be solved as such, but the last problem (a
+missing common infrastructure) is attacked by the sempervirens project~\cite{sempervirens}, which
+is developing common APIs and a library implementation for common, repeating tasks
+such as obtaining user consent. Results are uploaded not directly to project
 servers, but to neutral third parties that only publish aggregated statistics
-to projects. Sempervirens can be found on github~\footnote{github:njsmith/sempervirens}.
+to projects.
 
 \item \textbf{Alice Allen: \textit{We're giving away the store! (Merchandise not
 included)}}
@@ -723,9 +723,9 @@ Alice Allen described the Astrophysics Source Code Library (ascl.net), an
 increasingly used way to obtain a unique ID for astrophysics software that is
 indexed by indexing services and can be cited. ASCL offers clones of existing
 infrastructure, provides server space and computing resources, shares
-innovations, and permits moves elsewhere. In turn, users have to provide a
-domain name, control and configure their site and use it as intended, gather
-their codes to their liking, share innovations and protect the provided
+innovations, and permits moves elsewhere. Users provide a
+domain name, then control and configure their site and use it as intended, gather
+their codes as they wish, share innovations, and protect the provided
 computing environment.
 
 \item \textbf{Stan Ahalt, Bruce Berriman, Maxine Brown, Jeffrey Carver, Neil
@@ -733,25 +733,25 @@ Chue Hong, Allison Fish, Ray Idaszak, Greg Newman, Dhabaleswar Panda, Abani
 Patra, Elbridge Gerry Puckett, Chris Roland, Douglas Thain, Selcuk Uluagac, and
 Bo Zhang: \textit{Scientific Software Success: Developing Metrics While Developing
 Community}}
-The effort behind this talk started out as break-out team of an NSF SI2
+The effort behind this talk by Ray Idaszak started from a break-out group at an NSF SI2
 workshop in 2015, and centers around creating a framework for creation of
 metrics for scientific software. This framework would improve both the metrics,
-and the software it evaluates, and tries to build a community around this idea.
+and the software it evaluates, and is trying to build a community around this idea.
 With especially the latter idea in mind, a software ``peer review group'' would
 be created, representing stakeholders who will self-review software created by
 their respective communities, and will concurrently develop metrics. The whole
 project should be community-governed, without a single institution overseeing
 the activity or infrastructure, with the hope to evolving community-generated
 and adopted standards. The generation of metrics would be tied to the actual
-evaluation of software, creating incentive by improving the evaluated software
-itself during this process. Infrastructure for the creation of metrics and
-evaluation would be provided by the framework code itself, but also provided
-code reviews of the evaluated software, as well as socially through forums for
-generation of software success metrics. With enough examples one of the open
-questions is whether it is possible to fit the resulting metrics in a common
+evaluation of software, creating an incentive by improving the evaluated software
+itself during this process. The framework code would provide infrastructure for the
+creation of metrics and evaluation, and forums for
+generation of software success metrics.  It would also support
+code reviews of the evaluated software. An open
+question is whether it is possible to fit the resulting metrics in a common
 template. So far, this is still in a design phase, with a white paper at the
-CSESSP workshop 2015 and this talk, but WSSSPE workshop are seen as a forum for
-the community to assemble and act, and are planned to be used also in the
+CSESSP workshop 2015 and this talk, but WSSSPE workshop is seen as a forum for
+the community to assemble and act, and is planned to be used also in the
 future to build this community and framework.
 
 \end{enumerate}
