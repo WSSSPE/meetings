@@ -3,7 +3,10 @@
 \label{sec:appendix_SW_credit}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Kyle Niemeyer\footnote{email: \href{mailto:kyle.niemeyer@oregonstate.edu}{kyle.niemeyer@oregonstate.edu}} will serve as the point of contact for this working group, and be responsible for ensuring timely progress of the planned actions.
+Kyle Niemeyer\footnote{email:
+\href{mailto:kyle.niemeyer@oregonstate.edu}{kyle.niemeyer@oregonstate.edu}} will
+serve as the point of contact for this working group, and be responsible for
+ensuring timely progress of the planned actions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Group Members}
@@ -27,50 +30,104 @@ Kyle Niemeyer\footnote{email: \href{mailto:kyle.niemeyer@oregonstate.edu}{kyle.n
 \subsection{Summary of Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The following section summarizes the working group's discussion based on contributions prior to the meeting~\cite{WSSSPE3-SC-github-issues} and the collaborative notes taken during the meeting~\cite{WSSSPE3-SC-google-notes}.
+The following section summarizes the working group's discussion based on
+contributions prior to the meeting~\cite{WSSSPE3-SC-github-issues} and the
+collaborative notes taken during the meeting~\cite{WSSSPE3-SC-google-notes}.
 Please refer to the original sources for the unedited discussions.
 
-Initial discussions focused on both various mechanisms for, and the philosophical approach behind, crediting software in scientific papers.
-These began with proposals for various ways to credit software (or other research products including data) that contributed more significantly than a generic citation, including
+Initial discussions focused on both various mechanisms for, and the
+philosophical approach behind, crediting software in scientific papers. These
+began with proposals for various ways to credit software (or other research
+products including data) that contributed more significantly than a generic
+citation, including
 \begin{itemize}
-    \item A hierarchy of citations, with a ``substantial'' citation category to indicate software or data that played a more significant role in the research;
-    \item Transitive credit~\cite{wssspe2_katz,Katz:2014_tc}, which assigns contriponents (contributors and components) various weights depending on their level of importance; and
-    \item Project CRediT~\cite{projectcredit}, which assigns roles to paper authors based on their specific contributions; and
-    \item Mozilla Science Lab's recently introduced Contributorship Badges for Science~\cite{Mozilla_badges}, which provide a badge---associated with ORCID~\cite{orcid}---based on author contributions in a similar manner to Project CRediT.
+
+\item A hierarchy of citations, with a ``substantial'' citation category to
+indicate software or data that played a more significant role in the research;
+
+\item Transitive credit~\cite{wssspe2_katz,Katz:2014_tc}, which assigns
+contriponents (contributors and components) various weights depending on their
+level of importance; and
+    
+\item Project CRediT~\cite{projectcredit}, which assigns roles to paper authors
+based on their specific contributions; and
+    
+\item Mozilla Science Lab's recently introduced Contributorship Badges for
+Science~\cite{Mozilla_badges}, which provide a badge---associated with
+ORCID~\cite{orcid}---based on author contributions in a similar manner to
+Project CRediT.
+    
 \end{itemize}
-However, as of this writing, only the Project CRediT roles~\cite{McCall2015_credit,Lin2015_credit} and Contributorship Badges~\cite{Mozilla_badges} have been implemented in published papers, though both of these only provide a single ``Software'' or ``Computation'' category associated with software.
-In addition, neither of these options allow for the citation of software itself, but only provide an author contribution related to software.
-The discussion quickly focused on transitive credit as a more quantitative measure of allocating credit to both authors and software, although there were some concerns about authors overestimating their own contributions compared to prior work.
+However, as of this writing, only the Project CRediT
+roles~\cite{McCall2015_credit,Lin2015_credit} and Contributorship
+Badges~\cite{Mozilla_badges} have been implemented in published papers, though
+both of these only provide a single ``Software'' or ``Computation'' category
+associated with software. In addition, neither of these options allow for the
+citation of software itself, but only provide an author contribution related to
+software. The discussion quickly focused on transitive credit as a more
+quantitative measure of allocating credit to both authors and software, although
+there were some concerns about authors overestimating their own contributions
+compared to prior work.
 
-The discussion then evolved into philosophical questions about the importance or reliance of a particular work on prior science, materials, or software---in other words, is there a difference between depending on prior scientific advances and depending on particular software (or experimental equipment)?
-Multiple contributors converged on the conclusion that unique capabilities require some additional credit.
-The---albeit limited---consensus was that if a particular study relied on the unique capabilities of software, data, or an experimental apparatus, then the authors or developers that created this capability should be credited somehow.
+The discussion then evolved into philosophical questions about the importance or
+reliance of a particular work on prior science, materials, or software---in
+other words, is there a difference between depending on prior scientific
+advances and depending on particular software (or experimental equipment)?
+Multiple contributors converged on the conclusion that unique capabilities
+require some additional credit. The---albeit limited---consensus was that if a
+particular study relied on the unique capabilities of software, data, or an
+experimental apparatus, then the authors or developers that created this
+capability should be credited somehow.
 
-The group also agreed on the fact that additional data was required to support the assertion that software was not being sufficiently cited in the literature.
-In particular, this issue seemed to be field-dependent.
-For example, as shown by study of Howison and Bullard~\cite{Howison2015}, in the field of biology the most-cited papers appear to be those describing scientific software.
-However, this may not---and likely is not---the case in other fields, nor is it clear whether developers of scientific software, even in the case of the biology field, are receiving sufficient credit for their efforts.
+The group also agreed on the fact that additional data was required to support
+the assertion that software was not being sufficiently cited in the literature.
+In particular, this issue seemed to be field-dependent. For example, as shown by
+study of Howison and Bullard~\cite{Howison2015}, in the field of biology the
+most-cited papers appear to be those describing scientific software. However,
+this may not---and likely is not---the case in other fields, nor is it clear
+whether developers of scientific software, even in the case of the biology
+field, are receiving sufficient credit for their efforts.
 
-During the first day of WSSSPE3 breakout sessions, the group discussed the Entertainment Identifier Registry (EIDR)~\cite{EIDR} as a potential model for scientific software.
-That system assigns unique Digital Object Identifiers (DOIs)---the same system used for scientific publications---to all content (e.g., movies, television shows) and contributors, along with relevant metadata.
-One important use of this system is to track rights and credit for contributors to entertainment works in order to distribute revenues---similar to the proposed transitive credit concept.
+During the first day of WSSSPE3 breakout sessions, the group discussed the
+Entertainment Identifier Registry (EIDR)~\cite{EIDR} as a potential model for
+scientific software. That system assigns unique Digital Object Identifiers
+(DOIs)---the same system used for scientific publications---to all content
+(e.g., movies, television shows) and contributors, along with relevant metadata.
+One important use of this system is to track rights and credit for contributors
+to entertainment works in order to distribute revenues---similar to the proposed
+transitive credit concept.
 
-The group also discussed separating quantitative measures (e.g., number of citations) from the value of a work in order to give credit, moving towards qualitative or anecdotal evidence of value.
-Other topics brought up included a form of PageRank~\cite{Brin1998} for citations, based on number of mentions, and using market penetration or adoption rate in a community as a metric, although it was not clear how this would be measured.
-Finally, the concept a software tool's uniqueness or indispensability to a community was mentioned, with value being characterized by a particular piece of software either offering unique capabilities or doing something better, faster, or with less computational requirements than other offerings.
+The group also discussed separating quantitative measures (e.g., number of
+citations) from the value of a work in order to give credit, moving towards
+qualitative or anecdotal evidence of value. Other topics brought up included a
+form of PageRank~\cite{Brin1998} for citations, based on number of mentions, and
+using market penetration or adoption rate in a community as a metric, although
+it was not clear how this would be measured. Finally, the concept a software
+tool's uniqueness or indispensability to a community was mentioned, with value
+being characterized by a particular piece of software either offering unique
+capabilities or doing something better, faster, or with less computational
+requirements than other offerings.
 
-On the second day of WSSSPE3, the working group decided to put aside the taxonomy of contributions and focus on software citations to ensure developers receive credit (regardless of contribution).
-Eventually, once standardizing software citations, the goal would be to return to establishing different roles\slash contributions for this credit.
-Following this decision, the group identified two necessary actions to move forward:
+On the second day of WSSSPE3, the working group decided to put aside the
+taxonomy of contributions and focus on software citations to ensure developers
+receive credit (regardless of contribution). Eventually, once standardizing
+software citations, the goal would be to return to establishing different
+roles\slash contributions for this credit. Following this decision, the group
+identified two necessary actions to move forward:
 \begin{enumerate}
-    \item standardizing a citation file or some other form of metadata associated with software, and
-    \item standardizing the way to cite software (used directly) in papers.
+
+\item standardizing a citation file or some other form of metadata associated
+with software, and
+
+\item standardizing the way to cite software (used directly) in papers.
+        
 \end{enumerate}
 For both of these actions, a number of ongoing efforts were identified and discussed.
 
 \subsubsection{Software Citation Metadata}
 
-At a minimum, the metadata needed for software citation (aside from the DOI for the software itself) includes:
+At a minimum, the metadata needed for software citation (aside from the DOI for
+the software itself) includes:
 \begin{itemize}
     \item Name of software,
     \item DOI for software,
@@ -78,80 +135,88 @@ At a minimum, the metadata needed for software citation (aside from the DOI for 
     \item Software dependencies, in the form of DOIs, and
     \item Other people and artifacts that would be cited or acknowledged in a paper.
 \end{itemize}
-This information would then be contained in a citation file, e.g.,  as part of 
-the GitHub repository.
-The group also discussed similar efforts such as Codemeta\footnote{Codemeta: \url{https://github.com/codemeta/codemeta}}, an attempt to codify minimal 
-metadata schemes in JSON and XML for scientific software and code, and 
-implementing transitive credit via JSON-LD~\cite{wssspe2_katz}.
-Some questions arose about how this information would be stored for 
-closed-source software.
+This information would then be contained in a citation file, e.g., as part of
+the GitHub repository. The group also discussed similar efforts such as
+Codemeta\footnote{Codemeta: \url{https://github.com/codemeta/codemeta}}, an
+attempt to codify minimal metadata schemes in JSON and XML for scientific
+software and code, and implementing transitive credit via
+JSON-LD~\cite{wssspe2_katz}. Some questions arose about how this information
+would be stored for closed-source software.
 
-As one mechanism for constructing accurate contributor lists from existing 
-project contributors, the group discussed associating GitHub accounts---as 
-well as accounts on Bitbucket, CodePlex, and other repositories for 
-open-source scientific software---accounts with ORCID.
-However, a (quick) response from GitHub (via Arfon Smith) indicated that 
-this might not be possible in the near future: ``GitHub doesn't have any 
-plans to allow ORCID accounts to be associated with GitHub user accounts.''
+As one mechanism for constructing accurate contributor lists from existing
+project contributors, the group discussed associating GitHub accounts---as well
+as accounts on Bitbucket, CodePlex, and other repositories for open-source
+scientific software---accounts with ORCID. However, a (quick) response from
+GitHub (via Arfon Smith) indicated that this might not be possible in the near
+future: ``GitHub doesn't have any plans to allow ORCID accounts to be associated
+with GitHub user accounts.''
 
 \subsubsection{Citing Software in Publications}
 
-Although far from a standard practice, examples of citing software in 
-publications can be found in various scientific communities---notably, 
-representative samples can be found in astronomy~\cite{astronomy_SW_examples} and biology~\cite{Howison2015}.
-The group recommended collecting similar examples from other communities, then 
-developing a software citation principles document in concert with the 
-FORCE11 Software Citation Working Group (see \S\ref{SC:plan} for more details), 
-following the model of the FORCE11 Data Citation Principles 
-document~\cite{DataCitation2014}.
+Although far from a standard practice, examples of citing software in
+publications can be found in various scientific communities---notably,
+representative samples can be found in astronomy~\cite{astronomy_SW_examples}
+and biology~\cite{Howison2015}. The group recommended collecting similar
+examples from other communities, then developing a software citation principles
+document in concert with the FORCE11 Software Citation Working Group (see
+\S\ref{SC:plan} for more details), following the model of the FORCE11 Data
+Citation Principles document~\cite{DataCitation2014}.
 
-The group also discussed briefly whether software used directly in 
-a publication---whether to perform simulation, analysis, or as a dependency 
-for new software developed---should be distinguished from other references 
-due to the dependence of the study on these research artifacts.
-Suggestions included a separate list of citations (with DOIs) for software 
-and other research objects that serve this sort of ``vital'' role.
-Similar recommendations were made by the credit breakout group at 
-WSSSPE2~\cite{WSSSPE2}.
+The group also discussed briefly whether software used directly in a
+publication---whether to perform simulation, analysis, or as a dependency for
+new software developed---should be distinguished from other references due to
+the dependence of the study on these research artifacts. Suggestions included a
+separate list of citations (with DOIs) for software and other research objects
+that serve this sort of ``vital'' role. Similar recommendations were made by the
+credit breakout group at WSSSPE2~\cite{WSSSPE2}.
 
-Finally, although a discrete task from software citations themselves, significant 
-discussion focused on ensuring software citations are indexed in the same 
-manner as publications, allowing the construction of a corresponding 
-software citation network.
-Currently, software releases can receive citable DOIs via 
-Zenodo~\cite{zenodo-web} and figshare~\cite{figshare-web}; however, these 
-citations are not processed by indexers such as Web of Science, Scopus, 
-or Google Scholar.
-Thus, either in parallel or following the primary task, the group will 
-need to reach out to these organizations 
-Initial conversations with Elsevier\slash Scopus (via Michael Taylor) 
-during WSSSPE3 clarified that Scopus is not yet DataCite DOI aware, and 
-also does not yet have an internal identifier for software or data (but 
-needs\slash plans to add this support).
-Taylor said they prefer a ``software article'' with the usual 
-article metadata (e.g., authors, citations), and mentioned Zenodo as an 
-example -- this proposal seemed to align with group discussions.
-Taylor also mentioned another benefit of the software and associated DOI 
-on GitHub: in addition to a citation, could obtain statistics on 
-usage/downloads/forks, which happens to be what Depsy\footnote{Depsy: \url{https://depsy.org}} is beginning to try to do.
+Finally, although a discrete task from software citations themselves,
+significant discussion focused on ensuring software citations are indexed in the
+same manner as publications, allowing the construction of a corresponding
+software citation network. Currently, software releases can receive citable DOIs
+via Zenodo~\cite{zenodo-web} and figshare~\cite{figshare-web}; however, these
+citations are not processed by indexers such as Web of Science, Scopus, or
+Google Scholar. Thus, either in parallel or following the primary task, the
+group will need to reach out to these organizations Initial conversations with
+Elsevier\slash Scopus (via Michael Taylor) during WSSSPE3 clarified that Scopus
+is not yet DataCite DOI aware, and also does not yet have an internal identifier
+for software or data (but needs\slash plans to add this support). Taylor said
+they prefer a ``software article'' with the usual article metadata (e.g.,
+authors, citations), and mentioned Zenodo as an example -- this proposal seemed
+to align with group discussions. Taylor also mentioned another benefit of the
+software and associated DOI on GitHub: in addition to a citation, could obtain
+statistics on usage/downloads/forks, which happens to be what
+Depsy\footnote{Depsy: \url{https://depsy.org}} is beginning to try to do.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of Opportunity, Challenges, and Obstacles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Modern scientific research relies considerably on software, and ensuring 
-that developers of such scientific software receive credit for their efforts 
-will encourage additional creation and maintenance. \katznote{the prev sentence is good, but feels a bit odd in the middle of the appendix, rather than at the beginning}
-There currently is no standard mechanism for citing software or receiving credit for software (akin to publications/citations).
-Software is eligible for DOI assignment, but DOI metadata fields are not well tuned or standardized for software (vs. publications).
-Some software providers apply for DOIs but it is still not widely adopted.
-Also, there is no mechanism to cite software dependencies within software.
+Modern scientific research relies considerably on software, and ensuring that
+developers of such scientific software receive credit for their efforts will
+encourage additional creation and maintenance. \katznote{the prev sentence is
+good, but feels a bit odd in the middle of the appendix, rather than at the
+beginning} There currently is no standard mechanism for citing software or
+receiving credit for software (akin to publications/citations). Software is
+eligible for DOI assignment, but DOI metadata fields are not well tuned or
+standardized for software (vs. publications). Some software providers apply for
+DOIs but it is still not widely adopted. Also, there is no mechanism to cite
+software dependencies within software.
 
-Major obstacles include the fact that indexers (e.g., Scopus, Web of Science, Google Scholar) do not currently support software/data document types or DataCite DOIs.
-Therefore, even with universal association of scientific software with DOIs and standardized practices for citing software in publications, software citations will not be indexed in the same manner as traditional publications.
+Major obstacles include the fact that indexers (e.g., Scopus, Web of Science,
+Google Scholar) do not currently support software/data document types or
+DataCite DOIs. Therefore, even with universal association of scientific software
+with DOIs and standardized practices for citing software in publications,
+software citations will not be indexed in the same manner as traditional
+publications.
 
-Although this working group's discussions at WSSSPE3 did not focus much on the topic of tenure, the group recognized that there is no standard policy---generally even within a single university---for software products to be included in promotion and tenure dossiers.
-Thus, it may be difficult to encourage valuing software contributions across the United States or United Kingdom and globally; furthermore, stakeholders are typically not tenured and thus may not be influential enough to change the status quo.
+Although this working group's discussions at WSSSPE3 did not focus much on the
+topic of tenure, the group recognized that there is no standard
+policy---generally even within a single university---for software products to be
+included in promotion and tenure dossiers. Thus, it may be difficult to
+encourage valuing software contributions across the United States or United
+Kingdom and globally; furthermore, stakeholders are typically not tenured and
+thus may not be influential enough to change the status quo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Key Next Steps}
@@ -159,12 +224,26 @@ Thus, it may be difficult to encourage valuing software contributions across the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{enumerate}
-\item Hold virtual meeting to determine group members responsible\slash willing to work on the following tasks, to be organized within one month of the workshop
-\item Compile best practices of software citation across multiple disciplines, including journals and communities of interest\slash practice in the research world, to begin by December 2015
-\item Compile examples of including other products in promotion and tenure dossier, to begin by December 2015
-\item Draft the Software Citation Principles document (including citation metadata file), by April 2016
-\item Publish\slash release the Software Citation Principles document, by August 2016
-\item Reach out to journals, publishers, teachers\slash educators, indexers, and professional societies---likely through meetings with key groups, to begin by September 2016
+
+\item Hold virtual meeting to determine group members responsible\slash willing
+to work on the following tasks, to be organized within one month of the workshop
+
+\item Compile best practices of software citation across multiple disciplines,
+including journals and communities of interest\slash practice in the research
+world, to begin by December 2015
+
+\item Compile examples of including other products in promotion and tenure
+dossier, to begin by December 2015
+
+\item Draft the Software Citation Principles document (including citation
+metadata file), by April 2016
+
+\item Publish\slash release the Software Citation Principles document, by August
+2016
+
+\item Reach out to journals, publishers, teachers\slash educators, indexers, and
+professional societies---likely through meetings with key groups, to begin by
+September 2016
 
 \end{enumerate}
 
@@ -173,33 +252,56 @@ Thus, it may be difficult to encourage valuing software contributions across the
 \label{SC:plan}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The WSSSPE breakout group plans to join efforts related to citing software with the FORCE11 Software Citation Working Group (FORCE11-SCWG)\footnote{FORCE11 Software Citation Working Group, \url{https://www.force11.org/group/software-citation-working-group}}; Kyle Niemeyer formally requested the merging of these groups following the meeting.
-However, some future plans of the WSSSPE group fall outside the scope of FORCE11-SCWG, which covers software citation practices.
-These activities include working with indexers such as Web of Science and Scopus to index software citations archived on, e.g., Zenodo or FigShare, and pursuing the development of an open indexing service; such plans will be pursued either separately or through the formation of follow-on FORCE11 working groups.
+The WSSSPE breakout group plans to join efforts related to citing software with
+the FORCE11 Software Citation Working Group (FORCE11-SCWG)\footnote{FORCE11
+Software Citation Working Group,
+\url{https://www.force11.org/group/software-citation-working-group}}; Kyle
+Niemeyer formally requested the merging of these groups following the meeting.
+However, some future plans of the WSSSPE group fall outside the scope of
+FORCE11-SCWG, which covers software citation practices. These activities include
+working with indexers such as Web of Science and Scopus to index software
+citations archived on, e.g., Zenodo or FigShare, and pursuing the development of
+an open indexing service; such plans will be pursued either separately or
+through the formation of follow-on FORCE11 working groups.
 
-The group will primarily communicate electronically, with Kyle Niemeyer responsible for ensuring regular progress.
+The group will primarily communicate electronically, with Kyle Niemeyer
+responsible for ensuring regular progress.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{What Else is Needed?}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The near-term actions of the group, focused mainly on software citation, do not require any additional resources.
-However, connections with publishers and indexers will be needed to pursue related activities, although the FORCE11-SCWG may satisfy this need; in addition, some members of the group already reached out to relevant contacts.
-Funding may be needed to organize meetings or for group members to attend relevant meetings, as discussed further below.
+The near-term actions of the group, focused mainly on software citation, do not
+require any additional resources. However, connections with publishers and
+indexers will be needed to pursue related activities, although the FORCE11-SCWG
+may satisfy this need; in addition, some members of the group already reached
+out to relevant contacts. Funding may be needed to organize meetings or for
+group members to attend relevant meetings, as discussed further below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Key Milestones and Responsible Parties}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Following the meeting, Kyle Niemeyer formally requested the merging of software citation activities with FORCE11-SCWG.
-Within a month of the meeting, Kyle will organize a virtual meeting of the group and lead the division of responsibilities for compiling existing practices of software citation and including software\slash products in promotion and tenure dossiers.
-Building off of these efforts, the next major milestone is drafting the Software Citation Principles document in collaboration with the SCWG, targeted for April 2016.
-While the existing directors of the SCWG, Arfon Smith and Dan Katz, lead the efforts of that group towards the Software Citation Principles document, Kyle will help coordinate contributions from the WSSSPE group members.
+Following the meeting, Kyle Niemeyer formally requested the merging of software
+citation activities with FORCE11-SCWG. Within a month of the meeting, Kyle will
+organize a virtual meeting of the group and lead the division of
+responsibilities for compiling existing practices of software citation and
+including software\slash products in promotion and tenure dossiers. Building off
+of these efforts, the next major milestone is drafting the Software Citation
+Principles document in collaboration with the SCWG, targeted for April 2016.
+While the existing directors of the SCWG, Arfon Smith and Dan Katz, lead the
+efforts of that group towards the Software Citation Principles document, Kyle
+will help coordinate contributions from the WSSSPE group members.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of Funding Needed}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Some funding would be useful to support primarily travel to conferences for group meetings (e.g., FORCE2016\footnote{FORCE2016, \url{https://www.force11.org/meetings/force2016}}), and to hold meetings to bring together both group members and key stakeholders (e.g., journals, publishers, professional societies, indexers).
-In addition, funding would be desired to support group members' time to perform work towards the key steps described previously.
+Some funding would be useful to support primarily travel to conferences for
+group meetings (e.g., FORCE2016\footnote{FORCE2016,
+\url{https://www.force11.org/meetings/force2016}}), and to hold meetings to
+bring together both group members and key stakeholders (e.g., journals,
+publishers, professional societies, indexers). In addition, funding would be
+desired to support group members' time to perform work towards the key steps
+described previously.
