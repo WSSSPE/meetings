@@ -454,9 +454,10 @@ nanoHUB\footnote{nanoHUB, \url{https://nanohub.org}}.
 Ted Habermann in the audience commented that if the metadata is minimal, it
 would be less onerous for data providers, but more burdensome for users---it
 could be challenging to keep a balance between what have to be captured and what
-would be ideal if we do not want to lose user engagement as in the case of the
-old Harvard Dataverse, finding often only the first four fields of three pages
-of metadata were filled out.
+would be ideal if we do not want to lose user engagement, which he said he had
+experienced with the
+Harvard Dataverse~\cite{dataverse} where a large amount (three pages) of metadata
+was requested, but often only the first four fields were filled out.
 
 The speaker concluded her talk urging the audience to design scientific software
 with the general community, not an individual, in mind; and to design to unlock
@@ -768,8 +769,11 @@ to sustain it.
 
 The enablers of and barriers to software sustainability, roughly ranked by
 attendee votes are shown in
-{\tablename}s~\ref{tb:software_sustainability_enablers} and
-\ref{tb:software_sustainability_barriers}, respectively.\footnote{A few other
+%{\tablename}s~\ref{tb:software_sustainability_enablers} 
+{\figurename}s~\ref{fig:software_sustainability_enablers}
+and
+%\ref{tb:software_sustainability_barriers}
+\ref{fig:software_sustainability_barriers}, respectively.\footnote{A few other
 items were suggested as barriers, but were not voted on due to lack of time in
 the session:
 layering up dependencies;
@@ -781,61 +785,78 @@ need to restructure code when hardware/software/libraries change.
 }
 %\katznote{any discussion of these tables?}
 
-\begin{table*}[ht]
-\centering
-\caption{Enablers of software sustainability, with 0 to 10 `*'s roughly
-indicating the fraction of attendees who voted for an item as important.}
-\label{tb:software_sustainability_enablers}
-  \begin{small}
-  \begin{tabular}{ | p{1.65cm} | p{12.0cm} |}
-   %  \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
-    \hline
-  Importance & Item \\ \hline \hline
-********** & healthy and vibrant communities; vibrant community to champion software \\ \hline
-********** & designing for growth and extension -- open development \\ \hline
-******* & culture in community for reuse \\ \hline
-**** & portability \\ \hline
-**** & culture in development community to support transition between developers \\ \hline
-*** & interdisciplinary people: science + IT experience \\ \hline
-** & planning for end of life \\ \hline
-** & make smart choices about dependencies \\ \hline
-* & thinking of software as product lines -- long term vs.~short term view \\ \hline
- & not all communities need new software \\ \hline
- & converting use into resources \\ \hline
-    \end{tabular}
-    \end{small}
-\end{table*}
+%\begin{table*}[ht]
+%\centering
+%\caption{Enablers of software sustainability, with 0 to 10 `*'s roughly
+%indicating the fraction of attendees who voted for an item as important.}
+%\label{tb:software_sustainability_enablers}
+%  \begin{small}
+%  \begin{tabular}{ | p{1.65cm} | p{12.0cm} |}
+%   %  \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
+%    \hline
+%  Importance & Item \\ \hline \hline
+%********** & healthy and vibrant communities; vibrant community to champion software \\ \hline
+%********** & designing for growth and extension -- open development \\ \hline
+%******* & culture in community for reuse \\ \hline
+%**** & portability \\ \hline
+%**** & culture in development community to support transition between developers \\ \hline
+%*** & interdisciplinary people: science + IT experience \\ \hline
+%** & planning for end of life \\ \hline
+%** & make smart choices about dependencies \\ \hline
+%* & thinking of software as product lines -- long term vs.~short term view \\ \hline
+% & not all communities need new software \\ \hline
+% & converting use into resources \\ \hline
+%    \end{tabular}
+%    \end{small}
+%\end{table*}
 
-\begin{table}[ht]
-\caption{Barriers to software sustainability, with 0 to 10 `*'s roughly
-indicating the fraction of attendees who voted for an item as important.}
-\label{tb:software_sustainability_barriers}
- \centering
-  \begin{small}
-  \begin{tabular}{ | p{1.65cm} | p{12.0cm} |}
-% \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
-   \hline
-  Importance & Item \\ \hline \hline
-******* & lack of incentives, including promotion and tenure process; promotion
-and tenure process in academic is incompatible with sustainability \\ \hline
-*****  & absent or poor documentation \\ \hline
-***** & funding to ensure sustainability is difficult to obtain \\ \hline
-**** & developers are not computer scientists; don't have software engineering
-practices (in particular, those needed to scale-up projects to support and be
-developed by a large sustainable community) \\ \hline
-*** & overreliance on one or two people -- the `bus test'\footnote{``Bus test''
-in Table~\ref{tb:software_sustainability_barriers} refers to the smallest number
-of key people a project would need to lose to become non-viable (the larger the
-number, the healthier the project).} \\ \hline
-** & rate of change of underlying technologies \\ \hline
-** & lack of business models for sustainability \\ \hline
-* & lack of training for how to build sustainability into the system \\ \hline
- & maintenance for software is not visible, appears to ``just happen'' \\ \hline
- & licensing issues \\ \hline
- & staff turnover -- lack of continuity \\ \hline
-\end{tabular}
- \end{small}
-\end{table}
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=1.0\textwidth]{figures/enablers}
+  \caption{Enablers of software sustainability, showing the fraction of attendees (rounded to the nearest 10\%) who voted for an item as important.\label{fig:software_sustainability_enablers}}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=1.0\textwidth]{figures/barriers}
+  \caption{Barriers to software sustainability, showing the fraction of attendees (rounded to the nearest 10\%) who voted for an item as important.
+{\footnotesize \newline (1) This item also included the fact that that the promotion and tenure process in academic is incompatible with sustainability.
+\newline  (2) The software engineering practices were those in particular that are needed to scale-up projects to support and be developed by a large sustainable community).
+\newline  (3) The smallest number of key people a project would need to lose to become
+non-viable -- the larger the number, the healthier the project.}
+\label{fig:software_sustainability_barriers}}
+\end{figure}
+
+%\begin{table}[ht]
+%\caption{Barriers to software sustainability, with 0 to 10 `*'s roughly
+%indicating the fraction of attendees who voted for an item as important.}
+%\label{tb:software_sustainability_barriers}
+% \centering
+%  \begin{small}
+%  \begin{tabular}{ | p{1.65cm} | p{12.0cm} |}
+%% \begin{tabular}{ | p{1.9cm} | p{11.5cm} |}
+%   \hline
+%  Importance & Item \\ \hline \hline
+%I & lack of incentives, including promotion and tenure process; promotion
+%and tenure process in academic is incompatible with sustainability \\ \hline
+%*****  & absent or poor documentation \\ \hline
+%***** & funding to ensure sustainability is difficult to obtain \\ \hline
+%**** & developers are not computer scientists; don't have software engineering
+%practices (in particular, those needed to scale-up projects to support and be
+%developed by a large sustainable community) \\ \hline
+%*** & overreliance on one or two people -- the `bus test'\footnote{``Bus test''
+%in Table~\ref{tb:software_sustainability_barriers} refers to the smallest number
+%of key people a project would need to lose to become non-viable (the larger the
+%number, the healthier the project).} \\ \hline
+%** & rate of change of underlying technologies \\ \hline
+%** & lack of business models for sustainability \\ \hline
+%* & lack of training for how to build sustainability into the system \\ \hline
+% & maintenance for software is not visible, appears to ``just happen'' \\ \hline
+% & licensing issues \\ \hline
+% & staff turnover -- lack of continuity \\ \hline
+%\end{tabular}
+% \end{small}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exploring Sustainability} \label{sec:exploring}
