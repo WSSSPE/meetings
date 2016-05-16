@@ -1,0 +1,147 @@
+\documentclass[11pt, oneside]{amsart}
+\pdfoutput=1
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{subfigure}
+\usepackage{psfrag}
+\usepackage{tabularx}
+\usepackage[hyphens]{url}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{booktabs,multicol}
+
+% The following three lines are used for displaying footnote in tables.
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+
+\usepackage{enumitem}
+\setlist{leftmargin=7mm}
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+
+\usepackage[bookmarks, bookmarksopen, bookmarksnumbered]{hyperref}
+\usepackage[all]{hypcap}
+\urlstyle{rm}
+
+\definecolor{orange}{rgb}{1.0,0.3,0.0}
+\definecolor{violet}{rgb}{0.75,0,1}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{cyan}{rgb}{0.2,0.7,0.7}
+\definecolor{blueish}{rgb}{0.2,0.2,0.8}
+\definecolor{darkblue}{rgb}{0.1,0.1,0.9}
+
+\newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
+\newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
+\newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\clunenote}[1]{ {\textcolor{orange}    { ***Tom:      #1 }}}
+\newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
+\newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
+\newcommand{\manishnote}[1]{  {\textcolor{violet}     { ***Manish: #1 }}}
+\newcommand{\davidnote}[1]{  {\textcolor{darkgreen}      { ***David: #1 }}}
+\newcommand{\colinnote}[1]{ {\textcolor{red}    {***Colin: #1 }}}
+\newcommand{\choinote}[1]{ {\textcolor{orange}    {***Choi: #1 }}}
+\newcommand{\stevenote}[1]{ {\textcolor{darkblue}    {***Steve: #1 }}}
+
+% Don't use tt font for urls
+\urlstyle{rm}
+
+% 15 characters / 2.5 cm => 100 characters / line
+% Using 11 pt => 94 characters / line
+\setlength{\paperwidth}{216 mm}
+% 6 lines / 2.5 cm => 55 lines / page
+% Using 11pt => 48 lines / pages
+\setlength{\paperheight}{279 mm}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% You can use a baselinestretch of down to 0.9
+\renewcommand{\baselinestretch}{0.96}
+
+\sloppypar
+
+\begin{document}
+
+\title[]{Report on the Third Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE3)}
+
+\author{Daniel S.\ Katz$^{(1)}$,
+Sou-Cheng T.\ Choi$^{(2)}$,
+Kyle E.\ Niemeyer$^{(3)}$,
+James Hetherington$^{(4)}$,
+Frank~L\"{o}ffler$^{(5)}$,
+Dan Gunter$^{(6)}$,
+Ray Idaszak$^{(7)}$,
+Steven R.\ Brandt$^{(5)}$,
+Mark A.\ Miller$^{(8)}$,
+Sandra Gesing$^{(9)}$,
+Nick D.\ Jones$^{(10)}$,
+Nic Weber$^{(11)}$,
+Suresh Marru$^{(12)}$,
+Gabrielle Allen$^{(13)}$,
+Birgit~Penzenstadler$^{(14)}$,
+Colin C.\ Venters$^{(15)}$,
+Ethan Davis$^{(16)}$,
+Lorraine Hwang$^{(17)}$,
+Ilian~Todorov$^{(18)}$,
+Abani Patra$^{(19)}$,
+Miguel de Val-Borro$^{(20)}$
+}
+
+
+%
+\thanks{{}$^{(1)}$ \hspace{-1ex}Computation Institute, 
+University of Chicago \& Argonne National Laboratory, Chicago, IL, USA; d.katz@ieee.org}
+%
+\thanks{{}$^{(2)}$ NORC at the University of Chicago and Illinois Institute of Technology, Chicago, IL, USA; sctchoi@uchicago.edu}
+%
+\thanks{{}$^{(3)}$ School of Mechanical, Industrial, and Manufacturing Engineering, 
+Oregon State University, Corvallis, OR, USA; kyle.niemeyer@oregonstate.edu}
+%
+\thanks{{}$^{(4)}$ Research Software Development Group, University College London, UK; j.hetherington@ucl.ac.uk}
+%
+\thanks{{}$^{(5)}$ \hspace{-1.5ex}Center for Computation \& Technology, Louisiana State University, Baton Rouge, LA, USA; \{knarf,sbrandt\}@cct.lsu.edu}
+%
+\thanks{{}$^{(6)}$ Lawrence Berkeley National Laboratory, Berkeley, USA; dkgunter@lbl.gov}
+%
+\thanks{{}$^{(7)}$ RENCI, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; rayi@renci.org}
+%
+\thanks{{}$^{(8)}$ University of California, San Diego, CA, USA; mmiller@sdsc.edu}
+%
+\thanks{{}$^{(9)}$ Center for Research Computing, University of Notre Dame, Notre Dame, IN, USA; sandra.gesing@nd.edu}
+%
+\thanks{{}$^{(10)}$ New Zealand eScience Infrastructure (NeSI), University of Auckland, Auckland, NZ; nick.jones@nesi.org.nz}
+%
+\thanks{{}$^{(11)}$ University of Washington, Seattle, WA, USA; nmweber@uw.edu}
+%
+\thanks{{}$^{(12)}$ Indiana University, Bloomington, IN, USA; smarru@iu.edu}
+%
+\thanks{{}$^{(13)}$ National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign, Urbana, IL, USA; gdallen@illinois.edu}
+%
+\thanks{{}$^{(14)}$ College of Computer Engineering \& Computer Science, California State University, Long Beach, CA, USA; birgit.penzenstadler@csulb.edu}
+%
+\thanks{{}$^{(15)}$ School of Computing and Engineering, University of Huddersfield, Huddersfield, UK; c.venters@hud.ac.uk}
+%
+\thanks{{}$^{(16)}$ UCAR Unidata, Boulder, CO, USA; edavis@ucar.edu}
+%
+\thanks{{}$^{(17)}$  University of California, Davis, CA, USA; ljhwang@ucdavis.edu}
+%
+\thanks{{}$^{(18)}$ Science \& Technology Facilities Council, UK; ilian.todorov@stfc.ac.uk}
+%
+\thanks{{}$^{(19)}$ Mechanical and Aerospace Engineering, University at Buffalo, Buffalo, NY, USA; abani@buffalo.edu}
+%
+\thanks{{}$^{(20)}$ Department of Astrophysical Sciences, Princeton University, Princeton, NJ, USA; valborro@princeton.edu}
+%
+ 
