@@ -13,19 +13,46 @@
  \geometry{
  letterpaper,
  total={215.9mm,279.4mm},
- left=20mm,
- right=20mm,
- top=20mm,
- bottom=20mm,
+ left=25.4mm,
+ right=25.4mm,
+ top=25.4mm,
+ bottom=25.4mm,
  bindingoffset=0mm
  }
+
+ \newenvironment{shortlist}{
+        \vspace*{-0.8em}
+  \begin{itemize}
+  \setlength{\itemsep}{-0.3em}
+}{
+  \end{itemize}
+        \vspace*{-0.6em}
+}
+
+ \newenvironment{shortlist2}{
+        \vspace*{-0.5em}
+  \begin{itemize}
+  \setlength{\itemsep}{-0.1em}
+}{
+  \end{itemize}
+        \vspace*{-0.3em}
+}
+ \newenvironment{shortenum}{
+        \vspace*{-0.8em}
+  \begin{enumerate}
+  \setlength{\itemsep}{-0.3em}
+}{
+  \end{enumerate}
+        \vspace*{-0.6em}
+}
+
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{The 4th Workshop on Sustainable Software: Best Practices and Experiences (WSSSPE4)
 }
-\author{Gabrielle Allen, University of Illinois Urbana--Champaign \\
-	Daniel S.\ Katz, University of Illinois Urbana--Champaign \\
+\author{Daniel S.\ Katz, University of Illinois Urbana--Champaign \\
+        Gabrielle Allen, University of Illinois Urbana--Champaign \\
 	Kyle E.\ Niemeyer, Oregon State University
 	}
 \date{}                                           % Activate to display a given date or no date
@@ -72,9 +99,9 @@ previous workshops, with most of the workshop divided into two tracks:
 \end{quote}
 
 Topics of interest include but are not limited to:
-\begin{itemize}
+\begin{shortlist}
 \item Development and Community
-\begin{itemize}
+\begin{shortlist}
 \item Best practices for developing sustainable software
 \item Models for funding specialist expertise in software collaborations
 \item Software tools that aid sustainability
@@ -83,42 +110,42 @@ Topics of interest include but are not limited to:
 \item Engineering design for sustainable software
 \item Metrics for the success of scientific software
 \item Adaptation of mainstream software practices for scientific software
-\end{itemize}
+\end{shortlist}
 \item Professionalization
-\begin{itemize}
+\begin{shortlist}
 \item Career paths
 \item RSE as a brand
 \item RSE outside of the UK or Europe
 \item Increase incentives in publishing, funding and promotion for better software
-\end{itemize}
+\end{shortlist}
 \item Training
-\begin{itemize}
+\begin{shortlist}
 \item Training for developing sustainable software
 \item Curriculum for software sustainability
-\end{itemize}
+\end{shortlist}
 \item Credit
-\begin{itemize}
+\begin{shortlist}
 \item Making the existing credit and citation ecosystem work better for software
 \item Future credit and citation ecosystem
 \item Software contributions as a part of tenure review
 \item Case studies of receiving credit for software contributions
 \item Awards and recognition that encourage sustainable software
-\end{itemize}
+\end{shortlist}
 \item Software publishing
-\begin{itemize}
+\begin{shortlist}
 \item Journals and alternative venues for publishing software
 \item Review processes for published software
-\end{itemize}
+\end{shortlist}
 \item Software discoverability/reuse
-\begin{itemize}
+\begin{shortlist}
 \item Proposals and case studies
-\end{itemize}
+\end{shortlist}
 \item Reproducibility and testing
-\begin{itemize}
+\begin{shortlist}
 \item Reproducibility in conferences and journals
 \item Best practices for code testing and code review
-\end{itemize}
-\end{itemize}
+\end{shortlist}
+\end{shortlist}
 
 
 Joint sessions of the workshop will include a keynote, a set of lightning talks on topics related to either track, and a panel on best practices for scientific software development.  Tracks 1 and 2 will be held in parallel with each other.
@@ -128,13 +155,13 @@ Track 1 participants will build on the proposals and ideas in these papers, with
 
 \begin{quote}
 Example idea paper topics include:
-\begin{itemize}
+\begin{shortlist}
 \item Adaptation of industrial software engineering principles into the research software community with a plan to fund the work
 \item Funding and scaling software carpentry style training in advanced topics
 Infrastructure and funding for community maintenance of open use research software
 \item Scaling the SSI beyond the UK
 \item Specific proposals of how to bridging/network the various research software engineering communities in scalable manner without destroying independence and unique foci of each community
-\end{itemize}
+\end{shortlist}
 \end{quote}
 
 Track 2 will consist mostly of presentations, with some discussions, including position papers, experience papers, presentations of previously published work, and demos.  The intent of this
@@ -144,7 +171,7 @@ track is for current scientific software developers and those interested in scie
 \section{Workshop Organization and Planning}
 
 The WSSSPE4 organizing committee comprises 
-\begin{itemize}
+\begin{shortlist}
 \item Gabrielle Allen, University of Illinois Urbana-Champaign, USA
 \item Jeffrey Carver, University of Alabama, USA
 \item Sou-Cheng T. Choi, Illinois Institute of Technology, USA
@@ -158,7 +185,7 @@ The WSSSPE4 organizing committee comprises
 \item Kyle E. Niemeyer, Oregon State University, USA
 \item Manish Parashar, Rutgers University, USA
 \item Colin C. Venters, University of Huddersfield, UK
-\end{itemize}
+\end{shortlist}
 
 The program committee currently has about 60 global members, from academia, industry, and national labs, with more invitations outstanding.  See the web site (\url{http://wssspe.researchcomputing.org.uk/wssspe4/}) for the specific names.
 
@@ -167,28 +194,28 @@ The tentative agenda for the workshop is
 
 Sept 12 (pm) --- Joint session of both tracks
 
-\begin{itemize}
+\begin{shortlist}
 \item Introduction
 \item Keynote
 \item Lightning talks
 \item Updates on actions and activities from WSSSPE3 working groups
 \item Discussion and planning for the remainder of WSSSPE4
-\end{itemize}
+\end{shortlist}
 
 Sept 13 (all day) and 14 (am) --- Parallel tracks
 
-\begin{itemize}
+\begin{shortlist}
 \item Track 1: This will be a set of working sessions with a facilitated discussion, breakout sessions, report backs, and active writing towards the track goal of defining a vision of the future of open-use research software, and a plan of activities that are needed to get there.
 \item Track 2: Presentations of position papers, experience papers, previously published works, and demos; and breakout sessions or unconference sessions.
-\end{itemize}
+\end{shortlist}
 
 Sept 14 (1:30 pm -- 5 pm) --- Joint session of both tracks
 
-\begin{itemize}
+\begin{shortlist}
 \item Panel on best practices
 \item Summary and discussion of each tracks’ progress
 \item Planning for future events
-\end{itemize}
+\end{shortlist}
 
 
 \section{Participant Support}
