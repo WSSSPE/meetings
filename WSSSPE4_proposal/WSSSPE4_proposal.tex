@@ -1,7 +1,14 @@
 \documentclass[11pt]{article}
-\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
-%\geometry{landscape}                % Activate for for rotated page geometry
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+%\microtypecontext{spacing=nonfrench}
+\usepackage{xspace}
+
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -10,15 +17,11 @@
 \usepackage{url,hyperref}
 \usepackage{color}
 
- \geometry{
- letterpaper,
- total={215.9mm,279.4mm},
- left=25.4mm,
- right=25.4mm,
- top=25.4mm,
- bottom=25.4mm,
- bindingoffset=0mm
- }
+%better printing of numbers
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
 
  \newenvironment{shortlist}{
         \vspace*{-0.8em}
@@ -94,9 +97,9 @@ In WSSSPE4, held over 2 1/2 days in Manchester, UK, we will include elements fro
 previous workshops, with most of the workshop divided into two tracks:
 
 \begin{quote}
-{\bf Track 1 – Building a sustainable future for open-use research software} has the goals of defining a vision of the future of open-use research software, and in the workshop, initiating the activities that are needed to get there.  The idea of this track is to first think about where we want to be 5 to 10 years from now, without being too concerned with where we are today, and then to determine how we can move to this future.
+{\bf Track 1: Building a sustainable future for open-use research software} has the goals of defining a vision of the future of open-use research software, and in the workshop, initiating the activities that are needed to get there.  The idea of this track is to first think about where we want to be 5 to 10 years from now, without being too concerned with where we are today, and then to determine how we can move to this future.
 
-{\bf Track 2 – Practices \& experiences in sustainable scientific software} has the goal of improving the quality of today’s research software and the experiences of its developers by sharing practices and experiences.  This track is focused on the current state of scientific software and what we can do to improve it in the short term, starting with where we are today.
+{\bf Track 2: Practices \& experiences in sustainable scientific software} has the goal of improving the quality of today's research software and the experiences of its developers by sharing practices and experiences.  This track is focused on the current state of scientific software and what we can do to improve it in the short term, starting with where we are today.
 \end{quote}
 
 Topics of interest include but are not limited to:
@@ -175,23 +178,23 @@ The WSSSPE4 organizing committee comprises
 \begin{shortlist}
 \item Gabrielle Allen, University of Illinois Urbana-Champaign, USA
 \item Jeffrey Carver, University of Alabama, USA
-\item Sou-Cheng T. Choi, Illinois Institute of Technology, USA
+\item Sou-Cheng T.~Choi, Illinois Institute of Technology, USA
 \item Tom Crick, Cardiff Metropolitan University, UK
-\item Michael R. Crusoe, Common Workflow Language project
+\item Michael R.~Crusoe, Common Workflow Language project
 \item Sandra Gesing, University of Notre Dame, USA
 \item Robert Haines, University of Manchester, UK
 \item Michael Heroux, Sandia National Laboratories, USA
-\item Lorraine J. Hwang, University of California, Davis, USA
-\item Daniel S. Katz, University of Illinois Urbana-Champaign, USA
-\item Kyle E. Niemeyer, Oregon State University, USA
+\item Lorraine J.~Hwang, University of California, Davis, USA
+\item Daniel S.~Katz, University of Illinois Urbana-Champaign, USA
+\item Kyle E.~Niemeyer, Oregon State University, USA
 \item Manish Parashar, Rutgers University, USA
-\item Colin C. Venters, University of Huddersfield, UK
+\item Colin C.~Venters, University of Huddersfield, UK
 \end{shortlist}
 
 The program committee currently has about 60 global members, from academia, industry, and national labs, with more invitations outstanding.  See the web site (\url{http://wssspe.researchcomputing.org.uk/wssspe4/}) for the specific names.
 
 
-The tentative agenda for the workshop is
+The tentative agenda for the workshop is:
 
 Sept 12 (pm) --- Joint session of both tracks
 
@@ -210,7 +213,7 @@ Sept 13 (all day) and 14 (am) --- Parallel tracks
 \item Track 2: Presentations of position papers, experience papers, previously published works, and demos; and breakout sessions or unconference sessions.
 \end{shortlist}
 
-Sept 14 (1:30 pm -- 5 pm) --- Joint session of both tracks
+Sept 14 (1:30--5 pm) --- Joint session of both tracks
 
 \begin{shortlist}
 \item Panel on best practices
@@ -252,15 +255,15 @@ Strategies for reaching\slash recruiting such participants will be solicited fro
 
 \section{Prior Support} 
 
-{\bf Daniel S. Katz}
+\textbf{Daniel S.~Katz}
 was most recently supported by the NSF as a Program Officer under NSF ACI-1239751, made to the University of Chicago for \$999,966 for the period 3/26/2012 to 3/25/2016.  A large number of publications were produced under the PI's IRD time in this award, including the WSSSPE1 and WSSSPE2 reports~\cite{WSSSPE1, WSSSPE2}.
 In addition, a number of NSF programs and official documents were produced under this award~\cite{NSF_software_vision}.
 
-{\bf Gabrielle D. Allen}
+\textbf{Gabrielle D.~Allen}
 was the PI for two recent workshop awards related to sustainable software. NSF CCF-1551592, made to the University of Illinois for \$88,739 for the period 09/15/2015 to 5/31/2017 supported the workshop on Computational Science \& Engineering Software Sustainability and Productivity Challenges (CSSSPE) which was hosted by NITRD and supported by NSF, DOE and DOD and brought together a very diverse number of agency representatives, software developers and software engineers spanning academia, national labs and industry. A report from this workshop is imminent. 
 Allen was also PI for a previous awards supporting WSSSPE2 and 3, NSF ACI-1434218, made to the University of Illinois for \$24,758 for the period 5/1/2014 to 4/30/2016. The award funded participation at WSSSPE2 and WSSSPE3 by early career researchers and underrepresented groups. 
 
-{\bf Kyle E. Niemeyer}
+\textbf{Kyle E.~Niemeyer}
 is currently supported by the NSF under NSF ACI-1535065, ``SI2-SSE: Collaborative Research: An Intelligent and Adaptive Parallel CPU\slash GPU Co-Processing Software Library for Accelerating Reactive-Flow Simulations,'' made to Oregon State University for \$285,487 for the period of 1 Sept.~2015 to 31 Aug.~2018 (estimated).
 The overall goal of this project is creating a software library to accelerate the solution of chemical kinetics equations in reactive-flow simulations on hybrid computing hardware.
 This will be achieved through the development of software components that include (1) integration algorithms for operation on parallel processors (e.g., vectorized CPUs, GPUs), (2) a stiffness detection metric used to adaptively select the most efficient solver based on local conditions, and (3) a computational cell clustering strategy to group similar spatial locations.
@@ -316,7 +319,7 @@ In addition, the software elements developed in this program are widely applicab
 
 {\bf Data Management Plan}
 
-As for previous WSSSPE meetings, all material (including publications, presentations, meeting minutes, real time discussions) will be open, hosted and archived on existing public platforms and journals (e.g. Slideshare, ArXiv, Google Docs, Twitter). The WSSSPE web page and wiki will be additionally used.
+As for previous WSSSPE meetings, all material (including publications, presentations, meeting minutes, real time discussions) will be open, hosted and archived on existing public platforms and journals (e.g., Slideshare, arXiv, Google Docs, Twitter). The WSSSPE web page and wiki at \url{http://wssspe.researchcomputing.org.uk/} will be additionally used to direct interested parties towards material.
 
 Reviews of paper submissions will not be open. 
 
