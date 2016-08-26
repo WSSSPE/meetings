@@ -1,0 +1,151 @@
+We thank the reviewers for their insightful comments, which follow, along
+with our responses and the changes we've made.
+
+Reviewer A:
+
+Comments to the authors: 
+	The paper summarizes the agenda, discussion, and outputs of the WSSSPE3.0
+workshop on scientific software sustainability. The paper provides good
+insight into the status of that discourse, very relevant to the JoRS venue.
+Each section provides useful literature background and identifies people and
+groups that readers can follow up with if they are interested in particular
+topics. The inclusion of the longer appendices is very useful.  I have two
+comments that would improve the article, neither of which I think are
+crucial to publication but would be useful.
+
+The paper lays out it's structure at the start, but each section could end
+with additional signposts ("having done x, and before doing y, we will
+review z"). I think those help the reader know where they are in a long
+document.
+
+RESPONSE:
+
+Time has passed since the submission was prepared. I am conscious that my
+late review played a role here. However it does create an opportunity to
+check in with each of the groups and see if any progress has been made. For
+example, it seems as if the effort to create the "best practices" paper has
+flagged (at least nothing has been done since November 2015 at the gdoc
+linked from the paper. Perhaps ask the conveners/contacts of each working
+group if they have any updates?
+
+RESPONSE:
+
+Just a few typos I spotted (very few overall):
+
+p 27 "refunded" should be "re-funded" or "funded again"
+
+RESPONSE: We've changed the word to re-funded.
+
+p2 "Overall, the report discusses the organization work done before the
+workshop (§2); the keynote (§3); a series of lightning talks (§4)." needs
+some work. Perhaps "Overall, the report discusses the organizational work
+done before the workshop (§2); the keynote (§3) and summarizes the
+lightning talks presented at the meeting (§4)."
+
+RESPONSE: we've changed this text to
+Overall, the report discusses the organization work done before the
+workshop (§2), the keynote (§3), and the lightning talks presented
+at the meeting (§4).
+
+------------------------------------------------------
+
+------------------------------------------------------
+Reviewer B:
+
+Comments to the authors: 
+	General Comments:
+
+The authors have provided a dense, lengthy but complete record of the
+WSSSPE3 conference.  It follows on the WSSSPE2 report published in JORS, and
+is balanced, trustworthy, and valuable. The authors’ limited
+editorializing is simultaneously welcome in a historical report and renders
+the lengthy document difficult to read or interpret since it lacks a strong
+narrative form. To put that a bit more harshly, the manuscript feels like a
+network graph with a goal of encompassing all the historical facts around
+WSSSPE3. I think this stems from having a dual goal of tracing accurately
+what happened at this conference and trying to encode action items and
+practical outcomes into an authoritative document about what WSSSPE as an
+entity is trying to become. I would recommend that this aspect of the
+manuscript could be improved. Most of my concern is centered on Section 5. 
+
+Section 5 “Working Groups” beings without any narrative explaining where
+these working groups came from and how they might have been culled from a
+list of potential/actual working groups. The 10 working groups do not
+correlate precisely with the “18 potential topics” on page 3 nor the 6
+categories superimposed on the 18 topics. I suppose the working groups could
+have been drawn from them though.  So this sets an unanswered question: were
+these working groups decided upon by WSSSPE3 conference members or by a
+WSSSPE body before the event? (Aside: does a WSSSPE entity exist today? Did
+it exist before WSSSPE1? After WSSSPE2?) 
+
+RESPONSE:
+
+Before Section 5 the last time the reader was introduced to the working
+group model was on page 3, with the rather diffuse text, “The first call
+for participation requested lightning talks, where each author could make a
+brief statement about work that either had been done or was needed, with the
+goal of contributing to the discussion of one or more working groups.” I
+think what is lacking is some threading through of where these working
+groups came from and how they are the focus of WSSSPE# going forward.
+
+RESPONSE:
+
+It is also distracting that each subsection of Section 5 represents a
+subset/working group speaking with that voice, e.g., Section 5.3, “At
+WSSSPE3 our group was interested in better understanding successful pathways
+for scientific software to “transition” from grant-funded research
+projects to industry sponsorship.” I think it makes clear sense for
+individual appendices to speak with a “group” voice, but that the main
+document should speak with a single authoritative voice.
+
+RESPONSE:
+
+To fix my perceived problem with Section 5, some background would need to be
+added and some of the summary material about working groups that is
+presently in the Conclusions section could be moved to introduce the working
+groups better. 
+
+RESPONSE:
+
+I just have one more comment on the narrative and analysis in this
+summarizing manuscript. I suspect given the years WSSSPE has spent digesting
+these topics and broadening and maturing its participants that it would be
+worthwhile analyzing the following problem posed in the Conclusions a little
+bit more in the current article: “We need to determine how to tie the
+WSSSPE breakout activities to people’s jobs, so that they feel that
+continuing them is a higher priority than it is now, perhaps through funding
+the participants, or through funding coordinators for each activity, or
+perhaps by getting the workshop participants to agree to a specific schedule
+of activities during the workshop as we have tried to do in WSSSPE3.” Is
+such a problem  symptomatic of all interdisciplinary projects with or
+without limited funding? Would it be more successful if its efforts were
+tied directly to the domain specific activities of the individual entities
+represented by WSSSPE members? Is there a tension between the (idealistic?)
+cross-domain goals of such a broad effort as WSSSPE and the practicalities
+of getting people to work on someone else’s stuff?  I think there is an
+opportunity for the authors to dig into their self assessed problem a little
+bit more than they have.
+
+RESPONSE:
+
+
+Minor Comments:
+1. I would avoid using the ableist term “bipolar” even if lifted
+directly from the keynote;
+
+RESPONSE: we've reworded this
+
+2. I wonder if would be better to enhance the linking and referencing of
+online materials in this document even beyond its already rich set of
+footnoted links. For instance, all of the lightning talks refer to standing
+proposals or active projects, but there are almost no reference URLs for
+these projects or proposals;
+
+RESPONSE:
+
+3. There are many outlines in the appendices, and I’d like to note that
+some outlines in the WSSSPE2 JORS article were negatively affected by poor
+typesetting. You might want to make sure JORS gets them all right.
+
+RESPONSE:
+
