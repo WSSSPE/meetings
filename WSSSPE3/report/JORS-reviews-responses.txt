@@ -20,6 +20,7 @@ document.
 
 RESPONSE:
 
+
 Time has passed since the submission was prepared. I am conscious that my
 late review played a role here. However it does create an opportunity to
 check in with each of the groups and see if any progress has been made. For
@@ -28,7 +29,13 @@ flagged (at least nothing has been done since November 2015 at the gdoc
 linked from the paper. Perhaps ask the conveners/contacts of each working
 group if they have any updates?
 
-RESPONSE:
+RESPONSE:  We feel that this report should stick with where things were at
+WSSSPE3, since we otherwise will never be done updating it. But for the
+reviewer’s benefit, some groups have continued to work and have made good
+progress, others have basically stopped work, and some are in the middle.
+Some discussion of this can be found in
+http://www.slideshare.net/danielskatz/summary-of-wssspe-focused-on-wssspe3
+
 
 Just a few typos I spotted (very few overall):
 
@@ -53,7 +60,8 @@ at the meeting (§4).
 Reviewer B:
 
 Comments to the authors: 
-	General Comments:
+
+General Comments:
 
 The authors have provided a dense, lengthy but complete record of the
 WSSSPE3 conference.  It follows on the WSSSPE2 report published in JORS, and
@@ -78,7 +86,15 @@ these working groups decided upon by WSSSPE3 conference members or by a
 WSSSPE body before the event? (Aside: does a WSSSPE entity exist today? Did
 it exist before WSSSPE1? After WSSSPE2?) 
 
-RESPONSE:
+RESPONSE: This is a very good observation.  We have added a few paragraphs to
+the start of Section 5 to explain how the 10 initial working groups came about.
+Regarding the second part of this comment, what has happened after WSSSPE3, we
+feel that this report should stick with where things were at WSSSPE3, since
+we otherwise will never be done updating it. But for the reviewer’s benefit,
+some groups have continued to work and have made good progress, others have
+basically stopped work, and some are in the middle.  Some discussion of this
+can be found in http://www.slideshare.net/danielskatz/summary-of-wssspe-focused-on-wssspe3
+
 
 Before Section 5 the last time the reader was introduced to the working
 group model was on page 3, with the rather diffuse text, “The first call
@@ -88,7 +104,9 @@ goal of contributing to the discussion of one or more working groups.” I
 think what is lacking is some threading through of where these working
 groups came from and how they are the focus of WSSSPE# going forward.
 
-RESPONSE:
+RESPONSE: The new paragraphs at the start of Section 5 should resolve
+this concern.
+
 
 It is also distracting that each subsection of Section 5 represents a
 subset/working group speaking with that voice, e.g., Section 5.3, “At
@@ -100,12 +118,15 @@ document should speak with a single authoritative voice.
 
 RESPONSE:
 
+
 To fix my perceived problem with Section 5, some background would need to be
 added and some of the summary material about working groups that is
 presently in the Conclusions section could be moved to introduce the working
 groups better. 
 
-RESPONSE:
+RESPONSE:  Again, the new paragraphs at the start of Section 5 provide
+the requested background.
+ 
 
 I just have one more comment on the narrative and analysis in this
 summarizing manuscript. I suspect given the years WSSSPE has spent digesting
@@ -135,6 +156,7 @@ directly from the keynote;
 
 RESPONSE: we've reworded this
 
+
 2. I wonder if would be better to enhance the linking and referencing of
 online materials in this document even beyond its already rich set of
 footnoted links. For instance, all of the lightning talks refer to standing
@@ -143,9 +165,11 @@ these projects or proposals;
 
 RESPONSE:
 
+
 3. There are many outlines in the appendices, and I’d like to note that
 some outlines in the WSSSPE2 JORS article were negatively affected by poor
 typesetting. You might want to make sure JORS gets them all right.
 
 RESPONSE:
+
 
