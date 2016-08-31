@@ -157,7 +157,7 @@ Minor Comments:
 1. I would avoid using the ableist term “bipolar” even if lifted
 directly from the keynote;
 
-RESPONSE: we've reworded this
+RESPONSE: we've reworded this.
 
 
 2. I wonder if would be better to enhance the linking and referencing of
