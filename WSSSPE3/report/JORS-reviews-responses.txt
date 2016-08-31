@@ -44,6 +44,7 @@ p 27 "refunded" should be "re-funded" or "funded again"
 
 RESPONSE: We've changed the word to re-funded.
 
+
 p2 "Overall, the report discusses the organization work done before the
 workshop (§2); the keynote (§3); a series of lightning talks (§4)." needs
 some work. Perhaps "Overall, the report discusses the organizational work
@@ -54,6 +55,7 @@ RESPONSE: we've changed this text to
 Overall, the report discusses the organization work done before the
 workshop (§2), the keynote (§3), and the lightning talks presented
 at the meeting (§4).
+
 
 ------------------------------------------------------
 
@@ -117,7 +119,7 @@ projects to industry sponsorship.” I think it makes clear sense for
 individual appendices to speak with a “group” voice, but that the main
 document should speak with a single authoritative voice.
 
-RESPONSE:
+RESPONSE: We agree, and we’ve edited the subsections of 5 to fix this issue.
 
 
 To fix my perceived problem with Section 5, some background would need to be
