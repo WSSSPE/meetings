@@ -172,6 +172,9 @@ lightning talk paragraphs.
 some outlines in the WSSSPE2 JORS article were negatively affected by poor
 typesetting. You might want to make sure JORS gets them all right.
 
-RESPONSE:
+RESPONSE: The JORS typesetting process is a bit different than that of
+traditional journals, but we will strive to pay attention to this and ensure
+that it is correct.
+
 
 
