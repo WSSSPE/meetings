@@ -18,7 +18,8 @@ with additional signposts ("having done x, and before doing y, we will
 review z"). I think those help the reader know where they are in a long
 document.
 
-RESPONSE:
+RESPONSE: We’ve added some text at the start of Sections 4 and 5 to better
+explain the workshop and report structure.
 
 
 Time has passed since the submission was prepared. I am conscious that my
