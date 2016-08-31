@@ -163,7 +163,8 @@ footnoted links. For instance, all of the lightning talks refer to standing
 proposals or active projects, but there are almost no reference URLs for
 these projects or proposals;
 
-RESPONSE:
+RESPONSE: We have added a number of URLs (footnotes) and references to the
+lightning talk paragraphs.
 
 
 3. There are many outlines in the appendices, and I’d like to note that
