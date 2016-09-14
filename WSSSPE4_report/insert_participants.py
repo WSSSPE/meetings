@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 import re, operator
 
-with open("participants.txt", 'r') as f:
+# set to 'name' for hyperlinking email address with name,
+# 'column' for a column, and
+# 'off' for no email.
+email = 'name'
+
+with open('participants.txt', 'r') as f:
   people = []
   person = {}
   for line in f:
@@ -18,8 +23,16 @@ if 'name' in person:
   people.append(person)
 
 for person in sorted(people, key=lambda x: x['name'].split()[-1]):
-  #print(person['name'] + ' & ' + person['institution'] + r'\\')
-  print(person['name'] + ' & ' +
-        r'\href{mailto:' + person['email'] + r'}{' + person['email'] + r'} & ' +
-        person['institution'] + r'\\'
-       )
+    if email == 'column':
+      print(person['name'] + ' & ' +
+            r'\href{mailto:' + person['email'] + r'}{' +
+            person['email'] + r'} & ' +
+            person['institution'] + r'\\'
+           )
+    elif email == 'off':
+        print(person['name'] + ' & ' + person['institution'] + r'\\')
+    elif email == 'name':
+        print(r'\href{mailto:' + person['email'] + r'}{' +
+              person['name'] + r'} & ' +
+              person['institution'] + r'\\'
+             )
