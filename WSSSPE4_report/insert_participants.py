@@ -20,6 +20,6 @@ if 'name' in person:
 for person in sorted(people, key=lambda x: x['name'].split()[-1]):
   #print(person['name'] + ' & ' + person['institution'] + r'\\')
   print(person['name'] + ' & ' +
-        r'\href{mailto:' + person['email'] + r'}{' + person['email'] + r'}&' +
+        r'\href{mailto:' + person['email'] + r'}{' + person['email'] + r'} & ' +
         person['institution'] + r'\\'
        )
