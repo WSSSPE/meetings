@@ -1,0 +1,362 @@
+\documentclass[11pt, oneside]{amsart}
+\pdfoutput=1
+
+\usepackage{amsmath,amssymb,amsmath}
+
+\usepackage{color}
+\usepackage{dcolumn}
+\usepackage{float,caption}
+\usepackage{graphicx}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+\usepackage{xspace}
+
+\usepackage{rotating}
+\usepackage{subfigure}
+\usepackage{psfrag}
+\usepackage{tabularx}
+\usepackage[hyphens]{url}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{booktabs,multicol,multirow}
+
+%better printing of numbers
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+% The following three lines are used for displaying footnote in tables.
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+
+\usepackage{enumitem}
+\setlist{leftmargin=7mm}
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+
+\usepackage[bookmarks, bookmarksopen, bookmarksnumbered]{hyperref}
+\usepackage[all]{hypcap}
+\urlstyle{rm}
+
+\definecolor{orange}{rgb}{1.0,0.3,0.0}
+\definecolor{violet}{rgb}{0.75,0,1}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{cyan}{rgb}{0.2,0.7,0.7}
+\definecolor{blueish}{rgb}{0.2,0.2,0.8}
+\definecolor{darkblue}{rgb}{0.1,0.1,0.9}
+
+\newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
+\newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
+\newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
+\newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
+
+% Don't use tt font for urls
+\urlstyle{rm}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+% You can use a baselinestretch of down to 0.9
+\renewcommand{\baselinestretch}{0.96}
+
+\sloppypar
+
+\begin{document}
+
+\title[]{Report on the Fourth Working towards Sustainable Software for Science: Practice and Experiences (WSSSPE4) workshop}
+
+\author{Daniel S.\ Katz$^{(1)}$,
+Kyle E.\ Niemeyer$^{(2)}$,
+}
+
+%
+\thanks{{}$^{(1)}$ \hspace{-1ex}Computation Institute,
+University of Illinois at Urbana--Champaign, IL, USA; d.katz@ieee.org}
+%
+\thanks{{}$^{(2)}$ School of Mechanical, Industrial, and Manufacturing Engineering,
+Oregon State University, OR, USA; kyle.niemeyer@oregonstate.edu}
+%
+
+
+\begin{abstract}
+This report records and discusses the Fourth Working towards Sustainable
+Software for Science: Practice and Experiences (WSSSPE4) workshop. The report
+includes a description of the keynote presentation of the workshop,
+which % TODO
+% It also summarizes a set of lightning
+% talks in which speakers highlighted to-the-point lessons and challenges
+% pertaining to sustaining scientific software.
+% The final and main contribution of the report is a summary of the
+% discussions, future steps, and future organization for a set of self-organized
+% working groups on topics including developing pathways to funding scientific
+% software; constructing useful common metrics for crediting software
+% stakeholders; identifying principles for sustainable software engineering
+% design; reaching out to research software organizations around the world; and
+% building communities for software sustainability. For each group, we include a
+% point of contact and a landing page that can be used by those who want to join
+% that group's future activities. The main challenge left by the workshop is to
+% see if the groups will execute these activities that they have scheduled, and
+% how the WSSSPE community can encourage this to happen.
+
+\end{abstract}
+
+
+
+\maketitle
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction} \label{sec:intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The Fourth Workshop on Sustainable Software for Science: Practice and Experiences
+(WSSSPE4)\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe4/}} was
+held on 12--14 September 2016 in Manchester, England, UK. Previous events in
+the WSSSPE series are
+WSSSPE1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1/}}~\cite{WSSSPE1-pre-report,WSSSPE1},
+held in conjunction with SC13;
+WSSSPE1.1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1-1/}}, a
+focused workshop organized jointly with the SciPy
+conference\footnote{\url{https://conference.scipy.org/scipy2014/participate/wssspe/}};
+WSSSPE2\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe2/}}~\cite{WSSSPE2-pre-report,WSSSPE2},
+held in conjunction with SC14;
+WSSSPE2.1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe2-1/}}, a
+focused workshop organized again jointly with
+SciPy\footnote{\url{http://scipy2015.scipy.org/ehome/115969/286469/}};
+and WSSSPE3\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe3/}}~\cite{WSSSPE3},
+held in Boulder, Colorado, USA.
+Note that the WSSSPE series changed its name from ``Workshop on Sustainable
+Software for Science: Practice and Experiences'' to ``Working towards
+Sustainable Software for Science: Practice and Experiences'' to better reflect
+the movement towards a community in addition to the associated workshop series.
+
+\todo{Introduction}
+
+The WSSSPE4 workshop included multiple mechanisms for participation and
+encouraged team building around solutions. WSSSPE4 strongly encouraged participation
+of early-career scientists, postdoctoral researchers, graduate students,
+early-stage researchers, and those from underrepresented groups,
+with funds provided to the conference organizers by the National Science
+Foundation (NSF), the Alfred P.~Sloan Foundation, and the Software
+Sustainability Institute (SSI) to support the travel of potential participants
+who would not otherwise be able to attend the workshop. These
+funds allowed 29 additional people to attend and participate. A subset of the
+organizing committee reviewed 44 applications for travel support and
+competitively selected the awardees, including 11 students and five early-career
+researchers. In addition, the travel award subcommittee tried to increase the
+diversity of applicants by forwarding the notice of travel support to
+organizations including PyLadies, Django Girls, Women Who Code, and
+Women in HPC.\todo{add links}
+\todo{did we reach out to any others?}
+
+WSSSPE4 also included two professional event organizers/facilitators from
+KnowInnovation who helped the organizing committee plan the workshop agenda,
+and during the workshop, they actively engaged participants with various
+tools, activities, and reminders.
+
+This report is based on
+\todo{what report is based on}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Calls for participation} \label{sec:preworkshop}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+WSSSPE4 was based on the work done in WSSSPE1, WSSSPE2, and WSSSPE3, but aimed
+at \todo{what aimed at?}
+as the calls for participation said:
+
+two tracks:
+
+\begin{quote}
+    call for participation
+\end{quote}
+
+\todo{update}
+The calls for participation requested papers describing lightning talks,
+where each author could make a brief statement about work that either had been
+done or was needed;
+idea papers, which present implementable proposals related to Track 1;
+position papers, which are longer, not previously published papers related to
+Track 2 specifically discussing what we can do to improve sustainable scientific
+software in the short term, starting with where we are today;
+experience papers, longer papers related to Track 2 that discuss current
+practices and experiences and how they have been used to improve the quality of
+today’s research software and/or the experiences of its developers;
+and demos, brief papers describing a 10--15 minute demonstration of a tool or
+process relevant to Track 2 that improves the quality of today's research
+software and\slash or the experiences of its developers.
+
+There were~24 lightning talks submitted; after a peer-review process, 16
+were accepted, as discussed further in Section~\ref{sec:lightning}.
+\todo{update}
+
+%
+%\begin{quote}
+\begin{itemize}
+\renewcommand{\labelenumi}{\textbf{\theenumi}.}
+\setlength{\rightmargin}{1em}
+
+\item Development and Community
+\begin{itemize}
+    \item Best practices for developing sustainable software
+    \item Models for funding specialist expertise in software collaborations
+    \item Software tools that aid sustainability
+    \item Academia/industry interaction
+    \item Refactoring/improving legacy scientific software
+    \item Engineering design for sustainable software
+    \item Metrics for the success of scientific software
+    \item Adaptation of mainstream software practices for scientific software
+\end{itemize}
+
+\item Professionalization
+\begin{itemize}
+    \item Career paths
+    \item RSE as a brand
+    \item RSE outside of the UK or Europe
+    \item Increase incentives in publishing, funding and promotion for better software
+\end{itemize}
+
+\item Training
+\begin{itemize}
+    \item Training for developing sustainable software
+    \item Curriculum for software sustainability
+\end{itemize}
+
+\item Credit
+\begin{itemize}
+    \item Making the existing credit and citation ecosystem work better for software
+    \item Future credit and citation ecosystem
+    \item Software contributions as a part of tenure review
+    \item Case studies of receiving credit for software contributions
+    \item Awards and recognition that encourage sustainable software
+\end{itemize}
+
+\item Software publishing
+\begin{itemize}
+    \item Journals and alternative venues for publishing software
+    \item Review processes for published software
+\end{itemize}
+
+\item Software discoverability/reuse
+\begin{itemize}
+    \item Proposals and case studies
+\end{itemize}
+
+\item Reproducibility and testing
+\begin{itemize}
+    \item Reproducibility in conferences and journals
+    \item Best practices for code testing and code review
+\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Keynote}\label{sec:keynote}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lightning talks} \label{sec:lightning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\note{
+\href{http://wssspe.researchcomputing.org.uk/wssspe4/agenda/}{Slides.}}
+\end{comment}
+
+Intro and description
+%
+\begin{enumerate}
+\item \textbf{Names: \emph{title}}.
+Description
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Panel discussion} \label{sec:panel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{description of panel discussion on best practices}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Working groups} \label{sec:WGs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{go through subsections that have both content here and appendix, and add pointer from text in the subsection here to the corresponding appendix}
+
+\input{wg_open_research_index}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions} \label{sec:conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In WSSSPE4, we
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgments} \label{sec:acks}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% NSF grant for WSSSPE4
+This material is based upon work supported by the National Science
+Foundation under grant ACI-1648293, and by the Alfred P.~Sloan Foundation
+under grant G-2016-7214.
+
+%
+\todo{feel free to add stuff here}
+
+\newpage
+\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organizing committee}  \label{sec:orgcom}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\todo{Do we want email addresses here?}
+
+The following is the list of WSSSPE4 organizers.
+
+{\scriptsize
+\begin{longtable}{lll}
+\input{orgcom}
+\end{longtable}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Attendees}  \label{sec:attendees}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The following is a list of attendees at WSSSPE4.
+
+{\scriptsize
+\begin{longtable}{lll}
+\input{participants}
+\end{longtable}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Travel award recipients}  \label{sec:awardees}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\todo{Do we want email addresses here?}
+The following is the list of WSSSPE4 travel award recipients.
+
+{\scriptsize
+\begin{longtable}{lll}
+\input{awardees}
+\end{longtable}
+}
+
+
+%\input{wg_appendix_best_practices}
+
+\bibliographystyle{vancouver}
+
+\bibliography{wssspe}
+\end{document}
