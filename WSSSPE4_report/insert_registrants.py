@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import re, operator
 
-with open("registrants.txt", 'r') as f:
+with open("participants.txt", 'r') as f:
   people = []
   person = {}
   for line in f:
