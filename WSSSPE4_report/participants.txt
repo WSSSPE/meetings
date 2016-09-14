@@ -4,7 +4,7 @@ email: mjab@kth.se
 
 Aseel Aldabjan
 institution: University of Manchester
-email:Aseel.aldabjan@student.manchester.ac.uk
+email: Aseel.aldabjan@student.manchester.ac.uk
 
 Alice Allen
 institution: Astrophysics Source Code Library
@@ -21,8 +21,9 @@ email: pau.andrio@bsc.es
 Wolfgang Bangerth
 institution: Colorado State University
 email: bangerth@colostate.edu
+
 Radovan Bast
-institution: UiT The Arctic University of Norway and Nordic e-Infrastructure Collaboration
+institution: UiT The Arctic University of Norway, Nordic e-Infrastructure Collaboration
 email: radovan.bast@uit.no
 
 Roman Bauer
@@ -51,6 +52,7 @@ email: N.ChueHong@software.ac.uk
 
 Mike Croucher
 institution: University of Sheffield
+email: M.Croucher@Sheffield.ac.uk
 
 Michael R. Crusoe
 institution: Common Workflow Language Project
@@ -71,6 +73,7 @@ email: tim.dunne@knowinnovation.com
 Peter Elmer
 institution: Princeton University
 email: Peter.Elmer@cern.ch
+
 Iain Emsley
 institution: University of Oxford
 email: iain.emsley@oerc.ox.ac.uk
@@ -97,6 +100,7 @@ email: goodale@gmail.com
 
 Christopher Gwilliams
 institution: Cardiff University
+email: gwilliamsc@cardiff.ac.uk
 
 Willem van Hage
 institution: Netherlands eScience Center
@@ -264,4 +268,4 @@ email: py12rw@leeds.ac.uk
 
 Christopher Woods
 institution: University of Bristol
-email: Christopher.Woods@bristol.ac.uk 
+email: Christopher.Woods@bristol.ac.uk
