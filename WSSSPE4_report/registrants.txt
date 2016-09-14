@@ -1,0 +1,267 @@
+Mark Abraham
+institution: SciLifeLab, KTH, Sweden
+email: mjab@kth.se
+
+Aseel Aldabjan
+institution: University of Manchester
+email:Aseel.aldabjan@student.manchester.ac.uk
+
+Alice Allen
+institution: Astrophysics Source Code Library
+email: aallen@ascl.net
+
+Gabrielle Allen
+institution: NCSA/University of Illinois
+email: gdallen@illinois.edu
+
+Pau Andrio
+institution: Barcelona Supercomputing Center
+email: pau.andrio@bsc.es
+
+Wolfgang Bangerth
+institution: Colorado State University
+email: bangerth@colostate.edu
+Radovan Bast
+institution: UiT The Arctic University of Norway and Nordic e-Infrastructure Collaboration
+email: radovan.bast@uit.no
+
+Roman Bauer
+institution: Newcastle University
+email: roman.bauer@newcastle.ac.uk
+
+Steven Brandt
+institution: Louisiana State University
+email: sbrandt@cct.lsu.edu
+
+Lukas Johannes Breitwieser
+institution: CERN
+email: lukas.johannes.breitwieser@cern.ch
+
+Emily Chen
+institution: NCSA/University of Illinois Urbana--Champaign
+email: echen35@illinois.edu
+
+Bruce Childers
+institution: University of Pittsburgh
+email: childers@pitt.edu
+
+Neil Chue Hong
+institution: Software Sustainability Institute
+email: N.ChueHong@software.ac.uk
+
+Mike Croucher
+institution: University of Sheffield
+
+Michael R. Crusoe
+institution: Common Workflow Language Project
+email: michael.crusoe@gmail.com
+
+Stephan Druskat
+institution: Humboldt-Universit\"{a}t zu Berlin
+email: stephan.druskat@hu-berlin.de
+
+Anshu Dubey
+institution: Argonne National Laboratory
+email: adubey@anl.gov
+
+Tim Dunne
+institution: KnowInnovation
+email: tim.dunne@knowinnovation.com
+
+Peter Elmer
+institution: Princeton University
+email: Peter.Elmer@cern.ch
+Iain Emsley
+institution: University of Oxford
+email: iain.emsley@oerc.ox.ac.uk
+
+Hans Fangohr
+institution: University of Southampton
+email: fangohr@soton.ac.uk
+
+Stuart Geiger
+institution: Berkeley Institute for Data Science
+email: stuart@stuartgeiger.com
+
+Sandra Gesing
+institution: University of Notre Dame
+email: sandra.gesing@nd.edu
+
+Carole Goble
+institution: University of Manchester, Software Sustainability Institute
+email: carole.goble@manchester.ac.uk
+
+Tom Goodale
+institution: Independent
+email: goodale@gmail.com
+
+Christopher Gwilliams
+institution: Cardiff University
+
+Willem van Hage
+institution: Netherlands eScience Center
+email: w.vanhage@esciencecenter.nl
+
+Robert Haines
+institution: University of Manchester
+email: robert.haine@manchester.ac.uk
+
+James Hetherington
+institution: University College London
+email: j.hetherington@ucl.ac.uk
+
+Simon Hettrick
+institution: Software Sustainability Institute
+email: s.hettrick@software.ac.uk
+
+Lorraine Hwang
+institution: UC Davis, CIG
+email: ljhwang@ucdavis.edu
+
+Ray Idaszak
+institution: RENCI, University of North Carolina at Chapel Hill
+email: rayi@renci.org
+
+Caroline Jay
+institution: University of Manchester
+email: caroline.jay@manchester.ac.uk
+
+Brian Jimenez
+institution: Barcelona Supercomputing Center
+email: bjimenez@bsc.es
+
+Rafael C Jimenez
+institution: ELIXIR Hub, UK
+email: rafael.jimenez@elixir-europe.org
+
+Daniel S Katz
+institution: University of Illinois Urbana--Champaign
+email: d.katz@ieee.org
+
+Dominic Kempf
+institution: Heidelberg University
+email: dominic.kempf@iwr.uni-heidelberg.de
+
+Patricia Lago
+institution: Vrije Universiteit Amsterdam
+email: p.lago@vu.nl
+
+Xinlian Liu
+institution: Hood College
+email: liu@hood.edu
+
+Hannes Loeffler
+institution: STFC
+email: hannes.loeffler@stfc.ac.uk
+
+Frank Löffler
+institution: Louisiana State University
+email: knarf@cct.lsu.edu
+
+Tengyu Ma
+institution: Vanderbilt University
+email: tengyu.ma@vanderbilt.edu
+
+Robert H McDonald
+institution: Indiana University
+email: rhmcdona@indiana.edu
+
+Chris Mentzel
+institution: Moore Foundation
+email: chris.mentzel@moore.org
+
+Constantinos Michailidis
+institution: KnowInnovation
+email: costa.michailidis@knowinnovation.com
+
+Jonah Miller
+institution: Perimeter Institute of Theoretical Physics
+email: jmiller@perimeterinstitute.ca
+
+Daniel Mosse
+institution: University of Pittsburgh
+email: mosse@cs.pitt.edu
+
+August (Gus) Muench
+institution: American Astronomical Society
+email: august.muench@aas.org
+
+Udit Nangia
+institution: University of Illinois Urbana--Champaign
+email: unangi2@illinois.edu
+
+Aleksandra Nenadic
+institution: University of Manchester, SSI
+email: a.nenadic@manchester.ac.uk
+
+Kyle Niemeyer
+institution: Oregon State University
+email: Kyle.Niemeyer@oregonstate.edu
+
+Santiago Nunez-Corrales
+institution: University of Illinois Urbana--Champaign
+email: nunezco2@illinois.edu
+
+Dominic Orchard
+institution: University of Kent
+email: d.a.orchard@kent.ac.uk
+
+Francisco Queiroz
+institution: Pontifical Catholic University of Rio de Janeiro
+email: chico@puc-rio.br
+
+Fons Rademakers
+institution: CERN
+email: fons.rademakers@cern.ch
+
+Karthik Ram
+institution: University of California, Berkeley
+email: karthik.ram@berkeley.edu
+
+Sam Relton
+institution: University Of Manchester
+email: samuel.relton@manchester.ac.uk
+
+Tom Robitaille
+institution: Freelance
+email: thomas.robitaille@gmail.com
+
+Jean Salac
+institution: University of Virginia
+email: jeansalac@virginia.edu
+
+Janos Sallai
+institution: Vanderbilt University
+email: janos.sallai@vanderbilt.edu
+
+Prabhjyot Saluja (Singh)
+institution: Southwestern Oklahoma State University
+email: prabhjyot10@gmail.com
+
+Eric Seidel
+institution: University of California, San Diego
+email: eseidel@cs.ucsd.edu
+
+Sameer Shende
+institution: University of Oregon
+email: sameer@cs.uoregon.edu
+
+Raniere Silva
+institution: University of Manchester
+email: raniere.silva@software.ac.uk
+
+Shoaib Sufi
+institution: University of Manchester, Software Sustainability Institute
+email: shoaib.sufi@software.ac.uk
+
+Chris Sweet
+institution: University of Notre Dame
+email: chris.sweet@nd.edu
+
+Rob Welch
+institution: University of Leeds
+email: py12rw@leeds.ac.uk
+
+Christopher Woods
+institution: University of Bristol
+email: Christopher.Woods@bristol.ac.uk 
