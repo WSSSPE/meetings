@@ -95,7 +95,7 @@ Sedef Akinli Kocak
 institution: Ryerson University, Canada
 
 Jong-Suk Ruth Lee
-institution: National Institute of Supercomputing and Networking, KISTI (Korea Institute of Science and Technology Information), Korea
+institution: National Institute of Supercomputing and Networking, KISTI, Korea
 
 James Lin
 institution: Shanghai Jiao Tong University, China
