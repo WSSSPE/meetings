@@ -238,7 +238,7 @@ Janos Sallai
 institution: Vanderbilt University
 email: janos.sallai@vanderbilt.edu
 
-Prabhjyot Saluja (Singh)
+Prabhjyot (Singh) Saluja
 institution: Southwestern Oklahoma State University
 email: prabhjyot10@gmail.com
 
