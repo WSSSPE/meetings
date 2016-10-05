@@ -23,7 +23,7 @@ Abstract -
 
 7. Working groups - All
 
-8. Survey responses
+8. Survey responses - Lorraine
 
 9. Conclusions -
 
@@ -36,5 +36,7 @@ Appendices
   B. Attendees - Frank Löffler
 
   C. Travel Grant - Kyle
+ 
+  D. Survey Results - Lorraine
 
 References
