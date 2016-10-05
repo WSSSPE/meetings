@@ -1,0 +1,197 @@
+David Abramson
+institution: University of Queensland, Australia
+
+Lorena A. Barba
+institution: George Washington University, USA
+
+Ross Bartlett
+institution: Sandia National Laboratories, USA
+
+Christoph Becker
+institution: University of Toronto, Canada
+
+David Bernholdt
+institution: Oak Ridge National Laboratory, USA
+
+Stefanie Betz
+institution: Karlsruhe Institute of Technology, Germany
+
+Coral Calero
+institution: Universidad Castilla La Mancha, Spain
+
+Ishwar Chandramouli
+institution: National Cancer Institute, National Institutes of Health, USA
+
+Ruzanna Chitchyan
+institution: University of Leicester, UK
+
+Neil Chue Hong
+institution: Software Sustainability Institute, University of Edinburgh, UK
+
+Karen Cranston
+institution: Duke University, USA
+
+Ewa Deelman
+institution: Information Sciences Institute, University of Southern California, USA
+
+Dave De Roure
+institution: Oxford e-Research Centre, University of Oxford, UK
+
+Charlie E. Dibsdale
+institution: O-Sys, Rolls Royce PLC, UK
+
+Alberto Di Meglio
+institution: CERN, Switzerland
+
+Anshu Dubey
+institution: Argonne National Laboratory, USA
+
+Nadia Eghbal
+institution: Independent Researcher (via Ford Foundation), USA
+
+Peter Elmer
+institution: CERN, Switzerland
+
+Martin Fenner
+institution: DataCite, Germany
+
+David Gavaghan
+institution: University of Oxford, UK
+
+Mike Glass
+institution: Sandia National Laboratories, USA
+
+Carole Goble
+institution: University of Manchester, UK
+
+Joshua Greenberg
+institution: Alfred P. Sloan Foundation, USA
+
+Michael K Griffiths
+institution: University of Sheffield, UK
+
+Sarah Harris
+institution: University of Leeds, UK
+
+James Hetherington
+institution: University College London, UK
+
+Fred J. Hickernell
+institution: Illinois Institute of Technology, USA
+
+Caroline Jay
+institution: University of Manchester, UK
+
+Rafael C. Jimenez
+institution: ELIXER, Cambridge, UK
+
+Matthew B. Jones
+institution: University of California Santa Barbara, USA
+
+Nick Jones
+institution: New Zealand eScience Infrastructure (NeSI), NZ
+
+Sedef Akinli Kocak
+institution: Ryerson University, Canada
+
+Jong-Suk Ruth Lee
+institution: National Institute of Supercomputing and Networking, KISTI, Korea
+
+James Lin
+institution: Shanghai Jiao Tong University, China
+
+Frank Löffler
+institution: Louisiana State University, USA
+
+Gregory Madey
+institution: University of Notre Dame, USA
+
+Ketan Maheshwari
+institution: University of Pittsburgh, USA
+
+Steven Manos
+institution: University of Melbourne, Australia
+
+Chris A. Mattmann
+institution: NASA JPL; University of Southern California, USA
+
+Abigail Cabunoc Mayes
+institution: Mozilla Science Lab, USA
+
+Robert H. McDonald
+institution: Indiana University, USA
+
+Lois Curfman McInnes
+institution: Argonne National Laboratory, USA
+
+Chris Mentzel
+institution: Gordon and Betty Moore Foundation, USA
+
+Peter Murray-Rust
+institution: University of Cambridge, UK
+
+Christopher R. Myers
+institution: Cornell University, USA
+
+Jarek Nabrzyski
+institution: University of Notre Dame, USA
+
+Cameron Neylon
+institution: Curtin University, Australia
+
+Aleksandra Pawlik
+institution: New Zealand eScience Infrastructure (NeSI), NZ
+
+Fernando Perez
+institution: Lawrence Berkeley National Laboratory; University of California, Berkeley, USA
+
+Marian Petre
+institution: The Open University, UK
+
+Marlon Pierce
+institution: Indiana University, USA
+
+Andreas Prlic
+institution: University of California, San Diego, USA
+
+Karthik Ram
+institution: University of California, Berkeley, USA
+
+Morris Riedel
+institution: Juelich Supercomputing Centre, Germany
+
+Norbert Seyff
+institution: University of Zurich, Switzerland
+
+Arfon Smith
+institution: GitHub Inc, USA
+
+Borja Sotomayor
+institution: University of Chicago, USA
+
+Edgar Spalding
+institution: University of Wisconsin, USA
+
+Maria Spichkova
+institution: RMIT University, Australia
+
+Victoria Stodden
+institution: University of Illinois Urbana--Champaign, USA
+
+Matthew Turk
+institution: University of Illinois Urbana--Champaign, USA
+
+Ewout van den Berg
+institution: IBM Watson, USA
+
+Nancy Wilkins-Diehr
+institution: San Diego Supercomputer Center, University of California, San Diego, USA
+
+James Willenbring
+institution: Sandia National Laboratories, USA
+
+Scott Wilson
+institution: Cetis LLP, UK
+
+Theresa Windus
+institution: Iowa State University and Ames Laboratory, USA

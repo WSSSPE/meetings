@@ -1,0 +1,342 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+\usepackage{xspace}
+
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{enumitem}
+\usepackage{url,hyperref}
+\usepackage{color}
+
+%better printing of numbers
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+
+ \newenvironment{shortlist}{
+        \vspace*{-0.8em}
+  \begin{itemize}
+  \setlength{\itemsep}{-0.3em}
+}{
+  \end{itemize}
+        \vspace*{-0.6em}
+}
+
+ \newenvironment{shortlist2}{
+        \vspace*{-0.5em}
+  \begin{itemize}
+  \setlength{\itemsep}{-0.1em}
+}{
+  \end{itemize}
+        \vspace*{-0.3em}
+}
+ \newenvironment{shortenum}{
+        \vspace*{-0.8em}
+  \begin{enumerate}
+  \setlength{\itemsep}{-0.3em}
+}{
+  \end{enumerate}
+        \vspace*{-0.6em}
+}
+
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{\vspace{-2em}The 4th Workshop on Sustainable Software for Science: Best Practices and Experiences (WSSSPE4)
+}
+\author{Daniel S.\ Katz, University of Illinois Urbana--Champaign \\
+        Gabrielle Allen, University of Illinois Urbana--Champaign \\
+	Kyle E.\ Niemeyer, Oregon State University
+	}
+\date{}                                           % Activate to display a given date or no date
+
+%\pagestyle{empty}  
+
+\parskip .5cm
+\parindent 0cm
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+
+\noindent \textbf{Summary:} The WSSSPE4 workshop is part of a community driven effort to address the many new challenges that are evident for the development, deployment, maintenance, and sustainability of reusable software for academic research and education. These challenges include the software development process, the support and maintenance of software, governance and business models particularly for sustainability, the role of software in building science communities, the need for software to lead to science which is verifiable and reproducible, policy issues such as how to measure software impact, choose licensing, or assign software credit, and the education and nurturing of early stage researchers in scientific software. 
+Based on successful WSSSPE1--WSSSPE3 meetings at SC13, SC14, and NCAR in 2013, 2014, and 2015, the organizers expect over 60 submitted papers and around 75 attendees at the WSSSPE4 meeting that will be held immediately preceding the RSE (Research Software Engineer) Conference in Manchester, UK, in September 2016.  As with previous events, WSSSPE4 will provide an open and dynamic forum for the community to discuss experiences and approaches in the areas listed above. This proposal requests funds to support attendance at WSSSPE4 for US based researchers, particularly targeted at encouraging attendance by early stage researchers with attention to diversity. 
+
+\noindent \textbf{Intellectual Merit:} The participants will be selected using a formal application procedure, with selection criteria based around (1) the potential of their attendance to contribute towards their own research and educational goals; (2) their potential contribution to the workshop; (3) providing a diverse set of attendees with priority to early stage researchers (e.g., students, postdoctoral researchers, early stage faculty). The workshop will include vision and position papers as well as lightning talks and demos, aimed at improving sustainable scientific software today as well as defining and working towards the its future. 
+
+\noindent \textbf{Broader Impacts:} WSSSPE4 accepted submissions (except presentations of previously published work) are planned to be published by WSSSPE as a special collection in \url{http://ceur-ws.org/}, which is fully indexed.
+Other material from the workshop will be openly archived on public popular sites (e.g., Figshare, Slideshare, arXiv). It is anticipated that the workshop will again be tweeted and documented live including contributions from external participants. The organizers take seriously the responsibility to encourage participation from underrepresented groups as workshop leaders as well as attendees, and NSF funds will be used to encourage such participation from the US community. 
+Strategies for reaching\slash recruiting such participants will be solicited from members of the Program Committee with experience supporting students, researchers, and research software engineers with such backgrounds.
+
+
+\newpage
+
+\section{Goals for WSSSPE4}
+
+Progress in scientific research is dependent on the quality and accessibility of research software at all levels. It is now critical to address many new challenges related to the development, deployment, maintenance, and sustainability of open-use research software: the software upon which specific research results rely.  Open-use software means that the software is widely accessible (whether open source, shareware, or commercial).  Research software means that the choice of software is essential to specific research results; using different software could produce different results.
+In addition, it is essential that scientists, researchers, and students are able to learn and adopt a new set of software-related skills and methodologies. Established researchers are already acquiring some of these skills, and in particular, a specialized class of software developers is emerging in academic environments who are an integral and embedded part of successful research teams. WSSSPE provides a forum for discussion of these challenges, including both positions and experiences, and a forum for the community to assemble and act.
+
+This is the fourth major event in the WSSSPE series. The first two WSSSPE workshops were held as part of SC in 2013 and 2014. These one-day workshops brought together researchers and practitioners to discuss challenges and issues around the development, deployment and maintenance of reusable software for academic research and education, and discussed potential solutions, moving from a presentation to a presentation and discussion format.  Reports from these workshops, and set of extended papers from them, have been published in special collections of the \textit{Journal of Open Research Software} \cite{WSSSPE1-collection, WSSSPE2-collection, WSSSPE1, WSSSPE2}.
+WSSSPE3, held at NCAR in 2015, grew out of the previous events, and focused almost entirely on facilitated discussions, with the aim of starting working groups to make changes in the practice of scientific software development leading to more sustainable software. Two of these groups have continued
+working together, leading to the FORCE11 Software Citation Principles and an in-progress paper
+on best practices for sustainable scientific software development.  The report from WSSSPE3 has been submitted to the \textit{Journal of Open Research Software} and is currently available as a preprint on arXiv~\cite{WSSSPE3}.
+
+In WSSSPE4, held over 2 1/2 days in Manchester, UK, we will include elements from the
+previous workshops, with most of the workshop divided into two tracks:
+
+\begin{quote}
+{\bf Track 1: Building a sustainable future for open-use research software} has the goals of defining a vision of the future of open-use research software, and in the workshop, initiating the activities that are needed to get there.  The idea of this track is to first think about where we want to be 5 to 10 years from now, without being too concerned with where we are today, and then to determine how we can move to this future.
+
+{\bf Track 2: Practices \& experiences in sustainable scientific software} has the goal of improving the quality of today's research software and the experiences of its developers by sharing practices and experiences.  This track is focused on the current state of scientific software and what we can do to improve it in the short term, starting with where we are today.
+\end{quote}
+
+Topics of interest include but are not limited to:
+\begin{shortlist}
+\item Development and Community
+\begin{shortlist}
+\item Best practices for developing sustainable software
+\item Models for funding specialist expertise in software collaborations
+\item Software tools that aid sustainability
+\item Academia/industry interaction
+\item Refactoring/improving legacy scientific software
+\item Engineering design for sustainable software
+\item Metrics for the success of scientific software
+\item Adaptation of mainstream software practices for scientific software
+\end{shortlist}
+\item Professionalization
+\begin{shortlist}
+\item Career paths
+\item RSE as a brand
+\item RSE outside of the UK or Europe
+\item Increase incentives in publishing, funding and promotion for better software
+\end{shortlist}
+\item Training
+\begin{shortlist}
+\item Training for developing sustainable software
+\item Curriculum for software sustainability
+\end{shortlist}
+\item Credit
+\begin{shortlist}
+\item Making the existing credit and citation ecosystem work better for software
+\item Future credit and citation ecosystem
+\item Software contributions as a part of tenure review
+\item Case studies of receiving credit for software contributions
+\item Awards and recognition that encourage sustainable software
+\end{shortlist}
+\item Software publishing
+\begin{shortlist}
+\item Journals and alternative venues for publishing software
+\item Review processes for published software
+\end{shortlist}
+\item Software discoverability/reuse
+\begin{shortlist}
+\item Proposals and case studies
+\end{shortlist}
+\item Reproducibility and testing
+\begin{shortlist}
+\item Reproducibility in conferences and journals
+\item Best practices for code testing and code review
+\end{shortlist}
+\end{shortlist}
+
+
+Joint sessions of the workshop will include a keynote, a set of lightning talks on topics related to either track, and a panel on best practices for scientific software development.  Tracks 1 and 2 will be held in parallel with each other.
+
+Track 1 will consist of facilitated discussions, both as a single group and as breakouts.  It will also include discussion of Idea papers that presents implementable proposals related to the track.
+Track 1 participants will build on the proposals and ideas in these papers, with the goal of initiating the planning, development, and execution of some of the ideas during the workshop itself. Given the magnitude and importance of the task at hand, the WSSSPE4 organizing committee encourages these proposals to be developed on an open, public, and inclusive basis. Submitters are invited to present a vision of some aspect of the future of open-use research software, and a plan of activities to gather and organize the resources needed to get there.
+
+\begin{quote}
+Example idea paper topics include:
+\begin{shortlist}
+\item Adaptation of industrial software engineering principles into the research software community with a plan to fund the work
+\item Funding and scaling software carpentry style training in advanced topics
+Infrastructure and funding for community maintenance of open use research software
+\item Scaling the SSI beyond the UK
+\item Specific proposals of how to bridging/network the various research software engineering communities in scalable manner without destroying independence and unique foci of each community
+\end{shortlist}
+\end{quote}
+
+Track 2 will consist mostly of presentations, with some discussions, including position papers, experience papers, presentations of previously published work, and demos.  The intent of this
+track is for current scientific software developers and those interested in scientific software development to learn from each other improve the current state of the practice in this area.
+
+
+\section{Workshop Organization and Planning}
+
+The WSSSPE4 organizing committee comprises 
+\begin{shortlist}
+\item Gabrielle Allen, University of Illinois Urbana-Champaign, USA
+\item Jeffrey Carver, University of Alabama, USA
+\item Sou-Cheng T.~Choi, Illinois Institute of Technology, USA
+\item Tom Crick, Cardiff Metropolitan University, UK
+\item Michael R.~Crusoe, Common Workflow Language project
+\item Sandra Gesing, University of Notre Dame, USA
+\item Robert Haines, University of Manchester, UK
+\item Michael Heroux, Sandia National Laboratories, USA
+\item Lorraine J.~Hwang, University of California, Davis, USA
+\item Daniel S.~Katz, University of Illinois Urbana-Champaign, USA
+\item Kyle E.~Niemeyer, Oregon State University, USA
+\item Manish Parashar, Rutgers University, USA
+\item Colin C.~Venters, University of Huddersfield, UK
+\end{shortlist}
+
+The program committee currently has about 65 global members, from academia, industry, and national labs, with more invitations outstanding.  See the web site (\url{http://wssspe.researchcomputing.org.uk/wssspe4/}) for the specific names.
+
+
+The tentative agenda for the workshop is:
+
+Sept 12 (pm) --- Joint session of both tracks
+
+\begin{shortlist}
+\item Introduction
+\item Keynote
+\item Lightning talks
+\item Updates on actions and activities from WSSSPE3 working groups
+\item Discussion and planning for the remainder of WSSSPE4
+\end{shortlist}
+
+Sept 13 (all day) and 14 (am) --- Parallel tracks
+
+\begin{shortlist}
+\item Track 1: This will be a set of working sessions with a facilitated discussion, breakout sessions, report backs, and active writing towards the track goal of defining a vision of the future of open-use research software, and a plan of activities that are needed to get there.
+\item Track 2: Presentations of position papers, experience papers, previously published works, and demos; and breakout sessions or unconference sessions.
+\end{shortlist}
+
+Sept 14 (1:30--5 pm) --- Joint session of both tracks
+
+\begin{shortlist}
+\item Panel on best practices
+\item Summary and discussion of each tracks' progress
+\item Planning for future events
+\end{shortlist}
+
+
+\section{Participant Support}
+
+We are requesting funding from NSF to be able to encourage attendance at the meeting from US participants particularly by underrepresented groups, early stage researchers (students, postdocs, beginning faculty), and to assist in recruiting a diverse set of panelists and keynote speakers. 
+
+We are currently including a description of the opportunity for travel support in our call for papers and outreach material for the event to make sure that lack of funding is not a barrier to submitting a paper, and to make it clear that participation by early stage researchers is welcomed and encouraged. 
+
+The participants will be selected using a formal application procedure which will be described and advertised on the workshop web page, with selection criteria based around (1) the potential of their attendance to contribute towards their own research and educational goals; (2) their potential contribution to the workshop; (3) providing a diverse set of attendees with priority to early stage researchers (e.g., students, postdoctoral researchers, early stage faculty).
+
+The WSSSPE4 organizing committee will review the applications and select the participants to be funded through the award. 
+
+Awarded funding is expected to be reimbursement of allowable expenses (travel, lodging, sustenance) of up to \$1,500 for participants traveling from outside Europe to the UK, up to \$1,000 for participants traveling from Europe outside the UK to the UK, and up to \$500 for participants traveling from within the UK.
+We plan to support the travel of \textbf{at least 10 students}, which comprises \$15,000 of the overall request.
+
+\section{Award Administration}
+
+The National Center for Supercomputing Applications (NCSA) at the University of Illinois (U of I) will be the lead fiscal institution for this proposal to the Office of Advanced Cyberinfrastructure (ACI) at the National Science Foundation. NCSA staff will manage the travel for the participants and presenters funded through this proposal. U.S. participants and presenters will arrange their flights through the travel agency of NCSA/University of Illinois, with reimbursed by NCSA/University of Illinois. The WSSSPE4 organizing committee will review the applications and select the participants to be funded through this award. 
+
+\section{Assessment}
+
+Reports describing the activities of WSSSPE and WSSSPE2 culminated in peer-reviewed articles~\cite{WSSSPE1,WSSSPE2}, while the report from WSSSPE3 is currently undergoing peer review (and is available via arXiv)~\cite{WSSSPE3}; all reports are publicly available via publication in an open-access journal.
+A similar report will be prepared at the conclusion of WSSSPE4, and following the practices of past workshops, will be written collaboratively and openly on GitHub.
+
+The organizers of WSSSPE4 take seriously the assessment of workshop activities, in particular the progress of each working group where applicable.
+A portion of the first day's session is planned to discuss and evaluate the status\slash success of the activities proposed during WSSSPE3~\cite{WSSSPE3}.
+
+We will assess the success of WSSSPE4 with two different mechanisms.
+For Track 1, the activities and\slash or deliverables proposed during the workshop (and documented in the report) will be evaluated for progress or completion six months following the workshop.
+This could include submission of proposals or papers, or the creation of other useful products (e.g., tutorials, wiki, forum).
+Track 2 activities will be assessed by surveying attendees following the workshop with questions such as ``What software development practices are you aware of now that you were not aware of prior to WSSSPE4?'' and ``What practices do you intend on implementing in your own software development work following WSSSPE4?''.
+In addition, the peer review process for a report on the workshop, to be submitted within six months from the end of the conference, will be another metric for success.
+
+In our final report, we will discuss the demographics of the supported attendees, the compete set of workshop attendees, speakers, breakout group leads, and the leaders of activities that grow out the workshop. In all cases, while our ideal would be to have these demographics match the US or global population averages, our goal will be to significantly improve over academic STEM and tech industry norms.
+In addition, our goal is to support the travel of at least 10 students.
+
+\section{Broader Impacts} 
+
+The focus of the WSSSPE4 workshop on sustainable software for science and engineering is a topic of very broad relevance and interest that cuts across many different disciplines and different categories of people from students, developers, faculty, etc. Areas of interest and focus in the workshop include education and career paths of those involved in the development of software.
+
+This proposal is focused primarily on encouraging diverse participation at the workshop, particularly from underrepresented groups and early stage researchers. Funds will be used to help facilitate a diverse set of participants, including panel and keynote speakers. 
+Strategies for reaching\slash recruiting such participants will be solicited from members of the Program Committee with experience supporting students, researchers, and research software engineers with such backgrounds.
+
+\section{Prior Support} 
+
+\textbf{Daniel S.~Katz}
+was most recently supported by the NSF as a Program Officer under NSF ACI-1239751, made to the University of Chicago for \$999,966 for the period 3/26/2012 to 3/25/2016.  {\bf Intellectual Merit:} A large number of publications were produced under the PI's IRD time in this award, including the WSSSPE1-WSSSPE3 reports~\cite{WSSSPE1, WSSSPE2, WSSSPE3}. These documents and this work have impacted our understanding of the issues related to sustainable scientific software.  {\bf Broader Impacts:}
+A number of NSF programs (e.g., SI2, CDS\&E) and official documents were produced under this award (e.g., \cite{NSF_software_vision}).  These programs have added and developed an emphasis on software as infrastructure at NSF, and the software produced under these programs have impacted both education and industry.
+
+\textbf{Gabrielle D.~Allen}
+was the PI for two recent workshop awards related to sustainable software. NSF CCF-1551592, made to the University of Illinois for \$88,739 for the period 09/15/2015 to 5/31/2017 supported the workshop on Computational Science \& Engineering Software Sustainability and Productivity Challenges (CSSSPE) which was hosted by NITRD and supported by NSF, DOE and DOD and brought together a very diverse number of agency representatives, software developers and software engineers spanning academia, national labs and industry. A report from this workshop is imminent. 
+Allen was also PI for a previous award supporting WSSSPE2 and WSSSPE3, NSF ACI-1434218, made to the University of Illinois for \$24,758 for the period 5/1/2014 to 4/30/2016.  {\bf Intellectual Merit:} The workshops helped us gain knowledge about sustainable software and in particular, sustainable software in science, includes examining the roles of formal software engineering, metics, economics, workforce development, and sociology in scientific software development.
+Publications  resulting from the WSSSPE2 and WSSSPE3 workshop include \cite{WSSSPE2-collection, WSSSPE2, WSSSPE3}. {\bf Broader Impacts:} The awards funded participation at CSESSP and WSSSPE2 \& WSSSPE3 by early career researchers and underrepresented groups, diversifying the pool of researchers interested and active in working towards sustainable software.
+
+\textbf{Kyle E.~Niemeyer}
+is currently supported by the NSF under NSF ACI-1535065, ``SI2-SSE: Collaborative Research: An Intelligent and Adaptive Parallel CPU\slash GPU Co-Processing Software Library for Accelerating Reactive-Flow Simulations,'' made to Oregon State University for \$285,487 for the period of 1 Sept.~2015 to 31 Aug.~2018 (estimated).
+The overall goal of this project is creating a software library to accelerate the solution of chemical kinetics equations in reactive-flow simulations on hybrid computing hardware.
+This will be achieved through the development of software components that include (1) integration algorithms for operation on parallel processors (e.g., vectorized CPUs, GPUs), (2) a stiffness detection metric used to adaptively select the most efficient solver based on local conditions, and (3) a computational cell clustering strategy to group similar spatial locations.
+These will be incorporated into a usable, sustainable software library: SLACKHA (Software Library for Accelerating Chemical Kinetics on Hybrid Architectures).
+This award has thus far resulted in one journal article under review~\cite{Niemeyer:2016}, one conference paper~\cite{Niemeyer:2015}, one meeting poster~\cite{SI2-poster:2016}, one software package~\cite{pyJac-v1.01}, and one manuscript in preparation~\cite{Curtis:2016}.
+All research products from this project have been\slash will be made available openly: journal articles are either published in open-access journals or made available as preprints on arXiv~\cite{Niemeyer:2016}, conference papers are made available via figShare if not otherwise accessible~\cite{Niemeyer:2015}, and software is released openly on GitHub\slash Zenodo~\cite{pyJac-v1.01}.
+\textbf{Intellectual Merit:} The complexity of detailed chemical models prevents their use in high-fidelity computational fluid dynamics. The software library developed through this project will allow studies that are currently impractical due to computational demands; it will also shorten the design cycle of engines and combustors by reducing the time needed for design simulations.
+\textbf{Broader Impacts:} This work will provide important software tools for designers to help create next-generation clean and efficient engine technology, and for researchers to study difficult problems in combustion.
+In addition, the software elements developed in this program are widely applicable to computational modeling problems outside of combustion, including astrophysics, atmospheric chemistry, biochemical networks, and even cardiac electrophysiology.
+%By enabling the implementation of accurate and realistic chemical models into simulations, new concepts and solutions to existing problems may be explored rapidly and at lower cost.
+
+\newpage
+
+\bibliographystyle{abbrv}
+\bibliography{wssspe}
+
+\newpage
+
+{\bf UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN}
+
+{\bf BUDGET JUSTIFICATION}
+
+{\bf WSSSPE4}
+
+{\bf Principal Investigators: Daniel Katz, Gabrielle Allen, Kyle Niemeyer}
+
+\begin{enumerate}[label=\bf \Alph*.,leftmargin=*]
+
+\item {\bf Senior Personnel: } No funds requested.
+
+\item {\bf Other Personnel: } No funds requested.
+\item {\bf Fringe Benefits: }  No funds requested. 
+\item {\bf Equipment: }  No funds requested. 
+\item {\bf Travel: } \$6,000
+
+{\it International travel for the U Illinois based organizers to attend the meeting in Manchester, UK. Funds will be used to contribute towards airfares and/or the hotel nights needed for the workshop}
+
+\item {\bf Participant Support: } \$41,500
+{\it Funds are requested to partially support travel for 25 participants and presenters (at \$1,500 per participant) from US institutions across the country from the US to Manchester, UK, and 3 participants/presenters (at \$1,000 each)  from US institutions who are already in Europe to travel to Manchester, and 2 participants/presenters  (at \$500 each)  from US institutions who are already in the UK to travel to Manchester. Reimbursable costs include airfare, hotel, and sustenance.
+Out of the 25 participants, 10 positions will be reserved for students.}
+
+\item {\bf Other Direct Costs: } No funds requested. 
+\item {\bf Indirect Costs: } \$1,524
+
+{\it Indirect costs are assessed at a rate of 58.5\% of Modified Total Direct Costs (MTDC). MTDC is direct costs less equipment, tuition remission, and subawards in excess of \$25,000. }
+
+\item {\bf Total Costs: } \$49,024
+
+{\it Total funds requested by this proposal. }
+
+
+\end{enumerate}
+
+\newpage
+
+{\bf Data Management Plan}
+
+As for previous WSSSPE meetings, all material (including publications, presentations, meeting minutes, real time discussions) will be open, hosted and archived on existing public platforms and journals (e.g., Slideshare, arXiv, Google Docs, Twitter). The WSSSPE web page and wiki at \url{http://wssspe.researchcomputing.org.uk/} will be additionally used to direct interested parties towards material.
+
+Reviews of paper submissions will not be open. 
+
+
+
+
+\end{document}
