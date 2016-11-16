@@ -3,7 +3,8 @@ import re, operator
 
 # set to 'name' for hyperlinking email address with name,
 # 'column' for a column, and
-# 'off' for no email.
+# 'off' for no email, and
+# 'email' to just print a list of emails
 email = 'email'
 
 people = []
