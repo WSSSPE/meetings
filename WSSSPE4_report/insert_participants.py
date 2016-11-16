@@ -4,10 +4,11 @@ import re, operator
 # set to 'name' for hyperlinking email address with name,
 # 'column' for a column, and
 # 'off' for no email.
-email = 'name'
+email = 'email'
 
 with open('participants.txt', 'r') as f:
   people = []
+  addresses = []
   person = {}
   for line in f:
     if 'institution: ' in line:
@@ -31,8 +32,13 @@ for person in sorted(people, key=lambda x: x['name'].split()[-1]):
            )
     elif email == 'off':
         print(person['name'] + ' & ' + person['institution'] + r'\\')
+    elif email == 'email':
+        addresses.append(person['email'] + r', ')
     elif email == 'name':
         print(r'\href{mailto:' + person['email'] + r'}{' +
               person['name'] + r'} & ' +
               person['institution'] + r'\\'
              )
+
+if email == 'email':
+    print(''.join(map(str, addresses)))
