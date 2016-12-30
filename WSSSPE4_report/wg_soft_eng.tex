@@ -5,32 +5,124 @@
 
 \note{Anshu to write this}
 
-Introduction to group here, including the overall objective of work in this area.
+%Introduction to group here, including the overall objective of work in this area.
+This working group concerns itself with identify processes that are not well
+covered by general software engineering adequately. The current focus
+is on testing because there is growing awareness about the lack of trust
+and reproducibility in many computational results. A rigorous
+verification process which also involves ongoing regular testing is
+fundamental to addressing the issue of trust. Regular automated
+testing is the first step towards software process that can lead to
+provenance and reproducibility, the hallmarks of quality science.
+
+Computational science and engineering applications have many moving
+parts that need to interoperate with one another. The accuracy and
+reliability of results produced by the scientific software depends not
+only on the individual components behaving correctly, but also on the
+validity of their interactions. Therefore, a rigorous verification
+process and a robust testing regime are critical requirements for
+scientific software.  There have been instances where inadequate
+verification has resulted in publication of wrong results and
+retraction of publications later. As scientific understanding grows,
+models in the corresponding computational software are refined leading
+to more complex codes. Increasing complexity makes them more prone to
+defects not only in individual code units, but also in interaction
+among units. Therefore, a strong verification process combined with a
+rigorous testing regime play a critical role in the prevention of
+wrong scientific results being obtained. However, most science teams
+struggle to find a good solution for themselves. Causes range from
+lack of exposure to the practices to distrust of adopting practices
+because they do not meet the needs of the teams developing such
+software.  
 
 \subsubsection{Participants}
-
-members of the working group
+\begin{itemize}
+\item Mark Abraham
+\item Anshu Dubey - is a computer scientist at the Mathematics and
+  Computer Science Division at Argonne National Laboratory. She has
+  been deeply involved with the development of multiphysics scientific
+  software in multiple domains which has lead to an interest in, and
+  understanding of, software engineering concerns in scientific
+  computing. 
+\item Hans Fangohr
+\item Dominic Kempf
+\item Eric Seidel
+\end{itemize}
 
 \subsubsection{Working group objective}
-
-Specific things the working group wants to accomplish in the context of the larger objective.
+Scientific computing software lags behind commercial software in
+adoption of software engineering practices. This
+gap is particularly acute in the area of software testing,
+verification and validation where the standard practices are
+simulataneously inadequate and over-onerous. The objective of this
+working group is to (1) conduct literature survey to guage the extent
+of awareness of issue in general, (2) generate content useful for
+the community where needed, and (3) curate the collected and added
+content for the use of the community.
 
 \subsubsection{Gap or challenge}
-
-What is the gap or challenge being addressed?
+%What is the gap or challenge being addressed?
+Computational science code developers often lack of exposure to
+regular testing and its benefits. Good developers will test the code to
+verify that it operates as expected, however, they may not appreciate
+that without regular testing defects can be introduced
+inadvertently. An even bigger challenge is that those who understand
+the importance of regular testing do not often find much help from
+software engineering literature. There is significant gap between
+testing gospel and its applicability to computational science. This
+gap leads to frustration and abandonment of good with the bad. Some
+relevant literature exists, in particular experiences from
+practitioners in computational science who developed their own
+solutions. However, this literature is scattered among many different
+forums, and can be challenging to find. Our working group aims to
+address this gap by curating the existing content and contirbuting
+content where none exists.
 
 \subsubsection{Relevant people and resources}
 
-What people, groups, or resources are needed.
+%What people, groups, or resources are needed.
+The working group will benefit from a wide participation by developers
+of large computational science codes. The reason is that the
+management of such codes becomes intractable without adopting some
+software process and testing regime. The experiences and
+customizations vary, and the community will benefit from hearing about
+as many as possible. The seed resources required are fairly
+minimal. We have started a git repository for collecting the
+existing references. That, and a few volunteers reading through the
+references is all we need in the beginning. As we gather more
+knowledge and pinpoint gaps, we may need more resources to reach out
+to a wider group of developers to collect more information.
 
-\subsubsection{Plans}
+%\subsubsection{Plans}
 
-What tasks will the working group undertake
+%What tasks will the working group undertake
+
 
 \subsubsection{SMART steps}
 
-What are the first SMART steps proposed?
+%What are the first SMART steps proposed?
+Our first few SMART steps are : 
+\begin{itemize}
+\item Create a channel in wssspe.slack.com {\em done}
+\item Create github repository
+  {\url{http://github.com/wssspe/testing-in-science}} {\em done}
+\item Find and gather existing publications in repository {\em ongoing}
+\item Review and summarise material. Decide whether we consider this
+  sufficient. If yes, then we will put brief report together and
+  conclude the working group.
+\item If we do not consider the material adequate, we start research
+  and gather methodologies for testing in science 
+\item Write a document accessible to computational science and
+  software engineering community, and publish document at a citeable forum.
+\end{itemize}
 
 \subsubsection{More information \& joining instructions}
 
-How could a reader get more information or get more involved?
+%How could a reader get more information or get more involved?
+Readers interested in getting more information should get in touch
+with a member of the working group. The working group
+has a slack channel under WSSSPE organization. The channel is called
+{\it wg-testing-in-science}. Readers interested in getting more
+involved can ask for inclusion on the channel. Additionally, a git
+repository exists for contributing content and reference to, and
+curation of the existing literature on this topic.
