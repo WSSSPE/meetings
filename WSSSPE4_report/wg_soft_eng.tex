@@ -3,28 +3,26 @@
 \label{sec:soft-eng}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\note{Anshu to write this}
+%\note{Anshu to write this}
 
 %Introduction to group here, including the overall objective of work in this area.
 This working group concerned itself with identifying processes that are not adequately
-covered by general software engineering. The group focused
-on testing because there is a growing awareness about the lack of trust
-and reproducibility in many computational results. A rigorous
-verification process that also involves ongoing regular testing is
-fundamental to addressing the issue of trust. Regular automated
-testing is the first step towards software processes that can lead to
-provenance and reproducibility, the hallmarks of quality science.
-
-\katznote{this paragraph repeats some of the previous one - they probably should be merged}
+covered by general software engineering. Verification and testing is
+the first subtopic that we address.  
+% there is a growing awareness about the lack of trust
+% and reproducibility in many computational results. 
+%\katznote{this paragraph repeats some of the previous one - they probably should be merged}
 Computational science and engineering applications have many moving
 parts that need to interoperate with one another. The accuracy and
 reliability of results produced by the scientific software depends not
 only on the individual components behaving correctly, but also on the
-validity of their interactions. Therefore, a rigorous verification
-process and a robust testing regime are critical requirements for
-scientific software.  There have been instances where inadequate
-verification has resulted in publication of wrong results and later
-retraction of publications. As scientific understanding grows,
+validity of their interactions. 
+% Therefore, a rigorous verification
+% process and a robust testing regime are critical requirements for
+% scientific software.  There have been instances where inadequate
+% verification has resulted in publication of wrong results and later
+% retraction of publications.
+As scientific understanding grows
 the corresponding computational software models are refined, leading
 to more complex codes. Increasing complexity makes them more prone to
 defects, not only in individual code units, but also in interaction
@@ -34,17 +32,14 @@ generating incorrect scientific results. However, most science teams
 struggle to find a good solution for themselves. Causes range from
 lack of exposure to the practices, to distrust of adopting practices
 because they do not meet the needs of the teams developing such
-software.  
+software.  The current focus of our effort is on testing because it is the first step
+towards building a software processes that can lead to provenance and
+reproducibility, the hallmarks of quality science. 
 
 \subsubsection{Participants}
 \begin{itemize}
 \item Mark Abraham
-\item Anshu Dubey %- is a computer scientist at the Mathematics and
-%  Computer Science Division at Argonne National Laboratory. She has
-%  been deeply involved with the development of multiphysics scientific
-%  software in multiple domains which has lead to an interest in, and
-%  understanding of, software engineering concerns in scientific
-%  computing. 
+\item Anshu Dubey 
 \item Hans Fangohr
 \item Dominic Kempf
 \item Eric Seidel
@@ -127,5 +122,5 @@ has a channel in the WSSSPE Slack. The channel is called
 {\it wg-testing-in-science}.
 (See \S\ref{sec:slack} for instructions on how to join the Slack WSSSPE team.)
 Additionally, a git
-repository \katznote{add url} exists for contributing content and reference to, and
+repository (\url{https://github.com/WSSSPE/WG-Best-Practices.git}) exists for contributing content and reference to, and
 curation of the existing literature on this topic.
