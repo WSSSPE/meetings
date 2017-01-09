@@ -67,23 +67,38 @@ There was sufficient time for discussion. &
 
 %Figures have been inserted with little/no formatting.  
 %Figures are in *.png but can be remade to other formats 
-\todo{Place 3 figures in 1 row with Latex}
-\begin{figure}[h!]
-\includegraphics[width=0.3\textwidth]{figures/SurveyFig1rev}
-\caption{The plenary sessions had a good mix of topics and speakers.
-\label{fig:SFig1}}
-\end{figure}
-\begin{figure}[h!]
-\includegraphics[width=0.3\textwidth]{figures/SurveyFig2rev}
-\caption{The balance was right between talks, panels, and lightning talks.
-\label{fig:SFig2}}
-\end{figure}
-\begin{figure}[h!]
-\includegraphics[width=0.3\textwidth]{figures/SurveyFig3rev}
-\caption{There was sufficient time for discussion.
-\label{fig:SFig3}}
-\end{figure}
+%\todo{Place 3 figures in 1 row with Latex}
+%\begin{figure}[h!]
+%\includegraphics[width=0.3\textwidth]{figures/SurveyFig1rev}
+%\caption{The plenary sessions had a good mix of topics and speakers.
+%\label{fig:SFig1}}
+%\end{figure}
+%\begin{figure}[h!]
+%\includegraphics[width=0.3\textwidth]{figures/SurveyFig2rev}
+%\caption{The balance was right between talks, panels, and lightning talks.
+%\label{fig:SFig2}}
+%\end{figure}
+%\begin{figure}[h!]
+%\includegraphics[width=0.3\textwidth]{figures/SurveyFig3rev}
+%\caption{There was sufficient time for discussion.
+%\label{fig:SFig3}}
+%\end{figure}
 
+
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{figures/SurveyFig1rev}
+  \caption{The plenary sessions had a good mix of topics and speakers.\label{fig:SFig1}}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{figures/SurveyFig2rev}
+  \caption{The balance was right between talks, panels, and lightning talks.\label{fig:SFig2}}
+\endminipage\hfill
+\minipage{0.35\textwidth}%
+  \includegraphics[width=\linewidth]{figures/SurveyFig3rev}
+  \caption{There was sufficient time for discussion.\label{fig:SFig3}}
+\endminipage
+\end{figure}
 
 \noindent {\bf 2. What part of the meeting was the most valuable? select all that apply}
 
