@@ -3,34 +3,139 @@
 \label{sec:prototyping}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\note{Santiago to write this}
+%from Santiago
+There is a productivity bottleneck---yet to be solved---in HPC from the human
+perspective, first identified in the 1980s~\cite{barstow1982automatic}. Of all
+domain-specific scientists, only a percentage of those use simulations due to
+perceptions mostly related to the difficulty of using and developing those tools.
+XSEDE and other resources have become a gateway for successfully increasing the
+basis of HPC scientific users by facilitating their access to infrastructure and
+tools~\cite{towns2014xsede}, but the development challenge remains unaddressed.
+Of all scientists who use simulations, only a small percentage know how
+to develop prototypes or full applications that can be latter scaled by computer
+scientists and engineers. Writing new parallel applications is unusual for
+domain scientists and thus has created a complex dependency on specialized
+scientific programmers, who are scarce~\cite{post2005computational}. However,
+ the capacity to quickly envision and prototype applications by domain experts
+ ---later to be fully implemented into by scientific programmers---is critical for
+ acquiring maturity and proficiency in the grand challenges the Exascale
+ attempts to solve, and moreover for allowing scientists to develop their own
+ ideas quickly and productively~\cite{vinter2015prototyping}. The latter, in
+ addition, would increase service utilization time in HPC systems, a critical
+measure of efficiency. Considering the existing code base in scientific
+computing, software infrastructures that allow a clean transition from legacy
+systems to new Exascale platforms while preserving flexible prototyping
+ towards the future are central~\cite{hwu2015transitioning}.
 
-Introduction to group here, including the overall objective of work in this area.
+This group attempts to tackle the latter challenge through the development of
+novel software prototyping infrastructure with an emphasis at a higher degree
+of abstraction. The group deems the ability to rapidly construct software artifacts that can be
+trusted in terms of the methods from their design up, easily discarded when
+wrong and extended when right at low human and computational cost to be one
+aspect of scientific software sustainability. In essence,
+a motto for scientific software prototyping is {\it fail hard, fail fast}.
 
 \subsubsection{Participants}
 
-members of the working group
+\begin{itemize}
+  \item Santiago N\'u\~nez-Corrales, University of Illinois Urbana--Champaign
+        <nunezco2@illinois.edu>
+  \item Chris Sweet, University of Notre Dame <chris.sweet@nd.edu>
+  \item Steven Brandt, Louisiana State University <sbrandt@cct.lsu.edu>
+  \item Dominic Orchard, University of Kent <d.a.orchard@kent.ac.uk>
+\end{itemize}
 
 \subsubsection{Working group objective}
 
-Specific things the working group wants to accomplish in the context of the larger objective.
+The group's objective is development of a prototype tool that allows domain scientists to generate
+simulation prototypes through a simple, yet expressive declarative
+strongly-typed programming language close to equational expressions. The result
+of that specification is both an executable artifact as well as a specification
+for scientific programmers to later flesh out completely and adapt to particular
+infrastructures. This tool will start in the domain of computational physics,
+and (probably) extend to other domains, and the code will be open source.
+
+The underlying hypothesis of this project is that a strongly typed, declarative
+problem-specification language with adequate constructs, to be implemented
+through stencils and algorithmic skeletons tied to numerical methods, captures a
+ subset of useful and interesting problems in physics and other domains.
 
 \subsubsection{Gap or challenge}
 
-What is the gap or challenge being addressed?
+The gap addressed by the project is described by
+following four statements:
+
+\begin{enumerate}
+  \item Domain specific scientists need to strike a balance between being
+  productive in their science areas and having some coding skills.
+  \item Being a research software engineer is a career in its own right which
+  has limited depth in the science basis, especially while serving large
+  communities.
+  \item Collaboration in science is made (mostly informally) through natural
+  language and mathematics, but both present lots of opportunity for potential
+  ambiguity towards software development.
+  \item An unambiguous (formal) language that sets a neutral ground is missing,
+  capable of lifting many of the complexities of constructing useful (and
+  correct) software artifacts that may later evolve into more elaborate codes.
+\end{enumerate}
+
+The latter enumeration of elements is sustained in the fact that scientific
+software packages are digital representations of partial knowledge architectures
+behind research processes.
 
 \subsubsection{Relevant people and resources}
 
-What people, groups, or resources are needed.
+The project is mostly self-contained and only requires development time from
+participants, as well as a Git repository (active). As for skills required, the
+following distribution between project participants was identified:
+
+\begin{description}
+  \item[Steven] parsing expression grammars, prototype stencil
+  \item[Santiago] functional programming, scientific programming
+  \item[Dominic] semantics, types, compilers, languages
+  \item[Chris] numerical methods
+\end{description}
+
+In terms of practice and experience, a sample scientific community is required
+in order to work around the capabilities of the tool. In addition, use cases
+are required (e.g. micromagnetics~\cite{fischbacher2007systematic}).
 
 \subsubsection{Plans}
 
-What tasks will the working group undertake
+Our general plan is to develop a functional (meta-)prototype before WSSSPE5, and
+if useful, depart from it towards a larger software infrastructure tied to
+particular cyberinfrastructure resources.
 
 \subsubsection{SMART steps}
 
-What are the first SMART steps proposed?
+\begin{enumerate}
+  \item Define or choose the description language depending on the potential user
+  base.
+  \item Develop the language interpreter/compiler for the equational description
+  language.
+  \item Define a set of fundamental software patterns to translate to algorithmic
+  skeletons.
+  \item Implement a translation mechanism from the language to the patterns.
+  \item Test the system with three known solvable problems and evaluate with a
+  set of functional and non-functional metrics:
+  \begin{enumerate}
+    \item Wave equation
+    \item Newtonian evolution
+    \item Boussinesq equations
+  \end{enumerate}
+\end{enumerate}
 
 \subsubsection{More information \& joining instructions}
 
-How could a reader get more information or get more involved?
+S. Brandt has shared the following background links:
+
+\begin{itemize}
+  \item Piraha parser code: \url{https://github.com/stevenrbrandt/piraha-peg/blob/master/piraha.jar}
+  \item A stripped down peg file (grammar) which describes a sequence of equations:
+\url{https://www.cct.lsu.edu/~sbrandt/eqns.peg}
+  \item An example equation file: \url{https://www.cct.lsu.edu/~sbrandt/wave.eq}
+\end{itemize}
+
+For joining to this project, please visit the GitHub repository at
+\url{https://github.com/nunezco2/S2PI} or join the WSSSPE Slack channel
+\texttt{\#wg-sci-soft-proto}.
