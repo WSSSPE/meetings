@@ -1,6 +1,6 @@
 Note: typos and spelling errors have been corrected, and spelling has been changed from UK standard to US standard in some cases, but no other changes have been made to the attendee responses.
 
-\noindent {\bf 1. Please indicate how strongly you agree or disagree with the following statements}
+\noindent \textbf{1. Please indicate how strongly you agree or disagree with the following statements}
 
 \begin{table}[h!]
 \centering
@@ -62,59 +62,58 @@ talks, panels, and lightning talks. & & & & & & \\
 
 
 \begin{figure}[!htb]
-    \begin{subfigure}{0.34\textwidth}
-    \includegraphics[width=\linewidth]{figures/SurveyFig1rev}
-    \caption{The plenary sessions had a good mix of topics and speakers.}
+    \captionsetup[subfigure]{position=b}
+    \centering
+    \subcaptionbox{
+    The plenary sessions had a good mix of topics and speakers.
     \label{fig:SFig1}
-    \end{subfigure}
+    }{\includegraphics[width=.34\linewidth]{figures/SurveyFig1rev}}
     ~
-    \begin{subfigure}{0.32\textwidth}
-    \includegraphics[width=\linewidth]{figures/SurveyFig2rev}
-    \caption{The balance was right between talks, panels, and lightning talks.}
+    \subcaptionbox{
+    The balance was right between talks, panels, and lightning talks.
     \label{fig:SFig2}
-    \end{subfigure}
-    \begin{subfigure}{0.25\textwidth}
-    \includegraphics[width=\linewidth]{figures/SurveyFig3rev}
-    \caption{There was sufficient time for discussion.}
+    }{\includegraphics[width=.32\linewidth]{figures/SurveyFig2rev}}
+    ~
+    \subcaptionbox{
+    There was sufficient time for discussion.
     \label{fig:SFig3}
-    \end{subfigure}
+    }{\includegraphics[width=.25\linewidth]{figures/SurveyFig3rev}}
     \caption{Responses to generate questions about the conference program}
 \end{figure}
 
-\noindent {\bf 2. What part of the meeting was the most valuable? select all that apply}
-
-\todo{move table and figure to be in a single row}
-
-\begin{table}[h!]
-\rowcolors{1}{}{lightgray}
-\centering
-\caption{Value of meeting parts}
-\label{tab:survey_parts}
-\begin{tabular}{|l|c|}
-\hline
-{\bf Answer} &
-{\bf Count} \\ \hline
-Plenary &
-19 \\
-Panel &
-14 \\
-Working Groups &
-36 \\
-Other &
-5 \\
-Total &
-74 \\
-\hline
-\end{tabular}
-\end{table}
+\noindent \textbf{2. What part of the meeting was the most valuable? select all that apply}
 
 \begin{figure}[h!]
-\includegraphics[width=0.4\textwidth]{figures/SurveyFig4rev}
-\caption{What part of the meeting was the most valuable?
-\label{fig:SFig4}}
+    \CenterFloatBoxes
+    \begin{floatrow}
+    \ffigbox[\FBwidth]{%
+        \includegraphics[width=0.35\textwidth]{figures/SurveyFig4rev}%
+    }{%
+        \captionsetup{width=\linewidth}
+        \caption{What part of the meeting was the most valuable?
+        \label{fig:SFig4}}%
+    }
+    \hfill
+    \killfloatstyle\capbtabbox[\linewidth]{%
+    \rowcolors{1}{}{lightgray}
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    Answer & Count \\
+    \midrule
+    Plenary & 19 \\
+    Panel & 14 \\
+    Working Groups & 36 \\
+    Other & 5 \\
+    Total & 74 \\
+    \bottomrule
+    \end{tabular}
+    }{%
+        \caption{Value of meeting parts}%
+    }
+    \end{floatrow}
 \end{figure}
 
-\noindent {\bf 3. What additional topics would you like to see discussed at the next meeting?}
+\noindent \textbf{3. What additional topics would you like to see discussed at the next meeting?}
 
 \begin{itemize}
 \item Concrete reports about best practices
@@ -145,7 +144,7 @@ Total &
 \item We discussed scientific software. Should we also discuss software FOR scientists (like Dan's google scholar replacement)?
 \end{itemize}
 
-\noindent {\bf 4. What could be improved?}
+\noindent \textbf{4. What could be improved?}
 
 \begin{itemize}
 \item A bit less fly by night scheduling though things worked out just fine.
@@ -180,7 +179,7 @@ Total &
 \item WSSPE vision prior to start would have helped
 \end{itemize}
 
-\noindent {\bf 5. What would make you more likely to invest time in future WSSSPE initiatives?}
+\noindent \textbf{5. What would make you more likely to invest time in future WSSSPE initiatives?}
 
 \begin{itemize}
 \item A centralized place/organization to see and discuss WSSSPE initiatives. At the moment, WSSSPE organization is scattered across many places. One website with a list of activities and contributors would help.
@@ -221,69 +220,126 @@ Total &
 \end{itemize}
 
 
-\noindent {\bf 6. Would you be interested in joining a professional society focused around the topics of WSSSPE?}
+\noindent \textbf{6. Would you be interested in joining a professional society focused around the topics of WSSSPE?}
 
-\todo{move table and figure to be in a single row}
-
-\begin{table}[h!]
-\centering
-\caption{A WSSSPE society?}
-\label{tab:survey_society}
-\begin{tabular}{|l|c|}
-\hline
-{\bf Answer} &
-{\bf Count} \\ \hline
-Yes &
-24 \\
-No &
-3 \\
-Maybe &
-18 \\
-Total &
-45 \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[h]
-\includegraphics[width=0.4\textwidth]{figures/SurveyFig5rev}
-\caption{Would you be interested in joining a professional society focused around the topics of WSSSPE?
-\label{fig:SFig5}}
+\begin{figure}[h!]
+    \CenterFloatBoxes
+    \centering
+    \begin{floatrow}
+    \ffigbox[\FBwidth]{%
+        \includegraphics[width=0.35\textwidth]{figures/SurveyFig5rev}%
+    }{%
+        \captionsetup{width=\linewidth}
+        \caption{Would you be interested in joining a professional society
+        focused around the topics of WSSSPE?
+        \label{fig:SFig5}}%
+    }
+    %\hfill
+    ~
+    \killfloatstyle\capbtabbox[\linewidth]{%
+    \rowcolors{1}{}{lightgray}
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    Answer & Count \\
+    \midrule
+    Yes & 24 \\
+    No & 3 \\
+    Maybe & 18 \\
+    Total & 45 \\
+    \bottomrule
+    \end{tabular}
+    }{%
+        \caption{A WSSSPE society?}%
+        \label{tab:survey_society}
+    }
+    \end{floatrow}
 \end{figure}
 
+% \begin{table}[h!]
+% \centering
+% \caption{A WSSSPE society?}
+% \label{tab:survey_society}
+% \begin{tabular}{|l|c|}
+% \hline
+% {\bf Answer} &
+% {\bf Count} \\ \hline
+% Yes &
+% 24 \\
+% No &
+% 3 \\
+% Maybe &
+% 18 \\
+% Total &
+% 45 \\
+% \hline
+% \end{tabular}
+% \end{table}
+%
+% \begin{figure}[h]
+% \includegraphics[width=0.4\textwidth]{figures/SurveyFig5rev}
+% \caption{Would you be interested in joining a professional society focused around the topics of WSSSPE?
+% \label{fig:SFig5}}
+% \end{figure}
 
-\noindent {\bf 7. Will you be part of a working group  with colleagues going forward  on a topic addressed at WSSSPE, and if so, which one?}
 
-\todo{move table and figure to be in a single row}
+\noindent \textbf{7. Will you be part of a working group  with colleagues going forward  on a topic addressed at WSSSPE, and if so, which one?}
 
-\begin{table}[h!]
-\centering
-\caption{Continuing working groups?}
-\label{tab:survey_continuing_wgs}
-\begin{tabular}{|l|c|}
-\hline
-{\bf Answer} &
-{\bf Count} \\ \hline
-Yes &
-32 \\
-No &
-4 \\
-Maybe &
-9 \\
-Total &
-45 \\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[h]
-\includegraphics[width=0.4\textwidth]{figures/SurveyFig6rev}
-\caption{Will you be part of a working group  with colleagues going forward  on a topic addressed at WSSSPE?
-\label{fig:SFig6}}
+\begin{figure}[h!]
+    \CenterFloatBoxes
+    \centering
+    \begin{floatrow}
+    \ffigbox[\FBwidth]{%
+        \includegraphics[width=0.35\textwidth]{figures/SurveyFig6rev}%
+    }{%
+        \captionsetup{width=\linewidth}
+        \caption{Will you be part of a working group  with colleagues going
+        forward  on a topic addressed at WSSSPE?
+        \label{fig:SFig6}}%
+    }
+    ~
+    \killfloatstyle\capbtabbox[\linewidth]{%
+    \rowcolors{1}{}{lightgray}
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    Answer & Count \\
+    \midrule
+    Yes & 32 \\
+    No & 4 \\
+    Maybe & 9 \\
+    Total & 45 \\
+    \bottomrule
+    \end{tabular}
+    }{%
+        \caption{Continuing working groups?}%
+        \label{tab:survey_continuing_wgs}
+    }
+    \end{floatrow}
 \end{figure}
 
+% \begin{table}[h!]
+% \centering
+% \caption{Continuing working groups?}
+% \label{tab:survey_continuing_wgs}
+% \begin{tabular}{@{}ll@{}}
+% \toprule
+% Answer & Count \\
+% \midrule
+% Yes & 32 \\
+% No & 4 \\
+% Maybe & 9 \\
+% Total & 45 \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
 
-\noindent {\bf 8. Working Group Name}
+% \begin{figure}[h]
+% \includegraphics[width=0.4\textwidth]{figures/SurveyFig6rev}
+% \caption{Will you be part of a working group  with colleagues going forward  on a topic addressed at WSSSPE?
+% \label{fig:SFig6}}
+% \end{figure}
+
+
+\noindent \textbf{8. Working Group Name}
 
 \begin{itemize}
 \item ``Citations / CodeMeta''  and  ``Software Practices White Paper''
@@ -321,7 +377,7 @@ Total &
 \item White Paper WG, Open Research Index WG
 \end{itemize}
 
-\noindent {\bf 9. Do you have any other comments or suggestions or ideas?}
+\noindent \textbf{9. Do you have any other comments or suggestions or ideas?}
 
 \begin{itemize}
 \item As a student, coming to WSSSPE4 has been very rewarding experience. Sustainable software is not my particularly sub-field of interest, but it was very interesting to me to apply the skills I had learned in my research in a different field. It definitely taught me a different perspective and expanded my original perception of where my skills can be applied.
