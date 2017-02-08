@@ -2,71 +2,47 @@ Note: typos and spelling errors have been corrected, and spelling has been chang
 
 \noindent {\bf 1. Please indicate how strongly you agree or disagree with the following statements}
 
-\todo{make this table prettier! fix vertical spacing}
-
 \begin{table}[h!]
 \centering
 \caption{General questions about the conference program}
 \label{tab:survey_program}
 {\scriptsize
-\begin{tabular}{|l|cccccc|}
-\hline
-{\bf Question} &
-{\bf strongly} &
-{\bf somewhat}  &
-{\bf agree} &
-{\bf somewhat}  &
-{\bf strongly}  &
-{\bf Total} \\
-&
-{\bf disagree} &
-{\bf disagree} &
-&
-{\bf agree} &
-{\bf agree} &
-\\ \hline
-The plenary sessions had a good&
-5 &
-3 &
-8 &
-11 &
-18 &
-45 \\
-\hspace{.2cm}mix of topics and speakers. &
- &
- &
- &
- &
- &
- \\
-The balance was right between  &
-6 &
-2 &
-7 &
-9 &
-21 &
-45 \\
-\hspace{.2cm}talks, panels, and lightning talks. &
-&
- &
- &
- &
- &
- \\
-There was sufficient time for discussion. &
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\multirow{2}{*}{Question} & strongly & somewhat & agree & somewhat & strongly &
+\multirow{2}{*}{Total} \\
+& disagree & disagree & & agree & agree & \\
+\midrule
+\rowcolor{lightgray} The plenary sessions had a good & & & & & & \\
+\rowcolor{lightgray} mix of topics and speakers. &
+\multirow{-2}{*}{5} &
+\multirow{-2}{*}{3} &
+\multirow{-2}{*}{8} &
+\multirow{-2}{*}{11} &
+\multirow{-2}{*}{18} &
+\multirow{-2}{*}{45} \\
+The balance was right between &
+\multirow{2}{*}{6} &
+\multirow{2}{*}{2} &
+\multirow{2}{*}{7} &
+\multirow{2}{*}{9} &
+\multirow{2}{*}{21} &
+\multirow{2}{*}{45} \\
+talks, panels, and lightning talks. & & & & & & \\
+\rowcolor{lightgray} There was sufficient time for discussion. &
 6 &
 6 &
 8 &
 9 &
 16 &
 45 \\
-\hline
+\bottomrule
 \end{tabular}
 }
 \end{table}
 
-%Figures have been inserted with little/no formatting.  
-%Figures are in *.png but can be remade to other formats 
+%Figures have been inserted with little/no formatting.
+%Figures are in *.png but can be remade to other formats
 %\todo{Place 3 figures in 1 row with Latex}
 %\begin{figure}[h!]
 %\includegraphics[width=0.3\textwidth]{figures/SurveyFig1rev}
@@ -86,18 +62,23 @@ There was sufficient time for discussion. &
 
 
 \begin{figure}[!htb]
-\minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{figures/SurveyFig1rev}
-  \caption{The plenary sessions had a good mix of topics and speakers.\label{fig:SFig1}}
-\endminipage\hfill
-\minipage{0.32\textwidth}
-  \includegraphics[width=\linewidth]{figures/SurveyFig2rev}
-  \caption{The balance was right between talks, panels, and lightning talks.\label{fig:SFig2}}
-\endminipage\hfill
-\minipage{0.35\textwidth}%
-  \includegraphics[width=\linewidth]{figures/SurveyFig3rev}
-  \caption{There was sufficient time for discussion.\label{fig:SFig3}}
-\endminipage
+    \begin{subfigure}{0.34\textwidth}
+    \includegraphics[width=\linewidth]{figures/SurveyFig1rev}
+    \caption{The plenary sessions had a good mix of topics and speakers.}
+    \label{fig:SFig1}
+    \end{subfigure}
+    ~
+    \begin{subfigure}{0.32\textwidth}
+    \includegraphics[width=\linewidth]{figures/SurveyFig2rev}
+    \caption{The balance was right between talks, panels, and lightning talks.}
+    \label{fig:SFig2}
+    \end{subfigure}
+    \begin{subfigure}{0.25\textwidth}
+    \includegraphics[width=\linewidth]{figures/SurveyFig3rev}
+    \caption{There was sufficient time for discussion.}
+    \label{fig:SFig3}
+    \end{subfigure}
+    \caption{Responses to generate questions about the conference program}
 \end{figure}
 
 \noindent {\bf 2. What part of the meeting was the most valuable? select all that apply}
@@ -105,6 +86,7 @@ There was sufficient time for discussion. &
 \todo{move table and figure to be in a single row}
 
 \begin{table}[h!]
+\rowcolors{1}{}{lightgray}
 \centering
 \caption{Value of meeting parts}
 \label{tab:survey_parts}
@@ -148,7 +130,7 @@ Total &
 \item I would like to have more discussions about research, if people can share their research or some of the interesting projects that they're working on, this will help in knowing the problems in sustaining software.
 \item I would like to learn more about sustainability issues in industry.
 \item I would like to see more grounded advice and less blue-sky thinking. A lot of stuff in the talks was `this would be nice' but there were not enough talks that were directly applicable to day-to-day programming.
-\item Like to see more examples from the real world.  
+\item Like to see more examples from the real world.
 \item Mechanisms of improving software reusability
 \item More concrete projects, concrete possibilities and showcases for collaboration with results
 \item Practical ways of achieving some of the goals rather than the discussion of more attempts on the writing of white papers
@@ -159,14 +141,14 @@ Total &
 \item Specific scientific software sustainability factors
 \item Testing methods that work. Ways of promoting organizational change.
 \item The progress of our current project.
-\item The use of scientific software at different stages of research / work 
+\item The use of scientific software at different stages of research / work
 \item We discussed scientific software. Should we also discuss software FOR scientists (like Dan's google scholar replacement)?
 \end{itemize}
 
 \noindent {\bf 4. What could be improved?}
 
 \begin{itemize}
-\item A bit less fly by night scheduling though things worked out just fine.  
+\item A bit less fly by night scheduling though things worked out just fine.
 \item A lot of the speakers just seemed to be there either to plug their own projects (e.g. Hydroshare, BioDynaMo) or spent the majority of their talk waffling (e.g. Manifesto for Personal Responsibility in the Engineering of Academic Software). Also, the icebreakers were not very useful.
 \item A single room for the duration of the meeting. (Particular to this WSSSPE4, the ``collaboratory'' room with the monitors, was actually perfect for the full meeting.)
 \item Allotting more time for questions \& discussions in between talks
@@ -180,7 +162,7 @@ Total &
 \item I would like to be able to ask questions after talks. By the time we can discuss the talks, I've forgotten what I wanted to say
 \item Identify a local pub/restaurant/cafe to which people can head afterwards for casual meetup for dinner/drinks/discussion/whatever
 \item If feedback to people's projects and lighting talks etc is posted online, then we would have also benefits from those thoughts
-\item It was a great event overall I feel like if we can bring some real life project integration with best practices that will be helpful 
+\item It was a great event overall I feel like if we can bring some real life project integration with best practices that will be helpful
 \item it would be great to see some specific case studies/success stories
 \item Keep the online agenda up to date. Better air-conditioning.
 \item Less talks
@@ -203,18 +185,18 @@ Total &
 \begin{itemize}
 \item A centralized place/organization to see and discuss WSSSPE initiatives. At the moment, WSSSPE organization is scattered across many places. One website with a list of activities and contributors would help.
 \item A tutorial session.
-\item Being able to contribute to something going forward, rather than a talking shop for the initiatives. 
+\item Being able to contribute to something going forward, rather than a talking shop for the initiatives.
 \item connect to people
 \item For meetings: again the availability of travel awards.
 \item For myself, I anticipate looking for ways to tie WSSPE initiatives with my current projects such that the outcome benefits a/the broader community.
 \item Free lunch and double coffee capacity? Also - seriously - less filler talks and filler activities.
 \item Funded support resources
-\item funding; focus on more concrete aspects of sustainability 
+\item funding; focus on more concrete aspects of sustainability
 \item Having more time to invest in future WSSSPE initiatives
-\item Having more time to invest in future WSSSPE initiatives; I'd definitely do more if I could. 
+\item Having more time to invest in future WSSSPE initiatives; I'd definitely do more if I could.
 \item Honestly, having the time available in my own schedule (which I don't think is something WSSSPE organizers can change)
 \item I already plan to do it :)
-\item I'm not sure. I'm not very interested in fostering WSSSPE as an thing, but I am interested in WSSSPE as a means to network to find people to work on these issues with me. 
+\item I'm not sure. I'm not very interested in fostering WSSSPE as an thing, but I am interested in WSSSPE as a means to network to find people to work on these issues with me.
 \item If I can see the value of the initiative to me and my value to the initiative
 \item if I had funding to specifically work on that
 \item If my daily workload would be reduced
@@ -316,7 +298,7 @@ Total &
 \item Curriculum for an undergraduate course on software best practices for domain scientists
 \item Domain Specific Undergraduate Courses on Best Practices for Software Development
 \item Domain Specific Undergraduate Courses on Best Practices for Software Development AND International Collaborations between institutions.
-\item integration of software testing through Debian 
+\item integration of software testing through Debian
 \item Meaningful Metrics for Scientific Software
 \item Meaningful Metrics in Software
 \item metadata
@@ -347,12 +329,12 @@ Total &
 \item buddy me-sheet and workshop planning and moderation was excellent
 \item Don't start at 8.45am if you're asking people to socialize and connect in the evenings! Work on getting a better gender, geographical and discipline balance. The use of travel bursaries has helped (particularly in getting early career participants).
 \item Great organization, enjoyed being here very much, it was surely a success!
-\item Great to meet colleagues from the UK and Germany at this event and enjoyed this format for working, engaging, and producing with the community while at the workshop that was facilitated by KnowInnovation. 
+\item Great to meet colleagues from the UK and Germany at this event and enjoyed this format for working, engaging, and producing with the community while at the workshop that was facilitated by KnowInnovation.
 \item I enjoyed the brainstorming session on Tuesday morning - well organized
-\item I had hoped to have some discussion of building the sustainable communities beyond the software writing stage. The HPC focus, though expected slightly, was too heavy and I think ignores some of the other long term issues, such as preservation and addressing first principles for new technologies, or smaller, individual projects that will also support science. Perhaps it would be good to have a student session as well? (But I do like the integration). 
-\item I think the mixing of students, staff, faculty etc in the working groups is very effective and will contribute to  outcomes outside of the working group. It was great to see that we have undergraduates leading working groups here. There should be more attention on diversity. 
+\item I had hoped to have some discussion of building the sustainable communities beyond the software writing stage. The HPC focus, though expected slightly, was too heavy and I think ignores some of the other long term issues, such as preservation and addressing first principles for new technologies, or smaller, individual projects that will also support science. Perhaps it would be good to have a student session as well? (But I do like the integration).
+\item I think the mixing of students, staff, faculty etc in the working groups is very effective and will contribute to  outcomes outside of the working group. It was great to see that we have undergraduates leading working groups here. There should be more attention on diversity.
 \item I wish there were a project on training interns to work at academic environment as programmers
-\item I would like to thank the committee for selecting me. As an undergraduate student this was a great experience I got to meet professors from the universities which I wanted to join. Now I exactly know how to prepare my application. I learned some really good technical skills and will definitely apply it to my research. So happy to be a part of this wonderful group. I will design a  logo for WSSSPE next year. Hope I can attend this event next year also.  
+\item I would like to thank the committee for selecting me. As an undergraduate student this was a great experience I got to meet professors from the universities which I wanted to join. Now I exactly know how to prepare my application. I learned some really good technical skills and will definitely apply it to my research. So happy to be a part of this wonderful group. I will design a  logo for WSSSPE next year. Hope I can attend this event next year also.
 \item Is there something better than sharpies (few of running around the room with a permanent marker)? Travel Awardee: Discussions here will and have benefitted my organization and community.
 \item It was great to connect with people doing research software engineering in various positions, contexts, and universities. I felt like I learned a lot. Moving between the two rooms was a bit confusing.
 \item Maybe involve more researchers from low-income countries if funds are available.
@@ -369,5 +351,5 @@ Total &
 \item We have activity on slack, github, and twitter. And working groups have their own stuff. Can we index these in a single place?
 \item What percentage of the working groups actually end up producing anything? It seems to me as though most come up with an idea and then find out they don't have the resources to implement it - nice as the ideas are. Also, I assume someone is going to attempt to reinvent metrics or best practices every single year, I guess that's unavoidable.
 \item WSSPE seems to be evolving nicely from year to year.  I hope that in WSSSPE5 there are lots of results to report from the outcome of WSSSPE4 working groups.
-\item You could try unconferences instead of tracks. 
+\item You could try unconferences instead of tracks.
 \end{itemize}
