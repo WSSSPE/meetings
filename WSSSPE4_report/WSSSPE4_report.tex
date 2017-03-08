@@ -547,28 +547,82 @@ lightning talk, for those with multiple authors.
     Christina Bandaragoda: \emph{HydroShare - A Case Study in Software Engineering
     Best Practices and Culture Change for Developing Sustainable Community
     Software}}~\cite{Idaszak:2016ws}.
-    \note{Description}
+    HydroShare is a five-year-old online, collaborative system that supports
+    open sharing of hydrologic data, analytical tools, and computer models. The
+    project involves 10 collaborating institutions that produce tested and reviewed
+    community code every two to three weeks, following software engineering best
+    practices. Undergraduate and graduate students involved in the project not
+    only adopt the best practices exhibited by HydroShare, but see the open,
+    collaborative approach to research software development as the norm.
+    The talk made recommendations to other community efforts, including the need to
+    identify committed, hands-on PIs; evidence-based software engineering for science;
+    continuous integration; the importance of professional software development and
+    operations practices, even for domain scientists; and to identify technology
+    decisions that overlap with career paths.
 
     \item \textbf{Lorraine Hwang\textsuperscript{\textasteriskcentered},
     Wolfgang Bangerth, Timo Heister, and Louise Kellogg:
     \emph{ASPECT: Hackathons as an Example of Sustaining an Open Source
     Community}}~\cite{Hwang:2016ws}.
-    \note{Description}
+    In this talk, Hwang first described the ASPECT (Advance Solver for Problems in
+    Earth ConvecTion) open-source, parallel, extensible finite element code
+    used to simulate thermal convection. ASPECT began development in 2011 as a
+    community-driven project under the Computational Infrastructure for Geodynamics
+    (CIG). Community-building activities around ASPECT focused on the traditional
+    workshops, tutorials, and webinars, but also on slightly nontraditional,
+    multi-day hackathons---which turned out to be one of the most effective
+    forms of fostering a community. These start with leaders establishing project
+    conventions, demonstrating workflows and relevant technical skills, and
+    identifying starter projects. Daily activities involve work plans and
+    science\slash coding briefs, with mini-tutorials given as needed. One important
+    requirement is that each participant must submit at least one commit. Hwang
+    also summarized lessons learned, including that hackathons should last 7--10
+    days, include participants with multidisciplinary expertise and at both novice
+    and expert levels, have at least one dedicated code reviewer per 10 participants,
+    hold daily group updates, organize activities to promote group interactions,
+    and enforce free time.
 
     \item \textbf{Carole Goble: \emph{A Simple Profiling Framework for Software
-    User-Producer Maturity Review}}~\cite{Goble:2016ws}.
-    \note{Description}
+    User-Producer Reciprocity Review}}~\cite{Goble:2016ws}.
+    Goble first described some existing frameworks for measuring the maturity of
+    software, including the Software Sustainability Maturity Model, OSS Watch
+    Openness Rating, NASA Reuse Readiness Rating, Capability Maturity Model, and
+    Qualification and Selection of Open Source software. Then, she proposed a new,
+    simpler framework for project reciprocity, drawing on the intentions of users
+    and producers of the software, from the viewpoint of the producer.
+    Next steps include further definition of the model's characteristics based on
+    both theoretical and empirical investigation.
 
     \item \textbf{Stephan Druskat: \emph{A proposal for the measurement and
     documentation of research software sustainability in interactive metadata
     repositories}}~\cite{Druskat:2016ws}.
-    \note{Description}
+    In this talk, Druskat first identified two technical barriers to software
+    sustainability: identification of good software, and software discoverability.
+    Some of his perspectives were based on experiences in the humanities, a lack
+    of funding for computational infrastructure results in little experience with
+    sustainability (although this may differ in other domains). Druskat proposed
+    metadata repositories as a possible solution, as they can measure and document
+    technical sustainability, and document resulting metrics and more general
+    features of software. Technical sustainability goals include ensuring software
+    existence, preserving potential operation of software, and creating\slash
+    retaining possibilities for further development and maintenance of software.
+    The next steps of such a system include compiling measurable criteria for
+    the sustainability goals (based on qualitative concepts of, e.g.,
+    ``sustainability,'' ``maintainability,'' and ``usability''), and
+    crowd-sourcing a weighting of these criteria.
 
     \item \textbf{Mistral Contrastin, Matthew Danish,
     Dominic Orchard\textsuperscript{\textasteriskcentered}, and
     Andrew Rice: \emph{Supporting software sustainability with
     lightweight specifications}}~\cite{Contrastin:2016ws}.
-    \note{Description}
+    This talk introduced the tool CamFort for verifying Fortran code based on
+    lightweight specifications, which aid in software maintainability and reuse
+    through high-level indications of programmer intent.
+    Currently, CamFort supports specification (and
+    verification) of units and stencil operations. Plans for future specifications
+    include automatic test generation based on user-supplied properties, dependency
+    specifications, and software contracts to check (e.g.) expected value ranges
+    and program behavior.
 
     \item \textbf{Alice Allen, Cecilia Aragon, Christoph Becker, Jeffrey Carver,
     Andrei Chi\c{s}, Benoit Combemale, Mike Croucher, Kevin Crowston, Daniel Garijo,
@@ -578,11 +632,58 @@ lightning talk, for those with multiple authors.
     Ralf L\"{a}mmel, Oscar Nierstrasz, Matt Turk, Rob van Nieuwpoort, Matthew Vaughn,
     and Jurgen Vinju: \emph{``I solemnly pledge'': A Manifesto for Personal
     Responsibility in the Engineering of Academic Software}}~\cite{AAllen:2016ws}.
-    \note{Description}
+    This talk described the activities of the weeklong Dagstuhl Perspectives Workshop
+    manifesto on ``Engineering Academic Software,'' which produced a manifesto
+    describing a pledge affirming the scholarly value of research software and
+    the personal responsibility to act in accordance with that value. The draft
+    (personal) manifesto includes 20 pledges, organized into three areas:
+    recognition of academic software, academic software development processes,
+    and the intellectual content of academic software. The talk concluded with a
+    survey for participants to give feedback on the pledges and their importance.
 
     \item \textbf{Eric L.~Seidel\textsuperscript{\textasteriskcentered}
-    and Gabrielle Allen: \emph{Bringing Techniques from Software Engineering
+    and Gabrielle Allen: \textit{Bringing Techniques from Software Engineering
     into Scientific Software}}~\cite{Seidel:2016ws}.
+    This talk, given by a senior graduate student in Computer Science\slash
+    programming languages research, described several areas of software engineering
+    concepts that benefit the development of research software. In particular,
+    Seidel focused on software correctness, starting from high-level
+    specifications. Correctness can be demonstrated by verifying or proving
+    that the software satisfies the specification, testing against a range of
+    inputs, or synthesis of code from the specification. However, all of these
+    present technical challenges, in addition to the social challenges of
+    encouraging collaboration between software engineering and research software
+    communities.
+
+    \item \textbf{Iain Emsley\textsuperscript{\textasteriskcentered} and David
+    De Roure: \textit{Sustaining the social: Connecting the lives of Drupal
+    community}}~\cite{Emsley:2016ws}.
+    In this talk, Emsley discussed efforts to develop the community around the
+    Drupal content management system, which is supported through the DrupalCon
+    series of conferences, user groups, and an association.
+    The talk described the use of social coding and software credit to develop
+    the Drupal software community, and social documentation to provide
+    documentation and tutorials. By analyzing identities of committers, they
+    found that the larger community is actually a loosely coupled set of
+    heterogeneous communities that use (and sustain themselves) through different
+    social mechanisms.
+
+    \item \textbf{Jack Dongarra, Sven Hammarling, Nicholas J.\ Higham, Samuel
+    D.\ Relton\textsuperscript{\textasteriskcentered}, Pedro Valero-Lara,
+    and Mawussi Zounon: \textit{Creating a Standardised Set of Batched
+    BLAS Routines}}~\cite{Dongarra:2016ws}.
+    \note{Description}
+
+    \item \textbf{Lukas Breitwieser\textsuperscript{\textasteriskcentered},
+    Roman Bauer, Alberto Di Meglio, Leonard Johard,
+    Marcus Kaiser, Marco Manca, Manuel Mazzara, Fons Rademakers,
+    Max Talanov: \textit{The BioDynaMo Project}}~\cite{Bauer:2016ws}.
+    \note{Description}
+
+    \item \textbf{Aseel Aldabjan, Robert Haines, and
+    Caroline Jay\textsuperscript{\textasteriskcentered}: \textit{How should we
+    measure the relationship between code quality and software
+    sustainability?}}~\cite{Aldabjan:2016ws}.
     \note{Description}
 
 \end{itemize}
