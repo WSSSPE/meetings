@@ -808,6 +808,27 @@ lightning talk, for those with multiple authors.
     and the intellectual content of academic software. The talk concluded with a
     survey for participants to give feedback on the pledges and their importance.
 
+    \item \textbf{Neil Chue Hong\textsuperscript{\textasteriskcentered}:
+    \textit{Making it easier to understand research software impact}}~\cite{ChueHong:2016wsb}.
+    Chue Hong proposed that the WSSSPE community collaboratively develop a framework
+    to better understand (and measure the impact of) research software. This could
+    be based on a workflow involving mining the literature for mentions of software,
+    identifying linkages between software, and visualizing dependencies between
+    software or between software and other research artifacts. Many tools already
+    exist in this ecosystem, so Chue Hong proposed that a WSSSPE working group
+    collect these tools, summarize use cases, identify missing pieces, and find
+    low-hanging fruit to integrate tools or build new ones.
+
+    \item \textbf{Willem Robert van Hage\textsuperscript{\textasteriskcentered},
+    Jason Maassen and Rob van Nieuwpoort: \textit{Software Impact Measurement at the
+    Netherlands eScience Center}}~\cite{vanHage:2016ws}.
+    \note{Description}
+
+    \item \textbf{Gabrielle Allen, Emily Chen\textsuperscript{\textasteriskcentered},
+    Ray Idaszak, and Daniel S.\ Katz: \textit{Report on Software Metrics for
+    Research Software}}~\cite{GAllen:2016wsb}.
+    \note{Description}
+
     \item \textbf{Eric L.~Seidel\textsuperscript{\textasteriskcentered}
     and Gabrielle Allen: \textit{Bringing Techniques from Software Engineering
     into Scientific Software}}~\cite{Seidel:2016ws}.
@@ -839,19 +860,50 @@ lightning talk, for those with multiple authors.
     D.\ Relton\textsuperscript{\textasteriskcentered}, Pedro Valero-Lara,
     and Mawussi Zounon: \textit{Creating a Standardised Set of Batched
     BLAS Routines}}~\cite{Dongarra:2016ws}.
-    \note{Description}
+    This talk described Batched BLAS (BBLAS), a new standard for computing multiple
+    BLAS (Basic Linear Algebra Subproblems) in parallel. Unlike existing parallel
+    BLAS algorithms provided by, e.g., Intel MKL, cuBLAS, or MAGMA, BBLAS is
+    optimized for smaller matrices, which apply to a variety of problems in areas
+    such as machine learning, multifrontal solvers, image processing, fluid
+    dynamics, and astrophysics. BBLAS offers nearly a factor of two improvement
+    in computing speed compared to non-batched operations. To develop a sustainable
+    BBLAS library, the developers have focused on proposing a standard API,
+    holding workshops between academics and vendors to reach consensus, and
+    performing research into API design decisions on performance.
 
     \item \textbf{Lukas Breitwieser\textsuperscript{\textasteriskcentered},
     Roman Bauer, Alberto Di Meglio, Leonard Johard,
     Marcus Kaiser, Marco Manca, Manuel Mazzara, Fons Rademakers,
     Max Talanov: \textit{The BioDynaMo Project}}~\cite{Bauer:2016ws}.
-    \note{Description}
+    Breitwieser described the BioDynaMo project, a large-scale platform for
+    biological simulations that provides access to computational resources while
+    hiding the complexity of distributed computing. It also promotes computational
+    reproducibility through shared open-access data. The project began as a
+    modernization initiative porting an existing simulation software, Cx3D, from
+    Java to C++, but also incorporated many modern software engineering practices
+    such as hosting and version control on GitHub, automated tests and continuous
+    integration via Travis-CI, code coverage reports, and an automated build system.
+    In addition, over 1000 students participated in development via the Intel
+    Modern Code Developer Challenge competition---the winner achieved a
+    performance speedup of 320 times. The project plans to continue improving
+    the development process with (e.g.) static code checkers and Git commit hooks,
+    continued architecture redesign, and verification.
 
     \item \textbf{Aseel Aldabjan, Robert Haines, and
     Caroline Jay\textsuperscript{\textasteriskcentered}: \textit{How should we
     measure the relationship between code quality and software
     sustainability?}}~\cite{Aldabjan:2016ws}.
-    \note{Description}
+    This talk explored the relationship between code quality and the sustainability
+    of research software; however, the latter has no concrete definition, thus making
+    it challenging to provide guidance on how to achieve sustainability. The authors
+    proposed a ``software sustainment'' metric based on the time difference between
+    the most recent and initial commits\slash contributions to the codebase.
+    Using this metric, they analyzed 3113 Java projects hosted on GitHub, created
+    in 2009, and found that 22\% and 35\% had sustainment metrics of 0 and less
+    than seven, respectively. Interestingly, the authors also found high
+    code quality (measured using a variety of static analytic metrics) across
+    all these projects, with little correlation to sustainability.
+
 
 \end{itemize}
 
