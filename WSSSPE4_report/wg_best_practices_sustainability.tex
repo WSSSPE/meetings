@@ -5,7 +5,7 @@
 
 \note{Ray to write this}
 
-Many open source projects for research software document their best practices that contributed to the sustainability of the software.  Many open source projects also document software metrics they use to define their research software project’s success.  This project endeavors to aggregate several sources of these best practices into a consolidated list of best practices, as and to also do the same for software metrics in another consolidated list.  Our team will then create a workflow to evaluate how open source projects stand up to these lists.
+Many open source projects for research software document their best practices that contributed to the sustainability of the software.  Many open source projects also document software metrics they use to define their research software project's success.  This project endeavors to aggregate several sources of these best practices into a consolidated list of best practices, as and to also do the same for software metrics in another consolidated list.  Our team will then create a workflow to evaluate how open source projects stand up to these lists.
 
 \subsubsection{Participants}
 
@@ -18,7 +18,7 @@ Many open source projects for research software document their best practices th
 
 \subsubsection{Working group objective}
 
-The overall objective of the Verify Best Practices and Metrics for Sustainable Software working group is to take the outputs of the WSSSPE efforts to identify best practices for creation of sustainable software for science/academia, and also the outputs of WSSSPE efforts to identify metrics for sustainable software for science/academia and cross-reference these with current open source research software that successfully uses modern software engineering.  This will allow us to identify gaps on both sides.  This approach will also allow the group to  hypothesize how successful open source projects can be further improved, verify that recommended approaches for software engineering for science/academia are sufficient and valid, and that metrics for software engineering for science/academia are relevant and useful.  The group has a specific objective of getting a good cross-sampling of disparate software including community model codes, community cyberinfrastructure, community analytic tools, etc.
+The overall objective of the Verifying Best Practices and Metrics for Sustainable Software working group is to take the outputs of the WSSSPE efforts to identify best practices for creation of sustainable software for science/academia, and also the outputs of WSSSPE efforts to identify metrics for sustainable software for science/academia and cross-reference these with current open source research software that successfully uses modern software engineering.  This will allow us to identify gaps on both sides.  This approach will also allow the group to  hypothesize how successful open source projects can be further improved, verify that recommended approaches for software engineering for science/academia are sufficient and valid, and that metrics for software engineering for science/academia are relevant and useful.  The group has a specific objective of getting a good cross-sampling of disparate software including community model codes, community cyberinfrastructure, community analytic tools, etc.
 
 \subsubsection{Gap or challenge}
 
@@ -36,46 +36,36 @@ The people spearheading this effort at the time of the writing of this workshop 
 \noindent
 Resources include research projects suggested from WSSSPE community including:
 \begin{itemize}
-\item FLASH -- \url{http://flash.uchicago.edu/site/flashcode/}
-\item GROMACS -- http://www.gromacs.org/
-\item CIG -- \url{http://geodynamics.org/}
-\item CUAHSI -- \url{https://www.cuahsi.org/}
-\item CSDMS -- \url{https://csdms.colorado.edu/wiki/Main_Page}
-\item OntoSoft -- \url{http://www.ontosoft.org/}
-\item Anything -- from ASCL (astronomy) \href{https://ui.adsabs.harvard.edu/#search/q=bibstem%3A%22ASCL%22&sort=citation_count%20desc%2C%20bibcode%20desc}{ ASCL entries sorted by citation count}
-\item Yt-project -- (astronomy) \url{http://yt-project.org}
-\item Einstein Toolkit -- (physics) \url{https://einsteintoolkit.org/}
-\item SpEC -- (physics) \url{https://www.black-holes.org/SpEC.html}
-\item pyCLOUDY -- (astrophysics) \url{http://ascl.net/1304.020}
+\item FLASH (astrophysics, \url{http://flash.uchicago.edu/site/flashcode/})
+\item GROMACS (chemistry, \url{http://www.gromacs.org/})
+\item CIG (Earth science, \url{http://geodynamics.org/})
+\item CUAHSI (Earth science, \url{https://www.cuahsi.org/})
+\item CSDMS (Earth science, \url{https://csdms.colorado.edu/wiki/Main_Page})
+\item OntoSoft (biology, \url{http://www.ontosoft.org/})
+\item ASCL (astronomy, \url{http://ascl.net}), specifically ASCL entries sorted by citation count\footnote{\url{https://ui.adsabs.harvard.edu/\#search/q=bibstem\%3A\%22ASCL\%22&sort=citation_count\%20desc\%2C\%20bibcode\%20desc}}
+\item yt-project (astronomy,  \url{http://yt-project.org})
+\item Einstein Toolkit (physics, \url{https://einsteintoolkit.org/})
+\item SpEC (physics, \url{https://www.black-holes.org/SpEC.html})
+\item pyCLOUDY (astrophysics, \url{http://ascl.net/1304.020})
 \end{itemize}
 
 \noindent
 Additional resources include these sources for best practices to be explored: 
 
 \begin{itemize}
-\item Good Enough Practices in Scientific Computing, Wilson et al. 2016
 
+\item Good Enough Practices in Scientific Computing, Wilson et al. 2016~\cite{DBLP:journals/corr/WilsonBCKNT16}
 \begin{itemize}
 \item \url{https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/}
-\item \url{http://arxiv.org/abs/1609.00037}
 \end{itemize}
 
-\item Best Practices for Scientific Computing, Wilson et al. 2014
+\item Best Practices for Scientific Computing, Wilson et al. 2014~\cite{bestprSC}
 \begin{itemize}
-\item \url{http://dx.doi.org/10.1371/journal.pbio.1001745}
 \item 8 high level categories 
 \end{itemize}
 
-\item Butterfly: a paradigm towards stable bio & neuro informatics tools development
-\begin{itemize}
-\item \url{http://www.frontiersin.org/10.3389/conf.fnins.2015.91.00009/event_abstract}
-\end{itemize}
+\item Butterfly: a paradigm towards stable bio and neuro informatics tools development~\cite{10.3389/conf.fnins.2015.91.00009}
 
-\item Working towards Sustainable Software for Science: Practice and Experiences
-\begin{itemize}
-\item JORS collection
-\item \url{http://openresearchsoftware.metajnl.com/collections/special/working-towards-sustainable-software-for-science/}
-\end{itemize}
 
 \item CIG Software Development Best Practices
 \begin{itemize}
@@ -83,10 +73,11 @@ Additional resources include these sources for best practices to be explored:
 \item 6 categories; 3 Levels of detail within each: minimum, standard, target
 \end{itemize}
 
-\item Best Practices for Scientific Computing
-\begin{itemize}
-\item \url{http://arxiv.org/abs/1210.0530v1}
-\end{itemize}
+%same as 2nd in list
+%\item Best Practices for Scientific Computing
+%\begin{itemize}
+%\item \url{http://arxiv.org/abs/1210.0530v1}
+%\end{itemize}
 
 \item Software Sustainability Institute
 \begin{itemize}
@@ -96,24 +87,25 @@ Additional resources include these sources for best practices to be explored:
 \item WSSSPE papers from past WSSSPE workshops
 \begin{itemize}
 \item \url{http://wssspe.researchcomputing.org.uk/}
+\item published as JORS collection (\url{http://openresearchsoftware.metajnl.com/collections/special/working-towards-sustainable-software-for-science/})
 \end{itemize}
 
-\item JOSS Peer Review & rOpenSci onboarding
+\item JOSS Peer Review and rOpenSci onboarding
 \begin{itemize} 
 \item \url{http://joss.theoj.org/about#reviewer_guidelines} 
-\item E.g., \url{https://github.com/openjournals/joss-reviews/issues/43}
+\item Example JOSS review: \url{https://github.com/openjournals/joss-reviews/issues/43}
 \item \url{https://github.com/ropensci/onboarding}
 \item \url{http://ropensci.org/blog/2016/03/28/software-review}
 \end{itemize}
 
 \item RSE 2016 Talk:
 \begin{itemize}
-\item \href{http://www.rse.ac.uk/conf2016_talks#T1.1}{InterMine: Best Practices for Open Source Software}
+\item InterMine: Best Practices for Open Source Software (\url{http://www.rse.ac.uk/conf2016_talks#T1.1})
 \end{itemize}
 
 \item ANNIS corpus linguistic analysis tool
 \begin{itemize}
-\item \url{http://corpus-tools.org/annis/} (humanities code)
+\item humanities code (\url{http://corpus-tools.org/annis/})
 \end{itemize}
 
 \end{itemize}
@@ -121,7 +113,7 @@ Additional resources include these sources for best practices to be explored:
 
 \subsubsection{Plans}
 
-Our plans are for each of the Verify Best Practices and Metrics for Sustainable Research Software to volunteer to take on one to two projects each, and as incentive the projects that individual take on can be one they are interested in.  This would lead to an estimated 5-10 projects to be evaluated within this project.  In terms of increasing this sample size, it is our hope that once we document the workflow by which these evaluations are performed, others can be self-sufficient in following this workflow and contribute their own evaluations of software they wish to evaluate and have interest in.
+Our plans are for each of the Verify Best Practices and Metrics for Sustainable Research Software to volunteer to take on one to two projects each, and as incentive the projects that individual take on can be one they are interested in.  This would lead to an estimated 5--10 projects to be evaluated within this project.  In terms of increasing this sample size, it is our hope that once we document the workflow by which these evaluations are performed, others can be self-sufficient in following this workflow and contribute their own evaluations of software they wish to evaluate and have interest in.
 
 \subsubsection{SMART steps}
 
@@ -144,4 +136,4 @@ Our plans are for each of the Verify Best Practices and Metrics for Sustainable 
 
 \subsubsection{More information \& joining instructions}
 
-To join this group or obtain more information about it, please send an email to: \href{wssspe4-verify-best-practices@googlegroups.com}{Verifying best practices \& metrics for sustainable research software.}
+To join this group or obtain more information about it, please send an email to the Verifying best practices \& metrics for sustainable research software group: <wssspe4-verify-best-practices@googlegroups.com>.
