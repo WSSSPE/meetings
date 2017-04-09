@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Coordinating access to CI for research software}
+\label{sec:access}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\note{%Mark Abraham to write this?  Needs confirmation or another volunteer - 
+Dan starting this for now - may poll other members of group to make progress}
+
+%Introduction to group here, including the overall objective of work in this area.
+Each developer of software with uncommon needs (hardware, software, libraries, data sets), non-public code, or tests that exceed time limits for free plans must acquire, setup, and maintain their own continuous integration systems because their needs make them ineligible for popular free services such as Travis CI.  For example, software groups that develop BIOUNO, CI4SI, or GROMACS have done this.  
+
+Note that Debian provides a testing infrastructure (\href{https://ci.debian.net/doc/}{http://ci.debian.net/doc/}) that is mature and supports hardware and other requirement specifications. 
+
+
+
+\subsubsection{Participants}
+
+%members of the working group
+\begin{itemize}
+  \item Xinlian Liu <liu@hood.edu>
+  \item Mark Abraham <mjab@kth.se>
+  \item Sameer Shende <sameer@cs.uoregon.edu>
+  \item James Hetherington <j.hetherington@ucl.ac.uk>
+  \item Dominik Kempf <dominic.kempf@iwr.uni-heidelberg.de>
+  \item Michael R. Crusoe <michael.crusoe@gmail.com>
+  \item Radovan Bast <radovan.bast@uit.no>
+\end{itemize}
+
+\subsubsection{Working group objective}
+
+%Specific things the working group wants to accomplish in the context of the larger objective.
+This group is interested in reducing the burden of different projects having to build and maintain their own continuous integration systems (when publicly available CI are not a fit), by coordinating and sharing this burden across multiple projects.
+
+\subsubsection{Gap or challenge}
+
+%What is the gap or challenge being addressed?
+The scope of the group's interest is any type of testing, though interactive access for troubleshooting would be of particular interest beyond just automated testing.
+
+However, there are a lot of open issues:
+
+\begin{itemize}
+\item Some similar work has already been done.  How can this group apply and/or learn from that work, rather than reinventing the wheel?
+\item How to ensure this will work across disciplines?
+\item Meaningful CI for large projects may need hundreds of CPU hours per day
+\end{itemize}
+
+
+\subsubsection{Relevant people and resources}
+
+%What people, groups, or resources are needed.
+This would need to be picked up by a set of projects, potentially both small and large.
+
+Possibly working with the RSE community would be useful.
+
+\subsubsection{Plans}
+
+%What tasks will the working group undertake
+Some possible goals include:
+\begin{itemize}
+\item Acquire additional hardware such as GPUs, Xeon PHI, FPGAs and add/share them to e.g. Debian's testing infrastructure or to a shared Jenkins-based infrastructure
+\item Extending Debian's scope to include published but not mature software
+\item Implementing the same interface but with specialized hardware or available to non-public codes.
+\item \url{https://reproducible-builds.org} but for CI 
+\end{itemize}
+
+\subsubsection{SMART steps}
+
+%What are the first SMART steps proposed?
+\begin{enumerate}
+\item Learn how to donate machines to Debian
+\item Find funding -- NeIC (\url{https://neic.nordforsk.org}) through the CodeRefinery project (\url{http://coderefinery.org}) is building a CI infrastructure (in progress) that will be provided to selected projects (through an open call)
+\item Build community
+\end{enumerate}
+
+
+\subsubsection{More information \& joining instructions}
+
+For more information, see \url{https://groups.google.com/forum/#!forum/continuous-integration-for-research-software}
+
+%\todo{?}

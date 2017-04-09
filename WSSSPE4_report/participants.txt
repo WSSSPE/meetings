@@ -108,7 +108,7 @@ email: w.vanhage@esciencecenter.nl
 
 Robert Haines
 institution: University of Manchester
-email: robert.haine@manchester.ac.uk
+email: robert.haines@manchester.ac.uk
 
 James Hetherington
 institution: University College London
