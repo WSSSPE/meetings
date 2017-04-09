@@ -421,9 +421,29 @@ The paper and lightning talks have been published as a volume in the CEUR Worksh
 \section{Keynote}\label{sec:keynote}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\note{need a person to write this - Dan has asked Patricia if she will, if not, perhaps Dan will do it}
+\note{from Patricia}
 
 The keynote was given by Patricia Lago and entitled ``The legacy of unsustainable software''.
+%
+Sustainability is broadly associated with mother nature and ecologic issues. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}. 
+
+Supporting technical sustainability in (scientific) software is very near to supporting properties like longevity and resilience, i.e., the ability of a software system or application to fulfill its intent~\cite{Huisman2016} as planned independently from time passing or from changes in its operational context. Technical sustainability has never been easy, but it is even more of a challenge nowadays with the increasing demands on software solutions to support many aspects of our daily lives.
+
+The keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability. This provided a complementary angle to the workshop discussions. It addressed software energy efficiency (i.e., how to develop software that consumes less energy, like mobile apps that should consume less device-battery) and software energy-awareness (i.e., how to develop software supporting features that in turn have a lesser ecologic impact).
+
+The keynote used few myths to elaborate on such challenges and related research. Among them:
+
+\begin{itemize}
+\item[] {\bf Myth \#1: Energy-efficient hardware will solve the issue}. At the implementation level, to make software use resources effectively, we need to first understand the impact of different coding practices on the way software exploits computing resources (hence energy to feed them). In addition, when we have to deal with complex software or new projects, we must understand ``the big picture,'' hence we must reason at the design or architecture level. Maybe the software is not implemented yet, or maybe we must identify which design decisions are more or less beneficial for energy consumption. To this aim, we capture best practices in reusable patterns and so-called architectural tactics. These document generic designs, specific implementations, metrics, and measures.\\
+
+\item[] {\bf Myth \#2: Extensive experimentation will provide the needed know how}. While empirical methods to design and execute software engineering experiments are mature and well known, they are insufficient to handle the too many variables and uncertainties for modern software to be sustainable. We need new empirical methods that help us gather evidence faster~\cite{Procaccianti2015}. This would probably entail relaxing the too many constraints that govern current rules for mitigating threats to validity, and (equally importantly) collaboration- and experience-sharing to build a common knowledge base. In addition, we should exploit better (and more truthful) visualizations of experimentation results, to communicate on advances (and less promising directions.)\\
+
+\item[] {\bf Myth \#3: With massive migration of software systems to cloud-based environments we do not need to invest in a ``greener cloud'' anymore}. The use of cloud-based services promises large-scale optimizations in terms of the resources used by our software applications and related investments~\cite{green-cloud-sw}. Unfortunately, cloud provisioning heavily relies on over-capacity rather than intelligent governance, and so far has invested very little in innovation for sustainability. We need to build smarter software that both manages resources more efficiently in the cloud, and better understands the changes in the software operational context (including user requirements) and dynamically adapt to address sustainability intents~\cite{Procaccianti2016-2} (both in the cloud and on customer's premises.)\\
+
+\end{itemize}
+
+While these points are valid in any type of software, scientific software is even more sensitive to sustainability intents, being in charge of supporting science.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Mission and vision}\label{sec:mission}
