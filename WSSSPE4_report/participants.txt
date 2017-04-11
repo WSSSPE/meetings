@@ -158,7 +158,7 @@ Hannes Loeffler
 institution: STFC
 email: hannes.loeffler@stfc.ac.uk
 
-Frank Löffler
+Frank L\”{o}ffler
 institution: Louisiana State University
 email: knarf@cct.lsu.edu
 
@@ -202,7 +202,7 @@ Kyle Niemeyer
 institution: Oregon State University
 email: Kyle.Niemeyer@oregonstate.edu
 
-Santiago Nunez-Corrales
+Santiago N\’u\~nez-Corrales
 institution: University of Illinois Urbana--Champaign
 email: nunezco2@illinois.edu
 
