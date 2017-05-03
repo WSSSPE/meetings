@@ -5,7 +5,7 @@ import re, operator
 # 'column' for a column, and
 # 'off' for no email, and
 # 'email' to just print a list of emails
-email = 'email'
+email = 'off'
 
 people = []
 with open('participants.txt', 'r') as f:
