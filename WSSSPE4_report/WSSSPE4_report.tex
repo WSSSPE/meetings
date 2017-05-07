@@ -291,14 +291,18 @@ regarding how part of the workshop was being run, and we changed the workshop
 to address this.
 
 This report is based on the events at the workshop and the submitted materials.
-These events included discussion of the WSSSPE mission and vision, a keynote,
-a set of presentations, a panel, and a number of working groups.  One full day of the
+These events included discussion of the call for papers (\S\ref{sec:preworkshop}), the WSSSPE mission and vision (\S\ref{sec:mission}), a keynote (\S\ref{sec:keynote}),
+a set of presentations (\S\ref{sec:papers} and \S\ref{sec:lightning}), a panel (\S\ref{sec:panel}), and a number of working groups (\S\ref{sec:WGs}).  One full day of the
 workshop was spent with participants in the working groups, which occurred in parallel
 with each other.  And each of the working groups left with a plan for how they could move
 forward.
+This report also mentions the Slack channel created for further discussions (\S\ref{sec:slack}), and it highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
+Appendices list the organizers (\S\ref{sec:orgcom}), attendees(\S\ref{sec:attendees}), travel award recipients (\S\ref{sec:awardees}), and program committee (\S\ref{sec:progcom}), and detail the attendee survey (\S\ref{sec:survey_details}).
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Calls for participation} \label{sec:preworkshop}
+\section{Call for participation} \label{sec:preworkshop}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 WSSSPE4 was based on the work done at WSSSPE1, WSSSPE2, and WSSSPE3, but aimed
@@ -424,32 +428,6 @@ and the lightning talks are discussed in Section~\ref{sec:lightning}.
 The paper and lightning talks have been published as a volume in the CEUR Workshop Proceedings~\cite{WSSSPE4-proceedings}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Keynote}\label{sec:keynote}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\note{from Patricia}
-
-The keynote was given by Patricia Lago and entitled ``The legacy of unsustainable software''.
-%
-Sustainability is broadly associated with natural ecologic systems. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}.
-
-Supporting technical sustainability in (scientific) software is very near to supporting properties like longevity and resilience, i.e., the ability of a software system or application to fulfill its intent~\cite{Huisman2016}, as planned independently from time passing or from changes in its operational context. Technical sustainability has never been easy, but it is even more of a challenge nowadays with the increasing demands on software solutions to support many aspects of our daily lives.
-
-The keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability. This provided a complementary angle to the workshop discussions. It addressed software energy efficiency (i.e., how to develop software that consumes less energy, like mobile apps that should consume less device-battery) and software energy-awareness (i.e., how to develop software that can actively decide between energy efficiency and other goals such as performance).
-
-The keynote used a few myths to elaborate on such challenges and related research. Among them:
-
-\begin{itemize}
-\item[] {\bf Myth \#1: Energy-efficient hardware will solve the issue}. At the implementation level, to make software use resources effectively, we need to first understand the impact of different coding practices on the way software exploits computing resources (hence energy to feed them). In addition, when we have to deal with complex software or new projects, we must understand ``the big picture,'' hence we must reason at the design or architecture level. Maybe the software is not implemented yet, or maybe we must identify which design decisions are more or less beneficial for energy consumption. To this aim, we capture best practices in reusable patterns and so-called architectural tactics. These document generic designs, specific implementations, metrics, and measures.\\
-
-\item[] {\bf Myth \#2: Extensive experimentation will provide the needed know how}. While empirical methods to design and execute software engineering experiments are mature and well known, they are insufficient to handle the too many variables and uncertainties for modern software to be sustainable. We need new empirical methods that help us gather evidence faster~\cite{Procaccianti2015}. This would probably entail relaxing the too many constraints that govern current rules for mitigating threats to validity, and (equally importantly) collaboration- and experience-sharing to build a common knowledge base. In addition, we should exploit better (and more truthful) visualizations of experimentation results, to communicate on advances (and less promising directions.)\\
-
-\item[] {\bf Myth \#3: With massive migration of software systems to cloud-based environments, we do not need to invest in a ``greener cloud'' anymore}. The use of cloud-based services promises large-scale optimizations in terms of the resources used by our software applications and related investments~\cite{green-cloud-sw}. Unfortunately, cloud provisioning heavily relies on over-capacity rather than intelligent governance, and so far has invested very little in innovation for sustainability. We need to build smarter software that both manages resources more efficiently in the cloud, better understands the changes in the software operational context (including user requirements), and dynamically adapts to address sustainability intents~\cite{Procaccianti2016-2} (both in the cloud and on customer's premises.)\\
-
-\end{itemize}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Mission and vision}\label{sec:mission}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -497,6 +475,32 @@ The research software lifecycle includes:
 \item using software
 \item recognizing contributions to and of software
 \item maintaining software
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Keynote}\label{sec:keynote}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{from Patricia}
+
+The keynote was given by Patricia Lago and entitled ``The legacy of unsustainable software''.
+%
+Sustainability is broadly associated with natural ecologic systems. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}.
+
+Supporting technical sustainability in (scientific) software is very near to supporting properties like longevity and resilience, i.e., the ability of a software system or application to fulfill its intent~\cite{Huisman2016}, as planned independently from time passing or from changes in its operational context. Technical sustainability has never been easy, but it is even more of a challenge nowadays with the increasing demands on software solutions to support many aspects of our daily lives.
+
+The keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability. This provided a complementary angle to the workshop discussions. It addressed software energy efficiency (i.e., how to develop software that consumes less energy, like mobile apps that should consume less device-battery) and software energy-awareness (i.e., how to develop software that can actively decide between energy efficiency and other goals such as performance).
+
+The keynote used a few myths to elaborate on such challenges and related research. Among them:
+
+\begin{itemize}
+\item[] {\bf Myth \#1: Energy-efficient hardware will solve the issue}. At the implementation level, to make software use resources effectively, we need to first understand the impact of different coding practices on the way software exploits computing resources (hence energy to feed them). In addition, when we have to deal with complex software or new projects, we must understand ``the big picture,'' hence we must reason at the design or architecture level. Maybe the software is not implemented yet, or maybe we must identify which design decisions are more or less beneficial for energy consumption. To this aim, we capture best practices in reusable patterns and so-called architectural tactics. These document generic designs, specific implementations, metrics, and measures.\\
+
+\item[] {\bf Myth \#2: Extensive experimentation will provide the needed know how}. While empirical methods to design and execute software engineering experiments are mature and well known, they are insufficient to handle the too many variables and uncertainties for modern software to be sustainable. We need new empirical methods that help us gather evidence faster~\cite{Procaccianti2015}. This would probably entail relaxing the too many constraints that govern current rules for mitigating threats to validity, and (equally importantly) collaboration- and experience-sharing to build a common knowledge base. In addition, we should exploit better (and more truthful) visualizations of experimentation results, to communicate on advances (and less promising directions.)\\
+
+\item[] {\bf Myth \#3: With massive migration of software systems to cloud-based environments, we do not need to invest in a ``greener cloud'' anymore}. The use of cloud-based services promises large-scale optimizations in terms of the resources used by our software applications and related investments~\cite{green-cloud-sw}. Unfortunately, cloud provisioning heavily relies on over-capacity rather than intelligent governance, and so far has invested very little in innovation for sustainability. We need to build smarter software that both manages resources more efficiently in the cloud, better understands the changes in the software operational context (including user requirements), and dynamically adapts to address sustainability intents~\cite{Procaccianti2016-2} (both in the cloud and on customer's premises.)\\
+
 \end{itemize}
 
 
@@ -1074,7 +1078,9 @@ The groups worked in Google docs, and eventually created Google slides to show t
 \input{wg_open_research_index}
 \input{wg_letters}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Slack team and channels}\label{sec:slack}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 As part of the discussion at WSSSPE4, we created a Slack team for WSSSPE~\cite{WSSSPESlack}.  To join it, go to \url{https://wssspe.signup.team/}.  A number of the working groups also created channels within the team; see the subsections in \S\ref{sec:WGs} for the names of these channels.
