@@ -960,9 +960,153 @@ For more information, see \url{https://groups.google.com/forum/#!forum/continuou
 
 
 
-\input{wg_soft_eng}
-\input{wg_open_research_index}
-\input{wg_letters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Software engineering processes tailored for research software}
+\label{sec:soft-eng}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{Anshu to write this}
+
+This working group is concerned with identifying processes that are not adequately
+covered by general software engineering, starting with verification and testing.
+Computational science and engineering applications have many moving
+parts that need to interoperate with one another. The accuracy and
+reliability of results produced by scientific software depends not
+only on the individual components behaving correctly, but also on the
+validity of their interactions.
+As scientific understanding grows,
+the corresponding computational software models are refined, leading
+to more complex codes. Increasing complexity makes them more prone to
+defects, not only in individual code units, but also in interaction
+among units. Therefore, a strong verification process combined with a
+rigorous testing regime plays a critical role in the prevention of
+generating incorrect scientific results. However, most science teams
+struggle to find a good solution for themselves. 
+
+One cause is lack of exposure to the practices. While
+good developers will test their code to
+verify that it operates as expected, they may not appreciate
+that without regular testing, defects can be introduced
+inadvertently. 
+%
+An even bigger challenge is that those who understand
+the importance of regular testing do not often find much help from
+software engineering literature. There is a significant gap between
+the testing gospel and its applicability to computational science. This
+gap leads to frustration and abandonment of the good with the bad. Some
+relevant literature exists, in particular experiences from
+practitioners in computational science who developed their own
+solutions. However, this literature is scattered among many different
+forums, and can be challenging to find. This working group aims to
+address this gap by curating the existing content and contributing
+content where none exists.
+
+This working group will (1) conduct a literature survey to gauge the extent
+of awareness of the issue in general, (2) generate content useful for
+the community where needed, and (3) curate the collected and added
+content for the use of the community.
+
+Readers interested in getting more information should use the working group'
+channel in the WSSSPE Slack (\S\ref{sec:slack}), called
+\texttt{\#wg-testing-in-science}.
+Additionally, a git
+repository (\url{https://github.com/WSSSPE/WG-Best-Practices.git}) exists for contributing content and reference to, and
+curation of the existing literature on this topic.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Open research index}
+\label{sec:open-research-index}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{Dan to write this}
+
+The aim of this group is to investigate the building of an index of research products in an open sustainable manner.  Its goal is not to eliminate commercial products, but to build on what is there and provide data and services that are missing.
+%
+The Open Research Index should take in all research products (papers, software, datasets, workflows, etc.) from their publishers and recorders (journals, societies, domain repositories, government [open access] repositories, preprint servers, general repositories [e.g., figshare, zenodo]) and other services (CrossRef, ORCID).
+Each product should list authors and citations and allow people to search the resulting network.
+Users should also be able to interact with their own record and edit it, like Google Scholar allows.
+
+The working group's plans are relatively simple to express, though quite complex to undertake.  They are to first determine a plan to build an open research index that allows various stakeholders to satisfy their needs, then to determine if the plan is feasible.
+At the time of the meeting, and today as well, it is unclear who has the time and energy to pursue this idea. Thus, a leader needs to be identified.
+With a leader and feasible plan, the group would then obtain resources, and then build the index.
+%
+Because Google and others provide some similar services today, though these services (and the underlying data) could be removed at any time and the community cannot build new services, these companies would ideally be involved in the activities of the group.
+
+Alternatively or additionally, the group could build a mailing list for us and discuss further, depending on how receptive others are to this idea.  At WSSSPE4, there seemed to be enough interest to do this, so the group set up a Slack channel within the WSSSPE team (\S\ref{sec:slack}), called \texttt{\#wg-open-research-idx} for its members and any future members.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Letters of evaluation for computational scientists}
+\label{sec:letters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Scientists working on scientific software are often located in
+disciplinary departments, depending on whether their software
+originates from the mathematical, physical, chemical, or other
+disciplines. As a consequence, they are frequently outside the core
+areas of their science, and their contributions are typically to both
+the research activity their software enables, as well as on
+algorithm and implementation aspects. This presents issues when
+letters of evaluation for hiring, tenure, and promotion do not specifically
+cover how this is relevant to the discipline.\footnote{The extensive use of such letters, and the problems that are
+  associated with it, may be an issue specific to the United States.}
+
+This group believes that the authors of scientific software provide important
+services to departments that are no less than strictly disciplinary
+research. Consequently, in order to level the playing field with more
+disciplinary candidates for hires, tenure, and promotion requires that
+letter writers be aware of how their letters will be read by
+committees. It also requires that committees be aware that such
+letters often look different and may provide a different perspective
+of how a candidate's achievements should be assessed. For example, in
+mathematics a typical candidate would be evaluated on the difficulty
+and depth of the statements she may have proven in their papers. On
+the other hand, an author of mathematical software would likely be
+evaluated based on the impact of her software, or the number of citations of
+the publications that describe it. She may also be evaluated by how
+widely the software is used \textit{outside} mathematics, a criterion
+that is rarely used for more disciplinary mathematicians.
+
+Addressing this problem likely requires that letter writers pay
+particular attention to who exactly the audience of such letters is,
+and tailor the message by specifically highlighting how the work of a
+candidate benefits the department and discipline that is considering a
+candidate. On the other hand, committee members also need to pay
+attention to the fact that there are areas that are important to the mission of
+their department and professional community in which different
+standards for evaluation hold.
+%
+There are essentially two important strategies that build on each
+other: (i) raising awareness of the problem beyond just those who are
+affected by it (namely, computational scientists working on scientific
+software), and (ii) providing letter writers, letter readers, and
+evaluating committees with guidance on what criteria are relevant in
+assessing scientific software authors.
+
+Concrete guidance is most valuable if it
+comes from respected bodies such as professional societies or
+established and respected organizations. Getting these to act
+will only be possible if the problem is widely acknowledged, and so
+the first of the goals above should be the current focus.
+%
+The group will attempt to address it by organizing sessions at conferences
+that address the career problem, as well as writing editorials that
+can be published in the magazines of professional societies. These
+editorials ought to outline best practices for letter writers that
+specifically (i) make clear the contribution of a candidate to their
+interdisciplinary area, (ii) the relevance to their home discipline, and
+(iii) why writing software is good for the discipline itself.
+
+Ultimately, building a community large enough
+to affect change is important; contact Wolfgang Bangerth at
+<bangerth@colostate.edu> if you are interested in helping.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Slack team and channels}\label{sec:slack}
