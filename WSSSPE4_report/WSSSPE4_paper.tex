@@ -159,9 +159,7 @@ includes a description of the keynote presentation of the workshop, the
 mission and vision statements that were drafted at the workshop and
 finalized shortly after it, a set of idea papers, position papers, experience
 papers, demos, and lightning talks, and a panel discussion.  The main part of the report
-covers the set of working groups that formed during the meeting, and for each,
-discusses the participants, the objective and goal, and how the objective can
-be reached, along with contact information for readers who may want to join
+covers the set of working groups that formed during the meeting, along with contact information for readers who may want to join
 the group. Finally, we present results from a survey of the workshop attendees.
 
 % It also summarizes a set of lightning
@@ -189,8 +187,6 @@ the group. Finally, we present results from a survey of the workshop attendees.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction} \label{sec:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\todo{cite~\cite{WSSSPE4-report}}
 
 
 The Fourth Workshop on Sustainable Software for Science: Practice and Experiences
@@ -240,10 +236,9 @@ Women Who Code\footnote{\url{https://www.womenwhocode.com}}, and
 Women in HPC\footnote{\url{http://www.womeninhpc.org}}.
 %\todo{did we reach out to any others?}
 
-WSSSPE4 also included two professional event organizers/facilitators from
-KnowInnovation who helped the organizing committee plan the workshop agenda,
-and during the workshop, they actively engaged participants with various
-tools, activities, and reminders.
+WSSSPE4 also included two professional event organizers/facilitators who helped 
+plan the workshop agenda,
+and who engaged with participants during the workshop.
 
 At the workshop, we also introduced a Code of Conduct (CoC).%
 \footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}}
@@ -293,14 +288,13 @@ after the first half day,
 regarding how part of the workshop was being run, and we changed the workshop
 to address this.
 
-This report is based on the events at the workshop and the submitted materials.
-These events included discussion of the call for papers (\S\ref{sec:preworkshop}), the WSSSPE mission and vision (\S\ref{sec:mission}), a keynote (\S\ref{sec:keynote}),
-a set of presentations (\S\ref{sec:papers} and \S\ref{sec:lightning}), a panel (\S\ref{sec:panel}), and a number of working groups (\S\ref{sec:WGs}).  One full day of the
+This paper is a summary of a longer report~\cite{WSSSPE4-report} on the events at the workshop and the submitted materials.
+The remainder of the paper includes the call for papers (\S\ref{sec:preworkshop}); the WSSSPE mission and vision (\S\ref{sec:mission}); a set of presentations that included a keynote, papers, lighting talks, and a panel (\S\ref{sec:presentations}); and the activities of a set of working groups (\S\ref{sec:WGs}).  One full day of the
 workshop was spent with participants in the working groups, which occurred in parallel
 with each other.  And each of the working groups left with a plan for how they could move
 forward.
 This report also mentions the Slack channel created for further discussions (\S\ref{sec:slack}), and it highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
-Appendices list the organizers (\S\ref{sec:orgcom}), attendees(\S\ref{sec:attendees}), travel award recipients (\S\ref{sec:awardees}), and program committee (\S\ref{sec:progcom}), and detail the attendee survey (\S\ref{sec:survey_details}).
+An appendix lists the organizers and program committee members (\S\ref{sec:orgcom}).
 
 
 
@@ -424,10 +418,8 @@ Specifically,
 2 experience papers,
 and
 3 demos
-were accepted. (Two of the submitted lightning talks and one submitted experience paper were rejected, while two more submitted experience papers
+were accepted, as mentioned in Section~\ref{sec:presentations}. (Two of the submitted lightning talks and one submitted experience paper were rejected, while two more submitted experience papers
 were accepted as lightning talks.)
-The papers are discussed in Section~\ref{sec:papers},
-and the lightning talks are discussed in Section~\ref{sec:lightning}.
 The paper and lightning talks have been published as a volume in the CEUR Workshop Proceedings~\cite{WSSSPE4-proceedings}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -482,556 +474,206 @@ The research software lifecycle includes:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Keynote}\label{sec:keynote}
+\section{Presentations}\label{sec:presentations}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\note{from Patricia}
 
 The keynote was given by Patricia Lago and entitled ``The legacy of unsustainable software''.
 %
-Sustainability is broadly associated with natural ecologic systems. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}.
-
-Supporting technical sustainability in (scientific) software is very near to supporting properties like longevity and resilience, i.e., the ability of a software system or application to fulfill its intent~\cite{Huisman2016}, as planned independently from time passing or from changes in its operational context. Technical sustainability has never been easy, but it is even more of a challenge nowadays with the increasing demands on software solutions to support many aspects of our daily lives.
-
-The keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability. This provided a complementary angle to the workshop discussions. It addressed software energy efficiency (i.e., how to develop software that consumes less energy, like mobile apps that should consume less device-battery) and software energy-awareness (i.e., how to develop software that can actively decide between energy efficiency and other goals such as performance).
-
-The keynote used a few myths to elaborate on such challenges and related research. Among them:
-
-\begin{itemize}
-\item[] {\bf Myth \#1: Energy-efficient hardware will solve the issue}. At the implementation level, to make software use resources effectively, we need to first understand the impact of different coding practices on the way software exploits computing resources (hence energy to feed them). In addition, when we have to deal with complex software or new projects, we must understand ``the big picture,'' hence we must reason at the design or architecture level. Maybe the software is not implemented yet, or maybe we must identify which design decisions are more or less beneficial for energy consumption. To this aim, we capture best practices in reusable patterns and so-called architectural tactics. These document generic designs, specific implementations, metrics, and measures.\\
-
-\item[] {\bf Myth \#2: Extensive experimentation will provide the needed know how}. While empirical methods to design and execute software engineering experiments are mature and well known, they are insufficient to handle the too many variables and uncertainties for modern software to be sustainable. We need new empirical methods that help us gather evidence faster~\cite{Procaccianti2015}. This would probably entail relaxing the too many constraints that govern current rules for mitigating threats to validity, and (equally importantly) collaboration- and experience-sharing to build a common knowledge base. In addition, we should exploit better (and more truthful) visualizations of experimentation results, to communicate on advances (and less promising directions.)\\
-
-\item[] {\bf Myth \#3: With massive migration of software systems to cloud-based environments, we do not need to invest in a ``greener cloud'' anymore}. The use of cloud-based services promises large-scale optimizations in terms of the resources used by our software applications and related investments~\cite{green-cloud-sw}. Unfortunately, cloud provisioning heavily relies on over-capacity rather than intelligent governance, and so far has invested very little in innovation for sustainability. We need to build smarter software that both manages resources more efficiently in the cloud, better understands the changes in the software operational context (including user requirements), and dynamically adapts to address sustainability intents~\cite{Procaccianti2016-2} (both in the cloud and on customer's premises.)\\
-
-\end{itemize}
-
+Sustainability is broadly associated with natural ecologic systems. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}.  Lago's keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability, providing a complementary angle to the workshop discussions. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Papers and demos} \label{sec:papers}
+%\section{Papers and demos} \label{sec:papers}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\note{Sandra Gesing will write this}
 
 WSSSPE included the presentation of 12 10-minute talks (based on four idea papers, three position papers,
 two experience papers, and three demos) that addressed a wide range of topics around
-sustainability for software in science. These talks covered three main areas:
-\begin{enumerate}
-\item The specifics of the academic environment for software development and for so-called
-research programmers or research software engineers;
-\item The characteristics and needs of research software in general such as the lifecycle of
-software in science, preservation, curation, sharing, and reproducibility challenges; and
-\item Lessons learned from or visions for use cases of scientific software and communities
-working with and\slash or on a software package.
-\end{enumerate}
-
-%
-%
-%\todo{group by type - idea, position, experience, demo}
+sustainability for software in science. These talks covered three main areas.
 
 The following four papers belong to the first area: the academic environment.
 They address diverse aspects ranging from incentives for quality software to
-dvocating a professional society for research software to roles and degrees for
+advocating a professional society for research software to roles and degrees for
 research software engineers. For talks with multiple authors, an
 \textsuperscript{\textasteriskcentered} indicates the author who presented the talk.
 
 \begin{itemize}
-\item \textbf{Michael Heroux: \emph{Idea paper: Sustainable \& Productive:
-Improving Incentives for Quality Software}}~\cite{Heroux:2016ws}.
-The author presents that improving quality of scientific software is a measure
-to address the increased complexity in both modeling and software. To support
-quality, it is essential to provide Computational Science and Engineering teams
-with publication venues, funding, and  professional recognition. Broad
-improvements in sustainability and productivity can be only achieved when
-publishers, funding agencies and employers raise their expectations for
-software quality. Additionally, software community leaders are in the unique
-position to positively impact software quality by working on establishing
-incentives that will spur creative and novel approaches to improve developer
-productivity  and software sustainability.
+\item Michael Heroux: \emph{Idea paper: Sustainable \& Productive:
+Improving Incentives for Quality Software}~\cite{Heroux:2016ws}.
 
-\item \textbf{Gabrielle Allen: \emph{Idea Paper: Establishing a Professional
-Society for Research Software}}~\cite{GAllen:2016ws}.
-This paper advocates to create a professional society or extend the scope of an
-existing organization in research software. The author presents the motivation,
-a variety of potential roles of such a society and diverse potential funding
-mechanisms to be able to establish a sustainable organization. She gives an
-overview on similar activities as well as existing organizations and aims at
-stimulating discussion among potential members and stakeholders.
+\item Gabrielle Allen: \emph{Idea Paper: Establishing a Professional
+Society for Research Software}~\cite{GAllen:2016ws}.
 
-\item \textbf{Olivier Philippe\textsuperscript{\textasteriskcentered}, Simon Hettrick, and Neil Chue Hong:
+\item Olivier Philippe\textsuperscript{\textasteriskcentered}, Simon Hettrick, and Neil Chue Hong:
 \emph{Experience Paper: Preliminary analysis of a survey of UK Research
-Software Engineers}}~\cite{Philippe:2016ws}.
-This paper presents results from a survey conducted on the new role of research
-software engineers in academia. The survey provides demographic information
-about the education, field, gender, job satisfaction, and career plans of the people
-in this community. The outcome is that members of the community  were found to be
-highly educated, derive mainly from the hard sciences, and are predominantly male.
-Respondents reported satisfaction in their jobs, but indicated that career progression
-is both difficult and opaque. The authors urge a continued discussion about the experience
-of research software engineers and recommend further investigation into this
-important community.
+Software Engineers}~\cite{Philippe:2016ws}.
 
-\item \textbf{Christopher Gwilliams: \emph{Demo: Using industrial engagement to
-create and develop research ties within academia}}~\cite{Gwilliams:2016ws}.
-This demo focuses on the benefits of including a  new  software engineering
-degree that is influenced by, and works directly with,
-industry.  Cardiff  University  introduced  a  new  industry-focused  degree,
-Bachelor of Science in Applied Software Engineering (ASE) in September
-2015. The engagement with industry allows students to learn through live
-projects  with  real-world  applications and forge links for career opportunities.
-Also, industry benefits from this course that provides an entry point for industry
-to engage with the university and to develop a network of contacts between industry
-and academia, which is also a benefit for the university and allows to identify
-potential opportunities for new research projects and collaborators. \\
+\item Christopher Gwilliams: \emph{Demo: Using industrial engagement to
+create and develop research ties within academia}~\cite{Gwilliams:2016ws}.
 
-The second main area, concerned with characteristics and needs of research software, includes the following five papers:
+\end{itemize}
 
-\item \textbf{Anshu Dubey\textsuperscript{\textasteriskcentered} and Katherine Riley: \emph{Experience Paper: Software
-Engineering and Community Codes Track in ATPESC}}~\cite{Dubey1:2016ws}.
-The Argonne Training Program in Extreme Scale
-Computing (ATPESC) was started by Argonne National Laboratory with the objective
-of expanding the ranks of better prepared users of high-performance computing (HPC) machines.
-One of the unique aspects of the program was inclusion of a
-software engineering and community codes track. The inclusion
-was motivated by the observation that the projects with a good
-software process were better able to meet their scientific goals.
-The paper presents the experience in running the software
-track, the motivation, reception, and evolution of the track over the years.
-The authors recommend the inclusion of similar tracks in other HPC-oriented training programs.
+\noindent The second main area, concerned with characteristics and needs of research software, includes the following five papers:
 
-\item \textbf{Neil Chue Hong: \emph{Position Paper: Why do we need to compare
-research software, and how should we do it?}}~\cite{ChueHong:2016ws}.
-This position paper sets out the reasons for why different stakeholders,
-from users to developers to funders, might wish to undertake the difficult task
-to compare research software. The author describes a proposed framework for doing
-so (based around measures of accessibility, usability, maintainability, and
-portability) which takes into account the possibility of variation between
-different communities about how they prioritize different aspects of research software.
+\begin{itemize}
 
-\item \textbf{Anshu Dubey\textsuperscript{\textasteriskcentered} and Lois Curfman McInnes: \emph{Idea Paper: The Lifecycle
-of Software for Scientific Simulation}}~\cite{Dubey2:2016ws}.
-The authors discuss the specifics of the lifecycle of scientific software.
-While the software lifecycle is a well-researched topic, one class of projects,
-research software, has received relatively
-little attention from lifecycle researchers. This
-paper formalizes a lifecycle model
-for end-to-end scientific application software, featuring loose
-coupling between submodels for development of infrastructure
-and scientific capability. The authors also invite input from stakeholders
-to converge on a model that captures the complexity of this
-development processes and provides needed lifecycle guidance to
-the scientific software community.
+\item Anshu Dubey\textsuperscript{\textasteriskcentered} and Katherine Riley: \emph{Experience Paper: Software
+Engineering and Community Codes Track in ATPESC}~\cite{Dubey1:2016ws}.
 
-\item \textbf{Francisco Queiroz\textsuperscript{\textasteriskcentered} and Rejane Spitz: \emph{Position Paper:
-Collaborative Gamification Design for Scientific Software}}~\cite{Queiroz:2016ws}.
-The paper focuses on usability design and presents that gamification, a design
-trend for improving scientific software usability, for scientific software should
-be facilitated by an open, collaborative design process supported by
-conversational media. This approach is compatible with
-qualities often attributed to computational science community
-regarding openness and collaboration between members of varied
-professional backgrounds. They exemplify the use of conversational media for
-collaborative design and expect the synergy between collaborators to result in
-better usability, greater user acceptance, and adequacy to requirements,
-obtaining optimal design solutions in a sustainable way.
+\item Neil Chue Hong: \emph{Position Paper: Why do we need to compare
+research software, and how should we do it?}~\cite{ChueHong:2016ws}.
 
-\item \textbf{Bruce Childers\textsuperscript{\textasteriskcentered}, Jack Davidson, Wayne Graves, Bernard Rous, and
+\item Anshu Dubey\textsuperscript{\textasteriskcentered} and Lois Curfman McInnes: \emph{Idea Paper: The Lifecycle
+of Software for Scientific Simulation}~\cite{Dubey2:2016ws}.
+
+\item Francisco Queiroz\textsuperscript{\textasteriskcentered} and Rejane Spitz: \emph{Position Paper:
+Collaborative Gamification Design for Scientific Software}~\cite{Queiroz:2016ws}.
+
+\item Bruce Childers\textsuperscript{\textasteriskcentered}, Jack Davidson, Wayne Graves, Bernard Rous, and
 David Wilkinson: \emph{Position Paper: Active Curation of Artifacts is Changing
-the Way Digital Libraries will Operate}}~\cite{Childers:2016ws}.
-The paper presents the implications of ``active curation systems'' that provide
-executable access to
-artifacts and experiments behind published results and enables
-their reuse. These systems allow changing and repeating experiments to understand
-how an innovation behaves in conditions beyond the ones described in a paper and
-address reproducibility challenges. Active curation systems
-also  enable accountability and accelerate research progress  by
-giving access to complete experimental details. As these systems
-take  hold,  it  is  important  to  understand  their  capabilities  and
-how digital libraries should be integrated with them. The authors describe a
-study underway to explore how best
-to do this integration.\\
+the Way Digital Libraries will Operate}~\cite{Childers:2016ws}.
 
-Three contributions focused on the third main area: elucidating lessons learned
+\end{itemize}
+
+\noindent Three contributions focused on the third main area: elucidating lessons learned
 from or visions for use cases of scientific software and communities working
 with and\slash or on a software package.
 
-\item \textbf{Debashis Ganguly, William C.\ Garrison III, David Wilkinson,
+\begin{itemize}
+
+\item Debashis Ganguly, William C.\ Garrison III, David Wilkinson,
 Bruce R.\ Childers, Adam J.\ Lee, and Daniel Mosse\textsuperscript{\textasteriskcentered}: \emph{Demo: Composing,
-Reproducing, and Sharing Simulations}}~\cite{Ganguly:2016ws}.
-The authors demonstrate their approach of sharing,
-reproducing, and composing simulations toward accelerating
-research productivity while also improving accountability and
-credibility. Specifically, they have developed a case study in
-which they compose and share access control simulations in the
-form of shareable data store units for cloud systems. They share, compose
-and repeat simulations  through a collaborative repository
-(OCCAM) and suggest a general simulation framework (SST) that can
-accelerate the efforts for the whole community.
+Reproducing, and Sharing Simulations}~\cite{Ganguly:2016ws}.
 
-\item \textbf{Sameer Shende\textsuperscript{\textasteriskcentered} and Allen Malony: \emph{Demo: Using TAU for
-Performance Evaluation of Scientific Software}}~\cite{Shende:2016ws}.
-This demo presents the  TAU Performance System for performance evaluation of Scientific
-Software written in C++, C, and Fortran. The system addresses performance
-technology problems  at three levels: instrumentation,
-measurement, and analysis. The TAU framework supports the
-configuration and integration of these layers. The authors advocate that effective
-exploration of performance will necessarily
-require prudent selection from the range of alternative methods TAU provides
-to  assemble meaningful performance experiments.
+\item Sameer Shende\textsuperscript{\textasteriskcentered} and Allen Malony: \emph{Demo: Using TAU for
+Performance Evaluation of Scientific Software}~\cite{Shende:2016ws}.
 
-\item \textbf{Janos Sallai\textsuperscript{\textasteriskcentered}, Christopher Iacovella, Christoph Klein, and Tengyu Ma:
+\item Janos Sallai\textsuperscript{\textasteriskcentered}, Christopher Iacovella, Christoph Klein, and Tengyu Ma:
 \emph{Idea Paper: Development of a Software Framework for Formalizing Forcefield
-Atom-Typing for Molecular Simulation}}~\cite{Sallai:2016ws}.
-The authors present an essential and error-prone task in the area of Molecular
-Dynamics simulations: the efficient selection of correct parameter values for
-specific molecules, especially forcefields. They present a framework that
-aims to solve this data management issue, proposing a common format for
-forcefields that is self-documenting with machine readable,
-declarative usage rules. They investigate processes and tools
-that are commonly used today in software development (e.g.,
-unit testing, verification and validation, continuous integration,
-and version control) and reason that they are, with proper infrastructure
-support, applicable to forcefield development, as well. The
-paper describes how such an infrastructure can tackle managing and evolving
-forcefields by the molecular dynamics community, and
-proposes a way to encourage and incentivize involvement
-by the stakeholders.
-
+Atom-Typing for Molecular Simulation}~\cite{Sallai:2016ws}.
 
 \end{itemize}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lightning talks} \label{sec:lightning}
+%\section{Lightning talks} \label{sec:lightning}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{comment}
 \note{
 \href{http://wssspe.researchcomputing.org.uk/wssspe4/agenda/}{Slides.}}
 \end{comment}
 
-There were 19 lightning talks presented at WSSSPE4, as follows (in order of
+\noindent There were 19 lightning talks presented at WSSSPE4, as follows (in order of
 presentation).
 %
-For talks with multiple authors, an \textsuperscript{\textasteriskcentered} again indicates the author who presented the talk.
-%
-\begin{itemize}[itemsep=1ex]
-    \item \textbf{Shoaib Sufi: \emph{The Software Sustainability Institute Fellowship
-    programme; supporting the social side of research software}}~\cite{Sufi:2016ws}.
-    Sufi, Community Lead at the Software Sustainability Institute (SSI), discussed
-    the SSI Fellowship program and the fellows, including their
-    demographic breakdown and domains of practice. This program came about
-    based on the institute's desire to integrate with the research community---thus
-    inspiring change from within---rather than preach to it. Five SSI fellows
-    attended WSSSPE4.
+%For talks with multiple authors, an \textsuperscript{\textasteriskcentered} again indicates the author who presented the talk.
 
-    \item \textbf{Sandra Gesing\textsuperscript{\textasteriskcentered}, Maytal Dahan, Linda B.~Hayden, Katherine Lawrence,
+\begin{itemize}%[itemsep=1ex]
+    \item Shoaib Sufi: \emph{The Software Sustainability Institute Fellowship
+    programme; supporting the social side of research software}~\cite{Sufi:2016ws}.
+
+    \item Sandra Gesing\textsuperscript{\textasteriskcentered}, Maytal Dahan, Linda B.~Hayden, Katherine Lawrence,
     Suresh Marru, Marlon Pierce, Nancy Wilkins-Diehr, and Michael Zentner:
     \emph{The Science Gateways Community Institute - Supporting Communities to
-    Achieve Sustainability for Their Science Gateways}}~\cite{Gesing:2016ws}.
-    In this talk, Gesing introduced the concept of science gateways: end-to-end software
-    solutions for a community that hide underlying complexity. She also posed the need
-    for gateways, which include the increased complexity of research and associated
-    hardware\slash software, a greater need for reproducibility and openness, and the
-    opportunity to integrate research with teaching for better workforce development.
-    In fact, gateway users surpassed login-based users in XSEDE systems in 2013,
-    and 1.4 times as many users accessed XSEDE via gateways compared with
-    login in March 2016. The Science Gateways Community Institute offers support
-    related to gateways in five areas: Incubator, Extended Developer Support, Scientific
-    Software Collaborative, Community Engagement and Exchange, and Workforce
-    Development.
+    Achieve Sustainability for Their Science Gateways}~\cite{Gesing:2016ws}.
 
-    \item \textbf{Karthik Ram\textsuperscript{\textasteriskcentered}, Noam Ross,
+    \item Karthik Ram\textsuperscript{\textasteriskcentered}, Noam Ross,
     and Scott Chamberlain: \emph{A model for
-    peer review and onboarding research software}}~\cite{Ram:2016ws}.
-    This talk described the rOpenSci community's review process for research
-    software packages. Submission of a package starts with a pre-submission inquiry
-    for fit with the community criteria, then peer reviewers evaluate based on
-    usability, quality, and style. Upon acceptance, packages are given an rOpenSci
-    README badge and added to the system. Important components include a code of
-    conduct, open and non-adversarial review, and that no submission is
-    rejected---just out of scope. Remaining challenges include scaling, author
-    incentives, and automation of the process.
+    peer review and onboarding research software}~\cite{Ram:2016ws}.
 
-    \item \textbf{Frank L\"{o}ffler and Steven Brandt\textsuperscript{\textasteriskcentered}:
-    \emph{A vision of computing in 10+ years}}~\cite{Loffler:2016ws}.
-    This talk began by describing the challenges facing science, and particularly
-    computational science, in recent years: the amount and complexity of knowledge
-    has increased dramatically, making it difficult for individuals or even teams to
-    manage modern, complex problems.
-    Brandt submitted an argument for decoupling science simulation and
-    the solution of computational problems away from numerical methods and low-level
-    optimization. This may be possible with domain-specific languages, or the use
-    of modern features in existing languages. This vision also includes reuse of
-    basic computing infrastructure, including common data structures, parameter files,
-    and high-performance I\slash O. This computing future necessarily requires
-    better recognition and reward systems for research software developers (i.e.,
-    research software engineers), and ways to make increasingly complex scientific
-    papers more understandable.
+    \item Frank L\"{o}ffler and Steven Brandt\textsuperscript{\textasteriskcentered}:
+    \emph{A vision of computing in 10+ years}~\cite{Loffler:2016ws}.
 
-
-    \item \textbf{Daniel S.~Katz, Kyle E.~Niemeyer\textsuperscript{\textasteriskcentered},
+    \item Daniel S.~Katz, Kyle E.~Niemeyer\textsuperscript{\textasteriskcentered},
     Arfon M.~Smith, and the FORCE11 Software Citation Working Group:
-    \emph{Software Citation: Process, Principles, and Implementation}}~\cite{Katz:2016ws}.
-    This talk described the timeline of activities of the FORCE11 Software Citation
-    Working Group and the principles of software citation established by the group.
-    Niemeyer, one of the working group co-chairs, also discussed the paper published
-    describing the principles~\cite{Smith:2016sc}, and the remaining steps of the
-    working group before sunsetting it and spinning up a new Software Citation
-    Implementation Working Group.
+    \emph{Software Citation: Process, Principles, and Implementation}~\cite{Katz:2016ws}.
 
-    \item \textbf{Ray Idaszak\textsuperscript{\textasteriskcentered},
+    \item Ray Idaszak\textsuperscript{\textasteriskcentered},
     David G.~Tarboton, Hong Yi, Michael Stealey,
     Pabitra Dash, Alva Couch, Daniel P.~Ames, Jeffery S.~Horsburgh, Tony Castronova,
     Jon Goodall, Mohamed Morsy, Venkatesh Merwade, Mauriel Ramirez, Tian Gan,
     Drew (Zhiyu) Li, Jeff Sadler, Shawn Crawley, Zhaokun Xue, Lan Zhao, Carol Song,
     Christina Bandaragoda: \emph{HydroShare - A Case Study in Software Engineering
     Best Practices and Culture Change for Developing Sustainable Community
-    Software}}~\cite{Idaszak:2016ws}.
-    HydroShare is a five-year-old online, collaborative system that supports
-    open sharing of hydrologic data, analytical tools, and computer models. The
-    project involves 10 collaborating institutions that produce tested and reviewed
-    community code every two to three weeks, following software engineering best
-    practices. Undergraduate and graduate students involved in the project not
-    only adopt the best practices exhibited by HydroShare, but see the open,
-    collaborative approach to research software development as the norm.
-    The talk made recommendations to other community efforts, including the need to
-    identify committed, hands-on PIs; evidence-based software engineering for science;
-    continuous integration; the importance of professional software development and
-    operations practices, even for domain scientists; and to identify technology
-    decisions that overlap with career paths.
+    Software}~\cite{Idaszak:2016ws}.
 
-    \item \textbf{Lorraine Hwang\textsuperscript{\textasteriskcentered},
+    \item Lorraine Hwang\textsuperscript{\textasteriskcentered},
     Wolfgang Bangerth, Timo Heister, and Louise Kellogg:
     \emph{ASPECT: Hackathons as an Example of Sustaining an Open Source
-    Community}}~\cite{Hwang:2016ws}.
-    In this talk, Hwang first described the ASPECT (Advance Solver for Problems in
-    Earth ConvecTion) open-source, parallel, extensible finite element code
-    used to simulate thermal convection. ASPECT began development in 2011 as a
-    community-driven project under the Computational Infrastructure for Geodynamics
-    (CIG). Community-building activities around ASPECT focused on the traditional
-    workshops, tutorials, and webinars, but also on slightly nontraditional,
-    multi-day hackathons---which turned out to be one of the most effective
-    forms of fostering a community. These start with leaders establishing project
-    conventions, demonstrating workflows and relevant technical skills, and
-    identifying starter projects. Daily activities involve work plans and
-    science\slash coding briefs, with mini-tutorials given as needed. One important
-    requirement is that each participant must submit at least one commit. Hwang
-    also summarized lessons learned, including that hackathons should last 7--10
-    days, include participants with multidisciplinary expertise and at both novice
-    and expert levels, have at least one dedicated code reviewer per 10 participants,
-    hold daily group updates, organize activities to promote group interactions,
-    and enforce free time.
+    Community}~\cite{Hwang:2016ws}.
 
-    \item \textbf{Carole Goble: \emph{A Simple Profiling Framework for Software
-    User-Producer Reciprocity Review}}~\cite{Goble:2016ws}.
-    Goble first described some existing frameworks for measuring the maturity of
-    software, including the Software Sustainability Maturity Model, OSS Watch
-    Openness Rating, NASA Reuse Readiness Rating, Capability Maturity Model, and
-    Qualification and Selection of Open Source software. Then, she proposed a new,
-    simpler framework for project reciprocity, drawing on the intentions of users
-    and producers of the software, from the viewpoint of the producer.
-    Next steps include further definition of the model's characteristics based on
-    both theoretical and empirical investigation.
+    \item Carole Goble: \emph{A Simple Profiling Framework for Software
+    User-Producer Reciprocity Review}~\cite{Goble:2016ws}.
 
-    \item \textbf{Stephan Druskat: \emph{A proposal for the measurement and
+    \item Stephan Druskat: \emph{A proposal for the measurement and
     documentation of research software sustainability in interactive metadata
-    repositories}}~\cite{Druskat:2016ws}.
-    In this talk, Druskat first identified two technical barriers to software
-    sustainability: identification of good software, and software discoverability.
-    Some of his perspectives were based on experiences in the humanities, a lack
-    of funding for computational infrastructure results in little experience with
-    sustainability (although this may differ in other domains). Druskat proposed
-    metadata repositories as a possible solution, as they can measure and document
-    technical sustainability, and document resulting metrics and more general
-    features of software. Technical sustainability goals include ensuring software
-    existence, preserving potential operation of software, and creating\slash
-    retaining possibilities for further development and maintenance of software.
-    The next steps of such a system include compiling measurable criteria for
-    the sustainability goals (based on qualitative concepts of, e.g.,
-    ``sustainability,'' ``maintainability,'' and ``usability''), and
-    crowd-sourcing a weighting of these criteria.
+    repositories}~\cite{Druskat:2016ws}.
 
-    \item \textbf{Mistral Contrastin, Matthew Danish,
+    \item Mistral Contrastin, Matthew Danish,
     Dominic Orchard\textsuperscript{\textasteriskcentered}, and
     Andrew Rice: \emph{Supporting software sustainability with
-    lightweight specifications}}~\cite{Contrastin:2016ws}.
-    This talk introduced the tool CamFort for verifying Fortran code based on
-    lightweight specifications, which aid in software maintainability and reuse
-    through high-level indications of programmer intent.
-    Currently, CamFort supports specification (and
-    verification) of units and stencil operations. Plans for future specifications
-    include automatic test generation based on user-supplied properties, dependency
-    specifications, and software contracts to check, e.g., expected value ranges
-    and program behavior.
+    lightweight specifications}~\cite{Contrastin:2016ws}.
 
-    \item \textbf{Alice Allen, Cecilia Aragon, Christoph Becker, Jeffrey Carver,
+    \item Alice Allen, Cecilia Aragon, Christoph Becker, Jeffrey Carver,
     Andrei Chi\c{s}, Benoit Combemale, Mike Croucher, Kevin Crowston, Daniel Garijo,
     Ashish Gehani, Carole Goble\textsuperscript{\textasteriskcentered},
     Robert Haines, Robert Hirschfeld, James Howison,
     Kathryn Huff, Caroline Jay, Daniel S.~Katz, Claude Kirchner, Kateryna Kuksenok,
     Ralf L\"{a}mmel, Oscar Nierstrasz, Matt Turk, Rob van Nieuwpoort, Matthew Vaughn,
     and Jurgen Vinju: \emph{``I solemnly pledge'': A Manifesto for Personal
-    Responsibility in the Engineering of Academic Software}}~\cite{AAllen:2016ws}.
-    This talk described the activities of the weeklong Dagstuhl Perspectives Workshop
-    manifesto on ``Engineering Academic Software,'' which produced a manifesto
-    describing a pledge affirming the scholarly value of research software and
-    the personal responsibility to act in accordance with that value. The draft
-    (personal) manifesto includes 20 pledges, organized into three areas:
-    recognition of academic software, academic software development processes,
-    and the intellectual content of academic software. The talk concluded with a
-    survey for participants to give feedback on the pledges and their importance.
+    Responsibility in the Engineering of Academic Software}~\cite{AAllen:2016ws}.
 
-    \item \textbf{Neil Chue Hong\textsuperscript{\textasteriskcentered}:
-    \textit{Making it easier to understand research software impact}}~\cite{ChueHong:2016wsb}.
-    Chue Hong proposed that the WSSSPE community collaboratively develop a framework
-    to better understand (and measure the impact of) research software. This could
-    be based on a workflow involving mining the literature for mentions of software,
-    identifying linkages between software, and visualizing dependencies between
-    software or between software and other research artifacts. Many tools already
-    exist in this ecosystem, so Chue Hong proposed that a WSSSPE working group
-    collect these tools, summarize use cases, identify missing pieces, and find
-    low-hanging fruit to integrate tools or build new ones.
+    \item Neil Chue Hong\textsuperscript{\textasteriskcentered}:
+    \textit{Making it easier to understand research software impact}~\cite{ChueHong:2016wsb}.
 
-    \item \textbf{Willem Robert van Hage\textsuperscript{\textasteriskcentered},
+    \item Willem Robert van Hage\textsuperscript{\textasteriskcentered},
     Jason Maassen and Rob van Nieuwpoort: \textit{Software Impact Measurement at the
-    Netherlands eScience Center}}~\cite{vanHage:2016ws}.
-    This talk described eStep (eScience Technology Platform) at the Netherlands
-    eScience Center, which includes three components: a software catalogue
-    of eScience software, interfaces, libraries,
-    tools workflows, applications, etc.; a knowledge base of guides, reports, and
-    recommendations for scientific software development; and eScience research
-    documents including such as scientific publications, book chapters, and demos.
-    The eStep website currently presents automatically-generated information about
-    software based on metadata, with a plan for displaying measures of impact and
-    quality.
+    Netherlands eScience Center}~\cite{vanHage:2016ws}.
 
-    \item \textbf{Gabrielle Allen, Emily Chen\textsuperscript{\textasteriskcentered},
+    \item Gabrielle Allen, Emily Chen\textsuperscript{\textasteriskcentered},
     Ray Idaszak, and Daniel S.\ Katz: \textit{Report on Software Metrics for
-    Research Software}}~\cite{GAllen:2016wsb}.
-    In this talk, Chen first summarized some of the outcomes of the WSSSPE3
-    Metrics Breakout Group, who discussed that metrics are important for scientific
-    impact, discovery, reducing duplication of efforts, and evaluating software.
-    The group also summarized barriers to widespread use of metrics: no common
-    set of metrics collected, a need for usefulness to be obvious for projects,
-    and no common standard for collecting\slash presenting metrics. To find out
-    more about practices related to metrics, the authors ran a survey of National
-    Science Foundation Software Infrastructure for Sustained Innovation (SI2)
-    program investigators, with 19 participants. Important results include the
-    observation that most use citations and acknowledgements of software in
-    funding proposals, while download numbers are both challenging to collect
-    and not useful. Overall, participants generally agreed that metrics are
-    important, but said useful metrics are difficult or tedious to collect.
+    Research Software}~\cite{GAllen:2016wsb}.
 
-    \item \textbf{Eric L.~Seidel\textsuperscript{\textasteriskcentered}
+    \item Eric L.~Seidel\textsuperscript{\textasteriskcentered}
     and Gabrielle Allen: \textit{Bringing Techniques from Software Engineering
-    into Scientific Software}}~\cite{Seidel:2016ws}.
-    This talk, given by a senior graduate student in Computer Science\slash
-    programming languages research, described several areas of software engineering
-    concepts that benefit the development of research software. In particular,
-    Seidel focused on software correctness, starting from high-level
-    specifications. Correctness can be demonstrated by verifying or proving
-    that the software satisfies the specification, testing against a range of
-    inputs, or synthesis of code from the specification. However, all of these
-    present technical challenges, in addition to the social challenges of
-    encouraging collaboration between software engineering and research software
-    communities.
+    into Scientific Software}~\cite{Seidel:2016ws}.
 
-    \item \textbf{Iain Emsley\textsuperscript{\textasteriskcentered} and David
+    \item Iain Emsley\textsuperscript{\textasteriskcentered} and David
     De Roure: \textit{Sustaining the social: Connecting the lives of Drupal
-    community}}~\cite{Emsley:2016ws}.
-    In this talk, Emsley discussed efforts to develop the community around the
-    Drupal content management system, which is supported through the DrupalCon
-    series of conferences, user groups, and an association.
-    The talk described the use of social coding and software credit to develop
-    the Drupal software community, and social documentation to provide
-    documentation and tutorials. By analyzing identities of committers, they
-    found that the larger community is actually a loosely coupled set of
-    heterogeneous communities that use (and sustain themselves) through different
-    social mechanisms.
+    community}~\cite{Emsley:2016ws}.
 
-    \item \textbf{Jack Dongarra, Sven Hammarling, Nicholas J.\ Higham, Samuel
+    \item Jack Dongarra, Sven Hammarling, Nicholas J.\ Higham, Samuel
     D.\ Relton\textsuperscript{\textasteriskcentered}, Pedro Valero-Lara,
     and Mawussi Zounon: \textit{Creating a Standardised Set of Batched
-    BLAS Routines}}~\cite{Dongarra:2016ws}.
-    This talk described Batched BLAS (BBLAS), a new standard for computing multiple
-    BLAS (Basic Linear Algebra Subproblems) in parallel. Unlike existing parallel
-    BLAS algorithms provided by, e.g., Intel MKL, cuBLAS, or MAGMA, BBLAS is
-    optimized for smaller matrices, which apply to a variety of problems in areas
-    such as machine learning, multifrontal solvers, image processing, fluid
-    dynamics, and astrophysics. BBLAS offers nearly a factor of two improvement
-    in computing speed compared to non-batched operations. To develop a sustainable
-    BBLAS library, the developers have focused on proposing a standard API,
-    holding workshops between academics and vendors to reach consensus, and
-    performing research into API design decisions on performance.
+    BLAS Routines}~\cite{Dongarra:2016ws}.
 
-    \item \textbf{Lukas Breitwieser\textsuperscript{\textasteriskcentered},
+    \item Lukas Breitwieser\textsuperscript{\textasteriskcentered},
     Roman Bauer, Alberto Di Meglio, Leonard Johard,
     Marcus Kaiser, Marco Manca, Manuel Mazzara, Fons Rademakers,
-    Max Talanov: \textit{The BioDynaMo Project}}~\cite{Bauer:2016ws}.
-    Breitwieser described the BioDynaMo project, a large-scale platform for
-    biological simulations that provides access to computational resources while
-    hiding the complexity of distributed computing. It also promotes computational
-    reproducibility through shared open-access data. The project began as a
-    modernization initiative porting an existing simulation software, Cx3D, from
-    Java to C++, but also incorporated many modern software engineering practices
-    such as hosting and version control on GitHub, automated tests and continuous
-    integration via Travis-CI, code coverage reports, and an automated build system.
-    In addition, over 1000 students participated in development via the Intel
-    Modern Code Developer Challenge competition---the winner achieved a
-    performance speedup of 320 times. The project plans to continue improving
-    the development process with, e.g., static code checkers and Git commit hooks,
-    continued architecture redesign, and verification.
+    Max Talanov: \textit{The BioDynaMo Project}~\cite{Bauer:2016ws}.
 
-    \item \textbf{Aseel Aldabjan, Robert Haines, and
+    \item Aseel Aldabjan, Robert Haines, and
     Caroline Jay\textsuperscript{\textasteriskcentered}: \textit{How should we
     measure the relationship between code quality and software
-    sustainability?}}~\cite{Aldabjan:2016ws}.
-    This talk explored the relationship between code quality and the sustainability
-    of research software; however, the latter has no concrete definition, thus making
-    it challenging to provide guidance on how to achieve sustainability. The authors
-    proposed a ``software sustainment'' metric based on the time difference between
-    the most recent and initial commits\slash contributions to the codebase.
-    Using this metric, they analyzed 3113 Java projects hosted on GitHub, created
-    in 2009, and found that 22\% and 35\% had sustainment metrics of 0 and less
-    than seven, respectively. Interestingly, the authors also found high
-    code quality (measured using a variety of static analytic metrics) across
-    all these projects, with little correlation to sustainability.
-
+    sustainability?}~\cite{Aldabjan:2016ws}.
 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Best practices for scientific software panel discussion} \label{sec:panel}
+%\section{Best practices for scientific software panel discussion} \label{sec:panel}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\note{from Simon}
 
-To investigate best practices for scientific software we brought together a panel of five experts with different perspectives on ``Best Practices for Scientific Software.''
-These were: Alice Allen, Editor, Astrophysics Source Code Library, brought an understanding of the difficulties of organizing a community and curating their software;
+The final WSSSPE4 presentation was a panel %To investigate best practices for scientific software we brought together a panel 
+of five experts with different perspectives on ``Best Practices for Scientific Software.''
+These were: Alice Allen, Editor, Astrophysics Source Code Library, who brought an understanding of the difficulties of organizing a community and curating their software;
 Mike Croucher from the University of Sheffield and Rob Haines from the University of Manchester who are both Research Software Engineers with decades of experience of writing code for researchers;
-Patricia Lago from Vrije Universiteit Amsterdam presented a keynote at the workshop (\S\ref{sec:keynote}) and brought a fresh perspective on software sustainability from the point of view of its impact on society and business; and
-Karthik Ram from the Berkeley Institute for Data Science brought his perspective on the practicalities of using scientific software to conduct his research as a data scientist.
-
-The panel opened with a question to the floor ``Who in the audience still codes in anger?'' which caused some confusion as, it turns out, that this is a turn of phrase that has not crossed the Atlantic.
-After translating this question into the more open, ``Who in the audience still writes code as part of their day-to-day work?'' we were able to confirm the suspicion that the WSSSPE audience is heavily involved writing, not just using, code.
-Hence, the panel were going to have to deal with questions from a highly experienced audience.
-
-The panel opened by noting that the world of scientific computing is changing rapidly.
-Each panelist was asked for their views on practices which had recently emerged and, if not handled correctly, would become the basis for the next generation's software problems?
-This quickly led to a discussion about the dangers of containerization.
-These technologies are pushed by some---a minority it is hoped---as a panacea for software sustainability.
-The panel and attendees generally agreed that containerization is useful, but should not be seen as the solution to sustainability.
-After all, these technologies are just as liable as any to decay.
-
-A later question looked at the common practices from software engineering that the scientific community should be using.
-The discussion that followed picked up on the key elements of basic sustainable practice: version control, documentation and ensuring that communities are active and engaged.
-When asked whether there was resistance from the research community to adopting these practices, few negative experiences were reported.
-From the panel's point of view, it would appear that the problem in getting researchers to employ sustainable practices lies more in getting the message out to researchers, rather than selling them on the benefits.
-
-The panel rounded up with a final question about ``If you wanted to have the most disastrous effect on scientific software, what one practice would you advise people to keep doing?''
-A few good responses were discussed, but the biggest laugh went to Mike Croucher who said ``Containerize everything!''
-
+Patricia Lago from Vrije Universiteit Amsterdam, who presented a keynote at the workshop  and brought a fresh perspective on software sustainability from the point of view of its impact on society and business; and
+Karthik Ram from the Berkeley Institute for Data Science, who brought his perspective on the practicalities of using scientific software to conduct his research as a data scientist.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Working groups} \label{sec:WGs}
@@ -1040,30 +682,14 @@ A few good responses were discussed, but the biggest laugh went to Mike Croucher
 After most of the lightning talks and other presentations, WSSSPE used three areas of a large room to let
 attendees use sticky flip charts and sticky notes on the walls to suggest
 \begin{enumerate}
-\item A vision on any aspect of the work.
+\item A vision on any aspect of the work
 \item A gap or challenge
 \item A project idea
 \end{enumerate}
 (with one area of the room for each topic.)
-
-Once we had the walls covered in ideas, we had people organically form groups around the flip charts on the wall\footnote{Photos of the flipcharts: \url{https://github.com/WSSSPE/media/tree/master/WSSSPE4-photos}}. For those folk who worked on Vision and Gaps, after an hour, we encouraged them to finish their Vision or Gap Google Doc, and to find and join or start working on a project with a group. This led to the 12 groups that are discussed in the rest of this section, specifically:
-\begin{enumerate}
-\item Verifying best practices \& metrics for sustainable research software
-\item Software Sustainability Alliance
-\item Scientific Software Prototyping Infrastructure (S2PI)
-\item Standard metadata for software (CodeMeta)
-\item White paper on developing sustainable software
-\item Social science for scientific software
-\item Software best practices for undergraduates
-\item Meaningful metrics for sustainable software
-\item Coordinating access to CI for research software
-\item Software engineering processes tailored for research software
-\item Open research index
-\item Letters of evaluation for computational scientists
-\end{enumerate}
-
-
-The groups worked in Google docs, and eventually created Google slides to show their work back to the larger groups. The docs and slides were stored in a common Google Drive folder\footnote{\url{https://drive.google.com/drive/u/0/folders/0BzIpChHwv-q5X3lRaWhYMXJZaUE}}. In each group's discussion, a number of Specific, Measurable, Achievable, Relevant, and Timely (SMART) steps were created, and ideally, at least the first one (to set up some communication mechanism) was completed.  In many cases, this was done through Slack (see \S\ref{sec:slack}.)
+%
+Next, attendees organically formed groups around the flip charts on the wall\footnote{Photos of the flipcharts: \url{https://github.com/WSSSPE/media/tree/master/WSSSPE4-photos}}.  This led to the 12 groups that are discussed in the rest of this section.
+The groups then worked in Google docs, and eventually created Google slides to show their work back to the larger groups. The docs and slides were stored in a common Google Drive folder\footnote{\url{https://drive.google.com/drive/u/0/folders/0BzIpChHwv-q5X3lRaWhYMXJZaUE}}. 
 
 
 %\todo{need to confirm who will write Access subsection (\S\ref{sec:access})}
@@ -1101,7 +727,26 @@ Currently, point-to-point collaboration exists between organizations, but this i
 If interested, visit \url{http://softwaresustainability.org/} or email Neil Chue Hong (<N.ChueHong@software.ac.uk>) and Jean Salac (<jeansalac@virginia.edu>)
 
 \input{wg_prototyping}
-\input{wg_codemeta}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{CodeMeta}
+\label{sec:CodeMeta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{Alice to write this}
+
+Research software is often not shared; that which is shared may not have much metadata associated with it, and that which does exist often does not travel further than the website on which the software resides. The CodeMeta project\footnote{\url{http://codemeta.github.io/}} wants to incentivize software developers to release their software, encourage the development of metadata for it, enable credit assignment and citation of research software, increase its discoverability, more easily track dependencies, and enable reuse of software metadata, all goals that WSSSPE attendees have great interest in supporting.  CodeMeta seeks in part to create a ``Rosetta Stone'' for software metadata to facilitate retaining such metadata between repositories, services, registries, indexers, publishers, citation managers, and other entities that create, ingest, use, and/or store metadata about software. The project also wants to establish a JSON-LD schema as a tool for making metadata machine-readable~\cite{CodeMeta_schema}.
+ 
+The primary objective of this working group, which included people who had previously been working on the CodeMeta project, is to find ways to help the project come to fruition.
+%
+The working group plans to engage with those already working on CodeMeta, to examine the existing CodeMeta crosswalk table to see what improvements and additions might be made, and to determine how to engage the community and provide ongoing social engagement and structure. Further, the group wants to assist in the implementation of the specifications and, by providing an outsider's view, contribute suggestions for more understandable project documentation. Finally, the group seeks a better way or ways to present the crosswalk table to make it more easily understood and consumable by research software communities.
+%
+While at WSSSPE4, the group greatly expanded the CodeMeta project README file\footnote{\url{https://github.com/codemeta/codemeta/blob/master/README.md}} to include a description of the project geared to those with little or no prior knowledge of the project, a list of contributors, information on how one can get involved, a brief project history and who is managing the project, and links to additional information.
+
+Though a Google group mailing list has been established for the working group, the easiest way to engage with the CodeMeta project is through its Github repository\footnote{\url{https://github.com/codemeta/codemeta}}.
+
+
 \input{wg_best_practices_developing}
 \input{wg_social}
 \input{wg_best_practices_undergrads}
@@ -1178,11 +823,11 @@ and by the Alfred P.~Sloan Foundation (G-2016-7214).
 \newpage
 \appendix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Organizing committee}  \label{sec:orgcom}
+\section{Organization}  \label{sec:orgcom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\todo{Do we want email addresses here?}
 
-The following is the list of WSSSPE4 organizers.
+WSSSPE4 organizers were:
 
 {\scriptsize
 \begin{longtable}{lll}
@@ -1192,34 +837,34 @@ The following is the list of WSSSPE4 organizers.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Attendees}  \label{sec:attendees}
+%\section{Attendees}  \label{sec:attendees}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The following is a list of attendees at WSSSPE4.
-
-{\scriptsize
-\begin{longtable}{lll}
-\input{participants}
-\end{longtable}
-}
+%The following is a list of attendees at WSSSPE4.
+%
+%{\scriptsize
+%\begin{longtable}{lll}
+%\input{participants}
+%\end{longtable}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Travel award recipients}  \label{sec:awardees}
+%\section{Travel award recipients}  \label{sec:awardees}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\todo{Do we want email addresses here?}
-The following table contains the list of WSSSPE4 travel award recipients, where
-\textsuperscript{*} and \textsuperscript{\textdagger} indicate students and
-early-career researchers, respectively.
-
-{\scriptsize
-\begin{longtable}{lll}
-\input{awardees}
-\end{longtable}
-}
+%The following table contains the list of WSSSPE4 travel award recipients, where
+%\textsuperscript{*} and \textsuperscript{\textdagger} indicate students and
+%early-career researchers, respectively.
+%
+%{\scriptsize
+%\begin{longtable}{lll}
+%\input{awardees}
+%\end{longtable}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Program committee}  \label{sec:progcom}
+%\section{Program committee}  \label{sec:progcom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The following table lists the WSSSPE4 program committee.
+The WSSSPE4 program committee comprised:
 
 {\scriptsize
 \begin{longtable}{lll}
