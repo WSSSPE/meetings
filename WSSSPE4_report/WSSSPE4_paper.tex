@@ -853,10 +853,113 @@ The working group plans to briefly survey existing literature to get a better se
 To join the group, join its mailing list at \url{https://groups.google.com/forum/#!forum/researchsoftwarestudies}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Software best practices for undergraduates}
+\label{sec:best-practices-undergrads}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{wg_best_practices_undergrads}
-\input{wg_metrics}
-\input{wg_access}
+%\note{Jonah Miller to write this}
+
+This working group was motivated by the perceived prevalence of
+so-called ``dark code'' in scientific communities: code written by
+individual researchers in an unsustainable way that is never shared
+with the larger community. Participants recalled their own experience
+working with colleagues who write dark code or inheriting
+unsustainable dark code from collaborators.
+%
+The question is, then, how to prevent researchers from writing dark
+code? The participants hypothesized that the best strategy is to catch
+researchers while they are still in training and teach them software
+best-practices. Therefore, this working group's goal
+is to develop courses on software best practices aimed at
+undergraduate students studying domain science. The program might be
+similar to a Software Carpentry or Data Carpentry workshop but 
+focused for domain scientists.
+
+While implementation of a course aimed at each domain science is a long term
+goal, a short-term, achievable goal, is to develop a
+curriculum for a course aimed at a single domain science. Since the
+participants in the working group have expertise in physics, this is a
+natural target.
+%
+The development of a successful curriculum relies on the expertise of
+software engineers to describe the best practices, domain experts to
+describe model problems and work-flow, and instructors to formulate
+the pedagogy. Ideally these people will be brought together for a
+short workshop or hackathon with the goal of drafting the
+curriculum. The
+hackathon will be implemented and a draft of the curriculum will be
+written within the next year.
+Later, organizational partners will be required to
+actually implement the program.
+
+
+Anyone interested in contributing should get in touch via one of the
+following methods:
+
+\begin{itemize}
+\item Join our Google Group/mailing list
+  \cite{WSSSPEUndergradGoogleGroup}.
+\item Join the WSSSPE Slack (\S\ref{sec:slack}) and the
+  \texttt{\#wg-undergraduatecourse} channel.
+\item Ask to join the WSSSPE4-undergraduate-course organization
+  \cite{WSSSPEUndergradGithub}.
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Meaningful metrics for sustainable software}
+\label{sec:metrics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{content from Emily}
+
+This group aims to increase the visibility of the quality of scientific software, facilitate the reusability of scientific software, and promote the best software practices by standardizing metrics via interviews with scientific software developers. This working group believes improving the current software metrics system will increase software sustainability. Currently, there are inefficiencies regarding software duplication, sustainability, and selection, as well as others, within the scientific software community. In order to address these inefficiencies, the group aims to create a goal-oriented method to collecting productive metrics by focusing on the developer side of software.
+
+In the context of this aim, the group hopes to find an efficient solution for streamlining the process of collecting and utilizing metrics to benefit software sustainability, as well as minimize the current inefficiencies within the scientific software community. This will improve software evaluation and comparison, thus reducing the effort spent on seeking scientific software.
+%
+The group plans on surveying and interviewing scientific software developers to form metrics from the goals they have for their software, then to publicize the results.
+
+For more information, please contact Emily Chen at <echen35@illinois.edu>.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Coordinating access to CI for research software}
+\label{sec:access}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{%Mark Abraham to write this?  Needs confirmation or another volunteer -
+%Dan starting this for now - may poll other members of group to make progress}
+
+Each developer of software with uncommon needs (hardware, software, libraries, data sets), non-public code, or tests that exceed time limits for free plans must acquire, setup, and maintain their own continuous integration systems because their needs make them ineligible for popular free services such as Travis CI.  For example, software groups that develop BIOUNO, CI4SI, or GROMACS have done this.
+(Note that Debian provides a testing infrastructure (\url{https://ci.debian.net/doc/}) that is mature and supports hardware and other requirement specifications.)
+
+This group is interested in reducing the burden of different projects having to build and maintain their own continuous integration systems (when publicly available CI are not a fit), by coordinating and sharing this burden across multiple projects.
+%
+The scope of the group's interest is any type of testing, though interactive access for troubleshooting would be of particular interest beyond just automated testing.
+
+However, there are a lot of open issues:
+\begin{itemize}
+\item Some similar work has already been done.  How can this group apply and/or learn from that work, rather than reinventing the wheel?
+\item How to ensure this will work across disciplines?
+\item Meaningful CI for large projects may need hundreds of CPU hours per day
+\end{itemize}
+
+Some possible goals include:
+\begin{itemize}
+\item Acquire additional hardware such as GPUs, Xeon PHI, FPGAs and add/share them to e.g. Debian's testing infrastructure or to a shared Jenkins-based infrastructure
+\item Extending Debian's scope to include published but not mature software
+\item Implementing the same interface but with specialized hardware or available to non-public codes.
+\item \url{https://reproducible-builds.org} but for CI
+\end{itemize}
+
+For more information, see \url{https://groups.google.com/forum/#!forum/continuous-integration-for-research-software}
+
+
+
+
 \input{wg_soft_eng}
 \input{wg_open_research_index}
 \input{wg_letters}
