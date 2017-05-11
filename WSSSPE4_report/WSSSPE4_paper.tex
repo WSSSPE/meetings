@@ -726,7 +726,61 @@ Currently, point-to-point collaboration exists between organizations, but this i
 
 If interested, visit \url{http://softwaresustainability.org/} or email Neil Chue Hong (<N.ChueHong@software.ac.uk>) and Jean Salac (<jeansalac@virginia.edu>)
 
-\input{wg_prototyping}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scientific Software Prototyping Infrastructure (S2PI)}
+\label{sec:prototyping}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%from Santiago
+There is a productivity bottleneck---yet to be solved---in HPC from the human
+perspective, first identified in the 1980s~\cite{barstow1982automatic}. Of all
+domain-specific scientists, only a percentage of those use simulations due to
+perceptions mostly related to the difficulty of using and developing those tools.
+XSEDE and other resources have become a gateway for successfully increasing the
+basis of HPC scientific users by facilitating their access to infrastructure and
+tools~\cite{towns2014xsede}, but the development challenge remains.
+Of all scientists who use simulations, only a small percentage know how
+to develop prototypes or full applications that can be latter scaled by computer
+scientists and engineers. Writing new parallel applications is unusual for
+domain scientists and thus has created a complex dependency on specialized
+scientific programmers, who are scarce~\cite{post2005computational}. However,
+the capacity to quickly envision and prototype applications by domain
+experts---later to be fully implemented into by scientific programmers---is critical for
+acquiring maturity and proficiency in the grand challenges that Exascale
+attempts to solve, and moreover for allowing scientists to develop their own
+ideas quickly and productively~\cite{vinter2015prototyping}. The latter, in
+addition, would increase service utilization time in HPC systems, a critical
+measure of efficiency. Considering the existing code base in scientific
+computing, software infrastructures that allow a clean transition from legacy
+systems to new Exascale platforms while preserving flexible prototyping
+towards the future are central~\cite{hwu2015transitioning}.
+
+This group deems the ability to rapidly construct software artifacts that can be
+trusted in terms of the methods from their design up, easily discarded when
+wrong and extended when right at low human and computational cost to be one
+aspect of scientific software sustainability. In essence,
+a motto for scientific software prototyping is \textit{fail hard, fail fast}.
+%
+The group's objective is development of a prototype tool that allows domain scientists to generate
+simulation prototypes through a simple, yet expressive declarative
+strongly-typed programming language close to equational expressions. The result
+of that specification is both an executable artifact as well as a specification
+for scientific programmers to later flesh out completely and adapt to particular
+infrastructures. This tool will start in the domain of computational physics,
+and (probably) extend to other domains, and the code will be open source.
+%
+The underlying hypothesis of this project is that a strongly typed, declarative
+problem-specification language with adequate constructs, to be implemented
+through stencils and algorithmic skeletons tied to numerical methods, captures a
+ subset of useful and interesting problems in physics and other domains.
+%
+The group plans to develop a functional (meta-)prototype before WSSSPE5, and
+if useful, then develop a larger software infrastructure tied to
+particular cyberinfrastructure resources.
+
+To join this project, please visit the GitHub repository at
+\url{https://github.com/nunezco2/S2PI} or join the WSSSPE Slack channel
+\texttt{\#wg-sci-soft-proto}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -747,8 +801,59 @@ While at WSSSPE4, the group greatly expanded the CodeMeta project README file\fo
 Though a Google group mailing list has been established for the working group, the easiest way to engage with the CodeMeta project is through its Github repository\footnote{\url{https://github.com/codemeta/codemeta}}.
 
 
-\input{wg_best_practices_developing}
-\input{wg_social}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{White paper on developing sustainable software}
+\label{sec:best-practices-developing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{Sandra to write this}
+
+Many diverse aspects and dimensions (such as economic, technical, environmental, and social) of developing sustainable software can be investigated,
+This group aims to write white papers
+that will focus on scientific environments and their implications, targeted at developers
+and project managers of scientific software. Given the complexity of this field, it is important to select
+a subset of sustainability aspects for the white papers. The idea is to create a series of papers instead of trying
+to tackle all important topics in one paper. 
+%
+While there are already a few papers available on best practices and sustainability of scientific software in general, the group's goal is to create a series of papers that lead to consensus in the community, tackle many diverse aspects, and stay up-to-date with new trends. 
+%
+For the first white paper, the group aims to set the
+stage with successful use cases and an analysis of why they have been successful.
+Further topics will include community-related practices, government and management, funding,
+metrics, tools, and usability. 
+The resulting draft white paper will be distributed via the WSSSPE email list. After collecting feedback on it, the group's plans are to attract a wider community to contribute to an extended journal paper version and to investigate whether more people would like to be involved in the white paper series.
+
+The GitHub repository for the white paper can be found at \url{https://github.com/WSSSPE/WG-Best-Practices}. For more information and requests, join the \texttt{\#wg-best-practices} channel at WSSSPE's Slack team.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Social science for scientific software}
+\label{sec:social}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\note{from Stuart}
+
+%Introduction to group here, including the overall objective of work in this area.
+
+
+
+There is more and more academic research being done on topics related to software sustainability, including work on software engineering practices and management of open source projects. However, academic research in general is often siloed for many reasons, and work on topics relevant to software sustainability is no exception. There are many academic studies and projects which may be relevant for practitioners working in this area, and many projects and initiatives by practitioners that may be relevant for social scientists. However, there is a gap between these two research and practice. 
+%
+This working group is motivated by the goal of building better connections between academic researchers who are studying topics in or relating to software sustainability with practitioners, managers, and administrators who are working in the area of software sustainability.
+%
+ In any domain, bringing research and practice closer together a mutually beneficial goal, but also has its challenges. 
+The group aims to give social scientists and practitioners working on scientific software, software sustainability, and open source and a better understanding of each other's work, as well as help them connect and coordinate on specific projects of mutual interest.
+%
+Furthermore, the group also recognize that academic social science and research software engineering are not monolithic, and there is a need to connect people who care about research-driven best practices inside of these two domains with each other as well.
+
+The working group plans to briefly survey existing literature to get a better sense of the academic research landscape, facilitate some initial dialog between academic researchers and practitioners at WSSSPE4, then identify needed actions that would be mutually beneficial to researchers and practitioners. This plan resulted in the creation of the following SMART steps listed in the next section.
+
+
+To join the group, join its mailing list at \url{https://groups.google.com/forum/#!forum/researchsoftwarestudies}
+
+
+
 \input{wg_best_practices_undergrads}
 \input{wg_metrics}
 \input{wg_access}
