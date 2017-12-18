@@ -45,6 +45,10 @@
 \usepackage{enumitem}
 \setlist{leftmargin=7mm}
 
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
 %\setcounter{secnumdepth}{3}
 %\setcounter{tocdepth}{3}
 
@@ -239,7 +243,7 @@ plan the workshop agenda,
 and who engaged with participants during the workshop.
 
 At the workshop, we introduced a Code of Conduct (CoC).%
-\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}}
+\footnote{\label{footnote:CoC}\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}}
 The CoC was conceived for the workshop and a guideline for the community of scientists that WSSSPE
 supports, including their personal and online interactions (e.g., on
 Twitter, in email lists, in the Slack team). The WSSSPE4 CoC is based on the
@@ -262,7 +266,7 @@ The main guidelines of the CoC are:
 
     To make clear what is expected, everyone taking part in WSSSPE events and
     discussions---speakers, helpers, organizers, and participants---is required
-    to conform to the Code of Conduct, listed on the community website \cite{}.
+    to conform to the Code of Conduct\footnoteref{footnote:CoC}.
 
 %     \begin{itemize}
 %     \item Communicate appropriately for a professional audience including
@@ -291,7 +295,7 @@ workshop was spent with participants in the working groups, which occurred in pa
 with each other.  And each of the working groups left with a plan for how they could move
 forward.
 This report also mentions the Slack channel created for further discussions (\S\ref{sec:slack}), and it highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
-An appendix lists the organizers and program committee members (\S\ref{sec:orgcom}).
+%An appendix lists the organizers and program committee members (\S\ref{sec:orgcom}).
 
 
 
@@ -1148,29 +1152,29 @@ and by the Alfred P.~Sloan Foundation (G-2016-7214).
 
 %\todo{feel free to add stuff here}
 
-\newpage
-\appendix
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Organization}  \label{sec:orgcom}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\todo{Do we want email addresses here?}
-
-WSSSPE4 organizers were:
-
-{\scriptsize
-\begin{longtable}{lll}
-\input{orgcom}
-\end{longtable}
-}
-
-
-The WSSSPE4 program committee comprised:
-
-{\scriptsize
-\begin{longtable}{lll}
-\input{program_committee}
-\end{longtable}
-}
+%\newpage
+%\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Organization}  \label{sec:orgcom}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\todo{Do we want email addresses here?}
+%
+%WSSSPE4 organizers were:
+%
+%{\scriptsize
+%\begin{longtable}{lll}
+%\input{orgcom}
+%\end{longtable}
+%}
+%
+%
+%The WSSSPE4 program committee comprised:
+%
+%{\scriptsize
+%\begin{longtable}{lll}
+%\input{program_committee}
+%\end{longtable}
+%}
 
 
 \newpage

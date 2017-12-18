@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{ulem}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage[hyphens]{url}
+\usepackage[breaklinks=true,linkcolor=blue, citecolor=blue, urlcolor=blue, colorlinks=true]{hyperref}
+
+\usepackage{todonotes}
+
+\usepackage[
+    backend=biber,
+    style=numeric,
+    citestyle=numeric-comp,
+    sorting=none,
+    bibencoding=UTF-8,
+    giveninits=true,
+    maxbibnames=1000,
+]{biblatex}
+\addbibresource{refs.bib}
+
+\usepackage{parskip} % no indentation, space between paras
+
+\usepackage[font={itshape}]{quoting}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\cfoot{Page \thepage{}~of~\pageref{LastPage}}
+
+\newcommand\joss{\textit{JOSS}}
+
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+
+\usepackage[xcolor]{changebar}
+% % *** Be very precise and careful about including whitespace and punctuation in your edits ***
+% \newcommand{\addone}[1]{{\sloppy\cbcolor{teal}\textcolor{teal}{\cbstart {#1}\cbend}}}  % add
+% \newcommand{\addtwo}[1]{{\sloppy\cbcolor{red}\textcolor{red}{\cbstart {#1}\cbend}}}  % add
+% \newcommand{\addthree}[1]{{\sloppy\cbcolor{darkgreen}\textcolor{darkgreen}{\cbstart {#1}\cbend}}}  % add
+% \newcommand{\deleteone}[1]{\sloppy\cbcolor{teal}\textcolor{teal}{\cbdelete\sout{#1}}}
+% \newcommand{\deletetwo}[1]{\sloppy\cbcolor{red}\textcolor{red}{\cbdelete \sout{#1}}}
+% \newcommand{\deletethree}[1]{\sloppy\cbcolor{darkgreen}\textcolor{darkgreen}{\cbdelete \sout{#1}}}
+% \newcommand{\addnoul}[1]{{\textcolor{teal}{#1}}}     % add with no underline
+% \newcommand{\deletenoso}[1]{{\textcolor{red}{#1}}}    % delete with no strikeout
+
+\newcommand{\add}[1]{{\sloppy\textcolor{teal}{#1}}}  % add
+\newcommand{\delete}[1]{\sloppy\textcolor{red}{\sout{#1}}}
+\newcommand{\addnoul}[1]{{\textcolor{teal}{#1}}}     % add with no underline
+\newcommand{\deletenoso}[1]{{\textcolor{red}{#1}}}    % delete with no strikeout
+%% For the final version, use these four commands instead
+% \renewcommand{\add}[1]{#1}
+% \renewcommand{\addnoul}[1]{#1}
+% \renewcommand{\delete}[1]{}
+% \renewcommand{\deletenoso}[1]{}
+
+
+\title{WSSSPE4-paper-reviewer-response}
+\author{Daniel S. Katz}
+\date{December 2017}
+
+\begin{document}
+
+\today\\
+
+Samuel Moore\\
+\textit{Journal of Open Research Software}\\
+
+Subject: WSSSPE4 paper review\\
+
+Dear Mr. Moore,
+
+We enclose revisions for our manuscript ``Fourth Workshop on Sustainable Software for Science: Practice and Experiences
+(WSSSPE4)'' and address the reviewers' comments in the following remarks.
+
+
+\section*{Reviewer A}
+
+\begin{quoting}
+Comments to the authors: 
+This article provides a comprehensive review of the 4th WSSSPE.  It covers information that will be of interest to the community and gives a good background to the series of workshops.  It tackles issues which are important to the community of research software engineers and to the improvement and sustainability of research software.
+The comprehensive write-up of the working groups is useful, outlining the set of actions to be carried out moving forward. The links for those who wish to be further involved in this work will be useful to the reader.
+The article is, however, 3 times longer than the stipulated maximum word count of 3500. 
+\end{quoting}
+
+In discussions with the editor-in-chief before submission, we were told:
+
+``The APC is \pounds300 up to 8,000 words (approximately 12 pages including
+figures and references). Additional APC charges will be \pounds10 for every
+additional 750 words ($\approx$1 page).
+So 16 pages would be \pounds340 - \pounds350. I would probably not be wanting to
+go longer than 16 pages unless there was a good reason.''
+
+Following these instructions, our initial submission had a body of 13 pages, an appendix of 2 pages, and 3 pages of references.
+
+Nonetheless, we agree with the reviewers that this can be reduced, and have done so by removing the appendix and as advised by the reviewers, as further discussed below.  The revised version we are resubmitting has been reduced to \textcolor{red}{XX PAGES} of body, and 3 pages of references.
+
+\begin{quoting}
+There are several places where the length could be reduced, for example the list of presentations seems unnecessary when the references are also included 
+
+\end{quoting}
+
+\textcolor{red}{NEED TO ADDRESS}
+
+\begin{quoting}
+
+and details of the Code of Conduct could be omitted as the link for this is provided. 
+
+\end{quoting}
+
+The Code of Conduct has been removed.
+
+\begin{quoting}
+
+ In some places there is maybe detail which is not useful to the reader, for example detail of the survey responses.  I would recommend a shortened version of this article for publication but must reject it in its current format.
+\end{quoting}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Reviewer B}
+
+\begin{quoting}
+Comments to the authors: 
+This article reviews a workshop that focused on sustainable software for science. While the topic of this workshop is undoubtedly important, and a review that reports on the events of the workshop, provides a bit of background about the challenges that such a workshop seeks to address, and synthesizes some of the broad conclusions of the workshop would be quite valuable, the current paper focuses quite closely on the first of these, and provides less in terms of the latter two. I believe this is a missed opportunity to address some of the issues that the authors themselves recognize in section 7 of the article, including some level-setting in terms of terminology and context for the meeting.
+
+As the authors acknowledge in the Introduction, this paper is a summary of a longer more detailed report on the events of the workshop, but the article as it is right now still reads as a detailed enumeration of the events of the conference. For example, while the introduction provides a list of the WSSSPE events that preceded this meeting, a reader that is not familiar with this community would receive very little background knowledge about these meetings, and the impetus for holding them, from reading this Introduction. The second section provides a bit more in this sense, and it might be that using some of the content from the call for papers earlier on in the article would make it easier to read the paper for someone who is less familiar with the workshop.
+
+On the other hand, the level of detail is sometimes overwhelming, and distracts from the main thrust of the paper. For example, while several lines of text are devoted to reporting on the number of attendees who filled out a survey about the event, the completion rates of the survey, and the distribution mechanisms of the survey, only rather cursory and qualitative survey results are reported. More detail on the latter, and less detail on the former would improve this section, in my opinion.  For example, if one of the stated goals of the workshop was to improve research software, by imparting best practices on participants, was this goal met, according to the survey results? 
+
+Similarly, while the code of conduct is provided in full, no context is provided for establishing a code of conduct for such an event. Why do events such as this benefit from a code of conduct? What is the social context in which codes of conduct in these types of events become established? In what ways does a code of conduct benefit this event? Instead of discussing these more general issues (maybe only some of them are needed here) an enigmatic comment about an event that required some form of intervention from the organizers is mentioned, but left unexplained. Would reporting more fully about what happened be beneficial to the reader?s understanding of the workshop? If not, maybe shortening this section would be better?
+
+Finally, in a similar vein, the summary and conclusion offers very little in terms of synthesis of main themes that arose during the meeting. The reader is left to synthesize the diversity of sections 4 and 5, that discuss the main activities of the workshop itself, on their own. It may very well be that the workshop is diverse enough in terms of its topics (and indeed, it does seem like there are a lot of very interesting topics, and a lot of interesting work done as part of the workshop!), but surely there is some over-arching themes that could be summarized? Instead, the conclusion is that a workshop such as this is unlikely to produce tangible work in the long run, because participants are reluctant to commit to additional activities, above and beyond these undertaken during the workshop. While this seems like an honest (if disappointing?) conclusion, it is also difficult to reconcile with the multiple places in which the authors ask interested parties to join Slack channels and mailing lists. Maybe the expectation that a few hours of joint work at a workshop would lead to a committed collaboration with other participants is too high? Rather, expectations from conferences and workshops are usually much lower: exchanging ideas, establishing and broadening a professional network, and learning about work that is being done in the field. Maybe it's enough if these goals are achieved at WSSSPE as well?
+
+Minor: 
+
+1. On page 8, the sentence fragment: ``...later to be fully implemented into by scientific programmers?'' seems to be missing a word or words. Alternatively the word ``into'' should be dropped.
+
+2. It would probably be appropriate to mention the number of participants early on. From reading section 7, I surmise that there were 44 participants (or maybe it was 43, accounting for the participant who filled the survey twice? A detail the paper could probably do without?). Or does the completion rate refer to how many questions each of the 44 (43?) attendees. 
+
+3. In section 7: ``Text responses have been alphabetize'' => ``Text responses have been alphabetized''.
+\end{quoting}
+
+We have made these three requested changes.
+
+%\printbibliography
+
+\end{document}
