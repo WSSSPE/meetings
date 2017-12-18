@@ -192,43 +192,80 @@ The Fourth Workshop on Sustainable Software for Science: Practice and Experience
 held over 2 1/2 days on 12--14 September 2016 in Manchester, England, with 68 attendees.
 This location and date was selected so that WSSSPE4 immediately preceded the
 First Research Software Engineers (RSE) Conference.
-Previous events in the WSSSPE series include
-WSSSPE1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1/}}~\cite{WSSSPE1-pre-report,WSSSPE1},
-held in conjunction with the SC13 conference;
-WSSSPE1.1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1-1/}}, a
-focused workshop organized jointly with the SciPy
-conference\footnote{\url{https://conference.scipy.org/scipy2014/participate/wssspe/}};
-WSSSPE2\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe2/}}~\cite{WSSSPE2-pre-report,WSSSPE2},
-held in conjunction with SC14;
-WSSSPE2.1\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe2-1/}}, a
-focused workshop organized again jointly with
-SciPy\footnote{\url{http://scipy2015.scipy.org/ehome/115969/286469/}};
-and WSSSPE3\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe3/}}~\cite{WSSSPE3},
-held in Boulder, Colorado, USA.
-The first WSSSPE workshop was named
+Previous WSSSPE events\footnote{The first WSSSPE workshop was named
 ``Working towards
 Sustainable Software for Science: Practice and Experiences,'' which remains the meaning
 of the WSSSPE group, but the workshops after that were named
 ``Workshop on Sustainable
 Software for Science: Practice and Experiences.'' Together these reflect
-that WSSSPE is both a community and a set of workshops.
+that WSSSPE is both a community and a set of workshops.}, all of which were in the US, were two general, presentation-focused, one-day workshops held with the SC13 and SC14 conferences~\cite{WSSSPE1-pre-report,WSSSPE1, WSSSPE2-pre-report,WSSSPE2},
+two half-day workshops\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1-1/}, \url{http://wssspe.researchcomputing.org.uk/wssspe2-1/}} held with SciPy 2014 and 2015 that contained presentations about specific sustainable Python software packages, and a 1-and-1/2-day workshop that included teams that self-assembled and discussed focused software sustainability topics~\cite{WSSSPE3}.
+%
+Based on the work done at these previous WSSSPE meetings, WSSSPE4 was aimed
+at producing working groups that would better continue working after the workshop ended.
+
+Specific topics that were discussed in previous meetings and suggested for WSSSPE4 included:
+
+\begin{itemize}
+\renewcommand{\labelenumi}{\textbf{\theenumi}.}
+\setlength{\rightmargin}{1em}
+
+\item Development and Community:
+best practices for developing sustainable software;
+models for funding specialist expertise in software collaborations;
+software tools that aid sustainability;
+academia/industry interaction;
+refactoring/improving legacy scientific software;
+engineering design for sustainable software;
+metrics for the success of scientific software; and
+adaptation of mainstream software practices for scientific software
+
+\item Professionalization:
+career paths;
+RSE as a brand;
+RSE outside of the UK or Europe; and
+Increase incentives in publishing, funding and promotion for better software
+
+\item Training:
+training for developing sustainable software; and 
+curriculum for software sustainability
+
+\item Credit:
+making the existing credit and citation ecosystem work better for software;
+future credit and citation ecosystem;
+software contributions as a part of tenure review;
+case studies of receiving credit for software contributions; and
+awards and recognition that encourage sustainable software
+
+\item Software publishing:
+journals and alternative venues for publishing software; and
+review processes for published software
+
+\item Software discoverability/reuse:
+proposals and case studies
+
+\item Reproducibility and testing:
+reproducibility in conferences and journals; and
+best practices for code testing and code review
+
+\end{itemize}
 
 %\todo{Introduction}
 
-The WSSSPE4 workshop included multiple mechanisms for participation and
-encouraged team building around solutions. WSSSPE4 strongly encouraged participation
+WSSSPE4 included multiple mechanisms for participation and
+encouraged team building around solutions. It strongly encouraged participation
 of early-career scientists, postdoctoral researchers, graduate students,
 early-stage researchers, and those from underrepresented groups,
 with funds provided to the conference organizers by the National Science
 Foundation (NSF), the Gordon and Betty Moore Foundation, the Alfred P.~Sloan Foundation, and the Software
 Sustainability Institute (SSI) to support the travel of potential participants
 who would not otherwise be able to attend the workshop. These
-funds allowed 29 additional people % to attend and participate. A subset of the
+funds allowed 29 additional attendees % to attend and participate. A subset of the
 % organizing committee reviewed 
-out of 44 applicants which 
+(of 44 applicants), 
 % ions for travel support and
 % competitively selected the awardees, 
-included 11 students and five early-career
+including 11 students and five early-career
 researchers.
 %  In addition, the travel award subcommittee tried to increase the
 % diversity of applicants by forwarding the notice of travel support to
@@ -242,14 +279,130 @@ WSSSPE4 also included two professional event organizers/facilitators who helped
 plan the workshop agenda,
 and who engaged with participants during the workshop.
 
-At the workshop, we introduced a Code of Conduct (CoC).%
-\footnote{\label{footnote:CoC}\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}}
-The CoC was conceived for the workshop and a guideline for the community of scientists that WSSSPE
+This paper is a summary of a longer report~\cite{WSSSPE4-report} on the workshop and the submitted materials.
+The remainder of the paper includes the call for papers (\S\ref{sec:preworkshop}); the WSSSPE Code of Conduct (\S\ref{sec:CoC}) and mission and vision (\S\ref{sec:mission}); a set of presentations that included a keynote, papers, lighting talks, and a panel (\S\ref{sec:presentations}); and the activities of a set of working groups (\S\ref{sec:WGs}).  One full day of the
+workshop was spent with participants in the working groups, which occurred in parallel
+with each other.  And each of the working groups left with a plan for how they could move
+forward.
+This report also mentions the Slack channel created for further discussions (\S\ref{sec:slack}), and it highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
+%An appendix lists the organizers and program committee members (\S\ref{sec:orgcom}).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Call for participation} \label{sec:preworkshop}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Post-WSSSPE3 feedback said that attendees
+had two distinct motivations for attending:  to make a better future
+for research software, and to immediately do better research software development. Thus,
+WSSSPE4 was %partially 
+planned as two tracks:
+
+\begin{quote}
+    \textbf{Track 1 -- Building a sustainable future for open-use research
+    software}: defining a vision of the future of open-use
+    research software, and in the workshop, initiating the activities that are
+    needed to get there.
+
+    \noindent \textbf{Track 2 -- Practices \& experiences in sustainable scientific software}:
+    improving the quality of today's research software and the
+    experiences of its developers by sharing best practices and experiences.
+\end{quote}
+
+The call for participation requested:
+idea papers, implementable proposals related to Track~1;
+position papers, longer, not previously published papers
+discussing what we can do to improve sustainable scientific
+software in the short term;
+experience papers, longer papers that discuss current
+experiences and how they have been used to improve the quality of
+today's research software and/or the experiences of its developers;
+demos, brief papers describing a tool or
+process that would be demonstrated that improves the quality of today's research
+software and\slash or the experiences of its developers; and
+extended abstracts describing lightning talks,
+where each author could make a brief statement about work that either had been
+done or was needed.
+
+%Suggested contribution topics included:
+%
+%\begin{itemize}
+%\renewcommand{\labelenumi}{\textbf{\theenumi}.}
+%\setlength{\rightmargin}{1em}
+%
+%\item Development and Community:
+%best practices for developing sustainable software;
+%models for funding specialist expertise in software collaborations;
+%software tools that aid sustainability;
+%academia/industry interaction;
+%refactoring/improving legacy scientific software;
+%engineering design for sustainable software;
+%metrics for the success of scientific software; and
+%adaptation of mainstream software practices for scientific software
+%
+%\item Professionalization:
+%career paths;
+%RSE as a brand;
+%RSE outside of the UK or Europe; and
+%Increase incentives in publishing, funding and promotion for better software
+%
+%\item Training:
+%taining for developing sustainable software; and 
+%curriculum for software sustainability
+%
+%\item Credit:
+%making the existing credit and citation ecosystem work better for software;
+%future credit and citation ecosystem;
+%software contributions as a part of tenure review;
+%case studies of receiving credit for software contributions; and
+%awards and recognition that encourage sustainable software
+%
+%\item Software publishing:
+%journals and alternative venues for publishing software; and
+%review processes for published software
+%
+%\item Software discoverability/reuse:
+%proposals and case studies
+%
+%\item Reproducibility and testing:
+%reproducibility in conferences and journals; and
+%best practices for code testing and code review
+%
+%\end{itemize}
+
+Submissions to WSSSPE4 comprised
+19 lightning talks,
+4 idea papers,
+3 position paper,
+5 experience papers,
+and
+3 demos.
+Most submissions were accepted, since the goal of WSSSPE is always to
+take in as many relevant inputs as possible, and to encourage their authors to
+participate in sharing and implementing their ideas. Two submitted lightning talks and one submitted experience paper were rejected, while two more submitted experience papers
+were accepted as lightning talks.
+% Specifically,
+% 19 lightning talks,
+% 4 idea papers,
+% 3 position papers,
+% 2 experience papers,
+% and
+% 3 demos
+% were accepted, as mentioned in Section~\ref{sec:presentations}.
+%
+The papers and lightning talks have been published as a volume in the CEUR Workshop Proceedings~\cite{WSSSPE4-proceedings}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Code of Conduct}\label{sec:CoC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+WSSSPE4 introduced a Code of Conduct (CoC)\footnote{\label{footnote:CoC}\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}}, which was conceived for the workshop and as guidance for the community of scientists that WSSSPE
 supports, including their personal and online interactions (e.g., on
-Twitter, in email lists, in the Slack team). The WSSSPE4 CoC is based on the
+Twitter, in email lists, in Slack). This CoC is based on the
 FORCE11 conference CoC~\cite{FORCE11:CoC}, which is in turn based on the Code4Lib
 CoC~\cite{Code4Lib:CoC}.
-The main guidelines of the CoC are:
+The main guidelines are:
 \begin{quote}
     WSSSPE events are community events intended for networking and collaboration
     as well as learning. We value the participation of every member of the
@@ -282,127 +435,14 @@ The main guidelines of the CoC are:
 %     \end{itemize}
  \end{quote}
 
-The CoC was introduced at the beginning of WSSSPE4, with the CoC subcommittee
+The CoC was discussed at the beginning of WSSSPE4, with the CoC subcommittee
 and a general email address for reporting concerns or incidents, or
 asking questions.  One concern was raised after the first half day, 
 % regarding how part of the workshop was being run, 
 and we changed the workshop
 to address this.
 
-This paper is a summary of a longer report~\cite{WSSSPE4-report} on the events at the workshop and the submitted materials.
-The remainder of the paper includes the call for papers (\S\ref{sec:preworkshop}); the WSSSPE mission and vision (\S\ref{sec:mission}); a set of presentations that included a keynote, papers, lighting talks, and a panel (\S\ref{sec:presentations}); and the activities of a set of working groups (\S\ref{sec:WGs}).  One full day of the
-workshop was spent with participants in the working groups, which occurred in parallel
-with each other.  And each of the working groups left with a plan for how they could move
-forward.
-This report also mentions the Slack channel created for further discussions (\S\ref{sec:slack}), and it highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
-%An appendix lists the organizers and program committee members (\S\ref{sec:orgcom}).
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Call for participation} \label{sec:preworkshop}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-WSSSPE4 was based on the work done at previous WSSSPE meetings, but aimed
-at producing working groups that better continued working after the workshop ended.
-In addition, based on feedback after WSSSPE3, it became clear that attendees
-had two distinct motivations:  to make a better future
-for research software, and to immediately do better research software development.
-This led to the idea of WSSSPE4 being partially divided into two tracks:
-
-\begin{quote}
-    \textbf{Track 1 -- Building a sustainable future for open-use research
-    software}: defining a vision of the future of open-use
-    research software, and in the workshop, initiating the activities that are
-    needed to get there.
-
-    \noindent \textbf{Track 2 -- Practices \& experiences in sustainable scientific software}:
-    improving the quality of today's research software and the
-    experiences of its developers by sharing best practices and experiences.
-\end{quote}
-
-The call for participation requested:
-idea papers, implementable proposals related to Track~1;
-position papers, longer, not previously published papers
-discussing what we can do to improve sustainable scientific
-software in the short term;
-experience papers, longer papers that discuss current
-experiences and how they have been used to improve the quality of
-today's research software and/or the experiences of its developers;
-demos, brief papers describing a tool or
-process that would be demonstrated that improves the quality of today's research
-software and\slash or the experiences of its developers; and
-extended abstracts describing lightning talks,
-where each author could make a brief statement about work that either had been
-done or was needed.
-
-Suggested contribution topics included:
-
-\begin{itemize}
-\renewcommand{\labelenumi}{\textbf{\theenumi}.}
-\setlength{\rightmargin}{1em}
-
-\item Development and Community:
-best practices for developing sustainable software;
-models for funding specialist expertise in software collaborations;
-software tools that aid sustainability;
-academia/industry interaction;
-refactoring/improving legacy scientific software;
-engineering design for sustainable software;
-metrics for the success of scientific software; and
-adaptation of mainstream software practices for scientific software
-
-\item Professionalization:
-career paths;
-RSE as a brand;
-RSE outside of the UK or Europe; and
-Increase incentives in publishing, funding and promotion for better software
-
-\item Training:
-taining for developing sustainable software; and 
-curriculum for software sustainability
-
-\item Credit:
-making the existing credit and citation ecosystem work better for software;
-future credit and citation ecosystem;
-software contributions as a part of tenure review;
-case studies of receiving credit for software contributions; and
-awards and recognition that encourage sustainable software
-
-\item Software publishing:
-journals and alternative venues for publishing software; and
-review processes for published software
-
-\item Software discoverability/reuse:
-proposals and case studies
-
-\item Reproducibility and testing:
-reproducibility in conferences and journals; and
-best practices for code testing and code review
-
-\end{itemize}
-
-Submissions to WSSSPE4 comprised
-19 lightning talks,
-4 idea papers,
-3 position paper,
-5 experience papers,
-and
-3 demos.
-Most submissions were accepted, since the goal of WSSSPE is always to
-take in as many relevant inputs as possible, and to encourage their authors to
-participate in sharing and implementing their ideas. Two submitted lightning talks and one submitted experience paper were rejected, while two more submitted experience papers
-were accepted as lightning talks.
-% Specifically,
-% 19 lightning talks,
-% 4 idea papers,
-% 3 position papers,
-% 2 experience papers,
-% and
-% 3 demos
-% were accepted, as mentioned in Section~\ref{sec:presentations}.
-%
-The papers and lightning talks have been published as a volume in the CEUR Workshop Proceedings~\cite{WSSSPE4-proceedings}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Mission and vision}\label{sec:mission}
