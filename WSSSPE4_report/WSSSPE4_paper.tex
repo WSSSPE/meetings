@@ -706,8 +706,8 @@ After most of the lightning talks and other presentations, WSSSPE used three are
 attendees use sticky flip charts and sticky notes on the walls to suggest a vision on any aspect of the work, a gap or challenge, or a project idea.
 Next, attendees organically formed groups around the flip charts, and 12 groups emerged.
 Summaries of each group's activities follow; for more details
-about the group discussions, see \cite{WSSSPE4-report}.
-
+about these discussions, see \cite{WSSSPE4-report}.
+There is a Slack team for WSSSPE~\cite{WSSSPESlack} that one can join at \url{https://wssspe.signup.team/}; some working groups also created channels within this team.
 
 
 \subsection{Verifying best practices \& metrics for sustainable research software}
@@ -716,11 +716,11 @@ about the group discussions, see \cite{WSSSPE4-report}.
 
 %\note{Ray to write this}
 
-Many open source projects for research software document their best practices and metrics that
-contribute to the sustainability of the software as well as to define their research software project's success.
+Many open source research software projects document their best practices that
+contribute to the sustainability of the software as well as the metrics that define their research software project's success.
 %
-This group will take the outputs of the WSSSPE efforts to identify best practices for creation of sustainable software for science/academia, and also the outputs of WSSSPE efforts to identify metrics for sustainable software for science/academia and cross-reference these with current open source research software that successfully uses modern software engineering.  This will allow the group to identify gaps on both sides.  
-Anyone can join this group or obtain more information about it by sending an email to the verifying best practices \& metrics for sustainable research software group: <wssspe4-verify-best-practices@googlegroups.com>.
+This group will take the outputs of the WSSSPE efforts to identify best development practices and to identify metrics for sustainable research software, and cross-reference them with current open source research software that successfully uses modern software engineering.  This will allow the group to identify gaps on both sides and to hypothesize how successful projects can be further improved.  
+One can join this group or obtain more information about it by sending an email to the verifying best practices \& metrics for sustainable research software group: <wssspe4-verify-best-practices@googlegroups.com>.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -730,9 +730,10 @@ Anyone can join this group or obtain more information about it by sending an ema
 
 %\note{Neil and Jean wrote this}
 
-The Software Sustainability Alliance working group aims to establish an alliance between organizations interested in improving the sustainability of research software. Such an alliance would ease the collaboration between member organizations to improve the sharing of expertise, resources and best practices. It is currently seeking feedback on potential member organizations, as well as the aims and scope of this alliance.
-Currently, point-to-point collaboration exists between organizations, but this inadvertently results in competition or redundancy within the sustainable software community. An alliance of software sustainability organizations would ease inter-organization collaboration, the promotion of software sustainability as well as would improve the pooling of competencies and the sharing of expertise. 
-If interested, one can visit \url{http://softwaresustainability.org/} or email Neil Chue Hong (<N.ChueHong@software.ac.uk>) and Jean Salac (<jeansalac@virginia.edu>)
+The Software Sustainability Alliance working group aims to establish an alliance between organizations interested in improving the sustainability of research software at a larger scale than their local university or community, and to distinguish between this group and WSSSPE. Such an alliance would ease the collaboration between member organizations to improve the sharing of expertise, resources and best practices. It is currently seeking feedback on potential activities and member organizations, as well as the aims and scope of this alliance.
+Currently, point-to-point collaboration exists between organizations, but this inadvertently results in competition or redundancy within the sustainable software community. An alliance of software sustainability organizations would ease inter-organization collaboration and the promotion of software sustainability, andwould improve the pooling of competencies and the sharing of expertise. 
+If interested, one can visit \url{http://softwaresustainability.org/} or email Neil Chue Hong (<N.ChueHong@software.ac.uk>) and Jean Salac (<salac@uchicago.edu>)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scientific Software Prototyping Infrastructure (S2PI)}
@@ -741,12 +742,17 @@ If interested, one can visit \url{http://softwaresustainability.org/} or email N
 
 %from Santiago
 There is a productivity bottleneck---yet to be solved---in HPC from the human
-perspective, first identified in the 1980s~\cite{barstow1982automatic}. Of all
-domain-specific scientists, only a percentage of those use simulations due to
-perceptions mostly related to the difficulty of using and developing those tools.
+perspective, first identified in the 1980s~\cite{barstow1982automatic}. Only a fraction of
+domain-specific scientists use simulations, mostly due to
+perceptions about the difficulty of using and developing such tools.
 XSEDE and other resources have become a gateway for successfully increasing the
 basis of HPC scientific users by facilitating their access to infrastructure and
 tools~\cite{towns2014xsede}, but the development challenge remains.
+%
+This group deems the ability to rapidly construct software artifacts that can be
+trusted in terms of the methods from their design up, easily discarded when
+wrong and extended when right at low human and computational cost to be one
+aspect of scientific software sustainability.
 %
 The group's objective is development of a prototype tool that allows domain scientists to generate
 simulation prototypes through a simple, yet expressive declarative
@@ -754,10 +760,9 @@ strongly-typed programming language close to equational expressions. The result
 of that specification is both an executable artifact as well as a specification
 for scientific programmers to later flesh out completely and adapt to particular
 infrastructures. 
-
-To join this project, one can visit the GitHub repository at
-\url{https://github.com/nunezco2/S2PI} or join the WSSSPE Slack channel
-\texttt{\#wg-sci-soft-proto}.
+%
+To join this project, one can visit the GitHub repository 
+(\url{https://github.com/nunezco2/S2PI}) or join \texttt{\#wg-sci-soft-proto} in the WSSSPE Slack.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -769,9 +774,11 @@ To join this project, one can visit the GitHub repository at
 
 Research software is often not shared; that which is shared may not have much metadata associated with it, and that which does exist often does not travel further than the website on which the software resides. The CodeMeta project\footnote{\url{http://codemeta.github.io/}} wants to incentivize software developers to release their software, encourage the development of metadata for it, enable credit assignment and citation of research software, increase its discoverability, more easily track dependencies, and enable reuse of software metadata, all goals that WSSSPE attendees have great interest in supporting.  
 %
+CodeMeta seeks in part to create a ``Rosetta Stone'' for software metadata to facilitate retaining such metadata between repositories, services, registries, indexers, publishers, citation managers, and other entities that create, ingest, use, and/or store metadata about software. The project also wants to establish a JSON-LD schema as a tool for making metadata machine-readable~\cite{CodeMeta_schema}.
+% 
 While at WSSSPE4, the group greatly expanded the CodeMeta project README file to include a description of the project geared to those with little or no prior knowledge of the project, a list of contributors, information on how one can get involved, a brief project history and who is managing the project, and links to additional information.
-
-Though a Google group mailing list has been established for the working group, the easiest way to engage with the CodeMeta project is through its Github repository\footnote{\url{https://github.com/codemeta/codemeta}}.
+%
+Though a Google group mailing list has been established for the working group, the easiest way to engage with the CodeMeta project is through its Github repository: \url{https://github.com/codemeta/codemeta}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -781,16 +788,16 @@ Though a Google group mailing list has been established for the working group, t
 
 %\note{Sandra to write this}
 
-Many diverse aspects and dimensions (such as economic, technical, environmental, and social) of developing sustainable software can be investigated,
+Many diverse aspects and dimensions (e.g., economic, technical, environmental, social) of developing sustainable software can be investigated.
 This group aims to write white papers
-that will focus on scientific environments and their implications, targeted at developers
+that focus on scientific environments and their implications, targeted at developers
 and project managers of scientific software. Given the complexity of this field, it is important to select
 a subset of sustainability aspects for the white papers. The idea is to create a series of papers instead of trying
 to tackle all important topics in one paper.
 %
 While there are already a few papers available on best practices and sustainability of scientific software in general, the group's goal is to create a series of papers that lead to consensus in the community, tackle many diverse aspects, and stay up-to-date with new trends.
 %
-The GitHub repository for the white paper can be found at \url{https://github.com/WSSSPE/WG-Best-Practices}. For more information and requests, join the \texttt{\#wg-best-practices} channel at WSSSPE's Slack team.
+The GitHub repository for the white paper can be found at \url{https://github.com/WSSSPE/WG-Best-Practices}. For more information and requests, join the \texttt{\#wg-best-practices} channel in the WSSSPE Slack.
 
 
 
@@ -809,8 +816,10 @@ There is more and more academic research being done on topics related to softwar
 %
 This working group is motivated by the goal of building better connections between academic researchers who are studying topics in or relating to software sustainability with practitioners, managers, and administrators who are working in the area of software sustainability.
 %
-The working group plans to briefly survey existing literature to get a better sense of the academic research landscape, facilitate some initial dialog between academic researchers and practitioners at WSSSPE4, then identify needed actions that would be mutually beneficial to researchers and practitioners. This plan resulted in the creation of the following SMART steps listed in the next section.
-
+Furthermore, the group also recognizes that academic social science and research software engineering are not monolithic, and there is a need to connect people who care about research-driven best practices inside of these two domains with each other as well.
+%
+The working group plans to briefly survey existing literature to get a better sense of the academic research landscape, facilitate some initial dialog between academic researchers and practitioners at WSSSPE4, then identify needed actions that would be mutually beneficial to researchers and practitioners.
+%
 To join the group, one can join its mailing list at \url{https://groups.google.com/forum/#!forum/researchsoftwarestudies}
 
 
@@ -828,10 +837,10 @@ with the larger community.
 %
 The participants hypothesized that the best strategy is to catch
 researchers while they are still in training and teach them software
-best-practices. Therefore, this working group's goal
+best practices. Therefore, the working group's goal
 is to develop courses on software best practices aimed at
 undergraduate students studying domain science. The program might be
-similar to a Software Carpentry or Data Carpentry workshop but
+similar to Software and Data Carpentry workshops but
 focused for domain scientists.
 
 The development of a successful curriculum relies on the expertise of
@@ -840,18 +849,11 @@ describe model problems and workflow, and instructors to formulate
 the pedagogy. Ideally these people will be brought together for a
 short workshop or hackathon with the goal of drafting the
 curriculum. 
-Anyone interested in contributing should get in touch via one of the
-following methods:
-
-\begin{itemize}
-\item Join the Google Group/mailing list
-  \cite{WSSSPEUndergradGoogleGroup}.
-\item Join the WSSSPE Slack (\S\ref{sec:slack}) and the
-  \texttt{\#wg-undergraduatecourse} channel.
-\item Ask to join the WSSSPE4-undergraduate-course organization
-  \cite{WSSSPEUndergradGithub}.
-\end{itemize}
-
+Anyone interested in contributing can join the Google Group/mailing list (\url{https://groups.google.com/forum/#!forum/
+wssspe4-software-best-practices-for-undergraduates}), 
+join the \texttt{\#wg-undergraduatecourse} channel in the WSSSPEs Slack,
+or ask to join the WSSSPE4-undergraduate-course organization (\url{https://github.com/orgs/WSSSPE4-
+undergraduate-course}).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -862,7 +864,8 @@ following methods:
 %\note{content from Emily}
 
 This group aims to increase the visibility of the quality of scientific software, facilitate the reusability of scientific software, and promote the best software practices by standardizing metrics via interviews with scientific software developers. This working group believes improving the current software metrics system will increase software sustainability. Currently, there are inefficiencies regarding software duplication, sustainability, and selection, as well as others, within the scientific software community. In order to address these inefficiencies, the group aims to create a goal-oriented method to collecting productive metrics by focusing on the developer side of software.
-
+The group plans to survey and interview scientific software developers to form metrics from the goals they have for their software, then to publicize the results
+%
 For more information, one can contact Emily Chen at <echen35@illinois.edu>.
 
 
@@ -876,13 +879,12 @@ For more information, one can contact Emily Chen at <echen35@illinois.edu>.
 %Dan starting this for now - may poll other members of group to make progress}
 
 Each developer of software with uncommon needs (hardware, software, libraries, data sets), non-public code, or tests that exceed time limits for free plans must acquire, setup, and maintain their own continuous integration systems because their needs make them ineligible for popular free services such as Travis CI.  For example, software groups that develop BIOUNO, CI4SI, or GROMACS have done this.
-
+%
 This group is interested in reducing the burden of different projects having to build and maintain their own continuous integration systems (when publicly available CI are not a fit), by coordinating and sharing this burden across multiple projects.
 %
-
 However, there are a lot of open issues such as how can the group learn from existing similar work without reinventing the wheel. Some possible goals include to acquire additional hardware such as GPUs, Xeon PHI, FPGAs and add/share them to, e.g., Debian's testing infrastructure or to extend Debian's scope to include published but not mature software.
-
-For more information, see \url{https://groups.google.com/forum/#!forum/continuous-integration-for-research-software}
+%
+For more information, see \url{https://groups.google.com/forum/#!forum/continuous-integration-for-research-software}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Software engineering processes tailored for research software}
@@ -903,20 +905,17 @@ the importance of regular testing do not often find much help from
 software engineering literature. There is a significant gap between
 the testing gospel and its applicability to computational science. This
 gap leads to frustration and abandonment of the good with the bad. 
-
+%
 This working group will (1) conduct a literature survey to gauge the extent
 of awareness of the issue in general, (2) generate content useful for
 the community where needed, and (3) curate the collected and added
 content for the use of the community.
-
-Readers interested in getting more information should use the working group'
-channel in the WSSSPE Slack (\S\ref{sec:slack}), called
-\texttt{\#wg-testing-in-science}.
+%
+To join this effort, one can use the \texttt{\#wg-testing-in-science}
+channel in the WSSSPE Slack.
 Additionally, a git
 repository (\url{https://github.com/WSSSPE/WG-Best-Practices.git}) exists for contributing content and reference to, and
 curation of the existing literature on this topic.
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -928,16 +927,16 @@ curation of the existing literature on this topic.
 
 The aim of this group is to investigate the building of an index of research products in an open sustainable manner.  Its goal is not to eliminate commercial products, but to build on what is there and provide data and services that are missing.
 %
-The Open Research Index should take in all research products (papers, software, datasets, workflows, etc.) from their publishers and recorders (journals, societies, domain repositories, government [open access] repositories, preprint servers, general repositories [e.g., figshare, zenodo]) and other services (CrossRef, ORCID).
-Each product should list authors and citations and allow people to search the resulting network.
-Users should also be able to interact with their own record and edit it, like Google Scholar allows.
-
-The working group's plans are relatively simple to express, though quite complex to undertake. A leader needs to be identified.
+The Open Research Index would take in all research products (papers, software, datasets, workflows, etc.) from their publishers and recorders (journals, societies, domain repositories, government [open access] repositories, preprint servers, general repositories [e.g., figshare, zenodo]) and other services (CrossRef, ORCID).
+Each product would list authors and citations and allow people to search the resulting network.
+Users would also be able to interact with their own record and edit it, as Google Scholar allows.
+%
+The group's plans are relatively simple to express, though quite complex to undertake; the first is to identify a leader.
 With a leader and feasible plan, the group would then obtain resources, and then build the index.
 %
 Because Google and others provide some similar services today, though these services (and the underlying data) could be removed at any time and the community cannot build new services, these companies would ideally be involved in the activities of the group.
-
-Alternatively or additionally, the group could build a mailing list for us and discuss further, depending on how receptive others are to this idea.  At WSSSPE4, there seemed to be enough interest to do this, so the group set up a Slack channel within the WSSSPE team (\S\ref{sec:slack}), called \texttt{\#wg-open-research-idx} for its members and any future members.
+%
+Alternatively or additionally, the group could build a mailing list for us and discuss further, depending on how receptive others are to this idea.  At WSSSPE4, there seemed to be enough interest to do this, so the group set up a \texttt{\#wg-open-research-idx} channel within the WSSSPE team Slack for its members and any future members.
 
 
 
@@ -955,33 +954,23 @@ areas of their science, and their contributions are typically to both
 the research activity their software enables, as well as on
 algorithm and implementation aspects. This presents issues when
 letters of evaluation for hiring, tenure, and promotion do not specifically
-cover how this is relevant to the discipline.\footnote{The extensive use of such letters, and the problems that are
-  associated with it, may be an issue specific to the United States.}
-
-Consequently, letter writers neet to be aware of how their letters will be read by
+cover how this is relevant to the discipline.\footnote{The extensive use of such letters, and the problems that are associated with it, may be an issue specific to the United States.}
+%
+Consequently, letter writers need to be aware of how their letters will be read by
 committees. It also requires that committees be aware that such
 letters often look different and may provide a different perspective
 of how a candidate's achievements should be assessed. 
-
 %
-There are essentially two important strategies that build on each
+This group has two important strategies that build on each
 other: (i) raising awareness of the problem beyond just those who are
 affected by it, and (ii) providing letter writers, letter readers, and
 evaluating committees with guidance on what criteria are relevant in
 assessing scientific software authors.
 %
 Ultimately, building a community large enough
-to affect change is important; contact Wolfgang Bangerth at
-<bangerth@colostate.edu> if you are interested in helping.
+to affect change is important; one may contact Wolfgang Bangerth at
+<bangerth@colostate.edu> if interested in helping.
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Slack team and channels}\label{sec:slack}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-As part of the discussion at WSSSPE4, we created a Slack team for WSSSPE~\cite{WSSSPESlack}.  To join it, go to \url{https://wssspe.signup.team/}.  A number of the working groups also created channels within the team; see the other subsections in \S\ref{sec:WGs} for the names of these channels.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
