@@ -716,14 +716,10 @@ about the group discussions, see \cite{WSSSPE4-report}.
 
 %\note{Ray to write this}
 
-Many open source projects for research software document their best practices that
-contribute to the sustainability of the software.  Many of these projects also
-document software metrics they use to define their research software project's success.
+Many open source projects for research software document their best practices and metrics that
+contribute to the sustainability of the software as well as to define their research software project's success.
 %
-This group will take the outputs of the WSSSPE efforts to identify best practices for creation of sustainable software for science/academia, and also the outputs of WSSSPE efforts to identify metrics for sustainable software for science/academia and cross-reference these with current open source research software that successfully uses modern software engineering.  This will allow the group to identify gaps on both sides.  This approach will also allow the group to hypothesize how successful open source projects can be further improved, verify that recommended approaches for software engineering for science/academia are sufficient and valid, and that metrics for software engineering for science/academia are relevant and useful.  The group has a specific objective of getting a good cross-sampling of disparate software including community model codes, community cyberinfrastructure, community analytic tools, etc.
-
-Each group member will volunteer to take on one to two projects, ideally ones in which they are already interested.  This effort will evaluate an initial 5--10 projects.  Once the group documents the workflow by which these evaluations are performed, other people can choose to follow this workflow and contribute their own evaluations of additional software.
-
+This group will take the outputs of the WSSSPE efforts to identify best practices for creation of sustainable software for science/academia, and also the outputs of WSSSPE efforts to identify metrics for sustainable software for science/academia and cross-reference these with current open source research software that successfully uses modern software engineering.  This will allow the group to identify gaps on both sides.  
 Anyone can join this group or obtain more information about it by sending an email to the verifying best practices \& metrics for sustainable research software group: <wssspe4-verify-best-practices@googlegroups.com>.
 
 
@@ -734,12 +730,8 @@ Anyone can join this group or obtain more information about it by sending an ema
 
 %\note{Neil and Jean wrote this}
 
-The Software Sustainability Alliance working group aims to establish an alliance between organizations interested in improving the sustainability of research software. Such an alliance would ease the collaboration between member organizations to improve the sharing of expertise, resources and best practices.
-These organizations are funded groups or teams that aim to advance research software sustainability beyond their local university or community. More specifically, this working group aims to define the scope of this alliance and provide clear distinction with WSSSPE. The group also seeks to understand the incentives for members of this alliance and identify its key activities.
-It is currently seeking feedback on potential member organizations, as well as the aims and scope of this alliance.
-
-Currently, point-to-point collaboration exists between organizations, but this inadvertently results in competition or redundancy within the sustainable software community. An alliance of software sustainability organizations would ease inter-organization collaboration and the promotion of software sustainability. This alliance would also improve the pooling of competencies and the sharing of expertise. Furthermore, with the international scope of this alliance, it could support an organization who wants to hold an event in a country where another organization exists.
-
+The Software Sustainability Alliance working group aims to establish an alliance between organizations interested in improving the sustainability of research software. Such an alliance would ease the collaboration between member organizations to improve the sharing of expertise, resources and best practices. It is currently seeking feedback on potential member organizations, as well as the aims and scope of this alliance.
+Currently, point-to-point collaboration exists between organizations, but this inadvertently results in competition or redundancy within the sustainable software community. An alliance of software sustainability organizations would ease inter-organization collaboration, the promotion of software sustainability as well as would improve the pooling of competencies and the sharing of expertise. 
 If interested, one can visit \url{http://softwaresustainability.org/} or email Neil Chue Hong (<N.ChueHong@software.ac.uk>) and Jean Salac (<jeansalac@virginia.edu>)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -755,44 +747,13 @@ perceptions mostly related to the difficulty of using and developing those tools
 XSEDE and other resources have become a gateway for successfully increasing the
 basis of HPC scientific users by facilitating their access to infrastructure and
 tools~\cite{towns2014xsede}, but the development challenge remains.
-Of all scientists who use simulations, only a small percentage know how
-to develop prototypes or full applications that can be later scaled by computer
-scientists and engineers. Writing new parallel applications is unusual for
-domain scientists and thus has created a complex dependency on specialized
-scientific programmers, who are scarce~\cite{post2005computational}. However,
-the capacity to quickly envision and prototype applications by domain
-experts---later to be fully implemented by scientific programmers---is critical for
-acquiring maturity and proficiency in the grand challenges that Exascale
-attempts to solve, and moreover for allowing scientists to develop their own
-ideas quickly and productively~\cite{vinter2015prototyping}. The latter, in
-addition, would increase service utilization time in HPC systems, a critical
-measure of efficiency. Considering the existing code base in scientific
-computing, software infrastructures that allow a clean transition from legacy
-systems to new Exascale platforms while preserving flexible prototyping
-towards the future are central~\cite{hwu2015transitioning}.
-
-This group deems the ability to rapidly construct software artifacts that can be
-trusted in terms of the methods from their design up, easily discarded when
-wrong and extended when right at low human and computational cost to be one
-aspect of scientific software sustainability. In essence,
-a motto for scientific software prototyping is \textit{fail hard, fail fast}.
 %
 The group's objective is development of a prototype tool that allows domain scientists to generate
 simulation prototypes through a simple, yet expressive declarative
 strongly-typed programming language close to equational expressions. The result
 of that specification is both an executable artifact as well as a specification
 for scientific programmers to later flesh out completely and adapt to particular
-infrastructures. This tool will start in the domain of computational physics,
-and (probably) extend to other domains, and the code will be open source.
-%
-The underlying hypothesis of this project is that a strongly typed, declarative
-problem-specification language with adequate constructs, to be implemented
-through stencils and algorithmic skeletons tied to numerical methods, captures a
- subset of useful and interesting problems in physics and other domains.
-%
-The group plans to develop a functional (meta-)prototype before WSSSPE5, and
-if useful, then develop a larger software infrastructure tied to
-particular cyberinfrastructure resources.
+infrastructures. 
 
 To join this project, one can visit the GitHub repository at
 \url{https://github.com/nunezco2/S2PI} or join the WSSSPE Slack channel
@@ -806,11 +767,7 @@ To join this project, one can visit the GitHub repository at
 
 %\note{Alice to write this}
 
-Research software is often not shared; that which is shared may not have much metadata associated with it, and that which does exist often does not travel further than the website on which the software resides. The CodeMeta project\footnote{\url{http://codemeta.github.io/}} wants to incentivize software developers to release their software, encourage the development of metadata for it, enable credit assignment and citation of research software, increase its discoverability, more easily track dependencies, and enable reuse of software metadata, all goals that WSSSPE attendees have great interest in supporting.  CodeMeta seeks in part to create a ``Rosetta Stone'' for software metadata to facilitate retaining such metadata between repositories, services, registries, indexers, publishers, citation managers, and other entities that create, ingest, use, and/or store metadata about software. The project also wants to establish a JSON-LD schema as a tool for making metadata machine-readable~\cite{CodeMeta_schema}.
-
-The primary objective of this working group, which included people who had previously been working on the CodeMeta project, is to find ways to help the project come to fruition.
-%
-The working group plans to engage with those already working on CodeMeta, to examine the existing CodeMeta crosswalk table to see what improvements and additions might be made, and to determine how to engage the community and provide ongoing social engagement and structure. Further, the group wants to assist in the implementation of the specifications and, by providing an outsider's view, contribute suggestions for more understandable project documentation. Finally, the group seeks a better way or ways to present the crosswalk table to make it more easily understood and consumable by research software communities.
+Research software is often not shared; that which is shared may not have much metadata associated with it, and that which does exist often does not travel further than the website on which the software resides. The CodeMeta project\footnote{\url{http://codemeta.github.io/}} wants to incentivize software developers to release their software, encourage the development of metadata for it, enable credit assignment and citation of research software, increase its discoverability, more easily track dependencies, and enable reuse of software metadata, all goals that WSSSPE attendees have great interest in supporting.  
 %
 While at WSSSPE4, the group greatly expanded the CodeMeta project README file to include a description of the project geared to those with little or no prior knowledge of the project, a list of contributors, information on how one can get involved, a brief project history and who is managing the project, and links to additional information.
 
@@ -833,12 +790,6 @@ to tackle all important topics in one paper.
 %
 While there are already a few papers available on best practices and sustainability of scientific software in general, the group's goal is to create a series of papers that lead to consensus in the community, tackle many diverse aspects, and stay up-to-date with new trends.
 %
-For the first white paper, the group aims to set the
-stage with successful use cases and an analysis of why they have been successful.
-Further topics will include community-related practices, government and management, funding,
-metrics, tools, and usability.
-The resulting draft white paper will be distributed via the WSSSPE email list. After collecting feedback on it, the group's plans are to attract a wider community to contribute to an extended journal paper version and to investigate whether more people would like to be involved in the white paper series.
-
 The GitHub repository for the white paper can be found at \url{https://github.com/WSSSPE/WG-Best-Practices}. For more information and requests, join the \texttt{\#wg-best-practices} channel at WSSSPE's Slack team.
 
 
@@ -854,17 +805,11 @@ The GitHub repository for the white paper can be found at \url{https://github.co
 
 
 
-There is more and more academic research being done on topics related to software sustainability, including work on software engineering practices and management of open source projects. However, academic research in general is often siloed for many reasons, and work on topics relevant to software sustainability is no exception. There are many academic studies and projects which may be relevant for practitioners working in this area, and many projects and initiatives by practitioners that may be relevant for social scientists. However, there is a gap between these two in research and practice.
+There is more and more academic research being done on topics related to software sustainability, including work on software engineering practices and management of open source projects. However, academic research in general is often siloed for many reasons, and work on topics relevant to software sustainability is no exception. 
 %
 This working group is motivated by the goal of building better connections between academic researchers who are studying topics in or relating to software sustainability with practitioners, managers, and administrators who are working in the area of software sustainability.
 %
- In any domain, bringing research and practice closer together a mutually beneficial goal, but also has its challenges.
-The group aims to give social scientists and practitioners working on scientific software, software sustainability, and open source and a better understanding of each other's work, as well as help them connect and coordinate on specific projects of mutual interest.
-%
-Furthermore, the group also recognizes that academic social science and research software engineering are not monolithic, and there is a need to connect people who care about research-driven best practices inside of these two domains with each other as well.
-
 The working group plans to briefly survey existing literature to get a better sense of the academic research landscape, facilitate some initial dialog between academic researchers and practitioners at WSSSPE4, then identify needed actions that would be mutually beneficial to researchers and practitioners. This plan resulted in the creation of the following SMART steps listed in the next section.
-
 
 To join the group, one can join its mailing list at \url{https://groups.google.com/forum/#!forum/researchsoftwarestudies}
 
@@ -879,12 +824,9 @@ To join the group, one can join its mailing list at \url{https://groups.google.c
 This working group was motivated by the perceived prevalence of
 so-called ``hidden code'' in scientific communities: code written by
 individual researchers in an unsustainable way that is never shared
-with the larger community. Participants recalled their own experience
-working with colleagues who write hidden code or inheriting
-unsustainable hidden code from collaborators.
+with the larger community. 
 %
-The question is, then, how to prevent researchers from writing hidden
-code? The participants hypothesized that the best strategy is to catch
+The participants hypothesized that the best strategy is to catch
 researchers while they are still in training and teach them software
 best-practices. Therefore, this working group's goal
 is to develop courses on software best practices aimed at
@@ -892,24 +834,12 @@ undergraduate students studying domain science. The program might be
 similar to a Software Carpentry or Data Carpentry workshop but
 focused for domain scientists.
 
-While implementation of a course aimed at each domain science is a long term
-goal, a short-term, achievable goal, is to develop a
-curriculum for a course aimed at a single domain science. Since the
-participants in the working group have expertise in physics, this is a
-natural target.
-%
 The development of a successful curriculum relies on the expertise of
 software engineers to describe the best practices, domain experts to
-describe model problems and work-flow, and instructors to formulate
+describe model problems and workflow, and instructors to formulate
 the pedagogy. Ideally these people will be brought together for a
 short workshop or hackathon with the goal of drafting the
-curriculum. The
-hackathon will be implemented and a draft of the curriculum will be
-written within the next year.
-Later, organizational partners will be required to
-actually implement the program.
-
-
+curriculum. 
 Anyone interested in contributing should get in touch via one of the
 following methods:
 
@@ -933,10 +863,6 @@ following methods:
 
 This group aims to increase the visibility of the quality of scientific software, facilitate the reusability of scientific software, and promote the best software practices by standardizing metrics via interviews with scientific software developers. This working group believes improving the current software metrics system will increase software sustainability. Currently, there are inefficiencies regarding software duplication, sustainability, and selection, as well as others, within the scientific software community. In order to address these inefficiencies, the group aims to create a goal-oriented method to collecting productive metrics by focusing on the developer side of software.
 
-In the context of this aim, the group hopes to find an efficient solution for streamlining the process of collecting and utilizing metrics to benefit software sustainability, as well as minimize the current inefficiencies within the scientific software community. This will improve software evaluation and comparison, thus reducing the effort spent on seeking scientific software.
-%
-The group plans on surveying and interviewing scientific software developers to form metrics from the goals they have for their software, then to publicize the results.
-
 For more information, one can contact Emily Chen at <echen35@illinois.edu>.
 
 
@@ -950,31 +876,13 @@ For more information, one can contact Emily Chen at <echen35@illinois.edu>.
 %Dan starting this for now - may poll other members of group to make progress}
 
 Each developer of software with uncommon needs (hardware, software, libraries, data sets), non-public code, or tests that exceed time limits for free plans must acquire, setup, and maintain their own continuous integration systems because their needs make them ineligible for popular free services such as Travis CI.  For example, software groups that develop BIOUNO, CI4SI, or GROMACS have done this.
-(Note that Debian provides a testing infrastructure\footnote{\url{https://ci.debian.net/doc/}} that is mature and supports hardware and other requirement specifications.)
 
 This group is interested in reducing the burden of different projects having to build and maintain their own continuous integration systems (when publicly available CI are not a fit), by coordinating and sharing this burden across multiple projects.
 %
-The scope of the group's interest is any type of testing, though interactive access for troubleshooting would be of particular interest beyond just automated testing.
 
-However, there are a lot of open issues:
-\begin{itemize}
-\item Some similar work has already been done.  How can this group apply and/or learn from that work, rather than reinventing the wheel?
-\item How to ensure this will work across disciplines?
-\item Meaningful CI for large projects may need hundreds of CPU hours per day
-\end{itemize}
-
-Some possible goals include:
-\begin{itemize}
-\item Acquire additional hardware such as GPUs, Xeon PHI, FPGAs and add/share them to, e.g., Debian's testing infrastructure or to a shared Jenkins-based infrastructure
-\item Extending Debian's scope to include published but not mature software
-\item Implementing the same interface but with specialized hardware or available to non-public codes.
-\item \url{https://reproducible-builds.org} but for CI
-\end{itemize}
+However, there are a lot of open issues such as how can the group learn from existing similar work without reinventing the wheel. Some possible goals include to acquire additional hardware such as GPUs, Xeon PHI, FPGAs and add/share them to, e.g., Debian's testing infrastructure or to extend Debian's scope to include published but not mature software.
 
 For more information, see \url{https://groups.google.com/forum/#!forum/continuous-integration-for-research-software}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Software engineering processes tailored for research software}
@@ -990,32 +898,11 @@ parts that need to interoperate with one another. The accuracy and
 reliability of results produced by scientific software depends not
 only on the individual components behaving correctly, but also on the
 validity of their interactions.
-As scientific understanding grows,
-the corresponding computational software models are refined, leading
-to more complex codes. Increasing complexity makes them more prone to
-defects, not only in individual code units, but also in interaction
-among units. Therefore, a strong verification process combined with a
-rigorous testing regime plays a critical role in the prevention of
-generating incorrect scientific results. However, most science teams
-struggle to find a good solution for themselves.
-
-One cause is lack of exposure to the practices. While
-good developers will test their code to
-verify that it operates as expected, they may not appreciate
-that without regular testing, defects can be introduced
-inadvertently.
-%
-An even bigger challenge is that those who understand
+A big challenge is that those who understand
 the importance of regular testing do not often find much help from
 software engineering literature. There is a significant gap between
 the testing gospel and its applicability to computational science. This
-gap leads to frustration and abandonment of the good with the bad. Some
-relevant literature exists, in particular experiences from
-practitioners in computational science who developed their own
-solutions. However, this literature is scattered among many different
-forums, and can be challenging to find. This working group aims to
-address this gap by curating the existing content and contributing
-content where none exists.
+gap leads to frustration and abandonment of the good with the bad. 
 
 This working group will (1) conduct a literature survey to gauge the extent
 of awareness of the issue in general, (2) generate content useful for
@@ -1045,8 +932,7 @@ The Open Research Index should take in all research products (papers, software, 
 Each product should list authors and citations and allow people to search the resulting network.
 Users should also be able to interact with their own record and edit it, like Google Scholar allows.
 
-The working group's plans are relatively simple to express, though quite complex to undertake.  They are to first determine a plan to build an open research index that allows various stakeholders to satisfy their needs, then to determine if the plan is feasible.
-At the time of the meeting, and today as well, it is unclear who has the time and energy to pursue this idea. Thus, a leader needs to be identified.
+The working group's plans are relatively simple to express, though quite complex to undertake. A leader needs to be identified.
 With a leader and feasible plan, the group would then obtain resources, and then build the index.
 %
 Because Google and others provide some similar services today, though these services (and the underlying data) could be removed at any time and the community cannot build new services, these companies would ideally be involved in the activities of the group.
@@ -1072,52 +958,18 @@ letters of evaluation for hiring, tenure, and promotion do not specifically
 cover how this is relevant to the discipline.\footnote{The extensive use of such letters, and the problems that are
   associated with it, may be an issue specific to the United States.}
 
-This group believes that the authors of scientific software provide important
-services to departments that are no less than strictly disciplinary
-research. Consequently, leveling the playing field with more
-disciplinary candidates for hires, tenure, and promotion requires that
-letter writers be aware of how their letters will be read by
+Consequently, letter writers neet to be aware of how their letters will be read by
 committees. It also requires that committees be aware that such
 letters often look different and may provide a different perspective
-of how a candidate's achievements should be assessed. For example, in
-mathematics a typical candidate would be evaluated on the difficulty
-and depth of the statements she may have proven in their papers. On
-the other hand, an author of mathematical software would likely be
-evaluated based on the impact of her software, or the number of citations of
-the publications that describe it. She may also be evaluated by how
-widely the software is used \textit{outside} mathematics, a criterion
-that is rarely used for more disciplinary mathematicians.
+of how a candidate's achievements should be assessed. 
 
-Addressing this problem likely requires that letter writers pay
-particular attention to who exactly the audience of such letters is,
-and tailor the message by specifically highlighting how the work of a
-candidate benefits the department and discipline that is considering a
-candidate. On the other hand, committee members also need to pay
-attention to the fact that there are areas that are important to the mission of
-their department and professional community in which different
-standards for evaluation hold.
 %
 There are essentially two important strategies that build on each
 other: (i) raising awareness of the problem beyond just those who are
-affected by it (namely, computational scientists working on scientific
-software), and (ii) providing letter writers, letter readers, and
+affected by it, and (ii) providing letter writers, letter readers, and
 evaluating committees with guidance on what criteria are relevant in
 assessing scientific software authors.
-
-Concrete guidance is most valuable if it
-comes from respected bodies such as professional societies or
-established and respected organizations. Getting these to act
-will only be possible if the problem is widely acknowledged, and so
-the first of the goals above should be the current focus.
 %
-The group will attempt to address it by organizing sessions at conferences
-that address the career problem, as well as writing editorials that
-can be published in the magazines of professional societies. These
-editorials ought to outline best practices for letter writers that
-specifically (i) make clear the contribution of a candidate to their
-interdisciplinary area, (ii) the relevance to their home discipline, and
-(iii) why writing software is good for the discipline itself.
-
 Ultimately, building a community large enough
 to affect change is important; contact Wolfgang Bangerth at
 <bangerth@colostate.edu> if you are interested in helping.
