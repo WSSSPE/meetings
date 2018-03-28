@@ -1,0 +1,512 @@
+\documentclass[11pt, oneside]{amsart}
+\pdfoutput=1
+
+\usepackage{amsmath,amssymb,amsmath}
+
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{dcolumn}
+\usepackage{caption}
+\usepackage{graphicx}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[font=small]{caption}
+\usepackage{varwidth}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+\usepackage{xspace}
+
+\usepackage{rotating}
+\usepackage{caption,subcaption}
+\usepackage{float}
+\usepackage{psfrag}
+\usepackage{tabularx}
+\usepackage[hyphens]{url}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{array,booktabs,multicol,multirow}
+
+%better printing of numbers
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+\usepackage{cite}
+
+% The following three lines are used for displaying footnote in tables.
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+\usepackage{placeins}
+
+\usepackage{enumitem}
+\setlist{leftmargin=7mm}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+\usepackage[bookmarks, bookmarksopen, bookmarksnumbered, colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage[all]{hypcap}
+\urlstyle{rm}
+
+\definecolor{orange}{rgb}{1.0,0.3,0.0}
+\definecolor{violet}{rgb}{0.75,0,1}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{cyan}{rgb}{0.2,0.7,0.7}
+\definecolor{blueish}{rgb}{0.2,0.2,0.8}
+\definecolor{darkblue}{rgb}{0.1,0.1,0.9}
+\definecolor{lightgray}{gray}{0.9}
+
+\newcommand{\todo}[1]{{\color{blue}$\blacksquare$~\textsf{[TODO: #1]}}}
+\newcommand{\note}[1]{ {\textcolor{blueish}    { ***Note:      #1 }}}
+\newcommand{\katznote}[1]{ {\textcolor{magenta}    { ***Dan:      #1 }}}
+\newcommand{\gabnote}[1]{ {\textcolor{cyan}    { ***Gabrielle:     #1 }}}
+\newcommand{\nchnote}[1]{  {\textcolor{orange}      { ***Neil: #1 }}}
+\newcommand{\kylenote}[1]{  {\textcolor{cyan}      { ***Kyle: #1 }}}
+
+% Don't use tt font for urls
+\urlstyle{rm}
+
+\usepackage[letterpaper, margin=1in]{geometry}
+% You can use a baselinestretch of down to 0.9
+\renewcommand{\baselinestretch}{0.96}
+
+\sloppypar
+
+\begin{document}
+
+\title[]{Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE5.1) \& The State of Sustainable Software -- TITLE NEEDS WORK}
+
+\author{Daniel~S.~Katz$^{(1)}$,
+Caroline $^{(2)}$,
+Rob $^{(3)}$,
+Alexander $^{(4)}$,
+Stephan\ $^{(5)}$\
+please add full names, affiliations, orcids
+%Kyle~E.~Niemeyer$^{(2)}$,
+%Sandra~Gesing$^{(3)}$,
+%Lorraine~Hwang$^{(4)}$,
+%Wolfgang~Bangerth$^{(5)}$,
+%Simon~Hettrick$^{(6)}$,
+%Ray Idaszak$^{(7)}$,
+%Jean~Salac$^{(8)}$,
+%Neil~Chue~Hong$^{(9)}$,
+%Santiago~N\'u\~nez-Corrales$^{(10)}$,
+%Alice~Allen$^{(11)}$,
+%R.~Stuart~Geiger$^{(12)}$,
+%Jonah~Miller$^{(13)}$,
+%Emily~Chen$^{(14)}$,
+%Anshu~Dubey$^{(15)}$,
+%Patricia~Lago$^{(16)}$
+%\\Author order to be determined based on contributions
+}
+
+%
+\thanks{{}$^{(1)}$ National Center for Supercomputing Applications (NCSA) \&
+Department of Computer Science  \&
+Department of Electrical and Computer Engineering  \&
+School of Information Sciences (iSchool),
+University of Illinois, Urbana--Champaign, IL, USA; d.katz@ieee.org; ORCID: 0000-0001-5934-7525}
+%
+\thanks{{}$^{(2)}$ department/school, city, country; email; ORCID: orcid}
+%
+\thanks{{}$^{(3)}$ department/school, city, country; email; ORCID: orcid}
+%
+\thanks{{}$^{(4)}$ department/school, city, country; email; ORCID: orcid}
+%
+\thanks{{}$^{(5)}$ department/school, city, country; email; ORCID: orcid}
+%
+
+
+
+\begin{abstract}
+\todo{Need to update}
+This article summarizes motivations, organization, and activities of the Fourth Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE4). The WSSSPE series promotes sustainable research software by positively impacting principles and best practices, careers, learning, and credit. This article discusses the code of conduct; the mission and vision statements that were drafted at the workshop and finalized shortly after it; the keynote and idea papers, position papers, experience papers, demos, and lightning talks presented during the workshop; and a panel discussion on best practices. The main part of the article discusses the set of working groups that formed during the meeting, along with contact information for readers who may want to join a group. Finally, it discusses a survey of the workshop attendees.
+
+% It also summarizes a set of lightning
+% talks in which speakers highlighted to-the-point lessons and challenges
+% pertaining to sustaining scientific software.
+% The final and main contribution of the report is a summary of the
+% discussions, future steps, and future organization for a set of self-organized
+% working groups on topics including developing pathways to funding scientific
+% software; constructing useful common metrics for crediting software
+% stakeholders; identifying principles for sustainable software engineering
+% design; reaching out to research software organizations around the world; and
+% building communities for software sustainability. For each group, we include a
+% point of contact and a landing page that can be used by those who want to join
+% that group's future activities. The main challenge left by the workshop is to
+% see if the groups will execute these activities that they have scheduled, and
+% how the WSSSPE community can encourage this to happen.
+
+\end{abstract}
+
+
+
+\maketitle
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction} \label{sec:intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{Dan}
+
+The Workshop on Sustainable Software for Science: Practice and Experiences
+(WSSSPE5.1)\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe5/}} \katznote{check URL} was a one-day meeting held in September 2017 in Manchester, England immediately preceding the
+Second Research Software Engineers (RSE) Conference, so that RSE attendees could also attend WSSSPE5.1.  \katznote{number of attendees?}
+
+Previous WSSSPE events\footnote{The first WSSSPE workshop was named
+``Working towards
+Sustainable Software for Science: Practice and Experiences,'' which remains the meaning
+of the WSSSPE group, but the workshops after that were named
+``Workshop on Sustainable
+Software for Science: Practice and Experiences.'' Together these reflect
+that WSSSPE is both a community and a set of workshops.}, all but the last of which were in the US, were two general, presentation-focused, one-day workshops held with the SC13 and SC14 conferences~\cite{WSSSPE1-pre-report,WSSSPE1, WSSSPE2-pre-report,WSSSPE2},
+two half-day workshops\footnote{\url{http://wssspe.researchcomputing.org.uk/wssspe1-1/}, \url{http://wssspe.researchcomputing.org.uk/wssspe2-1/}} held with SciPy 2014 and 2015 that contained presentations about specific sustainable Python software packages, a 1-and-1/2-day workshop that included teams that self-assembled and discussed focused software sustainability topics~\cite{WSSSPE3}, and a 2-and-1/2-day workshop that immediately preceded the
+First Research Software Engineers (RSE) Conference in Manchester, England.
+~\cite{WSSSPE4}
+%
+Based on the work done at these previous WSSSPE meetings, WSSSPE4 was aimed
+at producing working groups that would better continue working after the workshop ended.
+
+Specific topics that were discussed in previous meetings and suggested for WSSSPE4 included:
+
+\begin{itemize}
+\renewcommand{\labelenumi}{\textbf{\theenumi}.}
+\setlength{\rightmargin}{1em}
+
+\item Development and Community:
+best practices for developing sustainable software;
+models for funding specialist expertise in software collaborations;
+software tools that aid sustainability;
+academia/industry interaction;
+refactoring/improving legacy scientific software;
+engineering design for sustainable software;
+metrics for the success of scientific software; and
+adaptation of mainstream software practices for scientific software
+
+\item Professionalization:
+career paths;
+RSE as a brand;
+RSE outside of the UK or Europe; and
+Increase incentives in publishing, funding and promotion for better software
+
+\item Training:
+training for developing sustainable software; and 
+curriculum for software sustainability
+
+\item Credit:
+making the existing credit and citation ecosystem work better for software;
+future credit and citation ecosystem;
+software contributions as a part of tenure review;
+case studies of receiving credit for software contributions; and
+awards and recognition that encourage sustainable software
+
+\item Software publishing:
+journals and alternative venues for publishing software; and
+review processes for published software
+
+\item Software discoverability/reuse:
+proposals and case studies
+
+\item Reproducibility and testing:
+reproducibility in conferences and journals; and
+best practices for code testing and code review
+
+\end{itemize}
+
+%\todo{Introduction}
+
+WSSSPE4 included multiple mechanisms for participation and
+encouraged team building around solutions. It strongly encouraged participation
+of early-career scientists, postdoctoral researchers, graduate students,
+early-stage researchers, and those from underrepresented groups,
+with funds provided to the conference organizers by the National Science
+Foundation (NSF), the Gordon and Betty Moore Foundation, the Alfred P.~Sloan Foundation, and the Software
+Sustainability Institute (SSI) to support the travel of potential participants
+who would not otherwise be able to attend the workshop. These
+funds allowed 29 additional attendees % to attend and participate. A subset of the
+% organizing committee reviewed 
+(of 44 applicants), 
+% ions for travel support and
+% competitively selected the awardees, 
+including 11 students and five early-career
+researchers.
+%  In addition, the travel award subcommittee tried to increase the
+% diversity of applicants by forwarding the notice of travel support to
+% organizations including PyLadies\footnote{\url{http://www.pyladies.com}},
+% Django Girls\footnote{\url{https://djangogirls.org}},
+% Women Who Code\footnote{\url{https://www.womenwhocode.com}}, and
+% Women in HPC\footnote{\url{http://www.womeninhpc.org}}.
+%\todo{did we reach out to any others?}
+%
+WSSSPE4 also included two professional event organizers/facilitators who helped
+plan the workshop agenda,
+and who engaged with participants during the workshop.
+
+The remainder of the paper includes the call for papers (\S\ref{sec:preworkshop}); the WSSSPE Code of Conduct (\S\ref{sec:CoC}) and mission and vision (\S\ref{sec:mission}); a set of presentations that included a keynote, papers, lighting talks, and a panel (\S\ref{sec:presentations}); and the activities of a set of working groups (\S\ref{sec:WGs}).  One full day of the
+workshop was spent with participants in the working groups, which occurred in parallel
+with each other.  And each of the working groups left with a plan for how they could move
+forward.
+This report also highlights an attendee survey (\S\ref{sec:survey}) before concluding (\S\ref{sec:conclusions}).
+
+\katznote{new text below, need to replace lots of what is above:}
+
+In October 2017, a group of people interested in sustainable research software came together at the Working towards Sustainable Software for Science: Practice and Experiences (WSSSPE5.1) meeting in Manchester, UK. This workshop built on six previous WSSSPE workshops, all of which dedicated significant portions of the meeting to group discussions about problems and potential solutions in the sustainable research software space.  WSSSPE5.1 used the speed blog methodology to generate 8 reports on different views of the space. These blogs, previously published by the UK Software Sustainability Institute (SSI) on its website, form the second portion of this paper.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Call for participation and response} \label{sec:preworkshop}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{Stephan, maybe you can put something short here?}
+
+%Post-WSSSPE3 feedback said that attendees
+%had two distinct motivations for attending:  to make a better future
+%for research software, and to immediately do better research software development. Thus,
+%WSSSPE4 was planned as two tracks:
+%
+%\begin{quote}
+%    \textbf{Track 1 -- Building a sustainable future for open-use research
+%    software}: defining a vision of the future of open-use
+%    research software, and in the workshop, initiating the activities that are
+%    needed to get there.
+%
+%    \noindent \textbf{Track 2 -- Practices \& experiences in sustainable scientific software}:
+%    improving the quality of today's research software and the
+%    experiences of its developers by sharing best practices and experiences.
+%\end{quote}
+%
+%The call for participation requested:
+%idea papers, implementable proposals related to Track~1;
+%position papers, longer, not previously published papers
+%discussing what we can do to improve sustainable scientific
+%software in the short term;
+%experience papers, longer papers that discuss current
+%experiences and how they have been used to improve the quality of
+%today's research software and/or the experiences of its developers;
+%demos, brief papers describing a tool or
+%process that would be demonstrated that improves the quality of today's research
+%software and\slash or the experiences of its developers; and
+%extended abstracts describing lightning talks,
+%where each author could make a brief statement about work that either had been
+%done or was needed.
+
+%Suggested contribution topics included:
+%
+%\begin{itemize}
+%\renewcommand{\labelenumi}{\textbf{\theenumi}.}
+%\setlength{\rightmargin}{1em}
+%
+%\item Development and Community:
+%best practices for developing sustainable software;
+%models for funding specialist expertise in software collaborations;
+%software tools that aid sustainability;
+%academia/industry interaction;
+%refactoring/improving legacy scientific software;
+%engineering design for sustainable software;
+%metrics for the success of scientific software; and
+%adaptation of mainstream software practices for scientific software
+%
+%\item Professionalization:
+%career paths;
+%RSE as a brand;
+%RSE outside of the UK or Europe; and
+%Increase incentives in publishing, funding and promotion for better software
+%
+%\item Training:
+%taining for developing sustainable software; and 
+%curriculum for software sustainability
+%
+%\item Credit:
+%making the existing credit and citation ecosystem work better for software;
+%future credit and citation ecosystem;
+%software contributions as a part of tenure review;
+%case studies of receiving credit for software contributions; and
+%awards and recognition that encourage sustainable software
+%
+%\item Software publishing:
+%journals and alternative venues for publishing software; and
+%review processes for published software
+%
+%\item Software discoverability/reuse:
+%proposals and case studies
+%
+%\item Reproducibility and testing:
+%reproducibility in conferences and journals; and
+%best practices for code testing and code review
+%
+%\end{itemize}
+
+Submissions to WSSSPE4 comprised
+19 lightning talks,
+4 idea papers,
+3 position paper,
+5 experience papers,
+and
+3 demos.
+Most submissions were accepted, since the goal of WSSSPE is always to
+take in as many relevant inputs as possible, and to encourage their authors to
+participate in sharing and implementing their ideas. Two submitted lightning talks and one submitted experience paper were rejected, while two more submitted experience papers
+were accepted as lightning talks.
+The papers and lightning talks have been published as a volume in the CEUR Workshop Proceedings~\cite{WSSSPE4-proceedings}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Code of Conduct}\label{sec:CoC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{do we want to keep some discussion of this here?  maybe fold in into the intro?}
+
+WSSSPE5.1 included a Code of Conduct (CoC)\footnote{\label{footnote:CoC}\url{http://wssspe.researchcomputing.org.uk/wssspe4/code-of-conduct/}} as guidance for the community of scientists that WSSSPE
+supports, including the workshop and their personal and online interactions (e.g., on
+Twitter, in email lists, in Slack). This CoC is based on the
+FORCE11 conference CoC~\cite{FORCE11:CoC}, which is in turn based on the Code4Lib
+CoC~\cite{Code4Lib:CoC}.
+In introducing the CoC, we asked participants to agree to the following main guidelines:
+\begin{quote}
+    WSSSPE events are community events intended for networking and collaboration
+    as well as learning. We value the participation of every member of the
+    community and want all attendees to have an enjoyable and fulfilling
+    experience. Accordingly, all attendees are expected to show respect and
+    courtesy to other attendees throughout the event and in interactions online
+    associated with the event.
+
+    The WSSSPE event organizers are dedicated to providing a harassment-free
+    experience for everyone, regardless of gender, gender identity and
+    expression, age, sexual orientation, disability, physical appearance,
+    body size, race, ethnicity, religion (or lack thereof), technology choices,
+    or other group status.
+
+    To make clear what is expected, everyone taking part in WSSSPE events and
+    discussions---speakers, helpers, organizers, and participants---is required
+    to conform to the Code of Conduct\footnoteref{footnote:CoC}.
+
+ \end{quote}
+
+The CoC was discussed at the beginning of WSSSPE5.1, with the CoC subcommittee
+and a general email address for reporting concerns or incidents, or
+asking questions. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mission and vision}\label{sec:mission}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{should we take any of this into the intro, or drop it all?}
+
+
+ {\bf Mission.}
+ WSSSPE is an international community-driven organization that promotes sustainable research software by addressing challenges related to the full lifecycle of research software through shared learning and community action.
+
+ {\bf Vision.}
+ We envision a world where research software is accessible, robust, sustained, and recognized as a scholarly research product critical to the advancement of knowledge, learning, and discovery.
+
+ {\bf Focus areas.}
+ WSSSPE promotes sustainable research software by positively impacting:
+ \begin{itemize}
+ \item {\bf Principles and Best Practices}. Promoting best practices in sustainable software
+ \item {\bf Careers}. Developing and supporting career paths in research software development and engineering
+ \item {\bf Learning}. Engaging in activities to promote peer learning and interaction
+ \item {\bf Credit}. Ensuring recognition of research software as an intellectual contribution equal to other research products
+ \end{itemize}
+
+ \textbf{Definitions:}
+ \emph{Sustainable software} has the capacity to endure such that it will continue to
+ be available in the future, on new platforms, meeting new needs.
+ The \emph{research software lifecycle} includes:
+ acquiring and assembling resources (including funding and people) into teams and communities,
+ developing software,
+ using software,
+ recognizing contributions to and of software,
+ and
+ maintaining software.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Presentations}\label{sec:presentations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{Stephan}
+
+%The keynote was given by Patricia Lago and entitled ``The legacy of unsustainable software''.
+%Sustainability is broadly associated with natural ecologic systems. When we translate the notion of sustainability to software solutions, however, we often confuse {\em impact in a certain point in time} with {\em balanced and durable effects}. In addition, software sustainability adds a fourth dimension to environmental, social and economic aspects: technical sustainability, and hence higher complexity~\cite{Lago2015}.  Lago's keynote discussed the challenges (and some related ongoing research) of combining technical and environmental sustainability, providing a complementary angle to the workshop discussions.
+%
+%WSSSPE4 included the presentation of 12 10-minute talks (based on four idea papers, three position papers,
+%two experience papers, and three demos) that addressed a wide range of topics around
+%sustainability for software in science. These talks covered three main areas.
+%The first area was the academic environment, with four papers
+%that address diverse aspects ranging from incentives for quality software to
+%advocating a professional society for research software to roles and degrees for
+%research software engineers~\cite{Heroux:2016ws, GAllen:2016ws, Philippe:2016ws, Gwilliams:2016ws}.
+%The second area was concerned with characteristics and needs of
+%research software and included five papers~\cite{Dubey1:2016ws, ChueHong:2016ws, Dubey2:2016ws, Queiroz:2016ws, Childers:2016ws}.
+%The third  area focused on elucidating lessons learned
+%from or visions for use cases of scientific software and communities working
+%with and\slash or on a software package, with three papers~\cite{Ganguly:2016ws, Shende:2016ws, Sallai:2016ws}.
+%
+%In addition, 19 lightning talks were presented at WSSSPE4~\cite{Sufi:2016ws, Gesing:2016ws, Ram:2016ws, Loffler:2016ws, Katz:2016ws, Idaszak:2016ws, Hwang:2016ws, Goble:2016ws, Druskat:2016ws, Contrastin:2016ws, AAllen:2016ws, ChueHong:2016wsb, vanHage:2016ws, GAllen:2016wsb, Seidel:2016ws, Emsley:2016ws, Dongarra:2016ws, Bauer:2016ws, Aldabjan:2016ws}.
+%
+%The final WSSSPE4 presentation was a panel of five experts with different perspectives on ``Best Practices for Scientific Software.''
+%These were: Alice Allen, Editor, Astrophysics Source Code Library, who brought an understanding of the difficulties of organizing a community and curating their software;
+%Mike Croucher from the University of Sheffield and Rob Haines from the University of Manchester who are both Research Software Engineers with decades of experience of writing code for researchers;
+%Patricia Lago from Vrije Universiteit Amsterdam, who brought a fresh perspective on software sustainability from the point of view of its impact on society and business; and
+%Karthik Ram from the Berkeley Institute for Data Science, who brought his perspective on the practicalities of using scientific software to conduct his research as a data scientist.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Speed blogs} \label{sec:speed_blogs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{Alexander}
+
+\note{explain the process of speed blogging}
+
+\note{summarize the speed blogs themselves, with citations/pointers to them on the SSI page}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analyzing the speed blogs} \label{sec:speed_blog_analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{Caroline and Rob}
+
+\note{explain the method?}
+
+\note{show the date?}
+
+\note{show a figure?}
+
+\note{explain the results?}
+
+\katznote{here's some stuff I wrote previously - see if you want to keep any of it:}
+
+However, to frame the context of these reports, we first examine the overall space, which can be viewed in many ways.  The high-level topics in the call for participation in the previous meeting, WSSSPE4, were: development and community, professionalization, training, credit, software publishing, software discoverability and reuse, and reproducibility and testing. The set of topics initially proposed in WSSSPE5.1 were: social factors, technical choices, funding and careers, management and guidance, citation and credit, training, reproducible research, software quality, legacy code, and containers and packaging. WSSSPE5.1 also mentioned that there seemed to be sufficient writing already on citation and credit, and containers and packaging, so while these topics that fit under the WSSSPE umbrella, they were not suggested as topics for speed blogs. In addition, the lead author of this paper has given talks to summarize this space previously, based on topics that emerged from the previous WSSSPE meetings before WSSSPE4. Those topics are: software engineering; portability; training and education; incentives, citation/credit models, and metrics; intellectual property; publication and peer review; software communities and sociology; sustainability and funding models; career paths; software dissemination, catalogs, search, and review; multi-disciplinary science; and reproducibility. All three of these ways of looking at the space have value; none are wrong, none are right, all are useful. They each try to look at the problems we have.
+
+Another choice is to look at this at a different level: that of actors. We can say that we are concerned about software, people, organizations, and the field itself. And we could center our view through the lens of one or more of these actors.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions} \label{sec:conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{anyone?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgments} \label{sec:acks}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\todo{feel free to add stuff here}
+
+
+\newpage
+\bibliographystyle{vancouver}
+
+\bibliography{wssspe}
+\end{document}
