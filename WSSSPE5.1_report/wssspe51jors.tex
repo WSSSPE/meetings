@@ -221,21 +221,38 @@ All papers and lightning talks were published as a figshare collection~\cite{WSS
   \label{fig:schematic}
 \end{figure}
 
-Figure~\ref{fig:schematic} shows a version of a schematic of the research 
+The "research software sustainability space" can be described as a set of activities which impact the sustainability of research software in different ways and on different levels, e.g., how a research software is developed by developers, how it is funded, how and where it is published, etc.
+These activities consist of "actions", which are undertaken by "agents", where an "actor" acts on an "actee".
+Activities in the space can thus be modeled as a directed graph, and represented in respective schematics.
+In this section, we aim to evaluate which subset of activities has been represented in the presentations given at WSSSPE5.1.
+
+Figure~\ref{fig:schematic} shows a version of a schematic of activities within the research 
 software sustainability space 
 as introduced by Katz \cite{katz_research_2018}.
-In this version, both node outlines and edge labels are weighted to show the distribution of
-their references from the workshop presentations \cite{druskat_activity}.
+The original schematic has been a result of introspective work based on experience rather than quantitative research.
+Author Druskat has remodeled the original schematic manually, using \cite{drawio} run on \href{https://www.draw.io}{draw.io}, to produce Figure~\ref{fig:schematic}.
+In order to adapt it for purposes of workshop evaluation, both node outlines and edge labels have been weighted to show the distribution of recorded agents and actions across workshop presentations \cite{druskat_activity}. This work was done based on the presentation abstracts \cite{WSSSPE5_1_proceedings_2017} rather than the actual presentations to ensure traceability.
+
+To calculate the applicable weights, the schematic was resolved into unique activities.
+A unique activity is a single edge label verb (the action) going from a node (the actor) to another node (the actee).
+The presentations were then coded, recording for each presentation whether or not an activity was present.
+Based on the total of occurrences of an activity across presentations ($x$) and the range of occurrence totals of all activities across presentations ($r$), the font size in point (pt) for the edge labels representing single actions has been normalized to target scaling range $t = 12-24$, yielding the scaled font size $x'$:
+
+\[x' =  \frac{x - r_{min}}{r_{max} - r_{min}} \cdot \left(t_{min} - t_{min}\right) + t_{min}\]
+
+Similarly, the total of occurrences of an agent across presentations, either as actor or actee of an activity, has been normalized to target scaling range $t = 2-20$, yielding the scaled width of the node outline in pt.
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{sustainability-actions-plot-resize-jors.pdf}
-  \caption{Distribution of action coverage over presentations.}
+  \caption{Distribution of activity coverage over presentations.}
   \label{fig:actions}
 \end{figure}
 
-Figure~\ref{fig:actions} shows the distribution of actions over all presentations, where an action is a labeled edge from a node in the sustainability schematic (Figure~\ref{fig:schematic}) to another node. The source node represents the actor, and the target node the actee of the respective action.
+Figure~\ref{fig:actions} shows the distribution of actions over all presentations, based on \cite{druskat_activity}, where an action is a labeled edge from a node in the sustainability schematic (Figure~\ref{fig:schematic}) to another node. The source node represents the actor, and the target node the actee of the respective action.
 %
 The weights and action distribution show a clear overall primary focus of presentations on software development (\textit{People develop Software}). More generally, the people involved in research software take prominent focus as well as software engineering principles, and research software itself. However, across all presentations most actors, actees, and actions within the space have been the topic of a presentation as actor or actee, with the exception of hardware and underlying software. Future workshops could take care to address this topic specifically in their calls for submissions in order to close gaps in research, discussion and progress.
+
+Taken for itself, these figures only represent a snapshot of activities around research software sustainability. In order to represent the continuum of efforts and make quantitatively informed statements about both general progress, and the specific insights and outcomes from the particular workshop reported on here, a larger corpus of workshop products (abstracts, presentations, blogs, etc.) would have to be analyzed. While such a larger-scaled analysis is out of scope for this report, work has started within the WSSSPE community to create an ontology of activities in the research software sustainability space \cite{druskat2018mapping,druskat_mapping_nodate}, which will enable analyses of this kind in future work.
 
 %This coverage of topics continues in the speed blogs, which were partly based on presentations, as discussed in a presentation by Daniel S.~Katz \cite{katz_research_2018}.
 
@@ -300,20 +317,20 @@ Half the available working group time at WSSSPE5.1 was allocated to discussion, 
 %
 %
 %\note{summarize the speed blogs themselves, with citations/pointers to them on the SSI page}\\
-The rest of this section summarizes the WSSSPE5.1 blog posts, which are accessible at \href{http://wssspe.researchcomputing.org.uk/wssspe5-1/}{wssspe.researchcomputing.org.uk/wssspe5-1/}. Indented text indicated quotations from the blogs.
+The rest of this section summarizes the WSSSPE5.1 blog posts, which are accessible at \href{http://wssspe.researchcomputing.org.uk/wssspe5-1/}{wssspe.researchcomputing.org.uk/wssspe5-1/}. Indented italicized text indicates quotations from the blogs.
 
 \begin{itemize}
 \item The Research Software Project Manager\\(\href{https://www.software.ac.uk/blog/2017-12-04-research-software-project-manager}{www.software.ac.uk/blog/2017-12-04-research-software-project-manager})
-\begin{quote}
-For many, the role of research software project manager (RSPM) may be an accidental calling. The career path for this role isn’t well-established, and research software development in academia may itself be something of a haphazard, nigh-accidental byproduct of conducting domain research. Individuals approaching this role may have little to no wider industry experience, instead approaching the project manager role from research or research software engineering.
+\begin{quote}\textit{
+For many, the role of research software project manager (RSPM) may be an accidental calling. The career path for this role isn’t well-established, and research software development in academia may itself be something of a haphazard, nigh-accidental byproduct of conducting domain research. Individuals approaching this role may have little to no wider industry experience, instead approaching the project manager role from research or research software engineering.}
 \end{quote}
 The authors present the challenges for the RSPM role, noting that it is inherently different from similar positions in the industry. The focus of work is on enabling research as an iterative process, prone to many changes along the way. While many academics excel at winning grants and pushing the scientific frontiers, only a few are trained in software project management, and those who are may focus on technical aspects, discarding parts of the overall picture. The blogpost raises a number of questions about this situation, and suggests answers to a few of them, including strengthening the role of the RSPM and considering positions dedicated to project management. Such a delegation of tasks would smooth the process of reporting to administration and free up necessary resources for actual research. 
 
 
 \item Looking for software use in research \\(\href{https://www.software.ac.uk/blog/2017-12-05-looking-software-use-research}
 {www.software.ac.uk/blog/2017-12-05-looking-software-use-research})
-\begin{quote}
-Nowadays, software is used in most research. But how the software is created, used, and what it depends on are not well understood questions. The importance of such knowledge varies based on the motivation of the reader. On one side, we could be interested in the impact of the software, how many times it has been used and by who. This type of analysis could come, for example, from funding bodies and organisations to reward the creation of something and help its sustainability, from institutions who hire people behind that software, or from the software authors to get an understanding of the needs of their users or simply to get credit for their work. Another motivation may be trying to understand the research being carried out with a particular software or set of tools either for purely academic purposes (e.g., by historians and scholars of science) or with a commercial perspective (such as by intellectual property teams from universities for the monetisation of the software). %lx% should be shortened
+\begin{quote}\textit{
+Nowadays, software is used in most research. But how the software is created, used, and what it depends on are not well understood questions. The importance of such knowledge varies based on the motivation of the reader. On one side, we could be interested in the impact of the software, how many times it has been used and by who. This type of analysis could come, for example, from funding bodies and organisations to reward the creation of something and help its sustainability, from institutions who hire people behind that software, or from the software authors to get an understanding of the needs of their users or simply to get credit for their work. Another motivation may be trying to understand the research being carried out with a particular software or set of tools either for purely academic purposes (e.g., by historians and scholars of science) or with a commercial perspective (such as by intellectual property teams from universities for the monetisation of the software).} %lx% should be shortened
 \end{quote}
 The blog post reports on methods for finding software. Today, researchers usually consult search engines and programming language package archives. In the future, Current Research Information Systems (CRIS) or repositories maintained by funders may hold information about software developed during research. Software as a research output is increasingly registered with DOIs \cite{Fenner2018DOI} but identifying software in written text still has its challenges \cite{Li2017R}. Repositories such as \href{https://www.bioconductor.org/}{Bioconductor} offer a domain-specific overview of available tools. General purpose repositories, such as \href{http://github.com}{GitHub.com}, track usage as forks on their platforms, whereas services like \href{http://dpesy.org}{Depsy.org} and \href{https://libraries.io/}{libraries.io} provide aggregated software usage information from many sources. %lx% put links in there
 Software, considered by some to be a subset of research data, could also be identified via DOIs, minted by services like \href{http://datacite.org}{DataCite.org} that point to published data and software. 
@@ -321,8 +338,8 @@ Software, considered by some to be a subset of research data, could also be iden
 
 
 \item Towards Reproducibility in Research Software\\ (\href{https://www.software.ac.uk/blog/2017-12-06-towards-reproducibility-research-software}{www.software.ac.uk/blog/2017-12-06-towards-reproducibility-research-software})
-\begin{quote}
-Ensuring reproducibility of research has been identified as one of the challenges in scientific research. While reproducibility of results is a concern in all fields of science, the emphasis of this group is in the area of computer software reuse and the reproduction of results. The availability of complete descriptions, ideally including program source code, documentation and archives of all necessary components and input datasets would be a major step to resolving research reproducibility concerns.
+\begin{quote}\textit{
+Ensuring reproducibility of research has been identified as one of the challenges in scientific research. While reproducibility of results is a concern in all fields of science, the emphasis of this group is in the area of computer software reuse and the reproduction of results. The availability of complete descriptions, ideally including program source code, documentation and archives of all necessary components and input datasets would be a major step to resolving research reproducibility concerns.}
 \end{quote}
 A short review of relevant services and platforms is provided by the authors. It includes concepts from software engineering, e.g., version control, being introduced in programmes such as \href{https://software-carpentry.org}{Software Carpentry}.  %lx% link
 Platforms and tools, such as \href{https://www.overleaf.com}{Overleaf} or \href{http://jupyter.org}{Jupyter notebooks}, ease collaborative review of research and reproducibility of code respectively. While the uptake of such best practices is slow and the lack of documentation sometimes hinders reproducibility, we may see more of them in the future, especially if incentives are set right.
@@ -330,18 +347,18 @@ Platforms and tools, such as \href{https://www.overleaf.com}{Overleaf} or \href{
 \item Why research software engineers should have permanent contracts \\(\href{https://www.software.ac.uk/blog/2017-12-11-why-research-software-engineers-should-have-permanent-contracts}{www.software.ac.uk/blog/2017-12-11-why-research-software-engineers-should-have-permanent-contracts})
 
 \noindent At present, only a few research institutions employ research software engineers and make their resources available to the whole organization. This blog post discusses some success stories motivating long term contracts for RSEs. In general ``better software [leads to] better research'' (\href{https://software.ac.uk/}{SSI}).
-\begin{quote}
+\begin{quote}\textit{
 Higher quality output is on every university's wish list, as it leads to a potential increase in QR funding (\href{http://www.hefce.ac.uk/rsrch/funding/mainstream/}{www.hefce.ac.uk/rsrch/funding/mainstream/}), while reducing the reputational risk associated with substandard research practices.
-Reproducibility is notoriously difficult to achieve and RSEs are an essential part of enabling this [\ldots] leading to higher citations and greater research impact.
+Reproducibility is notoriously difficult to achieve and RSEs are an essential part of enabling this [\ldots] leading to higher citations and greater research impact.}
 \end{quote}
 Skilled RSEs are sought after and organizations get what they pay for. The ``stability and the potential for some form of career progression'' that permanent contracts offer should be a consideration when hiring such staff. And the costs do not necessarily reduce the university's baseline funds as research projects are encouraged to ``cost in'' consulting by centrally pooled RSEs. Long-term benefits for organizations are the spreading of best practices in software development and an institutional memory provided by the central RSE group who have worked in many projects. 
-\begin{quote}
-An RSE team that is permanently employed can be truly agile. Recruiting an expert for a short period of time in an academic institution is virtually impossible. As long as we rely on fixed-term contracts for RSEs, a lot of important work will fail to be done, and funds will not be spent as effectively as they could be.
+\begin{quote}\textit{
+An RSE team that is permanently employed can be truly agile. Recruiting an expert for a short period of time in an academic institution is virtually impossible. As long as we rely on fixed-term contracts for RSEs, a lot of important work will fail to be done, and funds will not be spent as effectively as they could be.}
 \end{quote}
 
 \item A standard format for CITATION files\\(\href{https://www.software.ac.uk/blog/2017-12-12-standard-format-citation-files}{www.software.ac.uk/blog/2017-12-12-standard-format-citation-files})
-\begin{quote}
-The citation of research software has a number of purposes, most importantly attribution and credit, but also the provision of impact metrics for funding proposals, job interviews, etc. Stringent software citation practices [\ldots] therefore include the citation of a software version itself, rather than a paper about the software. Direct software citation also enables reproducibility of research results as the exact version can be retrieved from the citation. 
+\begin{quote}\textit{
+The citation of research software has a number of purposes, most importantly attribution and credit, but also the provision of impact metrics for funding proposals, job interviews, etc. Stringent software citation practices [\ldots] therefore include the citation of a software version itself, rather than a paper about the software. Direct software citation also enables reproducibility of research results as the exact version can be retrieved from the citation. }
 \end{quote}
 While a diverse range of citation recommendations exist for software projects, many projects still proceed without a proper citation. In order to unify the various existing  procedures, the authors proposed the inclusion of a CITATION file in a software repository, holding standardized information, e.g., ORCID to enable linking authors with their respective ID from \href{https://orcid.org}{orcid.org}. It shall be easy to read and write in order to enable fast and straightforward creation of citation information. For this purpose, the site \href{https://research-software.org/citation/}{research-software.org/citation/} was created and is actively maintained to cover all aspects of research software citation. Widespread use of the Citation File Format (CFF) may enable transitive credit information provision and better impact metrics next to reusability by other actors.
 
@@ -349,18 +366,18 @@ While a diverse range of citation recommendations exist for software projects, m
 \item Overcoming barriers to adopting software best practices in research (\href{https://www.software.ac.uk/blog/2017-12-07-overcoming-barriers-adopting-software-best-practices-research}{www.software.ac.uk/blog/2017-12-07-overcoming-barriers-adopting-software-best-practices-research})
 
 \noindent Research careers create a wide spectrum of skill levels (compared to corporate environments). Training a group of researchers on a new topic is challenging, given the lack of a peer group at some research frontiers or missing institutional support for training and the significant upfront cost involved in learning e.\,g., best development practices. Researchers who mostly work on code in isolation rarely have an opportunity to have code reviews (with a notable exception as described in \href{https://www.software.ac.uk/blog/2018-05-18-code-review-academia}{www.software.ac.uk/blog/2018-05-18-code-review-academia}), need to learn on their own, and are often not recognized for writing code. Paper publication in a ``high-impact peer-reviewed journal'' still pushes careers. A way to overcome barriers is to introduce, e.g., ``industry standards'' in a manner adapted to research environments. The blog post discusses how the ``SCRUM'' approach may not work, but ``agile'' or a ``maturity model'' approach may better fit the current research practices.
-\begin{quote}
-As a general concept: start small and then go as far as necessary. Reaching for the perfect software development approach is intimidating and overwhelming, and it is not the task of a researcher nor necessary for most research projects. A maturity model can help researchers identify where they are and where they should be [\ldots]. Restricting the use of tech jargon to a minimum and offering explanations where necessary can help, too.
+\begin{quote}\textit{
+As a general concept: start small and then go as far as necessary. Reaching for the perfect software development approach is intimidating and overwhelming, and it is not the task of a researcher nor necessary for most research projects. A maturity model can help researchers identify where they are and where they should be [\ldots]. Restricting the use of tech jargon to a minimum and offering explanations where necessary can help, too.}
 \end{quote}
 
 
-\item Encouraging good software development practice in research teams (\href{https://www.software.ac.uk/blog/2017-12-13-encouraging-good-software-development-practice-research-teams}{www.software.ac.uk/blog/2017-12-13-encouraging-good-software-development-practice-research-teams}
+\item Encouraging good software development practice in research teams (\href{https://www.software.ac.uk/blog/2017-12-13-encouraging-good-software-development-practice-research-teams}{www.software.ac.uk/blog/2017-12-13-encouraging-good-software-development-practice-research-teams})
 
 \noindent ``Training in good software development skills is vital for the uptake and maintenance of good practice in a research community.'' This requires that resources, tools, and sometimes management support the availability of, and that the trainee be motivated. The latter could be achieved when the ``connection between good practice and increased publication rate and quality, as well as funding availability'' are demonstrated. A ``consistent approach to software development [\ldots] can benefit collaboration and the longevity of projects.'' Success story from the DLR (\href{https://www.dlr.de}{www.dlr.de}) and the EMBL (\href{https://www.embl.de/}{www.embl.de}) are reported in the blog post, which goes into detail on how to build a community and keep it alive. The authors propose the concept of ``inner source,'' where open source principles are utilized collaboratively inside an organization to develop ``common scientific frameworks.'' GitLab is praised as a beneficial tool that eases adoption of good practices. The authors recognize that rollout of training, tools, and services should happen iteratively and is always highly dependent on the particular environment. Therefore they are interested to learn from others and encourage feedback via e-mail.
 
 \item Overcoming Entry Barriers to Motivate Better Practice in Research Software Engineering (\href{https://www.software.ac.uk/blog/2017-12-14-overcoming-entry-barriers-motivate-better-practice-research-software-engineering}{www.software.ac.uk/blog/2017-12-14-overcoming-entry-barriers-motivate-better-practice-research-software-engineering})
-\begin{quote}
-What can be termed as ``coding'' is a subset of wider software engineering practices such as version control, continuous integration and good software design. Coding is prevalent in academia but practices that allow sustainable software to be produced are frequently overlooked.  Motivating the uptake of the approaches, methods and tools, and highlighting the benefit they deliver, by engaging with researchers who develop software is the first step in spreading best practice in our community.
+\begin{quote}\textit{
+What can be termed as ``coding'' is a subset of wider software engineering practices such as version control, continuous integration and good software design. Coding is prevalent in academia but practices that allow sustainable software to be produced are frequently overlooked.  Motivating the uptake of the approaches, methods and tools, and highlighting the benefit they deliver, by engaging with researchers who develop software is the first step in spreading best practice in our community.}
 \end{quote}
 The authors point out the benefit of using online systems such as GitLab to reduce entry barriers and motivating the use of, e.g., version control and continuous integration (CI). Other software engineering principles such as pair-programming and code review are also encouraged early in (graduate) students training in order to demonstrate the benefits for future use and bridging gaps between disciplines. If these research software management practices become a requirement in grants application and reporting, widespread deployment is inevitable. Increasing recognition of software as a valid research output could provide further motivation, along with better reproducibility and reduced duplication of effort.
 
@@ -403,10 +420,15 @@ All of the eight blogs mentioned research software, and researchers (i.e., domai
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\todo{more needed?} 
-In summary, the community recognizes the need for improving software engineering practices and takes action. A set of initial success stories have been reported from a handful of organizations. Recognition for work, including via citations, remains a topic of interest. 
+In summary, the community recognizes the need for improving software engineering practices and has been starting to take action around this. A set of initial success stories have been reported from a handful of organizations. Recognition for work, including via citations, remains a topic of interest, with less progress that is needed. 
 %
 Based on the presentations and working groups at WSSSPE5.1, we have presented a set of topics and mapped the %WSSSPE5.1
 presentations and speed blogs onto these topics. The presentations and speed blogs cover most of the topics and do not have subjects that are not in the list, indicating that the topics (or themes, a more fine-grained mapping of the space as discussed in Section~\ref{sec:speed_blog_analysis}) are a good representation of the space.
+
+While the existing set of topics may serve as a broad overview of issues in the research software sustainability space, we cannot yet use them to make broader, informed statements about how the space itself and the activities taking place within it have developed, or whether -- and which -- activities have helped to solve issues, and whether there are gaps in activities that the community should aim to fill.
+
+Overall, as we have stated previously~\cite{WSSSPE4-paper}, we have learned from the first four years of WSSSPE that it is relatively easy to get motivated people to attend a meeting and productively spend their time there both doing work and planning more work, but it is very hard to get that additional work after the meeting to take place. Given this, we have turned WSSSPE meetings (including this one and another in 2017, and one in 2018) into gathering places to discuss scientific software sustainability, and for groups that are already in place or that can be composed of related funded activities to meet.
+
 
 %The discussions and hands-on sessions were the most valued parts of the workshop by the participants, who requested that the overall duration of the workshop should be lengthened. \LXnote{thinks that this could work as conclusions.} 
 
